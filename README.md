@@ -56,6 +56,10 @@ Underlying data: [`data/export_destination_priority_and_pli_coverage_2026-07-18.
 
 Underlying data: [`data/sector_and_policy_recommendations_2026-07-18.json`](data/sector_and_policy_recommendations_2026-07-18.json).
 
+## FDI pitch deck
+
+[`fdi_pitch/India_Trade_FDI_Pitch_Deck.pptx`](fdi_pitch/India_Trade_FDI_Pitch_Deck.pptx) — a 12-slide investor-facing deck built from the figures above, pitching five funded, PLI-backed sectors (Electronics &amp; Semiconductors, Specialty Steel, Auto/EV/Battery, Pharma APIs, White Goods components) plus three unclaimed "ground floor" import-substitution opportunities (Inorganic Chemicals, Plastics, Aircraft &amp; Spacecraft) for foreign direct investment. Includes an explicit risk slide (CBAM export exposure, currency volatility) rather than omitting known downsides. Source: [`fdi_pitch/fdi_pitch_deck.html`](fdi_pitch/fdi_pitch_deck.html) (12 fixed 1920×1080 canvases, one per slide) — the PPTX is rendered from this HTML, one full-bleed image per slide, so re-editing text means editing the HTML and re-exporting, not typing directly into PowerPoint.
+
 ## Methodology notes
 
 - **This repo makes recommendations; it does not make policy.** Every tier/priority label here is this repo's own transparent, stated scoring choice (chapter growth × value × existing-scheme status, or country combined-exposure × sector breadth) — not an official government risk assessment or a validated economic model.
