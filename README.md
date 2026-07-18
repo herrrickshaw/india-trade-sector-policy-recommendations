@@ -4,6 +4,8 @@ The prescriptive companion to [`india-trade-data-analysis`](https://github.com/h
 
 Both repos were originally one (`mospi-dataset-analysis`); they were split so the descriptive "what does the data show" analysis and the prescriptive "what should be done about it" recommendations could be published, versioned, and read independently.
 
+**Live site**: [herrrickshaw.github.io/india-trade-sector-policy-recommendations](https://herrrickshaw.github.io/india-trade-sector-policy-recommendations/) — every chart and JSON dataset below served directly via GitHub Pages, no build step.
+
 **Start here:** [Sector &amp; Policy Recommendations](#sector--policy-recommendations) is the capstone that ties everything below into tiered, actionable recommendations — including two findings validated against NITI Aayog's Trade Watch that don't appear anywhere else in this repo: a **CBAM export risk** ($20.7bn) and a **structurally declining export sector** (gems/jewellery, -29.9%).
 
 **Contents:** [Import policy gaps](#are-import-dependent-sectors-getting-government-attention) · [Country-by-country trade history](#where-indias-forex-actually-goes--country-by-country-with-a-decade-of-policy-history) · [Import partners &amp; PLI](#priority-trade-partners-by-import-growth-sector-and-real-pli-coverage) · [Export destinations &amp; PLI](#priority-export-destinations-by-growth-sector-and-the-export-side-of-pli) · [Sector &amp; Policy Recommendations](#sector--policy-recommendations)
