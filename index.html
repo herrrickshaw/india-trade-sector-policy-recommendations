@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>India Trade — Sector &amp; Policy Recommendations</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#7a5aa8; --accent-soft:#e7defa;
+    --font-display:"Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --font-mono:"IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { color-scheme: dark; --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83; --rule:#2a2e28; --rule-strong:#383c33; --accent:#b39ce0; --accent-soft:#2e2540; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--page-bg); color: var(--ink); font-family: var(--font-body); }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 48px 20px 64px; display: flex; flex-direction: column; gap: 28px; }
+  .eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
+  h1 { font-family: var(--font-display); font-weight: 500; font-size: clamp(26px,3.4vw,36px); margin: 6px 0 0; }
+  p.dek { font-size: 14.5px; color: var(--ink-2); line-height: 1.6; max-width: 78ch; }
+  a { color: var(--accent); }
+  .card-list { display: flex; flex-direction: column; gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+  .card { background: var(--surface); padding: 16px 20px; display: flex; flex-direction: column; gap: 4px; }
+  .card.capstone { border-left: 3px solid var(--accent); background: var(--accent-soft); }
+  .card a.title { font-size: 15px; font-weight: 600; text-decoration: none; color: var(--ink); }
+  .card a.title:hover { color: var(--accent); }
+  .card .sub { font-size: 12.5px; color: var(--ink-muted); }
+  .card .links { font-family: var(--font-mono); font-size: 11.5px; margin-top: 2px; }
+  .quick { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+  .quick a { background: var(--surface); padding: 14px 18px; text-decoration: none; color: var(--ink); font-size: 13.5px; }
+  .quick a:hover { color: var(--accent); }
+  footer { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-muted); text-align: center; padding-top: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div>
+    <div class="eyebrow">Prescriptive Companion — Sector &amp; Policy Recommendations</div>
+    <h1>India Trade — Sector &amp; Policy Recommendations</h1>
+    <p class="dek">Every chart and dataset in this repo, served directly via GitHub Pages. Companion repo: <a href="https://herrrickshaw.github.io/india-trade-data-analysis/">India Trade &amp; Macro Data Analysis</a> (the descriptive half).</p>
+  </div>
+
+  <div class="quick">
+    <a href="charts/sector_and_policy_recommendations.html">Start here → Sector &amp; Policy Recommendations</a>
+    <a href="https://colab.research.google.com/github/herrrickshaw/india-trade-data-analysis/blob/main/notebooks/repo_verification.ipynb">Open repo-verification notebook in Colab</a>
+  </div>
+
+  <div class="card-list">
+    <div class="card capstone">
+      <a class="title" href="charts/sector_and_policy_recommendations.html">Sector &amp; Policy Recommendations</a>
+      <div class="sub">The capstone: tiered import-substitution / export-growth / country-relationship priorities, a CBAM export-risk flag ($20.7bn), a declining-export-sector flag, and an explicit RCA/TII methodology-gap note.</div>
+      <div class="links"><a href="data/sector_and_policy_recommendations_2026-07-18.json">data</a></div>
+    </div>
+    <div class="card">
+      <a class="title" href="charts/import_dependency_policy_gap_analysis.html">Are import-dependent sectors getting government attention?</a>
+      <div class="sub">12-chapter import ranking vs. a six-month roundup of PIB-reported government schemes.</div>
+      <div class="links"><a href="data/import_dependency_policy_gap_analysis_2026-07-18.json">data</a></div>
+    </div>
+    <div class="card">
+      <a class="title" href="charts/country_trade_deficit_and_policy_history.html">Where India's forex actually goes — country by country</a>
+      <div class="sub">FY2025-26 bilateral trade balance by partner country, with a decade of policy history behind the five biggest deficits.</div>
+      <div class="links"><a href="data/country_trade_deficit_and_policy_history_2026-07-18.json">data</a> · <a href="data/country_commodity_breakdown_2026-07-18.json">validation</a></div>
+    </div>
+    <div class="card">
+      <a class="title" href="charts/sector_country_priority_and_pli_coverage.html">Priority trade partners by import-growth sector, and real PLI coverage</a>
+      <div class="sub">12 fastest-growing import chapters mapped to top supplier countries, cross-sector country-priority ranking, and PLI coverage check.</div>
+      <div class="links"><a href="data/sector_country_priority_and_pli_coverage_2026-07-18.json">data</a></div>
+    </div>
+    <div class="card">
+      <a class="title" href="charts/export_destination_priority_and_pli_coverage.html">Priority export destinations by growth sector, and the export side of PLI</a>
+      <div class="sub">The export-side mirror: 12 growth export chapters mapped to top destination countries and PLI coverage.</div>
+      <div class="links"><a href="data/export_destination_priority_and_pli_coverage_2026-07-18.json">data</a></div>
+    </div>
+  </div>
+
+  <footer>herrrickshaw/india-trade-sector-policy-recommendations — served via GitHub Pages, no build step, HTML/JSON directly from the repo</footer>
+</div>
+</body>
+</html>
