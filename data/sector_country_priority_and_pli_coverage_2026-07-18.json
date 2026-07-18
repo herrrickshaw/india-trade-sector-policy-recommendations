@@ -1,0 +1,1408 @@
+{
+  "purpose": "Maps the 12 fastest-growing/highest-value HSN import chapters to their top supplier countries (TRADESTAT), builds a cross-sector country-priority ranking, and checks PLI sub-scheme coverage per chapter.",
+  "source": "TRADESTAT 'Commodity-wise, all countries' import report, 2-digit HS level, US$ Million, FY2025-26",
+  "retrieved": "2026-07-18",
+  "sectors": [
+    {
+      "hs": "27",
+      "name": "Mineral fuels & oils",
+      "pli": "gap",
+      "note": "No PLI \u2014 energy commodity, not a manufactured product.",
+      "top_countries": [
+        {
+          "country": "Russia",
+          "fy2025_26": 47824.9,
+          "share_pct": 23.5,
+          "growth_pct": "-15.91"
+        },
+        {
+          "country": "UAE",
+          "fy2025_26": 24272.88,
+          "share_pct": 11.9,
+          "growth_pct": "-1.89"
+        },
+        {
+          "country": "Iraq",
+          "fy2025_26": 24146.03,
+          "share_pct": 11.9,
+          "growth_pct": "-15.85"
+        },
+        {
+          "country": "Saudi Arabia",
+          "fy2025_26": 21788.12,
+          "share_pct": 10.7,
+          "growth_pct": "-5.27"
+        },
+        {
+          "country": "USA",
+          "fy2025_26": 17315.21,
+          "share_pct": 8.5,
+          "growth_pct": "20.69"
+        },
+        {
+          "country": "Qatar",
+          "fy2025_26": 10736.7,
+          "share_pct": 5.3,
+          "growth_pct": "-3.14"
+        },
+        {
+          "country": "Indonesia",
+          "fy2025_26": 6604.64,
+          "share_pct": 3.2,
+          "growth_pct": "-22.68"
+        },
+        {
+          "country": "Kuwait",
+          "fy2025_26": 6555.77,
+          "share_pct": 3.2,
+          "growth_pct": "2.52"
+        }
+      ]
+    },
+    {
+      "hs": "71",
+      "name": "Pearls, gems & jewellery",
+      "pli": "gap",
+      "note": "No PLI \u2014 trade-facilitation (duty-free import-for-re-export) sector instead.",
+      "top_countries": [
+        {
+          "country": "UAE",
+          "fy2025_26": 24825.69,
+          "share_pct": 22.7,
+          "growth_pct": "-8.34"
+        },
+        {
+          "country": "Switzerland",
+          "fy2025_26": 20780.88,
+          "share_pct": 19.0,
+          "growth_pct": "12.91"
+        },
+        {
+          "country": "Hong Kong",
+          "fy2025_26": 10006.25,
+          "share_pct": 9.1,
+          "growth_pct": "48.65"
+        },
+        {
+          "country": "Peru",
+          "fy2025_26": 7993.21,
+          "share_pct": 7.3,
+          "growth_pct": "79.38"
+        },
+        {
+          "country": "USA",
+          "fy2025_26": 6848.83,
+          "share_pct": 6.3,
+          "growth_pct": "29.45"
+        },
+        {
+          "country": "Ghana",
+          "fy2025_26": 6026.43,
+          "share_pct": 5.5,
+          "growth_pct": "444.44"
+        },
+        {
+          "country": "United Kingdom",
+          "fy2025_26": 5469.68,
+          "share_pct": 5.0,
+          "growth_pct": "129.57"
+        },
+        {
+          "country": "Thailand",
+          "fy2025_26": 4367.11,
+          "share_pct": 4.0,
+          "growth_pct": "17.41"
+        }
+      ]
+    },
+    {
+      "hs": "85",
+      "name": "Electrical machinery",
+      "pli": "strong",
+      "note": "ISM 2.0 (semiconductors) + PLI electronics/mobile/telecom/IT-hardware tracks; partial overlap with White Goods and ACC battery PLI.",
+      "top_countries": [
+        {
+          "country": "China",
+          "fy2025_26": 46367.46,
+          "share_pct": 44.2,
+          "growth_pct": "21.93"
+        },
+        {
+          "country": "Hong Kong",
+          "fy2025_26": 10492.8,
+          "share_pct": 10.0,
+          "growth_pct": "12.63"
+        },
+        {
+          "country": "Singapore",
+          "fy2025_26": 6229.94,
+          "share_pct": 5.9,
+          "growth_pct": "15.46"
+        },
+        {
+          "country": "South Korea",
+          "fy2025_26": 5717.28,
+          "share_pct": 5.5,
+          "growth_pct": "11.03"
+        },
+        {
+          "country": "USA",
+          "fy2025_26": 5555.02,
+          "share_pct": 5.3,
+          "growth_pct": "64.22"
+        },
+        {
+          "country": "Ireland",
+          "fy2025_26": 4992.17,
+          "share_pct": 4.8,
+          "growth_pct": "11.17"
+        },
+        {
+          "country": "Vietnam",
+          "fy2025_26": 4885.8,
+          "share_pct": 4.7,
+          "growth_pct": "8.65"
+        },
+        {
+          "country": "Taiwan",
+          "fy2025_26": 4339.87,
+          "share_pct": 4.1,
+          "growth_pct": "-20.49"
+        }
+      ]
+    },
+    {
+      "hs": "84",
+      "name": "Machinery, mechanical appliances",
+      "pli": "partial",
+      "note": "White Goods PLI's core component target \u2014 AC compressors \u2014 is classified under this chapter, not HS85; no broader capital-goods PLI.",
+      "top_countries": [
+        {
+          "country": "China",
+          "fy2025_26": 29450.97,
+          "share_pct": 39.8,
+          "growth_pct": "13.60"
+        },
+        {
+          "country": "Germany",
+          "fy2025_26": 5547.74,
+          "share_pct": 7.5,
+          "growth_pct": "9.06"
+        },
+        {
+          "country": "USA",
+          "fy2025_26": 4683.17,
+          "share_pct": 6.3,
+          "growth_pct": "5.79"
+        },
+        {
+          "country": "Singapore",
+          "fy2025_26": 4280.95,
+          "share_pct": 5.8,
+          "growth_pct": "29.19"
+        },
+        {
+          "country": "Japan",
+          "fy2025_26": 3892.48,
+          "share_pct": 5.3,
+          "growth_pct": "17.41"
+        },
+        {
+          "country": "Italy",
+          "fy2025_26": 2455.35,
+          "share_pct": 3.3,
+          "growth_pct": "2.42"
+        },
+        {
+          "country": "South Korea",
+          "fy2025_26": 2381.65,
+          "share_pct": 3.2,
+          "growth_pct": "3.73"
+        },
+        {
+          "country": "Malaysia",
+          "fy2025_26": 2092.45,
+          "share_pct": 2.8,
+          "growth_pct": "-0.70"
+        }
+      ]
+    },
+    {
+      "hs": "29",
+      "name": "Organic chemicals",
+      "pli": "partial",
+      "note": "PLI bulk-drugs/API track covers the pharma-intermediate subset only, not broad petrochemical imports.",
+      "top_countries": [
+        {
+          "country": "China",
+          "fy2025_26": 11521.52,
+          "share_pct": 45.3,
+          "growth_pct": "0.40"
+        },
+        {
+          "country": "USA",
+          "fy2025_26": 1756.64,
+          "share_pct": 6.9,
+          "growth_pct": "28.06"
+        },
+        {
+          "country": "Saudi Arabia",
+          "fy2025_26": 1277.21,
+          "share_pct": 5.0,
+          "growth_pct": "-5.00"
+        },
+        {
+          "country": "South Korea",
+          "fy2025_26": 1205.96,
+          "share_pct": 4.7,
+          "growth_pct": "-9.76"
+        },
+        {
+          "country": "Singapore",
+          "fy2025_26": 1159.11,
+          "share_pct": 4.6,
+          "growth_pct": "-11.59"
+        },
+        {
+          "country": "Japan",
+          "fy2025_26": 939.03,
+          "share_pct": 3.7,
+          "growth_pct": "-11.29"
+        },
+        {
+          "country": "Thailand",
+          "fy2025_26": 924.29,
+          "share_pct": 3.6,
+          "growth_pct": "-23.18"
+        },
+        {
+          "country": "Taiwan",
+          "fy2025_26": 860.67,
+          "share_pct": 3.4,
+          "growth_pct": "-29.42"
+        }
+      ]
+    },
+    {
+      "hs": "39",
+      "name": "Plastics",
+      "pli": "gap",
+      "note": "No PLI identified.",
+      "top_countries": [
+        {
+          "country": "China",
+          "fy2025_26": 6711.48,
+          "share_pct": 30.2,
+          "growth_pct": "5.94"
+        },
+        {
+          "country": "South Korea",
+          "fy2025_26": 2121.3,
+          "share_pct": 9.5,
+          "growth_pct": "-7.42"
+        },
+        {
+          "country": "Singapore",
+          "fy2025_26": 1496.31,
+          "share_pct": 6.7,
+          "growth_pct": "-2.19"
+        },
+        {
+          "country": "Thailand",
+          "fy2025_26": 1492.84,
+          "share_pct": 6.7,
+          "growth_pct": "12.44"
+        },
+        {
+          "country": "USA",
+          "fy2025_26": 1438.53,
+          "share_pct": 6.5,
+          "growth_pct": "-6.03"
+        },
+        {
+          "country": "Japan",
+          "fy2025_26": 1199.79,
+          "share_pct": 5.4,
+          "growth_pct": "4.50"
+        },
+        {
+          "country": "UAE",
+          "fy2025_26": 1195.78,
+          "share_pct": 5.4,
+          "growth_pct": "-10.03"
+        },
+        {
+          "country": "Saudi Arabia",
+          "fy2025_26": 1120.78,
+          "share_pct": 5.0,
+          "growth_pct": "7.29"
+        }
+      ]
+    },
+    {
+      "hs": "15",
+      "name": "Animal/veg fats & oils",
+      "pli": "gap",
+      "note": "No PLI \u2014 NMEO-Oilseeds/NMEO-OP are separate agri-mission mechanisms, not PLI.",
+      "top_countries": [
+        {
+          "country": "Indonesia",
+          "fy2025_26": 3947.2,
+          "share_pct": 19.9,
+          "growth_pct": "-4.14"
+        },
+        {
+          "country": "Argentina",
+          "fy2025_26": 3665.83,
+          "share_pct": 18.5,
+          "growth_pct": "24.35"
+        },
+        {
+          "country": "Malaysia",
+          "fy2025_26": 3193.87,
+          "share_pct": 16.1,
+          "growth_pct": "16.13"
+        },
+        {
+          "country": "Russia",
+          "fy2025_26": 1675.72,
+          "share_pct": 8.5,
+          "growth_pct": "-30.02"
+        },
+        {
+          "country": "Thailand",
+          "fy2025_26": 1475.26,
+          "share_pct": 7.5,
+          "growth_pct": "99.05"
+        },
+        {
+          "country": "Nepal",
+          "fy2025_26": 1071.95,
+          "share_pct": 5.4,
+          "growth_pct": "132.97"
+        },
+        {
+          "country": "Brazil",
+          "fy2025_26": 1057.44,
+          "share_pct": 5.3,
+          "growth_pct": "35.06"
+        },
+        {
+          "country": "Ukraine",
+          "fy2025_26": 787.35,
+          "share_pct": 4.0,
+          "growth_pct": "-7.62"
+        }
+      ]
+    },
+    {
+      "hs": "72",
+      "name": "Iron & steel",
+      "pli": "strong",
+      "note": "PLI Specialty Steel 1.0/1.1 (\u20b944,106cr) + 1.2 (\u20b911,887cr, MoUs signed Feb 2026), targeting 42 million tonnes by FY2026-27 explicitly to cut imports.",
+      "top_countries": [
+        {
+          "country": "South Korea",
+          "fy2025_26": 2589.6,
+          "share_pct": 16.4,
+          "growth_pct": "0.04"
+        },
+        {
+          "country": "Indonesia",
+          "fy2025_26": 1666.96,
+          "share_pct": 10.6,
+          "growth_pct": "-14.26"
+        },
+        {
+          "country": "Japan",
+          "fy2025_26": 1638.49,
+          "share_pct": 10.4,
+          "growth_pct": "-15.90"
+        },
+        {
+          "country": "China",
+          "fy2025_26": 1571.0,
+          "share_pct": 10.0,
+          "growth_pct": "-34.07"
+        },
+        {
+          "country": "Vietnam",
+          "fy2025_26": 878.68,
+          "share_pct": 5.6,
+          "growth_pct": "12.14"
+        },
+        {
+          "country": "USA",
+          "fy2025_26": 676.87,
+          "share_pct": 4.3,
+          "growth_pct": "-19.26"
+        },
+        {
+          "country": "UAE",
+          "fy2025_26": 646.71,
+          "share_pct": 4.1,
+          "growth_pct": "53.72"
+        },
+        {
+          "country": "Singapore",
+          "fy2025_26": 486.02,
+          "share_pct": 3.1,
+          "growth_pct": "1.93"
+        }
+      ]
+    },
+    {
+      "hs": "90",
+      "name": "Optical/medical instruments",
+      "pli": "partial",
+      "note": "PLI Medical Devices covers a subset; broader optical/measuring instruments are not targeted.",
+      "top_countries": [
+        {
+          "country": "China",
+          "fy2025_26": 2752.64,
+          "share_pct": 17.9,
+          "growth_pct": "7.46"
+        },
+        {
+          "country": "USA",
+          "fy2025_26": 2261.43,
+          "share_pct": 14.7,
+          "growth_pct": "11.58"
+        },
+        {
+          "country": "Germany",
+          "fy2025_26": 1962.1,
+          "share_pct": 12.7,
+          "growth_pct": "15.98"
+        },
+        {
+          "country": "Singapore",
+          "fy2025_26": 1295.94,
+          "share_pct": 8.4,
+          "growth_pct": "1.87"
+        },
+        {
+          "country": "Japan",
+          "fy2025_26": 1197.77,
+          "share_pct": 7.8,
+          "growth_pct": "22.55"
+        },
+        {
+          "country": "Netherlands",
+          "fy2025_26": 636.9,
+          "share_pct": 4.1,
+          "growth_pct": "23.19"
+        },
+        {
+          "country": "South Korea",
+          "fy2025_26": 566.51,
+          "share_pct": 3.7,
+          "growth_pct": "10.27"
+        },
+        {
+          "country": "Hong Kong",
+          "fy2025_26": 471.49,
+          "share_pct": 3.1,
+          "growth_pct": "23.99"
+        }
+      ]
+    },
+    {
+      "hs": "31",
+      "name": "Fertilisers",
+      "pli": "gap",
+      "note": "No PLI \u2014 NIPU-2026 (urea capacity) is a separate investment-policy mechanism, not PLI.",
+      "top_countries": [
+        {
+          "country": "Russia",
+          "fy2025_26": 3117.9,
+          "share_pct": 21.3,
+          "growth_pct": "69.46"
+        },
+        {
+          "country": "Saudi Arabia",
+          "fy2025_26": 2397.39,
+          "share_pct": 16.3,
+          "growth_pct": "62.30"
+        },
+        {
+          "country": "China",
+          "fy2025_26": 2336.7,
+          "share_pct": 15.9,
+          "growth_pct": "166.80"
+        },
+        {
+          "country": "Morocco",
+          "fy2025_26": 1945.58,
+          "share_pct": 13.3,
+          "growth_pct": "141.16"
+        },
+        {
+          "country": "Oman",
+          "fy2025_26": 843.67,
+          "share_pct": 5.8,
+          "growth_pct": "-21.10"
+        },
+        {
+          "country": "Qatar",
+          "fy2025_26": 428.76,
+          "share_pct": 2.9,
+          "growth_pct": "105.74"
+        },
+        {
+          "country": "Indonesia",
+          "fy2025_26": 377.8,
+          "share_pct": 2.6,
+          "growth_pct": "480.26"
+        },
+        {
+          "country": "UAE",
+          "fy2025_26": 355.99,
+          "share_pct": 2.4,
+          "growth_pct": "46.21"
+        }
+      ]
+    },
+    {
+      "hs": "28",
+      "name": "Inorganic chemicals",
+      "pli": "gap",
+      "note": "No PLI identified; adjacent to fertiliser raw materials (phosphoric/sulphuric acid) covered under NBS capacity expansion.",
+      "top_countries": [
+        {
+          "country": "UAE",
+          "fy2025_26": 3359.27,
+          "share_pct": 23.6,
+          "growth_pct": "230.13"
+        },
+        {
+          "country": "Japan",
+          "fy2025_26": 2188.78,
+          "share_pct": 15.4,
+          "growth_pct": "-13.65"
+        },
+        {
+          "country": "China",
+          "fy2025_26": 1651.2,
+          "share_pct": 11.6,
+          "growth_pct": "29.56"
+        },
+        {
+          "country": "Jordan",
+          "fy2025_26": 843.38,
+          "share_pct": 5.9,
+          "growth_pct": "14.97"
+        },
+        {
+          "country": "Indonesia",
+          "fy2025_26": 737.18,
+          "share_pct": 5.2,
+          "growth_pct": "-2.64"
+        },
+        {
+          "country": "Morocco",
+          "fy2025_26": 539.82,
+          "share_pct": 3.8,
+          "growth_pct": "43.74"
+        },
+        {
+          "country": "Senegal",
+          "fy2025_26": 525.52,
+          "share_pct": 3.7,
+          "growth_pct": "5.83"
+        },
+        {
+          "country": "Oman",
+          "fy2025_26": 440.73,
+          "share_pct": 3.1,
+          "growth_pct": "8.09"
+        }
+      ]
+    },
+    {
+      "hs": "88",
+      "name": "Aircraft & spacecraft",
+      "pli": "gap",
+      "note": "No PLI \u2014 no aerospace-manufacturing incentive in the 14 PLI sectors.",
+      "top_countries": [
+        {
+          "country": "France",
+          "fy2025_26": 3891.44,
+          "share_pct": 28.2,
+          "growth_pct": "42.93"
+        },
+        {
+          "country": "Germany",
+          "fy2025_26": 2692.52,
+          "share_pct": 19.5,
+          "growth_pct": "-20.24"
+        },
+        {
+          "country": "USA",
+          "fy2025_26": 1909.8,
+          "share_pct": 13.9,
+          "growth_pct": "14.74"
+        },
+        {
+          "country": "UAE",
+          "fy2025_26": 1898.72,
+          "share_pct": 13.8,
+          "growth_pct": "-23.31"
+        },
+        {
+          "country": "Saudi Arabia",
+          "fy2025_26": 702.49,
+          "share_pct": 5.1,
+          "growth_pct": "-16.39"
+        },
+        {
+          "country": "Seychelles",
+          "fy2025_26": 339.07,
+          "share_pct": 2.5,
+          "growth_pct": "132.26"
+        },
+        {
+          "country": "Canada",
+          "fy2025_26": 321.91,
+          "share_pct": 2.3,
+          "growth_pct": "98.09"
+        },
+        {
+          "country": "Kuwait",
+          "fy2025_26": 290.95,
+          "share_pct": 2.1,
+          "growth_pct": "-45.86"
+        }
+      ]
+    }
+  ],
+  "country_priority_ranking": [
+    {
+      "country_display": "China",
+      "total_exposure_usd_m": 102363.0,
+      "n_sectors": 8,
+      "top2_count": 5,
+      "sectors": [
+        [
+          "85",
+          "Electrical machinery",
+          46367.46,
+          44.2,
+          1
+        ],
+        [
+          "84",
+          "Machinery, mechanical appliances",
+          29450.97,
+          39.8,
+          1
+        ],
+        [
+          "29",
+          "Organic chemicals",
+          11521.52,
+          45.3,
+          1
+        ],
+        [
+          "39",
+          "Plastics",
+          6711.48,
+          30.2,
+          1
+        ],
+        [
+          "72",
+          "Iron & steel",
+          1571.0,
+          10.0,
+          4
+        ],
+        [
+          "90",
+          "Optical/medical instruments",
+          2752.64,
+          17.9,
+          1
+        ],
+        [
+          "31",
+          "Fertilisers",
+          2336.7,
+          15.9,
+          3
+        ],
+        [
+          "28",
+          "Inorganic chemicals",
+          1651.2,
+          11.6,
+          3
+        ]
+      ]
+    },
+    {
+      "country_display": "UAE",
+      "total_exposure_usd_m": 56555.0,
+      "n_sectors": 7,
+      "top2_count": 3,
+      "sectors": [
+        [
+          "27",
+          "Mineral fuels & oils",
+          24272.88,
+          11.9,
+          2
+        ],
+        [
+          "71",
+          "Pearls, gems & jewellery",
+          24825.69,
+          22.7,
+          1
+        ],
+        [
+          "39",
+          "Plastics",
+          1195.78,
+          5.4,
+          7
+        ],
+        [
+          "72",
+          "Iron & steel",
+          646.71,
+          4.1,
+          7
+        ],
+        [
+          "31",
+          "Fertilisers",
+          355.99,
+          2.4,
+          8
+        ],
+        [
+          "28",
+          "Inorganic chemicals",
+          3359.27,
+          23.6,
+          1
+        ],
+        [
+          "88",
+          "Aircraft & spacecraft",
+          1898.72,
+          13.8,
+          4
+        ]
+      ]
+    },
+    {
+      "country_display": "Russia",
+      "total_exposure_usd_m": 52618.5,
+      "n_sectors": 3,
+      "top2_count": 2,
+      "sectors": [
+        [
+          "27",
+          "Mineral fuels & oils",
+          47824.9,
+          23.5,
+          1
+        ],
+        [
+          "15",
+          "Animal/veg fats & oils",
+          1675.72,
+          8.5,
+          4
+        ],
+        [
+          "31",
+          "Fertilisers",
+          3117.9,
+          21.3,
+          1
+        ]
+      ]
+    },
+    {
+      "country_display": "USA",
+      "total_exposure_usd_m": 42445.5,
+      "n_sectors": 9,
+      "top2_count": 2,
+      "sectors": [
+        [
+          "27",
+          "Mineral fuels & oils",
+          17315.21,
+          8.5,
+          5
+        ],
+        [
+          "71",
+          "Pearls, gems & jewellery",
+          6848.83,
+          6.3,
+          5
+        ],
+        [
+          "85",
+          "Electrical machinery",
+          5555.02,
+          5.3,
+          5
+        ],
+        [
+          "84",
+          "Machinery, mechanical appliances",
+          4683.17,
+          6.3,
+          3
+        ],
+        [
+          "29",
+          "Organic chemicals",
+          1756.64,
+          6.9,
+          2
+        ],
+        [
+          "39",
+          "Plastics",
+          1438.53,
+          6.5,
+          5
+        ],
+        [
+          "72",
+          "Iron & steel",
+          676.87,
+          4.3,
+          6
+        ],
+        [
+          "90",
+          "Optical/medical instruments",
+          2261.43,
+          14.7,
+          2
+        ],
+        [
+          "88",
+          "Aircraft & spacecraft",
+          1909.8,
+          13.9,
+          3
+        ]
+      ]
+    },
+    {
+      "country_display": "Saudi Arabia",
+      "total_exposure_usd_m": 27286.0,
+      "n_sectors": 5,
+      "top2_count": 1,
+      "sectors": [
+        [
+          "27",
+          "Mineral fuels & oils",
+          21788.12,
+          10.7,
+          4
+        ],
+        [
+          "29",
+          "Organic chemicals",
+          1277.21,
+          5.0,
+          3
+        ],
+        [
+          "39",
+          "Plastics",
+          1120.78,
+          5.0,
+          8
+        ],
+        [
+          "31",
+          "Fertilisers",
+          2397.39,
+          16.3,
+          2
+        ],
+        [
+          "88",
+          "Aircraft & spacecraft",
+          702.49,
+          5.1,
+          5
+        ]
+      ]
+    },
+    {
+      "country_display": "Iraq",
+      "total_exposure_usd_m": 24146.0,
+      "n_sectors": 1,
+      "top2_count": 0,
+      "sectors": [
+        [
+          "27",
+          "Mineral fuels & oils",
+          24146.03,
+          11.9,
+          3
+        ]
+      ]
+    },
+    {
+      "country_display": "Hong Kong",
+      "total_exposure_usd_m": 20970.5,
+      "n_sectors": 3,
+      "top2_count": 1,
+      "sectors": [
+        [
+          "71",
+          "Pearls, gems & jewellery",
+          10006.25,
+          9.1,
+          3
+        ],
+        [
+          "85",
+          "Electrical machinery",
+          10492.8,
+          10.0,
+          2
+        ],
+        [
+          "90",
+          "Optical/medical instruments",
+          471.49,
+          3.1,
+          8
+        ]
+      ]
+    },
+    {
+      "country_display": "Switzerland",
+      "total_exposure_usd_m": 20780.9,
+      "n_sectors": 1,
+      "top2_count": 1,
+      "sectors": [
+        [
+          "71",
+          "Pearls, gems & jewellery",
+          20780.88,
+          19.0,
+          2
+        ]
+      ]
+    },
+    {
+      "country_display": "Singapore",
+      "total_exposure_usd_m": 14948.3,
+      "n_sectors": 6,
+      "top2_count": 0,
+      "sectors": [
+        [
+          "85",
+          "Electrical machinery",
+          6229.94,
+          5.9,
+          3
+        ],
+        [
+          "84",
+          "Machinery, mechanical appliances",
+          4280.95,
+          5.8,
+          4
+        ],
+        [
+          "29",
+          "Organic chemicals",
+          1159.11,
+          4.6,
+          5
+        ],
+        [
+          "39",
+          "Plastics",
+          1496.31,
+          6.7,
+          3
+        ],
+        [
+          "72",
+          "Iron & steel",
+          486.02,
+          3.1,
+          8
+        ],
+        [
+          "90",
+          "Optical/medical instruments",
+          1295.94,
+          8.4,
+          4
+        ]
+      ]
+    },
+    {
+      "country_display": "South Korea",
+      "total_exposure_usd_m": 14582.3,
+      "n_sectors": 6,
+      "top2_count": 2,
+      "sectors": [
+        [
+          "85",
+          "Electrical machinery",
+          5717.28,
+          5.5,
+          4
+        ],
+        [
+          "84",
+          "Machinery, mechanical appliances",
+          2381.65,
+          3.2,
+          7
+        ],
+        [
+          "29",
+          "Organic chemicals",
+          1205.96,
+          4.7,
+          4
+        ],
+        [
+          "39",
+          "Plastics",
+          2121.3,
+          9.5,
+          2
+        ],
+        [
+          "72",
+          "Iron & steel",
+          2589.6,
+          16.4,
+          1
+        ],
+        [
+          "90",
+          "Optical/medical instruments",
+          566.51,
+          3.7,
+          7
+        ]
+      ]
+    },
+    {
+      "country_display": "Indonesia",
+      "total_exposure_usd_m": 13333.8,
+      "n_sectors": 5,
+      "top2_count": 2,
+      "sectors": [
+        [
+          "27",
+          "Mineral fuels & oils",
+          6604.64,
+          3.2,
+          7
+        ],
+        [
+          "15",
+          "Animal/veg fats & oils",
+          3947.2,
+          19.9,
+          1
+        ],
+        [
+          "72",
+          "Iron & steel",
+          1666.96,
+          10.6,
+          2
+        ],
+        [
+          "31",
+          "Fertilisers",
+          377.8,
+          2.6,
+          7
+        ],
+        [
+          "28",
+          "Inorganic chemicals",
+          737.18,
+          5.2,
+          5
+        ]
+      ]
+    },
+    {
+      "country_display": "Qatar",
+      "total_exposure_usd_m": 11165.5,
+      "n_sectors": 2,
+      "top2_count": 0,
+      "sectors": [
+        [
+          "27",
+          "Mineral fuels & oils",
+          10736.7,
+          5.3,
+          6
+        ],
+        [
+          "31",
+          "Fertilisers",
+          428.76,
+          2.9,
+          6
+        ]
+      ]
+    },
+    {
+      "country_display": "Japan",
+      "total_exposure_usd_m": 11056.3,
+      "n_sectors": 6,
+      "top2_count": 1,
+      "sectors": [
+        [
+          "84",
+          "Machinery, mechanical appliances",
+          3892.48,
+          5.3,
+          5
+        ],
+        [
+          "29",
+          "Organic chemicals",
+          939.03,
+          3.7,
+          6
+        ],
+        [
+          "39",
+          "Plastics",
+          1199.79,
+          5.4,
+          6
+        ],
+        [
+          "72",
+          "Iron & steel",
+          1638.49,
+          10.4,
+          3
+        ],
+        [
+          "90",
+          "Optical/medical instruments",
+          1197.77,
+          7.8,
+          5
+        ],
+        [
+          "28",
+          "Inorganic chemicals",
+          2188.78,
+          15.4,
+          2
+        ]
+      ]
+    },
+    {
+      "country_display": "Germany",
+      "total_exposure_usd_m": 10202.4,
+      "n_sectors": 3,
+      "top2_count": 2,
+      "sectors": [
+        [
+          "84",
+          "Machinery, mechanical appliances",
+          5547.74,
+          7.5,
+          2
+        ],
+        [
+          "90",
+          "Optical/medical instruments",
+          1962.1,
+          12.7,
+          3
+        ],
+        [
+          "88",
+          "Aircraft & spacecraft",
+          2692.52,
+          19.5,
+          2
+        ]
+      ]
+    },
+    {
+      "country_display": "Thailand",
+      "total_exposure_usd_m": 8259.5,
+      "n_sectors": 4,
+      "top2_count": 0,
+      "sectors": [
+        [
+          "71",
+          "Pearls, gems & jewellery",
+          4367.11,
+          4.0,
+          8
+        ],
+        [
+          "29",
+          "Organic chemicals",
+          924.29,
+          3.6,
+          7
+        ],
+        [
+          "39",
+          "Plastics",
+          1492.84,
+          6.7,
+          4
+        ],
+        [
+          "15",
+          "Animal/veg fats & oils",
+          1475.26,
+          7.5,
+          5
+        ]
+      ]
+    },
+    {
+      "country_display": "Peru",
+      "total_exposure_usd_m": 7993.2,
+      "n_sectors": 1,
+      "top2_count": 0,
+      "sectors": [
+        [
+          "71",
+          "Pearls, gems & jewellery",
+          7993.21,
+          7.3,
+          4
+        ]
+      ]
+    },
+    {
+      "country_display": "Kuwait",
+      "total_exposure_usd_m": 6846.7,
+      "n_sectors": 2,
+      "top2_count": 0,
+      "sectors": [
+        [
+          "27",
+          "Mineral fuels & oils",
+          6555.77,
+          3.2,
+          8
+        ],
+        [
+          "88",
+          "Aircraft & spacecraft",
+          290.95,
+          2.1,
+          8
+        ]
+      ]
+    },
+    {
+      "country_display": "Ghana",
+      "total_exposure_usd_m": 6026.4,
+      "n_sectors": 1,
+      "top2_count": 0,
+      "sectors": [
+        [
+          "71",
+          "Pearls, gems & jewellery",
+          6026.43,
+          5.5,
+          6
+        ]
+      ]
+    },
+    {
+      "country_display": "Vietnam",
+      "total_exposure_usd_m": 5764.5,
+      "n_sectors": 2,
+      "top2_count": 0,
+      "sectors": [
+        [
+          "85",
+          "Electrical machinery",
+          4885.8,
+          4.7,
+          7
+        ],
+        [
+          "72",
+          "Iron & steel",
+          878.68,
+          5.6,
+          5
+        ]
+      ]
+    },
+    {
+      "country_display": "United Kingdom",
+      "total_exposure_usd_m": 5469.7,
+      "n_sectors": 1,
+      "top2_count": 0,
+      "sectors": [
+        [
+          "71",
+          "Pearls, gems & jewellery",
+          5469.68,
+          5.0,
+          7
+        ]
+      ]
+    }
+  ],
+  "pli_scheme_detail": {
+    "white_goods": {
+      "launched": "FY2021-22 through FY2028-29",
+      "companies_selected": 85,
+      "committed_investment_rs_cr": 11198,
+      "cumulative_production_target_rs_cr": 190050,
+      "incentive_rate_pct": "4-6% on incremental sales",
+      "targeted_inputs": [
+        "compressors (HS84)",
+        "copper tubes",
+        "aluminium foils",
+        "PCB assemblies",
+        "BLDC motors",
+        "service valves",
+        "cross-flow fans"
+      ],
+      "hs_chapter_note": "AC compressors are classified under HS84 (machinery), not HS85 -- one of the few concrete levers touching the machinery chapter."
+    },
+    "specialty_steel": {
+      "pli_1_0_1_1_committed_rs_cr": 44106,
+      "pli_1_2_launched": "November 2025",
+      "pli_1_2_mou_signed": "9 February 2026",
+      "pli_1_2_committed_rs_cr": 11887,
+      "pli_1_2_projects": 85,
+      "pli_1_2_companies": 55,
+      "pli_1_2_new_capacity_mt": 8.7,
+      "production_target_mt_by_fy2026_27": 42,
+      "product_categories": [
+        "Steel Grades for Strategic Sector",
+        "Commercial Grades Category 1",
+        "Commercial Grades Category 2",
+        "Coated & Wire Products"
+      ]
+    }
+  }
+}

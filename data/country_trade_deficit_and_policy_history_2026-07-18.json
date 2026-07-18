@@ -1,0 +1,320 @@
+{
+  "purpose": "Ranks India's FY2025-26 bilateral trade balance by partner country to identify where India's forex outflow is concentrated, then traces multi-year (not 6-month) policy history behind the five biggest deficit relationships.",
+  "source": "Commerce Ministry Trade Intelligence & Analytics Portal (trade-analytics.commerce.gov.in), country-wise export and import panels, Financial Year 2025-26 selection",
+  "coverage_note": "38 of ~217 trading partners -- the subset where both an export and import figure had already been captured in this repo's earlier TIA portal session work. Top 15 deficit and top 8 surplus countries are all covered.",
+  "retrieved": "2026-07-18",
+  "country_balances": [
+    {
+      "code": "CN",
+      "name": "China",
+      "export": 19471.1,
+      "import": 131633.4,
+      "balance": -112162.29999999999
+    },
+    {
+      "code": "RU",
+      "name": "Russia",
+      "export": 4493.5,
+      "import": 55369.6,
+      "balance": -50876.1
+    },
+    {
+      "code": "AE",
+      "name": "UAE",
+      "export": 37359.1,
+      "import": 63894.5,
+      "balance": -26535.4
+    },
+    {
+      "code": "CH",
+      "name": "Switzerland",
+      "export": 1213.4,
+      "import": 24275.1,
+      "balance": -23061.699999999997
+    },
+    {
+      "code": "IQ",
+      "name": "Iraq",
+      "export": 2958.2,
+      "import": 24558.5,
+      "balance": -21600.3
+    },
+    {
+      "code": "SA",
+      "name": "Saudi Arabia",
+      "export": 10281.1,
+      "import": 30790.3,
+      "balance": -20509.199999999997
+    },
+    {
+      "code": "ID",
+      "name": "Indonesia",
+      "export": 4491.4,
+      "import": 20292.3,
+      "balance": -15800.9
+    },
+    {
+      "code": "JP",
+      "name": "Japan",
+      "export": 6039.5,
+      "import": 21436.9,
+      "balance": -15397.400000000001
+    },
+    {
+      "code": "KR",
+      "name": "South Korea",
+      "export": 6012.0,
+      "import": 21354.7,
+      "balance": -15342.7
+    },
+    {
+      "code": "SG",
+      "name": "Singapore",
+      "export": 11863.7,
+      "import": 24240.6,
+      "balance": -12376.899999999998
+    },
+    {
+      "code": "TH",
+      "name": "Thailand",
+      "export": 5058.6,
+      "import": 16427.0,
+      "balance": -11368.4
+    },
+    {
+      "code": "QA",
+      "name": "Qatar",
+      "export": 1620.3,
+      "import": 12292.6,
+      "balance": -10672.300000000001
+    },
+    {
+      "code": "DE",
+      "name": "Germany",
+      "export": 11526.0,
+      "import": 19507.6,
+      "balance": -7981.5999999999985
+    },
+    {
+      "code": "MY",
+      "name": "Malaysia",
+      "export": 6825.6,
+      "import": 14177.0,
+      "balance": -7351.4
+    },
+    {
+      "code": "TW",
+      "name": "Taiwan",
+      "export": 1948.8,
+      "import": 8880.9,
+      "balance": -6932.099999999999
+    },
+    {
+      "code": "AU",
+      "name": "Australia",
+      "export": 7284.2,
+      "import": 13811.4,
+      "balance": -6527.2
+    },
+    {
+      "code": "KW",
+      "name": "Kuwait",
+      "export": 1651.7,
+      "import": 7917.4,
+      "balance": -6265.7
+    },
+    {
+      "code": "GH",
+      "name": "Ghana",
+      "export": 1292.1,
+      "import": 6680.1,
+      "balance": -5388.0
+    },
+    {
+      "code": "VN",
+      "name": "Vietnam",
+      "export": 6665.9,
+      "import": 11615.2,
+      "balance": -4949.300000000001
+    },
+    {
+      "code": "AR",
+      "name": "Argentina",
+      "export": 1013.1,
+      "import": 4955.0,
+      "balance": -3941.9
+    },
+    {
+      "code": "OM",
+      "name": "Oman",
+      "export": 4021.5,
+      "import": 7166.4,
+      "balance": -3144.8999999999996
+    },
+    {
+      "code": "NG",
+      "name": "Nigeria",
+      "export": 3132.3,
+      "import": 5895.8,
+      "balance": -2763.5
+    },
+    {
+      "code": "FR",
+      "name": "France",
+      "export": 7102.5,
+      "import": 8713.9,
+      "balance": -1611.3999999999996
+    },
+    {
+      "code": "BR",
+      "name": "Brazil",
+      "export": 7022.1,
+      "import": 8050.6,
+      "balance": -1028.5
+    },
+    {
+      "code": "MZ",
+      "name": "Mozambique",
+      "export": 1496.2,
+      "import": 2289.5,
+      "balance": -793.3
+    },
+    {
+      "code": "BE",
+      "name": "Belgium",
+      "export": 6598.6,
+      "import": 6410.8,
+      "balance": 187.80000000000018
+    },
+    {
+      "code": "PH",
+      "name": "Philippines",
+      "export": 2332.3,
+      "import": 1568.4,
+      "balance": 763.9000000000001
+    },
+    {
+      "code": "IT",
+      "name": "Italy",
+      "export": 7790.2,
+      "import": 6674.1,
+      "balance": 1116.0999999999995
+    },
+    {
+      "code": "EG",
+      "name": "Egypt",
+      "export": 3932.1,
+      "import": 2603.2,
+      "balance": 1328.9
+    },
+    {
+      "code": "CA",
+      "name": "Canada",
+      "export": 4671.1,
+      "import": 3285.3,
+      "balance": 1385.8000000000002
+    },
+    {
+      "code": "PL",
+      "name": "Poland",
+      "export": 2796.3,
+      "import": 1252.7,
+      "balance": 1543.6000000000001
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom",
+      "export": 13444.2,
+      "import": 11682.4,
+      "balance": 1761.800000000001
+    },
+    {
+      "code": "TZ",
+      "name": "Tanzania",
+      "export": 5420.1,
+      "import": 3602.6,
+      "balance": 1817.5000000000005
+    },
+    {
+      "code": "MX",
+      "name": "Mexico",
+      "export": 5727.1,
+      "import": 2106.2,
+      "balance": 3620.9000000000005
+    },
+    {
+      "code": "ES",
+      "name": "Spain",
+      "export": 6961.2,
+      "import": 2234.2,
+      "balance": 4727.0
+    },
+    {
+      "code": "BD",
+      "name": "Bangladesh",
+      "export": 10587.4,
+      "import": 1780.3,
+      "balance": 8807.1
+    },
+    {
+      "code": "NL",
+      "name": "Netherlands",
+      "export": 17500.7,
+      "import": 5786.3,
+      "balance": 11714.400000000001
+    },
+    {
+      "code": "US",
+      "name": "United States",
+      "export": 87316.0,
+      "import": 53488.7,
+      "balance": 33827.3
+    }
+  ],
+  "policy_history": {
+    "china_electronics": {
+      "pli_launched": "March 2020 (mobile manufacturing, pharma, medical devices)",
+      "atmanirbhar_bharat_launched": "May 2020, Rs 20 lakh crore package",
+      "pli_expanded_to_14_sectors": "August 2023, Rs 1.97 lakh crore outlay",
+      "china_share_of_electronic_component_imports_pct": 62,
+      "assessment": "Independent reporting six years into Atmanirbhar Bharat states it has not reduced structural import dependence; China remains India's largest single bilateral deficit."
+    },
+    "russia_crude_oil": {
+      "pre_2022_share_of_crude_imports_pct": 2.5,
+      "fy2022_23_share_pct": 21.6,
+      "fy2023_24_share_pct": 35.9,
+      "fy2024_25_share_pct": 35.8,
+      "discount_per_barrel_usd": "25-30 below Brent through much of 2022-23",
+      "estimated_savings_first_year_usd_bn": 5,
+      "payment_mechanism": "Indian refiners (IOCL, BPCL, HPCL) settle nearly all Russian oil purchases in UAE dirhams via Emirati traders",
+      "note": "Market-driven reorientation, not a Cabinet-approved scheme -- the fastest-moving driver of India's country-deficit ranking."
+    },
+    "uae_switzerland_gold_gems": {
+      "policy": "Foreign Trade Policy Chapter 4: duty-free import of cut & polished diamonds (up to 5% of FOB export value) and gold/silver/platinum jewellery inputs, for manufacture of exportable products; reinforced by RoDTEP export-duty remission.",
+      "note": "Deliberately open, not an import-substitution target -- the flows fund the re-export trade."
+    },
+    "indonesia_malaysia_palm_oil": {
+      "nmeo_op_launched": "August 2021, Rs 11,040 crore outlay (Rs 8,844cr central + Rs 2,196cr state share)",
+      "nmeo_op_target": "11.2 lakh tonnes crude palm oil production by 2025-26, across 15 states, 21.75 lakh hectares potential area",
+      "nmeo_oilseeds_launched": "2024, Rs 10,103 crore outlay through 2030-31",
+      "current_import_dependence_pct": 57,
+      "forex_impact_usd_bn_per_year": 20.56,
+      "assessment": "More than 4 years of continuous, funded policy attention; import dependence has not meaningfully declined."
+    },
+    "gulf_crude_iraq_saudi_qatar": {
+      "note": "Traditional, steady crude/LNG suppliers; together with Russia, make energy imports the largest structural component of India's country-level deficit list."
+    }
+  },
+  "niryat_portal_note": {
+    "url": "https://www.niryat.gov.in/india",
+    "access_status": "Blocked -- both the Browser tool and a direct HTTPS/curl request failed at the TLS handshake stage, consistent with prior experience on other DGFT-family domains.",
+    "reconstructed_features_from_public_sources": [
+      "World Map view, Commodity view, and Table view",
+      "Color-coded (traffic-light style) tracking of each commodity/country pair against defined targets",
+      "District-level geospatial drill-down for state export hubs",
+      "Automated insights",
+      "Real-time data across 30+ commodity groups and 200+ countries"
+    ],
+    "design_takeaway": "The target-vs-actual traffic-light framing is a good pattern this bulletin's timeline section could adopt in a future iteration; the diverging bar chart used here ranks magnitude but doesn't score each relationship against an explicit government target the way NIRYAT does."
+  }
+}

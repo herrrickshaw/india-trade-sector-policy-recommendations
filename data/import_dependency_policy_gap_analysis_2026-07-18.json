@@ -1,0 +1,120 @@
+{
+  "purpose": "Cross-references this repo's own HS-chapter import rankings (value and growth, FY2018-19 to FY2025-26) against a six-month roundup of PIB-reported government schemes and incentives (January-July 2026), to test whether import-dependent sectors are getting matching policy attention.",
+  "import_data_source": "data/hsn_historical_trends_2018-19_to_2025-26.json (this repo, TRADESTAT/DGCI&S)",
+  "scheme_window_source": "Compiled PIB roundup, January-July 2026 (Budget 2026-27, Cabinet Decisions Feb-Jun 2026, PLI/ISM 2.0 scorecards, MSME/rural/trade announcements) -- not an exhaustive inventory of all Indian government schemes, only what appeared in that specific research pass.",
+  "retrieved": "2026-07-18",
+  "coverage_definitions": {
+    "strong": "A scheme sized to the chapter's scale appeared in the six-month window",
+    "partial": "Only adjacent or general-purpose schemes found",
+    "gap": "No matching scheme found in the six-month window (may still exist outside it -- see notes)",
+    "na": "Not an import-substitution candidate (e.g. process-trade sector)"
+  },
+  "matrix": [
+    {
+      "hs": "27",
+      "name": "Mineral fuels & oils",
+      "value": "$203.4bn (26.2%)",
+      "growth": "+21.2%",
+      "coverage": "partial",
+      "note": "Coal/lignite gasification scheme, CCUS funding, and battery/solar PLI are all real but none is a crude-oil-substitution policy sized to the largest single import chapter."
+    },
+    {
+      "hs": "71",
+      "name": "Pearls, gems & jewellery",
+      "value": "$109.4bn",
+      "growth": "+69.1%",
+      "coverage": "na",
+      "note": "Process-trade sector (import rough stones/gold, re-export cut & polished) -- trade facilitation is the relevant lever, not import substitution."
+    },
+    {
+      "hs": "85",
+      "name": "Electrical machinery",
+      "value": "$104.9bn",
+      "growth": "+101.5%",
+      "coverage": "strong",
+      "note": "Semiconductor Mission 2.0 (Rs 76,000cr, 10 projects) plus the bulk of 836 PLI applications (electronics, mobile, telecom, IT hardware, white goods) sit directly on this chapter."
+    },
+    {
+      "hs": "84",
+      "name": "Machinery, mechanical appliances",
+      "value": "$74.0bn",
+      "growth": "+68.8%",
+      "coverage": "partial",
+      "note": "Plug-and-Play Industrial Development scheme and legacy cluster revival help general manufacturing infra, but no capital-goods-specific incentive."
+    },
+    {
+      "hs": "29",
+      "name": "Organic chemicals",
+      "value": "$25.4bn",
+      "growth": "+13.5%",
+      "coverage": "partial",
+      "note": "Biopharma Shakti and the PLI bulk-drugs/API track cover the pharma-intermediate subset, not broad petrochemical imports."
+    },
+    {
+      "hs": "39",
+      "name": "Plastics",
+      "value": "$22.2bn",
+      "growth": "+45.8%",
+      "coverage": "gap",
+      "note": "No scheme identified in the six-month window, adjacent or otherwise."
+    },
+    {
+      "hs": "15",
+      "name": "Animal/veg fats & oils",
+      "value": "$19.8bn",
+      "growth": "+97.9%",
+      "coverage": "gap",
+      "note": "NMEO-Oilseeds (Rs 10,103cr, Cabinet-approved, targets 72% self-sufficiency by 2030-31) is real but did not surface in the six-month recap -- a visibility gap, not a scheme gap."
+    },
+    {
+      "hs": "72",
+      "name": "Iron & steel",
+      "value": "$15.8bn",
+      "growth": "+25.2%",
+      "coverage": "partial",
+      "note": "Specialty Steel PLI 1.2 (85 MoUs, Rs 11,887cr, signed early 2026) is real but also absent from the six-month recap."
+    },
+    {
+      "hs": "90",
+      "name": "Optical/medical instruments",
+      "value": "$15.4bn",
+      "growth": "+59.6%",
+      "coverage": "partial",
+      "note": "PLI medical devices exists among the 14 sectors; Regional Medical Hubs address inbound medical tourism, not domestic device manufacturing."
+    },
+    {
+      "hs": "31",
+      "name": "Fertilisers",
+      "value": "$14.6bn",
+      "growth": "+118.9% (fastest)",
+      "coverage": "gap",
+      "note": "Only demand-side subsidy rate-setting in the window -- but NIPU-2026 (urea capacity, Cabinet-approved 15 Jul 2026) landed 3 days before this analysis. DAP remains supply-diversification, not substitution (86% rock-phosphate import dependence)."
+    },
+    {
+      "hs": "28",
+      "name": "Inorganic chemicals",
+      "value": "$14.2bn",
+      "growth": "+86.0%",
+      "coverage": "gap",
+      "note": "No dedicated scheme identified; partially adjacent to phosphoric/sulphuric acid capacity under the fertiliser subsidy scheme."
+    },
+    {
+      "hs": "88",
+      "name": "Aircraft & spacecraft",
+      "value": "$13.8bn",
+      "growth": "+80.9%",
+      "coverage": "gap",
+      "note": "Seaplane VGF and Madurai's international-airport designation are aviation-market infrastructure, not aircraft-manufacturing incentives."
+    }
+  ],
+  "supplementary_verification_2026_07_18": {
+    "fertilisers_urea": "National Investment Policy for Urea-2026 (NIPU-2026), approved by the Cabinet Committee on Economic Affairs 15 Jul 2026. Targets 8-9 new urea plants adding ~1 crore tonnes of capacity. Current domestic production ~30 million tonnes vs demand ~40 million tonnes; ~10 million tonne gap met by imports. Policy replaces the 2012 New Investment Policy; introduces a 12-16% return-on-equity band and rupee-denominated cost conversion after 4 years to reduce forex risk.",
+    "fertilisers_dap": "Only ~40% of India's DAP is produced domestically. India imports ~86% of the rock phosphate its fertiliser industry needs (no meaningful domestic reserves) -- a geological constraint, not solvable by substitution. Government response is supply diversification: 5-year agreement securing 3.1 million tonnes/year of DAP from Saudi Arabia's Ma'aden (from FY2025-26), a 2.5 million tonne deal with Morocco for the 2025-26 season, plus ~59.65 lakh tonnes of new domestic DAP/NPK capacity and ~44.21 lakh tonnes of phosphoric/sulphuric acid capacity under the Nutrient-Based Subsidy scheme.",
+    "edible_oils": "National Mission on Edible Oils - Oilseeds (NMEO-Oilseeds), Cabinet-approved, Rs 10,103 crore outlay, 2024-25 to 2030-31. Targets raising primary oilseed production from 39 million tonnes (2022-23) to 69.7 million tonnes by 2030-31, and domestic edible oil production (combined with the separate NMEO-Oil Palm scheme) to 25.45 million tonnes by 2030-31 -- about 72% of projected demand. Did not appear in the six-month PIB recap.",
+    "pli_scheme_sectors_confirmed": "14 sectors: mobile manufacturing, electronics/IT hardware, telecom & networking, pharmaceuticals (bulk drugs/APIs), medical devices, textiles (MMF), food products, white goods (ACs/LEDs), specialty steel, automobiles & auto components, advanced chemistry cell (ACC) batteries, solar PV modules, drones. As of 31 Dec 2025: 836 approved applications, Rs 2.16 lakh crore cumulative investment, Rs 28,748 crore disbursed, 14.39 lakh jobs."
+  },
+  "cross_references_in_this_repo": [
+    "data/hsn_historical_trends_2018-19_to_2025-26.json (import value/growth rankings)",
+    "data/fertiliser_fuel_price_transmission_2012_to_2026.json (CPI oils & fats volatility, WPI fertiliser sub-indices, subsidy insulation of urea vs DAP)"
+  ]
+}

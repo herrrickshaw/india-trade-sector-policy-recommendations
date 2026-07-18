@@ -1,0 +1,247 @@
+<title>Sector &amp; Policy Recommendations — India's Trade Strategy</title>
+<meta name="hz:canvas-width" content="1180">
+<style>
+  :root {
+    color-scheme: light;
+    --page-bg:      #eef1ea;
+    --surface:      #fcfcfa;
+    --ink:          #14180f;
+    --ink-2:        #4f5348;
+    --ink-muted:    #82867a;
+    --rule:         #d7dace;
+    --rule-strong:  #c3c7b8;
+    --accent:       #1f5f5b;
+    --accent-soft:  #dbe9e6;
+    --alert:        #a5402c;
+    --alert-soft:   #f3ded7;
+    --warn:         #c98a1f;
+    --warn-soft:    #f3e9d5;
+    --mismatch:     #7a5aa8;
+    --mismatch-soft:#e7defa;
+    --risk:         #b3452f;
+    --risk-soft:    #f3ddd6;
+    --data-line:    #2a78d6;
+    --chart-surface:#fcfcfb;
+    --chart-grid:   #e1e0d9;
+    --chart-axis:   #c3c2b7;
+    --font-display: "Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    --font-body: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --font-mono: "IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+      --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634; --alert:#e0785f; --alert-soft:#3a241d;
+      --warn:#e0b23f; --warn-soft:#3a3220; --mismatch:#b39ce0; --mismatch-soft:#2e2540;
+      --risk:#e0785f; --risk-soft:#3a241d; --data-line:#3987e5;
+      --chart-surface:#1a1a19; --chart-grid:#2c2c2a; --chart-axis:#383835;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+    --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634; --alert:#e0785f; --alert-soft:#3a241d;
+    --warn:#e0b23f; --warn-soft:#3a3220; --mismatch:#b39ce0; --mismatch-soft:#2e2540;
+    --risk:#e0785f; --risk-soft:#3a241d; --data-line:#3987e5;
+    --chart-surface:#1a1a19; --chart-grid:#2c2c2a; --chart-axis:#383835;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6; --alert:#a5402c; --alert-soft:#f3ded7;
+    --warn:#c98a1f; --warn-soft:#f3e9d5; --mismatch:#7a5aa8; --mismatch-soft:#e7defa;
+    --risk:#b3452f; --risk-soft:#f3ddd6; --data-line:#2a78d6;
+    --chart-surface:#fcfcfb; --chart-grid:#e1e0d9; --chart-axis:#c3c2b7;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  .bulletin { background: var(--page-bg); color: var(--ink); font-family: var(--font-body); padding: 40px 20px 56px; display: flex; justify-content: center; }
+  .sheet { width: 100%; max-width: 1120px; display: flex; flex-direction: column; gap: 32px; }
+
+  .masthead { border-bottom: 2px solid var(--ink); padding-bottom: 16px; display: flex; flex-direction: column; gap: 6px; }
+  .eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); display: flex; gap: 10px; align-items: center; }
+  .eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); display: inline-block; }
+  h1 { font-family: var(--font-display); font-weight: 500; font-size: clamp(24px, 3.2vw, 33px); margin: 2px 0 0; text-wrap: balance; letter-spacing: -0.01em; }
+  .dek { font-size: 14px; color: var(--ink-2); max-width: 82ch; line-height: 1.55; margin: 4px 0 0; }
+  .source-line { font-family: var(--font-mono); font-size: 11px; color: var(--ink-muted); margin-top: 6px; }
+
+  .stat-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+  .stat-tile { background: var(--surface); padding: 16px 18px; display: flex; flex-direction: column; gap: 6px; }
+  .stat-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-muted); }
+  .stat-value { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 24px; font-weight: 600; letter-spacing: -0.02em; }
+  .stat-sub { font-size: 12.5px; color: var(--ink-2); }
+  .stat-sub b { color: var(--ink); }
+
+  section.block { display: flex; flex-direction: column; gap: 14px; }
+  .block-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid var(--rule-strong); padding-bottom: 8px; }
+  .block-title { font-family: var(--font-display); font-size: 21px; margin: 0; }
+  .block-note { font-size: 12.5px; color: var(--ink-muted); max-width: 50ch; text-align: right; }
+
+  .tier-grid { display: flex; flex-direction: column; gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+  .tier-row { background: var(--surface); padding: 14px 18px; display: grid; grid-template-columns: 130px 1fr; gap: 16px; }
+  .tier-label { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; padding-top: 2px; height: fit-content; }
+  .tier-label.p1 { color: var(--alert); }
+  .tier-label.p2 { color: var(--warn); }
+  .tier-label.p3 { color: var(--ink-muted); }
+  .tier-body { display: flex; flex-direction: column; gap: 4px; }
+  .tier-head { font-size: 14px; font-weight: 600; }
+  .tier-text { font-size: 13px; line-height: 1.55; color: var(--ink-2); }
+  .tier-text b { color: var(--ink); }
+
+  .prose { display: flex; flex-direction: column; gap: 12px; font-size: 14.5px; line-height: 1.65; color: var(--ink-2); max-width: 88ch; }
+  .prose p { margin: 0; }
+  .prose b { color: var(--ink); }
+
+  .verdict {
+    border: 1px solid var(--rule-strong); border-left: 3px solid var(--risk); background: var(--risk-soft);
+    padding: 18px 22px; display: flex; flex-direction: column; gap: 6px;
+  }
+  .verdict-label { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--risk); }
+  .verdict-answer { font-family: var(--font-display); font-size: 20px; }
+  .verdict-sub { font-size: 13px; color: var(--ink-2); line-height: 1.5; }
+
+  .methodology {
+    border: 1px solid var(--rule-strong); border-left: 3px solid var(--mismatch); background: var(--mismatch-soft);
+    padding: 16px 20px; font-size: 13px; color: var(--ink-2); line-height: 1.55;
+  }
+  .methodology b { color: var(--ink); }
+
+  table.data-table { border-collapse: collapse; width: 100%; font-family: var(--font-mono); font-size: 11px; }
+  table.data-table th, table.data-table td { padding: 6px 10px; text-align: right; border-bottom: 1px solid var(--rule); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  table.data-table th:first-child, table.data-table td:first-child { text-align: left; }
+  table.data-table thead th { color: var(--ink-muted); font-weight: 500; text-transform: uppercase; font-size: 10px; letter-spacing: 0.04em; }
+  .data-table-wrap { overflow-x: auto; border: 1px solid var(--rule-strong); background: var(--surface); }
+  .data-table-wrap table { margin: 0; }
+
+  .errata {
+    border: 1px solid var(--rule-strong); border-left: 3px solid var(--alert); background: var(--surface);
+    padding: 16px 20px; display: flex; flex-direction: column; gap: 10px;
+  }
+  .errata-title { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--alert); }
+  .errata ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+  .errata li { font-size: 13px; line-height: 1.5; color: var(--ink-2); }
+  .errata li b { color: var(--ink); }
+
+  footer.colophon { text-align: center; font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-muted); padding-top: 8px; }
+</style>
+
+<div class="bulletin">
+  <div class="sheet">
+    <div class="masthead">
+      <div class="eyebrow">India Trade — Sector &amp; Policy Recommendations</div>
+      <h1>Where India should prioritize import substitution, export growth, and trade relationships</h1>
+      <p class="dek">The prescriptive companion to the data-analysis repo: turns the import/export chapter rankings, country-concentration findings, and PLI-coverage checks already built there into an explicit, tiered set of sector and policy recommendations — cross-checked against NITI Aayog's own Trade Watch Quarterly framework for what a rigorous version of this analysis should also cover.</p>
+      <div class="source-line">SOURCES: this repo's own TRADESTAT-derived sector/country/PLI datasets; NITI Aayog Trade Watch Quarterly (Q1 FY2024-25 edition, via user-supplied PDF) and its 8th edition summary (PIB PRID=2277232, 23 Jun 2026); DGCI&amp;S Monthly Bulletin on Foreign Trade Statistics (Mar 2024) and TIA Portal user manual, both user-supplied, for methodology/taxonomy validation. Compiled 2026-07-18.</div>
+    </div>
+
+    <div class="stat-strip">
+      <div class="stat-tile"><div class="stat-label">Import-growth chapters, no PLI</div><div class="stat-value">7 of 12</div><div class="stat-sub">Genuine substitution candidates: HS28, HS39, HS88 (see Tier 1)</div></div>
+      <div class="stat-tile"><div class="stat-label">Export chapters, PLI mismatch</div><div class="stat-value">2 of 12</div><div class="stat-sub">HS61/62 — scheme targets MMF, not the cotton apparel exporting</div></div>
+      <div class="stat-tile"><div class="stat-label">Export chapter in structural decline</div><div class="stat-value">-29.9%</div><div class="stat-sub">HS71 gems &amp; jewellery, 8-year trend — matches NITI Aayog's flagged pattern</div></div>
+      <div class="stat-tile"><div class="stat-label">CBAM-exposed export value</div><div class="stat-value">$20.7bn</div><div class="stat-sub">HS72+HS73 combined — a demand-side risk PLI doesn't address</div></div>
+    </div>
+
+    <section class="block">
+      <div class="block-head">
+        <h2 class="block-title">Import substitution — priority tiers</h2>
+        <p class="block-note">Ranked by growth momentum among chapters with no PLI coverage.</p>
+      </div>
+      <div class="tier-grid" id="importTiers"></div>
+    </section>
+
+    <section class="block">
+      <div class="block-head">
+        <h2 class="block-title">Export growth — priority tiers</h2>
+        <p class="block-note">Where to double down, where to fix scheme mismatches, where a gap is a real opportunity.</p>
+      </div>
+      <div class="tier-grid" id="exportTiers"></div>
+    </section>
+
+    <section class="block">
+      <div class="block-head">
+        <h2 class="block-title">Country trade-relationship priorities</h2>
+      </div>
+      <div class="tier-grid" id="countryTiers"></div>
+    </section>
+
+    <div class="verdict">
+      <div class="verdict-label">A genuine forward risk this repo hadn't flagged before</div>
+      <div class="verdict-answer">The EU's Carbon Border Adjustment Mechanism (CBAM) puts $20.7bn of India's steel exports at risk — and Specialty Steel PLI, which scales production, doesn't address it.</div>
+      <div class="verdict-sub">NITI Aayog's Trade Watch Quarterly dedicates an entire section to CBAM risk because it targets exactly the emissions-intensive sectors — iron/steel, aluminium, cement, fertilizer, hydrogen, electricity — where India already has strong export chapters. HS72 (iron &amp; steel, $10.3bn export) and HS73 (iron/steel articles, $10.4bn export) sit squarely in CBAM's initial scope. This repo's own PLI analysis found Specialty Steel PLI (₹44,106cr + ₹11,887cr) as one of the best-matched schemes on either side of the ledger — but CBAM is a market-access/carbon-cost risk on the demand side, not a production-capacity gap PLI was designed to close. Decarbonizing production (not just scaling it) is the actual policy lever this risk calls for.</div>
+    </div>
+
+    <section class="block prose">
+      <h2 class="block-title" style="border:none; padding:0;">What this analysis doesn't do (and NITI Aayog's does)</h2>
+      <p>NITI Aayog's Trade Watch computes a <b>Revealed Comparative Advantage (RCA)</b> score per commodity — 43 commodities clear RCA&gt;1, representing 40% of global imports and 68.2% of India's export portfolio — and a <b>Trade Intensity Index (TII)</b> per partner country (&gt;1 with 84 countries, 67% of India's exports). Both distinguish "big export chapter" from "chapter where India has genuine competitive advantage," and "large trading partner" from "structurally over-concentrated partner." This repo's own country-priority rankings (China $102.4bn/8 sectors on imports, USA $63.9bn/11 sectors on exports) are directionally the same kind of finding, but computed from this repo's own TRADESTAT pulls rather than the global commodity-share/GDP-weighted data RCA and TII require (UN Comtrade / WTO trade-share series this repo hasn't collected). Flagging this explicitly rather than presenting a home-grown ranking as equivalent rigor.</p>
+      <p>NITI Aayog also flags that several <b>labour-intensive export sectors have lost global market share since 2015</b> — natural/cultured pearls, lac/gums/resins, man-made filaments, leather articles. This repo's own 8-year HSN data independently shows <b>HS71 (gems &amp; jewellery) exports down -29.9%</b> — the same chapter, the same direction, found independently through a completely different method (TRADESTAT chapter trend vs. NITI Aayog's market-share analysis). That agreement is a reason to take the decline seriously rather than treat the -29.9% as a one-year blip.</p>
+    </section>
+
+    <details class="table-view" style="border-top:1px solid var(--rule-strong); padding-top:10px;">
+      <summary style="cursor:pointer; font-size:12.5px; color:var(--ink-2); font-family:var(--font-mono);">View the official 13-sector HS taxonomy (TIA Portal, Annexure 1) this repo's chapter groupings are checked against</summary>
+      <div class="data-table-wrap" style="margin-top:12px;"><table class="data-table" id="taxonomyTable"></table></div>
+    </details>
+
+    <div class="errata">
+      <div class="errata-title">Errata &amp; methodology notes</div>
+      <ul>
+        <li><b>This is a recommendations/synthesis document, not a new data collection</b> — every ranking here is re-derived from this repo's own sector_country_priority_and_pli_coverage and export_destination_priority_and_pli_coverage datasets.</li>
+        <li><b>No RCA or TII is computed here</b> (see "What this analysis doesn't do" above) — this repo's country/sector rankings are dollar-value and PLI-coverage based, not comparative-advantage or GDP-weighted intensity based. Don't treat them as interchangeable with NITI Aayog's own RCA/TII figures.</li>
+        <li><b>The user-supplied Trade-Watch.pdf is the Q1 FY2024-25 edition</b> (April-June 2024), not the 8th edition (Q4 FY2025-26) referenced in the PIB press release checked for this analysis — figures from the PDF are one to two years older than this repo's own FY2025-26 claims and were used for structure/methodology, not exact-figure validation.</li>
+        <li><b>Fertilisers (HS31) moved from "Tier 1 gap" to "addressed" mid-analysis</b>: the National Investment Policy for Urea-2026 was approved 15 July 2026 — three days before this repo's import-dependency bulletin was first written. Kept here as a worked example of how fast this kind of gap can close once flagged.</li>
+        <li>Underlying data: <a href="../data/sector_and_policy_recommendations_2026-07-18.json">data/sector_and_policy_recommendations_2026-07-18.json</a>.</li>
+      </ul>
+    </div>
+
+    <footer class="colophon">herrrickshaw/india-trade-sector-policy-recommendations — derived analysis; not an official government policy document</footer>
+  </div>
+</div>
+
+<script>
+(function () {
+  var importTiers = [
+    { tier: "p1", label: "Tier 1 — Act now", head: "Inorganic chemicals (HS28), Plastics (HS39), Aircraft &amp; spacecraft (HS88)", text: "$14.2bn / $22.2bn / $13.8bn FY2025-26, growing +86.0% / +45.8% / +80.9% over 8 years — <b>no PLI or comparable scheme covers any of the three.</b> These are the cleanest import-substitution candidates in the whole ranking: real growth, real value, genuinely no policy lever in place." },
+    { tier: "p2", label: "Tier 2 — Scale existing", head: "Animal/veg fats &amp; oils (HS15), Fertilisers (HS31)", text: "Edible oils (+97.9% growth) already has NMEO-Oilseeds (₹10,103cr) but India remains ~57% import-dependent — the scheme needs scaling, not creating. Fertilisers (+118.9%, the fastest-growing chapter here) just got the National Investment Policy for Urea-2026 (approved 15 Jul 2026) — track implementation rather than treat as an open gap." },
+    { tier: "p3", label: "Tier 3 — Different lever needed", head: "Mineral fuels (HS27), Gems &amp; jewellery (HS71)", text: "The two largest import chapters by value ($203.4bn, $109.4bn) aren't PLI-shaped problems. Mineral fuels needs energy-transition policy (EVs, domestic E&amp;P, biofuels), not a production incentive. Gems/jewellery imports are largely the intentional duty-free-for-re-export channel (FTP Chapter 4) that funds India's own gems export industry — treating it as a substitution gap would work against the export side of the same trade." }
+  ];
+  var exportTiers = [
+    { tier: "p1", label: "Tier 1 — Fix the mismatch", head: "Apparel, knitted &amp; not-knitted (HS61/HS62)", text: "$15.8bn combined, USA/UK/UAE-led — PLI Textiles (₹10,683cr) exists but was built for MMF/technical textiles, not the cotton-based apparel actually exporting here. Recommendation: either broaden PLI Textiles' scope or create a parallel, cotton-apparel-specific incentive rather than leaving this volume uncovered." },
+    { tier: "p2", label: "Tier 2 — Double down, diversify buyers", head: "Electrical machinery (HS85, +324.1%), Vehicles (HS87, +43.5%), Iron/steel (HS72/73)", text: "Already strong PLI coverage and fast growth — the remaining work is reducing USA over-concentration (11 of 12 growth chapters, #1/#2 in 9) by deepening secondary markets (UAE already #2; consider EU/ASEAN expansion) so a single-market policy shift doesn't disproportionately hit these chapters." },
+    { tier: "p3", label: "Tier 3 — Open opportunity, no scheme", head: "Cereals (HS10, +47.1%)", text: "No PLI or comparable scheme — an agricultural export chapter growing fast with no matching promotion effort. Different policy toolkit than manufacturing PLI (export infrastructure, phytosanitary certification capacity, trade-agreement market access), but currently the least-supported fast-growing export chapter in this ranking." }
+  ];
+  var countryTiers = [
+    { tier: "p1", label: "De-risk", head: "China — $102.4bn import exposure across 8 of 12 growth chapters", text: "Largest, broadest, and deepest import dependency in the ranking. PLI Electronics/ISM 2.0 coverage is already strong here — this is an execution and scaling problem (still ~62% electronic-component dependency six years into PLI), not a missing-policy problem." },
+    { tier: "p2", label: "Diversify", head: "USA — $63.9bn export exposure across 11 of 12 growth chapters", text: "The mirror risk on the export side: more concentrated by both breadth and depth than China's import-side dominance. Recommendation: treat UAE, EU, and ASEAN as deliberate diversification targets for the chapters currently over-indexed to the US market, not just organic growth destinations." },
+    { tier: "p3", label: "Monitor, don't treat as a policy gap", head: "Russia (oil-price-driven), UAE &amp; Switzerland (gold/gems re-export)", text: "Russia's rise (2.5% to ~36% of crude imports in four years) is market economics plus a sanctions-workaround payment structure, not a substitutable dependency — worth contingency planning for, not a PLI target. UAE and Switzerland's deficits are structural bullion/re-export flows that deliberately stay open to fund India's own gems exports." }
+  ];
+  var taxonomy = [
+    ["Agriculture", "HS 1-24"], ["Fuels and Minerals", "HS 25-27"], ["Chemicals", "HS 28, 31-38"],
+    ["Drugs & Pharmaceuticals", "HS 29-30"], ["Plastic & Rubber", "HS 39-40"], ["Leather, Wood & Paper", "HS 41-49"],
+    ["Textiles", "HS 50-63"], ["Consumer Products", "HS 64-70"], ["Gems and Jewellery", "HS 71"],
+    ["Base Metals", "HS 72-83"], ["Electronic Goods", "HS 84-85"], ["Automotive and Transport", "HS 86-89"],
+    ["Other Manufacturing Items", "HS 90-98"]
+  ];
+
+  function renderTiers(containerId, tiers) {
+    var el = document.getElementById(containerId);
+    var tierLabel = { p1: "Priority 1", p2: "Priority 2", p3: "Priority 3" };
+    tiers.forEach(function (t) {
+      var row = document.createElement("div");
+      row.className = "tier-row";
+      row.innerHTML =
+        '<div class="tier-label ' + t.tier + '">' + tierLabel[t.tier] + '<br>' + t.label + '</div>' +
+        '<div class="tier-body"><div class="tier-head">' + t.head + '</div><div class="tier-text">' + t.text + '</div></div>';
+      el.appendChild(row);
+    });
+  }
+  renderTiers("importTiers", importTiers);
+  renderTiers("exportTiers", exportTiers);
+  renderTiers("countryTiers", countryTiers);
+
+  var table = document.getElementById("taxonomyTable");
+  table.innerHTML = "<thead><tr><th>Sector</th><th>HS-2 chapters</th></tr></thead><tbody>" +
+    taxonomy.map(function (t) { return "<tr><td>" + t[0] + "</td><td>" + t[1] + "</td></tr>"; }).join("") +
+    "</tbody>";
+})();
+</script>

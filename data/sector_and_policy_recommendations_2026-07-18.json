@@ -1,0 +1,79 @@
+{
+  "purpose": "Prescriptive companion to this repo's data-analysis bulletins -- turns the import/export chapter rankings, country-concentration findings, and PLI-coverage checks into explicit, tiered sector and policy recommendations, cross-checked against NITI Aayog's Trade Watch Quarterly framework.",
+  "retrieved": "2026-07-18",
+  "validation_sources": [
+    {"source": "NITI Aayog Trade Watch Quarterly, Q1 FY2024-25 edition (Apr-Jun 2024)", "note": "User-supplied PDF; used for methodology/structure/RCA-TII framing, NOT for exact FY2025-26 figure validation since it predates this repo's core claims by 1-2 years."},
+    {"source": "NITI Aayog Trade Watch Quarterly, 8th edition, Q4 FY2025-26", "via": "PIB press release PRID=2277232, 23 Jun 2026", "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2277232"},
+    {"source": "DGCI&S Monthly Bulletin on Foreign Trade Statistics, March 2024", "note": "User-supplied PDF; confirms no explicit blanket FX-conversion rule is published, and that DGCI&S data is provisional/dynamically revised -- explains TIA Portal vs TRADESTAT/PIB vintage differences."},
+    {"source": "TIA Portal (Commerce Ministry) User Manual", "note": "User-supplied PDF; source of the official 13-sector HS-2 taxonomy (Annexure 1) used below, and evidence that DGCI&S's own raw data carries period-specific (not blanket-annual) USD/INR conversion."}
+  ],
+  "import_substitution_tiers": [
+    {"tier": 1, "label": "Act now -- no scheme, genuine gap", "chapters": [
+      {"hs": "28", "name": "Inorganic chemicals", "fy2025_26_usd_m": 14179.7, "growth_pct": 86.0},
+      {"hs": "39", "name": "Plastics", "fy2025_26_usd_m": 22234.5, "growth_pct": 45.8},
+      {"hs": "88", "name": "Aircraft & spacecraft", "fy2025_26_usd_m": 13774.8, "growth_pct": 80.9}
+    ]},
+    {"tier": 2, "label": "Scale existing scheme", "chapters": [
+      {"hs": "15", "name": "Animal/veg fats & oils", "fy2025_26_usd_m": 19777.0, "growth_pct": 97.9, "existing_scheme": "NMEO-Oilseeds, Rs 10,103cr, still ~57% import-dependent"},
+      {"hs": "31", "name": "Fertilisers", "fy2025_26_usd_m": 14580.2, "growth_pct": 118.9, "existing_scheme": "National Investment Policy for Urea-2026, approved 15 Jul 2026 -- 3 days before this repo's original import-dependency bulletin"}
+    ]},
+    {"tier": 3, "label": "Different policy lever needed, not PLI-shaped", "chapters": [
+      {"hs": "27", "name": "Mineral fuels & oils", "fy2025_26_usd_m": 203415.4, "growth_pct": 21.2, "note": "Needs energy-transition policy (EVs, domestic E&P, biofuels), not a production incentive."},
+      {"hs": "71", "name": "Pearls, gems & jewellery", "fy2025_26_usd_m": 109430.2, "growth_pct": 69.1, "note": "Largely the intentional duty-free-for-re-export channel (FTP Chapter 4) funding India's own gems export industry."}
+    ]}
+  ],
+  "export_growth_tiers": [
+    {"tier": 1, "label": "Fix the PLI mismatch", "chapters": [
+      {"hs": "61", "name": "Apparel, knitted", "fy2025_26_usd_m": 7642.1, "growth_pct": -2.3},
+      {"hs": "62", "name": "Apparel, not knitted", "fy2025_26_usd_m": 8172.5, "growth_pct": -2.0}
+    ], "recommendation": "Broaden PLI Textiles' scope to cover cotton-based apparel, or create a parallel cotton-apparel-specific incentive."},
+    {"tier": 2, "label": "Double down, diversify buyers", "chapters": [
+      {"hs": "85", "name": "Electrical machinery", "fy2025_26_usd_m": 53976.3, "growth_pct": 324.1},
+      {"hs": "87", "name": "Vehicles", "fy2025_26_usd_m": 25973.4, "growth_pct": 43.5},
+      {"hs": "72", "name": "Iron & steel", "fy2025_26_usd_m": 10316.6, "growth_pct": 5.9},
+      {"hs": "73", "name": "Iron/steel articles", "fy2025_26_usd_m": 10409.0, "growth_pct": 42.8}
+    ], "recommendation": "Reduce USA over-concentration (11 of 12 growth chapters, #1/#2 in 9) by deepening UAE/EU/ASEAN as deliberate diversification targets."},
+    {"tier": 3, "label": "Open opportunity, no scheme", "chapters": [
+      {"hs": "10", "name": "Cereals", "fy2025_26_usd_m": 12007.5, "growth_pct": 47.1}
+    ], "recommendation": "Needs export infrastructure / phytosanitary certification capacity / trade-agreement market access, not manufacturing PLI."}
+  ],
+  "country_relationship_tiers": [
+    {"tier": 1, "label": "De-risk", "country": "China", "import_exposure_usd_m": 102363.0, "n_sectors": 8, "note": "PLI Electronics/ISM 2.0 coverage already strong -- this is an execution/scaling problem (~62% electronic-component dependency 6 years into PLI), not a missing-policy problem."},
+    {"tier": 2, "label": "Diversify", "country": "USA", "export_exposure_usd_m": 63907.6, "n_sectors": 11, "top2_count": 9, "note": "Mirror risk to China on imports -- more concentrated by breadth and depth. Treat UAE/EU/ASEAN as deliberate diversification targets."},
+    {"tier": 3, "label": "Monitor, not a policy gap", "countries": ["Russia", "UAE", "Switzerland"], "note": "Russia's rise is market economics + sanctions-workaround payment structure, not substitutable dependency. UAE/Switzerland deficits are structural bullion/re-export flows that deliberately stay open to fund India's own gems exports."}
+  ],
+  "cbam_export_risk": {
+    "exposed_chapters": [
+      {"hs": "72", "name": "Iron & steel", "fy2025_26_export_usd_m": 10316.6},
+      {"hs": "73", "name": "Iron/steel articles", "fy2025_26_export_usd_m": 10409.0}
+    ],
+    "combined_exposure_usd_m": 20725.6,
+    "note": "EU CBAM's initial scope covers iron/steel, aluminium, cement, fertilizer, hydrogen, electricity -- a demand-side/market-access risk distinct from the production-capacity focus of Specialty Steel PLI (Rs 44,106cr + Rs 11,887cr). Decarbonizing production, not just scaling it, is the policy lever this risk calls for."
+  },
+  "declining_export_sector": {
+    "hs": "71", "name": "Pearls, gems & jewellery", "eight_year_growth_pct": -29.9,
+    "note": "Independently corroborated by NITI Aayog Trade Watch's own finding that several labour-intensive export sectors (natural/cultured pearls, lac/gums/resins, man-made filaments, leather articles) have lost global market share since 2015 -- same chapter, same direction, found via a completely different method (TRADESTAT chapter trend vs. NITI Aayog market-share analysis)."
+  },
+  "methodology_gaps_vs_niti_aayog": {
+    "rca_not_computed": "NITI Aayog computes Revealed Comparative Advantage per commodity (43 commodities clear RCA>1, 40% of global imports, 68.2% of India's export portfolio) using global commodity-share data (UN Comtrade/WTO) this repo hasn't collected. This repo's rankings are dollar-value and PLI-coverage based, not comparative-advantage based.",
+    "tii_not_computed": "NITI Aayog computes a Trade Intensity Index per partner country (>1 with 84 countries, 67% of India's exports) using GDP-weighted bilateral trade shares. This repo's country rankings are combined-exposure-in-dollars based, a related but methodologically distinct concentration measure."
+  },
+  "official_hs_sector_taxonomy": {
+    "source": "TIA Portal User Manual, Annexure 1",
+    "sectors": [
+      {"sector": "Agriculture", "hs_range": "1-24"},
+      {"sector": "Fuels and Minerals", "hs_range": "25-27"},
+      {"sector": "Chemicals", "hs_range": "28, 31-38"},
+      {"sector": "Drugs & Pharmaceuticals", "hs_range": "29-30"},
+      {"sector": "Plastic & Rubber", "hs_range": "39-40"},
+      {"sector": "Leather, Wood, and Paper", "hs_range": "41-49"},
+      {"sector": "Textiles", "hs_range": "50-63"},
+      {"sector": "Consumer Products", "hs_range": "64-70"},
+      {"sector": "Gems and Jewellery", "hs_range": "71"},
+      {"sector": "Base Metals", "hs_range": "72-83"},
+      {"sector": "Electronic Goods", "hs_range": "84-85"},
+      {"sector": "Automotive and Transport", "hs_range": "86-89"},
+      {"sector": "Other Manufacturing Items", "hs_range": "90-98"}
+    ]
+  }
+}

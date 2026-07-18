@@ -1,0 +1,5423 @@
+{
+  "purpose": "Validates this repo's country-level trade-deficit bulletin against TRADESTAT's own country x commodity data, and identifies exactly which HS chapters drive the four largest bilateral relationships (China, Russia, UAE, USA).",
+  "source": "TRADESTAT (tradestat.commerce.gov.in/eidb/country_wise_all_commodities_export and .../country_wise_all_commodities_import), 2-digit HS level, US$ Million, FY2025-26",
+  "retrieved": "2026-07-18",
+  "cross_validation_against_tia_portal": {
+    "china": {
+      "tradestat_export": 19471.1,
+      "tia_portal_export": 19471.1,
+      "tradestat_import": 131633.3,
+      "tia_portal_import": 131633.4
+    },
+    "russia": {
+      "tradestat_export": 4493.5,
+      "tia_portal_export": 4493.5,
+      "tradestat_import": 55369.6,
+      "tia_portal_import": 55369.6
+    },
+    "uae": {
+      "tradestat_export": 37359.2,
+      "tia_portal_export": 37359.1,
+      "tradestat_import": 63894.4,
+      "tia_portal_import": 63894.5
+    },
+    "usa": {
+      "tradestat_export": 87316.0,
+      "tia_portal_export": 87316.0,
+      "tradestat_import": 53488.7,
+      "tia_portal_import": 53488.7
+    },
+    "note": "Two independent Commerce Ministry data sources agree to within rounding on all four countries -- the same cross-check this repo ran on aggregate trade-balance figures now holds at the country level."
+  },
+  "country_commodity_data": {
+    "China": {
+      "export": {
+        "total_fy2025_26": 19471.1,
+        "total_fy2024_25": 14252.2,
+        "chapters": [
+          {
+            "hs": "85",
+            "name": "Electrical Machinery And Equipment And Parts Thereof; Sound Recorders And Reproducers, Television Image And Sound Recorders And Reproducers,And Parts.",
+            "fy2024_25": 842.62,
+            "fy2025_26": 3178.29,
+            "growth_pct": "277.19"
+          },
+          {
+            "hs": "27",
+            "name": "Mineral Fuels, Mineral Oils And Products Of Their Distillation; Bituminous Substances; Mineral Waxes.",
+            "fy2024_25": 1269.24,
+            "fy2025_26": 2462.26,
+            "growth_pct": "93.99"
+          },
+          {
+            "hs": "26",
+            "name": "Ores, Slag And Ash.",
+            "fy2024_25": 1942.95,
+            "fy2025_26": 1796.72,
+            "growth_pct": "-7.53"
+          },
+          {
+            "hs": "03",
+            "name": "Fish And Crustaceans, Molluscs And Other Aquatic Invertabrates.",
+            "fy2024_25": 1093.82,
+            "fy2025_26": 1374.97,
+            "growth_pct": "25.70"
+          },
+          {
+            "hs": "29",
+            "name": "Organic Chemicals",
+            "fy2024_25": 1263.78,
+            "fy2025_26": 1343.03,
+            "growth_pct": "6.27"
+          },
+          {
+            "hs": "84",
+            "name": "Nuclear Reactors, Boilers, Machinery And Mechanical Appliances; Parts Thereof.",
+            "fy2024_25": 1160.94,
+            "fy2025_26": 1263.12,
+            "growth_pct": "8.80"
+          },
+          {
+            "hs": "25",
+            "name": "Salt; Sulphur; Earths And Stone; Plastering Materials, Lime And Cement.",
+            "fy2024_25": 785.71,
+            "fy2025_26": 874.27,
+            "growth_pct": "11.27"
+          },
+          {
+            "hs": "15",
+            "name": "Animal Or Vegetable Fats And Oils And Their Cleavage Products; Pre. Edible Fats; Animal Or Vegetable Waxex.",
+            "fy2024_25": 866.65,
+            "fy2025_26": 769.35,
+            "growth_pct": "-11.23"
+          },
+          {
+            "hs": "74",
+            "name": "Copper And Articles Thereof.",
+            "fy2024_25": 367.76,
+            "fy2025_26": 760.73,
+            "growth_pct": "106.85"
+          },
+          {
+            "hs": "67",
+            "name": "Prepared Feathers And Down And Articles Made Of Feathers Or Of Down; Artificial Flowers; Articles Of Human Hair.",
+            "fy2024_25": 469.28,
+            "fy2025_26": 494.1,
+            "growth_pct": "5.29"
+          },
+          {
+            "hs": "52",
+            "name": "Cotton.",
+            "fy2024_25": 235.74,
+            "fy2025_26": 492.54,
+            "growth_pct": "108.93"
+          },
+          {
+            "hs": "09",
+            "name": "Coffee, Tea, Mate And Spices.",
+            "fy2024_25": 654.02,
+            "fy2025_26": 450.96,
+            "growth_pct": "-31.05"
+          },
+          {
+            "hs": "76",
+            "name": "Aluminium And Articles Thereof.",
+            "fy2024_25": 212.24,
+            "fy2025_26": 390.74,
+            "growth_pct": "84.10"
+          },
+          {
+            "hs": "23",
+            "name": "Residues And Waste From The Food Industries; Prepared Animal Foder.",
+            "fy2024_25": 129.68,
+            "fy2025_26": 370.57,
+            "growth_pct": "185.77"
+          },
+          {
+            "hs": "38",
+            "name": "Miscellaneous Chemical Products.",
+            "fy2024_25": 205.91,
+            "fy2025_26": 290.05,
+            "growth_pct": "40.86"
+          },
+          {
+            "hs": "90",
+            "name": "Optical, Photographic Cinematographic Measuring, Checking Precision, Medical Or Surgical Inst. And Apparatus Parts And Accessories Thereof;",
+            "fy2024_25": 238.79,
+            "fy2025_26": 262.37,
+            "growth_pct": "9.87"
+          },
+          {
+            "hs": "07",
+            "name": "Edible Vegetables And Certain Roots And Tubers.",
+            "fy2024_25": 121.93,
+            "fy2025_26": 239.0,
+            "growth_pct": "96.01"
+          },
+          {
+            "hs": "32",
+            "name": "Tanning Or Dyeing Extracts; Tannins And Their Deri. Dyes, Pigments And Other Colouring Matter; Paints And Ver; Putty And Other Mastics; Inks.",
+            "fy2024_25": 197.75,
+            "fy2025_26": 215.12,
+            "growth_pct": "8.78"
+          },
+          {
+            "hs": "72",
+            "name": "Iron And Steel",
+            "fy2024_25": 233.82,
+            "fy2025_26": 213.22,
+            "growth_pct": "-8.81"
+          },
+          {
+            "hs": "39",
+            "name": "Plastic And Articles Thereof.",
+            "fy2024_25": 276.15,
+            "fy2025_26": 200.9,
+            "growth_pct": "-27.25"
+          },
+          {
+            "hs": "87",
+            "name": "Vehicles Other Than Railway Or Tramway Rolling Stock, And Parts And Accessories Thereof.",
+            "fy2024_25": 146.87,
+            "fy2025_26": 173.74,
+            "growth_pct": "18.29"
+          },
+          {
+            "hs": "53",
+            "name": "Other Vegetable Textile Fibres; Paper Yarn And Woven Fabrics Of Paper Yarn.",
+            "fy2024_25": 116.69,
+            "fy2025_26": 170.31,
+            "growth_pct": "45.95"
+          },
+          {
+            "hs": "28",
+            "name": "Inorganic Chemicals; Organic Or Inorganic Compounds Of Precious Metals, Of Rare-Earth Metals, Or Radi. Elem. Or Of Isotopes.",
+            "fy2024_25": 81.58,
+            "fy2025_26": 163.4,
+            "growth_pct": "100.29"
+          },
+          {
+            "hs": "89",
+            "name": "Ships, Boats And Floating Structures.",
+            "fy2024_25": 0.01,
+            "fy2025_26": 161.14,
+            "growth_pct": "1332713.04"
+          },
+          {
+            "hs": "73",
+            "name": "Articles Of Iron Or Steel",
+            "fy2024_25": 95.07,
+            "fy2025_26": 136.19,
+            "growth_pct": "43.25"
+          },
+          {
+            "hs": "10",
+            "name": "Cereals.",
+            "fy2024_25": 86.04,
+            "fy2025_26": 113.86,
+            "growth_pct": "32.34"
+          },
+          {
+            "hs": "33",
+            "name": "Essential Oils And Resinoids; Perfumery, Cosmetic Or Toilet Preparations.",
+            "fy2024_25": 105.54,
+            "fy2025_26": 103.22,
+            "growth_pct": "-2.20"
+          },
+          {
+            "hs": "12",
+            "name": "Oil Seeds And Olea. Fruits; Misc. Grains, Seeds And Fruit; Industrial Or Medicinal Plants; Straw And Fodder.",
+            "fy2024_25": 44.64,
+            "fy2025_26": 96.4,
+            "growth_pct": "115.95"
+          },
+          {
+            "hs": "30",
+            "name": "Pharmaceutical Products",
+            "fy2024_25": 85.46,
+            "fy2025_26": 82.73,
+            "growth_pct": "-3.19"
+          },
+          {
+            "hs": "40",
+            "name": "Rubber And Articles Thereof.",
+            "fy2024_25": 80.18,
+            "fy2025_26": 79.54,
+            "growth_pct": "-0.80"
+          },
+          {
+            "hs": "13",
+            "name": "Lac; Gums, Resins And Other Vegetable Saps And Extracts.",
+            "fy2024_25": 72.9,
+            "fy2025_26": 62.65,
+            "growth_pct": "-14.06"
+          },
+          {
+            "hs": "64",
+            "name": "Footwear, Gaiters And The Like; Parts Of Such Articles.",
+            "fy2024_25": 62.37,
+            "fy2025_26": 57.31,
+            "growth_pct": "-8.12"
+          },
+          {
+            "hs": "71",
+            "name": "Natural Or Cultured Pearls,Precious Or Semiprecious Stones,Pre.Metals,Clad With Pre.Metal And Artcls Thereof;Imit.Jewlry;Coin.",
+            "fy2024_25": 25.74,
+            "fy2025_26": 52.72,
+            "growth_pct": "104.85"
+          },
+          {
+            "hs": "78",
+            "name": "Lead And Articles Thereof.",
+            "fy2024_25": 3.51,
+            "fy2025_26": 51.89,
+            "growth_pct": "1379.85"
+          },
+          {
+            "hs": "62",
+            "name": "Articles Of Apparel And Clothing Accessories, Not Knitted Or Crocheted.",
+            "fy2024_25": 32.63,
+            "fy2025_26": 38.15,
+            "growth_pct": "16.91"
+          },
+          {
+            "hs": "55",
+            "name": "Man-Made Staple Fibres.",
+            "fy2024_25": 13.73,
+            "fy2025_26": 33.95,
+            "growth_pct": "147.21"
+          },
+          {
+            "hs": "34",
+            "name": "Soap, Organic Surface-Active Agents, Washing Preparations, Lubricating Preparations, Artificial Waxes, Prepared Waxes, Polishing Or Scouring Prep.",
+            "fy2024_25": 26.63,
+            "fy2025_26": 31.54,
+            "growth_pct": "18.46"
+          },
+          {
+            "hs": "61",
+            "name": "Articles Of Apparel And Clothing Accessories, Knitted Or Corcheted.",
+            "fy2024_25": 27.05,
+            "fy2025_26": 31.38,
+            "growth_pct": "15.99"
+          },
+          {
+            "hs": "50",
+            "name": "Silk",
+            "fy2024_25": 29.59,
+            "fy2025_26": 31.3,
+            "growth_pct": "5.76"
+          },
+          {
+            "hs": "41",
+            "name": "Raw Hides And Skins (Other Than Furskins) And Leather",
+            "fy2024_25": 42.54,
+            "fy2025_26": 30.84,
+            "growth_pct": "-27.50"
+          },
+          {
+            "hs": "42",
+            "name": "Articles Of Leather,Saddlery And Harness;Travel Goods, Handbags And Similar Cont.Articles Of Animal Gut(Othr Thn Silk-Wrm)Gut.",
+            "fy2024_25": 16.18,
+            "fy2025_26": 23.95,
+            "growth_pct": "47.98"
+          },
+          {
+            "hs": "59",
+            "name": "Impregnated, Coated, Covered Or Laminated Textile Fabrics; Textile Articles Of A Kind Suitable For Industrial Use.",
+            "fy2024_25": 26.13,
+            "fy2025_26": 21.92,
+            "growth_pct": "-16.09"
+          },
+          {
+            "hs": "94",
+            "name": "Furniture; Bedding, Mattresses, Mattress Supports, Cushions And Similar Stuffed Furnishing; Lamps And Lighting Fittings Not Elsewhere Specified Or Inc",
+            "fy2024_25": 13.05,
+            "fy2025_26": 18.6,
+            "growth_pct": "42.59"
+          },
+          {
+            "hs": "88",
+            "name": "Aircraft, Spacecraft, And Parts Thereof.",
+            "fy2024_25": 142.79,
+            "fy2025_26": 17.16,
+            "growth_pct": "-87.99"
+          },
+          {
+            "hs": "54",
+            "name": "Man-Made Filaments.",
+            "fy2024_25": 25.5,
+            "fy2025_26": 16.25,
+            "growth_pct": "-36.26"
+          },
+          {
+            "hs": "63",
+            "name": "Other Made Up Textile Articles; Sets; Worn Clothing And Worn Textile Articles; Rags",
+            "fy2024_25": 17.17,
+            "fy2025_26": 16.24,
+            "growth_pct": "-5.43"
+          },
+          {
+            "hs": "57",
+            "name": "Carpets And Other Textile Floor Coverings.",
+            "fy2024_25": 18.46,
+            "fy2025_26": 15.89,
+            "growth_pct": "-13.93"
+          },
+          {
+            "hs": "70",
+            "name": "Glass And Glassware.",
+            "fy2024_25": 18.01,
+            "fy2025_26": 15.64,
+            "growth_pct": "-13.15"
+          },
+          {
+            "hs": "82",
+            "name": "Tools Implements, Cutlery, Spoons And Forks, Of Base Metal; Parts Thereof Of Base Metal.",
+            "fy2024_25": 8.93,
+            "fy2025_26": 14.14,
+            "growth_pct": "58.28"
+          },
+          {
+            "hs": "20",
+            "name": "Preparations Of Vegetables, Fruit, Nuts Or Other Parts Of Plants.",
+            "fy2024_25": 10.38,
+            "fy2025_26": 13.34,
+            "growth_pct": "28.49"
+          },
+          {
+            "hs": "48",
+            "name": "Paper And Paperboard; Articles Of Paper Pulp, Of Paper Or Of Paperboard.",
+            "fy2024_25": 17.67,
+            "fy2025_26": 12.7,
+            "growth_pct": "-28.13"
+          },
+          {
+            "hs": "81",
+            "name": "Other Base Metals; Cermets; Articles Thereof.",
+            "fy2024_25": 7.92,
+            "fy2025_26": 12.41,
+            "growth_pct": "56.64"
+          },
+          {
+            "hs": "68",
+            "name": "Articles Of Stone, Plaster, Cement, Asbestos, Mica Or Similar Materials.",
+            "fy2024_25": 12.01,
+            "fy2025_26": 11.76,
+            "growth_pct": "-2.08"
+          },
+          {
+            "hs": "86",
+            "name": "Railway Or Tramway Locomotives, Rolling-Stock And Parts Thereof; Railway Or Tramway Track Fixtures And Fittings And Parts Thereof; Mechanical",
+            "fy2024_25": 7.82,
+            "fy2025_26": 10.73,
+            "growth_pct": "37.23"
+          },
+          {
+            "hs": "17",
+            "name": "Sugars And Sugar Confectionery.",
+            "fy2024_25": 38.31,
+            "fy2025_26": 10.62,
+            "growth_pct": "-72.27"
+          },
+          {
+            "hs": "83",
+            "name": "Miscellaneous Articles Of Base Metal.",
+            "fy2024_25": 6.76,
+            "fy2025_26": 8.74,
+            "growth_pct": "29.39"
+          },
+          {
+            "hs": "69",
+            "name": "Ceramic Products.",
+            "fy2024_25": 9.53,
+            "fy2025_26": 7.55,
+            "growth_pct": "-20.86"
+          },
+          {
+            "hs": "44",
+            "name": "Wood And Articles Of Wood; Wood Charcoal.",
+            "fy2024_25": 12.38,
+            "fy2025_26": 7.44,
+            "growth_pct": "-39.89"
+          },
+          {
+            "hs": "96",
+            "name": "Miscellaneous Manufactured Articles.",
+            "fy2024_25": 7.83,
+            "fy2025_26": 7.1,
+            "growth_pct": "-9.33"
+          },
+          {
+            "hs": "21",
+            "name": "Miscellaneous Edible Preparations.",
+            "fy2024_25": 7.42,
+            "fy2025_26": 6.47,
+            "growth_pct": "-12.81"
+          },
+          {
+            "hs": "92",
+            "name": "Musical Instruments; Parts And Accessories Of Such Articles.",
+            "fy2024_25": 5.82,
+            "fy2025_26": 5.65,
+            "growth_pct": "-2.79"
+          },
+          {
+            "hs": "14",
+            "name": "Vegetable Plaiting Materials; Vegetable Products Not Elsewhere Specified Or Included.",
+            "fy2024_25": 9.22,
+            "fy2025_26": 5.39,
+            "growth_pct": "-41.57"
+          },
+          {
+            "hs": "75",
+            "name": "Nickel And Articles Thereof.",
+            "fy2024_25": 10.19,
+            "fy2025_26": 5.13,
+            "growth_pct": "-49.63"
+          },
+          {
+            "hs": "95",
+            "name": "Toys, Games And Sports Requisites; Parts And Accessories Thereof.",
+            "fy2024_25": 4.59,
+            "fy2025_26": 4.61,
+            "growth_pct": "0.36"
+          },
+          {
+            "hs": "35",
+            "name": "Albuminoidal Substances; Modified Starches; Glues; Enzymes.",
+            "fy2024_25": 3.05,
+            "fy2025_26": 3.99,
+            "growth_pct": "30.66"
+          },
+          {
+            "hs": "22",
+            "name": "Beverages, Spirits And Vinegar.",
+            "fy2024_25": 1.09,
+            "fy2025_26": 3.79,
+            "growth_pct": "249.56"
+          },
+          {
+            "hs": "19",
+            "name": "Preparations Of Cereals, Flour, Starch Or Milk; Pastrycooks Products.",
+            "fy2024_25": 2.65,
+            "fy2025_26": 3.6,
+            "growth_pct": "35.64"
+          },
+          {
+            "hs": "08",
+            "name": "Edible Fruit And Nuts; Peel Or Citrus Fruit Or Melons.",
+            "fy2024_25": 4.96,
+            "fy2025_26": 2.88,
+            "growth_pct": "-41.87"
+          },
+          {
+            "hs": "51",
+            "name": "Wool, Fine Or Coarse Animal Hair, Horsehair Yarn And Woven Fabric.",
+            "fy2024_25": 1.89,
+            "fy2025_26": 2.75,
+            "growth_pct": "45.52"
+          },
+          {
+            "hs": "56",
+            "name": "Wadding, Felt And Nonwovens; Spacial Yarns; Twine, Cordage, Ropes And Cables And Articles Thereof.",
+            "fy2024_25": 2.65,
+            "fy2025_26": 2.31,
+            "growth_pct": "-12.80"
+          },
+          {
+            "hs": "31",
+            "name": "Fertilisers.",
+            "fy2024_25": 3.23,
+            "fy2025_26": 2.21,
+            "growth_pct": "-31.52"
+          },
+          {
+            "hs": "58",
+            "name": "Special Woven Fabrics; Tufted Textile Fabrics; Lace; Tapestries; Trimmings; Embroidery.",
+            "fy2024_25": 2.8,
+            "fy2025_26": 2.17,
+            "growth_pct": "-22.44"
+          },
+          {
+            "hs": "05",
+            "name": "Products Of Animal Origin, Not Elsewhere Specified Or Included.",
+            "fy2024_25": 2.38,
+            "fy2025_26": 2.06,
+            "growth_pct": "-13.27"
+          },
+          {
+            "hs": "60",
+            "name": "Knitted Or Crocheted Fabrics.",
+            "fy2024_25": 0.56,
+            "fy2025_26": 1.85,
+            "growth_pct": "229.59"
+          },
+          {
+            "hs": "79",
+            "name": "Zinc And Articles Thereof.",
+            "fy2024_25": 14.92,
+            "fy2025_26": 1.84,
+            "growth_pct": "-87.70"
+          },
+          {
+            "hs": "06",
+            "name": "Live Trees And Other Plants; Bulbs; Roots And The Like; Cut Flowers And Ornamental Foliage.",
+            "fy2024_25": 1.61,
+            "fy2025_26": 1.75,
+            "growth_pct": "8.69"
+          },
+          {
+            "hs": "97",
+            "name": "Works Of Art Collectors' Pieces And Antiques.",
+            "fy2024_25": 0.04,
+            "fy2025_26": 1.45,
+            "growth_pct": "3146.48"
+          },
+          {
+            "hs": "16",
+            "name": "Preparations Of Meat, Of Fish Or Of Crustaceans, Molluscs Or Other Aquatic Invertebrates",
+            "fy2024_25": 1.46,
+            "fy2025_26": 1.17,
+            "growth_pct": "-19.84"
+          },
+          {
+            "hs": "49",
+            "name": "Printed Bookds, Newspapers, Pictures And Other Products Of The Printing Industry; Manuscripts, Typescripts And Plans.",
+            "fy2024_25": 1.31,
+            "fy2025_26": 0.79,
+            "growth_pct": "-39.71"
+          },
+          {
+            "hs": "80",
+            "name": "Tin And Articles Thereof.",
+            "fy2024_25": 0.28,
+            "fy2025_26": 0.37,
+            "growth_pct": "35.65"
+          },
+          {
+            "hs": "98",
+            "name": "Project Goods; Some Special Uses.",
+            "fy2024_25": 0.33,
+            "fy2025_26": 0.35,
+            "growth_pct": "4.38"
+          },
+          {
+            "hs": "37",
+            "name": "Photographic Or Cinematographic Goods.",
+            "fy2024_25": 0.29,
+            "fy2025_26": 0.31,
+            "growth_pct": "6.04"
+          },
+          {
+            "hs": "24",
+            "name": "Tobacco And Manufactured Tobacco Substitutes.",
+            "fy2024_25": 0.24,
+            "fy2025_26": 0.28,
+            "growth_pct": "16.93"
+          },
+          {
+            "hs": "65",
+            "name": "Headgear And Parts Thereof.",
+            "fy2024_25": 0.17,
+            "fy2025_26": 0.26,
+            "growth_pct": "49.91"
+          },
+          {
+            "hs": "91",
+            "name": "Clocks And Watches And Parts Thereof.",
+            "fy2024_25": 0.13,
+            "fy2025_26": 0.22,
+            "growth_pct": "62.30"
+          },
+          {
+            "hs": "18",
+            "name": "Cocoa And Cocoa Preparations.",
+            "fy2024_25": 0.33,
+            "fy2025_26": 0.17,
+            "growth_pct": "-48.14"
+          },
+          {
+            "hs": "46",
+            "name": "Manufactures Of Straw, Of Esparto Or Of Other Plaiting Materials; Basketware And Wickerwork.",
+            "fy2024_25": 0.12,
+            "fy2025_26": 0.17,
+            "growth_pct": "39.01"
+          },
+          {
+            "hs": "43",
+            "name": "Furskins And Artificial Fur, Manufactures Thereof.",
+            "fy2024_25": 0.02,
+            "fy2025_26": 0.1,
+            "growth_pct": "400.34"
+          },
+          {
+            "hs": "45",
+            "name": "Cork And Articles Of Cork.",
+            "fy2024_25": 0.05,
+            "fy2025_26": 0.1,
+            "growth_pct": "126.57"
+          },
+          {
+            "hs": "04",
+            "name": "Dairy Produce; Birds' Eggs; Natural Honey; Edible Prod. Of Animal Origin, Not Elsewhere Spec. Or Included.",
+            "fy2024_25": 0.06,
+            "fy2025_26": 0.09,
+            "growth_pct": "47.05"
+          },
+          {
+            "hs": "11",
+            "name": "Products Of The Milling Industry; Malt; Starches; Inulin; Wheat Gluten.",
+            "fy2024_25": 0.12,
+            "fy2025_26": 0.06,
+            "growth_pct": "-48.30"
+          },
+          {
+            "hs": "36",
+            "name": "Explosives; Pyrotechnic Products; Matches; Pyrophoric Alloys; Certain Combustible Preparations.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.01,
+            "growth_pct": ""
+          },
+          {
+            "hs": "47",
+            "name": "Pulp Of Wood Or Of Other Fibrous Cellulosic Material; Waste And Scrap Of Paper Or Paperboard.",
+            "fy2024_25": 3.83,
+            "fy2025_26": 0.0,
+            "growth_pct": "-100.00"
+          },
+          {
+            "hs": "66",
+            "name": "Umbrellas, Sun Umbrellas, Walking-Sticks, Seat-Sticks, Whips,Riding-Crops And Parts Thereof.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.0,
+            "growth_pct": "28.80"
+          },
+          {
+            "hs": "99",
+            "name": "Miscellaneous Goods.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.0,
+            "growth_pct": "-2.28"
+          }
+        ]
+      },
+      "import": {
+        "total_fy2025_26": 131633.3,
+        "total_fy2024_25": 113447.4,
+        "chapters": [
+          {
+            "hs": "85",
+            "name": "Electrical Machinery And Equipment And Parts Thereof; Sound Recorders And Reproducers, Television Image And Sound Recorders And Reproducers,And Parts.",
+            "fy2024_25": 38026.88,
+            "fy2025_26": 46367.46,
+            "growth_pct": "21.93"
+          },
+          {
+            "hs": "84",
+            "name": "Nuclear Reactors, Boilers, Machinery And Mechanical Appliances; Parts Thereof.",
+            "fy2024_25": 25924.96,
+            "fy2025_26": 29450.97,
+            "growth_pct": "13.60"
+          },
+          {
+            "hs": "29",
+            "name": "Organic Chemicals",
+            "fy2024_25": 11475.88,
+            "fy2025_26": 11521.52,
+            "growth_pct": "0.40"
+          },
+          {
+            "hs": "39",
+            "name": "Plastic And Articles Thereof.",
+            "fy2024_25": 6335.27,
+            "fy2025_26": 6711.48,
+            "growth_pct": "5.94"
+          },
+          {
+            "hs": "87",
+            "name": "Vehicles Other Than Railway Or Tramway Rolling Stock, And Parts And Accessories Thereof.",
+            "fy2024_25": 2135.34,
+            "fy2025_26": 2869.28,
+            "growth_pct": "34.37"
+          },
+          {
+            "hs": "90",
+            "name": "Optical, Photographic Cinematographic Measuring, Checking Precision, Medical Or Surgical Inst. And Apparatus Parts And Accessories Thereof;",
+            "fy2024_25": 2561.64,
+            "fy2025_26": 2752.64,
+            "growth_pct": "7.46"
+          },
+          {
+            "hs": "76",
+            "name": "Aluminium And Articles Thereof.",
+            "fy2024_25": 1989.84,
+            "fy2025_26": 2581.13,
+            "growth_pct": "29.72"
+          },
+          {
+            "hs": "73",
+            "name": "Articles Of Iron Or Steel",
+            "fy2024_25": 2234.24,
+            "fy2025_26": 2504.74,
+            "growth_pct": "12.11"
+          },
+          {
+            "hs": "31",
+            "name": "Fertilisers.",
+            "fy2024_25": 875.84,
+            "fy2025_26": 2336.7,
+            "growth_pct": "166.80"
+          },
+          {
+            "hs": "38",
+            "name": "Miscellaneous Chemical Products.",
+            "fy2024_25": 1573.3,
+            "fy2025_26": 2028.63,
+            "growth_pct": "28.94"
+          },
+          {
+            "hs": "70",
+            "name": "Glass And Glassware.",
+            "fy2024_25": 1303.87,
+            "fy2025_26": 1810.87,
+            "growth_pct": "38.88"
+          },
+          {
+            "hs": "28",
+            "name": "Inorganic Chemicals; Organic Or Inorganic Compounds Of Precious Metals, Of Rare-Earth Metals, Or Radi. Elem. Or Of Isotopes.",
+            "fy2024_25": 1274.46,
+            "fy2025_26": 1651.2,
+            "growth_pct": "29.56"
+          },
+          {
+            "hs": "72",
+            "name": "Iron And Steel",
+            "fy2024_25": 2382.93,
+            "fy2025_26": 1571.0,
+            "growth_pct": "-34.07"
+          },
+          {
+            "hs": "54",
+            "name": "Man-Made Filaments.",
+            "fy2024_25": 1002.48,
+            "fy2025_26": 1428.04,
+            "growth_pct": "42.45"
+          },
+          {
+            "hs": "94",
+            "name": "Furniture; Bedding, Mattresses, Mattress Supports, Cushions And Similar Stuffed Furnishing; Lamps And Lighting Fittings Not Elsewhere Specified Or Inc",
+            "fy2024_25": 851.2,
+            "fy2025_26": 1042.35,
+            "growth_pct": "22.46"
+          },
+          {
+            "hs": "32",
+            "name": "Tanning Or Dyeing Extracts; Tannins And Their Deri. Dyes, Pigments And Other Colouring Matter; Paints And Ver; Putty And Other Mastics; Inks.",
+            "fy2024_25": 1195.52,
+            "fy2025_26": 1001.13,
+            "growth_pct": "-16.26"
+          },
+          {
+            "hs": "74",
+            "name": "Copper And Articles Thereof.",
+            "fy2024_25": 632.23,
+            "fy2025_26": 950.92,
+            "growth_pct": "50.41"
+          },
+          {
+            "hs": "48",
+            "name": "Paper And Paperboard; Articles Of Paper Pulp, Of Paper Or Of Paperboard.",
+            "fy2024_25": 879.35,
+            "fy2025_26": 865.92,
+            "growth_pct": "-1.53"
+          },
+          {
+            "hs": "82",
+            "name": "Tools Implements, Cutlery, Spoons And Forks, Of Base Metal; Parts Thereof Of Base Metal.",
+            "fy2024_25": 610.84,
+            "fy2025_26": 703.68,
+            "growth_pct": "15.20"
+          },
+          {
+            "hs": "60",
+            "name": "Knitted Or Crocheted Fabrics.",
+            "fy2024_25": 699.95,
+            "fy2025_26": 685.0,
+            "growth_pct": "-2.14"
+          },
+          {
+            "hs": "68",
+            "name": "Articles Of Stone, Plaster, Cement, Asbestos, Mica Or Similar Materials.",
+            "fy2024_25": 529.17,
+            "fy2025_26": 586.17,
+            "growth_pct": "10.77"
+          },
+          {
+            "hs": "69",
+            "name": "Ceramic Products.",
+            "fy2024_25": 521.24,
+            "fy2025_26": 578.65,
+            "growth_pct": "11.02"
+          },
+          {
+            "hs": "83",
+            "name": "Miscellaneous Articles Of Base Metal.",
+            "fy2024_25": 587.37,
+            "fy2025_26": 577.74,
+            "growth_pct": "-1.64"
+          },
+          {
+            "hs": "59",
+            "name": "Impregnated, Coated, Covered Or Laminated Textile Fabrics; Textile Articles Of A Kind Suitable For Industrial Use.",
+            "fy2024_25": 466.16,
+            "fy2025_26": 567.86,
+            "growth_pct": "21.82"
+          },
+          {
+            "hs": "40",
+            "name": "Rubber And Articles Thereof.",
+            "fy2024_25": 452.27,
+            "fy2025_26": 553.41,
+            "growth_pct": "22.36"
+          },
+          {
+            "hs": "71",
+            "name": "Natural Or Cultured Pearls,Precious Or Semiprecious Stones,Pre.Metals,Clad With Pre.Metal And Artcls Thereof;Imit.Jewlry;Coin.",
+            "fy2024_25": 219.13,
+            "fy2025_26": 499.87,
+            "growth_pct": "128.11"
+          },
+          {
+            "hs": "35",
+            "name": "Albuminoidal Substances; Modified Starches; Glues; Enzymes.",
+            "fy2024_25": 324.4,
+            "fy2025_26": 414.65,
+            "growth_pct": "27.82"
+          },
+          {
+            "hs": "86",
+            "name": "Railway Or Tramway Locomotives, Rolling-Stock And Parts Thereof; Railway Or Tramway Track Fixtures And Fittings And Parts Thereof; Mechanical",
+            "fy2024_25": 436.4,
+            "fy2025_26": 405.28,
+            "growth_pct": "-7.13"
+          },
+          {
+            "hs": "55",
+            "name": "Man-Made Staple Fibres.",
+            "fy2024_25": 257.83,
+            "fy2025_26": 398.91,
+            "growth_pct": "54.72"
+          },
+          {
+            "hs": "96",
+            "name": "Miscellaneous Manufactured Articles.",
+            "fy2024_25": 423.64,
+            "fy2025_26": 381.37,
+            "growth_pct": "-9.98"
+          },
+          {
+            "hs": "81",
+            "name": "Other Base Metals; Cermets; Articles Thereof.",
+            "fy2024_25": 346.97,
+            "fy2025_26": 369.9,
+            "growth_pct": "6.61"
+          },
+          {
+            "hs": "95",
+            "name": "Toys, Games And Sports Requisites; Parts And Accessories Thereof.",
+            "fy2024_25": 285.43,
+            "fy2025_26": 351.73,
+            "growth_pct": "23.23"
+          },
+          {
+            "hs": "27",
+            "name": "Mineral Fuels, Mineral Oils And Products Of Their Distillation; Bituminous Substances; Mineral Waxes.",
+            "fy2024_25": 406.75,
+            "fy2025_26": 329.17,
+            "growth_pct": "-19.07"
+          },
+          {
+            "hs": "42",
+            "name": "Articles Of Leather,Saddlery And Harness;Travel Goods, Handbags And Similar Cont.Articles Of Animal Gut(Othr Thn Silk-Wrm)Gut.",
+            "fy2024_25": 285.93,
+            "fy2025_26": 307.41,
+            "growth_pct": "7.51"
+          },
+          {
+            "hs": "75",
+            "name": "Nickel And Articles Thereof.",
+            "fy2024_25": 273.3,
+            "fy2025_26": 299.56,
+            "growth_pct": "9.61"
+          },
+          {
+            "hs": "33",
+            "name": "Essential Oils And Resinoids; Perfumery, Cosmetic Or Toilet Preparations.",
+            "fy2024_25": 232.5,
+            "fy2025_26": 276.75,
+            "growth_pct": "19.03"
+          },
+          {
+            "hs": "25",
+            "name": "Salt; Sulphur; Earths And Stone; Plastering Materials, Lime And Cement.",
+            "fy2024_25": 252.69,
+            "fy2025_26": 271.38,
+            "growth_pct": "7.40"
+          },
+          {
+            "hs": "61",
+            "name": "Articles Of Apparel And Clothing Accessories, Knitted Or Corcheted.",
+            "fy2024_25": 199.29,
+            "fy2025_26": 257.58,
+            "growth_pct": "29.25"
+          },
+          {
+            "hs": "63",
+            "name": "Other Made Up Textile Articles; Sets; Worn Clothing And Worn Textile Articles; Rags",
+            "fy2024_25": 193.01,
+            "fy2025_26": 214.03,
+            "growth_pct": "10.89"
+          },
+          {
+            "hs": "34",
+            "name": "Soap, Organic Surface-Active Agents, Washing Preparations, Lubricating Preparations, Artificial Waxes, Prepared Waxes, Polishing Or Scouring Prep.",
+            "fy2024_25": 161.92,
+            "fy2025_26": 205.94,
+            "growth_pct": "27.19"
+          },
+          {
+            "hs": "15",
+            "name": "Animal Or Vegetable Fats And Oils And Their Cleavage Products; Pre. Edible Fats; Animal Or Vegetable Waxex.",
+            "fy2024_25": 14.93,
+            "fy2025_26": 196.76,
+            "growth_pct": "1218.11"
+          },
+          {
+            "hs": "30",
+            "name": "Pharmaceutical Products",
+            "fy2024_25": 192.18,
+            "fy2025_26": 176.63,
+            "growth_pct": "-8.09"
+          },
+          {
+            "hs": "44",
+            "name": "Wood And Articles Of Wood; Wood Charcoal.",
+            "fy2024_25": 174.77,
+            "fy2025_26": 174.46,
+            "growth_pct": "-0.18"
+          },
+          {
+            "hs": "56",
+            "name": "Wadding, Felt And Nonwovens; Spacial Yarns; Twine, Cordage, Ropes And Cables And Articles Thereof.",
+            "fy2024_25": 179.7,
+            "fy2025_26": 170.14,
+            "growth_pct": "-5.32"
+          },
+          {
+            "hs": "62",
+            "name": "Articles Of Apparel And Clothing Accessories, Not Knitted Or Crocheted.",
+            "fy2024_25": 115.06,
+            "fy2025_26": 165.31,
+            "growth_pct": "43.68"
+          },
+          {
+            "hs": "26",
+            "name": "Ores, Slag And Ash.",
+            "fy2024_25": 123.22,
+            "fy2025_26": 148.76,
+            "growth_pct": "20.72"
+          },
+          {
+            "hs": "58",
+            "name": "Special Woven Fabrics; Tufted Textile Fabrics; Lace; Tapestries; Trimmings; Embroidery.",
+            "fy2024_25": 124.5,
+            "fy2025_26": 139.98,
+            "growth_pct": "12.44"
+          },
+          {
+            "hs": "23",
+            "name": "Residues And Waste From The Food Industries; Prepared Animal Foder.",
+            "fy2024_25": 92.61,
+            "fy2025_26": 123.68,
+            "growth_pct": "33.55"
+          },
+          {
+            "hs": "98",
+            "name": "Project Goods; Some Special Uses.",
+            "fy2024_25": 73.67,
+            "fy2025_26": 123.32,
+            "growth_pct": "67.41"
+          },
+          {
+            "hs": "52",
+            "name": "Cotton.",
+            "fy2024_25": 99.56,
+            "fy2025_26": 123.31,
+            "growth_pct": "23.85"
+          },
+          {
+            "hs": "64",
+            "name": "Footwear, Gaiters And The Like; Parts Of Such Articles.",
+            "fy2024_25": 205.2,
+            "fy2025_26": 114.89,
+            "growth_pct": "-44.01"
+          },
+          {
+            "hs": "53",
+            "name": "Other Vegetable Textile Fibres; Paper Yarn And Woven Fabrics Of Paper Yarn.",
+            "fy2024_25": 119.51,
+            "fy2025_26": 98.23,
+            "growth_pct": "-17.80"
+          },
+          {
+            "hs": "80",
+            "name": "Tin And Articles Thereof.",
+            "fy2024_25": 60.35,
+            "fy2025_26": 86.75,
+            "growth_pct": "43.76"
+          },
+          {
+            "hs": "50",
+            "name": "Silk",
+            "fy2024_25": 68.21,
+            "fy2025_26": 74.48,
+            "growth_pct": "9.19"
+          },
+          {
+            "hs": "14",
+            "name": "Vegetable Plaiting Materials; Vegetable Products Not Elsewhere Specified Or Included.",
+            "fy2024_25": 70.24,
+            "fy2025_26": 74.4,
+            "growth_pct": "5.92"
+          },
+          {
+            "hs": "51",
+            "name": "Wool, Fine Or Coarse Animal Hair, Horsehair Yarn And Woven Fabric.",
+            "fy2024_25": 58.18,
+            "fy2025_26": 73.52,
+            "growth_pct": "26.35"
+          },
+          {
+            "hs": "21",
+            "name": "Miscellaneous Edible Preparations.",
+            "fy2024_25": 57.34,
+            "fy2025_26": 73.21,
+            "growth_pct": "27.69"
+          },
+          {
+            "hs": "91",
+            "name": "Clocks And Watches And Parts Thereof.",
+            "fy2024_25": 65.69,
+            "fy2025_26": 68.86,
+            "growth_pct": "4.82"
+          },
+          {
+            "hs": "57",
+            "name": "Carpets And Other Textile Floor Coverings.",
+            "fy2024_25": 59.09,
+            "fy2025_26": 67.29,
+            "growth_pct": "13.89"
+          },
+          {
+            "hs": "37",
+            "name": "Photographic Or Cinematographic Goods.",
+            "fy2024_25": 54.46,
+            "fy2025_26": 65.84,
+            "growth_pct": "20.89"
+          },
+          {
+            "hs": "08",
+            "name": "Edible Fruit And Nuts; Peel Or Citrus Fruit Or Melons.",
+            "fy2024_25": 40.63,
+            "fy2025_26": 58.64,
+            "growth_pct": "44.33"
+          },
+          {
+            "hs": "89",
+            "name": "Ships, Boats And Floating Structures.",
+            "fy2024_25": 94.8,
+            "fy2025_26": 57.26,
+            "growth_pct": "-39.60"
+          },
+          {
+            "hs": "13",
+            "name": "Lac; Gums, Resins And Other Vegetable Saps And Extracts.",
+            "fy2024_25": 50.99,
+            "fy2025_26": 42.47,
+            "growth_pct": "-16.71"
+          },
+          {
+            "hs": "92",
+            "name": "Musical Instruments; Parts And Accessories Of Such Articles.",
+            "fy2024_25": 35.28,
+            "fy2025_26": 39.97,
+            "growth_pct": "13.27"
+          },
+          {
+            "hs": "41",
+            "name": "Raw Hides And Skins (Other Than Furskins) And Leather",
+            "fy2024_25": 38.94,
+            "fy2025_26": 37.95,
+            "growth_pct": "-2.55"
+          },
+          {
+            "hs": "66",
+            "name": "Umbrellas, Sun Umbrellas, Walking-Sticks, Seat-Sticks, Whips,Riding-Crops And Parts Thereof.",
+            "fy2024_25": 49.04,
+            "fy2025_26": 37.95,
+            "growth_pct": "-22.60"
+          },
+          {
+            "hs": "07",
+            "name": "Edible Vegetables And Certain Roots And Tubers.",
+            "fy2024_25": 32.41,
+            "fy2025_26": 35.18,
+            "growth_pct": "8.57"
+          },
+          {
+            "hs": "67",
+            "name": "Prepared Feathers And Down And Articles Made Of Feathers Or Of Down; Artificial Flowers; Articles Of Human Hair.",
+            "fy2024_25": 31.45,
+            "fy2025_26": 32.9,
+            "growth_pct": "4.61"
+          },
+          {
+            "hs": "49",
+            "name": "Printed Bookds, Newspapers, Pictures And Other Products Of The Printing Industry; Manuscripts, Typescripts And Plans.",
+            "fy2024_25": 30.32,
+            "fy2025_26": 32.15,
+            "growth_pct": "6.04"
+          },
+          {
+            "hs": "47",
+            "name": "Pulp Of Wood Or Of Other Fibrous Cellulosic Material; Waste And Scrap Of Paper Or Paperboard.",
+            "fy2024_25": 28.4,
+            "fy2025_26": 30.29,
+            "growth_pct": "6.67"
+          },
+          {
+            "hs": "65",
+            "name": "Headgear And Parts Thereof.",
+            "fy2024_25": 25.45,
+            "fy2025_26": 29.39,
+            "growth_pct": "15.50"
+          },
+          {
+            "hs": "88",
+            "name": "Aircraft, Spacecraft, And Parts Thereof.",
+            "fy2024_25": 17.66,
+            "fy2025_26": 24.74,
+            "growth_pct": "40.07"
+          },
+          {
+            "hs": "11",
+            "name": "Products Of The Milling Industry; Malt; Starches; Inulin; Wheat Gluten.",
+            "fy2024_25": 17.66,
+            "fy2025_26": 22.04,
+            "growth_pct": "24.78"
+          },
+          {
+            "hs": "20",
+            "name": "Preparations Of Vegetables, Fruit, Nuts Or Other Parts Of Plants.",
+            "fy2024_25": 19.34,
+            "fy2025_26": 21.88,
+            "growth_pct": "13.12"
+          },
+          {
+            "hs": "12",
+            "name": "Oil Seeds And Olea. Fruits; Misc. Grains, Seeds And Fruit; Industrial Or Medicinal Plants; Straw And Fodder.",
+            "fy2024_25": 17.35,
+            "fy2025_26": 21.76,
+            "growth_pct": "25.46"
+          },
+          {
+            "hs": "06",
+            "name": "Live Trees And Other Plants; Bulbs; Roots And The Like; Cut Flowers And Ornamental Foliage.",
+            "fy2024_25": 12.26,
+            "fy2025_26": 15.25,
+            "growth_pct": "24.40"
+          },
+          {
+            "hs": "09",
+            "name": "Coffee, Tea, Mate And Spices.",
+            "fy2024_25": 17.23,
+            "fy2025_26": 12.14,
+            "growth_pct": "-29.55"
+          },
+          {
+            "hs": "79",
+            "name": "Zinc And Articles Thereof.",
+            "fy2024_25": 7.29,
+            "fy2025_26": 10.52,
+            "growth_pct": "44.35"
+          },
+          {
+            "hs": "17",
+            "name": "Sugars And Sugar Confectionery.",
+            "fy2024_25": 9.25,
+            "fy2025_26": 9.81,
+            "growth_pct": "5.99"
+          },
+          {
+            "hs": "36",
+            "name": "Explosives; Pyrotechnic Products; Matches; Pyrophoric Alloys; Certain Combustible Preparations.",
+            "fy2024_25": 2.73,
+            "fy2025_26": 6.44,
+            "growth_pct": "136.02"
+          },
+          {
+            "hs": "03",
+            "name": "Fish And Crustaceans, Molluscs And Other Aquatic Invertabrates.",
+            "fy2024_25": 3.19,
+            "fy2025_26": 5.7,
+            "growth_pct": "79.09"
+          },
+          {
+            "hs": "22",
+            "name": "Beverages, Spirits And Vinegar.",
+            "fy2024_25": 4.26,
+            "fy2025_26": 4.16,
+            "growth_pct": "-2.25"
+          },
+          {
+            "hs": "05",
+            "name": "Products Of Animal Origin, Not Elsewhere Specified Or Included.",
+            "fy2024_25": 8.03,
+            "fy2025_26": 3.4,
+            "growth_pct": "-57.68"
+          },
+          {
+            "hs": "46",
+            "name": "Manufactures Of Straw, Of Esparto Or Of Other Plaiting Materials; Basketware And Wickerwork.",
+            "fy2024_25": 4.01,
+            "fy2025_26": 3.31,
+            "growth_pct": "-17.48"
+          },
+          {
+            "hs": "97",
+            "name": "Works Of Art Collectors' Pieces And Antiques.",
+            "fy2024_25": 6.67,
+            "fy2025_26": 2.61,
+            "growth_pct": "-60.83"
+          },
+          {
+            "hs": "04",
+            "name": "Dairy Produce; Birds' Eggs; Natural Honey; Edible Prod. Of Animal Origin, Not Elsewhere Spec. Or Included.",
+            "fy2024_25": 0.38,
+            "fy2025_26": 2.46,
+            "growth_pct": "545.61"
+          },
+          {
+            "hs": "19",
+            "name": "Preparations Of Cereals, Flour, Starch Or Milk; Pastrycooks Products.",
+            "fy2024_25": 1.18,
+            "fy2025_26": 2.29,
+            "growth_pct": "94.76"
+          },
+          {
+            "hs": "45",
+            "name": "Cork And Articles Of Cork.",
+            "fy2024_25": 1.72,
+            "fy2025_26": 2.22,
+            "growth_pct": "29.17"
+          },
+          {
+            "hs": "43",
+            "name": "Furskins And Artificial Fur, Manufactures Thereof.",
+            "fy2024_25": 2.11,
+            "fy2025_26": 1.99,
+            "growth_pct": "-5.75"
+          },
+          {
+            "hs": "18",
+            "name": "Cocoa And Cocoa Preparations.",
+            "fy2024_25": 1.96,
+            "fy2025_26": 1.36,
+            "growth_pct": "-30.74"
+          },
+          {
+            "hs": "78",
+            "name": "Lead And Articles Thereof.",
+            "fy2024_25": 3.91,
+            "fy2025_26": 1.12,
+            "growth_pct": "-71.36"
+          },
+          {
+            "hs": "01",
+            "name": "Live Animals.",
+            "fy2024_25": 0.42,
+            "fy2025_26": 0.96,
+            "growth_pct": "130.05"
+          },
+          {
+            "hs": "16",
+            "name": "Preparations Of Meat, Of Fish Or Of Crustaceans, Molluscs Or Other Aquatic Invertebrates",
+            "fy2024_25": 0.57,
+            "fy2025_26": 0.56,
+            "growth_pct": "-1.73"
+          },
+          {
+            "hs": "93",
+            "name": "Arms And Ammunition; Parts And Accessories Thereof.",
+            "fy2024_25": 0.28,
+            "fy2025_26": 0.51,
+            "growth_pct": "81.87"
+          },
+          {
+            "hs": "24",
+            "name": "Tobacco And Manufactured Tobacco Substitutes.",
+            "fy2024_25": 0.24,
+            "fy2025_26": 0.08,
+            "growth_pct": "-65.35"
+          },
+          {
+            "hs": "10",
+            "name": "Cereals.",
+            "fy2024_25": 0.06,
+            "fy2025_26": 0.03,
+            "growth_pct": "-47.51"
+          },
+          {
+            "hs": "99",
+            "name": "Miscellaneous Goods.",
+            "fy2024_25": 0.03,
+            "fy2025_26": 0.02,
+            "growth_pct": "-10.52"
+          }
+        ]
+      }
+    },
+    "Russia": {
+      "export": {
+        "total_fy2025_26": 4493.5,
+        "total_fy2024_25": 4881.3,
+        "chapters": [
+          {
+            "hs": "84",
+            "name": "Nuclear Reactors, Boilers, Machinery And Mechanical Appliances; Parts Thereof.",
+            "fy2024_25": 1137.42,
+            "fy2025_26": 660.18,
+            "growth_pct": "-41.96"
+          },
+          {
+            "hs": "30",
+            "name": "Pharmaceutical Products",
+            "fy2024_25": 421.09,
+            "fy2025_26": 471.34,
+            "growth_pct": "11.93"
+          },
+          {
+            "hs": "85",
+            "name": "Electrical Machinery And Equipment And Parts Thereof; Sound Recorders And Reproducers, Television Image And Sound Recorders And Reproducers,And Parts.",
+            "fy2024_25": 363.04,
+            "fy2025_26": 344.64,
+            "growth_pct": "-5.07"
+          },
+          {
+            "hs": "29",
+            "name": "Organic Chemicals",
+            "fy2024_25": 369.05,
+            "fy2025_26": 326.17,
+            "growth_pct": "-11.62"
+          },
+          {
+            "hs": "28",
+            "name": "Inorganic Chemicals; Organic Or Inorganic Compounds Of Precious Metals, Of Rare-Earth Metals, Or Radi. Elem. Or Of Isotopes.",
+            "fy2024_25": 243.89,
+            "fy2025_26": 196.81,
+            "growth_pct": "-19.31"
+          },
+          {
+            "hs": "38",
+            "name": "Miscellaneous Chemical Products.",
+            "fy2024_25": 173.16,
+            "fy2025_26": 169.33,
+            "growth_pct": "-2.21"
+          },
+          {
+            "hs": "03",
+            "name": "Fish And Crustaceans, Molluscs And Other Aquatic Invertabrates.",
+            "fy2024_25": 123.05,
+            "fy2025_26": 159.14,
+            "growth_pct": "29.33"
+          },
+          {
+            "hs": "21",
+            "name": "Miscellaneous Edible Preparations.",
+            "fy2024_25": 94.63,
+            "fy2025_26": 156.45,
+            "growth_pct": "65.34"
+          },
+          {
+            "hs": "90",
+            "name": "Optical, Photographic Cinematographic Measuring, Checking Precision, Medical Or Surgical Inst. And Apparatus Parts And Accessories Thereof;",
+            "fy2024_25": 132.41,
+            "fy2025_26": 145.63,
+            "growth_pct": "9.98"
+          },
+          {
+            "hs": "69",
+            "name": "Ceramic Products.",
+            "fy2024_25": 146.52,
+            "fy2025_26": 138.77,
+            "growth_pct": "-5.28"
+          },
+          {
+            "hs": "09",
+            "name": "Coffee, Tea, Mate And Spices.",
+            "fy2024_25": 102.66,
+            "fy2025_26": 116.05,
+            "growth_pct": "13.05"
+          },
+          {
+            "hs": "72",
+            "name": "Iron And Steel",
+            "fy2024_25": 131.28,
+            "fy2025_26": 110.01,
+            "growth_pct": "-16.20"
+          },
+          {
+            "hs": "39",
+            "name": "Plastic And Articles Thereof.",
+            "fy2024_25": 110.06,
+            "fy2025_26": 101.22,
+            "growth_pct": "-8.03"
+          },
+          {
+            "hs": "02",
+            "name": "Meat And Edible Meat Offal.",
+            "fy2024_25": 35.75,
+            "fy2025_26": 97.51,
+            "growth_pct": "172.77"
+          },
+          {
+            "hs": "24",
+            "name": "Tobacco And Manufactured Tobacco Substitutes.",
+            "fy2024_25": 44.11,
+            "fy2025_26": 85.14,
+            "growth_pct": "93.03"
+          },
+          {
+            "hs": "32",
+            "name": "Tanning Or Dyeing Extracts; Tannins And Their Deri. Dyes, Pigments And Other Colouring Matter; Paints And Ver; Putty And Other Mastics; Inks.",
+            "fy2024_25": 78.57,
+            "fy2025_26": 83.62,
+            "growth_pct": "6.43"
+          },
+          {
+            "hs": "40",
+            "name": "Rubber And Articles Thereof.",
+            "fy2024_25": 78.7,
+            "fy2025_26": 81.86,
+            "growth_pct": "4.02"
+          },
+          {
+            "hs": "13",
+            "name": "Lac; Gums, Resins And Other Vegetable Saps And Extracts.",
+            "fy2024_25": 72.92,
+            "fy2025_26": 77.75,
+            "growth_pct": "6.62"
+          },
+          {
+            "hs": "10",
+            "name": "Cereals.",
+            "fy2024_25": 85.15,
+            "fy2025_26": 69.12,
+            "growth_pct": "-18.83"
+          },
+          {
+            "hs": "88",
+            "name": "Aircraft, Spacecraft, And Parts Thereof.",
+            "fy2024_25": 26.53,
+            "fy2025_26": 62.65,
+            "growth_pct": "136.17"
+          },
+          {
+            "hs": "12",
+            "name": "Oil Seeds And Olea. Fruits; Misc. Grains, Seeds And Fruit; Industrial Or Medicinal Plants; Straw And Fodder.",
+            "fy2024_25": 75.48,
+            "fy2025_26": 59.62,
+            "growth_pct": "-21.02"
+          },
+          {
+            "hs": "07",
+            "name": "Edible Vegetables And Certain Roots And Tubers.",
+            "fy2024_25": 38.44,
+            "fy2025_26": 54.38,
+            "growth_pct": "41.46"
+          },
+          {
+            "hs": "15",
+            "name": "Animal Or Vegetable Fats And Oils And Their Cleavage Products; Pre. Edible Fats; Animal Or Vegetable Waxex.",
+            "fy2024_25": 51.59,
+            "fy2025_26": 50.81,
+            "growth_pct": "-1.51"
+          },
+          {
+            "hs": "08",
+            "name": "Edible Fruit And Nuts; Peel Or Citrus Fruit Or Melons.",
+            "fy2024_25": 39.75,
+            "fy2025_26": 41.17,
+            "growth_pct": "3.58"
+          },
+          {
+            "hs": "64",
+            "name": "Footwear, Gaiters And The Like; Parts Of Such Articles.",
+            "fy2024_25": 31.01,
+            "fy2025_26": 40.93,
+            "growth_pct": "31.99"
+          },
+          {
+            "hs": "34",
+            "name": "Soap, Organic Surface-Active Agents, Washing Preparations, Lubricating Preparations, Artificial Waxes, Prepared Waxes, Polishing Or Scouring Prep.",
+            "fy2024_25": 31.88,
+            "fy2025_26": 40.47,
+            "growth_pct": "26.95"
+          },
+          {
+            "hs": "73",
+            "name": "Articles Of Iron Or Steel",
+            "fy2024_25": 71.8,
+            "fy2025_26": 40.01,
+            "growth_pct": "-44.28"
+          },
+          {
+            "hs": "48",
+            "name": "Paper And Paperboard; Articles Of Paper Pulp, Of Paper Or Of Paperboard.",
+            "fy2024_25": 22.97,
+            "fy2025_26": 39.93,
+            "growth_pct": "73.81"
+          },
+          {
+            "hs": "82",
+            "name": "Tools Implements, Cutlery, Spoons And Forks, Of Base Metal; Parts Thereof Of Base Metal.",
+            "fy2024_25": 45.29,
+            "fy2025_26": 37.87,
+            "growth_pct": "-16.38"
+          },
+          {
+            "hs": "20",
+            "name": "Preparations Of Vegetables, Fruit, Nuts Or Other Parts Of Plants.",
+            "fy2024_25": 42.99,
+            "fy2025_26": 37.33,
+            "growth_pct": "-13.16"
+          },
+          {
+            "hs": "87",
+            "name": "Vehicles Other Than Railway Or Tramway Rolling Stock, And Parts And Accessories Thereof.",
+            "fy2024_25": 47.34,
+            "fy2025_26": 36.99,
+            "growth_pct": "-21.85"
+          },
+          {
+            "hs": "33",
+            "name": "Essential Oils And Resinoids; Perfumery, Cosmetic Or Toilet Preparations.",
+            "fy2024_25": 23.71,
+            "fy2025_26": 24.53,
+            "growth_pct": "3.46"
+          },
+          {
+            "hs": "61",
+            "name": "Articles Of Apparel And Clothing Accessories, Knitted Or Corcheted.",
+            "fy2024_25": 25.73,
+            "fy2025_26": 23.54,
+            "growth_pct": "-8.49"
+          },
+          {
+            "hs": "68",
+            "name": "Articles Of Stone, Plaster, Cement, Asbestos, Mica Or Similar Materials.",
+            "fy2024_25": 23.48,
+            "fy2025_26": 23.25,
+            "growth_pct": "-0.96"
+          },
+          {
+            "hs": "62",
+            "name": "Articles Of Apparel And Clothing Accessories, Not Knitted Or Crocheted.",
+            "fy2024_25": 72.68,
+            "fy2025_26": 21.72,
+            "growth_pct": "-70.11"
+          },
+          {
+            "hs": "55",
+            "name": "Man-Made Staple Fibres.",
+            "fy2024_25": 8.77,
+            "fy2025_26": 19.26,
+            "growth_pct": "119.69"
+          },
+          {
+            "hs": "71",
+            "name": "Natural Or Cultured Pearls,Precious Or Semiprecious Stones,Pre.Metals,Clad With Pre.Metal And Artcls Thereof;Imit.Jewlry;Coin.",
+            "fy2024_25": 10.35,
+            "fy2025_26": 17.43,
+            "growth_pct": "68.44"
+          },
+          {
+            "hs": "94",
+            "name": "Furniture; Bedding, Mattresses, Mattress Supports, Cushions And Similar Stuffed Furnishing; Lamps And Lighting Fittings Not Elsewhere Specified Or Inc",
+            "fy2024_25": 3.23,
+            "fy2025_26": 17.42,
+            "growth_pct": "439.47"
+          },
+          {
+            "hs": "42",
+            "name": "Articles Of Leather,Saddlery And Harness;Travel Goods, Handbags And Similar Cont.Articles Of Animal Gut(Othr Thn Silk-Wrm)Gut.",
+            "fy2024_25": 14.82,
+            "fy2025_26": 16.29,
+            "growth_pct": "9.95"
+          },
+          {
+            "hs": "35",
+            "name": "Albuminoidal Substances; Modified Starches; Glues; Enzymes.",
+            "fy2024_25": 11.94,
+            "fy2025_26": 15.54,
+            "growth_pct": "30.08"
+          },
+          {
+            "hs": "86",
+            "name": "Railway Or Tramway Locomotives, Rolling-Stock And Parts Thereof; Railway Or Tramway Track Fixtures And Fittings And Parts Thereof; Mechanical",
+            "fy2024_25": 2.01,
+            "fy2025_26": 13.56,
+            "growth_pct": "576.05"
+          },
+          {
+            "hs": "54",
+            "name": "Man-Made Filaments.",
+            "fy2024_25": 28.62,
+            "fy2025_26": 12.89,
+            "growth_pct": "-54.96"
+          },
+          {
+            "hs": "16",
+            "name": "Preparations Of Meat, Of Fish Or Of Crustaceans, Molluscs Or Other Aquatic Invertebrates",
+            "fy2024_25": 7.02,
+            "fy2025_26": 12.32,
+            "growth_pct": "75.50"
+          },
+          {
+            "hs": "96",
+            "name": "Miscellaneous Manufactured Articles.",
+            "fy2024_25": 13.33,
+            "fy2025_26": 11.26,
+            "growth_pct": "-15.53"
+          },
+          {
+            "hs": "27",
+            "name": "Mineral Fuels, Mineral Oils And Products Of Their Distillation; Bituminous Substances; Mineral Waxes.",
+            "fy2024_25": 11.92,
+            "fy2025_26": 11.08,
+            "growth_pct": "-7.08"
+          },
+          {
+            "hs": "04",
+            "name": "Dairy Produce; Birds' Eggs; Natural Honey; Edible Prod. Of Animal Origin, Not Elsewhere Spec. Or Included.",
+            "fy2024_25": 10.51,
+            "fy2025_26": 10.72,
+            "growth_pct": "2.01"
+          },
+          {
+            "hs": "41",
+            "name": "Raw Hides And Skins (Other Than Furskins) And Leather",
+            "fy2024_25": 8.22,
+            "fy2025_26": 10.42,
+            "growth_pct": "26.84"
+          },
+          {
+            "hs": "57",
+            "name": "Carpets And Other Textile Floor Coverings.",
+            "fy2024_25": 9.36,
+            "fy2025_26": 10.22,
+            "growth_pct": "9.14"
+          },
+          {
+            "hs": "83",
+            "name": "Miscellaneous Articles Of Base Metal.",
+            "fy2024_25": 13.46,
+            "fy2025_26": 8.83,
+            "growth_pct": "-34.39"
+          },
+          {
+            "hs": "63",
+            "name": "Other Made Up Textile Articles; Sets; Worn Clothing And Worn Textile Articles; Rags",
+            "fy2024_25": 10.64,
+            "fy2025_26": 7.3,
+            "growth_pct": "-31.36"
+          },
+          {
+            "hs": "74",
+            "name": "Copper And Articles Thereof.",
+            "fy2024_25": 10.1,
+            "fy2025_26": 6.92,
+            "growth_pct": "-31.52"
+          },
+          {
+            "hs": "25",
+            "name": "Salt; Sulphur; Earths And Stone; Plastering Materials, Lime And Cement.",
+            "fy2024_25": 8.34,
+            "fy2025_26": 6.7,
+            "growth_pct": "-19.66"
+          },
+          {
+            "hs": "93",
+            "name": "Arms And Ammunition; Parts And Accessories Thereof.",
+            "fy2024_25": 4.69,
+            "fy2025_26": 5.71,
+            "growth_pct": "21.69"
+          },
+          {
+            "hs": "76",
+            "name": "Aluminium And Articles Thereof.",
+            "fy2024_25": 23.32,
+            "fy2025_26": 5.55,
+            "growth_pct": "-76.20"
+          },
+          {
+            "hs": "70",
+            "name": "Glass And Glassware.",
+            "fy2024_25": 6.62,
+            "fy2025_26": 4.82,
+            "growth_pct": "-27.24"
+          },
+          {
+            "hs": "56",
+            "name": "Wadding, Felt And Nonwovens; Spacial Yarns; Twine, Cordage, Ropes And Cables And Articles Thereof.",
+            "fy2024_25": 3.78,
+            "fy2025_26": 4.69,
+            "growth_pct": "23.95"
+          },
+          {
+            "hs": "23",
+            "name": "Residues And Waste From The Food Industries; Prepared Animal Foder.",
+            "fy2024_25": 6.22,
+            "fy2025_26": 4.55,
+            "growth_pct": "-26.92"
+          },
+          {
+            "hs": "95",
+            "name": "Toys, Games And Sports Requisites; Parts And Accessories Thereof.",
+            "fy2024_25": 4.19,
+            "fy2025_26": 4.03,
+            "growth_pct": "-3.83"
+          },
+          {
+            "hs": "22",
+            "name": "Beverages, Spirits And Vinegar.",
+            "fy2024_25": 3.87,
+            "fy2025_26": 3.91,
+            "growth_pct": "1.05"
+          },
+          {
+            "hs": "53",
+            "name": "Other Vegetable Textile Fibres; Paper Yarn And Woven Fabrics Of Paper Yarn.",
+            "fy2024_25": 4.51,
+            "fy2025_26": 3.87,
+            "growth_pct": "-14.10"
+          },
+          {
+            "hs": "59",
+            "name": "Impregnated, Coated, Covered Or Laminated Textile Fabrics; Textile Articles Of A Kind Suitable For Industrial Use.",
+            "fy2024_25": 3.33,
+            "fy2025_26": 3.46,
+            "growth_pct": "3.94"
+          },
+          {
+            "hs": "36",
+            "name": "Explosives; Pyrotechnic Products; Matches; Pyrophoric Alloys; Certain Combustible Preparations.",
+            "fy2024_25": 6.64,
+            "fy2025_26": 2.92,
+            "growth_pct": "-55.97"
+          },
+          {
+            "hs": "51",
+            "name": "Wool, Fine Or Coarse Animal Hair, Horsehair Yarn And Woven Fabric.",
+            "fy2024_25": 1.23,
+            "fy2025_26": 2.72,
+            "growth_pct": "120.85"
+          },
+          {
+            "hs": "52",
+            "name": "Cotton.",
+            "fy2024_25": 3.52,
+            "fy2025_26": 2.43,
+            "growth_pct": "-30.93"
+          },
+          {
+            "hs": "17",
+            "name": "Sugars And Sugar Confectionery.",
+            "fy2024_25": 2.11,
+            "fy2025_26": 1.68,
+            "growth_pct": "-20.59"
+          },
+          {
+            "hs": "44",
+            "name": "Wood And Articles Of Wood; Wood Charcoal.",
+            "fy2024_25": 0.78,
+            "fy2025_26": 1.52,
+            "growth_pct": "95.57"
+          },
+          {
+            "hs": "18",
+            "name": "Cocoa And Cocoa Preparations.",
+            "fy2024_25": 0.34,
+            "fy2025_26": 1.22,
+            "growth_pct": "262.59"
+          },
+          {
+            "hs": "98",
+            "name": "Project Goods; Some Special Uses.",
+            "fy2024_25": 2.78,
+            "fy2025_26": 1.13,
+            "growth_pct": "-59.50"
+          },
+          {
+            "hs": "79",
+            "name": "Zinc And Articles Thereof.",
+            "fy2024_25": 2.08,
+            "fy2025_26": 1.07,
+            "growth_pct": "-48.88"
+          },
+          {
+            "hs": "67",
+            "name": "Prepared Feathers And Down And Articles Made Of Feathers Or Of Down; Artificial Flowers; Articles Of Human Hair.",
+            "fy2024_25": 0.8,
+            "fy2025_26": 0.77,
+            "growth_pct": "-3.42"
+          },
+          {
+            "hs": "11",
+            "name": "Products Of The Milling Industry; Malt; Starches; Inulin; Wheat Gluten.",
+            "fy2024_25": 0.22,
+            "fy2025_26": 0.42,
+            "growth_pct": "88.98"
+          },
+          {
+            "hs": "65",
+            "name": "Headgear And Parts Thereof.",
+            "fy2024_25": 0.49,
+            "fy2025_26": 0.41,
+            "growth_pct": "-16.80"
+          },
+          {
+            "hs": "58",
+            "name": "Special Woven Fabrics; Tufted Textile Fabrics; Lace; Tapestries; Trimmings; Embroidery.",
+            "fy2024_25": 0.32,
+            "fy2025_26": 0.4,
+            "growth_pct": "22.82"
+          },
+          {
+            "hs": "19",
+            "name": "Preparations Of Cereals, Flour, Starch Or Milk; Pastrycooks Products.",
+            "fy2024_25": 0.45,
+            "fy2025_26": 0.37,
+            "growth_pct": "-16.94"
+          },
+          {
+            "hs": "75",
+            "name": "Nickel And Articles Thereof.",
+            "fy2024_25": 0.45,
+            "fy2025_26": 0.31,
+            "growth_pct": "-30.66"
+          },
+          {
+            "hs": "31",
+            "name": "Fertilisers.",
+            "fy2024_25": 0.25,
+            "fy2025_26": 0.26,
+            "growth_pct": "5.22"
+          },
+          {
+            "hs": "37",
+            "name": "Photographic Or Cinematographic Goods.",
+            "fy2024_25": 0.55,
+            "fy2025_26": 0.2,
+            "growth_pct": "-64.69"
+          },
+          {
+            "hs": "97",
+            "name": "Works Of Art Collectors' Pieces And Antiques.",
+            "fy2024_25": 0.01,
+            "fy2025_26": 0.2,
+            "growth_pct": "2195.84"
+          },
+          {
+            "hs": "14",
+            "name": "Vegetable Plaiting Materials; Vegetable Products Not Elsewhere Specified Or Included.",
+            "fy2024_25": 0.07,
+            "fy2025_26": 0.18,
+            "growth_pct": "153.34"
+          },
+          {
+            "hs": "91",
+            "name": "Clocks And Watches And Parts Thereof.",
+            "fy2024_25": 0.12,
+            "fy2025_26": 0.11,
+            "growth_pct": "-9.19"
+          },
+          {
+            "hs": "81",
+            "name": "Other Base Metals; Cermets; Articles Thereof.",
+            "fy2024_25": 0.07,
+            "fy2025_26": 0.09,
+            "growth_pct": "20.61"
+          },
+          {
+            "hs": "26",
+            "name": "Ores, Slag And Ash.",
+            "fy2024_25": 0.02,
+            "fy2025_26": 0.08,
+            "growth_pct": "425.58"
+          },
+          {
+            "hs": "06",
+            "name": "Live Trees And Other Plants; Bulbs; Roots And The Like; Cut Flowers And Ornamental Foliage.",
+            "fy2024_25": 0.06,
+            "fy2025_26": 0.07,
+            "growth_pct": "31.05"
+          },
+          {
+            "hs": "49",
+            "name": "Printed Bookds, Newspapers, Pictures And Other Products Of The Printing Industry; Manuscripts, Typescripts And Plans.",
+            "fy2024_25": 0.16,
+            "fy2025_26": 0.07,
+            "growth_pct": "-59.32"
+          },
+          {
+            "hs": "50",
+            "name": "Silk",
+            "fy2024_25": 0.07,
+            "fy2025_26": 0.05,
+            "growth_pct": "-19.25"
+          },
+          {
+            "hs": "60",
+            "name": "Knitted Or Crocheted Fabrics.",
+            "fy2024_25": 0.03,
+            "fy2025_26": 0.05,
+            "growth_pct": "65.16"
+          },
+          {
+            "hs": "92",
+            "name": "Musical Instruments; Parts And Accessories Of Such Articles.",
+            "fy2024_25": 0.23,
+            "fy2025_26": 0.04,
+            "growth_pct": "-83.58"
+          },
+          {
+            "hs": "45",
+            "name": "Cork And Articles Of Cork.",
+            "fy2024_25": 0.05,
+            "fy2025_26": 0.03,
+            "growth_pct": "-36.40"
+          },
+          {
+            "hs": "43",
+            "name": "Furskins And Artificial Fur, Manufactures Thereof.",
+            "fy2024_25": 0.01,
+            "fy2025_26": 0.02,
+            "growth_pct": "56.34"
+          },
+          {
+            "hs": "46",
+            "name": "Manufactures Of Straw, Of Esparto Or Of Other Plaiting Materials; Basketware And Wickerwork.",
+            "fy2024_25": 0.03,
+            "fy2025_26": 0.01,
+            "growth_pct": "-82.23"
+          },
+          {
+            "hs": "05",
+            "name": "Products Of Animal Origin, Not Elsewhere Specified Or Included.",
+            "fy2024_25": 0.02,
+            "fy2025_26": 0.0,
+            "growth_pct": ""
+          },
+          {
+            "hs": "66",
+            "name": "Umbrellas, Sun Umbrellas, Walking-Sticks, Seat-Sticks, Whips,Riding-Crops And Parts Thereof.",
+            "fy2024_25": 0.01,
+            "fy2025_26": 0.0,
+            "growth_pct": ""
+          },
+          {
+            "hs": "78",
+            "name": "Lead And Articles Thereof.",
+            "fy2024_25": 0.04,
+            "fy2025_26": 0.0,
+            "growth_pct": "-90.32"
+          },
+          {
+            "hs": "80",
+            "name": "Tin And Articles Thereof.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.0,
+            "growth_pct": "199.43"
+          },
+          {
+            "hs": "89",
+            "name": "Ships, Boats And Floating Structures.",
+            "fy2024_25": 0.03,
+            "fy2025_26": 0.0,
+            "growth_pct": ""
+          },
+          {
+            "hs": "99",
+            "name": "Miscellaneous Goods.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.0,
+            "growth_pct": "106.73"
+          }
+        ]
+      },
+      "import": {
+        "total_fy2025_26": 55369.6,
+        "total_fy2024_25": 63811.4,
+        "chapters": [
+          {
+            "hs": "27",
+            "name": "Mineral Fuels, Mineral Oils And Products Of Their Distillation; Bituminous Substances; Mineral Waxes.",
+            "fy2024_25": 56873.19,
+            "fy2025_26": 47824.9,
+            "growth_pct": "-15.91"
+          },
+          {
+            "hs": "31",
+            "name": "Fertilisers.",
+            "fy2024_25": 1839.91,
+            "fy2025_26": 3117.9,
+            "growth_pct": "69.46"
+          },
+          {
+            "hs": "15",
+            "name": "Animal Or Vegetable Fats And Oils And Their Cleavage Products; Pre. Edible Fats; Animal Or Vegetable Waxex.",
+            "fy2024_25": 2394.46,
+            "fy2025_26": 1675.72,
+            "growth_pct": "-30.02"
+          },
+          {
+            "hs": "98",
+            "name": "Project Goods; Some Special Uses.",
+            "fy2024_25": 590.48,
+            "fy2025_26": 632.93,
+            "growth_pct": "7.19"
+          },
+          {
+            "hs": "72",
+            "name": "Iron And Steel",
+            "fy2024_25": 377.59,
+            "fy2025_26": 448.95,
+            "growth_pct": "18.90"
+          },
+          {
+            "hs": "71",
+            "name": "Natural Or Cultured Pearls,Precious Or Semiprecious Stones,Pre.Metals,Clad With Pre.Metal And Artcls Thereof;Imit.Jewlry;Coin.",
+            "fy2024_25": 433.93,
+            "fy2025_26": 375.54,
+            "growth_pct": "-13.46"
+          },
+          {
+            "hs": "84",
+            "name": "Nuclear Reactors, Boilers, Machinery And Mechanical Appliances; Parts Thereof.",
+            "fy2024_25": 92.43,
+            "fy2025_26": 272.37,
+            "growth_pct": "194.68"
+          },
+          {
+            "hs": "25",
+            "name": "Salt; Sulphur; Earths And Stone; Plastering Materials, Lime And Cement.",
+            "fy2024_25": 131.19,
+            "fy2025_26": 161.69,
+            "growth_pct": "23.25"
+          },
+          {
+            "hs": "48",
+            "name": "Paper And Paperboard; Articles Of Paper Pulp, Of Paper Or Of Paperboard.",
+            "fy2024_25": 144.49,
+            "fy2025_26": 117.75,
+            "growth_pct": "-18.50"
+          },
+          {
+            "hs": "29",
+            "name": "Organic Chemicals",
+            "fy2024_25": 58.3,
+            "fy2025_26": 109.3,
+            "growth_pct": "87.46"
+          },
+          {
+            "hs": "07",
+            "name": "Edible Vegetables And Certain Roots And Tubers.",
+            "fy2024_25": 331.08,
+            "fy2025_26": 81.15,
+            "growth_pct": "-75.49"
+          },
+          {
+            "hs": "40",
+            "name": "Rubber And Articles Thereof.",
+            "fy2024_25": 9.21,
+            "fy2025_26": 59.96,
+            "growth_pct": "550.70"
+          },
+          {
+            "hs": "28",
+            "name": "Inorganic Chemicals; Organic Or Inorganic Compounds Of Precious Metals, Of Rare-Earth Metals, Or Radi. Elem. Or Of Isotopes.",
+            "fy2024_25": 88.75,
+            "fy2025_26": 57.99,
+            "growth_pct": "-34.66"
+          },
+          {
+            "hs": "90",
+            "name": "Optical, Photographic Cinematographic Measuring, Checking Precision, Medical Or Surgical Inst. And Apparatus Parts And Accessories Thereof;",
+            "fy2024_25": 57.47,
+            "fy2025_26": 57.47,
+            "growth_pct": "-0.01"
+          },
+          {
+            "hs": "85",
+            "name": "Electrical Machinery And Equipment And Parts Thereof; Sound Recorders And Reproducers, Television Image And Sound Recorders And Reproducers,And Parts.",
+            "fy2024_25": 42.21,
+            "fy2025_26": 42.45,
+            "growth_pct": "0.58"
+          },
+          {
+            "hs": "44",
+            "name": "Wood And Articles Of Wood; Wood Charcoal.",
+            "fy2024_25": 39.52,
+            "fy2025_26": 41.87,
+            "growth_pct": "5.95"
+          },
+          {
+            "hs": "76",
+            "name": "Aluminium And Articles Thereof.",
+            "fy2024_25": 40.24,
+            "fy2025_26": 40.4,
+            "growth_pct": "0.40"
+          },
+          {
+            "hs": "39",
+            "name": "Plastic And Articles Thereof.",
+            "fy2024_25": 65.47,
+            "fy2025_26": 38.45,
+            "growth_pct": "-41.28"
+          },
+          {
+            "hs": "49",
+            "name": "Printed Bookds, Newspapers, Pictures And Other Products Of The Printing Industry; Manuscripts, Typescripts And Plans.",
+            "fy2024_25": 19.15,
+            "fy2025_26": 35.15,
+            "growth_pct": "83.57"
+          },
+          {
+            "hs": "47",
+            "name": "Pulp Of Wood Or Of Other Fibrous Cellulosic Material; Waste And Scrap Of Paper Or Paperboard.",
+            "fy2024_25": 33.73,
+            "fy2025_26": 27.08,
+            "growth_pct": "-19.72"
+          },
+          {
+            "hs": "26",
+            "name": "Ores, Slag And Ash.",
+            "fy2024_25": 0.35,
+            "fy2025_26": 23.12,
+            "growth_pct": "6443.32"
+          },
+          {
+            "hs": "81",
+            "name": "Other Base Metals; Cermets; Articles Thereof.",
+            "fy2024_25": 11.01,
+            "fy2025_26": 22.63,
+            "growth_pct": "105.63"
+          },
+          {
+            "hs": "86",
+            "name": "Railway Or Tramway Locomotives, Rolling-Stock And Parts Thereof; Railway Or Tramway Track Fixtures And Fittings And Parts Thereof; Mechanical",
+            "fy2024_25": 1.62,
+            "fy2025_26": 22.08,
+            "growth_pct": "1259.32"
+          },
+          {
+            "hs": "38",
+            "name": "Miscellaneous Chemical Products.",
+            "fy2024_25": 25.68,
+            "fy2025_26": 18.66,
+            "growth_pct": "-27.32"
+          },
+          {
+            "hs": "11",
+            "name": "Products Of The Milling Industry; Malt; Starches; Inulin; Wheat Gluten.",
+            "fy2024_25": 15.66,
+            "fy2025_26": 9.13,
+            "growth_pct": "-41.67"
+          },
+          {
+            "hs": "73",
+            "name": "Articles Of Iron Or Steel",
+            "fy2024_25": 12.44,
+            "fy2025_26": 7.97,
+            "growth_pct": "-35.95"
+          },
+          {
+            "hs": "09",
+            "name": "Coffee, Tea, Mate And Spices.",
+            "fy2024_25": 8.91,
+            "fy2025_26": 5.92,
+            "growth_pct": "-33.52"
+          },
+          {
+            "hs": "75",
+            "name": "Nickel And Articles Thereof.",
+            "fy2024_25": 1.66,
+            "fy2025_26": 4.74,
+            "growth_pct": "185.29"
+          },
+          {
+            "hs": "30",
+            "name": "Pharmaceutical Products",
+            "fy2024_25": 0.72,
+            "fy2025_26": 4.12,
+            "growth_pct": "469.02"
+          },
+          {
+            "hs": "88",
+            "name": "Aircraft, Spacecraft, And Parts Thereof.",
+            "fy2024_25": 27.73,
+            "fy2025_26": 3.68,
+            "growth_pct": "-86.73"
+          },
+          {
+            "hs": "34",
+            "name": "Soap, Organic Surface-Active Agents, Washing Preparations, Lubricating Preparations, Artificial Waxes, Prepared Waxes, Polishing Or Scouring Prep.",
+            "fy2024_25": 2.84,
+            "fy2025_26": 3.27,
+            "growth_pct": "14.88"
+          },
+          {
+            "hs": "89",
+            "name": "Ships, Boats And Floating Structures.",
+            "fy2024_25": 9.66,
+            "fy2025_26": 3.23,
+            "growth_pct": "-66.55"
+          },
+          {
+            "hs": "68",
+            "name": "Articles Of Stone, Plaster, Cement, Asbestos, Mica Or Similar Materials.",
+            "fy2024_25": 4.62,
+            "fy2025_26": 2.8,
+            "growth_pct": "-39.40"
+          },
+          {
+            "hs": "02",
+            "name": "Meat And Edible Meat Offal.",
+            "fy2024_25": 0.76,
+            "fy2025_26": 2.16,
+            "growth_pct": "183.77"
+          },
+          {
+            "hs": "05",
+            "name": "Products Of Animal Origin, Not Elsewhere Specified Or Included.",
+            "fy2024_25": 1.85,
+            "fy2025_26": 2.08,
+            "growth_pct": "12.47"
+          },
+          {
+            "hs": "41",
+            "name": "Raw Hides And Skins (Other Than Furskins) And Leather",
+            "fy2024_25": 2.56,
+            "fy2025_26": 1.98,
+            "growth_pct": "-22.66"
+          },
+          {
+            "hs": "80",
+            "name": "Tin And Articles Thereof.",
+            "fy2024_25": 0.01,
+            "fy2025_26": 1.62,
+            "growth_pct": "19348.91"
+          },
+          {
+            "hs": "69",
+            "name": "Ceramic Products.",
+            "fy2024_25": 0.58,
+            "fy2025_26": 1.57,
+            "growth_pct": "170.58"
+          },
+          {
+            "hs": "32",
+            "name": "Tanning Or Dyeing Extracts; Tannins And Their Deri. Dyes, Pigments And Other Colouring Matter; Paints And Ver; Putty And Other Mastics; Inks.",
+            "fy2024_25": 2.52,
+            "fy2025_26": 1.5,
+            "growth_pct": "-40.57"
+          },
+          {
+            "hs": "22",
+            "name": "Beverages, Spirits And Vinegar.",
+            "fy2024_25": 0.6,
+            "fy2025_26": 1.36,
+            "growth_pct": "127.08"
+          },
+          {
+            "hs": "51",
+            "name": "Wool, Fine Or Coarse Animal Hair, Horsehair Yarn And Woven Fabric.",
+            "fy2024_25": 0.82,
+            "fy2025_26": 1.2,
+            "growth_pct": "45.64"
+          },
+          {
+            "hs": "70",
+            "name": "Glass And Glassware.",
+            "fy2024_25": 1.28,
+            "fy2025_26": 0.72,
+            "growth_pct": "-43.43"
+          },
+          {
+            "hs": "54",
+            "name": "Man-Made Filaments.",
+            "fy2024_25": 3.17,
+            "fy2025_26": 0.62,
+            "growth_pct": "-80.55"
+          },
+          {
+            "hs": "74",
+            "name": "Copper And Articles Thereof.",
+            "fy2024_25": 0.05,
+            "fy2025_26": 0.53,
+            "growth_pct": "874.88"
+          },
+          {
+            "hs": "06",
+            "name": "Live Trees And Other Plants; Bulbs; Roots And The Like; Cut Flowers And Ornamental Foliage.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.51,
+            "growth_pct": "1767710.34"
+          },
+          {
+            "hs": "94",
+            "name": "Furniture; Bedding, Mattresses, Mattress Supports, Cushions And Similar Stuffed Furnishing; Lamps And Lighting Fittings Not Elsewhere Specified Or Inc",
+            "fy2024_25": 0.35,
+            "fy2025_26": 0.44,
+            "growth_pct": "23.70"
+          },
+          {
+            "hs": "23",
+            "name": "Residues And Waste From The Food Industries; Prepared Animal Foder.",
+            "fy2024_25": 0.22,
+            "fy2025_26": 0.29,
+            "growth_pct": "30.35"
+          },
+          {
+            "hs": "95",
+            "name": "Toys, Games And Sports Requisites; Parts And Accessories Thereof.",
+            "fy2024_25": 0.09,
+            "fy2025_26": 0.29,
+            "growth_pct": "207.91"
+          },
+          {
+            "hs": "12",
+            "name": "Oil Seeds And Olea. Fruits; Misc. Grains, Seeds And Fruit; Industrial Or Medicinal Plants; Straw And Fodder.",
+            "fy2024_25": 0.23,
+            "fy2025_26": 0.27,
+            "growth_pct": "16.85"
+          },
+          {
+            "hs": "82",
+            "name": "Tools Implements, Cutlery, Spoons And Forks, Of Base Metal; Parts Thereof Of Base Metal.",
+            "fy2024_25": 0.04,
+            "fy2025_26": 0.27,
+            "growth_pct": "517.67"
+          },
+          {
+            "hs": "33",
+            "name": "Essential Oils And Resinoids; Perfumery, Cosmetic Or Toilet Preparations.",
+            "fy2024_25": 0.22,
+            "fy2025_26": 0.25,
+            "growth_pct": "12.57"
+          },
+          {
+            "hs": "53",
+            "name": "Other Vegetable Textile Fibres; Paper Yarn And Woven Fabrics Of Paper Yarn.",
+            "fy2024_25": 0.99,
+            "fy2025_26": 0.25,
+            "growth_pct": "-74.36"
+          },
+          {
+            "hs": "79",
+            "name": "Zinc And Articles Thereof.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.23,
+            "growth_pct": ""
+          },
+          {
+            "hs": "87",
+            "name": "Vehicles Other Than Railway Or Tramway Rolling Stock, And Parts And Accessories Thereof.",
+            "fy2024_25": 0.64,
+            "fy2025_26": 0.19,
+            "growth_pct": "-69.53"
+          },
+          {
+            "hs": "96",
+            "name": "Miscellaneous Manufactured Articles.",
+            "fy2024_25": 0.19,
+            "fy2025_26": 0.17,
+            "growth_pct": "-9.54"
+          },
+          {
+            "hs": "99",
+            "name": "Miscellaneous Goods.",
+            "fy2024_25": 0.2,
+            "fy2025_26": 0.13,
+            "growth_pct": "-37.16"
+          },
+          {
+            "hs": "24",
+            "name": "Tobacco And Manufactured Tobacco Substitutes.",
+            "fy2024_25": 0.14,
+            "fy2025_26": 0.09,
+            "growth_pct": "-38.06"
+          },
+          {
+            "hs": "63",
+            "name": "Other Made Up Textile Articles; Sets; Worn Clothing And Worn Textile Articles; Rags",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.09,
+            "growth_pct": "2195.26"
+          },
+          {
+            "hs": "35",
+            "name": "Albuminoidal Substances; Modified Starches; Glues; Enzymes.",
+            "fy2024_25": 0.02,
+            "fy2025_26": 0.08,
+            "growth_pct": "377.27"
+          },
+          {
+            "hs": "83",
+            "name": "Miscellaneous Articles Of Base Metal.",
+            "fy2024_25": 0.67,
+            "fy2025_26": 0.08,
+            "growth_pct": "-87.53"
+          },
+          {
+            "hs": "61",
+            "name": "Articles Of Apparel And Clothing Accessories, Knitted Or Corcheted.",
+            "fy2024_25": 0.05,
+            "fy2025_26": 0.06,
+            "growth_pct": "31.27"
+          },
+          {
+            "hs": "59",
+            "name": "Impregnated, Coated, Covered Or Laminated Textile Fabrics; Textile Articles Of A Kind Suitable For Industrial Use.",
+            "fy2024_25": 0.01,
+            "fy2025_26": 0.04,
+            "growth_pct": "611.15"
+          },
+          {
+            "hs": "62",
+            "name": "Articles Of Apparel And Clothing Accessories, Not Knitted Or Crocheted.",
+            "fy2024_25": 0.05,
+            "fy2025_26": 0.04,
+            "growth_pct": "-16.99"
+          },
+          {
+            "hs": "93",
+            "name": "Arms And Ammunition; Parts And Accessories Thereof.",
+            "fy2024_25": 6.89,
+            "fy2025_26": 0.03,
+            "growth_pct": "-99.53"
+          },
+          {
+            "hs": "52",
+            "name": "Cotton.",
+            "fy2024_25": 0.02,
+            "fy2025_26": 0.02,
+            "growth_pct": "-7.17"
+          },
+          {
+            "hs": "10",
+            "name": "Cereals.",
+            "fy2024_25": 0.04,
+            "fy2025_26": 0.01,
+            "growth_pct": "-72.32"
+          },
+          {
+            "hs": "16",
+            "name": "Preparations Of Meat, Of Fish Or Of Crustaceans, Molluscs Or Other Aquatic Invertebrates",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.01,
+            "growth_pct": ""
+          },
+          {
+            "hs": "18",
+            "name": "Cocoa And Cocoa Preparations.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.01,
+            "growth_pct": ""
+          },
+          {
+            "hs": "01",
+            "name": "Live Animals.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.0,
+            "growth_pct": ""
+          },
+          {
+            "hs": "03",
+            "name": "Fish And Crustaceans, Molluscs And Other Aquatic Invertabrates.",
+            "fy2024_25": 0.17,
+            "fy2025_26": 0.0,
+            "growth_pct": ""
+          },
+          {
+            "hs": "08",
+            "name": "Edible Fruit And Nuts; Peel Or Citrus Fruit Or Melons.",
+            "fy2024_25": 0.04,
+            "fy2025_26": 0.0,
+            "growth_pct": ""
+          },
+          {
+            "hs": "13",
+            "name": "Lac; Gums, Resins And Other Vegetable Saps And Extracts.",
+            "fy2024_25": 0.01,
+            "fy2025_26": 0.0,
+            "growth_pct": ""
+          },
+          {
+            "hs": "17",
+            "name": "Sugars And Sugar Confectionery.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.0,
+            "growth_pct": ""
+          },
+          {
+            "hs": "19",
+            "name": "Preparations Of Cereals, Flour, Starch Or Milk; Pastrycooks Products.",
+            "fy2024_25": 0.02,
+            "fy2025_26": 0.0,
+            "growth_pct": ""
+          },
+          {
+            "hs": "20",
+            "name": "Preparations Of Vegetables, Fruit, Nuts Or Other Parts Of Plants.",
+            "fy2024_25": 0.07,
+            "fy2025_26": 0.0,
+            "growth_pct": "-99.99"
+          },
+          {
+            "hs": "21",
+            "name": "Miscellaneous Edible Preparations.",
+            "fy2024_25": 0.1,
+            "fy2025_26": 0.0,
+            "growth_pct": ""
+          },
+          {
+            "hs": "42",
+            "name": "Articles Of Leather,Saddlery And Harness;Travel Goods, Handbags And Similar Cont.Articles Of Animal Gut(Othr Thn Silk-Wrm)Gut.",
+            "fy2024_25": 0.03,
+            "fy2025_26": 0.0,
+            "growth_pct": "-99.74"
+          },
+          {
+            "hs": "56",
+            "name": "Wadding, Felt And Nonwovens; Spacial Yarns; Twine, Cordage, Ropes And Cables And Articles Thereof.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.0,
+            "growth_pct": "20706.67"
+          },
+          {
+            "hs": "57",
+            "name": "Carpets And Other Textile Floor Coverings.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.0,
+            "growth_pct": "176.43"
+          },
+          {
+            "hs": "58",
+            "name": "Special Woven Fabrics; Tufted Textile Fabrics; Lace; Tapestries; Trimmings; Embroidery.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.0,
+            "growth_pct": ""
+          },
+          {
+            "hs": "60",
+            "name": "Knitted Or Crocheted Fabrics.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.0,
+            "growth_pct": ""
+          },
+          {
+            "hs": "64",
+            "name": "Footwear, Gaiters And The Like; Parts Of Such Articles.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.0,
+            "growth_pct": ""
+          },
+          {
+            "hs": "91",
+            "name": "Clocks And Watches And Parts Thereof.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.0,
+            "growth_pct": "42260.00"
+          }
+        ]
+      }
+    },
+    "UAE": {
+      "export": {
+        "total_fy2025_26": 37359.2,
+        "total_fy2024_25": 36638.0,
+        "chapters": [
+          {
+            "hs": "71",
+            "name": "Natural Or Cultured Pearls,Precious Or Semiprecious Stones,Pre.Metals,Clad With Pre.Metal And Artcls Thereof;Imit.Jewlry;Coin.",
+            "fy2024_25": 7758.93,
+            "fy2025_26": 8687.57,
+            "growth_pct": "11.97"
+          },
+          {
+            "hs": "27",
+            "name": "Mineral Fuels, Mineral Oils And Products Of Their Distillation; Bituminous Substances; Mineral Waxes.",
+            "fy2024_25": 7595.52,
+            "fy2025_26": 5850.69,
+            "growth_pct": "-22.97"
+          },
+          {
+            "hs": "85",
+            "name": "Electrical Machinery And Equipment And Parts Thereof; Sound Recorders And Reproducers, Television Image And Sound Recorders And Reproducers,And Parts.",
+            "fy2024_25": 3840.04,
+            "fy2025_26": 5397.88,
+            "growth_pct": "40.57"
+          },
+          {
+            "hs": "84",
+            "name": "Nuclear Reactors, Boilers, Machinery And Mechanical Appliances; Parts Thereof.",
+            "fy2024_25": 1789.94,
+            "fy2025_26": 2354.97,
+            "growth_pct": "31.57"
+          },
+          {
+            "hs": "89",
+            "name": "Ships, Boats And Floating Structures.",
+            "fy2024_25": 1107.2,
+            "fy2025_26": 1314.0,
+            "growth_pct": "18.68"
+          },
+          {
+            "hs": "87",
+            "name": "Vehicles Other Than Railway Or Tramway Rolling Stock, And Parts And Accessories Thereof.",
+            "fy2024_25": 1005.67,
+            "fy2025_26": 1177.88,
+            "growth_pct": "17.12"
+          },
+          {
+            "hs": "73",
+            "name": "Articles Of Iron Or Steel",
+            "fy2024_25": 863.61,
+            "fy2025_26": 835.02,
+            "growth_pct": "-3.31"
+          },
+          {
+            "hs": "10",
+            "name": "Cereals.",
+            "fy2024_25": 524.08,
+            "fy2025_26": 723.42,
+            "growth_pct": "38.04"
+          },
+          {
+            "hs": "61",
+            "name": "Articles Of Apparel And Clothing Accessories, Knitted Or Corcheted.",
+            "fy2024_25": 638.19,
+            "fy2025_26": 700.14,
+            "growth_pct": "9.71"
+          },
+          {
+            "hs": "72",
+            "name": "Iron And Steel",
+            "fy2024_25": 704.06,
+            "fy2025_26": 615.83,
+            "growth_pct": "-12.53"
+          },
+          {
+            "hs": "62",
+            "name": "Articles Of Apparel And Clothing Accessories, Not Knitted Or Crocheted.",
+            "fy2024_25": 587.11,
+            "fy2025_26": 603.73,
+            "growth_pct": "2.83"
+          },
+          {
+            "hs": "09",
+            "name": "Coffee, Tea, Mate And Spices.",
+            "fy2024_25": 545.06,
+            "fy2025_26": 596.88,
+            "growth_pct": "9.51"
+          },
+          {
+            "hs": "29",
+            "name": "Organic Chemicals",
+            "fy2024_25": 502.95,
+            "fy2025_26": 528.29,
+            "growth_pct": "5.04"
+          },
+          {
+            "hs": "02",
+            "name": "Meat And Edible Meat Offal.",
+            "fy2024_25": 366.98,
+            "fy2025_26": 516.79,
+            "growth_pct": "40.82"
+          },
+          {
+            "hs": "39",
+            "name": "Plastic And Articles Thereof.",
+            "fy2024_25": 455.82,
+            "fy2025_26": 476.04,
+            "growth_pct": "4.44"
+          },
+          {
+            "hs": "24",
+            "name": "Tobacco And Manufactured Tobacco Substitutes.",
+            "fy2024_25": 427.46,
+            "fy2025_26": 400.05,
+            "growth_pct": "-6.41"
+          },
+          {
+            "hs": "48",
+            "name": "Paper And Paperboard; Articles Of Paper Pulp, Of Paper Or Of Paperboard.",
+            "fy2024_25": 371.75,
+            "fy2025_26": 333.64,
+            "growth_pct": "-10.25"
+          },
+          {
+            "hs": "63",
+            "name": "Other Made Up Textile Articles; Sets; Worn Clothing And Worn Textile Articles; Rags",
+            "fy2024_25": 282.35,
+            "fy2025_26": 299.23,
+            "growth_pct": "5.98"
+          },
+          {
+            "hs": "07",
+            "name": "Edible Vegetables And Certain Roots And Tubers.",
+            "fy2024_25": 230.41,
+            "fy2025_26": 289.03,
+            "growth_pct": "25.44"
+          },
+          {
+            "hs": "08",
+            "name": "Edible Fruit And Nuts; Peel Or Citrus Fruit Or Melons.",
+            "fy2024_25": 275.6,
+            "fy2025_26": 287.04,
+            "growth_pct": "4.15"
+          },
+          {
+            "hs": "33",
+            "name": "Essential Oils And Resinoids; Perfumery, Cosmetic Or Toilet Preparations.",
+            "fy2024_25": 300.16,
+            "fy2025_26": 285.43,
+            "growth_pct": "-4.91"
+          },
+          {
+            "hs": "90",
+            "name": "Optical, Photographic Cinematographic Measuring, Checking Precision, Medical Or Surgical Inst. And Apparatus Parts And Accessories Thereof;",
+            "fy2024_25": 237.15,
+            "fy2025_26": 245.97,
+            "growth_pct": "3.72"
+          },
+          {
+            "hs": "30",
+            "name": "Pharmaceutical Products",
+            "fy2024_25": 210.06,
+            "fy2025_26": 237.5,
+            "growth_pct": "13.06"
+          },
+          {
+            "hs": "38",
+            "name": "Miscellaneous Chemical Products.",
+            "fy2024_25": 230.94,
+            "fy2025_26": 233.89,
+            "growth_pct": "1.28"
+          },
+          {
+            "hs": "28",
+            "name": "Inorganic Chemicals; Organic Or Inorganic Compounds Of Precious Metals, Of Rare-Earth Metals, Or Radi. Elem. Or Of Isotopes.",
+            "fy2024_25": 290.36,
+            "fy2025_26": 221.71,
+            "growth_pct": "-23.64"
+          },
+          {
+            "hs": "04",
+            "name": "Dairy Produce; Birds' Eggs; Natural Honey; Edible Prod. Of Animal Origin, Not Elsewhere Spec. Or Included.",
+            "fy2024_25": 117.66,
+            "fy2025_26": 214.32,
+            "growth_pct": "82.15"
+          },
+          {
+            "hs": "40",
+            "name": "Rubber And Articles Thereof.",
+            "fy2024_25": 211.96,
+            "fy2025_26": 199.74,
+            "growth_pct": "-5.77"
+          },
+          {
+            "hs": "69",
+            "name": "Ceramic Products.",
+            "fy2024_25": 192.94,
+            "fy2025_26": 195.71,
+            "growth_pct": "1.43"
+          },
+          {
+            "hs": "54",
+            "name": "Man-Made Filaments.",
+            "fy2024_25": 162.78,
+            "fy2025_26": 178.95,
+            "growth_pct": "9.93"
+          },
+          {
+            "hs": "21",
+            "name": "Miscellaneous Edible Preparations.",
+            "fy2024_25": 153.84,
+            "fy2025_26": 178.38,
+            "growth_pct": "15.95"
+          },
+          {
+            "hs": "50",
+            "name": "Silk",
+            "fy2024_25": 76.6,
+            "fy2025_26": 172.28,
+            "growth_pct": "124.91"
+          },
+          {
+            "hs": "22",
+            "name": "Beverages, Spirits And Vinegar.",
+            "fy2024_25": 169.59,
+            "fy2025_26": 160.38,
+            "growth_pct": "-5.43"
+          },
+          {
+            "hs": "17",
+            "name": "Sugars And Sugar Confectionery.",
+            "fy2024_25": 73.55,
+            "fy2025_26": 149.91,
+            "growth_pct": "103.83"
+          },
+          {
+            "hs": "76",
+            "name": "Aluminium And Articles Thereof.",
+            "fy2024_25": 133.98,
+            "fy2025_26": 144.4,
+            "growth_pct": "7.77"
+          },
+          {
+            "hs": "03",
+            "name": "Fish And Crustaceans, Molluscs And Other Aquatic Invertabrates.",
+            "fy2024_25": 155.69,
+            "fy2025_26": 143.12,
+            "growth_pct": "-8.08"
+          },
+          {
+            "hs": "32",
+            "name": "Tanning Or Dyeing Extracts; Tannins And Their Deri. Dyes, Pigments And Other Colouring Matter; Paints And Ver; Putty And Other Mastics; Inks.",
+            "fy2024_25": 291.87,
+            "fy2025_26": 140.9,
+            "growth_pct": "-51.73"
+          },
+          {
+            "hs": "52",
+            "name": "Cotton.",
+            "fy2024_25": 152.64,
+            "fy2025_26": 123.87,
+            "growth_pct": "-18.85"
+          },
+          {
+            "hs": "12",
+            "name": "Oil Seeds And Olea. Fruits; Misc. Grains, Seeds And Fruit; Industrial Or Medicinal Plants; Straw And Fodder.",
+            "fy2024_25": 104.42,
+            "fy2025_26": 118.11,
+            "growth_pct": "13.11"
+          },
+          {
+            "hs": "70",
+            "name": "Glass And Glassware.",
+            "fy2024_25": 83.81,
+            "fy2025_26": 114.42,
+            "growth_pct": "36.52"
+          },
+          {
+            "hs": "34",
+            "name": "Soap, Organic Surface-Active Agents, Washing Preparations, Lubricating Preparations, Artificial Waxes, Prepared Waxes, Polishing Or Scouring Prep.",
+            "fy2024_25": 103.09,
+            "fy2025_26": 111.44,
+            "growth_pct": "8.10"
+          },
+          {
+            "hs": "64",
+            "name": "Footwear, Gaiters And The Like; Parts Of Such Articles.",
+            "fy2024_25": 96.87,
+            "fy2025_26": 111.36,
+            "growth_pct": "14.95"
+          },
+          {
+            "hs": "79",
+            "name": "Zinc And Articles Thereof.",
+            "fy2024_25": 78.16,
+            "fy2025_26": 103.36,
+            "growth_pct": "32.25"
+          },
+          {
+            "hs": "68",
+            "name": "Articles Of Stone, Plaster, Cement, Asbestos, Mica Or Similar Materials.",
+            "fy2024_25": 92.94,
+            "fy2025_26": 100.79,
+            "growth_pct": "8.45"
+          },
+          {
+            "hs": "15",
+            "name": "Animal Or Vegetable Fats And Oils And Their Cleavage Products; Pre. Edible Fats; Animal Or Vegetable Waxex.",
+            "fy2024_25": 63.55,
+            "fy2025_26": 98.15,
+            "growth_pct": "54.45"
+          },
+          {
+            "hs": "74",
+            "name": "Copper And Articles Thereof.",
+            "fy2024_25": 79.61,
+            "fy2025_26": 86.67,
+            "growth_pct": "8.87"
+          },
+          {
+            "hs": "94",
+            "name": "Furniture; Bedding, Mattresses, Mattress Supports, Cushions And Similar Stuffed Furnishing; Lamps And Lighting Fittings Not Elsewhere Specified Or Inc",
+            "fy2024_25": 91.42,
+            "fy2025_26": 86.18,
+            "growth_pct": "-5.74"
+          },
+          {
+            "hs": "19",
+            "name": "Preparations Of Cereals, Flour, Starch Or Milk; Pastrycooks Products.",
+            "fy2024_25": 76.42,
+            "fy2025_26": 84.19,
+            "growth_pct": "10.16"
+          },
+          {
+            "hs": "25",
+            "name": "Salt; Sulphur; Earths And Stone; Plastering Materials, Lime And Cement.",
+            "fy2024_25": 83.49,
+            "fy2025_26": 79.13,
+            "growth_pct": "-5.23"
+          },
+          {
+            "hs": "55",
+            "name": "Man-Made Staple Fibres.",
+            "fy2024_25": 79.63,
+            "fy2025_26": 79.07,
+            "growth_pct": "-0.71"
+          },
+          {
+            "hs": "20",
+            "name": "Preparations Of Vegetables, Fruit, Nuts Or Other Parts Of Plants.",
+            "fy2024_25": 74.45,
+            "fy2025_26": 76.55,
+            "growth_pct": "2.83"
+          },
+          {
+            "hs": "82",
+            "name": "Tools Implements, Cutlery, Spoons And Forks, Of Base Metal; Parts Thereof Of Base Metal.",
+            "fy2024_25": 63.83,
+            "fy2025_26": 61.71,
+            "growth_pct": "-3.32"
+          },
+          {
+            "hs": "57",
+            "name": "Carpets And Other Textile Floor Coverings.",
+            "fy2024_25": 46.69,
+            "fy2025_26": 60.43,
+            "growth_pct": "29.41"
+          },
+          {
+            "hs": "83",
+            "name": "Miscellaneous Articles Of Base Metal.",
+            "fy2024_25": 55.68,
+            "fy2025_26": 55.4,
+            "growth_pct": "-0.49"
+          },
+          {
+            "hs": "78",
+            "name": "Lead And Articles Thereof.",
+            "fy2024_25": 54.67,
+            "fy2025_26": 54.82,
+            "growth_pct": "0.27"
+          },
+          {
+            "hs": "35",
+            "name": "Albuminoidal Substances; Modified Starches; Glues; Enzymes.",
+            "fy2024_25": 42.6,
+            "fy2025_26": 51.47,
+            "growth_pct": "20.82"
+          },
+          {
+            "hs": "59",
+            "name": "Impregnated, Coated, Covered Or Laminated Textile Fabrics; Textile Articles Of A Kind Suitable For Industrial Use.",
+            "fy2024_25": 31.36,
+            "fy2025_26": 50.59,
+            "growth_pct": "61.34"
+          },
+          {
+            "hs": "44",
+            "name": "Wood And Articles Of Wood; Wood Charcoal.",
+            "fy2024_25": 56.71,
+            "fy2025_26": 47.93,
+            "growth_pct": "-15.48"
+          },
+          {
+            "hs": "42",
+            "name": "Articles Of Leather,Saddlery And Harness;Travel Goods, Handbags And Similar Cont.Articles Of Animal Gut(Othr Thn Silk-Wrm)Gut.",
+            "fy2024_25": 45.21,
+            "fy2025_26": 47.87,
+            "growth_pct": "5.90"
+          },
+          {
+            "hs": "23",
+            "name": "Residues And Waste From The Food Industries; Prepared Animal Foder.",
+            "fy2024_25": 50.19,
+            "fy2025_26": 43.72,
+            "growth_pct": "-12.89"
+          },
+          {
+            "hs": "88",
+            "name": "Aircraft, Spacecraft, And Parts Thereof.",
+            "fy2024_25": 1699.42,
+            "fy2025_26": 42.24,
+            "growth_pct": "-97.51"
+          },
+          {
+            "hs": "96",
+            "name": "Miscellaneous Manufactured Articles.",
+            "fy2024_25": 38.07,
+            "fy2025_26": 38.02,
+            "growth_pct": "-0.14"
+          },
+          {
+            "hs": "56",
+            "name": "Wadding, Felt And Nonwovens; Spacial Yarns; Twine, Cordage, Ropes And Cables And Articles Thereof.",
+            "fy2024_25": 41.29,
+            "fy2025_26": 36.8,
+            "growth_pct": "-10.88"
+          },
+          {
+            "hs": "11",
+            "name": "Products Of The Milling Industry; Malt; Starches; Inulin; Wheat Gluten.",
+            "fy2024_25": 25.33,
+            "fy2025_26": 31.52,
+            "growth_pct": "24.45"
+          },
+          {
+            "hs": "18",
+            "name": "Cocoa And Cocoa Preparations.",
+            "fy2024_25": 17.53,
+            "fy2025_26": 27.43,
+            "growth_pct": "56.50"
+          },
+          {
+            "hs": "13",
+            "name": "Lac; Gums, Resins And Other Vegetable Saps And Extracts.",
+            "fy2024_25": 24.78,
+            "fy2025_26": 25.56,
+            "growth_pct": "3.12"
+          },
+          {
+            "hs": "01",
+            "name": "Live Animals.",
+            "fy2024_25": 18.46,
+            "fy2025_26": 23.47,
+            "growth_pct": "27.17"
+          },
+          {
+            "hs": "53",
+            "name": "Other Vegetable Textile Fibres; Paper Yarn And Woven Fabrics Of Paper Yarn.",
+            "fy2024_25": 15.68,
+            "fy2025_26": 20.98,
+            "growth_pct": "33.78"
+          },
+          {
+            "hs": "49",
+            "name": "Printed Bookds, Newspapers, Pictures And Other Products Of The Printing Industry; Manuscripts, Typescripts And Plans.",
+            "fy2024_25": 16.05,
+            "fy2025_26": 16.85,
+            "growth_pct": "4.96"
+          },
+          {
+            "hs": "97",
+            "name": "Works Of Art Collectors' Pieces And Antiques.",
+            "fy2024_25": 8.5,
+            "fy2025_26": 14.95,
+            "growth_pct": "75.88"
+          },
+          {
+            "hs": "95",
+            "name": "Toys, Games And Sports Requisites; Parts And Accessories Thereof.",
+            "fy2024_25": 12.25,
+            "fy2025_26": 14.06,
+            "growth_pct": "14.74"
+          },
+          {
+            "hs": "58",
+            "name": "Special Woven Fabrics; Tufted Textile Fabrics; Lace; Tapestries; Trimmings; Embroidery.",
+            "fy2024_25": 13.32,
+            "fy2025_26": 13.88,
+            "growth_pct": "4.22"
+          },
+          {
+            "hs": "91",
+            "name": "Clocks And Watches And Parts Thereof.",
+            "fy2024_25": 7.2,
+            "fy2025_26": 13.52,
+            "growth_pct": "87.90"
+          },
+          {
+            "hs": "75",
+            "name": "Nickel And Articles Thereof.",
+            "fy2024_25": 11.3,
+            "fy2025_26": 13.5,
+            "growth_pct": "19.50"
+          },
+          {
+            "hs": "31",
+            "name": "Fertilisers.",
+            "fy2024_25": 9.93,
+            "fy2025_26": 9.35,
+            "growth_pct": "-5.83"
+          },
+          {
+            "hs": "60",
+            "name": "Knitted Or Crocheted Fabrics.",
+            "fy2024_25": 9.3,
+            "fy2025_26": 9.34,
+            "growth_pct": "0.45"
+          },
+          {
+            "hs": "06",
+            "name": "Live Trees And Other Plants; Bulbs; Roots And The Like; Cut Flowers And Ornamental Foliage.",
+            "fy2024_25": 7.66,
+            "fy2025_26": 8.69,
+            "growth_pct": "13.49"
+          },
+          {
+            "hs": "92",
+            "name": "Musical Instruments; Parts And Accessories Of Such Articles.",
+            "fy2024_25": 5.89,
+            "fy2025_26": 8.5,
+            "growth_pct": "44.39"
+          },
+          {
+            "hs": "80",
+            "name": "Tin And Articles Thereof.",
+            "fy2024_25": 7.32,
+            "fy2025_26": 7.47,
+            "growth_pct": "2.06"
+          },
+          {
+            "hs": "65",
+            "name": "Headgear And Parts Thereof.",
+            "fy2024_25": 5.4,
+            "fy2025_26": 6.36,
+            "growth_pct": "17.79"
+          },
+          {
+            "hs": "67",
+            "name": "Prepared Feathers And Down And Articles Made Of Feathers Or Of Down; Artificial Flowers; Articles Of Human Hair.",
+            "fy2024_25": 3.16,
+            "fy2025_26": 4.93,
+            "growth_pct": "56.13"
+          },
+          {
+            "hs": "16",
+            "name": "Preparations Of Meat, Of Fish Or Of Crustaceans, Molluscs Or Other Aquatic Invertebrates",
+            "fy2024_25": 5.21,
+            "fy2025_26": 4.88,
+            "growth_pct": "-6.20"
+          },
+          {
+            "hs": "93",
+            "name": "Arms And Ammunition; Parts And Accessories Thereof.",
+            "fy2024_25": 10.25,
+            "fy2025_26": 4.43,
+            "growth_pct": "-56.85"
+          },
+          {
+            "hs": "37",
+            "name": "Photographic Or Cinematographic Goods.",
+            "fy2024_25": 2.97,
+            "fy2025_26": 3.85,
+            "growth_pct": "29.54"
+          },
+          {
+            "hs": "81",
+            "name": "Other Base Metals; Cermets; Articles Thereof.",
+            "fy2024_25": 4.58,
+            "fy2025_26": 3.67,
+            "growth_pct": "-20.00"
+          },
+          {
+            "hs": "26",
+            "name": "Ores, Slag And Ash.",
+            "fy2024_25": 13.82,
+            "fy2025_26": 3.49,
+            "growth_pct": "-74.77"
+          },
+          {
+            "hs": "14",
+            "name": "Vegetable Plaiting Materials; Vegetable Products Not Elsewhere Specified Or Included.",
+            "fy2024_25": 2.56,
+            "fy2025_26": 2.41,
+            "growth_pct": "-6.12"
+          },
+          {
+            "hs": "51",
+            "name": "Wool, Fine Or Coarse Animal Hair, Horsehair Yarn And Woven Fabric.",
+            "fy2024_25": 1.73,
+            "fy2025_26": 1.99,
+            "growth_pct": "15.23"
+          },
+          {
+            "hs": "36",
+            "name": "Explosives; Pyrotechnic Products; Matches; Pyrophoric Alloys; Certain Combustible Preparations.",
+            "fy2024_25": 1.58,
+            "fy2025_26": 1.77,
+            "growth_pct": "12.49"
+          },
+          {
+            "hs": "41",
+            "name": "Raw Hides And Skins (Other Than Furskins) And Leather",
+            "fy2024_25": 2.25,
+            "fy2025_26": 1.57,
+            "growth_pct": "-30.24"
+          },
+          {
+            "hs": "46",
+            "name": "Manufactures Of Straw, Of Esparto Or Of Other Plaiting Materials; Basketware And Wickerwork.",
+            "fy2024_25": 1.46,
+            "fy2025_26": 1.39,
+            "growth_pct": "-5.03"
+          },
+          {
+            "hs": "98",
+            "name": "Project Goods; Some Special Uses.",
+            "fy2024_25": 1.3,
+            "fy2025_26": 1.14,
+            "growth_pct": "-12.65"
+          },
+          {
+            "hs": "45",
+            "name": "Cork And Articles Of Cork.",
+            "fy2024_25": 0.79,
+            "fy2025_26": 1.13,
+            "growth_pct": "42.97"
+          },
+          {
+            "hs": "86",
+            "name": "Railway Or Tramway Locomotives, Rolling-Stock And Parts Thereof; Railway Or Tramway Track Fixtures And Fittings And Parts Thereof; Mechanical",
+            "fy2024_25": 1.99,
+            "fy2025_26": 1.01,
+            "growth_pct": "-48.97"
+          },
+          {
+            "hs": "05",
+            "name": "Products Of Animal Origin, Not Elsewhere Specified Or Included.",
+            "fy2024_25": 0.22,
+            "fy2025_26": 0.95,
+            "growth_pct": "339.04"
+          },
+          {
+            "hs": "66",
+            "name": "Umbrellas, Sun Umbrellas, Walking-Sticks, Seat-Sticks, Whips,Riding-Crops And Parts Thereof.",
+            "fy2024_25": 0.07,
+            "fy2025_26": 0.08,
+            "growth_pct": "27.51"
+          },
+          {
+            "hs": "43",
+            "name": "Furskins And Artificial Fur, Manufactures Thereof.",
+            "fy2024_25": 0.05,
+            "fy2025_26": 0.03,
+            "growth_pct": "-43.44"
+          },
+          {
+            "hs": "47",
+            "name": "Pulp Of Wood Or Of Other Fibrous Cellulosic Material; Waste And Scrap Of Paper Or Paperboard.",
+            "fy2024_25": 0.07,
+            "fy2025_26": 0.02,
+            "growth_pct": "-68.20"
+          },
+          {
+            "hs": "99",
+            "name": "Miscellaneous Goods.",
+            "fy2024_25": 0.01,
+            "fy2025_26": 0.01,
+            "growth_pct": "23.23"
+          }
+        ]
+      },
+      "import": {
+        "total_fy2025_26": 63894.4,
+        "total_fy2024_25": 63402.9,
+        "chapters": [
+          {
+            "hs": "71",
+            "name": "Natural Or Cultured Pearls,Precious Or Semiprecious Stones,Pre.Metals,Clad With Pre.Metal And Artcls Thereof;Imit.Jewlry;Coin.",
+            "fy2024_25": 27083.15,
+            "fy2025_26": 24825.69,
+            "growth_pct": "-8.34"
+          },
+          {
+            "hs": "27",
+            "name": "Mineral Fuels, Mineral Oils And Products Of Their Distillation; Bituminous Substances; Mineral Waxes.",
+            "fy2024_25": 24739.66,
+            "fy2025_26": 24272.88,
+            "growth_pct": "-1.89"
+          },
+          {
+            "hs": "28",
+            "name": "Inorganic Chemicals; Organic Or Inorganic Compounds Of Precious Metals, Of Rare-Earth Metals, Or Radi. Elem. Or Of Isotopes.",
+            "fy2024_25": 1017.57,
+            "fy2025_26": 3359.27,
+            "growth_pct": "230.13"
+          },
+          {
+            "hs": "88",
+            "name": "Aircraft, Spacecraft, And Parts Thereof.",
+            "fy2024_25": 2475.92,
+            "fy2025_26": 1898.72,
+            "growth_pct": "-23.31"
+          },
+          {
+            "hs": "74",
+            "name": "Copper And Articles Thereof.",
+            "fy2024_25": 1067.17,
+            "fy2025_26": 1419.52,
+            "growth_pct": "33.02"
+          },
+          {
+            "hs": "39",
+            "name": "Plastic And Articles Thereof.",
+            "fy2024_25": 1329.04,
+            "fy2025_26": 1195.78,
+            "growth_pct": "-10.03"
+          },
+          {
+            "hs": "25",
+            "name": "Salt; Sulphur; Earths And Stone; Plastering Materials, Lime And Cement.",
+            "fy2024_25": 980.25,
+            "fy2025_26": 1181.78,
+            "growth_pct": "20.56"
+          },
+          {
+            "hs": "89",
+            "name": "Ships, Boats And Floating Structures.",
+            "fy2024_25": 633.99,
+            "fy2025_26": 1046.14,
+            "growth_pct": "65.01"
+          },
+          {
+            "hs": "76",
+            "name": "Aluminium And Articles Thereof.",
+            "fy2024_25": 648.18,
+            "fy2025_26": 804.23,
+            "growth_pct": "24.08"
+          },
+          {
+            "hs": "72",
+            "name": "Iron And Steel",
+            "fy2024_25": 420.7,
+            "fy2025_26": 646.71,
+            "growth_pct": "53.72"
+          },
+          {
+            "hs": "84",
+            "name": "Nuclear Reactors, Boilers, Machinery And Mechanical Appliances; Parts Thereof.",
+            "fy2024_25": 381.26,
+            "fy2025_26": 432.72,
+            "growth_pct": "13.50"
+          },
+          {
+            "hs": "08",
+            "name": "Edible Fruit And Nuts; Peel Or Citrus Fruit Or Melons.",
+            "fy2024_25": 252.18,
+            "fy2025_26": 385.02,
+            "growth_pct": "52.68"
+          },
+          {
+            "hs": "31",
+            "name": "Fertilisers.",
+            "fy2024_25": 243.48,
+            "fy2025_26": 355.99,
+            "growth_pct": "46.21"
+          },
+          {
+            "hs": "85",
+            "name": "Electrical Machinery And Equipment And Parts Thereof; Sound Recorders And Reproducers, Television Image And Sound Recorders And Reproducers,And Parts.",
+            "fy2024_25": 274.81,
+            "fy2025_26": 241.34,
+            "growth_pct": "-12.18"
+          },
+          {
+            "hs": "26",
+            "name": "Ores, Slag And Ash.",
+            "fy2024_25": 249.83,
+            "fy2025_26": 232.18,
+            "growth_pct": "-7.07"
+          },
+          {
+            "hs": "29",
+            "name": "Organic Chemicals",
+            "fy2024_25": 110.94,
+            "fy2025_26": 161.49,
+            "growth_pct": "45.57"
+          },
+          {
+            "hs": "73",
+            "name": "Articles Of Iron Or Steel",
+            "fy2024_25": 118.82,
+            "fy2025_26": 113.26,
+            "growth_pct": "-4.68"
+          },
+          {
+            "hs": "22",
+            "name": "Beverages, Spirits And Vinegar.",
+            "fy2024_25": 64.28,
+            "fy2025_26": 103.38,
+            "growth_pct": "60.83"
+          },
+          {
+            "hs": "78",
+            "name": "Lead And Articles Thereof.",
+            "fy2024_25": 100.91,
+            "fy2025_26": 102.6,
+            "growth_pct": "1.68"
+          },
+          {
+            "hs": "33",
+            "name": "Essential Oils And Resinoids; Perfumery, Cosmetic Or Toilet Preparations.",
+            "fy2024_25": 100.31,
+            "fy2025_26": 98.3,
+            "growth_pct": "-2.00"
+          },
+          {
+            "hs": "47",
+            "name": "Pulp Of Wood Or Of Other Fibrous Cellulosic Material; Waste And Scrap Of Paper Or Paperboard.",
+            "fy2024_25": 92.98,
+            "fy2025_26": 89.68,
+            "growth_pct": "-3.56"
+          },
+          {
+            "hs": "90",
+            "name": "Optical, Photographic Cinematographic Measuring, Checking Precision, Medical Or Surgical Inst. And Apparatus Parts And Accessories Thereof;",
+            "fy2024_25": 83.37,
+            "fy2025_26": 68.62,
+            "growth_pct": "-17.69"
+          },
+          {
+            "hs": "83",
+            "name": "Miscellaneous Articles Of Base Metal.",
+            "fy2024_25": 59.63,
+            "fy2025_26": 65.49,
+            "growth_pct": "9.82"
+          },
+          {
+            "hs": "95",
+            "name": "Toys, Games And Sports Requisites; Parts And Accessories Thereof.",
+            "fy2024_25": 63.95,
+            "fy2025_26": 57.09,
+            "growth_pct": "-10.73"
+          },
+          {
+            "hs": "15",
+            "name": "Animal Or Vegetable Fats And Oils And Their Cleavage Products; Pre. Edible Fats; Animal Or Vegetable Waxex.",
+            "fy2024_25": 85.9,
+            "fy2025_26": 55.74,
+            "growth_pct": "-35.11"
+          },
+          {
+            "hs": "38",
+            "name": "Miscellaneous Chemical Products.",
+            "fy2024_25": 26.87,
+            "fy2025_26": 47.43,
+            "growth_pct": "76.51"
+          },
+          {
+            "hs": "98",
+            "name": "Project Goods; Some Special Uses.",
+            "fy2024_25": 8.21,
+            "fy2025_26": 41.82,
+            "growth_pct": "409.30"
+          },
+          {
+            "hs": "40",
+            "name": "Rubber And Articles Thereof.",
+            "fy2024_25": 40.16,
+            "fy2025_26": 37.95,
+            "growth_pct": "-5.50"
+          },
+          {
+            "hs": "75",
+            "name": "Nickel And Articles Thereof.",
+            "fy2024_25": 35.9,
+            "fy2025_26": 37.72,
+            "growth_pct": "5.08"
+          },
+          {
+            "hs": "48",
+            "name": "Paper And Paperboard; Articles Of Paper Pulp, Of Paper Or Of Paperboard.",
+            "fy2024_25": 39.83,
+            "fy2025_26": 35.6,
+            "growth_pct": "-10.63"
+          },
+          {
+            "hs": "32",
+            "name": "Tanning Or Dyeing Extracts; Tannins And Their Deri. Dyes, Pigments And Other Colouring Matter; Paints And Ver; Putty And Other Mastics; Inks.",
+            "fy2024_25": 25.9,
+            "fy2025_26": 33.48,
+            "growth_pct": "29.24"
+          },
+          {
+            "hs": "91",
+            "name": "Clocks And Watches And Parts Thereof.",
+            "fy2024_25": 28.62,
+            "fy2025_26": 33.1,
+            "growth_pct": "15.68"
+          },
+          {
+            "hs": "79",
+            "name": "Zinc And Articles Thereof.",
+            "fy2024_25": 35.58,
+            "fy2025_26": 30.28,
+            "growth_pct": "-14.90"
+          },
+          {
+            "hs": "94",
+            "name": "Furniture; Bedding, Mattresses, Mattress Supports, Cushions And Similar Stuffed Furnishing; Lamps And Lighting Fittings Not Elsewhere Specified Or Inc",
+            "fy2024_25": 23.05,
+            "fy2025_26": 27.54,
+            "growth_pct": "19.47"
+          },
+          {
+            "hs": "09",
+            "name": "Coffee, Tea, Mate And Spices.",
+            "fy2024_25": 37.69,
+            "fy2025_26": 23.9,
+            "growth_pct": "-36.59"
+          },
+          {
+            "hs": "24",
+            "name": "Tobacco And Manufactured Tobacco Substitutes.",
+            "fy2024_25": 5.56,
+            "fy2025_26": 22.22,
+            "growth_pct": "299.91"
+          },
+          {
+            "hs": "34",
+            "name": "Soap, Organic Surface-Active Agents, Washing Preparations, Lubricating Preparations, Artificial Waxes, Prepared Waxes, Polishing Or Scouring Prep.",
+            "fy2024_25": 20.01,
+            "fy2025_26": 21.55,
+            "growth_pct": "7.70"
+          },
+          {
+            "hs": "63",
+            "name": "Other Made Up Textile Articles; Sets; Worn Clothing And Worn Textile Articles; Rags",
+            "fy2024_25": 23.99,
+            "fy2025_26": 21.44,
+            "growth_pct": "-10.62"
+          },
+          {
+            "hs": "54",
+            "name": "Man-Made Filaments.",
+            "fy2024_25": 5.03,
+            "fy2025_26": 21.25,
+            "growth_pct": "322.97"
+          },
+          {
+            "hs": "60",
+            "name": "Knitted Or Crocheted Fabrics.",
+            "fy2024_25": 28.58,
+            "fy2025_26": 17.75,
+            "growth_pct": "-37.88"
+          },
+          {
+            "hs": "82",
+            "name": "Tools Implements, Cutlery, Spoons And Forks, Of Base Metal; Parts Thereof Of Base Metal.",
+            "fy2024_25": 14.61,
+            "fy2025_26": 17.75,
+            "growth_pct": "21.45"
+          },
+          {
+            "hs": "07",
+            "name": "Edible Vegetables And Certain Roots And Tubers.",
+            "fy2024_25": 65.93,
+            "fy2025_26": 16.1,
+            "growth_pct": "-75.58"
+          },
+          {
+            "hs": "97",
+            "name": "Works Of Art Collectors' Pieces And Antiques.",
+            "fy2024_25": 6.52,
+            "fy2025_26": 15.11,
+            "growth_pct": "131.81"
+          },
+          {
+            "hs": "57",
+            "name": "Carpets And Other Textile Floor Coverings.",
+            "fy2024_25": 13.59,
+            "fy2025_26": 12.83,
+            "growth_pct": "-5.59"
+          },
+          {
+            "hs": "44",
+            "name": "Wood And Articles Of Wood; Wood Charcoal.",
+            "fy2024_25": 14.21,
+            "fy2025_26": 12.69,
+            "growth_pct": "-10.70"
+          },
+          {
+            "hs": "70",
+            "name": "Glass And Glassware.",
+            "fy2024_25": 28.24,
+            "fy2025_26": 10.34,
+            "growth_pct": "-63.39"
+          },
+          {
+            "hs": "17",
+            "name": "Sugars And Sugar Confectionery.",
+            "fy2024_25": 10.21,
+            "fy2025_26": 8.96,
+            "growth_pct": "-12.22"
+          },
+          {
+            "hs": "30",
+            "name": "Pharmaceutical Products",
+            "fy2024_25": 3.91,
+            "fy2025_26": 8.88,
+            "growth_pct": "127.33"
+          },
+          {
+            "hs": "81",
+            "name": "Other Base Metals; Cermets; Articles Thereof.",
+            "fy2024_25": 5.57,
+            "fy2025_26": 8.74,
+            "growth_pct": "56.75"
+          },
+          {
+            "hs": "87",
+            "name": "Vehicles Other Than Railway Or Tramway Rolling Stock, And Parts And Accessories Thereof.",
+            "fy2024_25": 60.14,
+            "fy2025_26": 8.15,
+            "growth_pct": "-86.44"
+          },
+          {
+            "hs": "96",
+            "name": "Miscellaneous Manufactured Articles.",
+            "fy2024_25": 5.86,
+            "fy2025_26": 7.8,
+            "growth_pct": "33.08"
+          },
+          {
+            "hs": "19",
+            "name": "Preparations Of Cereals, Flour, Starch Or Milk; Pastrycooks Products.",
+            "fy2024_25": 4.04,
+            "fy2025_26": 7.37,
+            "growth_pct": "82.21"
+          },
+          {
+            "hs": "62",
+            "name": "Articles Of Apparel And Clothing Accessories, Not Knitted Or Crocheted.",
+            "fy2024_25": 4.07,
+            "fy2025_26": 7.11,
+            "growth_pct": "74.66"
+          },
+          {
+            "hs": "41",
+            "name": "Raw Hides And Skins (Other Than Furskins) And Leather",
+            "fy2024_25": 8.36,
+            "fy2025_26": 7.04,
+            "growth_pct": "-15.80"
+          },
+          {
+            "hs": "18",
+            "name": "Cocoa And Cocoa Preparations.",
+            "fy2024_25": 5.54,
+            "fy2025_26": 7.01,
+            "growth_pct": "26.70"
+          },
+          {
+            "hs": "56",
+            "name": "Wadding, Felt And Nonwovens; Spacial Yarns; Twine, Cordage, Ropes And Cables And Articles Thereof.",
+            "fy2024_25": 6.21,
+            "fy2025_26": 6.91,
+            "growth_pct": "11.20"
+          },
+          {
+            "hs": "12",
+            "name": "Oil Seeds And Olea. Fruits; Misc. Grains, Seeds And Fruit; Industrial Or Medicinal Plants; Straw And Fodder.",
+            "fy2024_25": 12.01,
+            "fy2025_26": 6.89,
+            "growth_pct": "-42.65"
+          },
+          {
+            "hs": "68",
+            "name": "Articles Of Stone, Plaster, Cement, Asbestos, Mica Or Similar Materials.",
+            "fy2024_25": 11.25,
+            "fy2025_26": 6.7,
+            "growth_pct": "-40.45"
+          },
+          {
+            "hs": "42",
+            "name": "Articles Of Leather,Saddlery And Harness;Travel Goods, Handbags And Similar Cont.Articles Of Animal Gut(Othr Thn Silk-Wrm)Gut.",
+            "fy2024_25": 5.8,
+            "fy2025_26": 5.07,
+            "growth_pct": "-12.60"
+          },
+          {
+            "hs": "61",
+            "name": "Articles Of Apparel And Clothing Accessories, Knitted Or Corcheted.",
+            "fy2024_25": 3.5,
+            "fy2025_26": 4.47,
+            "growth_pct": "27.71"
+          },
+          {
+            "hs": "69",
+            "name": "Ceramic Products.",
+            "fy2024_25": 4.78,
+            "fy2025_26": 4.2,
+            "growth_pct": "-12.05"
+          },
+          {
+            "hs": "21",
+            "name": "Miscellaneous Edible Preparations.",
+            "fy2024_25": 5.27,
+            "fy2025_26": 4.17,
+            "growth_pct": "-20.96"
+          },
+          {
+            "hs": "86",
+            "name": "Railway Or Tramway Locomotives, Rolling-Stock And Parts Thereof; Railway Or Tramway Track Fixtures And Fittings And Parts Thereof; Mechanical",
+            "fy2024_25": 8.17,
+            "fy2025_26": 4.16,
+            "growth_pct": "-49.11"
+          },
+          {
+            "hs": "13",
+            "name": "Lac; Gums, Resins And Other Vegetable Saps And Extracts.",
+            "fy2024_25": 2.43,
+            "fy2025_26": 3.51,
+            "growth_pct": "44.42"
+          },
+          {
+            "hs": "20",
+            "name": "Preparations Of Vegetables, Fruit, Nuts Or Other Parts Of Plants.",
+            "fy2024_25": 3.01,
+            "fy2025_26": 3.35,
+            "growth_pct": "11.33"
+          },
+          {
+            "hs": "35",
+            "name": "Albuminoidal Substances; Modified Starches; Glues; Enzymes.",
+            "fy2024_25": 4.03,
+            "fy2025_26": 3.23,
+            "growth_pct": "-19.87"
+          },
+          {
+            "hs": "11",
+            "name": "Products Of The Milling Industry; Malt; Starches; Inulin; Wheat Gluten.",
+            "fy2024_25": 3.93,
+            "fy2025_26": 3.07,
+            "growth_pct": "-21.74"
+          },
+          {
+            "hs": "49",
+            "name": "Printed Bookds, Newspapers, Pictures And Other Products Of The Printing Industry; Manuscripts, Typescripts And Plans.",
+            "fy2024_25": 3.79,
+            "fy2025_26": 2.58,
+            "growth_pct": "-32.09"
+          },
+          {
+            "hs": "51",
+            "name": "Wool, Fine Or Coarse Animal Hair, Horsehair Yarn And Woven Fabric.",
+            "fy2024_25": 2.39,
+            "fy2025_26": 2.25,
+            "growth_pct": "-5.78"
+          },
+          {
+            "hs": "55",
+            "name": "Man-Made Staple Fibres.",
+            "fy2024_25": 1.19,
+            "fy2025_26": 1.46,
+            "growth_pct": "23.02"
+          },
+          {
+            "hs": "23",
+            "name": "Residues And Waste From The Food Industries; Prepared Animal Foder.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 1.44,
+            "growth_pct": "68414.94"
+          },
+          {
+            "hs": "66",
+            "name": "Umbrellas, Sun Umbrellas, Walking-Sticks, Seat-Sticks, Whips,Riding-Crops And Parts Thereof.",
+            "fy2024_25": 1.26,
+            "fy2025_26": 1.35,
+            "growth_pct": "7.32"
+          },
+          {
+            "hs": "64",
+            "name": "Footwear, Gaiters And The Like; Parts Of Such Articles.",
+            "fy2024_25": 2.03,
+            "fy2025_26": 1.0,
+            "growth_pct": "-50.62"
+          },
+          {
+            "hs": "58",
+            "name": "Special Woven Fabrics; Tufted Textile Fabrics; Lace; Tapestries; Trimmings; Embroidery.",
+            "fy2024_25": 0.22,
+            "fy2025_26": 0.79,
+            "growth_pct": "256.05"
+          },
+          {
+            "hs": "52",
+            "name": "Cotton.",
+            "fy2024_25": 1.57,
+            "fy2025_26": 0.76,
+            "growth_pct": "-51.53"
+          },
+          {
+            "hs": "04",
+            "name": "Dairy Produce; Birds' Eggs; Natural Honey; Edible Prod. Of Animal Origin, Not Elsewhere Spec. Or Included.",
+            "fy2024_25": 0.26,
+            "fy2025_26": 0.68,
+            "growth_pct": "160.43"
+          },
+          {
+            "hs": "03",
+            "name": "Fish And Crustaceans, Molluscs And Other Aquatic Invertabrates.",
+            "fy2024_25": 0.62,
+            "fy2025_26": 0.64,
+            "growth_pct": "2.93"
+          },
+          {
+            "hs": "80",
+            "name": "Tin And Articles Thereof.",
+            "fy2024_25": 0.02,
+            "fy2025_26": 0.5,
+            "growth_pct": "3050.62"
+          },
+          {
+            "hs": "99",
+            "name": "Miscellaneous Goods.",
+            "fy2024_25": 0.27,
+            "fy2025_26": 0.49,
+            "growth_pct": "81.19"
+          },
+          {
+            "hs": "59",
+            "name": "Impregnated, Coated, Covered Or Laminated Textile Fabrics; Textile Articles Of A Kind Suitable For Industrial Use.",
+            "fy2024_25": 2.49,
+            "fy2025_26": 0.46,
+            "growth_pct": "-81.69"
+          },
+          {
+            "hs": "10",
+            "name": "Cereals.",
+            "fy2024_25": 0.19,
+            "fy2025_26": 0.28,
+            "growth_pct": "49.48"
+          },
+          {
+            "hs": "93",
+            "name": "Arms And Ammunition; Parts And Accessories Thereof.",
+            "fy2024_25": 0.01,
+            "fy2025_26": 0.27,
+            "growth_pct": "1963.50"
+          },
+          {
+            "hs": "01",
+            "name": "Live Animals.",
+            "fy2024_25": 1.36,
+            "fy2025_26": 0.26,
+            "growth_pct": "-80.61"
+          },
+          {
+            "hs": "37",
+            "name": "Photographic Or Cinematographic Goods.",
+            "fy2024_25": 0.34,
+            "fy2025_26": 0.25,
+            "growth_pct": "-27.09"
+          },
+          {
+            "hs": "53",
+            "name": "Other Vegetable Textile Fibres; Paper Yarn And Woven Fabrics Of Paper Yarn.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.21,
+            "growth_pct": ""
+          },
+          {
+            "hs": "14",
+            "name": "Vegetable Plaiting Materials; Vegetable Products Not Elsewhere Specified Or Included.",
+            "fy2024_25": 0.02,
+            "fy2025_26": 0.12,
+            "growth_pct": "385.12"
+          },
+          {
+            "hs": "50",
+            "name": "Silk",
+            "fy2024_25": 0.05,
+            "fy2025_26": 0.1,
+            "growth_pct": "93.41"
+          },
+          {
+            "hs": "65",
+            "name": "Headgear And Parts Thereof.",
+            "fy2024_25": 0.25,
+            "fy2025_26": 0.1,
+            "growth_pct": "-61.78"
+          },
+          {
+            "hs": "06",
+            "name": "Live Trees And Other Plants; Bulbs; Roots And The Like; Cut Flowers And Ornamental Foliage.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.05,
+            "growth_pct": ""
+          },
+          {
+            "hs": "67",
+            "name": "Prepared Feathers And Down And Articles Made Of Feathers Or Of Down; Artificial Flowers; Articles Of Human Hair.",
+            "fy2024_25": 0.13,
+            "fy2025_26": 0.05,
+            "growth_pct": "-64.59"
+          },
+          {
+            "hs": "45",
+            "name": "Cork And Articles Of Cork.",
+            "fy2024_25": 0.01,
+            "fy2025_26": 0.04,
+            "growth_pct": "470.55"
+          },
+          {
+            "hs": "16",
+            "name": "Preparations Of Meat, Of Fish Or Of Crustaceans, Molluscs Or Other Aquatic Invertebrates",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.02,
+            "growth_pct": "1625.02"
+          },
+          {
+            "hs": "05",
+            "name": "Products Of Animal Origin, Not Elsewhere Specified Or Included.",
+            "fy2024_25": 0.01,
+            "fy2025_26": 0.01,
+            "growth_pct": "-30.35"
+          },
+          {
+            "hs": "46",
+            "name": "Manufactures Of Straw, Of Esparto Or Of Other Plaiting Materials; Basketware And Wickerwork.",
+            "fy2024_25": 0.02,
+            "fy2025_26": 0.01,
+            "growth_pct": "-76.79"
+          },
+          {
+            "hs": "02",
+            "name": "Meat And Edible Meat Offal.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.0,
+            "growth_pct": ""
+          },
+          {
+            "hs": "92",
+            "name": "Musical Instruments; Parts And Accessories Of Such Articles.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.0,
+            "growth_pct": ""
+          }
+        ]
+      }
+    },
+    "USA": {
+      "export": {
+        "total_fy2025_26": 87316.0,
+        "total_fy2024_25": 86514.3,
+        "chapters": [
+          {
+            "hs": "85",
+            "name": "Electrical Machinery And Equipment And Parts Thereof; Sound Recorders And Reproducers, Television Image And Sound Recorders And Reproducers,And Parts.",
+            "fy2024_25": 15899.62,
+            "fy2025_26": 25682.64,
+            "growth_pct": "61.53"
+          },
+          {
+            "hs": "30",
+            "name": "Pharmaceutical Products",
+            "fy2024_25": 9783.88,
+            "fy2025_26": 8665.13,
+            "growth_pct": "-11.43"
+          },
+          {
+            "hs": "84",
+            "name": "Nuclear Reactors, Boilers, Machinery And Mechanical Appliances; Parts Thereof.",
+            "fy2024_25": 6692.43,
+            "fy2025_26": 7190.2,
+            "growth_pct": "7.44"
+          },
+          {
+            "hs": "71",
+            "name": "Natural Or Cultured Pearls,Precious Or Semiprecious Stones,Pre.Metals,Clad With Pre.Metal And Artcls Thereof;Imit.Jewlry;Coin.",
+            "fy2024_25": 9974.95,
+            "fy2025_26": 5116.68,
+            "growth_pct": "-48.70"
+          },
+          {
+            "hs": "27",
+            "name": "Mineral Fuels, Mineral Oils And Products Of Their Distillation; Bituminous Substances; Mineral Waxes.",
+            "fy2024_25": 4206.95,
+            "fy2025_26": 3522.24,
+            "growth_pct": "-16.28"
+          },
+          {
+            "hs": "73",
+            "name": "Articles Of Iron Or Steel",
+            "fy2024_25": 3115.81,
+            "fy2025_26": 3015.46,
+            "growth_pct": "-3.22"
+          },
+          {
+            "hs": "29",
+            "name": "Organic Chemicals",
+            "fy2024_25": 2659.78,
+            "fy2025_26": 2679.95,
+            "growth_pct": "0.76"
+          },
+          {
+            "hs": "63",
+            "name": "Other Made Up Textile Articles; Sets; Worn Clothing And Worn Textile Articles; Rags",
+            "fy2024_25": 2952.65,
+            "fy2025_26": 2634.29,
+            "growth_pct": "-10.78"
+          },
+          {
+            "hs": "87",
+            "name": "Vehicles Other Than Railway Or Tramway Rolling Stock, And Parts And Accessories Thereof.",
+            "fy2024_25": 2590.4,
+            "fy2025_26": 2467.33,
+            "growth_pct": "-4.75"
+          },
+          {
+            "hs": "62",
+            "name": "Articles Of Apparel And Clothing Accessories, Not Knitted Or Crocheted.",
+            "fy2024_25": 2674.5,
+            "fy2025_26": 2467.28,
+            "growth_pct": "-7.75"
+          },
+          {
+            "hs": "61",
+            "name": "Articles Of Apparel And Clothing Accessories, Knitted Or Corcheted.",
+            "fy2024_25": 2658.88,
+            "fy2025_26": 2359.83,
+            "growth_pct": "-11.25"
+          },
+          {
+            "hs": "03",
+            "name": "Fish And Crustaceans, Molluscs And Other Aquatic Invertabrates.",
+            "fy2024_25": 2042.74,
+            "fy2025_26": 1688.04,
+            "growth_pct": "-17.36"
+          },
+          {
+            "hs": "39",
+            "name": "Plastic And Articles Thereof.",
+            "fy2024_25": 1672.64,
+            "fy2025_26": 1366.59,
+            "growth_pct": "-18.30"
+          },
+          {
+            "hs": "90",
+            "name": "Optical, Photographic Cinematographic Measuring, Checking Precision, Medical Or Surgical Inst. And Apparatus Parts And Accessories Thereof;",
+            "fy2024_25": 949.09,
+            "fy2025_26": 1273.42,
+            "growth_pct": "34.17"
+          },
+          {
+            "hs": "38",
+            "name": "Miscellaneous Chemical Products.",
+            "fy2024_25": 1204.29,
+            "fy2025_26": 1208.86,
+            "growth_pct": "0.38"
+          },
+          {
+            "hs": "57",
+            "name": "Carpets And Other Textile Floor Coverings.",
+            "fy2024_25": 1229.51,
+            "fy2025_26": 1096.92,
+            "growth_pct": "-10.78"
+          },
+          {
+            "hs": "76",
+            "name": "Aluminium And Articles Thereof.",
+            "fy2024_25": 859.98,
+            "fy2025_26": 1094.09,
+            "growth_pct": "27.22"
+          },
+          {
+            "hs": "94",
+            "name": "Furniture; Bedding, Mattresses, Mattress Supports, Cushions And Similar Stuffed Furnishing; Lamps And Lighting Fittings Not Elsewhere Specified Or Inc",
+            "fy2024_25": 1146.73,
+            "fy2025_26": 1063.71,
+            "growth_pct": "-7.24"
+          },
+          {
+            "hs": "40",
+            "name": "Rubber And Articles Thereof.",
+            "fy2024_25": 927.91,
+            "fy2025_26": 861.06,
+            "growth_pct": "-7.20"
+          },
+          {
+            "hs": "42",
+            "name": "Articles Of Leather,Saddlery And Harness;Travel Goods, Handbags And Similar Cont.Articles Of Animal Gut(Othr Thn Silk-Wrm)Gut.",
+            "fy2024_25": 782.06,
+            "fy2025_26": 742.36,
+            "growth_pct": "-5.08"
+          },
+          {
+            "hs": "72",
+            "name": "Iron And Steel",
+            "fy2024_25": 587.52,
+            "fy2025_26": 740.86,
+            "growth_pct": "26.10"
+          },
+          {
+            "hs": "68",
+            "name": "Articles Of Stone, Plaster, Cement, Asbestos, Mica Or Similar Materials.",
+            "fy2024_25": 953.31,
+            "fy2025_26": 678.94,
+            "growth_pct": "-28.78"
+          },
+          {
+            "hs": "16",
+            "name": "Preparations Of Meat, Of Fish Or Of Crustaceans, Molluscs Or Other Aquatic Invertebrates",
+            "fy2024_25": 637.64,
+            "fy2025_26": 618.01,
+            "growth_pct": "-3.08"
+          },
+          {
+            "hs": "88",
+            "name": "Aircraft, Spacecraft, And Parts Thereof.",
+            "fy2024_25": 456.76,
+            "fy2025_26": 516.43,
+            "growth_pct": "13.06"
+          },
+          {
+            "hs": "33",
+            "name": "Essential Oils And Resinoids; Perfumery, Cosmetic Or Toilet Preparations.",
+            "fy2024_25": 505.73,
+            "fy2025_26": 482.04,
+            "growth_pct": "-4.68"
+          },
+          {
+            "hs": "64",
+            "name": "Footwear, Gaiters And The Like; Parts Of Such Articles.",
+            "fy2024_25": 461.23,
+            "fy2025_26": 447.93,
+            "growth_pct": "-2.88"
+          },
+          {
+            "hs": "48",
+            "name": "Paper And Paperboard; Articles Of Paper Pulp, Of Paper Or Of Paperboard.",
+            "fy2024_25": 463.92,
+            "fy2025_26": 432.32,
+            "growth_pct": "-6.81"
+          },
+          {
+            "hs": "09",
+            "name": "Coffee, Tea, Mate And Spices.",
+            "fy2024_25": 449.17,
+            "fy2025_26": 406.98,
+            "growth_pct": "-9.39"
+          },
+          {
+            "hs": "13",
+            "name": "Lac; Gums, Resins And Other Vegetable Saps And Extracts.",
+            "fy2024_25": 448.73,
+            "fy2025_26": 383.63,
+            "growth_pct": "-14.51"
+          },
+          {
+            "hs": "28",
+            "name": "Inorganic Chemicals; Organic Or Inorganic Compounds Of Precious Metals, Of Rare-Earth Metals, Or Radi. Elem. Or Of Isotopes.",
+            "fy2024_25": 395.8,
+            "fy2025_26": 347.59,
+            "growth_pct": "-12.18"
+          },
+          {
+            "hs": "74",
+            "name": "Copper And Articles Thereof.",
+            "fy2024_25": 360.0,
+            "fy2025_26": 341.0,
+            "growth_pct": "-5.28"
+          },
+          {
+            "hs": "21",
+            "name": "Miscellaneous Edible Preparations.",
+            "fy2024_25": 330.02,
+            "fy2025_26": 338.41,
+            "growth_pct": "2.54"
+          },
+          {
+            "hs": "70",
+            "name": "Glass And Glassware.",
+            "fy2024_25": 343.76,
+            "fy2025_26": 336.55,
+            "growth_pct": "-2.10"
+          },
+          {
+            "hs": "10",
+            "name": "Cereals.",
+            "fy2024_25": 396.8,
+            "fy2025_26": 336.3,
+            "growth_pct": "-15.25"
+          },
+          {
+            "hs": "82",
+            "name": "Tools Implements, Cutlery, Spoons And Forks, Of Base Metal; Parts Thereof Of Base Metal.",
+            "fy2024_25": 314.49,
+            "fy2025_26": 293.78,
+            "growth_pct": "-6.59"
+          },
+          {
+            "hs": "83",
+            "name": "Miscellaneous Articles Of Base Metal.",
+            "fy2024_25": 254.9,
+            "fy2025_26": 264.16,
+            "growth_pct": "3.63"
+          },
+          {
+            "hs": "95",
+            "name": "Toys, Games And Sports Requisites; Parts And Accessories Thereof.",
+            "fy2024_25": 216.07,
+            "fy2025_26": 258.86,
+            "growth_pct": "19.80"
+          },
+          {
+            "hs": "32",
+            "name": "Tanning Or Dyeing Extracts; Tannins And Their Deri. Dyes, Pigments And Other Colouring Matter; Paints And Ver; Putty And Other Mastics; Inks.",
+            "fy2024_25": 336.28,
+            "fy2025_26": 245.64,
+            "growth_pct": "-26.95"
+          },
+          {
+            "hs": "69",
+            "name": "Ceramic Products.",
+            "fy2024_25": 250.19,
+            "fy2025_26": 220.38,
+            "growth_pct": "-11.92"
+          },
+          {
+            "hs": "44",
+            "name": "Wood And Articles Of Wood; Wood Charcoal.",
+            "fy2024_25": 195.36,
+            "fy2025_26": 202.96,
+            "growth_pct": "3.89"
+          },
+          {
+            "hs": "12",
+            "name": "Oil Seeds And Olea. Fruits; Misc. Grains, Seeds And Fruit; Industrial Or Medicinal Plants; Straw And Fodder.",
+            "fy2024_25": 266.3,
+            "fy2025_26": 201.39,
+            "growth_pct": "-24.37"
+          },
+          {
+            "hs": "04",
+            "name": "Dairy Produce; Birds' Eggs; Natural Honey; Edible Prod. Of Animal Origin, Not Elsewhere Spec. Or Included.",
+            "fy2024_25": 204.58,
+            "fy2025_26": 194.2,
+            "growth_pct": "-5.07"
+          },
+          {
+            "hs": "49",
+            "name": "Printed Bookds, Newspapers, Pictures And Other Products Of The Printing Industry; Manuscripts, Typescripts And Plans.",
+            "fy2024_25": 137.23,
+            "fy2025_26": 163.96,
+            "growth_pct": "19.47"
+          },
+          {
+            "hs": "15",
+            "name": "Animal Or Vegetable Fats And Oils And Their Cleavage Products; Pre. Edible Fats; Animal Or Vegetable Waxex.",
+            "fy2024_25": 184.57,
+            "fy2025_26": 160.14,
+            "growth_pct": "-13.24"
+          },
+          {
+            "hs": "59",
+            "name": "Impregnated, Coated, Covered Or Laminated Textile Fabrics; Textile Articles Of A Kind Suitable For Industrial Use.",
+            "fy2024_25": 240.05,
+            "fy2025_26": 152.23,
+            "growth_pct": "-36.59"
+          },
+          {
+            "hs": "20",
+            "name": "Preparations Of Vegetables, Fruit, Nuts Or Other Parts Of Plants.",
+            "fy2024_25": 196.46,
+            "fy2025_26": 151.95,
+            "growth_pct": "-22.66"
+          },
+          {
+            "hs": "56",
+            "name": "Wadding, Felt And Nonwovens; Spacial Yarns; Twine, Cordage, Ropes And Cables And Articles Thereof.",
+            "fy2024_25": 197.88,
+            "fy2025_26": 145.09,
+            "growth_pct": "-26.68"
+          },
+          {
+            "hs": "96",
+            "name": "Miscellaneous Manufactured Articles.",
+            "fy2024_25": 175.44,
+            "fy2025_26": 144.68,
+            "growth_pct": "-17.54"
+          },
+          {
+            "hs": "19",
+            "name": "Preparations Of Cereals, Flour, Starch Or Milk; Pastrycooks Products.",
+            "fy2024_25": 159.7,
+            "fy2025_26": 135.41,
+            "growth_pct": "-15.21"
+          },
+          {
+            "hs": "07",
+            "name": "Edible Vegetables And Certain Roots And Tubers.",
+            "fy2024_25": 147.39,
+            "fy2025_26": 134.7,
+            "growth_pct": "-8.61"
+          },
+          {
+            "hs": "54",
+            "name": "Man-Made Filaments.",
+            "fy2024_25": 163.15,
+            "fy2025_26": 130.29,
+            "growth_pct": "-20.14"
+          },
+          {
+            "hs": "34",
+            "name": "Soap, Organic Surface-Active Agents, Washing Preparations, Lubricating Preparations, Artificial Waxes, Prepared Waxes, Polishing Or Scouring Prep.",
+            "fy2024_25": 174.23,
+            "fy2025_26": 126.47,
+            "growth_pct": "-27.41"
+          },
+          {
+            "hs": "25",
+            "name": "Salt; Sulphur; Earths And Stone; Plastering Materials, Lime And Cement.",
+            "fy2024_25": 111.25,
+            "fy2025_26": 120.93,
+            "growth_pct": "8.70"
+          },
+          {
+            "hs": "55",
+            "name": "Man-Made Staple Fibres.",
+            "fy2024_25": 177.04,
+            "fy2025_26": 106.26,
+            "growth_pct": "-39.98"
+          },
+          {
+            "hs": "24",
+            "name": "Tobacco And Manufactured Tobacco Substitutes.",
+            "fy2024_25": 86.89,
+            "fy2025_26": 99.86,
+            "growth_pct": "14.93"
+          },
+          {
+            "hs": "53",
+            "name": "Other Vegetable Textile Fibres; Paper Yarn And Woven Fabrics Of Paper Yarn.",
+            "fy2024_25": 94.71,
+            "fy2025_26": 98.99,
+            "growth_pct": "4.52"
+          },
+          {
+            "hs": "52",
+            "name": "Cotton.",
+            "fy2024_25": 105.09,
+            "fy2025_26": 89.36,
+            "growth_pct": "-14.97"
+          },
+          {
+            "hs": "86",
+            "name": "Railway Or Tramway Locomotives, Rolling-Stock And Parts Thereof; Railway Or Tramway Track Fixtures And Fittings And Parts Thereof; Mechanical",
+            "fy2024_25": 74.49,
+            "fy2025_26": 88.58,
+            "growth_pct": "18.92"
+          },
+          {
+            "hs": "97",
+            "name": "Works Of Art Collectors' Pieces And Antiques.",
+            "fy2024_25": 35.31,
+            "fy2025_26": 70.92,
+            "growth_pct": "100.88"
+          },
+          {
+            "hs": "81",
+            "name": "Other Base Metals; Cermets; Articles Thereof.",
+            "fy2024_25": 53.5,
+            "fy2025_26": 67.49,
+            "growth_pct": "26.16"
+          },
+          {
+            "hs": "08",
+            "name": "Edible Fruit And Nuts; Peel Or Citrus Fruit Or Melons.",
+            "fy2024_25": 68.72,
+            "fy2025_26": 61.48,
+            "growth_pct": "-10.53"
+          },
+          {
+            "hs": "18",
+            "name": "Cocoa And Cocoa Preparations.",
+            "fy2024_25": 111.92,
+            "fy2025_26": 61.46,
+            "growth_pct": "-45.09"
+          },
+          {
+            "hs": "93",
+            "name": "Arms And Ammunition; Parts And Accessories Thereof.",
+            "fy2024_25": 63.79,
+            "fy2025_26": 53.9,
+            "growth_pct": "-15.50"
+          },
+          {
+            "hs": "23",
+            "name": "Residues And Waste From The Food Industries; Prepared Animal Foder.",
+            "fy2024_25": 48.42,
+            "fy2025_26": 50.74,
+            "growth_pct": "4.78"
+          },
+          {
+            "hs": "35",
+            "name": "Albuminoidal Substances; Modified Starches; Glues; Enzymes.",
+            "fy2024_25": 56.46,
+            "fy2025_26": 48.72,
+            "growth_pct": "-13.71"
+          },
+          {
+            "hs": "11",
+            "name": "Products Of The Milling Industry; Malt; Starches; Inulin; Wheat Gluten.",
+            "fy2024_25": 86.55,
+            "fy2025_26": 48.37,
+            "growth_pct": "-44.12"
+          },
+          {
+            "hs": "58",
+            "name": "Special Woven Fabrics; Tufted Textile Fabrics; Lace; Tapestries; Trimmings; Embroidery.",
+            "fy2024_25": 64.99,
+            "fy2025_26": 45.76,
+            "growth_pct": "-29.59"
+          },
+          {
+            "hs": "36",
+            "name": "Explosives; Pyrotechnic Products; Matches; Pyrophoric Alloys; Certain Combustible Preparations.",
+            "fy2024_25": 18.24,
+            "fy2025_26": 39.97,
+            "growth_pct": "119.16"
+          },
+          {
+            "hs": "60",
+            "name": "Knitted Or Crocheted Fabrics.",
+            "fy2024_25": 86.17,
+            "fy2025_26": 30.33,
+            "growth_pct": "-64.80"
+          },
+          {
+            "hs": "75",
+            "name": "Nickel And Articles Thereof.",
+            "fy2024_25": 23.39,
+            "fy2025_26": 28.98,
+            "growth_pct": "23.92"
+          },
+          {
+            "hs": "17",
+            "name": "Sugars And Sugar Confectionery.",
+            "fy2024_25": 39.54,
+            "fy2025_26": 26.85,
+            "growth_pct": "-32.09"
+          },
+          {
+            "hs": "06",
+            "name": "Live Trees And Other Plants; Bulbs; Roots And The Like; Cut Flowers And Ornamental Foliage.",
+            "fy2024_25": 20.59,
+            "fy2025_26": 21.35,
+            "growth_pct": "3.68"
+          },
+          {
+            "hs": "46",
+            "name": "Manufactures Of Straw, Of Esparto Or Of Other Plaiting Materials; Basketware And Wickerwork.",
+            "fy2024_25": 24.96,
+            "fy2025_26": 17.11,
+            "growth_pct": "-31.45"
+          },
+          {
+            "hs": "22",
+            "name": "Beverages, Spirits And Vinegar.",
+            "fy2024_25": 16.42,
+            "fy2025_26": 14.53,
+            "growth_pct": "-11.51"
+          },
+          {
+            "hs": "50",
+            "name": "Silk",
+            "fy2024_25": 12.78,
+            "fy2025_26": 14.3,
+            "growth_pct": "11.87"
+          },
+          {
+            "hs": "67",
+            "name": "Prepared Feathers And Down And Articles Made Of Feathers Or Of Down; Artificial Flowers; Articles Of Human Hair.",
+            "fy2024_25": 21.46,
+            "fy2025_26": 12.92,
+            "growth_pct": "-39.79"
+          },
+          {
+            "hs": "65",
+            "name": "Headgear And Parts Thereof.",
+            "fy2024_25": 12.04,
+            "fy2025_26": 12.43,
+            "growth_pct": "3.20"
+          },
+          {
+            "hs": "51",
+            "name": "Wool, Fine Or Coarse Animal Hair, Horsehair Yarn And Woven Fabric.",
+            "fy2024_25": 6.28,
+            "fy2025_26": 7.33,
+            "growth_pct": "16.64"
+          },
+          {
+            "hs": "89",
+            "name": "Ships, Boats And Floating Structures.",
+            "fy2024_25": 306.37,
+            "fy2025_26": 7.14,
+            "growth_pct": "-97.67"
+          },
+          {
+            "hs": "92",
+            "name": "Musical Instruments; Parts And Accessories Of Such Articles.",
+            "fy2024_25": 7.58,
+            "fy2025_26": 6.98,
+            "growth_pct": "-7.87"
+          },
+          {
+            "hs": "79",
+            "name": "Zinc And Articles Thereof.",
+            "fy2024_25": 7.23,
+            "fy2025_26": 6.09,
+            "growth_pct": "-15.78"
+          },
+          {
+            "hs": "31",
+            "name": "Fertilisers.",
+            "fy2024_25": 14.57,
+            "fy2025_26": 5.85,
+            "growth_pct": "-59.87"
+          },
+          {
+            "hs": "41",
+            "name": "Raw Hides And Skins (Other Than Furskins) And Leather",
+            "fy2024_25": 7.01,
+            "fy2025_26": 5.59,
+            "growth_pct": "-20.27"
+          },
+          {
+            "hs": "91",
+            "name": "Clocks And Watches And Parts Thereof.",
+            "fy2024_25": 5.06,
+            "fy2025_26": 3.68,
+            "growth_pct": "-27.25"
+          },
+          {
+            "hs": "43",
+            "name": "Furskins And Artificial Fur, Manufactures Thereof.",
+            "fy2024_25": 5.98,
+            "fy2025_26": 3.37,
+            "growth_pct": "-43.60"
+          },
+          {
+            "hs": "14",
+            "name": "Vegetable Plaiting Materials; Vegetable Products Not Elsewhere Specified Or Included.",
+            "fy2024_25": 1.58,
+            "fy2025_26": 2.22,
+            "growth_pct": "39.93"
+          },
+          {
+            "hs": "26",
+            "name": "Ores, Slag And Ash.",
+            "fy2024_25": 0.24,
+            "fy2025_26": 1.72,
+            "growth_pct": "630.65"
+          },
+          {
+            "hs": "45",
+            "name": "Cork And Articles Of Cork.",
+            "fy2024_25": 1.2,
+            "fy2025_26": 1.6,
+            "growth_pct": "33.10"
+          },
+          {
+            "hs": "05",
+            "name": "Products Of Animal Origin, Not Elsewhere Specified Or Included.",
+            "fy2024_25": 1.2,
+            "fy2025_26": 0.91,
+            "growth_pct": "-24.40"
+          },
+          {
+            "hs": "80",
+            "name": "Tin And Articles Thereof.",
+            "fy2024_25": 0.23,
+            "fy2025_26": 0.72,
+            "growth_pct": "215.28"
+          },
+          {
+            "hs": "98",
+            "name": "Project Goods; Some Special Uses.",
+            "fy2024_25": 2.13,
+            "fy2025_26": 0.71,
+            "growth_pct": "-66.43"
+          },
+          {
+            "hs": "66",
+            "name": "Umbrellas, Sun Umbrellas, Walking-Sticks, Seat-Sticks, Whips,Riding-Crops And Parts Thereof.",
+            "fy2024_25": 0.23,
+            "fy2025_26": 0.39,
+            "growth_pct": "73.82"
+          },
+          {
+            "hs": "78",
+            "name": "Lead And Articles Thereof.",
+            "fy2024_25": 1.32,
+            "fy2025_26": 0.31,
+            "growth_pct": "-76.63"
+          },
+          {
+            "hs": "02",
+            "name": "Meat And Edible Meat Offal.",
+            "fy2024_25": 1.48,
+            "fy2025_26": 0.28,
+            "growth_pct": "-81.21"
+          },
+          {
+            "hs": "37",
+            "name": "Photographic Or Cinematographic Goods.",
+            "fy2024_25": 0.31,
+            "fy2025_26": 0.14,
+            "growth_pct": "-56.07"
+          },
+          {
+            "hs": "99",
+            "name": "Miscellaneous Goods.",
+            "fy2024_25": 0.07,
+            "fy2025_26": 0.04,
+            "growth_pct": "-40.27"
+          },
+          {
+            "hs": "01",
+            "name": "Live Animals.",
+            "fy2024_25": 0.03,
+            "fy2025_26": 0.0,
+            "growth_pct": ""
+          },
+          {
+            "hs": "47",
+            "name": "Pulp Of Wood Or Of Other Fibrous Cellulosic Material; Waste And Scrap Of Paper Or Paperboard.",
+            "fy2024_25": 0.01,
+            "fy2025_26": 0.0,
+            "growth_pct": "-97.47"
+          }
+        ]
+      },
+      "import": {
+        "total_fy2025_26": 53488.7,
+        "total_fy2024_25": 45625.1,
+        "chapters": [
+          {
+            "hs": "27",
+            "name": "Mineral Fuels, Mineral Oils And Products Of Their Distillation; Bituminous Substances; Mineral Waxes.",
+            "fy2024_25": 14347.36,
+            "fy2025_26": 17315.21,
+            "growth_pct": "20.69"
+          },
+          {
+            "hs": "71",
+            "name": "Natural Or Cultured Pearls,Precious Or Semiprecious Stones,Pre.Metals,Clad With Pre.Metal And Artcls Thereof;Imit.Jewlry;Coin.",
+            "fy2024_25": 5290.86,
+            "fy2025_26": 6848.83,
+            "growth_pct": "29.45"
+          },
+          {
+            "hs": "85",
+            "name": "Electrical Machinery And Equipment And Parts Thereof; Sound Recorders And Reproducers, Television Image And Sound Recorders And Reproducers,And Parts.",
+            "fy2024_25": 3382.67,
+            "fy2025_26": 5555.02,
+            "growth_pct": "64.22"
+          },
+          {
+            "hs": "84",
+            "name": "Nuclear Reactors, Boilers, Machinery And Mechanical Appliances; Parts Thereof.",
+            "fy2024_25": 4426.73,
+            "fy2025_26": 4683.17,
+            "growth_pct": "5.79"
+          },
+          {
+            "hs": "90",
+            "name": "Optical, Photographic Cinematographic Measuring, Checking Precision, Medical Or Surgical Inst. And Apparatus Parts And Accessories Thereof;",
+            "fy2024_25": 2026.81,
+            "fy2025_26": 2261.43,
+            "growth_pct": "11.58"
+          },
+          {
+            "hs": "88",
+            "name": "Aircraft, Spacecraft, And Parts Thereof.",
+            "fy2024_25": 1664.47,
+            "fy2025_26": 1909.8,
+            "growth_pct": "14.74"
+          },
+          {
+            "hs": "29",
+            "name": "Organic Chemicals",
+            "fy2024_25": 1371.72,
+            "fy2025_26": 1756.64,
+            "growth_pct": "28.06"
+          },
+          {
+            "hs": "39",
+            "name": "Plastic And Articles Thereof.",
+            "fy2024_25": 1530.76,
+            "fy2025_26": 1438.53,
+            "growth_pct": "-6.03"
+          },
+          {
+            "hs": "08",
+            "name": "Edible Fruit And Nuts; Peel Or Citrus Fruit Or Melons.",
+            "fy2024_25": 1121.48,
+            "fy2025_26": 1426.25,
+            "growth_pct": "27.18"
+          },
+          {
+            "hs": "38",
+            "name": "Miscellaneous Chemical Products.",
+            "fy2024_25": 1197.27,
+            "fy2025_26": 1246.74,
+            "growth_pct": "4.13"
+          },
+          {
+            "hs": "76",
+            "name": "Aluminium And Articles Thereof.",
+            "fy2024_25": 910.58,
+            "fy2025_26": 961.87,
+            "growth_pct": "5.63"
+          },
+          {
+            "hs": "74",
+            "name": "Copper And Articles Thereof.",
+            "fy2024_25": 321.05,
+            "fy2025_26": 901.22,
+            "growth_pct": "180.71"
+          },
+          {
+            "hs": "47",
+            "name": "Pulp Of Wood Or Of Other Fibrous Cellulosic Material; Waste And Scrap Of Paper Or Paperboard.",
+            "fy2024_25": 726.32,
+            "fy2025_26": 742.01,
+            "growth_pct": "2.16"
+          },
+          {
+            "hs": "72",
+            "name": "Iron And Steel",
+            "fy2024_25": 838.32,
+            "fy2025_26": 676.87,
+            "growth_pct": "-19.26"
+          },
+          {
+            "hs": "87",
+            "name": "Vehicles Other Than Railway Or Tramway Rolling Stock, And Parts And Accessories Thereof.",
+            "fy2024_25": 595.31,
+            "fy2025_26": 598.17,
+            "growth_pct": "0.48"
+          },
+          {
+            "hs": "28",
+            "name": "Inorganic Chemicals; Organic Or Inorganic Compounds Of Precious Metals, Of Rare-Earth Metals, Or Radi. Elem. Or Of Isotopes.",
+            "fy2024_25": 317.65,
+            "fy2025_26": 412.89,
+            "growth_pct": "29.98"
+          },
+          {
+            "hs": "22",
+            "name": "Beverages, Spirits And Vinegar.",
+            "fy2024_25": 452.12,
+            "fy2025_26": 400.56,
+            "growth_pct": "-11.40"
+          },
+          {
+            "hs": "30",
+            "name": "Pharmaceutical Products",
+            "fy2024_25": 396.67,
+            "fy2025_26": 389.84,
+            "growth_pct": "-1.72"
+          },
+          {
+            "hs": "52",
+            "name": "Cotton.",
+            "fy2024_25": 235.11,
+            "fy2025_26": 388.26,
+            "growth_pct": "65.14"
+          },
+          {
+            "hs": "73",
+            "name": "Articles Of Iron Or Steel",
+            "fy2024_25": 303.25,
+            "fy2025_26": 362.48,
+            "growth_pct": "19.53"
+          },
+          {
+            "hs": "40",
+            "name": "Rubber And Articles Thereof.",
+            "fy2024_25": 282.27,
+            "fy2025_26": 334.77,
+            "growth_pct": "18.60"
+          },
+          {
+            "hs": "48",
+            "name": "Paper And Paperboard; Articles Of Paper Pulp, Of Paper Or Of Paperboard.",
+            "fy2024_25": 229.91,
+            "fy2025_26": 231.55,
+            "growth_pct": "0.71"
+          },
+          {
+            "hs": "32",
+            "name": "Tanning Or Dyeing Extracts; Tannins And Their Deri. Dyes, Pigments And Other Colouring Matter; Paints And Ver; Putty And Other Mastics; Inks.",
+            "fy2024_25": 176.36,
+            "fy2025_26": 179.89,
+            "growth_pct": "2.00"
+          },
+          {
+            "hs": "34",
+            "name": "Soap, Organic Surface-Active Agents, Washing Preparations, Lubricating Preparations, Artificial Waxes, Prepared Waxes, Polishing Or Scouring Prep.",
+            "fy2024_25": 146.56,
+            "fy2025_26": 143.36,
+            "growth_pct": "-2.19"
+          },
+          {
+            "hs": "33",
+            "name": "Essential Oils And Resinoids; Perfumery, Cosmetic Or Toilet Preparations.",
+            "fy2024_25": 144.3,
+            "fy2025_26": 142.47,
+            "growth_pct": "-1.27"
+          },
+          {
+            "hs": "15",
+            "name": "Animal Or Vegetable Fats And Oils And Their Cleavage Products; Pre. Edible Fats; Animal Or Vegetable Waxex.",
+            "fy2024_25": 135.49,
+            "fy2025_26": 140.47,
+            "growth_pct": "3.67"
+          },
+          {
+            "hs": "35",
+            "name": "Albuminoidal Substances; Modified Starches; Glues; Enzymes.",
+            "fy2024_25": 114.74,
+            "fy2025_26": 136.11,
+            "growth_pct": "18.63"
+          },
+          {
+            "hs": "78",
+            "name": "Lead And Articles Thereof.",
+            "fy2024_25": 107.64,
+            "fy2025_26": 129.93,
+            "growth_pct": "20.71"
+          },
+          {
+            "hs": "94",
+            "name": "Furniture; Bedding, Mattresses, Mattress Supports, Cushions And Similar Stuffed Furnishing; Lamps And Lighting Fittings Not Elsewhere Specified Or Inc",
+            "fy2024_25": 91.09,
+            "fy2025_26": 113.2,
+            "growth_pct": "24.27"
+          },
+          {
+            "hs": "75",
+            "name": "Nickel And Articles Thereof.",
+            "fy2024_25": 111.71,
+            "fy2025_26": 99.65,
+            "growth_pct": "-10.80"
+          },
+          {
+            "hs": "44",
+            "name": "Wood And Articles Of Wood; Wood Charcoal.",
+            "fy2024_25": 95.87,
+            "fy2025_26": 98.75,
+            "growth_pct": "3.00"
+          },
+          {
+            "hs": "97",
+            "name": "Works Of Art Collectors' Pieces And Antiques.",
+            "fy2024_25": 67.55,
+            "fy2025_26": 92.8,
+            "growth_pct": "37.36"
+          },
+          {
+            "hs": "68",
+            "name": "Articles Of Stone, Plaster, Cement, Asbestos, Mica Or Similar Materials.",
+            "fy2024_25": 73.46,
+            "fy2025_26": 82.42,
+            "growth_pct": "12.19"
+          },
+          {
+            "hs": "70",
+            "name": "Glass And Glassware.",
+            "fy2024_25": 62.47,
+            "fy2025_26": 73.97,
+            "growth_pct": "18.41"
+          },
+          {
+            "hs": "83",
+            "name": "Miscellaneous Articles Of Base Metal.",
+            "fy2024_25": 65.5,
+            "fy2025_26": 72.22,
+            "growth_pct": "10.26"
+          },
+          {
+            "hs": "26",
+            "name": "Ores, Slag And Ash.",
+            "fy2024_25": 164.93,
+            "fy2025_26": 71.43,
+            "growth_pct": "-56.69"
+          },
+          {
+            "hs": "63",
+            "name": "Other Made Up Textile Articles; Sets; Worn Clothing And Worn Textile Articles; Rags",
+            "fy2024_25": 78.99,
+            "fy2025_26": 70.42,
+            "growth_pct": "-10.85"
+          },
+          {
+            "hs": "23",
+            "name": "Residues And Waste From The Food Industries; Prepared Animal Foder.",
+            "fy2024_25": 55.66,
+            "fy2025_26": 69.19,
+            "growth_pct": "24.31"
+          },
+          {
+            "hs": "03",
+            "name": "Fish And Crustaceans, Molluscs And Other Aquatic Invertabrates.",
+            "fy2024_25": 34.07,
+            "fy2025_26": 66.06,
+            "growth_pct": "93.87"
+          },
+          {
+            "hs": "82",
+            "name": "Tools Implements, Cutlery, Spoons And Forks, Of Base Metal; Parts Thereof Of Base Metal.",
+            "fy2024_25": 62.28,
+            "fy2025_26": 63.36,
+            "growth_pct": "1.72"
+          },
+          {
+            "hs": "25",
+            "name": "Salt; Sulphur; Earths And Stone; Plastering Materials, Lime And Cement.",
+            "fy2024_25": 77.73,
+            "fy2025_26": 61.13,
+            "growth_pct": "-21.35"
+          },
+          {
+            "hs": "55",
+            "name": "Man-Made Staple Fibres.",
+            "fy2024_25": 60.5,
+            "fy2025_26": 59.7,
+            "growth_pct": "-1.31"
+          },
+          {
+            "hs": "86",
+            "name": "Railway Or Tramway Locomotives, Rolling-Stock And Parts Thereof; Railway Or Tramway Track Fixtures And Fittings And Parts Thereof; Mechanical",
+            "fy2024_25": 56.14,
+            "fy2025_26": 58.3,
+            "growth_pct": "3.84"
+          },
+          {
+            "hs": "31",
+            "name": "Fertilisers.",
+            "fy2024_25": 28.64,
+            "fy2025_26": 57.51,
+            "growth_pct": "100.78"
+          },
+          {
+            "hs": "81",
+            "name": "Other Base Metals; Cermets; Articles Thereof.",
+            "fy2024_25": 54.49,
+            "fy2025_26": 54.53,
+            "growth_pct": "0.07"
+          },
+          {
+            "hs": "49",
+            "name": "Printed Bookds, Newspapers, Pictures And Other Products Of The Printing Industry; Manuscripts, Typescripts And Plans.",
+            "fy2024_25": 40.3,
+            "fy2025_26": 48.09,
+            "growth_pct": "19.33"
+          },
+          {
+            "hs": "98",
+            "name": "Project Goods; Some Special Uses.",
+            "fy2024_25": 43.45,
+            "fy2025_26": 37.8,
+            "growth_pct": "-13.01"
+          },
+          {
+            "hs": "79",
+            "name": "Zinc And Articles Thereof.",
+            "fy2024_25": 24.21,
+            "fy2025_26": 31.98,
+            "growth_pct": "32.11"
+          },
+          {
+            "hs": "21",
+            "name": "Miscellaneous Edible Preparations.",
+            "fy2024_25": 31.54,
+            "fy2025_26": 31.72,
+            "growth_pct": "0.58"
+          },
+          {
+            "hs": "59",
+            "name": "Impregnated, Coated, Covered Or Laminated Textile Fabrics; Textile Articles Of A Kind Suitable For Industrial Use.",
+            "fy2024_25": 24.17,
+            "fy2025_26": 29.23,
+            "growth_pct": "20.93"
+          },
+          {
+            "hs": "69",
+            "name": "Ceramic Products.",
+            "fy2024_25": 31.98,
+            "fy2025_26": 28.12,
+            "growth_pct": "-12.07"
+          },
+          {
+            "hs": "95",
+            "name": "Toys, Games And Sports Requisites; Parts And Accessories Thereof.",
+            "fy2024_25": 29.63,
+            "fy2025_26": 26.55,
+            "growth_pct": "-10.38"
+          },
+          {
+            "hs": "17",
+            "name": "Sugars And Sugar Confectionery.",
+            "fy2024_25": 21.55,
+            "fy2025_26": 26.24,
+            "growth_pct": "21.76"
+          },
+          {
+            "hs": "20",
+            "name": "Preparations Of Vegetables, Fruit, Nuts Or Other Parts Of Plants.",
+            "fy2024_25": 23.29,
+            "fy2025_26": 25.55,
+            "growth_pct": "9.71"
+          },
+          {
+            "hs": "54",
+            "name": "Man-Made Filaments.",
+            "fy2024_25": 25.47,
+            "fy2025_26": 24.56,
+            "growth_pct": "-3.57"
+          },
+          {
+            "hs": "12",
+            "name": "Oil Seeds And Olea. Fruits; Misc. Grains, Seeds And Fruit; Industrial Or Medicinal Plants; Straw And Fodder.",
+            "fy2024_25": 22.92,
+            "fy2025_26": 23.71,
+            "growth_pct": "3.45"
+          },
+          {
+            "hs": "56",
+            "name": "Wadding, Felt And Nonwovens; Spacial Yarns; Twine, Cordage, Ropes And Cables And Articles Thereof.",
+            "fy2024_25": 16.63,
+            "fy2025_26": 19.52,
+            "growth_pct": "17.34"
+          },
+          {
+            "hs": "37",
+            "name": "Photographic Or Cinematographic Goods.",
+            "fy2024_25": 17.56,
+            "fy2025_26": 19.42,
+            "growth_pct": "10.61"
+          },
+          {
+            "hs": "89",
+            "name": "Ships, Boats And Floating Structures.",
+            "fy2024_25": 1028.52,
+            "fy2025_26": 14.69,
+            "growth_pct": "-98.57"
+          },
+          {
+            "hs": "96",
+            "name": "Miscellaneous Manufactured Articles.",
+            "fy2024_25": 16.78,
+            "fy2025_26": 13.8,
+            "growth_pct": "-17.77"
+          },
+          {
+            "hs": "05",
+            "name": "Products Of Animal Origin, Not Elsewhere Specified Or Included.",
+            "fy2024_25": 12.23,
+            "fy2025_26": 13.04,
+            "growth_pct": "6.66"
+          },
+          {
+            "hs": "13",
+            "name": "Lac; Gums, Resins And Other Vegetable Saps And Extracts.",
+            "fy2024_25": 8.5,
+            "fy2025_26": 8.68,
+            "growth_pct": "2.17"
+          },
+          {
+            "hs": "07",
+            "name": "Edible Vegetables And Certain Roots And Tubers.",
+            "fy2024_25": 89.96,
+            "fy2025_26": 8.6,
+            "growth_pct": "-90.44"
+          },
+          {
+            "hs": "62",
+            "name": "Articles Of Apparel And Clothing Accessories, Not Knitted Or Crocheted.",
+            "fy2024_25": 7.37,
+            "fy2025_26": 8.54,
+            "growth_pct": "15.79"
+          },
+          {
+            "hs": "36",
+            "name": "Explosives; Pyrotechnic Products; Matches; Pyrophoric Alloys; Certain Combustible Preparations.",
+            "fy2024_25": 5.48,
+            "fy2025_26": 8.48,
+            "growth_pct": "54.80"
+          },
+          {
+            "hs": "41",
+            "name": "Raw Hides And Skins (Other Than Furskins) And Leather",
+            "fy2024_25": 7.09,
+            "fy2025_26": 8.25,
+            "growth_pct": "16.45"
+          },
+          {
+            "hs": "42",
+            "name": "Articles Of Leather,Saddlery And Harness;Travel Goods, Handbags And Similar Cont.Articles Of Animal Gut(Othr Thn Silk-Wrm)Gut.",
+            "fy2024_25": 6.69,
+            "fy2025_26": 6.37,
+            "growth_pct": "-4.78"
+          },
+          {
+            "hs": "01",
+            "name": "Live Animals.",
+            "fy2024_25": 6.99,
+            "fy2025_26": 5.19,
+            "growth_pct": "-25.75"
+          },
+          {
+            "hs": "61",
+            "name": "Articles Of Apparel And Clothing Accessories, Knitted Or Corcheted.",
+            "fy2024_25": 4.67,
+            "fy2025_26": 5.19,
+            "growth_pct": "11.20"
+          },
+          {
+            "hs": "64",
+            "name": "Footwear, Gaiters And The Like; Parts Of Such Articles.",
+            "fy2024_25": 5.5,
+            "fy2025_26": 3.97,
+            "growth_pct": "-27.81"
+          },
+          {
+            "hs": "92",
+            "name": "Musical Instruments; Parts And Accessories Of Such Articles.",
+            "fy2024_25": 3.83,
+            "fy2025_26": 3.31,
+            "growth_pct": "-13.52"
+          },
+          {
+            "hs": "11",
+            "name": "Products Of The Milling Industry; Malt; Starches; Inulin; Wheat Gluten.",
+            "fy2024_25": 2.87,
+            "fy2025_26": 3.26,
+            "growth_pct": "13.42"
+          },
+          {
+            "hs": "58",
+            "name": "Special Woven Fabrics; Tufted Textile Fabrics; Lace; Tapestries; Trimmings; Embroidery.",
+            "fy2024_25": 1.92,
+            "fy2025_26": 3.21,
+            "growth_pct": "66.93"
+          },
+          {
+            "hs": "16",
+            "name": "Preparations Of Meat, Of Fish Or Of Crustaceans, Molluscs Or Other Aquatic Invertebrates",
+            "fy2024_25": 3.07,
+            "fy2025_26": 3.02,
+            "growth_pct": "-1.77"
+          },
+          {
+            "hs": "09",
+            "name": "Coffee, Tea, Mate And Spices.",
+            "fy2024_25": 4.03,
+            "fy2025_26": 2.5,
+            "growth_pct": "-37.93"
+          },
+          {
+            "hs": "10",
+            "name": "Cereals.",
+            "fy2024_25": 2.54,
+            "fy2025_26": 1.98,
+            "growth_pct": "-22.16"
+          },
+          {
+            "hs": "18",
+            "name": "Cocoa And Cocoa Preparations.",
+            "fy2024_25": 2.33,
+            "fy2025_26": 1.92,
+            "growth_pct": "-17.36"
+          },
+          {
+            "hs": "93",
+            "name": "Arms And Ammunition; Parts And Accessories Thereof.",
+            "fy2024_25": 3.09,
+            "fy2025_26": 1.85,
+            "growth_pct": "-40.04"
+          },
+          {
+            "hs": "57",
+            "name": "Carpets And Other Textile Floor Coverings.",
+            "fy2024_25": 2.97,
+            "fy2025_26": 1.62,
+            "growth_pct": "-45.30"
+          },
+          {
+            "hs": "51",
+            "name": "Wool, Fine Or Coarse Animal Hair, Horsehair Yarn And Woven Fabric.",
+            "fy2024_25": 0.79,
+            "fy2025_26": 1.55,
+            "growth_pct": "95.12"
+          },
+          {
+            "hs": "99",
+            "name": "Miscellaneous Goods.",
+            "fy2024_25": 1.16,
+            "fy2025_26": 1.37,
+            "growth_pct": "18.03"
+          },
+          {
+            "hs": "04",
+            "name": "Dairy Produce; Birds' Eggs; Natural Honey; Edible Prod. Of Animal Origin, Not Elsewhere Spec. Or Included.",
+            "fy2024_25": 0.4,
+            "fy2025_26": 1.22,
+            "growth_pct": "207.62"
+          },
+          {
+            "hs": "19",
+            "name": "Preparations Of Cereals, Flour, Starch Or Milk; Pastrycooks Products.",
+            "fy2024_25": 0.76,
+            "fy2025_26": 1.13,
+            "growth_pct": "48.60"
+          },
+          {
+            "hs": "91",
+            "name": "Clocks And Watches And Parts Thereof.",
+            "fy2024_25": 2.03,
+            "fy2025_26": 1.1,
+            "growth_pct": "-45.70"
+          },
+          {
+            "hs": "80",
+            "name": "Tin And Articles Thereof.",
+            "fy2024_25": 1.13,
+            "fy2025_26": 0.96,
+            "growth_pct": "-15.45"
+          },
+          {
+            "hs": "65",
+            "name": "Headgear And Parts Thereof.",
+            "fy2024_25": 1.28,
+            "fy2025_26": 0.81,
+            "growth_pct": "-36.87"
+          },
+          {
+            "hs": "67",
+            "name": "Prepared Feathers And Down And Articles Made Of Feathers Or Of Down; Artificial Flowers; Articles Of Human Hair.",
+            "fy2024_25": 0.08,
+            "fy2025_26": 0.35,
+            "growth_pct": "349.57"
+          },
+          {
+            "hs": "50",
+            "name": "Silk",
+            "fy2024_25": 0.08,
+            "fy2025_26": 0.27,
+            "growth_pct": "222.66"
+          },
+          {
+            "hs": "24",
+            "name": "Tobacco And Manufactured Tobacco Substitutes.",
+            "fy2024_25": 1.16,
+            "fy2025_26": 0.26,
+            "growth_pct": "-77.81"
+          },
+          {
+            "hs": "60",
+            "name": "Knitted Or Crocheted Fabrics.",
+            "fy2024_25": 0.46,
+            "fy2025_26": 0.22,
+            "growth_pct": "-52.91"
+          },
+          {
+            "hs": "53",
+            "name": "Other Vegetable Textile Fibres; Paper Yarn And Woven Fabrics Of Paper Yarn.",
+            "fy2024_25": 0.06,
+            "fy2025_26": 0.15,
+            "growth_pct": "131.82"
+          },
+          {
+            "hs": "45",
+            "name": "Cork And Articles Of Cork.",
+            "fy2024_25": 0.13,
+            "fy2025_26": 0.14,
+            "growth_pct": "8.50"
+          },
+          {
+            "hs": "06",
+            "name": "Live Trees And Other Plants; Bulbs; Roots And The Like; Cut Flowers And Ornamental Foliage.",
+            "fy2024_25": 0.33,
+            "fy2025_26": 0.07,
+            "growth_pct": "-77.91"
+          },
+          {
+            "hs": "14",
+            "name": "Vegetable Plaiting Materials; Vegetable Products Not Elsewhere Specified Or Included.",
+            "fy2024_25": 0.01,
+            "fy2025_26": 0.06,
+            "growth_pct": "523.42"
+          },
+          {
+            "hs": "02",
+            "name": "Meat And Edible Meat Offal.",
+            "fy2024_25": 0.09,
+            "fy2025_26": 0.05,
+            "growth_pct": "-46.18"
+          },
+          {
+            "hs": "43",
+            "name": "Furskins And Artificial Fur, Manufactures Thereof.",
+            "fy2024_25": 1.08,
+            "fy2025_26": 0.02,
+            "growth_pct": "-98.42"
+          },
+          {
+            "hs": "46",
+            "name": "Manufactures Of Straw, Of Esparto Or Of Other Plaiting Materials; Basketware And Wickerwork.",
+            "fy2024_25": 0.0,
+            "fy2025_26": 0.01,
+            "growth_pct": "824.13"
+          },
+          {
+            "hs": "66",
+            "name": "Umbrellas, Sun Umbrellas, Walking-Sticks, Seat-Sticks, Whips,Riding-Crops And Parts Thereof.",
+            "fy2024_25": 0.13,
+            "fy2025_26": 0.01,
+            "growth_pct": "-89.09"
+          }
+        ]
+      }
+    }
+  },
+  "key_findings": {
+    "china_import_concentration": "Electrical machinery (HS85, $46.4bn) + mechanical machinery (HS84, $29.5bn) = 58% of all India's imports from China -- industrial inputs/capital goods, not consumer goods.",
+    "russia_import_concentration": "Mineral fuels (HS27, $47.8bn) = 86% of all India's imports from Russia. Fertilisers (HS31, $3.1bn, +69.5% growth) is a fast-growing secondary link.",
+    "uae_import_split": "Gems & pearls (HS71, $24.8bn) and mineral fuels (HS27, $24.3bn) are almost exactly tied, together 77% of UAE imports -- a more even gold/petroleum split than a prior pass through this data implied.",
+    "usa_export_concentration": "Electrical machinery (HS85, $25.7bn, +61.5% growth) is India's largest export to the USA -- the same HS chapter that dominates China's imports into India, consistent with a component-import/finished-goods-export assembly pattern."
+  }
+}
