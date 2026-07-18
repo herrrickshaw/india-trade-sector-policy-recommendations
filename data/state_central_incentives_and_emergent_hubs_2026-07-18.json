@@ -1,0 +1,307 @@
+{
+ "purpose": "Maps central PLI incentives (already covered in this repo's sector_and_policy_recommendations bulletin) against STATE-level incentive policies and identifies emergent state-level manufacturing hubs, for the same 5 FDI-priority sectors as the pitch deck.",
+ "retrieved": "2026-07-18",
+ "method": "Web research (~100 search/fetch operations across two research passes) against primary sources (state government portals, official policy PDFs, PIB) corroborated by business press where primary PDFs were unreadable or blocked. Every claim below traces to a source; items that could not be verified are explicitly flagged rather than estimated.",
+ "sectors": [
+  {
+   "sector": "Electronics & Semiconductor Manufacturing",
+   "hs": "84-85",
+   "state_incentives": [
+    {
+     "state": "Gujarat",
+     "policy": "Semiconductor Policy 2022-27",
+     "terms": "State tops up central ISM subsidy by 40% of the central amount (total capex support ~70%); Dholera SIR land at 75% cost subsidy (first 200 acres); 100% stamp duty reimbursement; power tariff subsidy Rs 2/unit for 10 years + electricity duty exemption"
+    },
+    {
+     "state": "Uttar Pradesh",
+     "policy": "Semiconductor Policy 2024",
+     "terms": "Additional 50% capital subsidy on top of central ISM subsidy; 5%/yr interest subsidy (investment <=Rs 200cr); 100% stamp duty + electricity duty exemption (10yr). Real award: Tarq Semiconductors granted Rs 7,037cr capital subsidy + Rs 321cr land-cost refund + Rs 30cr stamp duty exemption"
+    },
+    {
+     "state": "Tamil Nadu",
+     "policy": "Semiconductor and Advanced Electronics Policy 2024 + Electronics Components Manufacturing Scheme (Apr 2025)",
+     "terms": "Up to 50% additional incentive on top of central subsidy for ISM-selected projects; ECMS targets Rs 30,000cr investment, incentives up to 10% (PCBs) / 25% (capital goods, investment >Rs 10cr)"
+    },
+    {
+     "state": "Karnataka",
+     "policy": "ESDM Policy 2017-30 + Special Incentive Scheme",
+     "terms": "25% capital subsidy on land + 20% on plant/machinery; 100% stamp duty/land-conversion-fee reimbursement; power tariff reimbursement Rs 1/unit (5yr) + electricity duty exemption"
+    },
+    {
+     "state": "Odisha",
+     "policy": "Semiconductor and Fabless Policy 2023 + Electronics Component Manufacturing Policy 2025",
+     "terms": "Additional 25% capital subsidy for first 10 large-scale projects (10% thereafter); 10-yr electricity duty exemption. Aug 2025: Union Cabinet approved 2 Odisha semiconductor initiatives worth Rs 4,009cr"
+    }
+   ],
+   "emergent_hubs": [
+    {
+     "state": "Gujarat",
+     "evidence": "Micron Technology ATMP, Sanand: $2.75B investment, commercial production inaugurated Feb 2026. Tata Electronics-PSMC fab, Dholera: Rs 91,000cr (~$11B), 50,000 wafers/month planned, trial production targeted Dec 2026."
+    },
+    {
+     "state": "Assam",
+     "evidence": "Tata Electronics ATMP, Jagiroad (Morigaon): Rs 27,000cr investment, groundbreaking Aug 2024, targeting 48 million chips/day at full capacity."
+    },
+    {
+     "state": "Uttar Pradesh",
+     "evidence": "Established Noida/Greater Noida mobile-electronics assembly cluster; ~Rs 40,000cr in commitments (not yet landed capital) under the new Semiconductor Policy."
+    }
+   ],
+   "flags": [
+    "The Vedanta-Foxconn Dholera semiconductor JV collapsed in July 2023 (Foxconn formally exited) -- commonly mis-cited as an active project. Do not treat it as operating.",
+    "Karnataka, Tamil Nadu and Odisha have credible, well-funded state incentive frameworks but no landed fab/ATMP investment yet on Gujarat/Assam's scale as of mid-2026 -- their hub status here is policy-stage, not realized."
+   ]
+  },
+  {
+   "sector": "Specialty Steel & Metals",
+   "hs": "72-73",
+   "state_incentives": [
+    {
+     "state": "Odisha",
+     "policy": "Industrial Policy Resolution (IPR) 2022",
+     "terms": "'Specialty Steel and its Products' and 'Ancillary/Downstream Metal' are named Priority Sectors (some sub-segments elevated to Thrust Sector): 20% (Priority) or 30% (Thrust) capital subsidy on plant & machinery over 5 years; power tariff reimbursement Rs 2/unit for 7yr (Priority) or 10yr (Thrust); 100% electricity duty exemption for 7-10yr; 100% net SGST reimbursement capped at 200% of plant & machinery cost; concessional IDCO land rates + 100% exemption from land-registration premium and stamp duty."
+    },
+    {
+     "state": "Odisha",
+     "policy": "Long Term Linkage (LTL) Policy of Minerals, 2023",
+     "terms": "A genuine mining-to-manufacturing reform: 50-80% of saleable iron ore (up to 80% for chromite) is reserved via Odisha Mining Corporation for 5-year (renewable) supply linkage to MoU-signed steel/stainless-steel/sponge-iron/ferro-alloy companies based in the state -- addresses raw-material security directly, not just capex subsidy."
+    },
+    {
+     "state": "Chhattisgarh",
+     "policy": "Industrial Policy 2019-24 'Bespoke Policy' for steel (applicable to investments >Rs 1,000cr), now transitioning to Industrial Development Policy 2024-30",
+     "terms": "Region-wise rebate/benefit ceiling raised specifically for the sponge-iron & steel sector from 60% to 150% of Fixed Capital Investment. The 2024-30 policy's specific steel/metallurgy clauses could not be extracted (scanned/unreadable PDF) -- only the pre-2024 Bespoke Policy terms above are independently verified."
+    },
+    {
+     "state": "Jharkhand",
+     "policy": "Industrial and Investment Promotion Policy (JIIPP) 2021",
+     "terms": "Explicitly aspires to make Jharkhand 'the steel-hub of India' (currently ~20-25% of India's steel output). Steel/aluminium/mineral-based industries face a HIGHER mega-project threshold (Rs 1,000cr + 300 jobs) than generic manufacturing (Rs 250cr) -- once past that bar: 100% SGST reimbursement 9yr (mega) / 75% 12yr (ultra-mega); +5% capital subsidy for first 2 anchor units/district; +5% 'early bird' capital subsidy; 100% electricity duty exemption on captive power for 5yr. These are general mega-project terms steel investments access, not a bespoke steel-only schedule."
+    },
+    {
+     "state": "Karnataka",
+     "policy": "Industrial Policy 2020-25",
+     "terms": "Steel is named one of six 'Core Sectors' (state profile: 2 billion tonnes iron ore, 74% of India's magnetite reserves, ~13.7% of national steel production, 18 units totaling ~22 MMTPA capacity) -- but CONFIRMED no dedicated steel-specific subsidy schedule exists. Big/mega projects get case-by-case 'tailor-made benefits' via the State High Level Clearance Committee rather than a named scheme."
+    },
+    {
+     "state": "West Bengal",
+     "policy": "ALL West Bengal industrial incentive schemes formally REVOKED",
+     "terms": "Verified via the actual gazette bill text (Bill No. 5 of 2025, published 19 Mar 2025): the West Bengal Legislative Assembly passed the 'Revocation of West Bengal Incentive Schemes and Obligations in the Nature of Grants and Incentives Act, 2025', retrospectively revoking every named WB industrial incentive scheme back to its original notification date (WBIS 1993/1999/2000/2004/2008/2015/2021, WB Incentive to Power Intensive Industries Scheme 2005, WB State Support for Industries Scheme 2008 & 2013) -- none of which was steel-specific to begin with. A previously-circulated 'WBSSIS' steel-sector scheme name traces only to a single non-official blog and does not appear in any official WB schedule -- treat it as unverified/likely mischaracterization, not a real scheme."
+    }
+   ],
+   "emergent_hubs": [
+    {
+     "state": "Odisha",
+     "evidence": "Kalinganagar Industrial Complex (Jajpur): per Odisha's own Dept. of Steel & Mines 'Mega Steel Plants' registry -- Tata Steel (8 MTPA approved, 3 MTPA installed, Rs 47,599cr; BF-2 blast furnace commissioned Sept 2024 as part of a Rs 27,000cr phase) and Jindal Stainless (3.10 MTPA approved, 1.10 MTPA installed, Rs 23,625cr). State-wide, Odisha's registry lists 11 mega steel plants (existing + approved) totaling over Rs 4 lakh crore, including JSW Utkal Steel (Jagatsinghpur, 12 MTPA, Rs 50,000cr), ArcelorMittal Nippon Steel (Kendrapara, 24 MTPA, Rs 1,02,275cr) and Jindal Steel Odisha (Angul, 19.2 MTPA, Rs 97,070cr) -- Odisha is reported to account for ~20% of India's steelmaking capacity."
+    },
+    {
+     "state": "Karnataka",
+     "evidence": "Bellary-Hospet / Ballari cluster: JSW Steel's Vijayanagar (Toranagallu) plant is India's largest single-location steel plant (12 MTPA, 10,000 acres); Ballari district also hosts Kalyani Steels, Mukund Steels, Jindal Steel Plant, Minera Steel, A-one Steels, Janki Corp, and Jindal Saw/SMIORE, on ~25% of India's iron-ore reserves. New JSW-JFE Electrical Steel JV (grain-oriented electrical steel) targeting FY2027 production."
+    },
+    {
+     "state": "Jharkhand",
+     "evidence": "Jamshedpur (Tata Steel)/Bokaro (SAIL): historic hub producing 20-25% of India's steel; Jamshedpur/Adityapur is also a recognized auto-grade-steel and auto-ancillary cluster (600+ ancillary units). Current incentive support is thin relative to Odisha, though -- support flows through the generic (higher-threshold) mega-project framework, not a bespoke steel scheme."
+    }
+   ],
+   "flags": [
+    "West Bengal's industrial incentive landscape changed fundamentally in 2025: this repo's earlier pass flagged an unverified 'WBSSIS' scheme name; this pass found the real, primary-sourced story is stronger -- WB legislatively revoked ALL of its industrial incentive schemes (Bill No. 5 of 2025), retroactive to each scheme's original notification date. There is effectively no active WB state industrial incentive today, steel or otherwise.",
+    "No dedicated Karnataka steel-sector incentive scheme was found or exists (confirmed, not just unconfirmed) -- Bellary-Hospet's scale rests on geology (25% of India's iron ore) and case-by-case mega-project treatment, not a named policy.",
+    "Odisha's own original IPR 2022 PDF and Chhattisgarh's Industrial Development Policy 2024-30 PDF were both unreadable (scanned/compressed) in this research -- the figures above were cross-verified via each state's own HTML investment-portal summary or PSU page instead of a press-summary proxy, but a direct PDF read is still recommended before citing in a final document.",
+    "Jharkhand and Chhattisgarh remain important legacy hubs (Jamshedpur/Bokaro/Bhilai-Durg) but no comparably-documented new 2024-2026 flagship project was found there versus Odisha's Kalinganagar-area expansion -- their hub status reads as legacy rather than currently emergent."
+   ]
+  },
+  {
+   "sector": "Auto, EV & Battery Storage",
+   "hs": "87",
+   "state_incentives": [
+    {
+     "state": "Tamil Nadu",
+     "policy": "EV Policy 2023",
+     "terms": "MANUFACTURER-side: 100% SGST reimbursement 15yr (min Rs 50cr investment + 50 jobs); 15% capital subsidy (10 annual instalments); ACC/battery-specific capital subsidy ~20% (corroborated by aggregators, not independently primary-verified); 100% electricity tax exemption 5yr; MSME bonus +20% capital subsidy + 6% interest subvention for component/charging manufacturers"
+    },
+    {
+     "state": "Gujarat",
+     "policy": "Industrial Policy 2020 (general; the dedicated 2021-25 EV Policy was buyer-side only and lapsed June 2025)",
+     "terms": "MANUFACTURER-side comes from the general policy: 12% capital subsidy of FCI (backward districts, thrust sector) / 10% (mature districts); no upper ceiling for mega/ultra-mega projects; 5yr electricity duty exemption; incentives de-linked from SGST for mega/ultra-mega EV investments. No successor EV-specific policy notified as of this research."
+    },
+    {
+     "state": "Maharashtra",
+     "policy": "EV Policy 2025-2030 (GR 23 May 2025, Rs 1,993cr outlay)",
+     "terms": "All EV/battery/component manufacturers get 'D+' mega-project industrial incentive category regardless of location; Rs 15cr EV R&D grant + 3 R&D centres of excellence + incubation hubs"
+    },
+    {
+     "state": "Karnataka",
+     "policy": "EV & Energy Storage Policy 2017, amended 2021",
+     "terms": "15% capital subsidy on fixed assets (5 annual instalments, up to 50 acres land); production-linked subsidy of 1% of turnover for 5 years; stamp duty exemption, land-conversion-fee reimbursement, 100% electricity duty exemption (5yr)"
+    },
+    {
+     "state": "Telangana",
+     "policy": "EV & Energy Storage Policy 2020-2030",
+     "terms": "Mega-enterprise tier: 20% capital investment subsidy (cap Rs 30cr); 100% net SGST reimbursement (cap Rs 5cr/yr, cumulative cap Rs 25cr/7yr); 25% power tariff discount 5yr (cap Rs 5cr); 5.25% interest subvention 5yr (cap Rs 5cr). Figures corroborated across aggregators; primary PDF was image-based/unreadable in this research."
+    },
+    {
+     "state": "Uttar Pradesh",
+     "policy": "EV Manufacturing & Mobility Policy 2022",
+     "terms": "Tiered by scale: Integrated EV/Ultra-Mega Battery projects (first 2 of each) get 30% of FCI capped Rs 1,000cr over 20yr; Mega projects (first 5) up to 20% capped Rs 500cr/10yr; Large projects up to 18% capped Rs 90cr/10yr; regional multipliers favor Poorvanchal & Bundelkhand (100% of standard subsidy). SGST reimbursement terms for manufacturers not found."
+    }
+   ],
+   "emergent_hubs": [
+    {
+     "state": "Tamil Nadu",
+     "evidence": "'Detroit of Asia': ~60km Chennai auto corridor (Hyundai, Renault-Nissan, Royal Enfield, BMW, Ashok Leyland, TVS) produces 45% of India's total automobile production, 35% of component production. Ola Electric Krishnagiri gigafactory (Rs 7,614cr MoU, Phase I 5 GWh scaling toward 100 GWh)."
+    },
+    {
+     "state": "Maharashtra",
+     "evidence": "Pune-Chakan-Talegaon belt: Volkswagen, Mercedes-Benz, Bajaj Auto, Mahindra & Mahindra, Tata Motors, JLR, Stellantis, Force Motors -- one of the densest auto-manufacturing clusters globally."
+    },
+    {
+     "state": "Gujarat",
+     "evidence": "Sanand: Tata acquired Ford India's plant (Rs 725.7cr, 460 acres, 300k units/yr scalable to 420k). Tata's Agratas 20 GWh (phasing to 40 GWh) battery gigafactory, ~Rs 13,000cr initial phase, commercial cell production targeted 2026-27. Reliance's Jamnagar battery gigafactory targeting 40 GWh (2026) scaling toward 120 GWh."
+    },
+    {
+     "state": "Karnataka",
+     "evidence": "Bengaluru: Ola Electric HQ + $500M Battery Innovation Centre; Exide Energy Solutions lithium-ion gigafactory (80 acres, ~Rs 6,000cr project cost, 6 GWh Phase 1 scaling to 12 GWh, revenue expected Q3 FY27); Ather Energy, Mahindra Electric, Bosch also present."
+    },
+    {
+     "state": "Telangana",
+     "evidence": "Mahbubnagar: Amara Raja Batteries gigafactory, Rs 9,500cr, 16 GWh lithium cells + 5 GWh battery packs, Phase I (4.8 GWh pack assembly) operational Apr/May 2025; also GODI India (~$1bn lithium/sodium gigafactory MoU) and Cygni Energy (1,200 MWh gigafactory)."
+    }
+   ],
+   "flags": [
+    "Andhra Pradesh and Reliance/Jamnagar (Gujarat) are also emerging battery-gigafactory locations (Waaree Rs 8,175cr/16 GWh in AP) -- a genuine diversification beyond the core hub states, though the AP figure rests on a single secondary source and was not independently corroborated.",
+    "Delhi has essentially no manufacturer-side EV incentive scheme (confirmed absence, not a research gap) -- its EV Policy 2020/2.0 is purely demand/adoption-focused (road tax/registration waivers, purchase subsidies, phased ICE bans from 2027-28)."
+   ]
+  },
+  {
+   "sector": "Pharmaceuticals & Bulk Drug APIs",
+   "hs": "29-30",
+   "state_incentives": [
+    {
+     "state": "Andhra Pradesh, Gujarat, Himachal Pradesh",
+     "policy": "Central Bulk Drug Park scheme (Cabinet approval 20 Mar 2020, gazette 21 Jul 2020; in-principle approval to these 3 states 1 Sep 2022, from 13 state proposals)",
+     "terms": "Max central grant Rs 1,000cr per park, capped at 70% of project cost (Gujarat, AP) or 90% (Himachal Pradesh, hill-state provision); total scheme outlay Rs 3,000cr. None of the 3 parks is operational yet (all under construction as of mid-2026): AP's is at Nakkapalli, Anakapalli district (relocated from Kakinada), Rs 1,876.66cr project cost, Rs 225cr released, targeting March 2026; Gujarat's is at Jambusar, Bharuch (not Dahej, a separate nearby estate often conflated with it), Rs 2,507-3,920cr project cost (sources conflict), Rs 299.25cr released, target 1H2026 vs March 2027 (sources conflict); Himachal's is at Polian Beet village, Haroli, Una district, Rs 1,923-2,071cr project cost, Rs 225cr released, environmental clearance only granted Sept 2025, ground infrastructure foundation laid April 2026 -- construction is only just starting."
+    },
+    {
+     "state": "Telangana",
+     "policy": "Next-Gen Life Sciences Policy 2026-30 (unveiled at Davos, 21 Jan 2026)",
+     "terms": "Targets $25bn / Rs 2 lakh crore investment and 5 lakh jobs over 5 years; 100% stamp/transfer duty reimbursement; 25% land-cost reimbursement (cap Rs 10 lakh) in state parks; power subsidy Rs 1/unit for 5 years; Rs 1,000cr Life Sciences Innovation Fund; 10 planned 'pharma villages'. SGST reimbursement terms are cited inconsistently across sources (needs primary-PDF reconfirmation)."
+    },
+    {
+     "state": "Gujarat",
+     "policy": "Gujarat Biotechnology Policy 2022-27 (separate from the general Industrial Policy 2020, which also treats pharma as a thrust sector at 12% capital subsidy)",
+     "terms": "Capital subsidy up to 25% of capex (MSME cap Rs 40cr, mega projects cap Rs 200cr); interest subsidy up to 7%; opex assistance up to 15% (cap Rs 25cr/yr mega, Rs 5cr/yr others), paid over 20 quarterly instalments across 5 years"
+    },
+    {
+     "state": "Maharashtra",
+     "policy": "Maharashtra Industries, Investment and Services Policy (MIISP) 2025 (Dec 2025)",
+     "terms": "Pharma is a 'Priority Manufacturing Sector': capital subsidy 30-50% of Fixed Capital Investment by category, 50-100% stamp duty waiver. A dedicated Pharmaceutical, Biotech & Medical Devices Policy was announced Feb 2026 but is not yet published/in force -- do not cite specific terms for it yet."
+    },
+    {
+     "state": "Karnataka",
+     "policy": "Karnataka Biotechnology Policy 2024-2029 (Cabinet-approved)",
+     "terms": "Targets a $100bn bioeconomy by 2030. A circulating '25% capital subsidy, Rs 2,400cr drawn in 2024-25' figure could not be verified in this research -- flagged as not found, not cited as fact."
+    },
+    {
+     "state": "Odisha",
+     "policy": "Pharmaceutical and Medical Devices Policy 2025 (Dec 2025)",
+     "terms": "30% capital subsidy; 100% stamp duty exemption; Rs 2/unit power subsidy. 9 companies committed Rs 4,349cr in investment intents at launch."
+    },
+    {
+     "state": "Uttar Pradesh",
+     "policy": "UP Pharmaceutical and Medical Devices Policy 2023 + Mega Bulk Drug Pharma Park, Lalitpur (Bundelkhand)",
+     "terms": "Lalitpur park targets Rs 12,000cr private investment on 1,472 acres, ~Rs 250cr state infra spend, execution target 2027"
+    },
+    {
+     "state": "Tamil Nadu",
+     "policy": "Life Sciences Promotion Policy 2022 + Medical Device Park, Kancheepuram (central scheme, Rs 100cr, tenure extended to FY2025-26)",
+     "terms": "Investment/land subsidies and SGST refund for life-sciences manufacturing"
+    }
+   ],
+   "emergent_hubs": [
+    {
+     "state": "Telangana",
+     "evidence": "Genome Valley (Hyderabad): ~2,000 acres, official cluster status; residents include Novartis, Bharat Biotech, Biological E, GSK, Sandoz, Roche, BMS, Amgen, Eli Lilly, Sanofi, J&J, Bayer, Dr. Reddy's -- Hyderabad supplies an estimated ~65% of India's vaccine doses (11bn+/year, mid-2025). Hyderabad Pharma City (Mucherla, ~19,000 acres planned, ~8,500 acres acquired): 6 majors (Dr. Reddy's, Aurobindo, Hetero, Laurus Labs, MSN Pharmaceuticals, Gland Pharma) committed Rs 5,260cr, ~12,490 jobs (Nov 2024) -- but flagged as a live risk below."
+    },
+    {
+     "state": "Gujarat",
+     "evidence": "Widely cited as India's #1 pharma state by volume: ~28-33% of India's drug manufacturing/exports (cross-check independently before final use), 130 USFDA-certified facilities, 183 new manufacturing facilities approved by FDCA in FY2024-25. HQ to Zydus Lifesciences, Torrent Pharma, Intas, Alembic; Sun Pharma's major Vadodara/Halol plants (corporate HQ is Mumbai, not Gujarat)."
+    },
+    {
+     "state": "Andhra Pradesh",
+     "evidence": "JNPC SEZ, Parawada (Vizag) -- separate from the Bulk Drug Park: 104 companies, Rs 25,000+ crore cumulative investment, tenants include Pfizer, Mylan, Eisai, Divi's Laboratories. 2025-26 pipeline includes a planned 3,000-acre life-sciences cluster in Srikakulam and a 500-acre Medical Devices Manufacturing Zone 2.0."
+    },
+    {
+     "state": "Maharashtra",
+     "evidence": "1,040 pharma manufacturing units (347 bulk drug + 693 formulation, state FDA data), ~14% of India's domestic pharma production, 40 pharma clusters (most of any state), 59 USFDA-approved plants. No verifiable ordinal national ranking found -- use the share/cluster-count evidence, not an unconfirmed '#2' claim. Key clusters: Tarapur MIDC, Mahad MIDC."
+    },
+    {
+     "state": "Sikkim",
+     "evidence": "Lower-profile but real: built on the NEIIPP 2007 excise/income-tax holiday (parallel to Himachal/Uttarakhand's), drew Sun Pharma, Cipla, Zydus Cadila, Alembic, Intas, Torrent, IPCA, Alkem, Unichem. Pharma is reportedly ~63% of Sikkim's exports today, per the state government. No 2024-2026 plant-level expansion/closure news was found."
+    }
+   ],
+   "flags": [
+    "Hyderabad Pharma City is a live risk, not a settled hub: the Telangana High Court stayed land-acquisition proceedings as 'illegal/arbitrary', and a December 2025 controversy over merging the project into a real-estate 'Future City' zone is unresolved as of this research.",
+    "Himachal Pradesh's oft-cited '30-35% of India's formulations from Baddi-Baddi-Nalagarh (BBN)' figure is not a verifiable official statistic -- it traces to a single 2020 news article citing an unnamed official, and 'Asia's largest'/'world's third-largest' claims for BBN have no primary source. Present as industry estimate, not audited fact.",
+    "No company has a confirmed plot allotment at any of the 3 central Bulk Drug Parks yet -- only general expressions of interest and industry-body investment projections exist as of the latest reporting; Gujarat's land allocation to companies isn't expected to start until 2026.",
+    "Several primary government URLs (PIB, pharmaceuticals.gov.in, some state policy PDFs) returned 403/blocked errors on direct automated fetch during this research and were corroborated only via secondary sources quoting them -- recommend manual verification before citing exact percentages in a final investor document."
+   ]
+  },
+  {
+   "sector": "White Goods Components",
+   "hs": "84",
+   "state_incentives": [
+    {
+     "state": "Andhra Pradesh",
+     "policy": "Electronics Manufacturing Policy 4.0 (2024-29), G.O.Ms.No.5, 30 Oct 2024 -- verified directly from primary PDF",
+     "terms": "Overall incentive cap 75% of Eligible Fixed Capital Investment (EFCI) across all categories combined. Sub-Large (Rs 50-200cr investment): 20% capital subsidy (5 annual instalments) + up to 5% E/I-ratio top-up + up to 5% value-addition top-up. Large (Rs 200-1,000cr): 25% capital subsidy (7 instalments) + same top-ups. Mega (Rs 1,000-5,000cr): 30% capital subsidy (10 instalments) + same top-ups + 'tailor-made benefits'. All bands also get power-cost reimbursement Rs 1/unit for 5 years, 100% net SGST reimbursement for 5 years, 100% stamp duty reimbursement on land, and recruitment assistance (Rs 4,000/male, Rs 6,000/female employee/month for 6 months)."
+    },
+    {
+     "state": "Tamil Nadu",
+     "policy": "Electronics Hardware Manufacturing Policy 2020 -- verified directly from primary PDF",
+     "terms": "Districts classified A/B/C. Capital subsidy on Eligible Fixed Assets: Large projects (Rs 200-500cr, >500 jobs) get 15% (A) / 20% (B) / 25% (C), disbursed over 12yr (A) or 15yr (B/C); Mega projects (>Rs 500cr, >2,000 jobs) get 18% (A) / 24% (B) / 30% (C). Plus: land-lease subsidy (50% of rate in C-district govt parks, or 50% of private land cost capped Rs 2cr/50 acres), stamp duty exemption (50% A&B / 100% C districts), interest subsidy up to 5% (capped Rs 0.2cr/yr Large or Rs 1cr/yr Mega, up to 6yr), electricity tax exemption 5yr. 'Consumer Electronics and Appliances' is explicitly named a priority sub-sector -- the clearest direct textual tie to white goods found in any state policy."
+    },
+    {
+     "state": "Uttar Pradesh",
+     "policy": "Electronics Manufacturing Policy 2020",
+     "terms": "Up to 15% capital subsidy of FCI; 5%/yr interest subsidy (cap Rs 1cr/unit/yr, 5yr, max Rs 5cr/unit); 100% stamp duty exemption; 50-100% electricity duty exemption up to 10yr. Total state+central incentives capped at 100% of FCI, but PLI benefits are excluded from that cap."
+    },
+    {
+     "state": "Gujarat",
+     "policy": "Electronics Policy 2022-28 + Electronics Component Manufacturing Policy (GECMP) 2025",
+     "terms": "Capital assistance up to 20% of capex (cap Rs 2bn) for capex up to Rs 10bn, 15% above; interest assistance up to 7% (cap Rs 100mn/yr, 5yr); logistics subsidy up to 25% of freight (cap Rs 50mn/yr, 5yr) + one-time 50% reimbursement (cap Rs 50mn) for relocating manufacturing into Gujarat from outside India. GECMP 2025 matches whatever the Centre disburses under the central Electronics Component Manufacturing Scheme (ECMS) -- exact matching % not independently verified."
+    },
+    {
+     "state": "Maharashtra",
+     "policy": "Electronics Policy 2016, being superseded/supplemented by MIISP 2025 (effective 31 Dec 2025-30 Dec 2030)",
+     "terms": "Reportedly 20% (SEZ) / 25% (non-SEZ) capital subsidy, 100% stamp+electricity duty exemption for 15 years, Rs 1/unit power tariff subsidy -- these figures come from secondary sources only; the primary policy PDF could not be fetched in this research, so treat as needing verification before citing hard numbers."
+    }
+   ],
+   "emergent_hubs": [
+    {
+     "state": "Andhra Pradesh",
+     "evidence": "Sri City + Tirupati + Kopparthy (4 Electronic Manufacturing Clusters): Daikin-Rechi Precision JV compressor plant (33 acres, Rs 547cr Phase 1, 2 million compressors/yr scaling to 9 million); LG's third India plant (~$600M/Rs 5,000cr, 247 acres, targeting end-2026, 800k refrigerators + 850k washing machines + 1.5M ACs + 2M compressors/yr); Havells/Lloyd (11.2 lakh AC units/yr); Voltas Tirupati (1M+ units); Kryon Technology (BLDC motors, AC controllers, AC compressors). Sri City alone already accounts for roughly half of India's total AC production."
+    },
+    {
+     "state": "Gujarat",
+     "evidence": "Adani/Kutch Copper, Mundra: world's largest single-location copper plant ($1.2bn), with a forward-integration step (Kutch Copper Tubes Ltd) making copper tubes specifically for AC/refrigeration, plus a separately PLI-selected Adani Copper Tubes Ltd. Hindalco's Waghodia plant: India's first backward-integrated Inner-Grooved-Tube copper plant (25,000 TPA Phase 1) to cut AC/refrigeration copper-tube import dependence, plus a Dahej smelter. Highly Electrical Appliances (GMCC/Midea rotary-compressor licensee), Sanand: 2 million units/yr. Voltas plants at Sanand and Waghodia."
+    },
+    {
+     "state": "Tamil Nadu",
+     "evidence": "Samsung signed an MoU with the Tamil Nadu government for a NEW refrigerator-compressor plant at Sriperumbudur: Rs 1,588cr investment, 22 acres, 8 million compressors/yr capacity, 600 new jobs -- a major new data point. Voltas is also building a new AC factory at Madharapakkam, Thiruvallur district. Swaminathan Enterprises (PLI-selected AC components) is based in Chengalpattu."
+    },
+    {
+     "state": "Maharashtra",
+     "evidence": "Nidec Global Appliance's Embraco-brand refrigeration-compressor plant, Chhatrapati Sambhajinagar (formerly Aurangabad): >$120M committed investment, >100,000 sq m built area, 6 million compressors/yr capacity across 4 compressor families, ~1,500 direct jobs, production ramp targeted end-2026. Kirloskar Pneumatic (PLI-selected, compressors/motors/heat exchangers) has plants at Hadapsar and Saswad, Pune district."
+    },
+    {
+     "state": "Uttar Pradesh",
+     "evidence": "Noida: Samsung's existing plant (refrigerator capacity doubled from 1.5M to 3M units/yr, plus color TVs, monitors, washing machines) and Dixon Technologies (India's largest LED-bulb plant); Starion India also has a Greater Noida facility."
+    }
+   ],
+   "flags": [
+    "No single official DPIIT/Invest India table ranking all 85 PLI White Goods companies by state was found or fetchable (DPIIT's own scheme page returned HTTP 403) -- the hub picture above is built from press coverage of individual company announcements, not a master government table.",
+    "A commonly-referenced 'Kobelco compressor plant in Sri City' could not be verified -- Kobelco's only confirmed Indian presence is sales/service offices (Gurugram, Sriperumbudur), not manufacturing. The Daikin-Rechi Precision JV is almost certainly the intended reference; do not cite Kobelco as an Indian manufacturer.",
+    "GMCC (the world's largest room-AC compressor maker)'s Indian plant location could not be found or verified -- do not cite a state for it.",
+    "The Andhra Pradesh and Tamil Nadu figures above were verified directly from primary policy PDF text; the Maharashtra figures rest on secondary sources only (the primary PDF returned a fetch error) and should be re-verified before citing hard percentages in a final document."
+   ]
+  }
+ ]
+}
