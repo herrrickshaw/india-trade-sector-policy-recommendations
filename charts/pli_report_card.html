@@ -1,0 +1,242 @@
+<title>PLI Report Card — Incentive Disbursal, IEM Record &amp; Companies in Production</title>
+<meta name="hz:canvas-width" content="1180">
+<style>
+  :root {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6; --mismatch:#7a5aa8; --mismatch-soft:#e7defa;
+    --font-display:"Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --font-mono:"IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+      --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+      --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+      --data-line:#3987e5; --data-soft:#1c2c40; --mismatch:#b39ce0; --mismatch-soft:#2e2540;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+    --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+    --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+    --data-line:#3987e5; --data-soft:#1c2c40; --mismatch:#b39ce0; --mismatch-soft:#2e2540;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6; --mismatch:#7a5aa8; --mismatch-soft:#e7defa;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; }
+  .bulletin { background:var(--page-bg); color:var(--ink); font-family:var(--font-body); padding:40px 20px 56px; display:flex; justify-content:center; }
+  .sheet { width:100%; max-width:1160px; display:flex; flex-direction:column; gap:30px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:16px; display:flex; flex-direction:column; gap:6px; }
+  .eyebrow { font-family:var(--font-mono); font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); display:flex; gap:10px; align-items:center; }
+  .eyebrow::before { content:""; width:7px; height:7px; border-radius:50%; background:var(--accent); }
+  h1 { font-family:var(--font-display); font-weight:500; font-size:clamp(24px,3.1vw,32px); margin:2px 0 0; text-wrap:balance; }
+  .dek { font-size:14px; color:var(--ink-2); max-width:90ch; line-height:1.55; margin:4px 0 0; }
+  .source-line { font-family:var(--font-mono); font-size:11px; color:var(--ink-muted); margin-top:6px; }
+  section.block { display:flex; flex-direction:column; gap:14px; scroll-margin-top:20px; }
+  .block-head { display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; border-bottom:1px solid var(--rule-strong); padding-bottom:8px; }
+  .block-title { font-family:var(--font-display); font-size:21px; margin:0; }
+  .block-tag { font-family:var(--font-mono); font-size:12px; color:var(--ink-muted); }
+  .panel { background:var(--surface); border:1px solid var(--rule-strong); padding:18px 22px; display:flex; flex-direction:column; gap:12px; }
+  .toc { display:flex; flex-wrap:wrap; gap:8px 18px; font-size:12.5px; }
+  .toc a { color:var(--accent); text-decoration:none; }
+  .toc .sep { color:var(--rule-strong); }
+
+  table.vint { width:100%; border-collapse:collapse; font-size:12.5px; font-variant-numeric:tabular-nums; }
+  table.vint th { text-align:left; font-family:var(--font-mono); font-size:10px; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-muted); padding:6px 10px 8px 0; border-bottom:1px solid var(--rule-strong); }
+  table.vint th.num, table.vint td.num { text-align:right; }
+  table.vint td { padding:8px 10px 8px 0; border-bottom:1px solid var(--rule); }
+  table.vint tr:last-child td { border-bottom:none; font-weight:600; }
+
+  .gc-row { display:grid; grid-template-columns:64px 1fr; gap:16px; background:var(--surface); border:1px solid var(--rule-strong); padding:14px 18px; }
+  .gc-badge { width:56px; height:56px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:700; font-size:26px; }
+  .g-A { background:var(--accent-soft); color:var(--accent); border:2px solid var(--accent); }
+  .g-B { background:var(--data-soft); color:var(--data-line); border:2px solid var(--data-line); }
+  .g-C { background:var(--warn-soft); color:var(--warn); border:2px solid var(--warn); }
+  .g-D { background:var(--warn-soft); color:var(--alert); border:2px solid var(--alert); }
+  .g-F { background:var(--alert-soft); color:var(--alert); border:2px solid var(--alert); }
+  .gc-top { display:flex; justify-content:space-between; align-items:baseline; gap:10px; flex-wrap:wrap; }
+  .gc-name { font-family:var(--font-display); font-size:16px; font-weight:600; }
+  .gc-ministry { font-family:var(--font-mono); font-size:10.5px; color:var(--ink-muted); margin-left:8px; }
+  .gc-disb { font-family:var(--font-mono); font-size:12px; color:var(--data-line); }
+  .gc-ev { font-size:12.5px; line-height:1.55; color:var(--ink-2); margin-top:4px; }
+  .gc-asof { font-size:11px; color:var(--ink-muted); font-style:italic; margin-top:3px; }
+
+  .co-group { background:var(--surface); border:1px solid var(--rule-strong); padding:14px 18px; display:flex; flex-direction:column; gap:8px; }
+  .co-title { font-family:var(--font-display); font-size:15px; font-weight:600; }
+  .co-label { font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; letter-spacing:0.05em; margin-top:4px; }
+  .co-label.prod { color:var(--accent); } .co-label.inv { color:var(--data-line); } .co-label.gap { color:var(--alert); }
+  .co-list { display:flex; flex-wrap:wrap; gap:6px; }
+  .co-chip { font-size:11.5px; padding:3px 10px; border-radius:11px; line-height:1.4; }
+  .co-chip.prod { background:var(--accent-soft); color:var(--ink); border:1px solid var(--accent); }
+  .co-chip.inv { background:var(--data-soft); color:var(--ink-2); }
+  .co-gap { font-size:11.5px; color:var(--ink-2); font-style:italic; }
+
+  .callout { border:1px solid var(--rule-strong); border-left:3px solid var(--alert); background:var(--alert-soft); padding:14px 18px; }
+  .callout-label { font-family:var(--font-mono); font-size:10.5px; text-transform:uppercase; letter-spacing:0.06em; color:var(--alert); }
+  .callout p { margin:6px 0 0; font-size:13px; line-height:1.6; color:var(--ink-2); }
+  .callout p b { color:var(--ink); }
+  .exim { border-left:3px solid var(--data-line); background:var(--data-soft); border:1px solid var(--rule-strong); padding:14px 18px; }
+  .exim ul { margin:6px 0 0; padding-left:18px; display:flex; flex-direction:column; gap:6px; }
+  .exim li { font-size:12.5px; line-height:1.55; color:var(--ink-2); }
+  .exim li b { color:var(--ink); }
+  .errata { border:1px solid var(--rule-strong); border-left:3px solid var(--alert); background:var(--surface); padding:16px 20px; }
+  .errata-title { font-family:var(--font-mono); font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--alert); }
+  .errata ul { margin:8px 0 0; padding-left:18px; display:flex; flex-direction:column; gap:6px; }
+  .errata li { font-size:13px; line-height:1.5; color:var(--ink-2); }
+  .errata li b { color:var(--ink); }
+  footer.colophon { text-align:center; font-family:var(--font-mono); font-size:10.5px; color:var(--ink-muted); padding-top:8px; }
+</style>
+
+<div class="bulletin">
+  <div class="sheet">
+    <div class="masthead">
+      <div class="eyebrow">India Trade — Sector &amp; Policy Recommendations</div>
+      <h1>PLI report card: incentive disbursal, the IEM record, and who is actually producing</h1>
+      <p class="dek">The policy dashboard measured company investment against commitments; this bulletin grades the other side of the bargain — whether the <b>government's own incentive money</b> is flowing, scheme by scheme — plus a grade for the IEM approval record and, from PIB's own releases, the named companies that have invested and started production. Every PIB claim carries its release ID (PRID); where a company identity comes from a non-PIB source, it is labeled rather than laundered.</p>
+      <div class="source-line">SOURCES: PIB releases fetched directly and verified against release text (PRIDs cited inline); ministry-primary figures from this repo's 9-ministry pass where PIB has no newer number; DPIIT Annual Report 2025-26 appendices for IEM; Exim Bank of India trackers (May/June 2026) as an independent cross-check. Letter grades are this repo's stated judgment; criteria shown. Retrieved 2026-07-19.</div>
+    </div>
+
+    <div class="toc">
+      <a href="#agg">Cross-scheme aggregates</a><span class="sep">·</span>
+      <a href="#grades">Disbursal report card</a><span class="sep">·</span>
+      <a href="#iem">IEM record</a><span class="sep">·</span>
+      <a href="#companies">Companies in production</a><span class="sep">·</span>
+      <a href="#exim">Exim Bank cross-check</a><span class="sep">·</span>
+      <a href="#corrections">Corrections</a>
+    </div>
+
+    <section class="block" id="agg">
+      <div class="block-head"><h2 class="block-title">The headline: ₹28,748cr disbursed — ~15% of the program outlay, 5+ years in</h2><span class="block-tag">Three PIB vintages, PRIDs verified</span></div>
+      <div class="panel">
+        <table class="vint">
+          <thead><tr><th>As of</th><th>PIB source</th><th class="num">Investment (₹ lakh cr)</th><th class="num">Production (₹ lakh cr)</th><th class="num">Exports (₹ lakh cr)</th><th class="num">Jobs (lakh)</th><th class="num">Disbursed (₹ cr)</th></tr></thead>
+          <tbody>
+            <tr><td>~Nov 2024</td><td>PRID 2114011</td><td class="num">1.61</td><td class="num">~14.0</td><td class="num">5.31</td><td class="num">11.5</td><td class="num">14,020</td></tr>
+            <tr><td>30 Jun 2025</td><td>PRID 2201280 (Year-End Review)</td><td class="num">1.88</td><td class="num">17.0</td><td class="num">7.5</td><td class="num">12.3</td><td class="num">—</td></tr>
+            <tr><td>31 Dec 2025</td><td>PRID 2230621 + 2246089</td><td class="num">2.16</td><td class="num">20.41</td><td class="num">8.3</td><td class="num">14.39</td><td class="num">28,748</td></tr>
+          </tbody>
+        </table>
+        <p class="gc-ev">Production and exports are genuinely large and compounding. But disbursal — the government's own payout under its own scheme design — stands at roughly <b>15% of the ₹1.91–1.97 lakh cr outlay</b> (PIB itself states the outlay inconsistently across releases). The per-scheme spread below is the real story: two schemes account for most of the money that has moved.</p>
+      </div>
+    </section>
+
+    <section class="block" id="grades">
+      <div class="block-head"><h2 class="block-title">Disbursal report card, scheme by scheme</h2><span class="block-tag">A = paying &amp; delivering · F = stalled. Criteria in the data JSON; evidence is the checkable part</span></div>
+      <div id="gradeHost" style="display:flex; flex-direction:column; gap:10px;"></div>
+    </section>
+
+    <section class="block" id="iem">
+      <div class="block-head"><h2 class="block-title">IEM approval record</h2><span class="block-tag">DPIIT Annual Report 2025-26, Appendices III–VI</span></div>
+      <div class="gc-row">
+        <div class="gc-badge g-B">B+</div>
+        <div>
+          <div class="gc-top"><span class="gc-name">Industrial Entrepreneurs Memorandum — approvals &amp; implementation</span></div>
+          <p class="gc-ev">Part-A approvals: 986 (2024), 702 (to Dec 2025, after the Apr-2025 threshold raise to ₹125cr). The implementation ratio broke upward to <b>82.0% in 2024 and 109.9% in 2025</b> — implemented investment exceeded same-year intentions for the first time, ₹5.83 lakh cr implemented in 2025 alone. Docked from A: the monthly IEM statistics series is verifiably dead post-NSWS migration, no investment-size band exists in the published data, and DPIIT offers no explanation of its own series' dynamics.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="companies">
+      <div class="block-head"><h2 class="block-title">Who has invested — and who is actually producing</h2><span class="block-tag">Green chip = PIB credits commenced production · blue chip = PIB-named investor</span></div>
+      <div id="coHost" style="display:flex; flex-direction:column; gap:10px;"></div>
+      <div class="callout">
+        <div class="callout-label">The transparency pattern, again</div>
+        <p>PIB names <b>zero companies</b> for Textiles, Specialty Steel, and Food Processing — including the two unnamed companies that received Textiles' only ₹54.5cr payout, and the 14 of 58 steel projects that withdrew. The schemes where production is genuinely happening (Electronics, Semiconductors, Pharma, Medical Devices) are also the ones the government names names for; the underperformers stay anonymous in official text.</p>
+      </div>
+    </section>
+
+    <section class="block" id="exim">
+      <div class="block-head"><h2 class="block-title">Independent cross-check: Exim Bank of India</h2><span class="block-tag">Separate government publishing chain from DPIIT/TRADESTAT</span></div>
+      <div class="exim">
+        <ul>
+          <li><b>Trade deficit FY2025-26: $333.2bn</b> per Exim/MOCI vs $334.3bn computed in this repo from TRADESTAT chapters — cross-validated within 0.3%.</li>
+          <li><b>The deficit widened 17.5% in a single year</b> ($283.5bn → $333.2bn): FY26 exports +0.9% vs imports +7.4%. The import-substitution gap is not a 5-year artifact — it deteriorated in the latest year.</li>
+          <li>Non-petroleum exports $387.9bn (<b>+3.6%</b>) — the ex-oil export engine grows faster than the headline, consistent with the scheme-covered-chapters story.</li>
+          <li><b>Bank credit to PLI sectors is accelerating</b> (CEAT tracker, May-26 YoY): Electronics +23.9%, Vehicles +26.4%, Pharma +22.6%, Iron &amp; Steel +22.6% — independent corroboration that domestic EBLR-priced credit, not just equity, is funding PLI-sector capacity.</li>
+          <li>Total FDI incl. reinvested earnings: <b>$88.3bn</b> Apr–Feb FY26 (RBI basis) alongside DPIIT's $58.85bn equity-only figure — both series rising.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block" id="corrections">
+      <div class="errata">
+        <div class="errata-title">Corrections to prior bulletins &amp; methodology notes</div>
+        <ul>
+          <li><b>Electronics disbursal ₹15,554cr</b> (~Mar 2026, LSEM+IT-Hardware combined, PRID 2246089) supersedes the ₹6,834cr (Aug 2024) figure in the policy dashboard.</li>
+          <li><b>Auto disbursal ₹2,377.56cr</b> (~Mar 2026) supersedes ₹1,350.83cr (Dec 2025) — payouts accelerating, grade still D+ on level.</li>
+          <li><b>Specialty Steel: 14 of 58 Round-1 projects withdrew</b> and only ₹48cr has been disbursed — both disclosed in PIB Parliament answers, neither on steel.gov.in's own achievement-framed pages.</li>
+          <li>The cross-scheme ₹28,748cr figure previously attributed to the DPIIT Year-End Review actually comes from <b>Parliament-answer PRID 2230621</b>; the Year-End Review carries older Jun-2025 numbers.</li>
+          <li>PIB states the total program outlay as both ₹1.97 lakh cr and ₹1.91 lakh cr in different releases — flagged, not reconciled.</li>
+          <li>Pharma's ₹5,433cr disbursal is a ministry Annual-Report figure — PIB's Dec-2025 pharma release reports sales only; not PIB-verified.</li>
+          <li>Underlying data: <a href="../data/pli_report_card_2026-07-19.json">data/pli_report_card_2026-07-19.json</a> · Scheme detail: <a href="policy_investment_dashboard.html">policy &amp; investment dashboard</a> · Verdicts: <a href="fy26_verdict_rerun_powerbi.html">FY26 re-run</a>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="colophon">herrrickshaw/india-trade-sector-policy-recommendations — derived research synthesis; not an official government publication or investment solicitation</footer>
+  </div>
+</div>
+
+<script>
+(function () {
+  var grades = [
+    {s:"PLI Pharmaceuticals (formulations)", m:"DoP", g:"A", cls:"g-A", disb:"₹5,433cr of ₹15,000cr (36%)", asof:"Oct 2025 — ministry figure; PIB's Dec-2025 release reports sales only", ev:"Combined pharma-PLI sales ₹3.19 lakh cr incl. ₹2.04 lakh cr exports (PRID 2204595); 191 KSMs/DIs/APIs produced in India for the first time; investment at 237% of commitment. The largest genuine disbursal-to-outlay ratio of any big scheme."},
+    {s:"Electronics (LSEM + IT Hardware)", m:"MeitY", g:"A-", cls:"g-A", disb:"₹15,554cr disbursed", asof:"~Mar 2026, PRID 2246089 — spans both schemes, so exceeds LSEM's own ₹11,324cr outlay", ev:"The flagship by every outcome metric (PRID 2247771): investment 250% of target, production 136%, exports 127%; smartphones India's #1 export item CY2025 (₹2,62,452cr). Docked: only 2 of 5 domestic-category mobile applicants performing; jobs at 92% of target."},
+    {s:"PLI Bulk Drugs (KSMs/APIs)", m:"DoP", g:"A-", cls:"g-A", disb:"no separate disbursal figure published", asof:"—", ev:"Penicillin-G made in India again after ~30 years (₹1,910cr, ₹2,700cr/yr import substitution) plus Clavulanic Acid (PRID 2121425); imports avoided ₹3,591cr; 27 plants commissioned across 15+ named companies (PRID 2010924)."},
+    {s:"PLI Medical Devices", m:"DoP", g:"B+", cls:"g-B", disb:"no PIB disbursal figure", asof:"—", ev:"19 greenfield projects commissioned; 44 products incl. linear accelerators, MRI and CT machines made in India for the first time (PRID 2114011). FY26 sector FDI fell 40% — production story ahead of the FDI story."},
+    {s:"PLI Telecom & Networking", m:"DoT", g:"B", cls:"g-B", disb:"no PIB disbursal figure", asof:"—", ev:"Sales >6× FY20; exports ₹21,033cr (PRID 2230621); 42 named beneficiaries incl. 28 MSMEs; BSNL's indigenous 4G stack deployed. Outcomes strong, payout evidence absent from PIB."},
+    {s:"PLI Food Processing", m:"MoFPI", g:"B", cls:"g-B", disb:"₹1,084cr of ₹10,900cr (10%)", asof:"Oct 2024, PIB Explainer 155082", ev:"171 approved applications, >₹9,200cr invested. One of the few schemes actually paying at scale — yet PIB names not a single beneficiary company; the Britannia/ITC/Nestle names exist only on MoFPI's own PDF."},
+    {s:"PLI White Goods (ACs & LEDs)", m:"DPIIT", g:"B-", cls:"g-B", disb:"₹281.4cr of ₹6,238cr (4.5%)", asof:"Aug 2025, Explainer 155082", ev:"Component manufacturing 'has commenced' for compressors, motors, copper tubes, LED drivers (PRID 2230621), 30+ investors named verbatim. But 4.5% disbursed, and no per-company production status is public."},
+    {s:"PLI Solar PV Modules", m:"MNRE", g:"C+", cls:"g-C", disb:"no PIB disbursal figure", asof:"—", ev:"₹52,942cr committed toward 48 GW; ~38,500 direct jobs by Jun 2025; Tranche-II awardees named (Reliance, First Solar, Waaree, Tata Power Solar...). Commitment data rich, execution/payout data thin."},
+    {s:"PLI Drones", m:"MoCA", g:"C+", cls:"g-C", disb:"~₹30cr of ₹120cr (25%)", asof:"FY2022-23, PRID 1913565", ev:"Sector turnover up 7×; 23 provisional beneficiaries (Asteria, Garuda, IdeaForge...). A tiny scheme that broadly did what a tiny scheme could."},
+    {s:"PLI Automobile & Auto Components", m:"MHI", g:"D+", cls:"g-D", disb:"₹2,377.56cr of ₹25,938cr (9.2%)", asof:"~Mar 2026, PRID 2246089 — up from ₹1,350.83cr at Dec 2025; accelerating", ev:"~9% of outlay disbursed 4+ years in; FY26 incremental sales ₹13,126cr by 72 companies — far off the ₹2.31 lakh cr trajectory. 8 OEMs DVA-certified for 94 variants (names not published). Tata Motors and Mahindra credited with 'massive investments in EV production capacity' (PRID 2115609)."},
+    {s:"PLI Specialty Steel", m:"Ministry of Steel", g:"D", cls:"g-D", disb:"₹48cr of ₹6,322cr (0.8%)", asof:"Mar 2025, PRID 2114011", ev:"PIB discloses 14 of 58 Round-1 projects WITHDREW — beneficiary attrition the Ministry's own site never states. ₹20,000cr invested and 9,000 jobs are real; the incentive mechanism itself is barely functioning."},
+    {s:"PLI Textiles (MMF/technical)", m:"MoT", g:"D", cls:"g-D", disb:"₹54.5cr of ₹10,683cr (0.5%)", asof:"Aug 2025, PRID 2152545 — paid to exactly 2 companies, unnamed", ev:"0.5% of outlay disbursed 4 years in; only 26 of 74 Round-1/2 applicants had commenced production at last ministry count; zero beneficiary names in any PIB release."},
+    {s:"PLI ACC Battery Storage", m:"MHI", g:"F", cls:"g-F", disb:"₹0 of ₹18,100cr", asof:"31 Dec 2025, PRID 2214039", ev:"Zero incentive disbursed. Ola's 1 GWh (of 40 allocated) still in 'pilot production' since March 2024, 'working toward stabilizing operations for full-scale commercial production' in PIB's own words; one original awardee (Hyundai Global, 20 GWh) exited without 'withdrew' ever appearing in a government document."}
+  ];
+  var gh = document.getElementById("gradeHost");
+  grades.forEach(function (g) {
+    var d = document.createElement("div");
+    d.className = "gc-row";
+    d.innerHTML = '<div class="gc-badge ' + g.cls + '">' + g.g + '</div>' +
+      '<div><div class="gc-top"><div><span class="gc-name">' + g.s + '</span><span class="gc-ministry">' + g.m + '</span></div><span class="gc-disb">' + g.disb + '</span></div>' +
+      '<p class="gc-ev">' + g.ev + '</p>' + (g.asof !== "—" ? '<div class="gc-asof">Disbursal as of: ' + g.asof + '</div>' : '') + '</div>';
+    gh.appendChild(d);
+  });
+
+  var cos = [
+    {t:"Electronics (LSEM)", prod:["Foxconn Hon Hai — first incentive approved (PRID 1885189)","Padget Electronics / Dixon — first incentive approved (PRID 1885189)","Samsung — beneficiary; smartphones = India's #1 export item CY2025"], inv:["Pegatron","Rising Star","Wistron (now Tata)","Lava","Bhagwati (Micromax)","Optiemus","UTL Neolyncs","AT&S","Sahasra"], gap:"Company-wise iPhone export splits (Tata $26.3bn vs Foxconn $25.6bn) are press reporting, not PIB."},
+    {t:"Semiconductors (ISM)", prod:["Micron, Sanand — commercial production, PM-inaugurated 28 Feb 2026 (PRID 2233998)","Kaynes, Sanand — inaugurated 31 Mar 2026, >6.33M chips/day, exporting (PRID 2247278)","CG Semi (CG Power+Renesas) — full facility inaugurated 4 Jul 2026 (PRID 2281125)"], inv:["Tata-PSMC Dholera fab (₹91,526cr, not yet producing)","Tata Electronics Assam ATMP (₹27,120cr)","HCL-Foxconn (UP)","SiCSem & 3DGS (Odisha)","CDIL (Punjab)","ASIP (Andhra)"], gap:null},
+    {t:"Bulk Drugs / Pharma", prod:["Penicillin-G, Kakinada — company is Lyfius/Aurobindo per Aurobindo's BSE filing (non-PIB)","Clavulanic Acid, Nalagarh — company is Kinvan (non-PIB)","Meghmani LLP","Hetero Drugs","Andhra Organics","Centrient","Honour Lab","+10 more across 27 commissioned plants (PRID 2010924)"], inv:[], gap:"Macleods (Rifampicin) never appears in PIB text."},
+    {t:"Medical Devices", prod:["Siemens Healthcare, Bengaluru (CT/MRI)","Wipro GE Healthcare","Philips GBS (MRI coils)","Panacea Medical (linear accelerators)","Sahajanand Medical (stents)","Poly Medicure","Nipro India","Trivitron (PRID 2010924)"], inv:[], gap:"Meril (Vapi) and BPL Medical: the PM-inauguration releases name only locations and products; identities are press, not PIB."},
+    {t:"White Goods", prod:["Compressors, motors, copper tubes, LED drivers 'commenced' (PRID 2230621) — companies unnamed"], inv:["Daikin","Voltas","Hindalco","Amber","LG Electronics India","Blue Star","Havells","Panasonic","Haier","Midea","Nidec","Dixon","Signify","Crompton Greaves"], gap:"Mitsubishi Electric never named in PIB."},
+    {t:"Auto / ACC Battery", prod:["Ola Cell Technologies — 1 GWh 'pilot production' since Mar 2024, not yet commercial scale (PRID 2214039)"], inv:["Tata Motors & Mahindra — 'massive investments in EV production capacity' (PRID 2115609)","Reliance New Energy (15 GWh across two rounds)","Rajesh Exports / ACC Energy Storage (5 GWh)"], gap:"The 8 DVA-certified OEMs and 10 component champions are counted but never named."},
+    {t:"Telecom", prod:["BSNL indigenous 4G stack deployed (PRID 2230621)"], inv:["Tejas Networks","HFCL","VVDN","Dixon Electro","ITI Ltd","Syrma SGS","Nokia India","Foxconn Technology India","Jabil","Flextronics","+30 more incl. 28 MSMEs"], gap:null},
+    {t:"Solar PV", prod:[], inv:["Reliance","First Solar","Waaree","Avaada","ReNew","JSW","Vikram","Tata Power Solar (PRID 1911380)"], gap:"No PIB release credits a specific PLI solar plant with commenced production."},
+    {t:"Textiles · Steel · Food Processing", prod:[], inv:[], gap:"ZERO company names in PIB for all three — Food Processing's beneficiaries exist only on MoFPI's own PDF; Textiles' two paid companies are unnamed; Steel's participants are unnamed despite 14 of 58 withdrawing."}
+  ];
+  var ch = document.getElementById("coHost");
+  cos.forEach(function (c) {
+    var d = document.createElement("div");
+    d.className = "co-group";
+    var h = '<div class="co-title">' + c.t + '</div>';
+    if (c.prod.length) h += '<div class="co-label prod">Producing (PIB-credited unless labeled)</div><div class="co-list">' + c.prod.map(function(x){return '<span class="co-chip prod">'+x+'</span>';}).join('') + '</div>';
+    if (c.inv.length) h += '<div class="co-label inv">Invested / approved</div><div class="co-list">' + c.inv.map(function(x){return '<span class="co-chip inv">'+x+'</span>';}).join('') + '</div>';
+    if (c.gap) h += '<div class="co-label gap">Gap</div><div class="co-gap">' + c.gap + '</div>';
+    d.innerHTML = h;
+    ch.appendChild(d);
+  });
+})();
+</script>

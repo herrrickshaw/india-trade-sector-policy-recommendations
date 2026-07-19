@@ -91,6 +91,13 @@
       ]
     },
     {
+      "title": "PLI report card (disbursal grades, IEM record, companies in production)",
+      "chart": "charts/pli_report_card.html",
+      "data": [
+        "data/pli_report_card_2026-07-19.json"
+      ]
+    },
+    {
       "title": "FDI pitch deck (21 slides)",
       "chart": "fdi_pitch/fdi_pitch_deck.html",
       "data": [],

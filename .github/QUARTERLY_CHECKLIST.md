@@ -12,6 +12,9 @@ Auto-opened by `.github/workflows/quarterly-dashboard-refresh.yml`. The PDF snap
 - [ ] **IEM (DPIIT/NSWS)** — whether monthly IEM Statistics Reports resumed publishing after the Oct 2025 NSWS migration (unconfirmed beyond Aug-2024 data at last check); recompute the Part-B/Part-A flow ratio if new Annual Report appendices exist.
 - [ ] **MoSPI PAIMANA** — latest Flash Report aggregates (was 1,941 projects, 15.64% implied cost overrun); whether "delayed" classification was reinstated (dropped after May 2025).
 
+- [ ] **PIB disbursal aggregates** — latest cross-scheme figures (was ₹28,748cr / 836 applications at 31 Dec 2025, PRID 2230621); scheme-wise disbursals (Electronics ₹15,554cr, Auto ₹2,377.56cr, Steel ₹48cr, ACC zero); any newer Parliament-answer PRIDs.
+- [ ] **Exim Bank trackers** (eximbankindia.in/useful-economic-data) — 'India's International Trade and Investment' (monthly) for trade/FDI cross-validation; CEAT Industry Tracker for sector credit growth.
+
 ## Rate benchmarks (feeds the domestic-vs-FDI capital case too)
 
 - [ ] RBI repo rate + latest MPC decision (was 5.25%, held).
