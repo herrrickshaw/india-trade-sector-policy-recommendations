@@ -119,6 +119,28 @@
     </section>
 
     <section class="block">
+      <div class="block-head"><h2 class="block-title">Does the register predict implementation? The correlation, quantified</h2><span class="block-tag">16 states · ECs granted (2022+) vs IEM Part B (2024–25) · Pearson / Spearman / log-log</span></div>
+      <div class="panel">
+        <table class="np">
+          <thead><tr><th>Pair</th><th style="text-align:right;">Pearson</th><th style="text-align:right;">Spearman (rank)</th><th>Read</th></tr></thead>
+          <tbody>
+            <tr><td><b>EC granted vs Part B implemented value (₹cr, 24+25)</b></td><td style="text-align:right; font-variant-numeric:tabular-nums;"><b>0.961</b></td><td style="text-align:right; font-variant-numeric:tabular-nums;"><b>0.794</b></td><td style="font-size:11.5px; color:var(--ink-2);">The headline: clearance stock explains ~92% of the variance in recent implementation value — and the rank correlation confirms it is not just the Gujarat outlier.</td></tr>
+            <tr><td>log(EC) vs log(Part B value)</td><td style="text-align:right; font-variant-numeric:tabular-nums;">0.864</td><td style="text-align:right; font-variant-numeric:tabular-nums;">0.794</td><td style="font-size:11.5px; color:var(--ink-2);">Elasticity ~1.7 — implementation value scales <i>super-linearly</i> with clearances: more-cleared states also host bigger projects.</td></tr>
+            <tr><td>EC granted vs Part B filing count (24+25)</td><td style="text-align:right; font-variant-numeric:tabular-nums;">0.857</td><td style="text-align:right; font-variant-numeric:tabular-nums;">0.482</td><td style="font-size:11.5px; color:var(--ink-2);">Weaker in rank terms — many Part B filings need no fresh EC (expansions, estate piggybacking).</td></tr>
+            <tr><td>ToR granted (forward pipeline) vs Part B value</td><td style="text-align:right; font-variant-numeric:tabular-nums;">0.849</td><td style="text-align:right; font-variant-numeric:tabular-nums;">0.676</td><td style="font-size:11.5px; color:var(--ink-2);">The EIA-stage pipeline already tracks current implementation.</td></tr>
+            <tr><td>EC granted vs Part B value <i>growth</i> (24+25 ÷ 21+22)</td><td style="text-align:right; font-variant-numeric:tabular-nums;">0.612</td><td style="text-align:right; font-variant-numeric:tabular-nums;">0.385</td><td style="font-size:11.5px; color:var(--ink-2);">EC stock predicts implementation <b>levels</b> far better than growth rates — ratios are small-base noise.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="panel" style="font-size:12.5px; color:var(--ink-2); line-height:1.6;">
+        <b style="color:var(--ink);">The residuals are the actionable layer</b> — from the log-log fit (log₁₀ Part B value = 0.67 + 1.71·log₁₀ EC granted), who converts clearances into implemented value above and below trend:<br><br>
+        <b style="color:var(--accent);">Over-performers</b> — Andhra Pradesh (+0.49: few clearances, giant projects), Madhya Pradesh (+0.47), Odisha (+0.40: steel value-per-clearance), UP (+0.25), Rajasthan (+0.22).<br>
+        <b style="color:var(--alert);">Under-performers</b> — Jharkhand (−0.44), Assam (−0.41: post-Tata-surge lull), <b>Karnataka (−0.35: many clearances, modest value — its pipeline-building read quantified; watch this gap close if the Foxconn-era projects land)</b>, West Bengal (−0.32), and even Gujarat (−0.19: its ₹4.55 lakh cr sits slightly below what 1,049 clearances predict — the EC book skews to mid-size chemical units).<br><br>
+        <i>Caveats: n=16, cross-sectional, not causal; the EC window (2022+) only partially leads the Part B window (2024-25); counts vs rupee values are different units — hence the rank and log checks. The supported claim: the register is a valid leading indicator of implementation levels, with the residuals flagging which states' pipelines are converting.</i>
+      </div>
+    </section>
+
+    <section class="block">
       <div class="block-head"><h2 class="block-title">What's loading next — granted ECs by EIA activity</h2><span class="block-tag">The clearance register corroborates the implementation sector leaders</span></div>
       <div class="sec-grid" id="secGrid"></div>
     </section>

@@ -2,65 +2,363 @@
   "purpose": "The pipeline layer between IEM Part A (intent) and Part B (production): state-wise and sector-wise Environmental Clearance data from the PARIVESH portal, used as the leading indicator of which announced projects have acquired land, cleared the EIA gate, and are genuinely heading toward implementation. Fills gate 3 of this repo's investment-lifecycle schema.",
   "retrieved": "2026-07-19",
   "method": "PARIVESH 2.0's open, unauthenticated JSON API (parivesh_api/trackYourProposal/advanceSearchData) returned the entire EC proposal universe in one call: 113,804 proposals (126 MB), submissions 2022 through the fetch date, each with state, sector, EIA activity, category (A/B1/B2), issuing authority, status, and proponent. Critically, SEIAA (state-level Category B) proposals ARE included -- 104,583 SEIAA vs 9,221 MoEFCC -- because PARIVESH 2.0 became the mandatory single window (Feb 2024), killing the feared B-category coverage gap. Aggregated to state x sector x status (CSV in this repo); industrial sectors = IND-1 + IND-2 + IND-3. Raw universe: 54,296 ECs granted, 15,843 ToR-granted (EIA underway), 2,371 rejected, 25,032 auto-delisted (excluded from conversion math). Non-Coal Mining (82,235 records, mostly minor-mineral quarry leases) excluded as noise.",
-
   "the_api_finding": "PARIVESH 2.0 exposes a fully open JSON API -- no key, no pagination, no CAPTCHA -- returning the complete national EC register. This is the single most refresh-friendly data source in this repo's entire stack (one GET call replaces what took 9 research agents elsewhere), and is now on the quarterly checklist. Endpoint: parivesh.nic.in/parivesh_api/trackYourProposal/advanceSearchData?majorClearanceType=1&... Raw dump and the state-x-sector-x-status aggregate CSV archived.",
-
   "status_definitions": {
     "granted": "EC issued -- ready to build (or building)",
     "tor_granted": "Terms of Reference issued, EIA study underway -- typically 12-18 months before EC; the deepest forward-pipeline signal",
     "in_process": "Under verification/appraisal",
     "dead": "Rejected, withdrawn, or auto-delisted (excluded from conversion rates)"
   },
-
   "state_industrial_ec_table": [
-    {"state": "Gujarat", "granted": 1049, "tor_granted": 836, "in_process": 236, "dead": 482, "iem_impl_rank": 1, "read": "~31% of ALL industrial EC grants AND the deepest ToR pipeline -- corroborates its 33.8% IEM Part B share and predicts continuation. The intent->clearance->production chain is fully lit."},
-    {"state": "Maharashtra", "granted": 390, "tor_granted": 519, "in_process": 80, "dead": 287, "iem_impl_rank": 3, "read": "ToR count EXCEEDS grants -- the most forward-loaded pipeline of any state: more projects in EIA study than already cleared."},
-    {"state": "Odisha", "granted": 280, "tor_granted": 83, "in_process": 63, "dead": 145, "iem_impl_rank": 2, "read": "Strong granted stock consistent with its #2 implementation rank; thinner ToR pipeline suggests the current steel wave is cresting rather than accelerating."},
-    {"state": "Karnataka", "granted": 220, "tor_granted": 175, "in_process": 45, "dead": 157, "iem_impl_rank": 11, "read": "More EC activity than its modest IEM implementation rank implies -- manufacturing pipeline building beneath the services-FDI headline."},
-    {"state": "Chhattisgarh", "granted": 154, "tor_granted": 157, "in_process": 66, "dead": 121, "iem_impl_rank": 10, "read": "ToR ~= granted: metals pipeline still loading."},
-    {"state": "West Bengal", "granted": 148, "tor_granted": 107, "in_process": 34, "dead": 121, "iem_impl_rank": 15, "read": "EC activity well above its implementation rank -- despite the 2025 incentive revocation, projects are still clearing the gate."},
-    {"state": "Andhra Pradesh", "granted": 146, "tor_granted": 80, "in_process": 24, "dead": 113, "iem_impl_rank": 4, "read": "Moderate EC counts against a high implementation rank -- its big Part B numbers ride fewer, larger projects."},
-    {"state": "Rajasthan", "granted": 141, "tor_granted": 150, "in_process": 30, "dead": 108, "iem_impl_rank": 6, "read": "ToR > granted: pipeline deepening."},
-    {"state": "Uttar Pradesh", "granted": 140, "tor_granted": 121, "in_process": 27, "dead": 43, "iem_impl_rank": 5, "read": "Lowest dead-share of the majors -- applications that enter tend to survive."},
-    {"state": "Telangana", "granted": 114, "tor_granted": 57, "in_process": 18, "dead": 52, "iem_impl_rank": 13, "read": "Modest -- the Rs 60,991cr 2025 Part A intent spike has not yet shown up as EC volume."},
-    {"state": "Punjab", "granted": 103, "tor_granted": 94, "in_process": 18, "dead": 62, "iem_impl_rank": 8, "read": "Steady mid-tier flow."},
-    {"state": "Madhya Pradesh", "granted": 89, "tor_granted": 83, "in_process": 34, "dead": 40, "iem_impl_rank": 7, "read": "Balanced pipeline."},
-    {"state": "Tamil Nadu", "granted": 87, "tor_granted": 81, "in_process": 25, "dead": 56, "iem_impl_rank": 9, "read": "Modest industrial-EC flow, consistent with its mature-cluster IEM profile."},
-    {"state": "Uttarakhand", "granted": 79, "tor_granted": 17, "in_process": 6, "dead": 7, "iem_impl_rank": 18, "read": "High grant rate, shallow pipeline."},
-    {"state": "Assam", "granted": 72, "tor_granted": 27, "in_process": 7, "dead": 30, "iem_impl_rank": 14, "read": "Real industrial EC flow beyond the Tata anchor."},
-    {"state": "Jharkhand", "granted": 68, "tor_granted": 69, "in_process": 14, "dead": 53, "iem_impl_rank": 16, "read": "ToR ~= granted: metals pipeline loading."}
+    {
+      "state": "Gujarat",
+      "granted": 1049,
+      "tor_granted": 836,
+      "in_process": 236,
+      "dead": 482,
+      "iem_impl_rank": 1,
+      "read": "~31% of ALL industrial EC grants AND the deepest ToR pipeline -- corroborates its 33.8% IEM Part B share and predicts continuation. The intent->clearance->production chain is fully lit."
+    },
+    {
+      "state": "Maharashtra",
+      "granted": 390,
+      "tor_granted": 519,
+      "in_process": 80,
+      "dead": 287,
+      "iem_impl_rank": 3,
+      "read": "ToR count EXCEEDS grants -- the most forward-loaded pipeline of any state: more projects in EIA study than already cleared."
+    },
+    {
+      "state": "Odisha",
+      "granted": 280,
+      "tor_granted": 83,
+      "in_process": 63,
+      "dead": 145,
+      "iem_impl_rank": 2,
+      "read": "Strong granted stock consistent with its #2 implementation rank; thinner ToR pipeline suggests the current steel wave is cresting rather than accelerating."
+    },
+    {
+      "state": "Karnataka",
+      "granted": 220,
+      "tor_granted": 175,
+      "in_process": 45,
+      "dead": 157,
+      "iem_impl_rank": 11,
+      "read": "More EC activity than its modest IEM implementation rank implies -- manufacturing pipeline building beneath the services-FDI headline."
+    },
+    {
+      "state": "Chhattisgarh",
+      "granted": 154,
+      "tor_granted": 157,
+      "in_process": 66,
+      "dead": 121,
+      "iem_impl_rank": 10,
+      "read": "ToR ~= granted: metals pipeline still loading."
+    },
+    {
+      "state": "West Bengal",
+      "granted": 148,
+      "tor_granted": 107,
+      "in_process": 34,
+      "dead": 121,
+      "iem_impl_rank": 15,
+      "read": "EC activity well above its implementation rank -- despite the 2025 incentive revocation, projects are still clearing the gate."
+    },
+    {
+      "state": "Andhra Pradesh",
+      "granted": 146,
+      "tor_granted": 80,
+      "in_process": 24,
+      "dead": 113,
+      "iem_impl_rank": 4,
+      "read": "Moderate EC counts against a high implementation rank -- its big Part B numbers ride fewer, larger projects."
+    },
+    {
+      "state": "Rajasthan",
+      "granted": 141,
+      "tor_granted": 150,
+      "in_process": 30,
+      "dead": 108,
+      "iem_impl_rank": 6,
+      "read": "ToR > granted: pipeline deepening."
+    },
+    {
+      "state": "Uttar Pradesh",
+      "granted": 140,
+      "tor_granted": 121,
+      "in_process": 27,
+      "dead": 43,
+      "iem_impl_rank": 5,
+      "read": "Lowest dead-share of the majors -- applications that enter tend to survive."
+    },
+    {
+      "state": "Telangana",
+      "granted": 114,
+      "tor_granted": 57,
+      "in_process": 18,
+      "dead": 52,
+      "iem_impl_rank": 13,
+      "read": "Modest -- the Rs 60,991cr 2025 Part A intent spike has not yet shown up as EC volume."
+    },
+    {
+      "state": "Punjab",
+      "granted": 103,
+      "tor_granted": 94,
+      "in_process": 18,
+      "dead": 62,
+      "iem_impl_rank": 8,
+      "read": "Steady mid-tier flow."
+    },
+    {
+      "state": "Madhya Pradesh",
+      "granted": 89,
+      "tor_granted": 83,
+      "in_process": 34,
+      "dead": 40,
+      "iem_impl_rank": 7,
+      "read": "Balanced pipeline."
+    },
+    {
+      "state": "Tamil Nadu",
+      "granted": 87,
+      "tor_granted": 81,
+      "in_process": 25,
+      "dead": 56,
+      "iem_impl_rank": 9,
+      "read": "Modest industrial-EC flow, consistent with its mature-cluster IEM profile."
+    },
+    {
+      "state": "Uttarakhand",
+      "granted": 79,
+      "tor_granted": 17,
+      "in_process": 6,
+      "dead": 7,
+      "iem_impl_rank": 18,
+      "read": "High grant rate, shallow pipeline."
+    },
+    {
+      "state": "Assam",
+      "granted": 72,
+      "tor_granted": 27,
+      "in_process": 7,
+      "dead": 30,
+      "iem_impl_rank": 14,
+      "read": "Real industrial EC flow beyond the Tata anchor."
+    },
+    {
+      "state": "Jharkhand",
+      "granted": 68,
+      "tor_granted": 69,
+      "in_process": 14,
+      "dead": 53,
+      "iem_impl_rank": 16,
+      "read": "ToR ~= granted: metals pipeline loading."
+    }
   ],
   "grant_timing": "Industrial EC grants by submission cohort: 2022: 186, 2023: 918, 2024: 1,020, 2025: 966, 2026 YTD: 317 (total 3,407). By last-update year (imperfect grant-date proxy): 2023: 198 -> 2024: 734 -> 2025: 1,102 -> 2026 YTD: 579 -- grant flow is accelerating, consistent with the IEM implementation ratio breaking upward (82% -> 109.9%).",
-
   "sector_activity_split": [
-    {"activity": "5(f) Synthetic organic chemicals (pharma/API/specialty chem)", "granted": 1192, "leader_states": "Gujarat 670 (56% of all-India), Maharashtra 157, Telangana 62, Karnataka 61, Uttarakhand 54", "read": "The largest industrial EC category -- and Gujarat's 56% share of it explains much of both the Chemicals-#2-implementation finding and the pharma 2025 riser. The chemicals capex wave has a deep clearance pipeline behind it."},
-    {"activity": "3(a) Metallurgical industries (steel, ferrous, non-ferrous)", "granted": 641, "leader_states": "Chhattisgarh 111, West Bengal 76, Gujarat 52, Punjab 54, Jharkhand 50, Karnataka 44, Odisha 43, Maharashtra 40", "read": "Corroborates Metallurgical as the #1 implementation sector -- and note the leaders are spread far beyond Odisha: the next steel wave is multi-state."},
-    {"activity": "5(g) Distilleries (ethanol/biofuel)", "granted": 504, "leader_states": "spread across UP, Maharashtra, Punjab, MP", "read": "Matches the Fermentation Industries 2025 riser (Rs 24,237cr implemented) -- the ethanol wave has clearance depth."},
-    {"activity": "3(b) Cement", "granted": 148, "leader_states": "Rajasthan 24, Gujarat 16, UP 14, MP 12, Karnataka 12", "read": "Steady."},
-    {"activity": "Oil & gas E&P + refining + petrochem complexes", "granted": 144, "leader_states": "various", "read": "Includes 17 petrochemical complexes and 8 refinery ECs -- but NOT RRPCL (see named projects)."},
-    {"activity": "Pesticides + chemical fertilizers", "granted": 173, "leader_states": "Gujarat-heavy", "read": "Adjacent chemicals flow."}
+    {
+      "activity": "5(f) Synthetic organic chemicals (pharma/API/specialty chem)",
+      "granted": 1192,
+      "leader_states": "Gujarat 670 (56% of all-India), Maharashtra 157, Telangana 62, Karnataka 61, Uttarakhand 54",
+      "read": "The largest industrial EC category -- and Gujarat's 56% share of it explains much of both the Chemicals-#2-implementation finding and the pharma 2025 riser. The chemicals capex wave has a deep clearance pipeline behind it."
+    },
+    {
+      "activity": "3(a) Metallurgical industries (steel, ferrous, non-ferrous)",
+      "granted": 641,
+      "leader_states": "Chhattisgarh 111, West Bengal 76, Gujarat 52, Punjab 54, Jharkhand 50, Karnataka 44, Odisha 43, Maharashtra 40",
+      "read": "Corroborates Metallurgical as the #1 implementation sector -- and note the leaders are spread far beyond Odisha: the next steel wave is multi-state."
+    },
+    {
+      "activity": "5(g) Distilleries (ethanol/biofuel)",
+      "granted": 504,
+      "leader_states": "spread across UP, Maharashtra, Punjab, MP",
+      "read": "Matches the Fermentation Industries 2025 riser (Rs 24,237cr implemented) -- the ethanol wave has clearance depth."
+    },
+    {
+      "activity": "3(b) Cement",
+      "granted": 148,
+      "leader_states": "Rajasthan 24, Gujarat 16, UP 14, MP 12, Karnataka 12",
+      "read": "Steady."
+    },
+    {
+      "activity": "Oil & gas E&P + refining + petrochem complexes",
+      "granted": 144,
+      "leader_states": "various",
+      "read": "Includes 17 petrochemical complexes and 8 refinery ECs -- but NOT RRPCL (see named projects)."
+    },
+    {
+      "activity": "Pesticides + chemical fertilizers",
+      "granted": 173,
+      "leader_states": "Gujarat-heavy",
+      "read": "Adjacent chemicals flow."
+    }
   ],
-
   "named_projects_ec_status": [
-    {"project": "Tata Semiconductor fab, Dholera (Gujarat)", "proposal": "SIA/GJ/INFRA2/579457/2026", "status": "ToR Granted (2026)", "read": "The Rs 91,526cr fab is in the EIA stage -- clearance pipeline confirms construction path."},
-    {"project": "Tata Semiconductor ATMP, Jagiroad (Assam)", "proposal": "SIA/AS/INFRA2/534537/2025", "status": "ToR Granted", "read": "The Rs 27,120cr Assam plant likewise in EIA."},
-    {"project": "Micron OSAT, Sanand (Gujarat)", "proposal": "SIA/GJ/INFRA2/562857/2025 + 573383/2026", "status": "EC Granted (expansions)", "read": "Already producing; expansions cleared."},
-    {"project": "Kaynes Semicon OSAT (Gujarat)", "proposal": "SIA/GJ/INFRA2/534857/2025", "status": "EC Granted", "read": "Producing since Mar 2026."},
-    {"project": "Agratas (Tata) 20 GWh gigafactory (Gujarat)", "proposal": "SIA/GJ/INFRA2/464582/2024", "status": "ToR Granted", "read": "The battery plant is in EIA -- pipeline real, production still ahead."},
-    {"project": "Reliance electrolyser gigafactory (Gujarat)", "proposal": "SIA/GJ/INFRA2/580565/2026", "status": "EC Granted", "read": "Cleared to build."},
-    {"project": "PM MITRA parks (MP Dhar, Maharashtra Amravati, Karnataka)", "proposal": "SIA/MP/INFRA1/519828/2025 + IA/MH/INFRA1/475511/2024 + SIA/KA/INFRA2/544701/2025", "status": "EC Granted (all three)", "read": "Three of seven parks have cleared EC -- ahead of the 1-of-7-in-production status."},
-    {"project": "Bulk Drug Parks (Gujarat Jambusar, HP Una, AP Nakkapalli)", "proposal": "multiple", "status": "EC Granted (Gujarat 2023; HP and AP 2025)", "read": "All three parks cleared -- the 'various stages of development' now has a clearance timeline behind it."},
-    {"project": "Foxconn mobile plant, Devanahalli (Karnataka)", "proposal": "SIA/KA/INFRA2/525578/2025", "status": "EC Granted", "read": "Karnataka's manufacturing pipeline building beneath the services-FDI headline."},
-    {"project": "POSCO-JSW steel JV", "proposal": "none found", "status": "ABSENT -- no greenfield JV EC application exists in the portal (only JSW's own proposals, e.g. 25 MTPA Karnataka throughput at ToR stage)", "read": "NEGATIVE FINDING: the $7.73bn JV whose Apr-2026 cash movement this repo flagged has not entered the EC pipeline -- its FY27 FDI arrival will precede any clearance-visible construction."},
-    {"project": "RRPCL west-coast refinery", "proposal": "none found", "status": "ABSENT from the 2022+ portal entirely", "read": "NEGATIVE FINDING: the ~$44bn 'stalled at MoU' verdict now has clearance-register proof -- a project of this scale with zero EC activity is not under implementation."}
+    {
+      "project": "Tata Semiconductor fab, Dholera (Gujarat)",
+      "proposal": "SIA/GJ/INFRA2/579457/2026",
+      "status": "ToR Granted (2026)",
+      "read": "The Rs 91,526cr fab is in the EIA stage -- clearance pipeline confirms construction path."
+    },
+    {
+      "project": "Tata Semiconductor ATMP, Jagiroad (Assam)",
+      "proposal": "SIA/AS/INFRA2/534537/2025",
+      "status": "ToR Granted",
+      "read": "The Rs 27,120cr Assam plant likewise in EIA."
+    },
+    {
+      "project": "Micron OSAT, Sanand (Gujarat)",
+      "proposal": "SIA/GJ/INFRA2/562857/2025 + 573383/2026",
+      "status": "EC Granted (expansions)",
+      "read": "Already producing; expansions cleared."
+    },
+    {
+      "project": "Kaynes Semicon OSAT (Gujarat)",
+      "proposal": "SIA/GJ/INFRA2/534857/2025",
+      "status": "EC Granted",
+      "read": "Producing since Mar 2026."
+    },
+    {
+      "project": "Agratas (Tata) 20 GWh gigafactory (Gujarat)",
+      "proposal": "SIA/GJ/INFRA2/464582/2024",
+      "status": "ToR Granted",
+      "read": "The battery plant is in EIA -- pipeline real, production still ahead."
+    },
+    {
+      "project": "Reliance electrolyser gigafactory (Gujarat)",
+      "proposal": "SIA/GJ/INFRA2/580565/2026",
+      "status": "EC Granted",
+      "read": "Cleared to build."
+    },
+    {
+      "project": "PM MITRA parks (MP Dhar, Maharashtra Amravati, Karnataka)",
+      "proposal": "SIA/MP/INFRA1/519828/2025 + IA/MH/INFRA1/475511/2024 + SIA/KA/INFRA2/544701/2025",
+      "status": "EC Granted (all three)",
+      "read": "Three of seven parks have cleared EC -- ahead of the 1-of-7-in-production status."
+    },
+    {
+      "project": "Bulk Drug Parks (Gujarat Jambusar, HP Una, AP Nakkapalli)",
+      "proposal": "multiple",
+      "status": "EC Granted (Gujarat 2023; HP and AP 2025)",
+      "read": "All three parks cleared -- the 'various stages of development' now has a clearance timeline behind it."
+    },
+    {
+      "project": "Foxconn mobile plant, Devanahalli (Karnataka)",
+      "proposal": "SIA/KA/INFRA2/525578/2025",
+      "status": "EC Granted",
+      "read": "Karnataka's manufacturing pipeline building beneath the services-FDI headline."
+    },
+    {
+      "project": "POSCO-JSW steel JV",
+      "proposal": "none found",
+      "status": "ABSENT -- no greenfield JV EC application exists in the portal (only JSW's own proposals, e.g. 25 MTPA Karnataka throughput at ToR stage)",
+      "read": "NEGATIVE FINDING: the $7.73bn JV whose Apr-2026 cash movement this repo flagged has not entered the EC pipeline -- its FY27 FDI arrival will precede any clearance-visible construction."
+    },
+    {
+      "project": "RRPCL west-coast refinery",
+      "proposal": "none found",
+      "status": "ABSENT from the 2022+ portal entirely",
+      "read": "NEGATIVE FINDING: the ~$44bn 'stalled at MoU' verdict now has clearance-register proof -- a project of this scale with zero EC activity is not under implementation."
+    }
   ],
-
   "verdict_on_the_indicator": "EC data works as the gate-3 pipeline indicator -- better than expected, because SEIAA data is included and the API is fully open. Use it with four stated filters: (1) EC categories do not map 1:1 to IEM scheduled industries -- clean overlap only for metallurgy/cement/chemicals/pharma; ELECTRONICS AND BATTERY PLANTS HAVE NO EC CATEGORY OF THEIR OWN (they appear under INFRA-2 building-construction if >20,000 sqm, else not at all) -- so category aggregates miss them and only named-project search covers them; (2) no grant date in the bulk record (submission date + last-update proxy only); (3) one EC does not equal one IEM-scale project -- counts read alongside investment values, never instead; (4) PARIVESH 2.0 holds 2022+ submissions only, and estate-based projects can piggyback on an industrial estate's EC without appearing individually.",
-
   "caveats": [
     "DELISTED_BY_SYSTEM (25,032 records) is auto-cleanup of inactive applications -- excluded from both pipeline and mortality math.",
     "Non-Coal Mining (82,235 of 113,804 records, mostly minor-mineral quarries) excluded as noise for this purpose.",
     "Legacy pre-2022 ECs live on environmentclearance.nic.in (reachable only with pinned DNS) -- not merged here.",
     "The named-project reads are point-in-time; per-proposal detail calls can retrieve exact grant dates if needed."
-  ]
+  ],
+  "ec_iem_correlation": {
+    "question": "Does the EC register actually predict state-wise IEM implementation -- is the leading-indicator claim quantifiable?",
+    "method": "Cross-sectional across the 16 states present in both datasets: industrial ECs granted (2022+ submissions, PARIVESH) against IEM Part B in the recent window (2024 + 2025-to-Dec, DPIIT AR 2025-26 Appendix V) -- values, counts, and growth ratios; Pearson + Spearman (rank, robust to the Gujarat outlier) + log-log.",
+    "correlations": [
+      {
+        "pair": "EC granted vs Part B implemented VALUE, 2024+25 (Rs cr)",
+        "pearson": 0.961,
+        "spearman": 0.794,
+        "read": "The headline: clearance stock explains ~92% of the variance in recent implementation value, and the rank correlation (0.79) confirms it is not just Gujarat driving it."
+      },
+      {
+        "pair": "log(EC granted) vs log(Part B value)",
+        "pearson": 0.864,
+        "spearman": 0.794,
+        "read": "Elasticity ~1.7: implementation value scales SUPER-linearly with clearance count -- states with more clearances also host bigger projects."
+      },
+      {
+        "pair": "EC granted vs Part B COUNT, 2024+25",
+        "pearson": 0.857,
+        "spearman": 0.482,
+        "read": "Counts correlate less in rank terms -- many Part B filings need no fresh EC (expansions, estate piggybacking)."
+      },
+      {
+        "pair": "ToR granted (forward pipeline) vs Part B value",
+        "pearson": 0.849,
+        "spearman": 0.676,
+        "read": "The EIA-stage pipeline already tracks current implementation -- big-pipeline states are big-implementation states."
+      },
+      {
+        "pair": "EC granted vs Part B value GROWTH (24+25 / 21+22)",
+        "pearson": 0.612,
+        "spearman": 0.385,
+        "read": "EC stock predicts the LEVEL of implementation far better than its growth rate -- growth ratios are small-base noise."
+      }
+    ],
+    "loglog_fit": "log10(Part B value 24+25) = 0.67 + 1.71 x log10(EC granted); residuals identify who converts clearances into implemented value above/below trend.",
+    "over_performers": [
+      {
+        "state": "Andhra Pradesh",
+        "residual": 0.49,
+        "read": "Few clearances, huge implemented value -- its Part B rides a handful of giant projects."
+      },
+      {
+        "state": "Madhya Pradesh",
+        "residual": 0.47,
+        "read": "Quietly efficient converter."
+      },
+      {
+        "state": "Odisha",
+        "residual": 0.4,
+        "read": "Steel: enormous value per clearance."
+      },
+      {
+        "state": "Uttar Pradesh",
+        "residual": 0.25,
+        "read": "Above trend."
+      },
+      {
+        "state": "Rajasthan",
+        "residual": 0.22,
+        "read": "Above trend."
+      }
+    ],
+    "under_performers": [
+      {
+        "state": "Jharkhand",
+        "residual": -0.44,
+        "read": "Clearances not yet converting to large implemented value."
+      },
+      {
+        "state": "Assam",
+        "residual": -0.41,
+        "read": "Post-Tata-surge lull; EC flow real but small-value."
+      },
+      {
+        "state": "Karnataka",
+        "residual": -0.35,
+        "read": "Many clearances, modest implemented value -- consistent with its pipeline-building read: watch this gap close if the Foxconn-era projects land."
+      },
+      {
+        "state": "West Bengal",
+        "residual": -0.32,
+        "read": "Activity without scale."
+      },
+      {
+        "state": "Gujarat",
+        "residual": -0.19,
+        "read": "Even its Rs 4.55 lakh cr sits slightly below what 1,049 clearances would predict -- its EC book skews to mid-size chemical units."
+      }
+    ],
+    "caveats": "n=16, cross-sectional, NOT causal; the EC window (2022+) only partially leads the Part B window (2024-25), so same-period contamination exists; EC counts vs rupee values are different units (hence the rank and log checks); small states are noisy. The claim supported: the register is a valid leading indicator of implementation LEVELS, and the residuals are the actionable layer."
+  }
 }
