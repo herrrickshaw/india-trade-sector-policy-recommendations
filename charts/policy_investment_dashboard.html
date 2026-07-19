@@ -1,0 +1,345 @@
+<title>Policy &amp; Investment Insight Dashboard — Scheme Utilization, Incentives &amp; Application Windows</title>
+<meta name="hz:canvas-width" content="1180">
+<style>
+  :root {
+    color-scheme: light;
+    --page-bg:      #eef1ea;
+    --surface:      #fcfcfa;
+    --ink:          #14180f;
+    --ink-2:        #4f5348;
+    --ink-muted:    #82867a;
+    --rule:         #d7dace;
+    --rule-strong:  #c3c7b8;
+    --accent:       #1f5f5b;
+    --accent-soft:  #dbe9e6;
+    --alert:        #a5402c;
+    --alert-soft:   #f3ded7;
+    --warn:         #c98a1f;
+    --warn-soft:    #f3e9d5;
+    --mismatch:     #7a5aa8;
+    --mismatch-soft:#e7defa;
+    --data-line:    #2a78d6;
+    --font-display: "Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    --font-body: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --font-mono: "IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+      --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634; --alert:#e0785f; --alert-soft:#3a241d;
+      --warn:#e0b23f; --warn-soft:#3a3220; --mismatch:#b39ce0; --mismatch-soft:#2e2540; --data-line:#3987e5;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+    --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634; --alert:#e0785f; --alert-soft:#3a241d;
+    --warn:#e0b23f; --warn-soft:#3a3220; --mismatch:#b39ce0; --mismatch-soft:#2e2540; --data-line:#3987e5;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6; --alert:#a5402c; --alert-soft:#f3ded7;
+    --warn:#c98a1f; --warn-soft:#f3e9d5; --mismatch:#7a5aa8; --mismatch-soft:#e7defa; --data-line:#2a78d6;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  .bulletin { background: var(--page-bg); color: var(--ink); font-family: var(--font-body); padding: 40px 20px 56px; display: flex; justify-content: center; }
+  .sheet { width: 100%; max-width: 1180px; display: flex; flex-direction: column; gap: 30px; }
+
+  .masthead { border-bottom: 2px solid var(--ink); padding-bottom: 16px; display: flex; flex-direction: column; gap: 6px; }
+  .eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); display: flex; gap: 10px; align-items: center; }
+  .eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); display: inline-block; }
+  h1 { font-family: var(--font-display); font-weight: 500; font-size: clamp(24px, 3.1vw, 32px); margin: 2px 0 0; text-wrap: balance; letter-spacing: -0.01em; }
+  .dek { font-size: 14px; color: var(--ink-2); max-width: 90ch; line-height: 1.55; margin: 4px 0 0; }
+  .source-line { font-family: var(--font-mono); font-size: 11px; color: var(--ink-muted); margin-top: 6px; }
+
+  .toc { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 12.5px; }
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sep { color: var(--rule-strong); }
+
+  section.block { display: flex; flex-direction: column; gap: 14px; scroll-margin-top: 20px; }
+  .block-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid var(--rule-strong); padding-bottom: 8px; }
+  .block-title { font-family: var(--font-display); font-size: 21px; margin: 0; }
+  .block-tag { font-family: var(--font-mono); font-size: 12px; color: var(--ink-muted); }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 11.5px; color: var(--ink-2); }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .legend-item .pill { font-family: var(--font-mono); font-size: 9px; text-transform: uppercase; padding: 2px 7px; border-radius: 2px; }
+
+  .errata-mini { border: 1px solid var(--rule-strong); border-left: 3px solid var(--alert); background: var(--alert-soft); padding: 12px 16px; display: flex; flex-direction: column; gap: 6px; }
+  .errata-mini ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 5px; }
+  .errata-mini li { font-size: 12px; line-height: 1.5; color: var(--ink-2); }
+  .errata-mini li b { color: var(--ink); }
+
+  .scheme-card { background: var(--surface); border: 1px solid var(--rule-strong); padding: 16px 20px; display: flex; flex-direction: column; gap: 8px; }
+  .scheme-top { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .scheme-name { font-family: var(--font-display); font-size: 16.5px; font-weight: 600; }
+  .scheme-ministry { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-muted); margin-left: 8px; }
+  .status-pill { font-family: var(--font-mono); font-size: 9.5px; text-transform: uppercase; padding: 3px 9px; border-radius: 2px; white-space: nowrap; }
+  .status-open { background: var(--accent-soft); color: var(--accent); }
+  .status-partially_open { background: var(--mismatch-soft); color: var(--mismatch); }
+  .status-closing, .status-recently_closed, .status-extension_pending { background: var(--warn-soft); color: var(--warn); }
+  .status-closed { background: var(--rule); color: var(--ink-2); }
+  .outlay-line { font-family: var(--font-mono); font-size: 11.5px; color: var(--data-line); }
+  .scheme-detail { font-size: 12.5px; line-height: 1.55; color: var(--ink-2); }
+  .scheme-detail b { color: var(--ink); }
+  .scheme-status-detail { font-size: 12px; color: var(--ink-2); font-style: italic; }
+  .quote-box { border-left: 3px solid var(--warn); background: var(--warn-soft); padding: 8px 14px; font-size: 12px; line-height: 1.55; color: var(--ink-2); }
+  .quote-box .k { font-family: var(--font-mono); font-size: 9px; text-transform: uppercase; color: var(--warn); display: block; margin-bottom: 3px; }
+
+  .panel { background: var(--surface); border: 1px solid var(--rule-strong); padding: 18px 22px; display: flex; flex-direction: column; gap: 12px; }
+
+  .flow-ladder { display: flex; flex-direction: column; gap: 2px; background: var(--rule); border: 1px solid var(--rule-strong); }
+  .flow-row { background: var(--surface); padding: 10px 18px; display: grid; grid-template-columns: 100px 1fr 70px; gap: 14px; align-items: center; }
+  .flow-year { font-family: var(--font-mono); font-size: 11.5px; color: var(--ink); }
+  .flow-track { height: 18px; background: var(--page-bg); border-radius: 2px; }
+  .flow-fill { height: 100%; border-radius: 2px; background: var(--data-line); }
+  .flow-val { text-align: right; font-family: var(--font-mono); font-size: 12px; font-weight: 700; color: var(--ink); }
+
+  .sector-proof { display: flex; flex-wrap: wrap; gap: 6px; }
+  .sector-tag { font-family: var(--font-mono); font-size: 10.5px; padding: 3px 9px; border-radius: 2px; background: var(--rule); color: var(--ink-2); }
+  .sector-tag.zero { background: var(--alert-soft); color: var(--alert); }
+
+  table.state-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  table.state-table th { text-align: left; font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-muted); padding: 6px 10px 8px 0; border-bottom: 1px solid var(--rule-strong); }
+  table.state-table td { padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule); }
+
+  .callout { border: 1px solid var(--rule-strong); border-left: 3px solid var(--alert); background: var(--alert-soft); padding: 14px 18px; display: flex; flex-direction: column; gap: 6px; }
+  .callout-label { font-family: var(--font-mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--alert); }
+  .callout p { margin: 0; font-size: 13px; line-height: 1.6; color: var(--ink-2); }
+  .callout p b { color: var(--ink); }
+
+  .synth-list { display: flex; flex-direction: column; gap: 10px; }
+  .synth-item { font-size: 13px; line-height: 1.6; color: var(--ink-2); padding: 12px 16px; background: var(--surface); border: 1px solid var(--rule-strong); border-left: 3px solid var(--data-line); }
+
+  .errata { border: 1px solid var(--rule-strong); border-left: 3px solid var(--alert); background: var(--surface); padding: 16px 20px; display: flex; flex-direction: column; gap: 10px; }
+  .errata-title { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--alert); }
+  .errata ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+  .errata li { font-size: 13px; line-height: 1.5; color: var(--ink-2); }
+  .errata li b { color: var(--ink); }
+
+  footer.colophon { text-align: center; font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-muted); padding-top: 8px; }
+</style>
+
+<div class="bulletin">
+  <div class="sheet">
+    <div class="masthead">
+      <div class="eyebrow">India Trade — Sector &amp; Policy Recommendations</div>
+      <h1>Policy &amp; investment insight dashboard</h1>
+      <p class="dek">A direct, primary-source verification pass across 9 administering ministries/departments — not PIB, not press — covering every PLI/incentive scheme this repo tracks: how much of each scheme's outlay is actually utilized, what incentives remain, and whether the application window is still open. Also tests two specific data sources for state/sector development tracking — DPIIT's IEM Form A/B intent-to-implementation data and MoSPI's mega-project monitoring — and reports honestly where neither fits as cleanly as hoped.</p>
+      <div class="source-line">SOURCES: MeitY, Ministry of Steel, Department of Heavy Industry, Department of Pharmaceuticals, DPIIT, Ministry of Textiles, Department of Chemicals &amp; Petrochemicals, Ministry of Civil Aviation/Defence Production — each ministry's own site, annual reports, and Parliamentary Standing Committee submissions prioritized over PIB/press. Plus DPIIT's IEM data and MoSPI's PAIMANA portal. Retrieved 2026-07-19.</div>
+    </div>
+
+    <div class="toc">
+      <a href="#corrections">Citation corrections</a><span class="sep">·</span>
+      <a href="#schemes">Scheme dashboard</a><span class="sep">·</span>
+      <a href="#mitra">PM MITRA parks</a><span class="sep">·</span>
+      <a href="#iem">IEM Form A/B</a><span class="sep">·</span>
+      <a href="#mospi">MoSPI mega-projects</a><span class="sep">·</span>
+      <a href="#synthesis">Synthesis</a>
+    </div>
+
+    <section class="block" id="corrections">
+      <div class="block-head"><h2 class="block-title">Citation corrections surfaced by this research pass</h2><span class="block-tag">Fixes to apply across this repo</span></div>
+      <div class="errata-mini" id="correctionsBox"></div>
+    </section>
+
+    <section class="block" id="schemes">
+      <div class="block-head"><h2 class="block-title">Scheme utilization, incentives &amp; application status</h2><span class="block-tag">14 schemes across 5 ministries/departments</span></div>
+      <div class="legend">
+        <div class="legend-item"><span class="pill status-open">Open</span> accepting applications now</div>
+        <div class="legend-item"><span class="pill status-partially_open">Partially open</span> one sub-component only</div>
+        <div class="legend-item"><span class="pill status-closing">Closing / recently closed</span> tenure ending or just wound up</div>
+        <div class="legend-item"><span class="pill status-extension_pending">Extension pending</span> ministry itself requesting more time</div>
+        <div class="legend-item"><span class="pill status-closed">Closed</span> selection complete, no new applicants</div>
+      </div>
+      <div id="schemeCards" style="display:flex; flex-direction:column; gap:14px;"></div>
+    </section>
+
+    <section class="block" id="mitra">
+      <div class="block-head"><h2 class="block-title">PM MITRA textile parks — a separate infrastructure scheme</h2><span class="block-tag">7 sites approved</span></div>
+      <div class="panel" id="mitraPanel"></div>
+    </section>
+
+    <section class="block" id="iem">
+      <div class="block-head"><h2 class="block-title">IEM Form A / Form B: can it show conversion for projects above ₹150cr?</h2><span class="block-tag">Honest answer: no, not as DPIIT publishes it</span></div>
+      <div class="callout">
+        <div class="callout-label">The honest finding</div>
+        <p>DPIIT's published IEM data has <b>no investment-size band anywhere</b> — not in the monthly IEM Statistics Report, not in the Annual Report appendices, not on the NSWS filing portal. The ₹150 crore threshold doesn't belong to DPIIT/IEM at all — it's <b>MoSPI's</b> separate cutoff for Central Sector infrastructure monitoring, a different dataset entirely with no shared key. A clean "Form A/B for projects above ₹150cr" filter is not possible from public data as it stands.</p>
+      </div>
+      <div class="panel">
+        <div class="block-tag" style="margin-bottom:4px;">Best available proxy: same-year aggregate flow ratio (Part-B ÷ Part-A that year) — NOT a cohort-matched conversion rate</div>
+        <div class="flow-ladder" id="flowLadder"></div>
+        <p class="scheme-detail">5-year aggregate (2020 – Nov 2024): <b>53.1%</b>. Part-B filings in any year come overwhelmingly from Part-A filings issued in earlier years — DPIIT's own raw data shows gaps from months to over a decade (one company's Part-A was dated 1964, its Part-B filed in 2024). DPIIT publishes no explanation for why aggregate intent consistently exceeds aggregate implementation.</p>
+      </div>
+    </section>
+
+    <section class="block" id="mospi">
+      <div class="block-head"><h2 class="block-title">MoSPI mega-projects: does it show state-level development in these 10 sectors?</h2><span class="block-tag">Honest answer: no, it's scoped to public infrastructure only</span></div>
+      <div class="callout">
+        <div class="callout-label">The honest finding</div>
+        <p>MoSPI's Infrastructure and Project Monitoring Division tracks Central Sector projects ≥₹150cr implemented by <b>ministries, PSUs, and statutory agencies</b> — roads, rail, power, coal, PSU steel-plant upgrades. <b>None</b> of this repo's 10 priority sectors appear as tracked categories (confirmed by a full-text search of the March 2026 Flash Report). MoSPI also quietly stopped classifying projects as "delayed" after May 2025 — a real transparency regression from its earlier reporting.</p>
+      </div>
+      <div class="panel">
+        <div class="block-tag" style="margin-bottom:6px;">Sectors MoSPI actually tracks (1,941 ongoing projects, ₹41.5 lakh crore revised cost) — none of this repo's 10 priority sectors present</div>
+        <div class="sector-proof" id="sectorProof"></div>
+        <p class="scheme-detail" style="margin-top:8px;">"Energy Storage" (15 projects) sounds relevant but is confirmed to be pumped-hydro plants run by NHPC/NTPC — not battery gigafactories. "Steel" (18 projects, ₹17,812cr) is entirely SAIL/PSU plant upgrades (Bhilai, Bokaro, IISCO) — no Tata Steel or JSW project appears.</p>
+      </div>
+      <div class="panel">
+        <div class="block-tag" style="margin-bottom:6px;">State-wise mega-project table exists — but measures public infrastructure spend, not private manufacturing FDI</div>
+        <table class="state-table">
+          <thead><tr><th>State</th><th>Mega-projects tracked</th><th>Revised cost (₹cr)</th></tr></thead>
+          <tbody id="stateTableBody"></tbody>
+        </table>
+        <p class="scheme-detail" style="margin-top:6px;">None of this repo's named flagship private projects (Tata Steel Kalinganagar, Micron Sanand, Tata-PSMC Dholera, Reliance's battery gigafactories, RRPCL) appear in this tracking. What does appear: the enabling public infrastructure around some hubs — "Development of Dholera International Greenfield Airport" (AAI, ₹1,305cr) and "Transmission System for Reliable Power Supply to Dholera" (POWERGRID, ₹319cr).</p>
+      </div>
+    </section>
+
+    <section class="block" id="synthesis">
+      <div class="block-head"><h2 class="block-title">Cross-cutting synthesis</h2><span class="block-tag">What this ministry-verification pass adds to the repo's earlier findings</span></div>
+      <div class="synth-list" id="synthList"></div>
+    </section>
+
+    <div class="errata">
+      <div class="errata-title">Errata &amp; methodology notes</div>
+      <ul>
+        <li><b>"Application status" reflects each scheme's most recent published round</b> — several PLI schemes accept periodic reopened windows even after being marked "closed" here; always check the ministry's current notification before assuming a door is permanently shut.</li>
+        <li><b>No ministry researched ever describes its own scheme as "undersubscribed"</b> in a primary document, even where repeated reopening rounds strongly imply it — every reopening is framed as evidence of growing industry interest. This repo does not adopt that framing uncritically.</li>
+        <li><b>The IEM and MoSPI sections are included specifically to show where the requested data doesn't fit</b>, not to force a stretched connection — India's investment-tracking infrastructure is fragmented across agencies with no shared project key.</li>
+        <li>Underlying data: <a href="../data/policy_investment_dashboard_2026-07-19.json">data/policy_investment_dashboard_2026-07-19.json</a>.</li>
+      </ul>
+    </div>
+
+    <footer class="colophon">herrrickshaw/india-trade-sector-policy-recommendations — derived research synthesis; not an official government publication or investment solicitation</footer>
+  </div>
+</div>
+
+<script>
+(function () {
+  var corrections = [
+    "<b>pharmaceuticals.gov.in is a dead domain</b> (confirmed NXDOMAIN) — the Department of Pharmaceuticals' live site is <b>pharma-dept.gov.in</b>. Every prior citation in this repo should be updated.",
+    "The <b>~74% China API/KSM import-dependency figure</b> used elsewhere in this repo is not corroborated anywhere in DoP's own Annual Report 2025-26 — re-attribute to its actual source or flag as third-party.",
+    "<b>RRPCL belongs to the Ministry of Petroleum &amp; Natural Gas</b> (IOCL/BPCL/HPCL JV), not the Department of Chemicals and Petrochemicals — DCPC's own site has zero mention of it. Still no confirmed financial close found anywhere official.",
+    "<b>GE-HAL F414 status upgraded</b>: technical/commercial terms finalized April 2026 (~80% tech transfer, ~$1bn value) — but no primary Indian-government or HAL source confirms a signed contract yet. Update from 'not signed' to 'terms finalized, signature pending.'"
+  ];
+  var cbox = document.getElementById("correctionsBox");
+  cbox.innerHTML = '<ul>' + corrections.map(function(c){ return '<li>' + c + '</li>'; }).join('') + '</ul>';
+
+  var schemes = [
+    {name:"PLI Large Scale Electronics Manufacturing", ministry:"MeitY", outlay:"₹11,324cr", status:"closing",
+      detail:"Investment target ₹7,000cr / achievement ₹10,905cr — but MeitY's own Parliament submission: 'only 2 applicants are performing out of 5 approved' (mobile domestic category); '1 out of 6... and 11 out of 16' performing (SEC categories).",
+      statusDetail:"Tenure closes 31 Mar 2026; 2026-27 Budget Estimate cut 81% to ₹1,345cr accordingly.",
+      quote:"MeitY Secretary to Parliament: \"Surrenders mainly come in the PLI, the electronics manufacturing... scheme... when private companies are not able to spend and file claims.\""},
+    {name:"SPECS (electronic components, pre-ECMS)", ministry:"MeitY", outlay:"₹3,285cr", status:"closed",
+      detail:"52-58 approved; proposed ₹14,798-20,000cr, actual ₹9,067-9,482cr (~46-61%). Only ₹584cr incentive released to 13 applicants.",
+      statusDetail:"Closed to new applications 31 Mar 2024; disbursement continues to 2029. Superseded by ECMS.", quote:null},
+    {name:"ECMS (SPECS successor)", ministry:"MeitY", outlay:"₹22,919cr", status:"open",
+      detail:"24 approved (Dec 2025); ₹12,704cr projected investment, ₹1,09,517cr production, ~17,000 jobs. A widely-circulated 75-application figure could not be verified on a MeitY page.",
+      statusDetail:"Notified Apr 2025, 6yr + 1yr tenure — rolling approvals continuing.", quote:null},
+    {name:"India Semiconductor Mission (ISM + Semicon 2.0)", ministry:"MeitY / ISM", outlay:"₹2,03,500cr", status:"open",
+      detail:"10 projects approved by Dec 2025 (1 foundry, 9 OSAT), ~₹1.6 lakh cr cumulative investment. Semicon 2.0 (₹1,27,500cr) approved 15 Jul 2026.",
+      statusDetail:"First Semicon 2.0 fab scheduled for commissioning 2028; rolling approvals continuing.",
+      quote:"MeitY, Standing Committee Report 17: fund utilization was 23% (FY23-24), 9% (FY24-25) — companies 'have not yet claimed the funds... because these are complex projects requiring intensive planning.'"},
+    {name:"PLI Specialty Steel", ministry:"Ministry of Steel", outlay:"₹6,322cr", status:"recently_closed",
+      detail:"Cumulative committed ₹43,874cr (Rounds 1.0+1.1), over ₹22,000cr invested. No itemized company list published — only aggregate counts (44/19 Round 1.0, 42/25 Round 1.1).",
+      statusDetail:"Round 1.2 launched 4 Nov 2025 (22 sub-categories); disbursal begins FY2026-27.",
+      quote:"Ministry of Steel Annual Report 2025-26: capacity utilization DIPPED to 76% in FY2024-25 from 80% the year before; coking coal import dependence (~57 MMT/yr) named as an ongoing challenge."},
+    {name:"PLI Automobile & Auto Components", ministry:"Dept. of Heavy Industry", outlay:"₹25,938cr", status:"closed",
+      detail:"82 approved (18 OEM + 64 Component). Committed ₹67,690cr vs ₹42,500cr target — but ACTUAL investment only ₹35,657cr, incremental sales just ₹32,879cr against a ₹2,31,500cr projection.",
+      statusDetail:"Selection completed; all 82 slots filled.",
+      quote:"Rajya Sabha Standing Committee, 332nd Report (11 Mar 2026): 'serious concern over the massive disconnect between the approved subsidy path and the actual meagre allocations and utilisations.'"},
+    {name:"PLI ACC Battery Storage", ministry:"Dept. of Heavy Industry", outlay:"₹18,100cr", status:"partially_open",
+      detail:"40 of 50 GWh target allocated — but only 1 GWh actually commissioned (2.5%). Actual investment just ₹2,680cr vs ₹9,000cr minimum required. ZERO incentive disbursed ('non-fulfilment of eligibility conditions').",
+      statusDetail:"Remaining 10 GWh (Grid Scale Stationary Storage) still under bid finalization — the only open sliver.",
+      quote:"New finding: of the original 4 awardees (incl. Hyundai Global Motors, 20 GWh), Hyundai is absent from every current DHI document. Only 3 firms/30 GWh remain officially listed — the 'missing' 20 GWh was quietly re-tendered."},
+    {name:"PLI Bulk Drugs (Critical KSMs/APIs)", ministry:"Dept. of Pharmaceuticals", outlay:"₹6,940cr", status:"closed",
+      detail:"48 projects/33 products approved. Committed ₹4,330cr; ACTUAL investment ₹4,763cr — exceeds commitment (110%). Sales ₹2,313cr incl. ₹508cr exports.",
+      statusDetail:"Selection completed across all rounds.", quote:null},
+    {name:"PLI Pharmaceuticals (formulations)", ministry:"Dept. of Pharmaceuticals", outlay:"₹15,000cr", status:"closed",
+      detail:"55 approved (incl. 20 MSMEs). Committed ₹17,275cr; ACTUAL investment ₹40,890cr — 237% of commitment, the strongest performer in this dashboard. Sales ₹3,16,797cr, target already exceeded.",
+      statusDetail:"Selection completed across all rounds.", quote:null},
+    {name:"PLI Medical Devices", ministry:"Dept. of Pharmaceuticals", outlay:"₹3,420cr", status:"closed",
+      detail:"Cumulative sales ₹12,344cr incl. ₹5,869cr exports. Commissioned: Meril Group (Vapi, ₹1,400cr), BPL Medical (Bangalore, ₹317cr).",
+      statusDetail:"Greenfield-only, selection completed.", quote:null},
+    {name:"Medical Device Parks (4 states)", ministry:"Dept. of Pharmaceuticals", outlay:"₹400cr", status:"extension_pending",
+      detail:"194 manufacturers allotted land across UP/MP/TN; only 2 of 32 under-construction companies have commenced commercial operations. Himachal Pradesh formally withdrew 7 Sept 2024.",
+      statusDetail:"Extended to FY2025-26; Department itself proposing a further 2-year extension to FY2027-28.",
+      quote:"DoP Annual Report 2025-26: \"the envisaged objectives are yet to be fully achieved\" — a direct admission of underperformance."},
+    {name:"Bulk Drug Parks (AP, Gujarat, Himachal Pradesh)", ministry:"Dept. of Pharmaceuticals", outlay:"₹3,000cr", status:"extension_pending",
+      detail:"AP: 2,002 acres/₹1,877cr. Gujarat: 2,015 acres/₹2,507cr. HP: 1,405 acres/₹1,923cr. A 2nd ₹300cr tranche went to Gujarat (Nov 2025) — no equivalent 2nd tranche to AP or HP found.",
+      statusDetail:"Tenure extended to FY2026-27; further extension under review.",
+      quote:"DoP's own verdict, verbatim: \"The three bulk drug parks are in various stages of development\" — no commissioning date given for any, nearly 6 years after approval."},
+    {name:"PLI White Goods (ACs & LED Lights)", ministry:"DPIIT", outlay:"₹6,238cr", status:"closed",
+      detail:"85 companies across 4 rounds (final: 23 Jan 2026). Committed ₹11,198cr. One applicant explicitly withdrew (Round 3); Round 3's 84 provisional selections shrank to 80 final beneficiaries with no explanation given.",
+      statusDetail:"Round 4 was explicitly final — 85 is now the closed, complete cohort.",
+      quote:"DPIIT frames every one of 4 reopening rounds positively ('appetite of industry to invest more,' 'continued interest') — never once describing the scheme as undersubscribed, despite needing 4 rounds plus a 90-day reopening to fill."},
+    {name:"PLI Textiles (MMF & Technical Textiles)", ministry:"Ministry of Textiles", outlay:"₹10,683cr", status:"closed",
+      detail:"170 applicants across 3 rounds. Committed ₹41,533cr. Actual investment (Rounds 1-2 only) just ₹6,416cr of ₹28,711cr committed (~22%) — only 26 of 74 had commenced production.",
+      statusDetail:"Round III completed; Oct 2025 amendment broadened HSN codes but entirely within MMF scope — no cotton-apparel broadening despite this repo's own recommendation.",
+      quote:"Ministry's own National Fibre Mission Concept Note: \"the PLI scheme focuses on downstream MMF fabrics and apparel\" — cotton is handled by a wholly separate scheme, with fibre-specific schemes operating \"in silos with limited convergence.\""}
+  ];
+  var statusLabel = {open:"Open", partially_open:"Partially open", closing:"Closing", recently_closed:"Recently closed", extension_pending:"Extension pending", closed:"Closed"};
+  var host = document.getElementById("schemeCards");
+  schemes.forEach(function (s) {
+    var card = document.createElement("div");
+    card.className = "scheme-card";
+    var quoteHtml = s.quote ? '<div class="quote-box"><span class="k">Official challenge / finding</span>' + s.quote + '</div>' : '';
+    card.innerHTML =
+      '<div class="scheme-top"><div><span class="scheme-name">' + s.name + '</span><span class="scheme-ministry">' + s.ministry + '</span></div><span class="status-pill status-' + s.status + '">' + statusLabel[s.status] + '</span></div>' +
+      '<div class="outlay-line">Outlay: ' + s.outlay + '</div>' +
+      '<div class="scheme-detail">' + s.detail + '</div>' +
+      '<div class="scheme-status-detail">' + s.statusDetail + '</div>' +
+      quoteHtml;
+    host.appendChild(card);
+  });
+
+  var mitraPanel = document.getElementById("mitraPanel");
+  mitraPanel.innerHTML = '<p class="scheme-detail">7 approved sites (5 greenfield: Tamil Nadu/Virudhunagar, Gujarat/Navsari, Karnataka/Kalaburagi, Madhya Pradesh/Dhar, Uttar Pradesh/Lucknow; 2 brownfield: Telangana/Warangal, Maharashtra/Amravati). 100% land acquisition completed and transferred to SPVs across all 7; environmental clearance obtained for all; ₹63,177cr in investment interest/MoUs; ₹4,808cr of infrastructure works in progress. <b>But commercial production has started in only ONE of the seven parks (Telangana)</b> as of the Ministry\'s own most recent progress table.</p>';
+
+  var flows = [
+    {year:"2020", partA:414620, partB:233969, pct:56.4},
+    {year:"2021", partA:771428, partB:347978, pct:45.1},
+    {year:"2022", partA:424101, partB:250064, pct:59.0},
+    {year:"2023", partA:510852, partB:276925, pct:54.2},
+    {year:"2024*", partA:525115, partB:296398, pct:56.4}
+  ];
+  var flowHost = document.getElementById("flowLadder");
+  flows.forEach(function (f) {
+    var row = document.createElement("div");
+    row.className = "flow-row";
+    row.innerHTML = '<div class="flow-year">' + f.year + '</div><div class="flow-track"><div class="flow-fill" style="width:' + f.pct + '%;"></div></div><div class="flow-val">' + f.pct + '%</div>';
+    flowHost.appendChild(row);
+  });
+
+  var sectors = ["Roads & Highways (1,120)","Coal (119)","Railways (246)","Oil & Gas (93)","Transmission & Distribution (68)","Electricity Generation (36)","Steel — SAIL/PSU only (18)","Healthcare (36)","Education (30)","Water Resources (41)","Urban Transport (26)","Aviation — airports (26)","Energy Storage — pumped-hydro (15)"];
+  var sp = document.getElementById("sectorProof");
+  sectors.forEach(function (s) { var t = document.createElement("span"); t.className = "sector-tag"; t.textContent = s; sp.appendChild(t); });
+  ["Electronics (0)","Specialty Steel/private (0)","Auto/EV/Battery (0)","Pharma (0)","White Goods (0)","Chemicals (0)","Plastics (0)","Aircraft & Spacecraft (0)","Medical Devices (0)","Textiles (0)"].forEach(function (s) {
+    var t = document.createElement("span"); t.className = "sector-tag zero"; t.textContent = s; sp.appendChild(t);
+  });
+
+  var states = [
+    {state:"Andhra Pradesh", count:138, cost:"2,11,025"},
+    {state:"Assam", count:88, cost:"1,20,333"},
+    {state:"Arunachal Pradesh", count:22, cost:"66,942"}
+  ];
+  var stBody = document.getElementById("stateTableBody");
+  states.forEach(function (s) {
+    var tr = document.createElement("tr");
+    tr.innerHTML = '<td>' + s.state + '</td><td>' + s.count + '</td><td>₹' + s.cost + 'cr</td>';
+    stBody.appendChild(tr);
+  });
+
+  var synth = [
+    "Across every scheme with a published committed-vs-actual figure, the pattern from the FDI-vs-PLI-launch bulletin repeats at the scheme-disbursement level: Pharma (both Bulk Drugs and Pharmaceuticals) dramatically over-delivers against its own committed investment; Auto and ACC Battery dramatically under-deliver, with ACC Battery showing zero disbursed incentive and a confirmed (if unstated) awardee exit; Steel and Textiles sit in between.",
+    "Every scheme that reopened its application window multiple times (White Goods: 4 rounds + a 90-day reopening; Textiles: 3 rounds) is described by its own ministry in exclusively positive language — none of the 9 ministries researched ever uses the word \"undersubscribed\" about its own scheme in a primary document, even where the repeated-reopening pattern strongly implies it.",
+    "The two data sources this dashboard was specifically asked to use — IEM Form A/B above ₹150cr, and MoSPI's state-level mega-project dashboard — both turned out not to fit the task, for the same underlying reason: India's investment-tracking infrastructure is fragmented across agencies with no shared project-identification key or size threshold. DPIIT tracks entrepreneurial intent-to-implementation with no size filter; MoSPI tracks public-infrastructure cost/schedule performance with a size filter but zero private-sector coverage. Neither can answer \"how much announced private manufacturing investment in state X actually landed\" — which is exactly the question this repo's other bulletins have had to answer instead through company-by-company detective work (e.g. the Jio Platforms/Gujarat finding)."
+  ];
+  var synthHost = document.getElementById("synthList");
+  synth.forEach(function (s) { var d = document.createElement("div"); d.className = "synth-item"; d.textContent = s; synthHost.appendChild(d); });
+})();
+</script>

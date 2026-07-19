@@ -12,6 +12,7 @@
     {"title": "Did the money actually show up? FDI equity inflow vs. PLI scheme launch dates", "chart": "charts/fdi_vs_pli_launch_correlation.html", "data": ["data/fdi_vs_pli_launch_2026-07-19.json"]},
     {"title": "Master sector scorecard", "chart": "charts/sector_master_scorecard.html", "data": ["data/sector_master_scorecard_2026-07-19.json"]},
     {"title": "The case for domestic capital in some states, FDI in others", "chart": "charts/domestic_vs_fdi_capital_case.html", "data": ["data/domestic_vs_fdi_capital_case_2026-07-19.json"]},
+    {"title": "Policy & investment insight dashboard", "chart": "charts/policy_investment_dashboard.html", "data": ["data/policy_investment_dashboard_2026-07-19.json"]},
     {"title": "FDI pitch deck (20 slides)", "chart": "fdi_pitch/fdi_pitch_deck.html", "data": [], "exports": ["fdi_pitch/India_Trade_FDI_Pitch_Deck.pptx", "fdi_pitch/India_Trade_FDI_Pitch_Deck.pdf"]},
     {"title": "FDI pitch — social post (5 funded sectors)", "chart": "fdi_pitch/social/fdi_pitch_post.html", "data": [], "exports": ["fdi_pitch/social/fdi_pitch_post.png"]}
   ]

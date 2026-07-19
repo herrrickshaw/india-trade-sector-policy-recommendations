@@ -1,0 +1,202 @@
+{
+  "purpose": "A policy-and-investment dashboard synthesizing a direct, primary-source verification pass across 9 administering ministries/departments (not PIB, not press) for every PLI/incentive scheme this repo tracks: how much of each scheme's outlay is actually utilized, what incentives remain on the table, and whether the application window is still open. Also tests two specific data sources requested for this dashboard -- DPIIT's IEM Form A/B (intent-to-implementation) data and MoSPI's mega-project monitoring -- and reports honestly that neither fits the stated purpose as cleanly as hoped.",
+  "retrieved": "2026-07-19",
+  "method": "9 parallel research passes, each required to visit the administering ministry's own .gov.in domain directly and prioritize annual reports, Parliamentary Standing Committee submissions, and scheme-portal documents over PIB releases or news coverage. Two further passes specifically tested DPIIT's IEM Part-A/Part-B data for a >Rs150cr project filter, and MoSPI's Infrastructure & Project Monitoring Division (IPMD) mega-project Flash Reports.",
+
+  "citation_corrections": [
+    {"finding": "pharmaceuticals.gov.in is a dead domain (confirmed NXDOMAIN via multiple DNS resolvers) -- the Department of Pharmaceuticals' live site is pharma-dept.gov.in.", "action": "Every prior citation to pharmaceuticals.gov.in in this repo should be updated to pharma-dept.gov.in."},
+    {"finding": "The ~74% China API/KSM import-dependency figure used elsewhere in this repo is NOT corroborated anywhere in the Department of Pharmaceuticals' own Annual Report 2025-26 -- the only China reference in that document is an unrelated market-size ranking.", "action": "Re-attribute that figure to its actual (non-DoP) source, or flag it as a third-party estimate rather than an official DoP statistic."},
+    {"finding": "RRPCL (the ~$44bn Ratnagiri Refinery & Petrochemicals project) belongs to the Ministry of Petroleum & Natural Gas (IOCL/BPCL/HPCL joint venture), not the Department of Chemicals and Petrochemicals -- DCPC's own site has zero mention of it.", "action": "Route future RRPCL citations to MoPNG or RRPCL's own site, not DCPC. Status unchanged: still no confirmed financial close found anywhere official."},
+    {"finding": "GE-HAL F414 engine deal status upgraded from this repo's prior 'discussed, not yet signed' -- per GE Aerospace's own press materials, technical/commercial terms were finalized April 2026 (~80% technology transfer, ~99 engines, ~$1bn value, Bengaluru facility targeted operational end-2028), but no ddpmod.gov.in, mod.gov.in, or HAL primary source confirms a signed contract as of this research.", "action": "Update repo language to 'technical terms finalized April 2026, formal signature pending' rather than either 'not yet signed' or 'signed.'"}
+  ],
+
+  "scheme_dashboard": [
+    {
+      "scheme": "PLI Large Scale Electronics Manufacturing (LSEM)",
+      "ministry": "MeitY",
+      "outlay_rs_cr": 11324,
+      "committed_vs_actual": "Investment target Rs 7,000cr / achievement Rs 10,905cr (>100%, per Feb 2025 Rajya Sabha answer); production target Rs 8,12,000cr / achievement Rs 7,15,823cr; exports target Rs 4,87,000cr / achievement Rs 3,90,387cr.",
+      "utilization_note": "Aggregate figures look healthy, but MeitY's own written submission to Parliament quantifies severe cohort-level underperformance: 'Under the Domestic Category for Mobile phones, only 2 applicants are performing out of 5 approved applicants. In Specified Electronics Category (SEC), only 1 out 6 applicants from Round I and 11 out of 16 applicants from Round II are performing.'",
+      "application_status": "closing",
+      "application_status_detail": "LSEM's tenure closes 31 March 2026; the 2026-27 Budget Estimate for LSEM was cut 81% (to Rs 1,345cr) accordingly -- effectively wound down.",
+      "official_challenge_quote": "MeitY Secretary, oral evidence to Parliament: 'Surrenders mainly come in the PLI, the electronics manufacturing and production-linked incentive scheme and in the semi-conductor programme... when the private companies are not able to spend and they are not able to file claims, then there is a surrender.'"
+    },
+    {
+      "scheme": "SPECS (electronic components/semiconductors, pre-ECMS)",
+      "ministry": "MeitY",
+      "outlay_rs_cr": 3285,
+      "committed_vs_actual": "52-58 applications approved; proposed investment Rs 14,798-20,000cr; actual investment reported Rs 9,067-9,482cr (~46-61% of proposed).",
+      "utilization_note": "Rs 584.01cr incentive released to 13 applicants as of Sept 2024 -- a small fraction of the Rs 3,285cr outlay this far into the scheme.",
+      "application_status": "closed",
+      "application_status_detail": "Closed to new applications 31 March 2024; disbursement window continues to 31.03.2029. Superseded by ECMS.",
+      "official_challenge_quote": "MeitY: 'SPECS is being implemented for last 4 years. During this period there are changes in the list of eligible electronic goods due to change in technology, and for development of component ecosystem' -- cited as a source of implementation delay."
+    },
+    {
+      "scheme": "ECMS (Electronics Component Manufacturing Scheme, SPECS successor)",
+      "ministry": "MeitY",
+      "outlay_rs_cr": 22919,
+      "committed_vs_actual": "24 applications approved as of Dec 2025; projected investment Rs 12,704cr; production Rs 1,09,517cr; employment ~17,000. (A later, more widely circulated figure of 75 applications/Rs 61,671cr could not be verified on a MeitY-controlled page.)",
+      "utilization_note": "Too new for meaningful disbursement data -- scheme notified April 2025.",
+      "application_status": "open",
+      "application_status_detail": "Notified April 2025; 6-year tenure + 1-year optional gestation period. Rolling approvals continuing through 2025-2026.",
+      "official_challenge_quote": null
+    },
+    {
+      "scheme": "India Semiconductor Mission (ISM 1.0 + Semicon 2.0)",
+      "ministry": "MeitY / ISM",
+      "outlay_rs_cr": 203500,
+      "committed_vs_actual": "ISM 1.0: Rs 76,000cr. Semicon 2.0 approved by Union Cabinet 15 July 2026, Rs 1,27,500cr across 6 pillars. 10 projects approved by Dec 2025 (1 foundry, 9 OSAT), cumulative investment ~Rs 1.6 lakh crore.",
+      "utilization_note": "Semicon India fund utilization, per MeitY's own Parliament submissions: 23% in FY2023-24, 9% in FY2024-25, ~61% estimated for FY2025-26 -- a stark self-reported underspend trend, caused (per MeitY) by approved projects unable to claim funds until Fiscal Support Agreements are signed and statutory clearances obtained.",
+      "application_status": "open",
+      "application_status_detail": "Semicon 2.0 just approved (15 Jul 2026); first fab under this round scheduled for commissioning 2028. Rolling approvals continuing -- 2 more units approved 5 May 2026, further groundbreakings through 2026.",
+      "official_challenge_quote": "MeitY, Standing Committee Report 17 (June 2025): approved companies 'have not yet claimed the funds so far from India Semiconductor Mission (ISM)' because 'these are complex projects requiring intensive planning for pilot and project sites and most of the approved companies are in various stages of implementation, including obtaining various statutory clearances.'"
+    },
+    {
+      "scheme": "PLI Specialty Steel",
+      "ministry": "Ministry of Steel",
+      "outlay_rs_cr": 6322,
+      "committed_vs_actual": "Cumulative committed investment (Rounds 1.0+1.1): Rs 43,874cr; over Rs 22,000cr already invested; 13,000+ jobs. Round 1.0 alone (to 28 Feb 2025): Rs 19,850cr actual vs Rs 27,106cr committed-for-tenure.",
+      "utilization_note": "Investment conversion looks reasonable (~50-70% depending on snapshot), but the Ministry's own site does NOT publish an itemized company-by-company approved-project list -- only aggregate counts (44 projects/19 companies Round 1.0; 42/25 Round 1.1). No Ministry self-assessment of the steel safeguard duty's effectiveness was found anywhere on steel.gov.in, and no DGTR citation appears on the site at all.",
+      "application_status": "recently_closed",
+      "application_status_detail": "Round 1.2 launched 4 Nov 2025 (22 product sub-categories, incentive rates 4-15%), incentive disbursal begins FY2026-27 -- the most recent round, application window since closed.",
+      "official_challenge_quote": "Ministry of Steel Annual Report 2025-26: 'The industry faces challenges both in the short and long term in terms of raw material security' -- specifically coking coal import dependence (~57 MMT/year, mostly from Australia) and capacity utilization that actually DIPPED to 76% in FY2024-25 from 80% the year before."
+    },
+    {
+      "scheme": "PLI Automobile & Auto Components",
+      "ministry": "Department of Heavy Industry",
+      "outlay_rs_cr": 25938,
+      "committed_vs_actual": "82 approved applicants (18 OEM + 64 Component). Committed investment Rs 67,690cr (vs original target Rs 42,500cr) -- but ACTUAL investment to Sept 2025 only Rs 35,657cr, and incremental sales just Rs 32,879cr against a Rs 2,31,500cr projection -- a massive shortfall on the sales/output side despite investment nominally exceeding target.",
+      "utilization_note": "Incentive DISBURSED: just Rs 1,350.83cr against the full Rs 25,938cr outlay as of 22.12.2025 -- roughly 5% of the scheme's total value, ~3 years into the disbursement window.",
+      "application_status": "closed",
+      "application_status_detail": "Selection completed; all 82 slots filled, no new applications being accepted.",
+      "official_challenge_quote": "Parliamentary Standing Committee on Industry (Rajya Sabha), 332nd Report (11 March 2026), on this and the ACC scheme jointly: 'serious concern over the massive disconnect between the approved subsidy path and the actual meagre allocations and utilisations,' recommending 'an immediate beneficiary-wise review with a status report within three months.'"
+    },
+    {
+      "scheme": "PLI Advanced Chemistry Cell (ACC) Battery Storage",
+      "ministry": "Department of Heavy Industry",
+      "outlay_rs_cr": 18100,
+      "committed_vs_actual": "40 of the target 50 GWh allocated across 2 rounds to what are now only 3 active beneficiary firms (originally 4 -- see finding below). Minimum required investment for 40 GWh: Rs 9,000cr; ACTUAL investment reported by beneficiaries: just Rs 2,680cr (~30%).",
+      "utilization_note": "Only 1 GWh of the 40 GWh awarded is actually commissioned (Ola Cell Technologies) -- 2.5% of allocated capacity. Per the Department's own words: 'The projects under the PLI ACC schemes are still under implementation.' ZERO incentive has been disbursed under this scheme, per the Parliamentary Committee, 'due to non-fulfilment of eligibility conditions.'",
+      "application_status": "partially_open",
+      "application_status_detail": "The remaining 10 GWh (earmarked for Grid Scale Stationary Storage) has bid documents 'under finalization' as of the 2025-26 Annual Report -- this sliver of the scheme is the only part still technically open.",
+      "official_challenge_quote": "A genuine new finding from this research: of the original 4 awardees named in PIB's 24 March 2022 announcement (Reliance New Energy Solar 5 GWh, Ola Electric 20 GWh, Hyundai Global Motors Company Limited 20 GWh, Rajesh Exports 5 GWh), Hyundai Global Motors is absent from every current DHI document -- both the 2024-25 and 2025-26 Annual Reports list only 3 Round-1 signatories totaling 30 GWh, with the 'remaining 20 GWh' (exactly Hyundai's original share) explicitly described as later re-tendered (10 GWh to Reliance in Round 2, 10 GWh earmarked for GSSS rebidding). DHI's own documents never use the word 'withdrew,' but the arithmetic confirms the exit."
+    },
+    {
+      "scheme": "PLI Bulk Drugs (Critical KSMs/APIs)",
+      "ministry": "Department of Pharmaceuticals",
+      "outlay_rs_cr": 6940,
+      "committed_vs_actual": "48 projects/33 products approved. Committed investment Rs 4,329.95cr; ACTUAL investment (to Sept 2025) Rs 4,763.34cr -- exceeds commitment (110%). Cumulative sales Rs 2,313.16cr incl. Rs 508.12cr exports. Manufacturing capacity created for 26 of the 33 approved products (~55,100 MT/annum) -- implying roughly 7 of the approved products/some projects are not yet commissioned.",
+      "utilization_note": "One of the stronger performers in this dashboard by investment-realization ratio.",
+      "application_status": "closed",
+      "application_status_detail": "Selection completed across all rounds; no new applications being accepted.",
+      "official_challenge_quote": null
+    },
+    {
+      "scheme": "PLI Pharmaceuticals (formulations)",
+      "ministry": "Department of Pharmaceuticals",
+      "outlay_rs_cr": 15000,
+      "committed_vs_actual": "55 applicants approved (incl. 20 MSMEs). Committed investment Rs 17,274.96cr; ACTUAL investment (to Sept 2025) Rs 40,890cr -- far exceeds commitment (237%). Cumulative sales Rs 3,16,797cr (target Rs 2,94,000cr already exceeded), incl. Rs 2,03,730cr exports. 350+ manufacturing units established incl. 28 greenfield. 726 APIs/KSMs/DIs manufactured under the scheme, 191 for the first time in India.",
+      "utilization_note": "Cumulative incentive released: Rs 5,433cr as of Oct 2025. The strongest performer in this entire dashboard by every investment-realization and sales metric.",
+      "application_status": "closed",
+      "application_status_detail": "Selection completed across all rounds; no new applications being accepted.",
+      "official_challenge_quote": null
+    },
+    {
+      "scheme": "PLI Medical Devices",
+      "ministry": "Department of Pharmaceuticals",
+      "outlay_rs_cr": 3420,
+      "committed_vs_actual": "Cumulative sales Rs 12,344.37cr incl. Rs 5,869.36cr exports (to Sept 2025). Named commissioned projects: Meril Group (Vapi, Gujarat, Rs 1,400cr), BPL Medical Technologies (Bangalore, Rs 317cr), plus Philips/Wipro-GE/Siemens Healthcare facilities.",
+      "utilization_note": "No clear committed-vs-actual investment table found distinct from the sales figures above.",
+      "application_status": "closed",
+      "application_status_detail": "Selection completed (Category A: 7 companies, Category B: 5+); no new applications being accepted. Greenfield-only scheme.",
+      "official_challenge_quote": null
+    },
+    {
+      "scheme": "Medical Device Parks (4 states)",
+      "ministry": "Department of Pharmaceuticals",
+      "outlay_rs_cr": 400,
+      "committed_vs_actual": "As of Sept 2025: land allotted to 194 medical device manufacturers across UP/MP/TN (298.58 acres allotted; projected investment Rs 4,775.50cr; projected employment 27,362). 32 companies commenced construction; only 2 have commenced commercial operations.",
+      "utilization_note": "Originally 4 states approved (UP, TN, MP, Himachal Pradesh); Himachal Pradesh formally withdrew 7 Sept 2024 -- a directly citable official withdrawal, distinct from the PLI schemes themselves.",
+      "application_status": "extension_pending",
+      "application_status_detail": "Scheme extended one year to FY2025-26; the Department has itself proposed a further 2-year extension to FY2027-28, stating plainly: 'the Scheme period is nearing completion under the original approval and the envisaged objectives are yet to be fully achieved.'",
+      "official_challenge_quote": "Department of Pharmaceuticals, Annual Report 2025-26: 'the envisaged objectives are yet to be fully achieved' -- a direct, quotable admission of underperformance against the scheme's own original goals."
+    },
+    {
+      "scheme": "Bulk Drug Parks (Andhra Pradesh, Gujarat, Himachal Pradesh)",
+      "ministry": "Department of Pharmaceuticals",
+      "outlay_rs_cr": 3000,
+      "committed_vs_actual": "AP (Nakkapalli): 2,001.80 acres, Rs 1,876.66cr project cost. Gujarat (Jambusar): 2,015.02 acres, Rs 2,507.02cr. Himachal Pradesh (Una): 1,405.01 acres, Rs 1,923cr. Central grant disbursed: Rs 300cr (Gujarat, first tranche FY2022-23) + Rs 225cr each (AP, HP, first tranche). A SECOND Rs 300cr tranche was released to Gujarat in November 2025 -- no equivalent second tranche to AP or HP found in current documents, an unexplained asymmetry.",
+      "utilization_note": "DoP's own summary verdict, verbatim: 'The three bulk drug parks are in various stages of development' -- no commissioning date or completion percentage given for any of the three, nearly 6 years after Cabinet approval.",
+      "application_status": "extension_pending",
+      "application_status_detail": "Tenure extended to FY2020-21 through FY2026-27; a further extension was under Scheme Steering Committee review (23 June 2025), pending Department of Expenditure approval to use balance funds.",
+      "official_challenge_quote": null
+    },
+    {
+      "scheme": "PLI White Goods (ACs & LED Lights)",
+      "ministry": "DPIIT",
+      "outlay_rs_cr": 6238,
+      "committed_vs_actual": "85 companies selected across 4 rounds (final round: 23 Jan 2026). Cumulative committed investment Rs 11,198cr; cumulative expected production Rs 1,90,050cr over scheme tenure. One applicant explicitly withdrew mid-process (Round 3, 20 Jan 2025 press note): 'One of the applicants has decided to opt out from the scheme and has withdrawn the application.' A further unexplained attrition: Round 3 announced 84 provisional companies, but the Round 4 release (13 Nov 2025) counts only 80 approved beneficiaries -- at least 4 provisional selections did not survive final vetting, with no DPIIT explanation given.",
+      "utilization_note": "No DPIIT document anywhere states which of the 85 beneficiary companies have actually started commercial production -- this operational milestone is not public. DPIIT's own framing of every reopening round is uniformly positive ('appetite of the Industry to invest more,' 'continued interest from industry stakeholders') -- the scheme is never once described in DPIIT's own text as having been undersubscribed, despite requiring 4 rounds and a 90-day reopening to fill.",
+      "application_status": "closed",
+      "application_status_detail": "Round 4 (23 Jan 2026) was explicitly the final round -- 85 companies is now the closed, complete cohort. A Sept 2025 amendment extended the deadline for beneficiaries to build an ADDITIONAL facility from 3 to 5 years, and added a real financial risk: companies that move to a higher investment category but miss its threshold must revert categories and refund incentives already received, with interest at 3-year SBI MCLR.",
+      "official_challenge_quote": null
+    },
+    {
+      "scheme": "PLI Textiles (MMF & Technical Textiles)",
+      "ministry": "Ministry of Textiles",
+      "outlay_rs_cr": 10683,
+      "committed_vs_actual": "170 total applicants across 3 rounds (74 in Rounds 1-2 + 96 in Round 3). Cumulative committed investment Rs 41,533cr; cumulative projected turnover Rs 2,75,053cr; 3,67,427 projected jobs. ACTUAL investment (Rounds 1-2 only, to Sept 2024): Rs 6,416cr against Rs 28,711cr committed for those rounds (~22%) -- of 74 applicants, only 26 had commenced production and only 16 had achieved threshold investment.",
+      "utilization_note": "Confirmed directly in the Ministry's own scheme text and press-release title ('Announcement of PLI-Textile for MMF and Technical Textile Sector'): the scheme covers ONLY MMF apparel/fabrics and technical textiles -- there is no 'cotton apparel' category anywhere in the applicant list's Target Segment field. The Ministry's own National Fibre Mission Concept Note goes further, stating plainly: 'the PLI scheme focuses on downstream MMF fabrics and apparel' while cotton is handled by a wholly separate scheme, and that fibre-specific schemes 'have operated in silos with limited convergence, resulting in fragmented outcomes.'",
+      "application_status": "closed",
+      "application_status_detail": "Round III completed; an October 2025 amendment broadened HSN codes and lowered investment thresholds, but entirely WITHIN the MMF/technical-textiles scope -- no cotton-apparel broadening has occurred or been publicly proposed, despite this being exactly this repo's own prior recommendation.",
+      "official_challenge_quote": null
+    }
+  ],
+
+  "pm_mitra_parks": {
+    "ministry": "Ministry of Textiles",
+    "outlay_note": "7 approved sites (5 greenfield: Tamil Nadu/Virudhunagar, Gujarat/Navsari, Karnataka/Kalaburagi, Madhya Pradesh/Dhar, Uttar Pradesh/Lucknow; 2 brownfield: Telangana/Warangal, Maharashtra/Amravati).",
+    "progress": "100% land acquisition completed and transferred to SPVs across all 7; environmental clearance obtained for all; MoUs signed with all 7 states; investment interest/MoUs totaling Rs 63,177cr; Rs 4,808cr of infrastructure works in progress. BUT: commercial production has started in only ONE of the seven parks (Telangana) as of the Ministry's own most recent (2025-26) progress table."
+  },
+
+  "iem_form_a_b_analysis": {
+    "purpose_of_this_section": "Tests whether DPIIT's IEM (Industrial Entrepreneurs Memorandum) Part-A (intent) vs Part-B (implementation) data can be filtered for large (>Rs150cr) projects specifically, to compute an entrepreneurial-activity conversion rate.",
+    "honest_finding": "DPIIT's published IEM data has NO investment-size band anywhere -- not in the monthly IEM Statistics Report, not in the Annual Report appendices, not on the NSWS filing portal. The Rs150cr threshold does not belong to DPIIT/IEM at all -- it is MoSPI's separate threshold for Central Sector infrastructure project monitoring, an entirely different dataset with no common key linking it to IEM filings. A clean 'Form A/B for projects above Rs150cr' filter is therefore NOT POSSIBLE from public DPIIT data as it currently stands.",
+    "nsws_migration": "IEM filing (Part-A, Part-B, and amendments) migrated from the old G2B portal to the National Single Window System (NSWS) in October 2025, per DPIIT's own File No. P-41014/9/2025-IEM DATA notice. The migration is purely procedural -- NSWS publishes zero public statistics or dashboards on IEM filing volumes or conversion as of its current (March 2026) user manual; it is a filing/transaction system only. Reporting continuity of the monthly IEM Statistics Report beyond August 2024 data could not be confirmed (the report-listing page is a bot-gated single-page application).",
+    "best_available_proxy": {
+      "note": "Since no size-band data exists, this is a same-year AGGREGATE FLOW ratio (Part-B implemented investment that year, divided by Part-A proposed investment that same year) -- explicitly NOT a cohort-matched conversion rate, since Part-B filings in any given year are generated overwhelmingly by Part-A filings from EARLIER years (DPIIT's own raw data shows gaps from months to over a decade -- one company's Part-A dated 1964 had its Part-B filed in 2024).",
+      "years": {
+        "2020": {"part_a_rs_cr": 414620, "part_b_rs_cr": 233969, "flow_ratio_pct": 56.4},
+        "2021": {"part_a_rs_cr": 771428, "part_b_rs_cr": 347978, "flow_ratio_pct": 45.1},
+        "2022": {"part_a_rs_cr": 424101, "part_b_rs_cr": 250064, "flow_ratio_pct": 59.0},
+        "2023": {"part_a_rs_cr": 510852, "part_b_rs_cr": 276925, "flow_ratio_pct": 54.2},
+        "2024_up_to_nov": {"part_a_rs_cr": 525115, "part_b_rs_cr": 296398, "flow_ratio_pct": 56.4}
+      },
+      "five_year_aggregate_flow_ratio_pct": 53.1,
+      "cumulative_since_1991": {"iems_issued": 112038, "proposed_investment_rs_cr": 15423470, "as_of": "2024-11-30"}
+    },
+    "no_causal_explanation_found": "DPIIT does not appear to publish any narrative explanation for why aggregate Part-A investment consistently exceeds aggregate Part-B (land acquisition delays, financing failures, or just long gestation periods) -- the monthly report's own 'Key Insights' section offers only generic commentary ('mixed investor sentiment'), and no current-format SIA Newsletter discussing this gap could be located."
+  },
+
+  "mospi_mega_project_analysis": {
+    "purpose_of_this_section": "Tests whether MoSPI's Infrastructure and Project Monitoring Division (IPMD) mega-project tracking (Central Sector projects >=Rs150cr, via the PAIMANA portal) can show state-level development activity relevant to this repo's 10 priority sectors.",
+    "honest_finding": "MoSPI's mega-project monitoring is scoped ENTIRELY to public infrastructure implemented by central ministries, PSUs, and statutory agencies (NHPC, NTPC, SAIL, AAI, POWERGRID, Port Trusts, NHIDCL, NICDC) -- roads, rail, power generation/transmission, oil & gas midstream, coal mining, PSU steel-plant upgrades, water, telecom trunk, and social infrastructure. NONE of this repo's 10 priority sectors (Electronics, Specialty Steel, Auto/EV/Battery, Pharma, White Goods, Inorganic Chemicals, Plastics, Aircraft & Spacecraft, Medical Devices, Textiles) appear as tracked categories -- confirmed by a full-text search of the March 2026 Flash Report for each sector name, returning zero hits. This data source does not fit the dashboard's stated purpose and is reported here for transparency, not forced into a false fit.",
+    "source": "Flash Report on Central Sector Infrastructure Projects Costing Rs150cr & above, March 2026 (data cutoff 21 April 2026), via the PAIMANA portal (ipm.mospi.gov.in).",
+    "aggregate_figures": {
+      "ongoing_projects": 1941, "ministries_covered": 17,
+      "original_cost_rs_cr": 3588861, "revised_cost_rs_cr": 4150159,
+      "implied_cost_overrun_pct": 15.64,
+      "cumulative_expenditure_rs_cr": 1992964, "cumulative_expenditure_pct_of_revised_cost": 48.02,
+      "note": "MoSPI itself no longer labels this 'cost overrun' or publishes a time-overrun/delayed-project count -- both figures above are this research's own computation from the raw cost fields, not a MoSPI-stated headline. MoSPI stopped explicitly classifying projects as 'delayed' after May 2025, a real methodology regression from its pre-2025 reporting (which flagged delayed projects by severity with reasons)."
+    },
+    "sector_breakdown_present_but_irrelevant": "Roads & Highways (1,120 projects), Coal (119), Railways (246), Oil & Gas (93), Transmission & Distribution (68), Steel (18, entirely SAIL/PSU plant upgrades -- Bhilai, Bokaro, IISCO -- no Tata Steel or JSW projects at all), Energy Storage (15, confirmed to be pumped-hydro plants run by NHPC/NTPC, NOT battery/gigafactory manufacturing).",
+    "named_projects_check": "None of this repo's specifically-named flagship projects (Tata Steel Kalinganagar, JSW Vijayanagar, Tata Electronics Assam ATMP, Micron Sanand, Tata-PSMC Dholera fab, Reliance/Tata battery gigafactories, RRPCL) appear anywhere in the March 2026 Flash Report. What DOES appear is enabling PUBLIC infrastructure built around some of these hubs: 'Development of Dholera International Greenfield Airport' (AAI, Rs1,305cr) and 'Transmission System for Reliable Power Supply to Dholera' (POWERGRID, Rs319cr) -- a legitimate but narrow secondary signal (is the government infrastructure around a hub on schedule), not a read on the private project's own performance, and the report gives no cross-reference tagging linking the two.",
+    "state_wise_data_exists_but_measures_something_different": "MoSPI's Table 2 does publish a state-wise mega-project count/cost table (e.g. Andhra Pradesh: 138 projects/Rs2,11,025cr; Assam: 88 projects/Rs1,20,333cr) -- but this measures PUBLIC infrastructure investment by state, not private manufacturing/FDI investment by state, so it cannot be used as a proxy for this repo's state-level manufacturing-hub findings without that caveat attached every time it's cited."
+  },
+
+  "cross_cutting_synthesis": [
+    "Across every scheme with a Ministry-published committed-vs-actual investment figure, the pattern from the FDI-vs-PLI-launch bulletin repeats at the scheme-disbursement level: Pharma (both Bulk Drugs and Pharmaceuticals) dramatically over-delivers against its own committed investment; Auto and ACC Battery dramatically under-deliver, with ACC Battery specifically showing zero incentive disbursed and a confirmed (if unstated) awardee exit; Steel and Textiles sit in between, with real but partial conversion of committed capital into actual investment.",
+    "Every scheme that reopened its application window multiple times (White Goods: 4 rounds + a 90-day reopening; Textiles: 3 rounds) is described by its own ministry in exclusively positive language ('appetite of industry,' 'continued interest') -- none of the 9 ministries researched ever uses the word 'undersubscribed' about its own scheme in a primary document, even where the repeated-reopening pattern strongly implies it.",
+    "The two data sources this dashboard was specifically asked to use -- IEM Form A/B filtered above Rs150cr, and MoSPI's state-level mega-project dashboard -- both turned out not to fit the task as specified, for the same underlying reason: India's investment-tracking infrastructure is fragmented across agencies that don't share a common project-identification key or size threshold. DPIIT tracks entrepreneurial intent-to-implementation with no size filter; MoSPI tracks public-infrastructure cost/schedule performance with a size filter but no private-sector coverage. Neither, on its own, can answer 'how much announced private manufacturing investment in state X actually landed,' which is exactly the question this repo's other bulletins have had to answer instead through company-by-company detective work (e.g. the Jio Platforms/Gujarat finding)."
+  ]
+}
