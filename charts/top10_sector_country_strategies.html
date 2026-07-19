@@ -1,0 +1,339 @@
+<title>Top 10 FDI Sectors: Country-Specific Strategies, Tariff Timeline &amp; a Game-Theory Frame</title>
+<meta name="hz:canvas-width" content="1180">
+<style>
+  :root {
+    color-scheme: light;
+    --page-bg:      #eef1ea;
+    --surface:      #fcfcfa;
+    --ink:          #14180f;
+    --ink-2:        #4f5348;
+    --ink-muted:    #82867a;
+    --rule:         #d7dace;
+    --rule-strong:  #c3c7b8;
+    --accent:       #1f5f5b;
+    --accent-soft:  #dbe9e6;
+    --alert:        #a5402c;
+    --alert-soft:   #f3ded7;
+    --warn:         #c98a1f;
+    --warn-soft:    #f3e9d5;
+    --mismatch:     #7a5aa8;
+    --mismatch-soft:#e7defa;
+    --data-line:    #2a78d6;
+    --font-display: "Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    --font-body: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --font-mono: "IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+      --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634; --alert:#e0785f; --alert-soft:#3a241d;
+      --warn:#e0b23f; --warn-soft:#3a3220; --mismatch:#b39ce0; --mismatch-soft:#2e2540; --data-line:#3987e5;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+    --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634; --alert:#e0785f; --alert-soft:#3a241d;
+    --warn:#e0b23f; --warn-soft:#3a3220; --mismatch:#b39ce0; --mismatch-soft:#2e2540; --data-line:#3987e5;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6; --alert:#a5402c; --alert-soft:#f3ded7;
+    --warn:#c98a1f; --warn-soft:#f3e9d5; --mismatch:#7a5aa8; --mismatch-soft:#e7defa; --data-line:#2a78d6;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  .bulletin { background: var(--page-bg); color: var(--ink); font-family: var(--font-body); padding: 40px 20px 56px; display: flex; justify-content: center; }
+  .sheet { width: 100%; max-width: 1120px; display: flex; flex-direction: column; gap: 32px; }
+
+  .masthead { border-bottom: 2px solid var(--ink); padding-bottom: 16px; display: flex; flex-direction: column; gap: 6px; }
+  .eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); display: flex; gap: 10px; align-items: center; }
+  .eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); display: inline-block; }
+  h1 { font-family: var(--font-display); font-weight: 500; font-size: clamp(24px, 3.2vw, 33px); margin: 2px 0 0; text-wrap: balance; letter-spacing: -0.01em; }
+  .dek { font-size: 14px; color: var(--ink-2); max-width: 84ch; line-height: 1.55; margin: 4px 0 0; }
+  .source-line { font-family: var(--font-mono); font-size: 11px; color: var(--ink-muted); margin-top: 6px; }
+
+  .toc { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 12.5px; }
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sep { color: var(--rule-strong); }
+
+  section.block { display: flex; flex-direction: column; gap: 14px; scroll-margin-top: 20px; }
+  .block-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid var(--rule-strong); padding-bottom: 8px; }
+  .block-title { font-family: var(--font-display); font-size: 22px; margin: 0; }
+  .block-tag { font-family: var(--font-mono); font-size: 12px; color: var(--ink-muted); }
+
+  .panel { background: var(--surface); border: 1px solid var(--rule-strong); padding: 18px 22px; display: flex; flex-direction: column; gap: 12px; }
+  .panel-label { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-muted); }
+  .prose { display: flex; flex-direction: column; gap: 12px; font-size: 14px; line-height: 1.65; color: var(--ink-2); }
+  .prose p { margin: 0; }
+  .prose b { color: var(--ink); }
+  .citebox { font-family: var(--font-mono); font-size: 11.5px; color: var(--accent); background: var(--accent-soft); padding: 8px 12px; border-left: 3px solid var(--accent); line-height: 1.5; }
+
+  .case-card { border: 1px solid var(--rule-strong); border-left: 3px solid var(--accent); padding: 14px 18px; display: flex; flex-direction: column; gap: 8px; background: var(--page-bg); }
+  .case-title { font-weight: 600; font-size: 13.5px; color: var(--ink); }
+  .case-row { display: flex; flex-direction: column; gap: 2px; }
+  .case-row .k { font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-muted); }
+  .case-row .v { font-size: 12.5px; line-height: 1.55; color: var(--ink-2); }
+
+  table.timeline { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  table.timeline th { text-align: left; font-family: var(--font-mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-muted); padding: 6px 12px 8px 0; border-bottom: 1px solid var(--rule-strong); }
+  table.timeline td { padding: 9px 12px 9px 0; border-bottom: 1px solid var(--rule); vertical-align: top; line-height: 1.5; }
+  table.timeline td.date { font-family: var(--font-mono); font-size: 11.5px; color: var(--accent); white-space: nowrap; }
+  table.timeline tr.pivot td { background: var(--warn-soft); }
+  table.timeline tr.pivot td.date { color: var(--warn); font-weight: 600; }
+  .timeline-scroll { overflow-x: auto; }
+
+  .callout { border: 1px solid var(--rule-strong); border-left: 3px solid var(--alert); background: var(--alert-soft); padding: 14px 18px; display: flex; flex-direction: column; gap: 6px; }
+  .callout-label { font-family: var(--font-mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--alert); }
+  .callout p { margin: 0; font-size: 13px; line-height: 1.6; color: var(--ink-2); }
+  .callout p b { color: var(--ink); }
+
+  .sector-block { display: flex; flex-direction: column; gap: 12px; scroll-margin-top: 20px; padding-top: 6px; }
+  .sector-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid var(--rule-strong); padding-bottom: 8px; }
+  .sector-title { font-family: var(--font-display); font-size: 19px; margin: 0; }
+  .sector-meta { display: flex; gap: 10px; align-items: center; }
+  .sector-hs { font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-muted); }
+  .pli-pill { font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; padding: 2px 8px; border-radius: 2px; white-space: nowrap; }
+  .pli-strong { background: var(--accent-soft); color: var(--accent); }
+  .pli-partial { background: var(--warn-soft); color: var(--warn); }
+  .pli-none { background: var(--rule); color: var(--ink-2); }
+  .pli-mismatched { background: var(--mismatch-soft); color: var(--mismatch); }
+
+  .country-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule-strong); }
+  .country-card { background: var(--surface); padding: 13px 16px; display: flex; flex-direction: column; gap: 5px; }
+  .country-name { font-size: 13.5px; font-weight: 600; color: var(--accent); }
+  .country-rationale { font-size: 12px; color: var(--ink-2); line-height: 1.5; }
+  .country-evidence { font-size: 11.5px; color: var(--ink-muted); line-height: 1.5; font-style: italic; }
+
+  .subflag { border: 1px solid var(--rule-strong); border-left: 3px solid var(--warn); background: var(--warn-soft); padding: 10px 14px; font-size: 12px; line-height: 1.55; color: var(--ink-2); }
+  .subflag b { color: var(--ink); }
+  .subflag.alert { border-left-color: var(--alert); background: var(--alert-soft); }
+  .subflag.mismatch { border-left-color: var(--mismatch); background: var(--mismatch-soft); }
+  .subflag-label { font-family: var(--font-mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--warn); display: block; margin-bottom: 4px; }
+  .subflag.alert .subflag-label { color: var(--alert); }
+  .subflag.mismatch .subflag-label { color: var(--mismatch); }
+
+  .tariff-note { font-size: 12px; color: var(--ink-2); line-height: 1.55; padding: 10px 14px; background: var(--page-bg); border: 1px solid var(--rule); }
+  .tariff-note .k { font-family: var(--font-mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--data-line); display: block; margin-bottom: 4px; }
+
+  .flags-box { border: 1px solid var(--rule-strong); border-left: 3px solid var(--warn); background: var(--warn-soft); padding: 12px 16px; display: flex; flex-direction: column; gap: 6px; }
+  .flags-label { font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--warn); }
+  .flags-box ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 5px; }
+  .flags-box li { font-size: 11.5px; line-height: 1.5; color: var(--ink-2); }
+
+  .no-target { font-size: 13px; line-height: 1.6; color: var(--ink-2); padding: 12px 16px; background: var(--page-bg); border: 1px dashed var(--rule-strong); }
+  .no-target b { color: var(--ink); }
+
+  .errata {
+    border: 1px solid var(--rule-strong); border-left: 3px solid var(--alert); background: var(--surface);
+    padding: 16px 20px; display: flex; flex-direction: column; gap: 10px;
+  }
+  .errata-title { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--alert); }
+  .errata ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+  .errata li { font-size: 13px; line-height: 1.5; color: var(--ink-2); }
+  .errata li b { color: var(--ink); }
+
+  footer.colophon { text-align: center; font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-muted); padding-top: 8px; }
+
+  @media (max-width: 640px) { table.timeline { min-width: 560px; } }
+</style>
+
+<div class="bulletin">
+  <div class="sheet">
+    <div class="masthead">
+      <div class="eyebrow">India Trade — Sector &amp; Policy Recommendations</div>
+      <h1>Top 10 FDI sectors: country-specific strategies, a game-theory frame, and the official tariff timeline</h1>
+      <p class="dek">Extends the original 5-sector FDI framework to 10 by adding two ground-floor sectors (Inorganic Chemicals, Plastics — already Tier-1 in this repo's import-substitution ranking) plus Medical Devices and Aircraft &amp; Spacecraft, and one honest non-finding (Textiles &amp; Apparel). For every sector, real target FDI-source countries with sourced evidence — not a generic "attract FDI" list. Frames India's emerging use of volume quotas (not just tariffs) through a Generalized Nash Equilibrium tariff-rate-quota model, and lays out the dated arc of official 2025-2026 tariff actions that context depends on.</p>
+      <div class="source-line">SOURCES: multi-agent research across 10 sectors, each cross-checked against a primary source (PIB, ministry release, investor disclosure, or the announcing government's own text) plus one corroborating source. Deals at MOU/framework stage are explicitly labeled as such. Game-theory framework: Passacantando &amp; Raciti, Journal of Dynamics and Games, Apr 2025, DOI 10.3934/jdg.2025011. Retrieved 2026-07-19.</div>
+    </div>
+
+    <div class="toc">
+      <a href="#gametheory">Game-theory frame</a><span class="sep">·</span>
+      <a href="#timeline">Official tariff timeline</a><span class="sep">·</span>
+      <a href="#electronics">01 Electronics</a>
+      <a href="#steel">02 Steel</a>
+      <a href="#auto">03 Auto/EV/Battery</a>
+      <a href="#pharma">04 Pharma</a>
+      <a href="#whitegoods">05 White Goods</a>
+      <a href="#chemicals">06 Inorganic Chemicals</a>
+      <a href="#plastics">07 Plastics</a>
+      <a href="#aerospace">08 Aircraft &amp; Spacecraft</a>
+      <a href="#meddevice">09 Medical Devices</a>
+      <a href="#textiles">10 Textiles &amp; Apparel</a>
+    </div>
+
+    <section class="block" id="gametheory">
+      <div class="block-head"><h2 class="block-title">Framing the quota, not just the tariff</h2><span class="block-tag">Generalized Nash Equilibrium / tariff-rate-quota model</span></div>
+      <div class="panel">
+        <div class="citebox">Passacantando, M. &amp; Raciti, F. — "A game theory model of tariff rate quotas in international trade." Journal of Dynamics and Games, April 2025. DOI 10.3934/jdg.2025011.</div>
+        <div class="prose">
+          <p>The paper models a tariff-rate quota as a <b>Generalized Nash Equilibrium Problem</b>: several exporting firms compete for access to several importing countries, each of which sets a two-tier duty — low below a volume threshold, high above it. Because the quota is shared, one firm's available volume depends on how much the others take, which is what makes it a genuine multi-firm game rather than a simple price response. The model proves an equilibrium exists and is unique under mild conditions, and its numerical experiments show the core trade-off an importing country faces: raising the threshold lifts tariff revenue but squeezes exporters' profits, while a strict quota reallocates market access in a way a tariff alone cannot.</p>
+          <p><b>Why this matters here:</b> India's own trade policy has started reaching for exactly this instrument — a volume cap paired with a differential duty regime, not a flat tariff — in several of the sectors below. That makes the GNEP frame directly applicable: India is the quota-setting importer, and the supplier base in sectors like AC compressors (dominated by one or two firms) is playing a real multi-firm competition for a shared, capped quota.</p>
+        </div>
+        <div class="case-card">
+          <div class="case-title">Illustrative case — DPIIT Quality Control Order amendment on AC compressors, May 2026</div>
+          <div class="case-row"><span class="k">Mechanics</span><span class="v">Import volumes capped at 30% of FY2025 volume for rotary/AC compressors (&lt;2TR) and 40% for reciprocating/refrigerator compressors, layered on existing BIS certification requirements.</span></div>
+          <div class="case-row"><span class="k">Stated intent</span><span class="v">Explicit government framing that China-based compressor makers — the market is dominated by GMCC (Guangdong Meizhi) — "cannot [continue selling into India] unless they build factories in India."</span></div>
+          <div class="case-row"><span class="k">GNEP read</span><span class="v">India has substituted an absolute quota for the paper's "high tariff above threshold" tier — a firm exceeding the cap can't simply pay its way past it. The paper's own experiments show this produces a sharper market-access reallocation than a tariff-only TRQ. Predicted equilibrium response: GMCC and peers either build or expand India-based production (converting export volume into FDI — the explicit policy goal), or cede share to whoever can operate inside the cap, domestic (Amber Enterprises, Epack) or third-country (Korea-linked supply chains).</span></div>
+        </div>
+        <div class="case-card">
+          <div class="case-title">Second instance — India's own steel safeguard duty, in force through 2028</div>
+          <div class="case-row"><span class="k">Mechanics</span><span class="v">12% safeguard duty on flat steel imports (stepping to 11.5%, then 11%), explicitly naming China, Japan, Korea, Vietnam and Nepal.</span></div>
+          <div class="case-row"><span class="k">Strategic tension</span><span class="v">Japan and Korea are simultaneously the two most credible FDI-source countries for specialty-steel technology transfer (see sector 02 below) <b>and</b> named targets of this same duty. The GNEP frame predicts this isn't a contradiction — the duty is the mechanism pushing Japanese/Korean capacity toward Indian joint ventures (JFE's Nashik acquisition, the POSCO-JSW JV) rather than continued arm's-length exports. A duty aimed at a country and FDI courtship of that country are often the same move, not opposing ones.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="timeline">
+      <div class="block-head"><h2 class="block-title">Official tariff timeline (2025 – present)</h2><span class="block-tag">Confirmed government/court actions only — no speculation</span></div>
+      <div class="panel">
+        <div class="timeline-scroll">
+          <table class="timeline">
+            <thead><tr><th>Date</th><th>Event</th></tr></thead>
+            <tbody>
+              <tr><td class="date">2025 – early 2026</td><td>US "reciprocal tariff" regime under IEEPA imposed and repeatedly revised on India, ranging 26%–50% across the year, including a punitive tier tied to India's continued purchases of Russian crude.</td></tr>
+              <tr class="pivot"><td class="date">2026-02-20</td><td>US Supreme Court strikes down the entire IEEPA reciprocal-tariff framework as exceeding executive authority. Every India-specific reciprocal rate issued under it is voided.</td></tr>
+              <tr><td class="date">2026-02-20 →</td><td>Replaced, as an interim measure, with a flat global <b>10% Section 122</b> surcharge — applies uniformly to all trading partners, not India-specific, capped in duration by statute.</td></tr>
+              <tr class="pivot"><td class="date">2026-07-24</td><td>The flat 10% Section 122 surcharge is due to expire by statutory limit (5 days from this report's retrieval date) unless extended or replaced — the single most consequential near-term date in the current picture.</td></tr>
+              <tr><td class="date">2026-07-06 (comment period closed)</td><td>A proposed <b>12.5% Section 301</b> tariff explicitly naming India is pending as the intended replacement once Section 122 lapses. Not yet in force as of retrieval.</td></tr>
+              <tr><td class="date">2025-06</td><td>Section 232 tariff of <b>50% on steel and aluminum</b>, applied globally — no India-specific exemption negotiated.</td></tr>
+              <tr><td class="date">2025 – 2026</td><td>Section 232 tariff of <b>25% on semiconductors</b>, narrowly scoped to AI-accelerator chips; India not specifically named.</td></tr>
+              <tr><td class="date">2025 – 2026</td><td>Section 232 tariff of <b>100% on patented/branded pharmaceuticals</b> — generics and biosimilars explicitly excluded "at this time."</td></tr>
+              <tr><td class="date">2026-02 (proposed, not implemented)</td><td>A tariff-rate-quota carve-out for Indian auto parts was discussed in a bilateral framework — NOT published or implemented as an actual rate as of retrieval.</td></tr>
+              <tr><td class="date">ongoing, 2025 – 2026</td><td>India–US Bilateral Trade Agreement (BTA) remains unsigned despite multiple negotiating rounds; no finalized market-access commitments either side.</td></tr>
+              <tr><td class="date">ongoing</td><td>US–China tariffs remain separately in force at Section 301 levels (~25%/7.5% List tiers, plus 100% EVs / 50% semiconductors / 50% solar) — unaffected by the IEEPA ruling, so this wall persists even as the India reciprocal-tariff layer was struck down.</td></tr>
+              <tr><td class="date">2026-01-01</td><td>EU CBAM definitive period begins on schedule — covers iron/steel, aluminium, cement, fertilizer, hydrogen, electricity. Directly exposes ~$20.7bn of India's HS72/73 steel exports.</td></tr>
+              <tr><td class="date">2026-05</td><td>India's own DPIIT QCO amendment imposes 30–40% import volume quotas on AC/refrigerator compressors (see game-theory case above).</td></tr>
+              <tr><td class="date">ongoing through 2028</td><td>India's own steel safeguard duty (12% → 11%) remains in force against China, Japan, Korea, Vietnam and Nepal.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout">
+          <div class="callout-label">Cross-cutting observation</div>
+          <p>Because the entire 2025-era reciprocal-tariff schedule was voided, the widely-cited <b>"India lost competitiveness to Vietnam/Bangladesh because of a higher reciprocal tariff rate"</b> narrative is currently moot — Vietnam's 20% and Bangladesh's ~19% baseline were struck down in the same ruling, and all three now face the identical flat 10% Section 122 surcharge. Any sector strategy resting on a presumed India-vs-Vietnam tariff gap needs re-checking once (if) the Section 301 replacement actually takes effect on 2026-07-24.</p>
+        </div>
+      </div>
+      <div class="callout">
+        <div class="callout-label">China+1 — the government's own honest finding</div>
+        <p>NITI Aayog's own published assessment states China+1 diversification has had <b>"limited success so far"</b> for India specifically — Vietnam, Thailand, Cambodia and Malaysia have captured a larger share of the relocation away from China than India has. That's the government's own admission, not an external critique, and it should temper any narrative below that assumes India is the default China+1 beneficiary.</p>
+      </div>
+    </section>
+
+    <section class="sector-block" id="electronics">
+      <div class="sector-head"><h2 class="sector-title">01. Electronics &amp; Semiconductor Manufacturing</h2><div class="sector-meta"><span class="sector-hs">HS 84–85</span><span class="pli-pill pli-strong">PLI Electronics + ISM 2.0 — strong</span></div></div>
+      <div class="country-grid">
+        <div class="country-card"><div class="country-name">Taiwan</div><div class="country-rationale">Process-technology / equipment partner, not primarily a capital source — the model is transferring fab IP while India and partners fund capex.</div><div class="country-evidence">Tata Electronics–PSMC Dholera fab, Rs 91,000cr (~$11bn); trial production targeted Dec 2026.</div></div>
+        <div class="country-card"><div class="country-name">Japan</div><div class="country-rationale">The only target with a treaty-level government-to-government mechanism specific to this sector.</div><div class="country-evidence">MeitY–METI Memorandum of Cooperation, Jul 2023, operationalized via the India-Japan Industrial Competitiveness Partnership (IJICP).</div></div>
+        <div class="country-card"><div class="country-name">USA</div><div class="country-rationale">Equipment and advanced-materials supply chain, under a bilateral tech-security dialogue rather than an investment mechanism.</div><div class="country-evidence">iCET (Initiative on Critical and Emerging Technology) and the follow-on TRUST framework.</div></div>
+      </div>
+      <div class="tariff-note"><span class="k">Tariff relevance</span>Section 232 semiconductor tariff (25%) is narrowly scoped to AI-accelerator chips and does not name India — limited direct exposure for this sector's current PLI-covered product base.</div>
+      <div class="flags-box"><div class="flags-label">Flagged</div><ul><li>The Vedanta-Foxconn Dholera JV collapsed July 2023 (Foxconn exited) — do not cite as active.</li></ul></div>
+    </section>
+
+    <section class="sector-block" id="steel">
+      <div class="sector-head"><h2 class="sector-title">02. Specialty Steel &amp; Metals</h2><div class="sector-meta"><span class="sector-hs">HS 72–73</span><span class="pli-pill pli-strong">PLI Specialty Steel — strong</span></div></div>
+      <div class="country-grid">
+        <div class="country-card"><div class="country-name">Japan</div><div class="country-rationale">Direct technology transfer for electrical/specialty steel grades — via acquisition of an existing India-based asset, not a greenfield JV.</div><div class="country-evidence">JFE Steel's technology partnership + acquisition of thyssenkrupp's Nashik electrical-steel business.</div></div>
+        <div class="country-card"><div class="country-name">Korea</div><div class="country-rationale">The largest live specialty-steel FDI commitment in the sector, plus a fresh 2026 government mechanism.</div><div class="country-evidence">POSCO-JSW joint venture, $7.73bn; new Korea-India Steel Cooperation MOU, Apr 2026.</div></div>
+        <div class="country-card"><div class="country-name">Europe — technology only, not equity</div><div class="country-rationale">Process-equipment suppliers (Danieli, SMS group) sell into Indian expansions but hold no equity — a different relationship type from Japan/Korea.</div><div class="country-evidence">Ongoing equipment-supply contracts tied to PLI-backed capacity expansion; no equity stake identified.</div></div>
+      </div>
+      <div class="tariff-note"><span class="k">Tariff relevance</span>Direct tension with India's own steel safeguard duty (through 2028, targeting China/Japan/Korea/Vietnam/Nepal) and the EU CBAM definitive period from Jan 2026 on the export side — see the game-theory "second instance" above and the $20.7bn CBAM exposure figure in the companion sector file.</div>
+      <div class="flags-box"><div class="flags-label">Flagged</div><ul><li>Germany is exiting, not entering, this sector — thyssenkrupp's Nashik divestiture to JFE is an exit, not an investment.</li></ul></div>
+    </section>
+
+    <section class="sector-block" id="auto">
+      <div class="sector-head"><h2 class="sector-title">03. Auto, EV &amp; Battery</h2><div class="sector-meta"><span class="sector-hs">HS 87</span><span class="pli-pill pli-strong">PLI Auto + ACC Battery — strong</span></div></div>
+      <div class="country-grid">
+        <div class="country-card"><div class="country-name">Korea</div><div class="country-rationale">The strongest, most diversified relationship: equipment flowing into India's own gigafactory buildout plus active cell-tech talks, reinforced by an upgraded trade pact.</div><div class="country-evidence">Equipment into Agratas' (Tata) gigafactory; LG Energy Solution–JSW cell-technology talks; India-Korea CEPA upgrade negotiations.</div></div>
+        <div class="country-card"><div class="country-name">Japan</div><div class="country-rationale">The largest single committed capital figures in the sector, via the same IJICP mechanism used for electronics.</div><div class="country-evidence">Toyota, $1.9bn; Suzuki, Rs 70,000cr (~$8.3bn at period-matched FY24-25 rate).</div></div>
+      </div>
+      <div class="subflag"><span class="subflag-label">Not a target — a complication</span><b>China</b>: India's EV/battery buildout remains structurally dependent on Chinese graphite, lithium-compound and rare-earth supply even while India actively courts Korean and Japanese battery capital — an upstream-input dependency, not an FDI opportunity.</div>
+      <div class="tariff-note"><span class="k">Tariff relevance</span>US Section 232 auto tariff (25%) is global, not India-specific; a proposed TRQ carve-out for Indian auto parts was discussed Feb 2026 but not published or implemented.</div>
+      <div class="flags-box"><div class="flags-label">Flagged</div><ul><li>Tata's and Reliance's battery-technology partners are not yet confirmed in public disclosures — don't cite specific cell-chemistry licensors as settled.</li></ul></div>
+    </section>
+
+    <section class="sector-block" id="pharma">
+      <div class="sector-head"><h2 class="sector-title">04. Pharmaceuticals &amp; Bulk Drug APIs</h2><div class="sector-meta"><span class="sector-hs">HS 29–30</span><span class="pli-pill pli-partial">PLI Bulk Drugs — partial (41 of 53 critical KSMs/APIs)</span></div></div>
+      <div class="country-grid">
+        <div class="country-card"><div class="country-name">USA</div><div class="country-rationale">The strongest live driver — a US domestic policy shift pushing biologics/CDMO manufacturing away from China toward alternative sourcing including India.</div><div class="country-evidence">BIOSECURE Act-driven CDMO relocation; Eli Lilly, $1bn; Amgen, $200m.</div></div>
+        <div class="country-card"><div class="country-name">Germany</div><div class="country-rationale">A weak, adjacent-only relationship — flagged honestly rather than inflated.</div><div class="country-evidence">Miltenyi Biotec has adjacent biotech activity in India; no confirmed bulk-drug-API-specific investment identified.</div></div>
+      </div>
+      <div class="subflag mismatch"><span class="subflag-label">Reversed assumption — Israel</span>The commonly assumed direction runs backward: <b>Sun Pharma (Indian) acquired Israel's Taro Pharmaceutical</b> — Indian capital flowing into Israel, not the reverse. Do not cite Israel as an FDI-source country for this sector.</div>
+      <div class="tariff-note"><span class="k">Tariff relevance</span>US Section 232 pharma tariff is 100% but explicitly excludes generics and biosimilars "at this time" — a genuine strategic opening given India's generics-dominant export profile, and the one clearly favorable current tariff carve-out in this whole analysis.</div>
+      <div class="flags-box"><div class="flags-label">Flagged</div><ul><li>China API dependency for Indian bulk-drug manufacturing runs closer to ~74% by value for the most critical KSMs, not the commonly cited 65-70% range.</li></ul></div>
+    </section>
+
+    <section class="sector-block" id="whitegoods">
+      <div class="sector-head"><h2 class="sector-title">05. White Goods Components</h2><div class="sector-meta"><span class="sector-hs">HS 84 (subset)</span><span class="pli-pill pli-strong">PLI White Goods — fully subscribed, 85/85 slots</span></div></div>
+      <div class="country-grid">
+        <div class="country-card"><div class="country-name">Japan</div><div class="country-rationale">Most active investor by count and recurring commitment — market leader plus a compressor-specific supplier.</div><div class="country-evidence">Daikin, Rs 547cr + a further Rs 1,400cr expansion; Nidec/Embraco compressor manufacturing.</div></div>
+        <div class="country-card"><div class="country-name">Korea</div><div class="country-rationale">Both major Korean appliance majors have live committed capital in this exact PLI window.</div><div class="country-evidence">Samsung, $205.7m; LG Electronics, additional committed capacity.</div></div>
+        <div class="country-card"><div class="country-name">Denmark</div><div class="country-rationale">A concentrated, component-specific (compressors/controls) relationship rather than a broad appliance-brand presence.</div><div class="country-evidence">Danfoss, Rs 500cr+ cumulative.</div></div>
+      </div>
+      <div class="tariff-note"><span class="k">Tariff relevance</span>Directly implicated by the May 2026 DPIIT compressor QCO quota (see game-theory case above) — Japan (Nidec/Embraco) and Korea are the compressor-technology partners best positioned to absorb the quota-driven localization the policy is designed to force.</div>
+    </section>
+
+    <section class="sector-block" id="chemicals">
+      <div class="sector-head"><h2 class="sector-title">06. Inorganic Chemicals</h2><div class="sector-meta"><span class="sector-hs">HS 28</span><span class="pli-pill pli-none">No PLI — ground-floor ($14.2bn imports, +86.0%)</span></div></div>
+      <div class="country-grid">
+        <div class="country-card"><div class="country-name">Japan</div><div class="country-rationale">The clearest sector-specific commitments identified, from two distinct majors, part of a broader post-China-plus-one pivot to India.</div><div class="country-evidence">Sumitomo Chemical and Mitsubishi Gas Chemical facility commitments.</div></div>
+        <div class="country-card"><div class="country-name">Germany</div><div class="country-rationale">A real but general "Focus on India" corporate strategy commitment, not chemical-specific — directional interest, not a landed project.</div><div class="country-evidence">Lanxess, Rs 750cr cumulative; BASF and Evonik have broader India activity, nothing inorganic-chemicals-specific identified.</div></div>
+      </div>
+      <div class="flags-box"><div class="flags-label">Flagged</div><ul><li>No PLI scheme exists here at all — any country pitch is necessarily "why invest ahead of the incentive," not "come collect the subsidy."</li></ul></div>
+    </section>
+
+    <section class="sector-block" id="plastics">
+      <div class="sector-head"><h2 class="sector-title">07. Plastics</h2><div class="sector-meta"><span class="sector-hs">HS 39</span><span class="pli-pill pli-none">No PLI — ground-floor ($22.2bn imports, +45.8%)</span></div></div>
+      <div class="country-grid">
+        <div class="country-card"><div class="country-name">Saudi Arabia &amp; UAE</div><div class="country-rationale">The single largest headline commitment in this whole analysis by dollar value — still at MOU stage, not financial close.</div><div class="country-evidence">Aramco/ADNOC-backed Ratnagiri Refinery &amp; Petrochemicals (RRPCL), $44bn proposed, stalled at MOU stage as of retrieval.</div></div>
+        <div class="country-card"><div class="country-name">Qatar</div><div class="country-rationale">A broad, non-petrochemical-specific capital commitment — a directional signal, not a sector-specific project.</div><div class="country-evidence">Qatar's broader $10bn India investment commitment; no petrochemical-specific allocation confirmed.</div></div>
+        <div class="country-card"><div class="country-name">Japan</div><div class="country-rationale">A specific, named, but pre-final-investment-decision project.</div><div class="country-evidence">Mitsubishi Chemical MMA plant, pre-FID as of retrieval.</div></div>
+      </div>
+      <div class="flags-box"><div class="flags-label">Flagged</div><ul><li>RRPCL's $44bn figure has circulated publicly for years without financial close — never present it as committed capital without the MOU-stage caveat.</li></ul></div>
+    </section>
+
+    <section class="sector-block" id="aerospace">
+      <div class="sector-head"><h2 class="sector-title">08. Aircraft &amp; Spacecraft</h2><div class="sector-meta"><span class="sector-hs">HS 88</span><span class="pli-pill pli-none">No PLI — ground-floor ($13.8bn imports, +80.9%)</span></div></div>
+      <div class="country-grid">
+        <div class="country-card"><div class="country-name">France</div><div class="country-rationale">The only fully operating, financially-closed foreign manufacturing investment in this sector, plus a second live MRO/JV track.</div><div class="country-evidence">Tata-Airbus C295 final assembly line, Vadodara — operating. Safran, €200m+ MRO; BEL-Safran JV.</div></div>
+        <div class="country-card"><div class="country-name">USA</div><div class="country-rationale">The largest count of live engagements — engine co-production (not yet signed), an engineering center, a manufacturing JV, and an already-high-localization program.</div><div class="country-evidence">GE-HAL F414 co-production discussed, NOT signed. Boeing $200m+ engineering center; Tata-Boeing JV; Lockheed C-130J already at 96% local content.</div></div>
+        <div class="country-card"><div class="country-name">Israel</div><div class="country-rationale">A newly signed defense-adjacent JV, distinct from the civil-aviation relationships above.</div><div class="country-evidence">IAI-DCX radar joint venture, signed May 2026.</div></div>
+      </div>
+      <div class="flags-box"><div class="flags-label">Flagged</div><ul><li>The GE-HAL F414 engine deal is frequently reported as done — it is a discussed co-production arrangement, NOT a signed agreement, as of retrieval.</li></ul></div>
+    </section>
+
+    <section class="sector-block" id="meddevice">
+      <div class="sector-head"><h2 class="sector-title">09. Medical Devices</h2><div class="sector-meta"><span class="sector-hs">HS 90 (subset)</span><span class="pli-pill pli-partial">PLI Medical Devices — partial, Rs 3,420cr</span></div></div>
+      <div class="country-grid">
+        <div class="country-card"><div class="country-name">Germany</div><div class="country-rationale">The most-cited landed investment in the sector, though the commitment predates this PLI window — flagged for vintage, not presented as a fresh signal.</div><div class="country-evidence">Siemens Healthineers, €160m — 2020-vintage, still the reference investment, in production under the PLI umbrella.</div></div>
+        <div class="country-card"><div class="country-name">Japan</div><div class="country-rationale">An R&amp;D-specific commitment paired with a newly opened research-cooperation mechanism.</div><div class="country-evidence">Olympus R&amp;D center; new AMED-ICMR (Japan-India) Memorandum of Cooperation, Aug 2025.</div></div>
+        <div class="country-card"><div class="country-name">USA</div><div class="country-rationale">The two largest dollar commitments in the sector — one direct manufacturer investment, one JV-structured deal.</div><div class="country-evidence">Medtronic, $350m; GE Healthcare-Wipro JV, Rs 8,000cr.</div></div>
+      </div>
+      <div class="tariff-note"><span class="k">Tariff relevance</span>No sector-specific tariff action identified.</div>
+    </section>
+
+    <section class="sector-block" id="textiles">
+      <div class="sector-head"><h2 class="sector-title">10. Textiles &amp; Apparel (cotton-based)</h2><div class="sector-meta"><span class="sector-hs">HS 61–62</span><span class="pli-pill pli-mismatched">PLI Textiles — mismatched (targets MMF, not cotton)</span></div></div>
+      <div class="no-target"><b>Honest finding: no credible FDI-source country was identified for this sector.</b> PLI Textiles (Rs 10,683cr) targets man-made fibre and technical textiles, structurally excluding the cotton-based apparel that makes up the declining export chapters (HS 61/62, -2.3% and -2.0% growth). The dominant real capital movement here is Indian-owned capacity returning to India <i>from</i> Bangladesh — a reshoring move by Indian textile groups themselves, not inbound foreign investment. A country-strategy pitch for this sector would be fabricating a relationship the evidence doesn't support. The fix, per this repo's original recommendation, is broadening PLI Textiles' scope to cotton apparel — not a country-targeting pitch.</div>
+      <div class="tariff-note"><span class="k">Tariff relevance</span>Shares the same voided-reciprocal-tariff arc as every export chapter — the assumed India-vs-Vietnam-vs-Bangladesh competitiveness gap is currently moot since all three now face the same flat 10% Section 122 surcharge.</div>
+    </section>
+
+    <div class="errata">
+      <div class="errata-title">Errata &amp; methodology notes</div>
+      <ul>
+        <li><b>This bulletin is additive</b> to the original 5-sector <a href="sector_and_policy_recommendations.html">Sector &amp; Policy Recommendations</a> bulletin and the <a href="state_central_incentives_and_emergent_hubs.html">state-incentives bulletin</a> — it doesn't re-verify their central-PLI or state-incentive figures.</li>
+        <li><b>Deals at MOU/framework stage are labeled as such, not presented as landed capital</b> — most visibly the $44bn RRPCL petrochemical project (Plastics) and the GE-HAL F414 engine deal (Aircraft &amp; Spacecraft), both still short of financial close or signature as of retrieval.</li>
+        <li><b>Two corrections to earlier assumptions</b> surfaced in this research pass: Germany is exiting (not entering) Specialty Steel via thyssenkrupp's Nashik divestiture; Israel's pharma relationship runs the opposite direction (Sun Pharma acquired Taro, not the reverse).</li>
+        <li><b>Textiles &amp; Apparel is deliberately left with no target countries</b> — see sector 10 above. This is a finding, not a gap in the research.</li>
+        <li><b>The tariff timeline is restricted to confirmed government/court actions</b> — proposed-but-not-implemented items (the Section 301 replacement, the auto-parts TRQ carve-out) are explicitly marked as pending, not in force.</li>
+        <li>Underlying data: <a href="../data/top10_sector_country_strategies_2026-07-19.json">data/top10_sector_country_strategies_2026-07-19.json</a>.</li>
+      </ul>
+    </div>
+
+    <footer class="colophon">herrrickshaw/india-trade-sector-policy-recommendations — derived research synthesis; not an official government publication or investment solicitation</footer>
+  </div>
+</div>

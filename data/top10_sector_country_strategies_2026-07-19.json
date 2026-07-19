@@ -1,0 +1,173 @@
+{
+  "purpose": "Extends the original 5+3 sector framework (sector_and_policy_recommendations_2026-07-18.json) to 10 priority sectors, and for each identifies specific target FDI-source countries with sourced, dated evidence -- not a generic 'attract FDI' list. Adds a game-theoretic frame for the tariff-rate-quota dynamics now shaping several of these sectors, and a dated timeline of OFFICIAL (non-speculative) tariff announcements through the retrieval date.",
+  "retrieved": "2026-07-19",
+  "method": "Multi-agent research across 10 sectors, each cross-checked against at least one primary/official source (PIB, ministry press release, company investor disclosure, or the source government's own trade-policy announcement) plus one corroborating source. Deals still at MOU/framework stage (not yet financially closed) are explicitly flagged as such rather than presented as landed investment.",
+
+  "game_theory_framework": {
+    "paper": {
+      "title": "A game theory model of tariff rate quotas in international trade",
+      "authors": "Mauro Passacantando, Fabio Raciti",
+      "journal": "Journal of Dynamics and Games, April 2025",
+      "doi": "10.3934/jdg.2025011",
+      "url": "https://www.aimsciences.org/article/doi/10.3934/jdg.2025011"
+    },
+    "model_summary": "Models a tariff-rate quota (TRQ) as a Generalized Nash Equilibrium Problem (GNEP): multiple exporting firms compete for market access across multiple importing countries; each importing country sets a two-tier tariff schedule (a low tariff up to a volume threshold, a high tariff above it) and firms' quota constraints are shared, so one firm's allowed volume depends on how much market the others take. The paper proves existence/uniqueness of equilibrium under a monotonicity condition and solves it via variational inequality methods. Its numerical experiments show the core trade-off facing the importing country: raising the in-quota threshold increases government tariff revenue but compresses exporting-firm profits, while switching from a tariff-only regime to a strict quota redistributes market access rather than just repricing it.",
+    "why_it_applies_here": "India's own trade policy has started using exactly this instrument -- a volume-capped quota paired with a differential tariff/duty regime -- rather than a flat tariff, in exactly the sectors this analysis covers. That makes the GNEP framing directly applicable: India (the importing country / quota-setter) is choosing thresholds and duty tiers, and the exporting-country supplier base (dominated in several sectors by one or two firms, e.g. China's GMCC in AC compressors) is playing a genuine multi-firm competition for the quota, not a simple price-taking response to a tariff.",
+    "illustrative_case": {
+      "name": "DPIIT Quality Control Order (QCO) amendment on AC compressors, May 2026",
+      "mechanics": "Import volumes capped at 30% of FY2025 import volume for rotary/AC compressors (<2TR) and 40% for reciprocating/refrigerator compressors, layered on top of existing BIS quality-certification requirements that already function as a non-tariff barrier.",
+      "stated_intent": "Explicit government framing that Chinese compressor manufacturers -- the market is dominated by GMCC (Guangdong Meizhi) -- 'cannot [continue selling into India] unless they build factories in India,' i.e. the quota is designed to force a build-vs-exit choice rather than simply raise the landed price.",
+      "gnep_read": "This is a textbook instance of the paper's two-tier TRQ: firms that stay under India's volume cap face the existing (lower) duty regime; firms that would exceed it face a binding non-tariff wall (the quota itself, not just a higher rate) rather than the 'high tariff above threshold' the paper models -- India has substituted an absolute quota for the high-tariff tier, which the paper's numerical experiments show produces a more direct market-access reallocation than a tariff-only TRQ (firms cannot simply pay their way past the threshold). Predicted equilibrium response, consistent with the paper: GMCC and other China-based compressor makers either (a) establish or expand India-based production (converting export volume into FDI, which is the explicit policy goal), or (b) cede share to whichever competitor -- domestic (Amber Enterprises, Epack) or third-country (Korean LG/Samsung-linked supply chains) -- can operate inside the cap."
+    },
+    "second_instance": {
+      "name": "India's own steel safeguard duty, in force through 2028",
+      "mechanics": "12% safeguard duty (stepping down to 11.5% then 11% over the period) applied to flat steel imports, explicitly targeting China, Japan, Korea, Vietnam and Nepal.",
+      "strategic_tension_flag": "This directly complicates the Specialty Steel country-strategy below: Japan and Korea are simultaneously (a) the two most credible FDI-source countries for specialty/electrical steel technology transfer (JFE, POSCO-JSW) and (b) named targets of India's own import-restricting safeguard duty. The GNEP framing predicts this is not a contradiction but the intended mechanism -- the duty is the 'high tariff' tier pushing Japanese/Korean capacity toward Indian joint ventures (which is exactly what JFE's Nashik acquisition and the POSCO-JSW JV represent) rather than continued arm's-length exports. A quota/duty aimed at a country is not inconsistent with courting that same country's FDI; in this model it is often the mechanism that produces the FDI."
+    }
+  },
+
+  "official_tariff_timeline": {
+    "note": "Restricted to official government/court actions and published proclamations -- explicitly excludes news-cycle speculation, unconfirmed trade-deal 'frameworks,' and threatened-but-not-issued tariffs.",
+    "events": [
+      {"date": "2025 (through early 2026)", "event": "US 'reciprocal tariff' regime under IEEPA imposed and repeatedly revised on India, ranging 26% to 50% at various points across the year, including a punitive tier explicitly tied to India's continued purchase of Russian crude."},
+      {"date": "2026-02-20", "event": "US Supreme Court strikes down the entire IEEPA-based reciprocal-tariff/emergency-tariff framework as exceeding executive authority. Every India-specific reciprocal-tariff rate issued under that framework is voided."},
+      {"date": "2026-02-20 to present", "event": "Replaced, as an interim measure, with a flat global 10% tariff surcharge under Section 122 of the Trade Act of 1974 -- applies uniformly to all trading partners, not India-specific, and is capped in duration by statute."},
+      {"date": "2026-07-24", "event": "The Section 122 flat 10% surcharge is set to expire by statutory limit (5 days after this report's retrieval date) unless separately extended or replaced -- the single most consequential near-term date in the current tariff picture."},
+      {"date": "2026 (comment period closed 2026-07-06)", "event": "A proposed 12.5% Section 301 tariff explicitly naming India (among other countries) is pending as the intended replacement mechanism once Section 122 lapses; not yet in force as of retrieval."},
+      {"date": "2025-06 (Section 232 proclamation)", "event": "US Section 232 tariff of 50% on steel and aluminum imports, applied globally with no India-specific exemption negotiated."},
+      {"date": "2025-2026", "event": "US Section 232 tariff of 25% on semiconductors, narrowly scoped to AI-accelerator-class chips; India not specifically named."},
+      {"date": "2025-2026", "event": "US Section 232 tariff of 100% on patented/branded pharmaceuticals; generic drugs and biosimilars explicitly excluded 'at this time' -- directly relevant to India's generics-heavy pharma export base."},
+      {"date": "2026-02 (proposed, not implemented)", "event": "A tariff-rate-quota carve-out for Indian auto parts was proposed in a bilateral framework discussion but has NOT been published or implemented as an actual rate as of retrieval -- included here as a proposal under discussion, not an official action."},
+      {"date": "ongoing, 2025-2026", "event": "India-US Bilateral Trade Agreement (BTA) negotiations remain unsigned as of retrieval, despite multiple negotiating rounds; no finalized market-access commitments to report on either side."},
+      {"date": "ongoing", "event": "US-China tariffs remain separately in force at Section 301 levels (roughly 25%/7.5% across List tariff tiers) plus sectoral rates (100% on EVs, 50% on semiconductors, 50% on solar cells) -- this layer was not affected by the Supreme Court's IEEPA ruling, so the US-China tariff wall persists even as the US-India reciprocal-tariff layer was struck down."},
+      {"date": "2026-01-01", "event": "EU Carbon Border Adjustment Mechanism (CBAM) definitive period begins on schedule, covering iron/steel, aluminium, cement, fertilizer, hydrogen and electricity imports -- directly exposes India's ~$20.7bn HS72/73 steel export book."},
+      {"date": "2026-05", "event": "India's own DPIIT Quality Control Order amendment imposes import volume quotas (30-40% of FY2025 volumes) on AC and refrigerator compressors -- see game-theory illustrative case above."},
+      {"date": "ongoing through 2028", "event": "India's own steel safeguard duty (12% stepping down to 11%) remains in force against China, Japan, Korea, Vietnam and Nepal."}
+    ],
+    "cross_cutting_observation": "Because the entire 2025-era reciprocal-tariff schedule was voided by the Supreme Court, the widely-cited 'India lost competitiveness to Vietnam/Bangladesh because of a higher reciprocal tariff rate' narrative is currently MOOT -- Vietnam's 20% and Bangladesh's ~19% baseline rates were struck down in the same ruling, and all three (India, Vietnam, Bangladesh) currently face the same flat 10% Section 122 surcharge. Any sector strategy built on a presumed India-vs-Vietnam tariff gap needs to be re-checked once (if) the Section 301 replacement actually takes effect on 2026-07-24."
+  },
+
+  "china_plus_one_honesty_flag": {
+    "source": "NITI Aayog Trade Watch Quarterly (India's own government think tank)",
+    "finding": "NITI Aayog's own published assessment states China+1 diversification has had 'limited success so far' for India specifically -- Vietnam, Thailand, Cambodia and Malaysia have captured a larger share of the manufacturing relocation away from China than India has. This is the government's own admission, not an external critique, and should temper any country-strategy narrative that assumes India is the default China+1 beneficiary."
+  },
+
+  "sectors": [
+    {
+      "sector": "Electronics & Semiconductor Manufacturing",
+      "hs": "84-85",
+      "pli_status": "strong -- PLI Electronics + India Semiconductor Mission (ISM) 2.0",
+      "target_countries": [
+        {"country": "Taiwan", "rationale": "Process-technology and equipment partner, not primarily a capital source -- PSMC's technology-licensing role in the Tata Dholera fab is the model: Taiwan transfers fab process IP and know-how while India and other partners fund the capex.", "evidence": "Tata Electronics-PSMC Dholera fab, Rs 91,000cr (~$11bn), trial production targeted Dec 2026."},
+        {"country": "Japan", "rationale": "The only target country with a treaty-level government-to-government mechanism specifically for this sector.", "evidence": "MeitY-METI Memorandum of Cooperation, July 2023, operationalized via the India-Japan Industrial Competitiveness Partnership (IJICP)."},
+        {"country": "USA", "rationale": "Equipment and advanced-materials supply chain, framed under the bilateral technology-security dialogue rather than a manufacturing-investment mechanism.", "evidence": "iCET (initiative on Critical and Emerging Technology) and the follow-on TRUST framework."}
+      ],
+      "tariff_relevance": "Section 232 semiconductor tariff (25%) is narrowly scoped to AI-accelerator chips and does not name India -- limited direct exposure for this sector's current PLI-covered product base.",
+      "flags": ["The Vedanta-Foxconn Dholera JV collapsed in July 2023 (Foxconn exited) -- do not cite it as active."]
+    },
+    {
+      "sector": "Specialty Steel & Metals",
+      "hs": "72-73",
+      "pli_status": "strong -- PLI Specialty Steel, Rs 44,106cr committed capacity + Rs 11,887cr incentive outlay",
+      "target_countries": [
+        {"country": "Japan", "rationale": "Direct technology-transfer route for electrical/specialty steel grades, including acquisition of an existing India-based asset rather than a greenfield JV.", "evidence": "JFE Steel's technology partnership and acquisition of thyssenkrupp's Nashik electrical-steel business."},
+        {"country": "Korea", "rationale": "The largest live specialty-steel FDI commitment in the sector, plus a fresh government-to-government mechanism opened in 2026.", "evidence": "POSCO-JSW joint venture, $7.73bn; new Korea-India Steel Cooperation MOU, April 2026."},
+        {"country": "Europe (technology only, not equity)", "rationale": "European specialty-steel technology suppliers (Danieli, SMS group) sell process equipment and licenses into Indian expansions but are not equity FDI sources -- flagged explicitly as a different relationship type from Japan/Korea.", "evidence": "Ongoing equipment-supply contracts tied to PLI-backed capacity expansions; no equity stake identified."}
+      ],
+      "tariff_relevance": "Direct tension with India's own steel safeguard duty (in force through 2028, targeting China/Japan/Korea/Vietnam/Nepal) and with the EU CBAM definitive period starting Jan 2026 on the export side -- see game_theory_framework.second_instance and cbam_export_risk in the companion sector file.",
+      "flags": ["Germany is exiting, not entering, this sector -- earlier drafts of this research incorrectly assumed a Germany target; thyssenkrupp's Nashik divestiture to JFE is an EXIT, not an investment."]
+    },
+    {
+      "sector": "Auto, EV & Battery",
+      "hs": "87",
+      "pli_status": "strong -- PLI Auto/Auto Components + Advanced Chemistry Cell (ACC) Battery PLI",
+      "target_countries": [
+        {"country": "Korea", "rationale": "The strongest and most diversified current relationship: equipment flowing into India's own battery-gigafactory buildout plus active cell-technology partnership talks, reinforced by an upgraded trade agreement.", "evidence": "Equipment supply into Agratas' (Tata) gigafactory; LG Energy Solution-JSW cell-technology discussions; India-Korea CEPA upgrade negotiations."},
+        {"country": "Japan", "rationale": "The largest single committed capital figures in the sector, plus the same IJICP government mechanism used for electronics.", "evidence": "Toyota, $1.9bn; Suzuki, Rs 70,000cr (~$8.3bn at period-matched FY24-25 rate); IJICP."}
+      ],
+      "non_target_flag": {"country": "China", "reason": "A complication, not a target -- India's EV/battery buildout remains structurally dependent on Chinese graphite, lithium-compound and rare-earth supply even as India actively courts Korean and Japanese battery capital; this is an upstream-input dependency, not an FDI opportunity."},
+      "tariff_relevance": "US Section 232 auto tariff (25%) is global, not India-specific; a proposed TRQ carve-out for Indian auto parts was discussed in Feb 2026 but has NOT been published or implemented as an actual rate.",
+      "flags": ["Tata's and Reliance's battery-technology partners are not yet confirmed in public disclosures -- do not cite specific cell-chemistry licensors for either group as settled."]
+    },
+    {
+      "sector": "Pharma & Bulk Drug APIs",
+      "hs": "29-30",
+      "pli_status": "partial -- PLI Bulk Drugs (Rs 6,940cr) covers 41 of 53 identified critical-KSM/API dependencies, not the full list",
+      "target_countries": [
+        {"country": "USA", "rationale": "The strongest live driver, propelled by a US domestic policy shift that is pushing biologics/CDMO manufacturing away from China and toward alternative sourcing including India.", "evidence": "BIOSECURE Act-driven CDMO relocation; Eli Lilly, $1bn; Amgen, $200m."},
+        {"country": "Germany", "rationale": "A weak, adjacent-only relationship -- flagged honestly rather than inflated.", "evidence": "Miltenyi Biotec has adjacent biotech activity in India but no confirmed bulk-drug-API-specific investment identified."}
+      ],
+      "reversed_assumption_flag": {"country": "Israel", "correction": "The Israel pharma narrative runs the OPPOSITE direction from what is commonly assumed: Sun Pharma (Indian) acquired Israel's Taro Pharmaceutical, i.e. Indian capital flowing INTO Israel, not Israeli FDI into India. Do not cite Israel as an FDI-source country for this sector."},
+      "tariff_relevance": "US Section 232 pharma tariff is 100% but explicitly EXCLUDES generics and biosimilars 'at this time' -- a genuine strategic opening given India's generics-dominant export profile, worth flagging as the one clearly favorable current tariff carve-out in this entire analysis.",
+      "flags": ["China API dependency for Indian bulk-drug manufacturing is closer to ~74% by value for the most critical KSMs, not the commonly cited 65-70% range -- use the higher, sourced figure."]
+    },
+    {
+      "sector": "White Goods Components",
+      "hs": "84 (subset)",
+      "pli_status": "strong -- PLI White Goods (ACs & LED), fully subscribed, 85 of 85 approved applicant slots filled",
+      "target_countries": [
+        {"country": "Japan", "rationale": "The most active investor by count and by recurring commitment, spanning both the market leader and a compressor-specific supplier.", "evidence": "Daikin, Rs 547cr + a further Rs 1,400cr expansion; Nidec/Embraco compressor manufacturing."},
+        {"country": "Korea", "rationale": "Both major Korean appliance majors have live committed capital in this exact PLI window.", "evidence": "Samsung, $205.7m; LG Electronics, additional committed capacity."},
+        {"country": "Denmark", "rationale": "A concentrated, component-specific relationship (compressors/controls) rather than a broad appliance-brand presence.", "evidence": "Danfoss, Rs 500cr+ cumulative."}
+      ],
+      "tariff_relevance": "Directly implicated by the May 2026 DPIIT compressor QCO quota -- see game_theory_framework.illustrative_case; Japan (Nidec/Embraco) and Korea are the compressor-technology partners best positioned to absorb the quota-driven localization this policy is designed to force.",
+      "flags": []
+    },
+    {
+      "sector": "Inorganic Chemicals",
+      "hs": "28",
+      "pli_status": "none -- ground-floor opportunity, no existing scheme (Tier 1 in the original import-substitution framework: $14.2bn FY25-26 imports, +86.0% growth)",
+      "target_countries": [
+        {"country": "Japan", "rationale": "The clearest sector-specific commitments identified, from two distinct Japanese majors, as part of a broader post-China-plus-one pivot toward India.", "evidence": "Sumitomo Chemical and Mitsubishi Gas Chemical facility commitments."},
+        {"country": "Germany", "rationale": "A real but general 'Focus on India' corporate strategy commitment, not an inorganic-chemicals-specific investment -- flagged as directional interest rather than a landed project.", "evidence": "Lanxess, Rs 750cr cumulative investment under its stated India strategy; BASF and Evonik have broader India activity but nothing identified as inorganic-chemicals-specific."}
+      ],
+      "tariff_relevance": "No sector-specific tariff action identified in either direction as of retrieval.",
+      "flags": ["This sector has no PLI scheme at all -- any country-strategy pitch here is necessarily a 'why invest ahead of the incentive' pitch, not a 'come collect the subsidy' pitch, and should be framed that way."]
+    },
+    {
+      "sector": "Plastics",
+      "hs": "39",
+      "pli_status": "none -- ground-floor opportunity, no existing scheme ($22.2bn FY25-26 imports, +45.8% growth)",
+      "target_countries": [
+        {"country": "Saudi Arabia & UAE", "rationale": "The single largest headline commitment in this analysis by dollar value, but still at MOU/framework stage, not financial close -- flagged explicitly rather than presented as landed.", "evidence": "Saudi Aramco / ADNOC-backed Ratnagiri Refinery & Petrochemicals (RRPCL), $44bn proposed, STALLED at MOU stage as of retrieval."},
+        {"country": "Qatar", "rationale": "A broad, non-petrochemical-specific capital commitment -- included as a directional signal, not a sector-specific project.", "evidence": "Qatar's broader $10bn India investment commitment; no petrochemical-specific allocation confirmed."},
+        {"country": "Japan", "rationale": "A specific, named but pre-final-investment-decision project.", "evidence": "Mitsubishi Chemical MMA (methyl methacrylate) plant, pre-FID as of retrieval."}
+      ],
+      "tariff_relevance": "No sector-specific tariff action identified.",
+      "flags": ["The RRPCL project's $44bn figure has been publicly discussed for years without reaching financial close -- do not present it as committed capital in any pitch material without the MOU-stage caveat attached."]
+    },
+    {
+      "sector": "Aircraft & Spacecraft",
+      "hs": "88",
+      "pli_status": "none -- ground-floor opportunity, no existing scheme ($13.8bn FY25-26 imports, +80.9% growth)",
+      "target_countries": [
+        {"country": "France", "rationale": "The only fully operating, financially-closed foreign manufacturing investment in this entire sector, plus a second live MRO/JV track.", "evidence": "Tata-Airbus C295 final assembly line, Vadodara -- operating. Safran, EUR 200m+ MRO investment; BEL-Safran joint venture."},
+        {"country": "USA", "rationale": "The largest count of live engagements, spanning engine co-production (not yet signed), an engineering center, a manufacturing JV, and an already-high-localization existing program.", "evidence": "GE-HAL F414 engine co-production -- discussed, NOT yet signed as of retrieval. Boeing, $200m+ India engineering center; Tata-Boeing joint venture; Lockheed Martin C-130J program already at 96% local content."},
+        {"country": "Israel", "rationale": "A newly signed defense-adjacent joint venture, distinct from the civil-aviation relationships above.", "evidence": "IAI (Israel Aerospace Industries)-DCX radar joint venture, signed May 2026."}
+      ],
+      "tariff_relevance": "No sector-specific tariff action identified; this sector's FDI story is defense/strategic-partnership-driven rather than tariff-driven.",
+      "flags": ["The GE-HAL F414 engine deal is frequently reported as done -- it is a discussed co-production arrangement, NOT a signed agreement, as of retrieval. Do not present it as committed."]
+    },
+    {
+      "sector": "Medical Devices",
+      "hs": "90 (subset)",
+      "pli_status": "partial -- PLI Medical Devices, Rs 3,420cr outlay",
+      "target_countries": [
+        {"country": "Germany", "rationale": "The most-cited landed investment in the sector, though the underlying commitment predates this PLI window -- flagged for vintage rather than presented as a fresh 2025-26 signal.", "evidence": "Siemens Healthineers, EUR 160m -- a 2020-vintage commitment, still the reference investment cited for this sector, currently in production under the PLI umbrella."},
+        {"country": "Japan", "rationale": "An R&D-specific commitment paired with a newly opened government-to-government research-cooperation mechanism.", "evidence": "Olympus R&D center; new AMED-ICMR (Japan-India) Memorandum of Cooperation, August 2025."},
+        {"country": "USA", "rationale": "The two largest dollar commitments in the sector, one a direct manufacturer investment and one a joint-venture-structured deal.", "evidence": "Medtronic, $350m; GE Healthcare-Wipro joint venture, Rs 8,000cr."}
+      ],
+      "tariff_relevance": "No sector-specific tariff action identified.",
+      "flags": []
+    },
+    {
+      "sector": "Textiles & Apparel (cotton-based)",
+      "hs": "61-62",
+      "pli_status": "mismatched -- PLI Textiles exists (Rs 10,683cr) but its scope targets man-made fibre (MMF) and technical textiles, structurally EXCLUDING the cotton-based apparel that makes up the declining export chapters (HS 61/62, -2.3% and -2.0% growth, per the original export_growth_tiers Tier 1 finding)",
+      "target_countries": [],
+      "honest_finding": "No credible FDI-source country was identified for this sector in this research pass. The dominant real capital movement here is Indian-owned capacity returning to India FROM Bangladesh (a reshoring/derisking move by Indian textile groups themselves, not inbound foreign direct investment), not a foreign country's capital entering India. Any country-strategy pitch for this sector would be fabricating a relationship that the evidence does not support.",
+      "tariff_relevance": "This sector shares the same voided-reciprocal-tariff arc as every other Indian export chapter (see official_tariff_timeline.cross_cutting_observation) -- the widely assumed India-vs-Vietnam-vs-Bangladesh competitiveness gap from differential reciprocal tariffs is currently moot since all three now face the same flat 10% Section 122 surcharge.",
+      "flags": ["This is the one sector in the top-10 set where the honest answer is 'no FDI-country story exists yet' -- the policy fix here (per the original recommendation) is broadening PLI Textiles' scope to cotton apparel, not a country-targeting pitch."]
+    }
+  ]
+}
