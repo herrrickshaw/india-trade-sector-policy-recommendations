@@ -1,5 +1,7 @@
 Auto-opened by `.github/workflows/quarterly-dashboard-refresh.yml`. The PDF snapshot for this quarter has been committed to `reports/published/`; the checklist below is the **data refresh** — work through it, update `data/policy_investment_dashboard_<date>.json` (save as a new dated file) and `charts/policy_investment_dashboard.html`, then re-run the workflow manually to snapshot the updated figures.
 
+> **This checklist is the operator view of the [quarterly refresh blueprint](../charts/quarterly_refresh_blueprint.html)** (`data/quarterly_refresh_blueprint_2026-07-19.json`) — the architecture behind it: per-gate change-data-capture deltas (pull what changed, never full re-scans; PIB cumulative figures supersede, never sum), immutable dated snapshots in `data/`, the seven-step regeneration pipeline, refresh months Jul/Oct/Jan/Apr, week-by-week runbook, and the standing responses to the five known failure modes. When this checklist and the blueprint disagree, fix whichever is stale and note it in the corrections ledger.
+
 ## Ministry-by-ministry re-verification
 
 - [ ] **MeitY / ISM** — PLI-LSEM wind-down status (tenure closed 31 Mar 2026), ECMS approval count (verify on a MeitY-controlled page, not PIB), Semicon 2.0 project approvals, latest Standing Committee on Communications & IT report for fund-utilization figures (Semicon India was 23% FY24 / 9% FY25).
@@ -12,6 +14,7 @@ Auto-opened by `.github/workflows/quarterly-dashboard-refresh.yml`. The PDF snap
 - [ ] **IEM (DPIIT/NSWS)** — whether monthly IEM Statistics Reports resumed publishing after the Oct 2025 NSWS migration (unconfirmed beyond Aug-2024 data at last check); recompute the Part-B/Part-A flow ratio if new Annual Report appendices exist.
 - [ ] **MoSPI PAIMANA** — latest Flash Report aggregates (was 1,941 projects, 15.64% implied cost overrun); whether "delayed" classification was reinstated (dropped after May 2025).
 
+- [ ] **PIB index refresh** — `python3 scripts/pib_index.py --update --factsheets --seed-cited` (extends `data/pib_index.sqlite` from its last indexed date to today; then query the quarter's releases per ministry instead of browsing PIB: `--query "SELECT date,ministry,title FROM pib_items WHERE date >= '<quarter-start>' AND ministry LIKE '%Steel%'"`).
 - [ ] **PIB disbursal aggregates** — latest cross-scheme figures (was ₹28,748cr / 836 applications at 31 Dec 2025, PRID 2230621); scheme-wise disbursals (Electronics ₹15,554cr, Auto ₹2,377.56cr, Steel ₹48cr, ACC zero); any newer Parliament-answer PRIDs.
 - [ ] **PARIVESH EC pipeline** — re-pull the open API (`parivesh.nic.in/parivesh_api/trackYourProposal/advanceSearchData?majorClearanceType=1&...`), regenerate the state×sector×status aggregate, check flagship-project status changes (Dholera fab ToR→EC? Agratas ToR→EC? POSCO-JSW JV still absent? RRPCL still absent?).
 - [ ] **Exim Bank trackers** (eximbankindia.in/useful-economic-data) — 'India's International Trade and Investment' (monthly) for trade/FDI cross-validation; CEAT Industry Tracker for sector credit growth.

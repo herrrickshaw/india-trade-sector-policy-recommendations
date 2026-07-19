@@ -1,0 +1,191 @@
+<title>Abstract — Why Import Substitution: The Forex Position, the PLI Plan &amp; the Ethanol Precedent</title>
+<meta name="hz:canvas-width" content="1180">
+<style>
+  :root {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6;
+    --font-display:"Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --font-mono:"IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+      --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+      --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+      --data-line:#3987e5; --data-soft:#1c2c40;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+    --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+    --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+    --data-line:#3987e5; --data-soft:#1c2c40;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; }
+  .bulletin { background:var(--page-bg); color:var(--ink); font-family:var(--font-body); padding:40px 20px 56px; display:flex; justify-content:center; }
+  .sheet { width:100%; max-width:1100px; display:flex; flex-direction:column; gap:26px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:16px; }
+  .eyebrow { font-family:var(--font-mono); font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); display:flex; gap:10px; align-items:center; }
+  .eyebrow::before { content:""; width:7px; height:7px; border-radius:50%; background:var(--accent); }
+  h1 { font-family:var(--font-display); font-weight:500; font-size:clamp(24px,3.1vw,32px); margin:6px 0 0; text-wrap:balance; }
+  .dek { font-size:14px; color:var(--ink-2); max-width:88ch; line-height:1.55; margin:8px 0 0; }
+  .source-line { font-family:var(--font-mono); font-size:11px; color:var(--ink-muted); margin-top:8px; }
+
+  .act { display:grid; grid-template-columns:110px 1fr; gap:20px; position:relative; padding-bottom:24px; }
+  .act:not(:last-child)::before { content:""; position:absolute; left:54px; top:64px; bottom:0; width:2px; background:var(--rule-strong); }
+  .act-marker { display:flex; flex-direction:column; align-items:center; gap:6px; }
+  .act-num { width:52px; height:52px; border-radius:50%; background:var(--ink); color:var(--page-bg); display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:700; font-size:21px; z-index:1; }
+  .act.hero .act-num { background:var(--accent); }
+  .act.dark .act-num { background:var(--alert); }
+  .act-fn { font-family:var(--font-mono); font-size:8.5px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-muted); text-align:center; line-height:1.5; max-width:100px; }
+  .act-card { background:var(--surface); border:1px solid var(--rule-strong); padding:18px 22px; }
+  .act-title { font-family:var(--font-display); font-size:19px; font-weight:600; margin-bottom:8px; }
+  .act-text { font-size:13.5px; line-height:1.65; color:var(--ink-2); }
+  .act-text b { color:var(--ink); }
+
+  table.fig { width:100%; border-collapse:collapse; font-size:12px; font-variant-numeric:tabular-nums; margin-top:10px; }
+  table.fig th { text-align:left; font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-muted); padding:5px 10px 7px 0; border-bottom:2px solid var(--rule-strong); }
+  table.fig td { padding:7px 10px 7px 0; border-bottom:1px solid var(--rule); vertical-align:top; line-height:1.5; }
+  table.fig tr:last-child td { border-bottom:none; }
+  td.val { font-weight:700; white-space:nowrap; color:var(--data-line); }
+  td.src { font-family:var(--font-mono); font-size:9.5px; color:var(--ink-muted); }
+
+  .parallel { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--rule-strong); border:1px solid var(--rule-strong); margin-top:12px; }
+  .parallel > div { background:var(--surface); padding:9px 14px; font-size:11.5px; line-height:1.5; color:var(--ink-2); }
+  .parallel .hd { font-family:var(--font-mono); font-size:9px; text-transform:uppercase; letter-spacing:0.05em; background:var(--page-bg); color:var(--ink-muted); }
+  .downsides { border-left:3px solid var(--warn); background:var(--warn-soft); padding:12px 16px; margin-top:12px; }
+  .downsides .lbl { font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; letter-spacing:0.06em; color:var(--warn); }
+  .downsides ul { margin:6px 0 0; padding-left:16px; }
+  .downsides li { font-size:11.5px; line-height:1.55; color:var(--ink-2); margin-bottom:4px; }
+  .contrast { border-left:3px solid var(--alert); background:var(--alert-soft); padding:12px 16px; margin-top:12px; font-size:12.5px; line-height:1.6; color:var(--ink-2); }
+  .contrast b { color:var(--ink); }
+  footer.colophon { text-align:center; font-family:var(--font-mono); font-size:10.5px; color:var(--ink-muted); padding-top:8px; }
+</style>
+
+<div class="bulletin">
+  <div class="sheet">
+    <div class="masthead">
+      <div class="eyebrow">India Trade — Sector &amp; Policy Recommendations · Abstract</div>
+      <h1>Why import substitution: the forex position, the plan, and the precedent</h1>
+      <p class="dek">The opening frame for everything in this program, told as a structured narrative — eight acts, each carrying exactly one storytelling function, each carried by a verified figure rather than rhetoric. The trade imbalance is the stakes; PLI is the plan; ethanol blending is the proof the mechanism works in India; and this program's own findings supply the conflict, the twist, and the turning point.</p>
+      <div class="source-line">STRUCTURE: plan-then-write narrative-function model (arXiv:2406.00554) — one function per section, no repeats, every scene figure-backed. SOURCES: session-verified TRADESTAT/Exim/DPIIT figures; ethanol programme verified against PIB with PRIDs (1831289 · 153363 · 2155558 · 2283118 · Factsheet 150699). Retrieved 2026-07-19.</div>
+    </div>
+
+    <div class="act">
+      <div class="act-marker"><div class="act-num">1</div><div class="act-fn">Establish the world &amp; the stakes</div></div>
+      <div class="act-card">
+        <div class="act-title">India buys $776bn of goods a year and sells $442bn — and the gap is widening</div>
+        <table class="fig">
+          <tbody>
+            <tr><td>Merchandise imports FY2025-26</td><td class="val">$776.0bn</td><td>+7.4% in one year; +26.6% over five</td></tr>
+            <tr><td>Merchandise exports FY2025-26</td><td class="val">$441.7bn</td><td>+0.9% in one year — imports grew <b>5.7×</b> faster over five years</td></tr>
+            <tr><td>Trade deficit</td><td class="val">−$333.2bn</td><td>Widened <b>17.5% in a single year</b>; series: −191 → −265 → −241 → −284 → −333</td></tr>
+            <tr><td>Largest import head</td><td class="val">Fuels $203.4bn</td><td>26.2% of the whole bill — the dependency behind Act 3</td></tr>
+            <tr><td>Largest bilateral deficit</td><td class="val">China −$112.2bn</td><td>More than double the next-largest; unmoved by six years of PLI</td></tr>
+            <tr><td>Currency pressure</td><td class="val">₹ −11.9% / 12mo</td><td>vs ~3.3%/yr in the prior decade — the deficit is paid for in forex</td></tr>
+            <tr><td>The offsetting inflow</td><td class="val">FDI $88.3bn</td><td>Capital in part-funds the goods gap — FDI attraction and import substitution are two halves of one policy</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="act">
+      <div class="act-marker"><div class="act-num">2</div><div class="act-fn">Introduce the plan</div></div>
+      <div class="act-card">
+        <div class="act-title">Attract capital in; substitute imports out</div>
+        <p class="act-text">Two responses, pursued simultaneously: <b>attract</b> capital (FDI liberalization; the country strategies this program maps sector by sector) and <b>substitute</b> imports with domestic production. The chosen instrument for the second is the Production Linked Incentive architecture — <b>₹1.91–1.97 lakh crore of outlay across 14 sectors</b>, paying manufacturers a percentage of incremental output. Everything this program measures — scheme disbursal, IEM implementation, the clearance pipeline, sector verdicts — is instrumentation on whether this plan is working.</p>
+      </div>
+    </div>
+
+    <div class="act hero">
+      <div class="act-marker"><div class="act-num">3</div><div class="act-fn">Foreshadow with a prior victory</div></div>
+      <div class="act-card">
+        <div class="act-title">The precedent: ethanol blending — import substitution that verifiably worked</div>
+        <p class="act-text">Skeptics can point to India's history of failed protectionism. Ethanol blending is the counter-example — a completed, dated, official-figure success in the <b>exact category (mineral fuels) that remains the biggest import head</b>:</p>
+        <table class="fig">
+          <thead><tr><th>Achievement</th><th>Figure</th><th>Source</th></tr></thead>
+          <tbody>
+            <tr><td>Blending rate</td><td class="val">1.53% → 20%</td><td class="src">2013-14 → "20 percent in 2025-26, five years ahead of schedule" — Factsheet 150699; 10% hit Jun 2022, 5 months early (PRID 1831289)</td></tr>
+            <tr><td>Forex saved</td><td class="val">₹1.97 lakh cr</td><td class="src">cumulative since ESY 2014-15 — PRID 2283118 (10 Jul 2026)</td></tr>
+            <tr><td>Crude substituted</td><td class="val">~316 lakh MT</td><td class="src">PRID 2283118</td></tr>
+            <tr><td>Paid to farmers</td><td class="val">&gt;₹1.66 lakh cr</td><td class="src">cumulative; ~₹40,000cr/yr at E20 — PRID 2283118; 2155558</td></tr>
+            <tr><td>Paid to distilleries</td><td class="val">₹1.46 lakh cr</td><td class="src">by OMCs, to Oct 2024 — Explainer 153363</td></tr>
+            <tr><td>CO₂ avoided</td><td class="val">~952 lakh MT</td><td class="src">PRID 2283118</td></tr>
+          </tbody>
+        </table>
+        <div class="parallel">
+          <div class="hd">EBP lever</div><div class="hd">PLI analogue</div>
+          <div>Guaranteed offtake — OMCs obligated to buy, long-term agreements</div><div>Production-linked payout on incremental output (but no guaranteed buyer)</div>
+          <div>Administered, remunerative pricing by feedstock (annual CCEA fixation)</div><div>Fixed incentive percentages by product category</div>
+          <div>Interest subvention for distillery capacity</div><div>Capex support in ISM/SPECS; state subsidies layered on top</div>
+          <div>Tax alignment — GST on blending ethanol cut 18% → 5%</div><div>Customs-duty calibration on inputs (partial — the action items flag gaps)</div>
+        </div>
+        <div class="downsides">
+          <div class="lbl">What the government itself concedes (kept, per this repo's practice)</div>
+          <ul>
+            <li>No consumer price benefit: ethanol's weighted average price (₹71.32/L) now exceeds refined petrol cost — the mandate stands on energy-security and farm-income grounds (PRID 2155558).</li>
+            <li>"Marginal" mileage drop conceded for E10-design vehicles (~0.6 km/L on 20 km/L); one-time rubber-part replacement in older vehicles (Factsheet 150699).</li>
+            <li>Food-vs-fuel is gated, not denied — only DFPD-certified surplus rice/sugar is diverted. Beyond-E20 is uncommitted: the roadmap runs to 31.10.2026, then "decision is yet to be taken."</li>
+          </ul>
+        </div>
+        <div class="contrast"><b>The honest contrast:</b> ethanol took a decade, one fungible commodity, one buyer cartel, one price lever. PLI attempts the same across 14 heterogeneous manufacturing sectors with global supply chains and no guaranteed buyer. The precedent proves the mechanism can work in India — it does not prove it scales. Corroboration that it is still compounding sits in this program's own gates: Fermentation Industries was a 2025 riser in IEM implementation (₹24,237cr) and distilleries hold 504 granted ECs.</div>
+      </div>
+    </div>
+
+    <div class="act dark">
+      <div class="act-marker"><div class="act-num">4</div><div class="act-fn">Introduce the conflict</div></div>
+      <div class="act-card">
+        <div class="act-title">Five years in: the export half works, the import half doesn't yet</div>
+        <p class="act-text">Electronics exports <b>+324%</b> over five years to $54bn; smartphones India's #1 export item; the only declining export chapters are the cotton-apparel ones PLI structurally misses. But electronics imports <b>also doubled</b> to $104.9bn — the input side of the export boom — the deficit widened 17.5% in the latest year, and the government's own incentive has moved slowly: <b>₹28,748cr disbursed, ~15% of outlay</b>, concentrated in two sectors, with one scheme (ACC Battery) at literal zero. Both FY25 green-verdict sectors reversed in FY26 (Electronics FDI −43.5%, Medical Devices −40.4%).</p>
+      </div>
+    </div>
+
+    <div class="act dark">
+      <div class="act-marker"><div class="act-num">5</div><div class="act-fn">The twist</div></div>
+      <div class="act-card">
+        <div class="act-title">The battlefield itself is hard to see</div>
+        <p class="act-text">India's official investment data has documented, admitted defects: state-wise FDI attributed by <b>registered office</b> (Jio Platforms carried 9 of Gujarat's top-10 deals two years before its semiconductor policy existed); the monthly IEM series died with a portal migration; no PLI ministry publishes which beneficiaries actually produce — <b>the underperforming schemes are also the anonymous ones</b>. And the proof the opacity is a choice: a livestock-infrastructure scheme (AHIDF) runs a nightly-refreshed, funnel-complete public dashboard no PLI ministry matches.</p>
+      </div>
+    </div>
+
+    <div class="act hero">
+      <div class="act-marker"><div class="act-num">6</div><div class="act-fn">The turning point</div></div>
+      <div class="act-card">
+        <div class="act-title">Beneath the noise, the machinery has engaged</div>
+        <p class="act-text">The IEM implementation ratio broke to <b>82% in 2024 and 109.9% in 2025</b> — implemented investment exceeded same-year intent for the first time as the 2021-22 intent surge matured into plants. The environmental-clearance register (openly queryable — a discovery of this program) shows grant flow accelerating (198 → 734 → 1,102/yr) and correlates <b>0.96</b> with state implementation values. Pharma became the clean win: FDI +114% <i>after</i> real disbursal, investment at 237% of commitment, <b>Penicillin-G made in India again after thirty years</b>. Gujarat runs the full chain — intent, clearance, production — at 33.8% of national implementation.</p>
+      </div>
+    </div>
+
+    <div class="act">
+      <div class="act-marker"><div class="act-num">7</div><div class="act-fn">The path to resolution</div></div>
+      <div class="act-card">
+        <div class="act-title">Six actions, each carried by a number</div>
+        <p class="act-text">Launch the chemicals/plastics PLI (<b>$36.4bn</b> of fast-growing imports with zero coverage — and chemicals is already the #2 implementation sector without a scheme) · extend PLI Textiles to cotton apparel (the only declining export chapters sit in its blind spot) · deepen electronics <b>component</b> localization through ECMS · fix ACC Battery execution before adding schemes · re-verify the two FDI reversals against a second year · mandate <b>AHIDF-style funnels</b> for every scheme — transparency is itself a deficit-reduction tool.</p>
+      </div>
+    </div>
+
+    <div class="act">
+      <div class="act-marker"><div class="act-num">8</div><div class="act-fn">How the story continues</div></div>
+      <div class="act-card">
+        <div class="act-title">This report refreshes when the data does</div>
+        <p class="act-text">A quarterly workflow re-verifies every figure against its ministry, Parliament-answer and register sources; the seven-gate lifecycle schema (intent → clearance → production → disbursal → capital → trade outcome) tells the next reader exactly where to look. From here: the <a href="project_workflow_schema.html">workflow schema</a> for how each gate is measured, the bulletins for the evidence, the <a href="fy26_verdict_rerun_powerbi.html">action items</a> for what to do about it.</p>
+      </div>
+    </div>
+
+    <footer class="colophon">herrrickshaw/india-trade-sector-policy-recommendations — abstract data: <a href="../data/abstract_forex_import_substitution_2026-07-19.json">data/abstract_forex_import_substitution_2026-07-19.json</a></footer>
+  </div>
+</div>

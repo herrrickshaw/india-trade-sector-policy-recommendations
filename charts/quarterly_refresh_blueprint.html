@@ -1,0 +1,247 @@
+<title>Quarterly Refresh Blueprint — TOGAF Layers × Modern Data Architecture, Applied to This Repo</title>
+<meta name="hz:canvas-width" content="1180">
+<style>
+  :root {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6; --mismatch:#7a5aa8;
+    --font-display:"Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --font-mono:"IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+      --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+      --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+      --data-line:#3987e5; --data-soft:#1c2c40; --mismatch:#a98fd6;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+    --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+    --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+    --data-line:#3987e5; --data-soft:#1c2c40; --mismatch:#a98fd6;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6; --mismatch:#7a5aa8;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; }
+  .bulletin { background:var(--page-bg); color:var(--ink); font-family:var(--font-body); padding:40px 20px 56px; display:flex; justify-content:center; }
+  .sheet { width:100%; max-width:1100px; display:flex; flex-direction:column; gap:28px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:16px; }
+  .eyebrow { font-family:var(--font-mono); font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); display:flex; gap:10px; align-items:center; }
+  .eyebrow::before { content:""; width:7px; height:7px; border-radius:50%; background:var(--accent); }
+  h1 { font-family:var(--font-display); font-weight:500; font-size:clamp(24px,3.1vw,32px); margin:6px 0 0; text-wrap:balance; }
+  .dek { font-size:14px; color:var(--ink-2); max-width:88ch; line-height:1.55; margin:8px 0 0; }
+  .source-line { font-family:var(--font-mono); font-size:11px; color:var(--ink-muted); margin-top:8px; }
+
+  section.block { background:var(--surface); border:1px solid var(--rule-strong); padding:20px 24px; }
+  .block-tag { font-family:var(--font-mono); font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent); }
+  .block-title { font-family:var(--font-display); font-size:20px; font-weight:600; margin:4px 0 10px; }
+  .block-note { font-size:13px; color:var(--ink-2); line-height:1.6; max-width:100ch; }
+  .block-note b { color:var(--ink); }
+
+  /* pipeline schematic */
+  .pipe { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:14px; }
+  .tier { border:1.5px solid var(--rule-strong); padding:12px 14px; position:relative; }
+  .tier::after { content:"→"; position:absolute; right:-14px; top:50%; transform:translate(50%,-50%); color:var(--ink-muted); font-size:16px; background:var(--surface); }
+  .tier:last-child::after { display:none; }
+  .tier .t-hd { font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; letter-spacing:0.07em; margin-bottom:6px; padding-bottom:5px; border-bottom:2px solid; }
+  .tier.ingest .t-hd { color:var(--data-line); border-color:var(--data-line); }
+  .tier.store .t-hd { color:var(--accent); border-color:var(--accent); }
+  .tier.process .t-hd { color:var(--warn); border-color:var(--warn); }
+  .tier.serve .t-hd { color:var(--mismatch); border-color:var(--mismatch); }
+  .tier li { font-size:11px; line-height:1.5; color:var(--ink-2); margin-bottom:3px; }
+  .tier ul { margin:0; padding-left:14px; }
+
+  table.fig { width:100%; border-collapse:collapse; font-size:12px; margin-top:12px; }
+  table.fig th { text-align:left; font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-muted); padding:5px 10px 7px 0; border-bottom:2px solid var(--rule-strong); }
+  table.fig td { padding:8px 10px 8px 0; border-bottom:1px solid var(--rule); vertical-align:top; line-height:1.5; color:var(--ink-2); }
+  table.fig tr:last-child td { border-bottom:none; }
+  td.k { font-weight:700; color:var(--ink); white-space:nowrap; }
+  td.mono { font-family:var(--font-mono); font-size:10.5px; }
+  .gate-chip { display:inline-block; font-family:var(--font-mono); font-size:10px; font-weight:700; background:var(--accent-soft); color:var(--accent); padding:2px 8px; border-radius:999px; margin-right:6px; }
+
+  .vgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:1px; background:var(--rule-strong); border:1px solid var(--rule-strong); margin-top:12px; }
+  .vgrid > div { background:var(--surface); padding:12px 14px; }
+  .vgrid .v-hd { font-family:var(--font-mono); font-size:10px; text-transform:uppercase; letter-spacing:0.08em; color:var(--data-line); margin-bottom:5px; }
+  .vgrid p { margin:0; font-size:11.5px; line-height:1.55; color:var(--ink-2); }
+
+  .weeks { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:12px; }
+  .wk { border-top:3px solid var(--accent); background:var(--page-bg); padding:10px 12px; }
+  .wk .w-n { font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; letter-spacing:0.07em; color:var(--accent); }
+  .wk .w-t { font-weight:700; font-size:12.5px; margin:3px 0 5px; }
+  .wk p { margin:0; font-size:11px; line-height:1.5; color:var(--ink-2); }
+
+  .callout { border-left:3px solid var(--warn); background:var(--warn-soft); padding:12px 16px; margin-top:12px; font-size:12.5px; line-height:1.6; color:var(--ink-2); }
+  .callout b { color:var(--ink); }
+  .fail { border-left:3px solid var(--alert); background:var(--alert-soft); padding:12px 16px; margin-top:12px; }
+  .fail .lbl { font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; letter-spacing:0.06em; color:var(--alert); }
+  .fail ul { margin:6px 0 0; padding-left:16px; }
+  .fail li { font-size:11.5px; line-height:1.55; color:var(--ink-2); margin-bottom:4px; }
+  .pill { display:inline-block; font-family:var(--font-mono); font-size:9px; font-weight:700; padding:1.5px 7px; border-radius:999px; margin-right:6px; }
+  .pill.hi { background:var(--alert-soft); color:var(--alert); }
+  .pill.med { background:var(--warn-soft); color:var(--warn); }
+  .pill.lo { background:var(--accent-soft); color:var(--accent); }
+  footer.colophon { text-align:center; font-family:var(--font-mono); font-size:10.5px; color:var(--ink-muted); padding-top:8px; }
+  @media (max-width:860px){ .pipe,.weeks{grid-template-columns:1fr 1fr;} .tier::after{display:none;} }
+</style>
+
+<div class="bulletin">
+  <div class="sheet">
+    <div class="masthead">
+      <div class="eyebrow">India Trade — Sector &amp; Policy Recommendations · Operating Blueprint</div>
+      <h1>The quarterly refresh, as an architecture: TOGAF layers × the modern data stack</h1>
+      <p class="dek">Upgrades the quarterly workflow from a checklist to an operating blueprint. The skeleton is TOGAF (business → data → application → technology → operations); the mechanics come from the modern-data-architecture playbook — an ingestion layer, an immutable batch store, change-data-capture deltas instead of full re-scans, a Lambda speed layer for mid-quarter events, serving-layer regeneration, and backpressure rules. Every mapped concept points at a real file, source, or command in this repo.</p>
+      <div class="source-line">SOURCES: maintainer-supplied TOGAF architecture blueprint (layering, backlog, success metrics) + Modern Data Architecture visual playbook (storage/processing/CDC/Lambda/backpressure). Mapped 2026-07-19 against .github/workflows/quarterly-dashboard-refresh.yml, QUARTERLY_CHECKLIST.md, and the seven-gate workflow schema.</div>
+    </div>
+
+    <section class="block">
+      <div class="block-tag">Layer 1 · Business architecture</div>
+      <div class="block-title">What a quarter must re-answer</div>
+      <p class="block-note">The mission is unchanged — <b>measure whether import substitution is working, gate by gate</b> — but verdicts decay: both FY25 greens reversed within one year. The quarterly cadence exists to re-measure six KPIs before anyone cites a stale one:</p>
+      <table class="fig">
+        <thead><tr><th>Quarterly KPI</th><th>Baseline (2026-07)</th><th>Gate</th></tr></thead>
+        <tbody>
+          <tr><td class="k">Trade deficit, level + growth</td><td>−$333.2bn, widened 17.5%/yr</td><td><span class="gate-chip">G7</span></td></tr>
+          <tr><td class="k">PLI disbursal % of outlay</td><td>₹28,748cr ≈ 15%; ACC still 0</td><td><span class="gate-chip">G5</span></td></tr>
+          <tr><td class="k">IEM implementation ratio</td><td>82% (2024) → 109.9% (2025)</td><td><span class="gate-chip">G4</span></td></tr>
+          <tr><td class="k">EC grant flow + EC-IEM correlation</td><td>198 → 734 → 1,102/yr; r = 0.96</td><td><span class="gate-chip">G3</span></td></tr>
+          <tr><td class="k">Sector verdict distribution</td><td>1 green / 6 amber / 3 red (FY26)</td><td><span class="gate-chip">G7</span></td></tr>
+          <tr><td class="k">FDI equity inflow</td><td>$58.85bn (+18%)</td><td><span class="gate-chip">G6</span></td></tr>
+        </tbody>
+      </table>
+      <div class="callout"><b>Editorial invariants carry across refreshes:</b> the three-numbers rule (inflow ≠ committed ≠ disbursed), visible revisions (A− → B, never silent), published negative results, and a PRID on every PIB figure.</div>
+    </section>
+
+    <section class="block">
+      <div class="block-tag">Layer 2 · Data architecture</div>
+      <div class="block-title">Ingestion → immutable store → processing → serving</div>
+      <div class="pipe">
+        <div class="tier ingest"><div class="t-hd">Ingestion · 14 sources</div><ul>
+          <li>PIB (browser-UA curl, PRID-cited)</li>
+          <li>PARIVESH open JSON API (one call, ~114k rows)</li>
+          <li>DPIIT newsletter/factsheet (JS SPA → browser)</li>
+          <li>sansad.in answers (r.jina.ai proxy)</li>
+          <li>TRADESTAT · Exim trackers · ministry dashboards</li>
+        </ul></div>
+        <div class="tier store"><div class="t-hd">Immutable batch store</div><ul>
+          <li>Dated <b>data/*_YYYY-MM-DD.json</b> snapshots — append, never mutate</li>
+          <li>Corrections ledger = the audit log</li>
+          <li>Derived: state×sector×status CSV, master-report JSON, manifest</li>
+        </ul></div>
+        <div class="tier process"><div class="t-hd">Processing</div><ul>
+          <li>Verification cross-checks (grand totals; TRADESTAT-vs-Exim ≤0.3%)</li>
+          <li>Verdict re-run · EC-IEM correlation · implementation ratio</li>
+          <li>Grade revisions computed openly</li>
+        </ul></div>
+        <div class="tier serve"><div class="t-hd">Serving</div><ul>
+          <li>GitHub Pages bulletins (interactive)</li>
+          <li>Synthesizer → master report .docx/.pdf</li>
+          <li>Deck .pptx/.pdf · WeasyPrint compendium</li>
+          <li>Regenerated, never hand-edited</li>
+        </ul></div>
+      </div>
+      <div class="vgrid">
+        <div><div class="v-hd">Volume</div><p>114k EC proposals in one call; 2.1M trade rows in the companion warehouse; small enough for files, big enough to need aggregates.</p></div>
+        <div><div class="v-hd">Variety</div><p>JSON APIs, HTML releases, proxied PDFs, JS single-page apps, XLS/CSV — each source keeps its documented access method.</p></div>
+        <div><div class="v-hd">Velocity</div><p>Nightly (AHIDF) → monthly (Exim, trade) → quarterly (FDI newsletter) → session (Parliament) → annual (ministry reports). Refresh follows native cadence.</p></div>
+        <div><div class="v-hd">Veracity</div><p>Registered-office FDI, dead IEM series, anonymous beneficiaries, bot-blocked portals — defects are first-class data, restated wherever used.</p></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-tag">Layer 2b · Change data capture</div>
+      <div class="block-title">Each quarter pulls deltas, not full re-scans</div>
+      <p class="block-note">The playbook's CDC principle, applied to documents: <b>capture what changed since the last snapshot</b>, and obey the dedup mandate — PIB re-announces the same cumulative figures across releases, so the latest cumulative <b>supersedes</b>, is never summed, and the trajectory is logged.</p>
+      <table class="fig">
+        <thead><tr><th>Gate</th><th>Source</th><th>Quarterly delta method</th><th>Validation gate</th></tr></thead>
+        <tbody>
+          <tr><td class="k"><span class="gate-chip">G1</span>Policy</td><td>PIB ministry pages</td><td>New PRIDs since last refresh; cumulative supersedes</td><td class="mono">PRID on every figure</td></tr>
+          <tr><td class="k"><span class="gate-chip">G2</span>IEM A</td><td>DPIIT PDFs / Parliament</td><td>New filings PDF, else sansad answers (monthly series is dead)</td><td class="mono">Grand-Total cross-check</td></tr>
+          <tr><td class="k"><span class="gate-chip">G3</span>Land+EC</td><td>PARIVESH API</td><td>Full re-pull, diff proposal IDs: new grants, ToR→EC moves</td><td class="mono">row monotonicity + 5 flagship spot-checks</td></tr>
+          <tr><td class="k"><span class="gate-chip">G4</span>IEM B</td><td>DPIIT / Parliament</td><td>New year appended; ratio + correlation recomputed</td><td class="mono">same-year ratio basis</td></tr>
+          <tr><td class="k"><span class="gate-chip">G5</span>Disbursal</td><td>PIB + Parliament answers</td><td>Per-scheme totals; Parliament is the laggard-scheme channel</td><td class="mono">three-numbers rule</td></tr>
+          <tr><td class="k"><span class="gate-chip">G6</span>FDI</td><td>DPIIT quarterly newsletter</td><td>The one natively quarterly source; sector+state tables re-extracted</td><td class="mono">registered-office defect stated</td></tr>
+          <tr><td class="k"><span class="gate-chip">G7</span>Trade</td><td>TRADESTAT + Exim</td><td>New monthly cumulative; provisional→final in Apr–May</td><td class="mono">cross-validation ≤ 0.3%</td></tr>
+        </tbody>
+      </table>
+      <div class="callout"><b>Lambda speed layer:</b> mid-quarter events (Budget, Cabinet approvals, a new scheme) patch only the affected bulletin, dated — then the next quarterly batch re-verifies everything. Freshness between batches, accuracy at each batch.</div>
+    </section>
+
+    <section class="block">
+      <div class="block-tag">Layers 3–4 · Application &amp; technology</div>
+      <div class="block-title">The seven-step pipeline and what runs it</div>
+      <table class="fig">
+        <thead><tr><th>#</th><th>Step</th><th>What happens</th><th>Tooling</th></tr></thead>
+        <tbody>
+          <tr><td class="k">1</td><td class="k">Delta ingest</td><td>CDC table top-to-bottom; dated snapshots written; empty deltas logged as findings</td><td class="mono">curl · browser pane · PARIVESH API · agents</td></tr>
+          <tr><td class="k">2</td><td class="k">Verify</td><td>Cross-checks; schema sanity on new JSONs; failures block the quarter</td><td class="mono">snippet checks</td></tr>
+          <tr><td class="k">3</td><td class="k">Recompute</td><td>Verdicts, correlation, ratio, open grade revisions</td><td class="mono">python (in-bulletin methods)</td></tr>
+          <tr><td class="k">4</td><td class="k">Bulletins</td><td>Data arrays + retrieved dates advanced; new findings sections</td><td class="mono">charts/*.html (data-JSON-first)</td></tr>
+          <tr><td class="k">5</td><td class="k">Master report</td><td>Master JSON + corrections ledger + manifest → docx/pdf regenerated</td><td class="mono">report_synthesizer.py --manifest</td></tr>
+          <tr><td class="k">6</td><td class="k">Deck + compendium</td><td>Slides re-captured; compendium re-paginated</td><td class="mono">build_deck.sh · build_compendium.py (Homebrew python — SIP blocks system Python's pango)</td></tr>
+          <tr><td class="k">7</td><td class="k">Publish</td><td>Commit, push, tag the quarter; Pages serves automatically</td><td class="mono">git · quarterly-dashboard-refresh.yml</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="block">
+      <div class="block-tag">Layer 5 · Operations</div>
+      <div class="block-title">The refresh month, week by week</div>
+      <p class="block-note">Refresh months <b>July · October · January · April</b> — trailing the DPIIT quarterly newsletter and Parliament sessions, with full-FY trade figures landing in the April cycle. The cycle maps onto <b>SAFe for Government's</b> cadence model: each refresh is a Program Increment (plan the deltas → execute → demo the regenerated compendium as the "working system"); the backlog below is the long-lived prioritized backlog replacing project-based thinking; quality/compliance run inside the flow as the verification gates, not end-stage inspection; and the corrections ledger plays the governance-for-accountability role stage-gate documents would.</p>
+      <div class="weeks">
+        <div class="wk"><div class="w-n">Week 1</div><div class="w-t">Delta ingest</div><p>Run the CDC table; write snapshots; a source with no delta is logged as a finding, not skipped.</p></div>
+        <div class="wk"><div class="w-n">Week 2</div><div class="w-t">Verify + analyze</div><p>Cross-checks, KPI recomputation, draft revisions with old → new shown.</p></div>
+        <div class="wk"><div class="w-n">Week 3</div><div class="w-t">Regenerate</div><p>Bulletins → master report → deck → compendium; visual pagination check.</p></div>
+        <div class="wk"><div class="w-n">Week 4</div><div class="w-t">Publish + review</div><p>Push, tag, corrections ledger, next-quarter watch-list (beyond-E20 decision due 31.10.2026; flat-10% tariff expiry).</p></div>
+      </div>
+      <div class="fail">
+        <div class="lbl">Known failure modes (all previously encountered) &amp; the standing response</div>
+        <ul>
+          <li><b>Source dies or migrates</b> (precedent: monthly IEM series) — document the death in the bulletin, switch to the Parliament channel, keep the last-good snapshot.</li>
+          <li><b>Agent session limits mid-sweep</b> — relaunch with the partial lesson folded into the brief; never restart blind.</li>
+          <li><b>PIB cumulative re-announcements</b> — dedup mandate: supersede, never sum.</li>
+          <li><b>Bot-block hardens</b> (precedent: NIRYAT TLS) — named fallback per source; describe-from-documentation only as a labeled last resort.</li>
+          <li><b>Backpressure rules:</b> bounded agent fan-out; spaced PIB requests; blocked pushes handed to the maintainer, not retried.</li>
+        </ul>
+      </div>
+      <table class="fig">
+        <thead><tr><th>Success metric, checked every refresh</th></tr></thead>
+        <tbody>
+          <tr><td>All 7 gates re-measured with a dated snapshot each</td></tr>
+          <tr><td>Zero silent changes — every revision displayed old → new</td></tr>
+          <tr><td>TRADESTAT-vs-Exim within 0.3% before verdicts publish</td></tr>
+          <tr><td>Compendium + deck rebuilt; page/slide counts recorded</td></tr>
+          <tr><td>Every bulletin's retrieved date advanced to the quarter</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="block">
+      <div class="block-tag">Backlog</div>
+      <div class="block-title">What would make the next refresh cheaper</div>
+      <table class="fig">
+        <tbody>
+          <tr><td><span class="pill hi">HIGH</span></td><td class="k">parivesh_diff.py</td><td>Scripted API re-pull + proposal-ID diff — turns the largest manual delta into one command</td></tr>
+          <tr><td><span class="pill lo">SHIPPED</span></td><td class="k">pib_prid_sweep</td><td><b>Shipped 2026-07-19 as <code>scripts/pib_index.py</code></b> — day-wise SQLite index (<code>data/pib_index.sqlite</code>) of releases by ministry + factsheets + cited-PRID seeding; quarterly delta = <code>--update --factsheets --seed-cited</code></td></tr>
+          <tr><td><span class="pill med">MED</span></td><td class="k">JSON schema check in CI</td><td>Required keys (purpose, retrieved, sources) validated at the ingestion boundary</td></tr>
+          <tr><td><span class="pill med">MED</span></td><td class="k">FDI newsletter fetcher</td><td>The one natively quarterly source shouldn't need a browser session</td></tr>
+          <tr><td><span class="pill lo">LOW</span></td><td class="k">Freshness dashboard</td><td>Per-gate last-snapshot date + delta size, visible to readers</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer class="colophon">herrrickshaw/india-trade-sector-policy-recommendations — blueprint data: <a href="../data/quarterly_refresh_blueprint_2026-07-19.json">data/quarterly_refresh_blueprint_2026-07-19.json</a> · operator view: <a href="https://github.com/herrrickshaw/india-trade-sector-policy-recommendations/blob/main/.github/QUARTERLY_CHECKLIST.md">QUARTERLY_CHECKLIST.md</a></footer>
+  </div>
+</div>

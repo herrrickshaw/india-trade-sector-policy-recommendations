@@ -1,0 +1,101 @@
+/* Shared print stylesheet for the compendium — WeasyPrint target.
+   Applied AFTER each bulletin's own styles; forces light theme, A4
+   pagination, running headers, page numbers, and sane break behavior. */
+
+@page {
+  size: A4;
+  margin: 16mm 13mm 15mm 13mm;
+  @top-left {
+    content: string(sectiontitle);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 7pt; letter-spacing: 0.06em; text-transform: uppercase;
+    color: #82867a;
+  }
+  @top-right {
+    content: "India Trade — Sector & Policy Recommendations";
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 7pt; letter-spacing: 0.06em; text-transform: uppercase;
+    color: #82867a;
+  }
+  @bottom-right {
+    content: counter(page) " / " string(totalpages);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 8pt; color: #82867a;
+    font-variant-numeric: tabular-nums;
+  }
+  @bottom-left {
+    content: "Compiled 19 Jul 2026 · herrrickshaw.github.io/india-trade-sector-policy-recommendations";
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 6.5pt; color: #a8ab9f;
+  }
+}
+
+/* The section's h1 feeds the running header; a hidden span feeds the total. */
+h1 { string-set: sectiontitle content(); }
+#pgtotal { string-set: totalpages content(); position: absolute; width: 0; height: 0; overflow: hidden; color: transparent; }
+
+/* ---- Force light rendering regardless of tokens ---- */
+html { background: #ffffff; }
+/* block, not flex: WeasyPrint treats a page-spanning flex container as
+   hard-to-fragment and pushes it to a fresh page, blanking each section's
+   first page */
+.bulletin { background: #ffffff !important; padding: 0 !important; display: block !important; }
+.sheet { max-width: none !important; display: block !important; }
+.sheet > * { margin-bottom: 12pt; }
+
+/* ---- Typography scale-down for A4 ---- */
+body { font-size: 9.5pt; }
+h1 { font-size: 17pt !important; }
+.block-title { font-size: 12.5pt !important; }
+.dek { font-size: 8.5pt !important; max-width: none !important; }
+.source-line { font-size: 6.5pt !important; }
+.block-tag { font-size: 7pt !important; }
+
+/* ---- Tables: kill screen min-widths, shrink, wrap ---- */
+.tbl-scroll, .icra-scroll, .state-scroll { overflow: visible !important; border: none !important; }
+table { min-width: 0 !important; width: 100% !important; font-size: 6.8pt !important; table-layout: auto; }
+table th { font-size: 5.8pt !important; position: static !important; }
+table td, table th { padding: 3pt 4pt 3pt 0 !important; word-wrap: break-word; }
+.read-cell, .reason { max-width: none !important; font-size: 6.4pt !important; }
+
+/* ---- Break control ---- */
+section.block, .panel, .gc-row, .co-group, .sec-card, .def, .action, .step,
+.gate, .div-card, .kpi, .scheme-card, .state-card, .finding-card, .callout,
+.errata, .api-callout, .exim, .reading { break-inside: avoid; }
+table tr { break-inside: avoid; }
+h1, h2, .block-head { break-after: avoid; }
+section.block { margin-top: 4pt; }
+
+/* ---- Narrative-abstract bulletin: WeasyPrint mishandles its act grid
+   (cards collapse into the 110px marker track, one word per line) —
+   linearize: marker becomes an inline heading row, card full-width. ---- */
+.act { display: block !important; padding-bottom: 6pt !important; }
+.act::before { display: none !important; content: none !important; }
+.act-marker { display: block !important; margin-bottom: 4pt; }
+.act-num { display: inline-block !important; width: 16pt !important; height: 16pt !important;
+  line-height: 16pt !important; font-size: 10.5pt !important; text-align: center; vertical-align: middle; }
+.act-fn { display: inline !important; max-width: none !important; text-align: left !important;
+  margin-left: 5pt; vertical-align: middle; }
+.act-card { break-inside: auto !important; padding: 10pt 12pt !important; }
+.act-title { font-size: 12.5pt !important; }
+.act-text { font-size: 8.5pt !important; }
+.parallel > div, .downsides, .contrast { font-size: 8pt !important; }
+
+/* ---- Screen-only chrome that makes no sense on paper ---- */
+.toc { display: none !important; }           /* in-page anchor nav */
+.slicers, .slicer-group { display: none !important; }  /* interactive slicers */
+.tooltip { display: none !important; }
+
+/* ---- Cards & badges tightened ---- */
+.gc-badge { width: 34pt !important; height: 34pt !important; font-size: 14pt !important; }
+.gc-row { grid-template-columns: 40pt 1fr !important; gap: 8pt !important; }
+.gc-ev, .gc-asof { font-size: 7pt !important; }
+.co-chip, .chip, .st-chip, .status-pill, .diff-pill, .case-pill, .verdict-pill,
+.rank-chip, .sector-tag { font-size: 5.8pt !important; padding: 1pt 4pt !important; }
+.action .a-why, .step .p, .div-meaning, .sec-read, .sec-leaders { font-size: 7pt !important; }
+.errata li, .callout p, .api-callout, .reading { font-size: 7.5pt !important; }
+.kpi .val { font-size: 15pt !important; }
+
+/* Links: show as plain ink on paper */
+a { color: inherit !important; text-decoration: none !important; }
+footer.colophon { font-size: 6pt !important; }

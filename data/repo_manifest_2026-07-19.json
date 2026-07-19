@@ -105,10 +105,24 @@
       ]
     },
     {
+      "title": "Abstract: why import substitution (forex position, PLI plan, ethanol precedent)",
+      "chart": "charts/abstract_forex_import_substitution.html",
+      "data": [
+        "data/abstract_forex_import_substitution_2026-07-19.json"
+      ]
+    },
+    {
       "title": "Project workflow & data-sourcing schema",
       "chart": "charts/project_workflow_schema.html",
       "data": [
         "data/project_workflow_schema_2026-07-19.json"
+      ]
+    },
+    {
+      "title": "Quarterly refresh blueprint (TOGAF layers x modern data architecture)",
+      "chart": "charts/quarterly_refresh_blueprint.html",
+      "data": [
+        "data/quarterly_refresh_blueprint_2026-07-19.json"
       ]
     },
     {

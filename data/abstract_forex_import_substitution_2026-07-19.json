@@ -1,0 +1,179 @@
+{
+  "purpose": "The abstract for the whole program: WHY import substitution -- told as a structured narrative. States the forex and import/export position that motivates the policy architecture this repo evaluates, traces the causal chain to the PLI instrument, grounds plausibility in the ethanol-blending precedent, and then lets the program's own findings play out as the story's conflict, twist and turning point. This is the opening frame the compendium and every bulletin hang from.",
+  "retrieved": "2026-07-19",
+  "method": "Narrative structure follows the plan-then-write, narrative-function model (arXiv:2406.00554): the story is outlined as a fixed sequence of named narrative functions -- each section fulfills exactly one function, no function repeats, and every scene must be carried by a verified figure, not rhetoric. Trade/forex figures are session-verified (TRADESTAT; Exim/MOCI cross-validated within 0.3%; DPIIT factsheets). Ethanol figures verified against PIB with PRIDs.",
+  "narrative_outline": [
+    {
+      "act": 1,
+      "function": "ESTABLISH THE WORLD AND THE STAKES",
+      "section": "the_position"
+    },
+    {
+      "act": 2,
+      "function": "INTRODUCE THE PLAN",
+      "section": "the_plan"
+    },
+    {
+      "act": 3,
+      "function": "FORESHADOW WITH A PRIOR VICTORY",
+      "section": "the_precedent_ethanol"
+    },
+    {
+      "act": 4,
+      "function": "INTRODUCE THE CONFLICT",
+      "section": "the_conflict"
+    },
+    {
+      "act": 5,
+      "function": "THE TWIST",
+      "section": "the_twist"
+    },
+    {
+      "act": 6,
+      "function": "THE TURNING POINT",
+      "section": "the_turning_point"
+    },
+    {
+      "act": 7,
+      "function": "THE PATH TO RESOLUTION",
+      "section": "the_resolution_path"
+    },
+    {
+      "act": 8,
+      "function": "HOW THE STORY CONTINUES",
+      "section": "the_continuation"
+    }
+  ],
+  "the_position": {
+    "function": "Act 1 -- Establish the world and the stakes",
+    "headline": "India buys $776bn of goods a year and sells $442bn -- and the gap is widening, not closing.",
+    "figures": [
+      {
+        "metric": "Merchandise imports FY2025-26",
+        "value": "$776.0bn",
+        "note": "+7.4% in one year; +26.6% over five"
+      },
+      {
+        "metric": "Merchandise exports FY2025-26",
+        "value": "$441.7bn",
+        "note": "+0.9% in one year; +4.7% over five -- imports grew 5.7x faster"
+      },
+      {
+        "metric": "Trade deficit FY2025-26",
+        "value": "-$333.2bn",
+        "note": "Widened 17.5% in a single year; the five-year series runs -191 -> -265 -> -241 -> -284 -> -333"
+      },
+      {
+        "metric": "Largest single import head",
+        "value": "Mineral fuels $203.4bn",
+        "note": "26.2% of the entire import bill -- the energy dependency behind Act 3's precedent"
+      },
+      {
+        "metric": "Largest bilateral deficit",
+        "value": "China -$112.2bn",
+        "note": "More than double the next-largest; unmoved by six years of Atmanirbhar Bharat/PLI"
+      },
+      {
+        "metric": "Currency pressure",
+        "value": "Rupee -11.9% in 12 months (to Jul 2026)",
+        "note": "Against a prior-decade average of ~3.3%/yr -- every widening of the deficit is paid for in forex"
+      },
+      {
+        "metric": "The offsetting inflow",
+        "value": "FDI $88.3bn total Apr-Feb FY26; $58.85bn equity (+18%)",
+        "note": "Capital inflows part-fund the deficit -- why FDI attraction and import substitution are two halves of one policy"
+      }
+    ]
+  },
+  "the_plan": {
+    "function": "Act 2 -- Introduce the plan",
+    "text": "Two responses, pursued simultaneously: ATTRACT capital in (FDI liberalization; the country strategies this repo maps sector by sector) and SUBSTITUTE imports with domestic production. The chosen instrument for the second is the Production Linked Incentive architecture -- Rs 1.91-1.97 lakh crore of outlay across 14 sectors, paying manufacturers a percentage of incremental output. Everything this repo measures -- scheme disbursal, IEM implementation, environmental-clearance pipeline, sector verdicts -- is instrumentation on whether this plan is working."
+  },
+  "the_precedent_ethanol": {
+    "function": "Act 3 -- Foreshadow with a prior victory",
+    "why_it_matters": "Skeptics of import substitution can point to India's own history of failed protectionism. The ethanol blending programme is the counter-example: a completed, dated, official-figure import-substitution success in the exact category (mineral fuels) that remains the biggest import head -- and its design DNA (demand guarantee + administered price + capacity subvention + tax alignment) is recognizably what PLI attempts at manufacturing scale.",
+    "verified_figures": [
+      {
+        "metric": "Blending achieved",
+        "value": "1.53% (2013-14) -> 10% (Jun 2022, 5 months early) -> 14.6% (2023-24) -> 19.24% full-year 2024-25 -> '20 percent in 2025-26, five years ahead of schedule'",
+        "source": "PRID 1831289 (05 Jun 2022); PIB Factsheet 150699 (05 Jul 2026) -- the Factsheet's own formulation used verbatim; no single 'E20 day' exists in PIB text"
+      },
+      {
+        "metric": "Forex saved, cumulative",
+        "value": "Rs 1.97 lakh crore since ESY 2014-15",
+        "source": "PRID 2283118 (10 Jul 2026); trajectory: Rs 41,500cr at the 10% milestone (PRID 1831289) -> Rs 1.44 lakh cr to Jul 2025 (PRID 2155558)"
+      },
+      {
+        "metric": "Crude oil substituted",
+        "value": "~316 lakh metric tonnes cumulative",
+        "source": "PRID 2283118 (10 Jul 2026)"
+      },
+      {
+        "metric": "Paid to farmers",
+        "value": ">Rs 1.66 lakh crore cumulative; ~Rs 40,000cr/yr at E20",
+        "source": "PRID 2283118; PRID 2155558"
+      },
+      {
+        "metric": "Paid to distilleries",
+        "value": "Rs 1,45,930 crore by OMCs (to Oct 2024)",
+        "source": "PIB Explainer 153363 (24 Oct 2024)"
+      },
+      {
+        "metric": "CO2 avoided",
+        "value": "~952 lakh metric tonnes (~30 crore trees equivalent at the earlier 736 mark)",
+        "source": "PRID 2283118; PRID 2155558"
+      },
+      {
+        "metric": "The instruments",
+        "value": "Administered ethanol pricing (annual CCEA fixation), guaranteed OMC offtake + long-term agreements, Ethanol Interest Subvention Scheme for distillery capacity, GST cut 18% -> 5%, free inter-state movement (IDR Act amendment 2016), multi-feedstock expansion",
+        "source": "PRID 2283118 (single-sentence enumeration); PRID 2097307"
+      }
+    ],
+    "design_parallels": [
+      {
+        "ebp_lever": "Guaranteed offtake: oil marketing companies obligated to purchase ethanol",
+        "pli_analogue": "Production-linked payout guarantees demand-side revenue on incremental output"
+      },
+      {
+        "ebp_lever": "Administered, remunerative pricing by feedstock",
+        "pli_analogue": "Fixed incentive percentages by product category"
+      },
+      {
+        "ebp_lever": "Interest subvention for distillery capacity build-out",
+        "pli_analogue": "Capex support in ISM/SPECS; state capital subsidies layered on top"
+      },
+      {
+        "ebp_lever": "Tax alignment (GST cut on ethanol for blending)",
+        "pli_analogue": "Customs duty calibration on inputs (partial; the action items flag gaps)"
+      }
+    ],
+    "corroboration_in_this_repo": "The ethanol wave is visible in this repo's own gate data: Fermentation Industries was a 2025 riser in IEM implementation (Rs 24,237cr) and distilleries hold 504 granted ECs -- the precedent is still compounding.",
+    "honest_contrast": "The ethanol result took a decade, one fungible commodity, one buyer cartel (OMCs) and one price lever. PLI attempts the same across 14 heterogeneous manufacturing sectors with global supply chains and no guaranteed buyer. The precedent proves the mechanism can work in India; it does not prove it scales.",
+    "officially_admitted_downsides": [
+      "No consumer price benefit: MoPNG concedes ethanol's weighted average price (Rs 71.32/L, Jul 2025) now exceeds refined petrol cost -- the mandate continues on energy-security and farm-income grounds, not price (PRID 2155558).",
+      "Mileage: 'marginal' efficiency drop conceded for E10-design vehicles (~0.6 km/L on a 20 km/L car per the Maruti figure PIB quotes); older vehicles may need one-time rubber-part replacement (Factsheet 150699; PRID 2155558).",
+      "Food-vs-fuel is gated, not denied: only DFPD-certified surplus rice/sugar is diverted (52 LMT rice + 40 LMT sugar approved).",
+      "Beyond-E20 is uncommitted: the roadmap runs 'to E-20 upto 31.10.2026'; beyond that 'decision is yet to be taken' (PRID 2155558)."
+    ]
+  },
+  "the_conflict": {
+    "function": "Act 4 -- Introduce the conflict",
+    "text": "Five years in, the plan's results are genuinely mixed -- and the tension is measurable. The export half works: electronics exports +324% over five years to $54bn, smartphones India's #1 export item, and the only declining export chapters are the cotton-apparel ones PLI structurally misses. But the import half does not yet: electronics imports also doubled to $104.9bn (the input side of the export boom), the deficit widened 17.5% in the latest single year, and the government's own incentive money has moved slowly -- Rs 28,748cr disbursed, roughly 15% of outlay, concentrated in two sectors, with one scheme (ACC Battery) at literal zero. Both sectors that earned green verdicts on FY25 data reversed hard in FY26 (Electronics FDI -43.5%, Medical Devices -40.4%)."
+  },
+  "the_twist": {
+    "function": "Act 5 -- The twist",
+    "text": "The battlefield itself is hard to see: India's official investment data has documented, admitted defects. State-wise FDI is attributed by registered office, not factory location -- proven via Jio Platforms carrying 9 of Gujarat's top-10 deals two years before its semiconductor policy existed. The monthly IEM statistics series died with a portal migration. No PLI ministry publishes which beneficiaries actually produce; the underperforming schemes are also the anonymous ones. And the counter-example that proves the opacity is chosen, not necessary: a livestock-infrastructure scheme (AHIDF) runs a nightly-refreshed, funnel-complete public dashboard that no PLI ministry matches."
+  },
+  "the_turning_point": {
+    "function": "Act 6 -- The turning point",
+    "text": "Beneath the noise, the implementation machinery has visibly engaged. The IEM implementation ratio broke upward to 82% in 2024 and 109.9% in 2025 -- implemented investment exceeded same-year intent for the first time, as the 2021-22 intent surge matured into plants. The environmental-clearance register (openly queryable, a discovery of this program) shows grant flow accelerating (198 -> 734 -> 1,102/yr) and correlates 0.96 with state implementation values. Pharma became the story's clean win: FDI +114% AFTER real disbursal, investment at 237% of commitment, Penicillin-G made in India again after thirty years. Gujarat runs the full chain -- intent, clearance, production -- at 33.8% of national implementation."
+  },
+  "the_resolution_path": {
+    "function": "Act 7 -- The path to resolution",
+    "text": "Six ranked actions, each carried by a number from this program: launch the chemicals/plastics PLI ($36.4bn of fast-growing imports with zero coverage -- and chemicals is already the #2 implementation sector without a scheme); extend PLI Textiles to cotton apparel (the only declining export chapters sit in its blind spot); deepen electronics COMPONENT localization through ECMS (the import bill is the input side of the export success); fix ACC Battery execution before adding schemes; re-verify the two FDI reversals against a second year; and mandate AHIDF-style funnels for every scheme -- transparency is itself a deficit-reduction tool."
+  },
+  "the_continuation": {
+    "function": "Act 8 -- How the story continues",
+    "text": "The story does not end at publication: a quarterly workflow re-verifies every figure against its ministry, Parliament-answer and register sources, and the seven-gate lifecycle schema (intent -> clearance -> production -> disbursal -> capital -> trade outcome) tells the next reader exactly where to look. From this abstract, read the workflow schema for how each gate is measured, the bulletins for the evidence, and the action items for what to do about it."
+  }
+}

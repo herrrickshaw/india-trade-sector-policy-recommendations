@@ -1,0 +1,120 @@
+{
+  "purpose": "The operating blueprint for how this repository refreshes every quarter -- upgrading the quarterly workflow from a checklist to a full architecture document. Structure: TOGAF layers (Business / Data / Application / Technology / Operations) as the skeleton, with the Modern Data Architecture playbook's concepts (ingestion layer, immutable batch storage, change-data-capture deltas instead of full re-scans, Lambda batch+speed layers, serving layer, backpressure thresholds, the four V's) mapped onto the repo's actual machinery. Every mapped concept points at a real file, source, or command in this repo -- nothing aspirational.",
+  "retrieved": "2026-07-19",
+  "method": "Synthesized from two architecture models supplied by the maintainer: a TOGAF architecture blueprint (Business/Application/Data/Technology/Deployment layering, backlog, known issues, success metrics) and a Modern Data Architecture visual playbook (distributed storage -> processing engines -> real-time ops & CDC; Lambda architecture; CDC mechanics, dedup mandate and backpressure). Concepts were kept only where they map to something this repo genuinely does or should do each quarter.",
+
+  "business_architecture": {
+    "mission": "Measure whether India's import-substitution program (PLI + FDI attraction) is actually working, gate by gate, from primary sources only -- and re-measure every quarter so the verdicts stay current instead of decaying into a stale snapshot.",
+    "stakeholders": [
+      {"who": "Repo readers / policy analysts", "interest": "Current, sourced verdicts; visible corrections; the ability to re-verify every figure"},
+      {"who": "FDI pitch audiences", "interest": "The 23-slide deck and compendium stay dated to the latest quarter"},
+      {"who": "Future maintainers (possibly not the original author)", "interest": "A refresh they can execute from the runbook alone -- the workflow schema names each gate's source and blind spot"},
+      {"who": "The companion repo (india-trade-data-analysis)", "interest": "Chapter rankings and trade series it feeds forward stay aligned"}
+    ],
+    "quarterly_kpis": [
+      {"kpi": "Trade deficit (level + 1y growth)", "current_baseline": "-$333.2bn, widened 17.5%", "gate": 7},
+      {"kpi": "PLI disbursal % of outlay (per scheme + total)", "current_baseline": "Rs 28,748cr = ~15%; ACC still 0", "gate": 5},
+      {"kpi": "IEM implementation ratio (Part B / Part A, same year)", "current_baseline": "82% (2024) -> 109.9% (2025)", "gate": 4},
+      {"kpi": "EC grant flow (per year) + EC-IEM correlation", "current_baseline": "198 -> 734 -> 1,102/yr; r = 0.96", "gate": 3},
+      {"kpi": "Sector verdict distribution (green/amber/red)", "current_baseline": "1G / 6A / 3R on FY26 data", "gate": 7},
+      {"kpi": "FDI equity inflow (total + per verdict sector)", "current_baseline": "$58.85bn equity (+18%)", "gate": 6}
+    ],
+    "editorial_invariants": [
+      "Three-numbers rule: FDI inflow, PLI committed investment, and PLI disbursal are never conflated",
+      "Grades and verdicts are stated judgments with visible criteria; revisions displayed (A- -> B), never silent",
+      "Negative results are published (POSCO-JSW absent from EC register; ACC at zero)",
+      "Non-PIB attributions labeled; every PIB figure carries its PRID"
+    ]
+  },
+
+  "data_architecture": {
+    "framing": "The Modern Data Architecture stack, mapped: an ingestion layer of 14 primary sources feeds an immutable batch store (dated data/*.json snapshots), processing recomputes the analyses, and a serving layer (GitHub Pages bulletins + synthesized documents) publishes. The critical upgrade this blueprint formalizes is CHANGE DATA CAPTURE: each quarter pulls each source's delta, not a full re-scan.",
+    "four_vs_mapped": {
+      "volume": "113,804 PARIVESH EC proposals in one API call; 2.1M-row trade warehouse in the companion repo; 801-row state x sector x status aggregate -- large enough to need aggregates, small enough for files over databases",
+      "variety": "Open JSON APIs (PARIVESH), HTML releases (PIB), PDFs behind proxies (sansad.in via r.jina.ai), JS single-page apps (DPIIT publications -- browser required), XLS/CSV (TRADESTAT, Exim), one JS-rendered dashboard (AHIDF)",
+      "velocity": "Nightly (AHIDF dashboard) > monthly (Exim trackers, trade press releases) > quarterly (DPIIT FDI newsletter) > session-based (Parliament answers) > annual (ministry reports) -- the refresh cadence per source follows its native velocity, not one blanket schedule",
+      "veracity": "The twist of the whole program: registered-office FDI attribution, a dead monthly IEM series, anonymous PLI beneficiaries, bot-blocked portals (NIRYAT). Veracity rules are therefore first-class: every figure re-verified against its source at refresh, defects documented in the bulletin that uses the data"
+    },
+    "storage_tiers": {
+      "batch_layer_immutable": "data/*_YYYY-MM-DD.json -- each quarter APPENDS a new dated snapshot; prior snapshots are never mutated. This is the Lambda batch layer / immutable master dataset: the corrections ledger in the master report is its audit log, and any figure can be traced to the quarter it entered",
+      "warehouse_derived": "Derived aggregates rebuilt from the batch layer each quarter: parivesh_ec_state_sector_status CSV, master_report JSON (the single source the synthesizer, deck and dashboards regenerate from), repo_manifest JSON (the catalog)",
+      "serving_layer": "charts/*.html bulletins on GitHub Pages (interactive), plus synthesized artifacts: master report .docx/.pdf, 23-slide deck .pptx/.pdf, the WeasyPrint compendium. Serving is regenerated, never hand-edited -- the JSON is the source of truth"
+    },
+    "change_data_capture_per_gate": [
+      {"gate": 1, "name": "Announcement / policy", "source": "PIB (pib.gov.in, curl with browser UA)", "delta_method": "New PRIDs since last refresh date on ministry release pages (Commerce, DPIIT, Heavy Industries, Chemicals & Fertilizers, MoPNG); cumulative figures superseded, not summed -- the dedup mandate: PIB re-announces the same cumulative number across releases, keep the latest and log the trajectory", "validation": "Every new figure cited with PRID; cross-scheme roundups contain no company names -- go to sector releases"},
+      {"gate": 2, "name": "IEM Part A (intent)", "source": "DPIIT IEM statistics (eodb/IEM PDFs; monthly series dead since portal migration)", "delta_method": "New annual/half-year PDF when published; otherwise Parliament answers (sansad.in getFile via r.jina.ai proxy) for interim state-wise numbers", "validation": "Cross-check state totals against the Grand Total row before use"},
+      {"gate": 3, "name": "Land + EC", "source": "PARIVESH 2.0 open JSON API (advanceSearchData, majorClearanceType=1)", "delta_method": "Re-pull the full register (one call, ~114k rows), diff proposal IDs against the stored quarter's CSV: new grants, status transitions ToR->EC, new flagship proposals", "validation": "Row-count monotonicity; spot-check 5 known flagship proposal numbers still resolve"},
+      {"gate": 4, "name": "IEM Part B (production)", "source": "DPIIT implementation data + Parliament answers", "delta_method": "New year's Part B filings when released; recompute implementation ratio and EC-IEM correlation with the new year appended", "validation": "Ratio uses same-year intent; correlation recomputed on 24+25 window rolling forward"},
+      {"gate": 5, "name": "PLI disbursal", "source": "PIB + ministry sites + Lok/Rajya Sabha answers", "delta_method": "New disbursal totals per scheme (Parliament answers are the reliable channel for laggard schemes); FY flow split updated; grade revisions computed openly", "validation": "Three-numbers rule enforced; secondary-source figures flagged as such"},
+      {"gate": 6, "name": "FDI equity", "source": "DPIIT quarterly FDI newsletter + annual factsheet (JS SPA -- browser pane)", "delta_method": "New quarterly newsletter each quarter (the one natively quarterly source); sector + state tables re-extracted", "validation": "Registered-office defect stated wherever state-wise data is used"},
+      {"gate": 7, "name": "Trade outcome", "source": "TRADESTAT / Commerce monthly press release + Exim Bank trackers", "delta_method": "New monthly cumulative rows; full-FY figures replace provisional ones in April-May refresh", "validation": "TRADESTAT vs Exim cross-validation within 0.3% before verdicts re-run"}
+    ],
+    "backpressure_and_thresholds": [
+      "Agent/session limits are real backpressure: research fan-out is bounded, and a died agent is relaunched with the partial lesson folded into its brief (never restarted blind)",
+      "Bot-blocked sources (NIRYAT TLS, marketwatch/moneycontrol) are documented dead-ends with named fallbacks -- do not retry them each quarter",
+      "Rate-limited sources (PIB) are pulled with browser UA and spaced requests; the PARIVESH pull is one call by design",
+      "The write-rejection analogue: CI and the public-push secret classifier gate what reaches the public repo; a blocked push is handed to the maintainer, not retried"
+    ]
+  },
+
+  "application_architecture": {
+    "quarterly_pipeline_dag": [
+      {"step": 1, "name": "Delta ingest", "what": "Pull each gate's delta per the CDC table; write new dated data/*.json snapshots", "tooling": "curl + browser pane + PARIVESH API; agents for PIB sweeps"},
+      {"step": 2, "name": "Verify", "what": "Cross-checks: grand totals, TRADESTAT-vs-Exim, PRID resolution, schema sanity on every new JSON", "tooling": "Manual + snippet checks; failures block the quarter"},
+      {"step": 3, "name": "Recompute analyses", "what": "Verdict re-run on new FY data, EC-IEM correlation, implementation ratio, grade revisions (displayed old -> new)", "tooling": "Python snippets stored in the bulletins' data JSONs"},
+      {"step": 4, "name": "Regenerate bulletins", "what": "Update each affected chart's data arrays + retrieved dates; add new findings sections", "tooling": "charts/*.html (data-JSON-first)"},
+      {"step": 5, "name": "Master report + manifest", "what": "Fold changes into data/master_report JSON (incl. corrections ledger) and the repo manifest", "tooling": "report_synthesizer.py --manifest regenerates docx/pdf"},
+      {"step": 6, "name": "Deck + compendium", "what": "Rebuild the pitch deck (templates/build_deck.sh) and the WeasyPrint compendium (scripts/build_compendium.py)", "tooling": "Chrome dump-dom -> print/print.css -> WeasyPrint -> pypdf merge"},
+      {"step": 7, "name": "Publish", "what": "Commit + push; GitHub Pages serves automatically; tag the quarter", "tooling": "git; .github/workflows/quarterly-dashboard-refresh.yml opens the reminder issue"}
+    ],
+    "lambda_speed_layer": "Between quarterly batches, major events (Union Budget, Cabinet scheme approvals, a new PLI launch) get an event-driven patch: only the affected bulletin's JSON + chart update, with the event dated -- merged and fully re-verified at the next quarterly batch. This is the Lambda speed layer: low-latency freshness for the newest data, with the quarterly batch as the accurate, complete recomputation.",
+    "components": [
+      {"component": "report_synthesizer.py", "role": "JSON -> PDF/DOCX/PPTX; --manifest batch mode over the repo manifest"},
+      {"component": "scripts/build_compendium.py + print/print.css", "role": "All bulletins -> one paginated A4 PDF (running headers, continuous page numbers, bookmarks)"},
+      {"component": "templates/build_deck.sh", "role": "Bulletin/dashboard HTML -> slide PNGs -> PPTX -> PDF"},
+      {"component": ".github/workflows/quarterly-dashboard-refresh.yml + QUARTERLY_CHECKLIST.md", "role": "Scheduler + the per-quarter reminder issue; the checklist is now the operator view of this blueprint"}
+    ]
+  },
+
+  "technology_architecture": [
+    {"tech": "GitHub Pages", "role": "Serving layer -- no build step, every chart and JSON served raw"},
+    {"tech": "GitHub Actions (cron)", "role": "Quarterly trigger; opens the refresh issue with the checklist"},
+    {"tech": "Headless Chrome --dump-dom", "role": "Executes bulletin JavaScript so print rendering and slide capture see the full DOM"},
+    {"tech": "WeasyPrint under /opt/homebrew/bin/python3", "role": "Print-grade pagination; system Python cannot load pango under SIP -- Homebrew Python is a hard requirement"},
+    {"tech": "python-pptx + soffice", "role": "Deck PPTX assembly and PDF conversion"},
+    {"tech": "Access techniques", "role": "PIB via browser-UA curl (cite PRID); sansad.in PDFs via r.jina.ai proxy; PARIVESH open JSON API; DPIIT SPA via browser pane; pharma-dept.gov.in (not pharmaceuticals.gov.in)"}
+  ],
+
+  "operations_runbook": {
+    "cadence": "Refresh months: July, October, January, April -- chosen to trail the DPIIT quarterly FDI newsletter and Parliament sessions, and to catch full-FY trade figures in the April-May cycle",
+    "cadence_alignment_safe_gov": "The quarterly cycle maps cleanly onto SAFe for Government's cadence model (framework.scaledagile.com/government): each refresh is a Program Increment (plan the quarter's deltas -> execute -> demo the regenerated compendium/deck as 'working system'); the blueprint backlog is the long-lived, prioritized backlog replacing one-off projects ('continuous flow of value', not project-based thinking); quality and compliance are built into the flow as the verification gates rather than end-stage inspection; and governance-for-accountability is served by the corrections ledger and visible revisions instead of stage-gate documents. Lean estimating over upfront forecasting: the runbook budgets weeks, not a Gantt chart.",
+    "weeks": [
+      {"week": 1, "focus": "Delta ingest", "tasks": "Run the CDC table top to bottom; write dated snapshots; log which sources produced no delta (a finding, not a skip)"},
+      {"week": 2, "focus": "Verification + analysis", "tasks": "Cross-checks; recompute KPIs; draft grade/verdict revisions with old -> new shown"},
+      {"week": 3, "focus": "Regeneration", "tasks": "Bulletins -> master report -> synthesizer -> deck -> compendium; visual check of print pagination"},
+      {"week": 4, "focus": "Publish + review", "tasks": "Commit, push, tag; update corrections ledger; note next quarter's watch-list (e.g., beyond-E20 decision due 31.10.2026; flat-10% tariff expiry)"}
+    ],
+    "success_metrics_per_refresh": [
+      "All 7 gates re-measured with a dated snapshot each",
+      "Every revised figure/grade displayed as a visible revision -- zero silent changes",
+      "TRADESTAT-vs-Exim cross-validation within 0.3% before verdicts publish",
+      "Compendium and deck rebuilt and page/slide counts recorded",
+      "Every bulletin's retrieved date advanced to the refresh quarter"
+    ],
+    "known_failure_modes": [
+      {"failure": "Source portal migrates or dies (precedent: monthly IEM series)", "response": "Document the death in the bulletin, switch to the Parliament-answer channel, keep the last-good snapshot"},
+      {"failure": "Agent session limits mid-sweep", "response": "Relaunch with the partial lesson folded into the brief"},
+      {"failure": "PIB re-announces cumulative figures", "response": "Dedup mandate: latest cumulative supersedes; trajectory logged, never summed"},
+      {"failure": "Bot-block hardens (NIRYAT precedent)", "response": "Named fallback per source in the CDC table; describe-from-documentation as last resort, labeled"},
+      {"failure": "WeasyPrint/pango environment breaks", "response": "Homebrew Python requirement documented here and in the build script header"}
+    ]
+  },
+
+  "backlog": [
+    {"item": "parivesh_diff.py -- scripted quarterly API re-pull + proposal-ID diff report", "priority": "HIGH", "rationale": "Turns the largest manual delta into one command"},
+    {"item": "pib_prid_sweep -- date-windowed PRID collector per ministry page", "priority": "HIGH", "rationale": "Gate 1/5 deltas are currently agent-driven; a collector makes them reproducible", "status": "SHIPPED 2026-07-19 as scripts/pib_index.py -- day-wise SQLite index (data/pib_index.sqlite) of releases by ministry + PIB factsheets + cited-PRID seeding; quarterly delta = `python3 scripts/pib_index.py --update --factsheets --seed-cited`"},
+    {"item": "JSON schema check in CI for data/*.json (required keys: purpose, retrieved, sources)", "priority": "MEDIUM", "rationale": "Schema validation at the ingestion boundary, per the playbook"},
+    {"item": "FDI newsletter fetcher for the DPIIT SPA once a stable URL pattern is confirmed", "priority": "MEDIUM", "rationale": "The one natively quarterly source should not need a browser session"},
+    {"item": "Refresh-dashboard page listing each gate's last snapshot date + delta size", "priority": "LOW", "rationale": "The serving layer's freshness, made visible to readers"}
+  ]
+}
