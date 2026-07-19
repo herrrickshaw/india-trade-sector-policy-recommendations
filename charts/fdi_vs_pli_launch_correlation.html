@@ -1,0 +1,330 @@
+<title>Did the Money Actually Show Up? FDI Equity vs. PLI Scheme Launch Dates</title>
+<meta name="hz:canvas-width" content="1180">
+<style>
+  :root {
+    color-scheme: light;
+    --page-bg:      #eef1ea;
+    --surface:      #fcfcfa;
+    --ink:          #14180f;
+    --ink-2:        #4f5348;
+    --ink-muted:    #82867a;
+    --rule:         #d7dace;
+    --rule-strong:  #c3c7b8;
+    --accent:       #1f5f5b;
+    --accent-soft:  #dbe9e6;
+    --alert:        #a5402c;
+    --alert-soft:   #f3ded7;
+    --warn:         #c98a1f;
+    --warn-soft:    #f3e9d5;
+    --mismatch:     #7a5aa8;
+    --mismatch-soft:#e7defa;
+    --data-line:    #2a78d6;
+    --font-display: "Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    --font-body: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --font-mono: "IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+      --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634; --alert:#e0785f; --alert-soft:#3a241d;
+      --warn:#e0b23f; --warn-soft:#3a3220; --mismatch:#b39ce0; --mismatch-soft:#2e2540; --data-line:#3987e5;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+    --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634; --alert:#e0785f; --alert-soft:#3a241d;
+    --warn:#e0b23f; --warn-soft:#3a3220; --mismatch:#b39ce0; --mismatch-soft:#2e2540; --data-line:#3987e5;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6; --alert:#a5402c; --alert-soft:#f3ded7;
+    --warn:#c98a1f; --warn-soft:#f3e9d5; --mismatch:#7a5aa8; --mismatch-soft:#e7defa; --data-line:#2a78d6;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  .bulletin { background: var(--page-bg); color: var(--ink); font-family: var(--font-body); padding: 40px 20px 56px; display: flex; justify-content: center; }
+  .sheet { width: 100%; max-width: 1160px; display: flex; flex-direction: column; gap: 32px; }
+
+  .masthead { border-bottom: 2px solid var(--ink); padding-bottom: 16px; display: flex; flex-direction: column; gap: 6px; }
+  .eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); display: flex; gap: 10px; align-items: center; }
+  .eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); display: inline-block; }
+  h1 { font-family: var(--font-display); font-weight: 500; font-size: clamp(24px, 3.2vw, 33px); margin: 2px 0 0; text-wrap: balance; letter-spacing: -0.01em; }
+  .dek { font-size: 14px; color: var(--ink-2); max-width: 86ch; line-height: 1.55; margin: 4px 0 0; }
+  .source-line { font-family: var(--font-mono); font-size: 11px; color: var(--ink-muted); margin-top: 6px; }
+
+  .toc { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 12.5px; }
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sep { color: var(--rule-strong); }
+
+  section.block { display: flex; flex-direction: column; gap: 14px; scroll-margin-top: 20px; }
+  .block-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid var(--rule-strong); padding-bottom: 8px; }
+  .block-title { font-family: var(--font-display); font-size: 22px; margin: 0; }
+  .block-tag { font-family: var(--font-mono); font-size: 12px; color: var(--ink-muted); }
+
+  .panel { background: var(--surface); border: 1px solid var(--rule-strong); padding: 16px 20px; display: flex; flex-direction: column; gap: 10px; }
+
+  .finding-card { border: 1px solid var(--rule-strong); border-left: 3px solid var(--alert); background: var(--surface); padding: 14px 18px; display: flex; flex-direction: column; gap: 6px; }
+  .finding-text { font-size: 13.5px; line-height: 1.6; color: var(--ink); }
+  .finding-source { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-muted); }
+  .finding-why { font-size: 12.5px; line-height: 1.55; color: var(--ink-2); padding-top: 4px; border-top: 1px dashed var(--rule); }
+  .finding-why b { color: var(--ink); }
+
+  .ibef-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 12px 0; border-top: 1px solid var(--rule); }
+  .ibef-row:first-of-type { border-top: none; padding-top: 0; }
+  .ibef-claim { font-size: 12.5px; color: var(--ink-2); line-height: 1.5; }
+  .ibef-claim .k { font-family: var(--font-mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--data-line); display: block; margin-bottom: 3px; }
+  .ibef-check { font-size: 12.5px; color: var(--ink-2); line-height: 1.5; }
+  .ibef-check .k { font-family: var(--font-mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); display: block; margin-bottom: 3px; }
+  @media (max-width: 700px) { .ibef-row { grid-template-columns: 1fr; } }
+
+  .sector-card { background: var(--surface); border: 1px solid var(--rule-strong); padding: 18px 22px; display: flex; flex-direction: column; gap: 12px; }
+  .sector-top { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .sector-name { font-family: var(--font-display); font-size: 18px; margin: 0; }
+  .sector-hs { font-family: var(--font-mono); font-size: 11px; color: var(--ink-muted); margin-left: 8px; }
+  .verdict-pill { font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; padding: 3px 10px; border-radius: 2px; white-space: nowrap; }
+  .verdict-rose { background: var(--accent-soft); color: var(--accent); }
+  .verdict-fell { background: var(--alert-soft); color: var(--alert); }
+  .verdict-confounded { background: var(--warn-soft); color: var(--warn); }
+
+  .chart-row { display: flex; align-items: flex-end; gap: 6px; height: 100px; padding: 4px 0; }
+  .bar-col { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; height: 100%; justify-content: flex-end; position: relative; }
+  .bar { width: 100%; max-width: 34px; background: var(--rule-strong); border-radius: 2px 2px 0 0; }
+  .bar-col.launch .bar { background: var(--warn); }
+  .bar-year { font-family: var(--font-mono); font-size: 9px; color: var(--ink-muted); white-space: nowrap; }
+  .bar-col.launch .bar-year { color: var(--warn); font-weight: 700; }
+  .launch-tag { position: absolute; top: -16px; font-family: var(--font-mono); font-size: 8px; color: var(--warn); white-space: nowrap; }
+
+  .proxy-note { font-size: 11.5px; color: var(--ink-muted); font-style: italic; line-height: 1.5; }
+  .verdict-detail { font-size: 12.5px; color: var(--ink-2); line-height: 1.6; }
+  .confounders { display: flex; flex-direction: column; gap: 5px; padding-top: 4px; border-top: 1px dashed var(--rule); }
+  .confounders-label { font-family: var(--font-mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-muted); }
+  .confounders ul { margin: 0; padding-left: 16px; display: flex; flex-direction: column; gap: 4px; }
+  .confounders li { font-size: 11.5px; line-height: 1.5; color: var(--ink-2); }
+
+  .control-summary { display: flex; gap: 2px; background: var(--rule); border: 1px solid var(--rule-strong); }
+  .control-tile { flex: 1; background: var(--surface); padding: 20px 24px; display: flex; flex-direction: column; gap: 6px; }
+  .control-tile .label { font-family: var(--font-mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-muted); }
+  .control-tile .value { font-family: var(--font-display); font-size: 34px; font-weight: 600; }
+  .control-tile.neg .value { color: var(--alert); }
+  .control-tile.pos .value { color: var(--accent); }
+
+  table.state-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  table.state-table th { text-align: left; font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-muted); padding: 6px 10px 8px 0; border-bottom: 1px solid var(--rule-strong); }
+  table.state-table td { padding: 9px 10px 9px 0; border-bottom: 1px solid var(--rule); vertical-align: top; line-height: 1.5; }
+  table.state-table td.state-name { font-weight: 600; color: var(--ink); white-space: nowrap; }
+  table.state-table td.policy { font-size: 11px; color: var(--ink-muted); }
+  .state-scroll { overflow-x: auto; }
+
+  .flags-box { border: 1px solid var(--rule-strong); border-left: 3px solid var(--warn); background: var(--warn-soft); padding: 14px 18px; display: flex; flex-direction: column; gap: 8px; }
+  .flags-label { font-family: var(--font-mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--warn); }
+  .flags-box ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+  .flags-box li { font-size: 12px; line-height: 1.5; color: var(--ink-2); }
+
+  .errata { border: 1px solid var(--rule-strong); border-left: 3px solid var(--alert); background: var(--surface); padding: 16px 20px; display: flex; flex-direction: column; gap: 10px; }
+  .errata-title { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--alert); }
+  .errata ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+  .errata li { font-size: 13px; line-height: 1.5; color: var(--ink-2); }
+  .errata li b { color: var(--ink); }
+
+  footer.colophon { text-align: center; font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-muted); padding-top: 8px; }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  @media (max-width: 760px) { .grid2 { grid-template-columns: 1fr; } }
+</style>
+
+<div class="bulletin">
+  <div class="sheet">
+    <div class="masthead">
+      <div class="eyebrow">India Trade — Sector &amp; Policy Recommendations</div>
+      <h1>Did the money actually show up? FDI equity inflow vs. PLI scheme launch dates</h1>
+      <p class="dek">Tests whether India's PLI schemes caused a measurable rise in REAL inbound FDI equity (DPIIT/RBI-tracked money that arrived) — not the government's self-reported "committed investment" figures cited elsewhere in this repo, and not IEM filings, which are intent, not capital. Uses DPIIT sector/state FDI-equity tables, PIB scheme-launch announcements, and cross-checks every claim against IBEF's published FDI benchmark page.</p>
+      <div class="source-line">SOURCES: 8 parallel research passes, each citing primary DPIIT (dpiit.gov.in) sector/state FDI-equity tables and PIB (pib.gov.in) scheme-launch releases directly. Cross-checked against ibef.org/economy/foreign-direct-investment (DPIIT-sourced, retrieved 2026-07-19). Retrieved 2026-07-19.</div>
+    </div>
+
+    <div class="toc">
+      <a href="#quality">Data-quality findings</a><span class="sep">·</span>
+      <a href="#ibef">IBEF cross-check</a><span class="sep">·</span>
+      <a href="#sectors">Sector verdicts</a><span class="sep">·</span>
+      <a href="#control">Control-sector test</a><span class="sep">·</span>
+      <a href="#states">State-level findings</a>
+    </div>
+
+    <section class="block" id="quality">
+      <div class="block-head"><h2 class="block-title">Before the numbers: how this data actually works</h2><span class="block-tag">Read this first — it changes how every figure below should be read</span></div>
+      <div id="qualityFindings"></div>
+    </section>
+
+    <section class="block" id="ibef">
+      <div class="block-head"><h2 class="block-title">Cross-check against IBEF's FDI page</h2><span class="block-tag">ibef.org/economy/foreign-direct-investment — DPIIT-sourced, updated Jul 2026</span></div>
+      <div class="panel" id="ibefPanel"></div>
+    </section>
+
+    <section class="block" id="sectors">
+      <div class="block-head"><h2 class="block-title">Sector by sector: launch date vs. actual FDI equity inflow</h2><span class="block-tag">Amber bar = the fiscal year a scheme launched in</span></div>
+      <div id="sectorCards" style="display:flex; flex-direction:column; gap:16px;"></div>
+    </section>
+
+    <section class="block" id="control">
+      <div class="block-head"><h2 class="block-title">The control test: what happened in sectors with no PLI scheme at all</h2><span class="block-tag">Inorganic Chemicals · Plastics (proxy) · Aircraft &amp; Spacecraft (proxy), FY18-19 → FY24-25</span></div>
+      <div class="control-summary">
+        <div class="control-tile neg"><div class="label">No-PLI control sectors, avg. change</div><div class="value">−44.6%</div></div>
+        <div class="control-tile pos"><div class="label">PLI sectors, avg. change</div><div class="value">+30.7%</div></div>
+      </div>
+      <div class="panel">
+        <p class="verdict-detail">The gap is real, but it's carried almost entirely by Pharma and Medical Devices' clean climbs plus Electronics' fragile late-cycle spike — not by all six PLI sectors evenly. Auto, Steel, and White Goods declined at rates comparable to or worse than the no-PLI control sectors over the identical window. <b>The honest reading is sector-specific, not a blanket PLI effect</b>: roughly half of the PLI sectors show a real, distinguishable-from-baseline rise; half do not.</p>
+      </div>
+    </section>
+
+    <section class="block" id="states">
+      <div class="block-head"><h2 class="block-title">State-level: does the hub-state FDI data hold up?</h2><span class="block-tag">DPIIT state-wise data exists only from October 2019 onward</span></div>
+      <div class="state-scroll">
+        <table class="state-table" id="stateTable">
+          <thead><tr><th>State</th><th>Policy</th><th>FDI equity inflow, $M (by FY)</th><th>Finding</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="errata">
+      <div class="errata-title">Errata &amp; methodology notes</div>
+      <ul>
+        <li><b>No verdict here is a proof of causation.</b> Every sector/state finding is a correlation test against a launch date, with named confounders attached — not a controlled experiment.</li>
+        <li><b>DPIIT revises historical figures release to release</b> ("revalidated/reconciled in line with RBI") — treat every number as accurate to a few percent, not to the decimal.</li>
+        <li><b>Domestic-capital-dominance findings (Jio/Gujarat, Tata Electronics/Assam) are illustrative smoking-gun cases</b>, verified for those specific deals — not a full sector/state accounting of foreign vs. domestic capital.</li>
+        <li><b>IEM data, where it appears, is investment intent</b> (mixes domestic and foreign capital) — it is not used as evidence for any verdict above.</li>
+        <li>Underlying data: <a href="../data/fdi_vs_pli_launch_2026-07-19.json">data/fdi_vs_pli_launch_2026-07-19.json</a>.</li>
+      </ul>
+    </div>
+
+    <footer class="colophon">herrrickshaw/india-trade-sector-policy-recommendations — derived research synthesis; not an official government publication or investment solicitation</footer>
+  </div>
+</div>
+
+<script>
+(function () {
+  var qualityFindings = [
+    {text: "DPIIT's own metadata document states “Documentation on methodology: Not applicable” for both methodology and quality documentation of its FDI statistics.", source: "DPIIT, ‘Metadata for FDI Equity Inflow in India’ (Jun 2025), §4.1–4.2", why: "There is no official explanation of how a transaction gets assigned to a state or sector — every downstream finding here inherits that opacity."},
+    {text: "State-wise FDI is attributed by the investee company's REGISTERED OFFICE address, not the actual factory/project location. Before Oct 2019 it was bucketed even more coarsely, by which of RBI's 17 regional offices processed the filing.", source: "FIFP (DPIIT) FAQ Q8–Q9; RBI Form FC-GPR; NCAER 2016 report Box 2.4", why: "A state's headline FDI number can reflect where a company is incorporated, not where it built a plant — and no caveat about this appears on today's published tables."},
+    {text: "Concrete proof: at least 9 of Gujarat's top-10 FDI remittances (Oct 2019–Dec 2022) were a single company — Jio Platforms (registered Ahmedabad; real HQ Navi Mumbai) — receiving its known multi-investor raise (Google, Meta, Saudi PIF, KKR…). “Computer Software & Hardware” was 66% of ALL Gujarat FDI in that window.", source: "DPIIT Table 6.2(iii), ‘FDI Synopsis on State — Gujarat’", why: "This is why Gujarat topped the national state-FDI table in FY2020-21 (36.79% share, $21.89bn) — two years before the Semiconductor Policy existed."},
+    {text: "Several flagship ‘hub’ investments already published elsewhere in this repo — Tata Electronics' Assam ATMP, Tata's Agratas &amp; Reliance's Jamnagar battery gigafactories, Tata Steel Kalinganagar, JSW Vijayanagar, Ola Electric — are domestic capital and structurally cannot appear in FDI-equity data at all.", source: "Company filings cross-checked per-deal; Assam's FY2024-25 FDI equity inflow was just $2.88M against a Rs 27,000cr ATMP headline", why: "A state or sector can have a real, large, successful investment that never shows up as ‘FDI’ — a flat/negative FDI verdict does not mean the investment didn't happen."},
+    {text: "DPIIT's ~63 sector categories map poorly onto PLI scope almost everywhere. ‘Computer Hardware’ is just 0.10% of its parent category's 21-year total; ‘Metallurgical Industries’ is only ~13% Ferrous (steel) cumulatively, and recent tables report NO Ferrous line at all. No category exists for batteries, white goods, or aircraft.", source: "DPIIT Table 6.2(ii)/(x); CY2023 & H1-CY2024 sub-sector tables", why: "Every sector verdict below rests on an imperfect proxy category, named explicitly rather than presented as a clean match."},
+    {text: "IEM filing data still exists (DPIIT Annual Report appendices) but has no ‘Electronics’ category at all, mixes domestic and foreign capital, and its own intent-to-implementation gap is large (Metallurgical Industries Part-A intended 2021: Rs 1,72,208cr vs. Part-B actually implemented: Rs 1,29,984cr).", source: "DPIIT Annual Report 2024-25, Appendix III–VI", why: "IEM data is a weak corroborating signal at best — not usable as an FDI proxy or a clean pre/post-PLI test."}
+  ];
+  var qc = document.getElementById("qualityFindings");
+  qualityFindings.forEach(function (f) {
+    var card = document.createElement("div");
+    card.className = "finding-card";
+    card.style.marginBottom = "10px";
+    card.innerHTML = '<div class="finding-text">' + f.text + '</div><div class="finding-source">' + f.source + '</div><div class="finding-why"><b>Why it matters:</b> ' + f.why + '</div>';
+    qc.appendChild(card);
+  });
+
+  var ibefRows = [
+    {claim: "Computer Software/Hardware is India's #2 cumulative FDI sector at 15.82% share ($124.64bn) — IBEF's table doesn't itemize Metallurgical, Pharma, Electrical Equipment, or Medical Devices separately.", check: "Confirmed and sharpened: this repo's own research found ‘Computer Hardware’ is only 0.10% of that category's cumulative total — the rest is software/platform FDI (Jio Platforms, Flipkart, Accenture). IBEF's headline number, read as ‘electronics manufacturing FDI,’ would be off by roughly three orders of magnitude."},
+    {claim: "Top-5 states by cumulative FDI: Maharashtra (31.4%), Karnataka (20.7%), Gujarat (14.8%), Delhi (12.9%), Tamil Nadu (5.7%).", check: "None of Odisha, Telangana, Andhra Pradesh, or Assam — this repo's own sourced ‘emergent hub’ states — crack the national top 5. Now explained, not contradictory: their flagship investors are domestic capital that structurally cannot register as FDI. ‘Hub’ status and ‘FDI share’ measure genuinely different things."},
+    {claim: "Top-5 source countries: Singapore (24.7%), Mauritius (23.7%), USA (10.4%), Netherlands (7.2%), Japan (6.1%) — Korea doesn't place.", check: "Consistent with the routing/round-tripping issue — the US State Dept's 2024 India Investment Climate Statement states Mauritius/Singapore capital is ‘mostly round-tripping.’ Tempers how literally to read the country-strategy bulletin's Japan/Korea/Denmark framing — that capital may be routing through Singapore/Netherlands instead."},
+    {claim: "PLI disbursement (a THIRD distinct figure): Rs 10,114cr FY25 across 14 sectors, Electronics + Pharma together ~70% (Rs 5,732cr + Rs 2,328cr).", check: "Consistent with this bulletin's finding that Electronics and Pharma/Medical Devices are exactly the sectors showing the clearest real FDI-equity gains — disbursement, investment realization, and actual inflow all point the same direction only there."},
+    {claim: "Manufacturing FDI rose 69% from the 2004-14 decade to the 2014-24 decade, attributed by IBEF to ‘Make in India, PLI.’", check: "Exactly the kind of loose comparison this bulletin stress-tests — PLI (2020-21) covers at most the final 3–4 years of that 10-year ‘after’ window. This repo's launch-date-anchored, sector-by-sector test (below) shows a genuinely mixed result, not the clean uplift IBEF's framing implies."}
+  ];
+  var ibefPanel = document.getElementById("ibefPanel");
+  ibefRows.forEach(function (r) {
+    var row = document.createElement("div");
+    row.className = "ibef-row";
+    row.innerHTML = '<div class="ibef-claim"><span class="k">IBEF says</span>' + r.claim + '</div><div class="ibef-check"><span class="k">Cross-check</span>' + r.check + '</div>';
+    ibefPanel.appendChild(row);
+  });
+
+  var sectors = [
+    {name: "Electronics & Semiconductor Manufacturing", hs: "84–85", verdict: "rose", verdictLabel: "FDI rose, lagged 2–3yr", proxy: "Proxy: “Electronics” (narrower, distinct from the software-dominated “Computer Software & Hardware” bucket, excluded)",
+      years: {"FY19":451.88,"FY20":422.36,"FY21":375.32,"FY22":416.99,"FY23":554.53,"FY24":695.74,"FY25":2043.04}, launch: "FY22",
+      detail: "Rose with a 2–3yr lag after PLI-Electronics (2020) and ISM 1.0 (Dec 2021) — by FY24-25, +352% vs. FY18-19, moving OPPOSITE the national FDI cycle (which fell 22% and 3% those same two years). The strongest sector-specific signal in this whole analysis.",
+      confounders: ["FY24-25's jump to $2,043M couldn't be traced to specific deals — DPIIT publishes no company-level detail for this category.", "ISM 2.0 (2026) is too recent to assess — not evaluated."]},
+    {name: "Specialty Steel & Metals", hs: "72–73", verdict: "fell", verdictLabel: "FDI collapsed post-launch", proxy: "Proxy: “Metallurgical Industries” — only ~13% Ferrous (steel) cumulatively; recent tables show NO Ferrous line item at all",
+      years: {"FY19":598.84,"FY20":2101,"FY21":1340.47,"FY22":2272.35,"FY23":218.59,"FY24":286.21,"FY25":950.99}, launch: "FY22",
+      detail: "Collapsed ~84% and ~79% below the pre-launch average in the two years right after the Jul 2021 Cabinet approval. FY24-25 recovered but stayed ~29% below baseline. No inflection matches any actual scheme milestone.",
+      confounders: ["Global steel-price cycle (2021 spike, 2022-23 collapse) explains the pattern at least as well as policy.", "POSCO-JSW's $7.3bn JV cash didn't move until Apr 2026 — not yet in this data.", "Proxy category is aluminium/non-ferrous-dominated, not steel."]},
+    {name: "Auto, EV & Battery", hs: "87", verdict: "fell", verdictLabel: "One-year spike, fully reverted", proxy: "Proxy: “Automobile Industry”. No battery/ACC category exists at all — unanswerable from official data",
+      years: {"FY19":2623.22,"FY20":2824.03,"FY21":1637.45,"FY22":6993.55,"FY23":1902.23,"FY24":1524.22,"FY25":1586.31}, launch: "FY22",
+      detail: "FY21-22's +327% spike fully reverted (−73% the next year) and stayed below pre-PLI levels for 3 straight years — FY24-25 sits 40% below FY18-19. The ‘PLI worked’ story only survives cherry-picking one year.",
+      confounders: ["The FY21-22 spike traces to TPG Rise Climate's PE deal into Tata Passenger EV — not PLI-induced manufacturing capex.", "Tata Agratas & Reliance's gigafactories are domestic capital — structurally invisible to this data."]},
+    {name: "Pharmaceuticals & Bulk Drug APIs", hs: "29–30", verdict: "confounded", verdictLabel: "Rose, but timing points to COVID", proxy: "Proxy: “Drugs & Pharmaceuticals” — cannot separate bulk-drug/API FDI from formulations or M&A",
+      years: {"FY19":265.97,"FY20":517.80,"FY21":1490.49,"FY22":1414.24,"FY23":2058.41,"FY24":1064.23,"FY25":891.43}, launch: "FY21",
+      detail: "The biggest jump (+202%) landed in FY20-21, BEFORE either pharma PLI scheme had disbursed anything or even opened applications. Most recent 2yrs: FDI falling while PLI's own investment-realization figures keep climbing — a real decoupling.",
+      confounders: ["Global COVID/API-security reshoring (India was ~68% China-dependent on APIs) is the dominant alternative explanation, not a footnote.", "A single large stake-sale deal could dominate any one year — none confirmed for the FY22-23 peak."]},
+    {name: "White Goods Components", hs: "84 (subset)", verdict: "fell", verdictLabel: "No sustained rise", proxy: "Proxy: “Electrical Equipments” — the scheme's real scope straddles 3 different DPIIT buckets",
+      years: {"FY19":976.50,"FY20":571.38,"FY21":1411.95,"FY22":683.70,"FY23":895.19,"FY24":1049.37,"FY25":531.49}, launch: "FY22",
+      detail: "The launch year itself (CY2021) was the lowest value in the whole series. FY24-25 fell to roughly half the pre-launch level — no sustained post-launch rise visible.",
+      confounders: ["Scheme reached full 85-company subscription only Jan 2026 — the real investment wave may still be ahead; revisit in FY27-28/29 data.", "Named investors (Daikin, Samsung, LG, Danfoss) may route capital through Singapore/Netherlands, though unconfirmed for these specific deals."]},
+    {name: "Medical Devices", hs: "90 (subset)", verdict: "rose", verdictLabel: "Cleanest positive result", proxy: "Proxy: “Medical and Surgical Appliances” — the cleanest category match in this whole analysis",
+      years: {"FY19":156.72,"FY21":68.91,"FY22":208.05,"FY23":397.20,"FY24":482.83,"FY25":626.99}, launch: "FY21",
+      detail: "Fell to a trough in the COVID/launch year, then rose every single year since — ~4x the FY18-19 baseline by FY24-25. Share of India's total FDI climbed 0.35%→1.25% while total FDI stayed flat — not just riding a national boom.",
+      confounders: ["3 MNC deals (Siemens Healthineers, Medtronic, GE-Wipro) are each individually comparable to a whole year's sector total — the rise could be a few corporate decisions, not a broad response.", "100% automatic-route FDI was already open since 2014, 6yrs before PLI."]}
+  ];
+
+  var yearOrder = ["FY19","FY20","FY21","FY22","FY23","FY24","FY25"];
+  var cardsHost = document.getElementById("sectorCards");
+  sectors.forEach(function (s) {
+    var vals = yearOrder.map(function(y){ return s.years[y]; }).filter(function(v){ return v !== undefined; });
+    var max = Math.max.apply(null, vals);
+    var card = document.createElement("div");
+    card.className = "sector-card";
+    var pillClass = s.verdict === "rose" ? "verdict-rose" : (s.verdict === "fell" ? "verdict-fell" : "verdict-confounded");
+    var top = document.createElement("div");
+    top.className = "sector-top";
+    top.innerHTML = '<div><span class="sector-name">' + s.name + '</span><span class="sector-hs">HS ' + s.hs + '</span></div><span class="verdict-pill ' + pillClass + '">' + s.verdictLabel + '</span>';
+    card.appendChild(top);
+
+    var proxyEl = document.createElement("div");
+    proxyEl.className = "proxy-note";
+    proxyEl.textContent = s.proxy;
+    card.appendChild(proxyEl);
+
+    var chart = document.createElement("div");
+    chart.className = "chart-row";
+    yearOrder.forEach(function (y) {
+      if (s.years[y] === undefined) return;
+      var v = s.years[y];
+      var pct = Math.max(4, Math.round((v / max) * 88));
+      var col = document.createElement("div");
+      col.className = "bar-col" + (y === s.launch ? " launch" : "");
+      var launchTag = (y === s.launch) ? '<div class="launch-tag">LAUNCH</div>' : '';
+      col.innerHTML = launchTag + '<div class="bar" style="height:' + pct + '%;" title="' + y + ': $' + v.toFixed(1) + 'M"></div><div class="bar-year">' + y.replace('FY','’') + '</div>';
+      chart.appendChild(col);
+    });
+    card.appendChild(chart);
+
+    var detailEl = document.createElement("div");
+    detailEl.className = "verdict-detail";
+    detailEl.textContent = s.detail;
+    card.appendChild(detailEl);
+
+    var conf = document.createElement("div");
+    conf.className = "confounders";
+    conf.innerHTML = '<div class="confounders-label">Confounders</div><ul>' + s.confounders.map(function(c){ return '<li>' + c + '</li>'; }).join('') + '</ul>';
+    card.appendChild(conf);
+
+    cardsHost.appendChild(card);
+  });
+
+  var states = [
+    {state: "Gujarat", policy: "Semiconductor Policy 2022-27", vals: "FY21: $21,890M · FY22: $2,706M · FY25: $5,711M", finding: "FY20-21's $21.89bn (36.79% of ALL India's state FDI) predates the policy by ~2yrs — traced to the Jio Platforms mega-raise, not manufacturing."},
+    {state: "Assam", policy: "No dedicated state policy", vals: "FY25: $2.88M", finding: "The Rs 27,000cr Tata Electronics ATMP is domestic capital — Assam's real FDI equity inflow is essentially nothing."},
+    {state: "Odisha", policy: "IPR 2022, Steel a Thrust Sector", vals: "FY21–FY25: $4.65M–$95M, under $100M every year", finding: "Real steel hub (Tata Steel Kalinganagar ~Rs 50,000cr), but flagship investors are domestic — structurally invisible to FDI data."},
+    {state: "Karnataka", policy: "General Industrial Policy 2020-25 (no dedicated steel scheme)", vals: "FY21–H1FY26: $6,571M–$22,072M", finding: "Consistently top-3 nationally — driven by Bengaluru's IT economy, not the Bellary-Hospet steel belt (domestically funded)."},
+    {state: "Tamil Nadu", policy: "EV Policy 2023", vals: "FY23: $2,169M → FY25: $3,681M", finding: "A real, gradual rise since the 2023 policy — though Ola Electric's headline deal is Indian-owned capital."},
+    {state: "Andhra Pradesh", policy: "Electronics Mfg Policy 4.0, 2024-29", vals: "FY21–H1FY26: $85M–$441M", finding: "Small in absolute terms, but LG and Daikin are genuinely foreign — the least likely false-FDI-signal case of the five states studied."},
+    {state: "Telangana", policy: "Next-Gen Life Sciences Policy 2026-30 (Jan 2026, too recent)", vals: "FY24: $3,029M → FY25: $2,994M", finding: "FY23-24's jump predates the Jan 2026 policy by 2yrs — cannot be attributed to it."}
+  ];
+  var stateBody = document.querySelector("#stateTable tbody");
+  states.forEach(function (s) {
+    var tr = document.createElement("tr");
+    tr.innerHTML = '<td class="state-name">' + s.state + '</td><td class="policy">' + s.policy + '</td><td>' + s.vals + '</td><td>' + s.finding + '</td>';
+    stateBody.appendChild(tr);
+  });
+})();
+</script>

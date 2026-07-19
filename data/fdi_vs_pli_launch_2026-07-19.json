@@ -1,0 +1,250 @@
+{
+  "purpose": "Tests whether India's PLI schemes actually caused a measurable rise in REAL inbound FDI equity (DPIIT/RBI-tracked money that arrived), as distinct from the government's self-reported 'committed investment' or 'disbursement' figures cited elsewhere in this repo. Cross-checked against IBEF's published FDI benchmark page. Also tests whether state-level incentive policies show up in state-wise FDI data, and whether that data is even reliable enough to test that question.",
+  "retrieved": "2026-07-19",
+  "method": "8 parallel research agents, each required to cite primary DPIIT (dpiit.gov.in) sector/state FDI-equity-inflow tables and PIB (pib.gov.in) scheme-launch press releases directly -- not news summaries. Every figure below traces to a named DPIIT table/PDF. Three financially distinct numbers are kept separate throughout and never merged: (1) FDI EQUITY INFLOW -- real foreign money that arrived, DPIIT/RBI-tracked; (2) PLI COMMITTED/ACTUAL INVESTMENT -- company-announced capex targets and self-reported progress, mostly domestic capital, published by the administering ministry; (3) PLI DISBURSEMENT -- the government's own incentive payout under the scheme. Public commentary (including IBEF's) routinely blurs these into one 'PLI is working' number; this bulletin does not.",
+
+  "critical_data_quality_findings": [
+    {
+      "finding": "DPIIT's own metadata document states 'Documentation on methodology: Not applicable' for both methodology and quality documentation of its FDI statistics.",
+      "source": "DPIIT, 'Metadata for Foreign Direct Investment Equity Inflow in India' (June 2025), sections 4.1-4.2",
+      "why_it_matters": "There is no official explanation of how a transaction gets assigned to a state or sector -- every downstream finding in this bulletin inherits that opacity."
+    },
+    {
+      "finding": "State-wise FDI attribution is built from the investee company's REGISTERED OFFICE address (per RBI's FC-GPR filing form), not the location of the actual factory/project. Before October 2019 it was bucketed even more coarsely, by which of RBI's 17 regional offices processed the filing -- several of which span multiple states.",
+      "source": "FIFP (DPIIT) FAQ Q8-Q9; RBI Form FC-GPR filing instructions; corroborated by NCAER's 2016 report 'Enhancing the Scope and Quality of Indian FDI Statistics' (Box 2.4), which independently documents the same mechanism and recommends switching to project-location attribution -- a recommendation that, as of this research, does not appear to have been implemented in the public data product.",
+      "why_it_matters": "A state's headline FDI number can reflect where a company is incorporated, not where it built a plant. No official caveat appears on today's published tables -- the concession lives only in decade-old Parliamentary answers."
+    },
+    {
+      "finding": "Concrete proof of the registered-office effect: at least 9 of Gujarat's top 10 individual FDI remittances between Oct 2019 and Dec 2022 were a single company -- Jio Platforms Limited (registered office Ahmedabad; actual operational HQ Navi Mumbai, Maharashtra) -- receiving its well-known multi-investor capital raise (Google, Meta/Jaadhu, Saudi PIF, Silver Lake, Mubadala, KKR, General Atlantic, Qualcomm, Intel Capital). 'Computer Software & Hardware' was 66% of ALL Gujarat FDI in that window -- not manufacturing.",
+      "source": "DPIIT Table 6.2(iii), 'FDI Synopsis on State -- Gujarat (as on 31.12.2022)'; Jio Platforms CIN verified against its DRHP filing",
+      "why_it_matters": "This is why Gujarat topped the national state-FDI table in FY2020-21 (36.79% national share, $21.89bn) -- TWO YEARS before the Semiconductor Policy 2022-27 existed. A naive 'Gujarat FDI rose, policy worked' reading would be crediting a telecom capital raise to a chip policy."
+    },
+    {
+      "finding": "Several of the flagship 'hub' investments already published elsewhere in this repo are DOMESTIC capital and structurally cannot appear in DPIIT's FDI-equity series at all: Tata Electronics' Rs 27,000cr Assam ATMP, Tata's Agratas battery gigafactory, Reliance's Jamnagar battery gigafactory, Tata Steel's Kalinganagar expansion, JSW's Vijayanagar expansion, Jindal Stainless, and Ola Electric's Tamil Nadu commitments are all funded from Indian corporate balance sheets/debt, not foreign equity.",
+      "source": "Company filings and press releases cross-checked per-deal; Assam's actual DPIIT-recorded FDI equity inflow in FY2024-25 was Rs 24.26 crore ($2.88M) against the Rs 27,000cr ATMP headline",
+      "why_it_matters": "A state or sector can have a real, large, successful manufacturing investment that never shows up as 'FDI' in the statistics this whole exercise is testing -- 'no FDI rise' does not mean 'no investment happened.' This cuts against reading a flat/negative FDI verdict as scheme failure."
+    },
+    {
+      "finding": "DPIIT's ~63 named FDI sector categories map poorly onto PLI scheme boundaries in almost every case. 'Computer Software & Hardware' (India's largest or 2nd-largest FDI category) is 99%+ software -- 'Computer Hardware' is just 0.10% of the category's 21-year cumulative total. 'Metallurgical Industries' is 44% Special Alloys + 24% Non-Ferrous (aluminium) and only ~13% Ferrous (steel) cumulatively -- and the most recent granular tables report NO Ferrous line item at all. No DPIIT category exists for batteries/ACC storage, white goods, or aircraft/spacecraft at all.",
+      "source": "DPIIT Table 6.2(ii) (Computer Software & Hardware sub-sectors), Table 6.2(x) (Metallurgical sub-sectors), CY2023/H1-CY2024 sub-sector tables",
+      "why_it_matters": "Every sector verdict below rests on an imperfect proxy category, stated explicitly per sector rather than presented as a clean match."
+    },
+    {
+      "finding": "IEM (Industrial Entrepreneurs Memorandum) filing statistics do still exist (contrary to the working assumption going into this research) via DPIIT's Annual Report appendices, but have no 'Electronics' category at all (the legacy 1951-Act taxonomy predates PLI by decades), mix domestic and foreign capital indiscriminately, and the intent-to-implementation gap is large even in DPIIT's own numbers (Metallurgical Industries Part-A intended 2021: Rs 1,72,208cr vs Part-B actually implemented: Rs 1,29,984cr).",
+      "source": "DPIIT Annual Report 2024-25, Appendix III-VI",
+      "why_it_matters": "IEM data is a weak corroborating 'did filing activity pick up' signal at best -- not usable as an FDI proxy or a clean pre/post-PLI test."
+    }
+  ],
+
+  "ibef_cross_check": {
+    "source": "https://www.ibef.org/economy/foreign-direct-investment, retrieved 2026-07-19, DPIIT-sourced, page last updated Jul 2026",
+    "reconciliation": [
+      {
+        "ibef_claim": "Computer Software/Hardware is India's #2 cumulative FDI sector at 15.82% share ($124.64bn, Apr 2000-Mar 2026), and IBEF's public table doesn't itemize Metallurgical, Pharma, Electrical Equipment, or Medical Devices separately.",
+        "cross_check": "Confirmed and sharpened: this repo's own Electronics agent independently found the 'Computer Hardware' sub-component is only 0.10% of that category's cumulative total -- the other 99.9%+ is software/platform FDI (Jio Platforms, Flipkart, Accenture, Cisco). IBEF's headline number, if read as 'electronics manufacturing FDI,' would be off by roughly three orders of magnitude. IBEF is not wrong, but the figure it foregrounds is the wrong proxy for the PLI-Electronics story."
+      },
+      {
+        "ibef_claim": "Top 5 states by cumulative FDI: Maharashtra (31.4%), Karnataka (20.7%), Gujarat (14.8%), Delhi (12.9%), Tamil Nadu (5.7%).",
+        "cross_check": "None of Odisha, Telangana, Andhra Pradesh, or Assam -- the 'emergent hub' states this repo has already published real, sourced capital evidence for (Kalinganagar, Genome Valley, Sri City, Jagiroad) -- crack the national top 5. This is now explained rather than contradictory: their flagship investors (Tata Steel, Tata Electronics) are overwhelmingly domestic capital that structurally cannot register as FDI, while Maharashtra/Karnataka/Delhi's totals are inflated by the registered-office effect (Jio-style mega-raises, Bengaluru HQ concentration). 'Hub' status and 'FDI share' are measuring genuinely different things, not the same thing imperfectly."
+      },
+      {
+        "ibef_claim": "Top 5 source countries: Singapore (24.7%), Mauritius (23.7%), USA (10.4%), Netherlands (7.2%), Japan (6.1%) -- Korea does not place.",
+        "cross_check": "Consistent with, and explained by, the routing/round-tripping issue -- the US State Department's 2024 India Investment Climate Statement explicitly states capital from Mauritius and Singapore is 'mostly round-tripping of investments from different countries including from India itself.' This tempers how literally to read the country-strategy bulletin's Japan/Korea/Denmark target-country framing: capital from those countries may well be routing through Singapore or Netherlands holding entities and appearing there in DPIIT's country-wise tables instead, though no source in this research could confirm this for any specific white-goods/steel/auto deal named elsewhere in this repo."
+      },
+      {
+        "ibef_claim": "PLI disbursement (a THIRD distinct figure from both FDI inflow and committed capex): Rs 10,114cr total across 14 sectors in FY25, with Electronics + Pharma together at ~70% (Electronics Rs 5,732cr, Pharma Rs 2,328cr).",
+        "cross_check": "Consistent with this bulletin's finding that Electronics and Pharma/Medical Devices are exactly the sectors showing the clearest real FDI-equity gains -- the only two (three, counting Medical Devices as pharma-adjacent) sectors where disbursement, PLI investment realization, and actual FDI inflow all point the same direction. Auto, Steel and White Goods show large disbursement/investment claims without a matching FDI signal -- see per-sector table below."
+      },
+      {
+        "ibef_claim": "Manufacturing-sector FDI equity inflow rose 69% from the 2004-14 decade (Rs 8,37,191cr) to the 2014-24 decade (Rs 14,14,742cr), attributed by IBEF to 'the Make in India initiative, Production-Linked Incentive (PLI) scheme.'",
+        "cross_check": "This is exactly the kind of loose before/after comparison this bulletin exists to stress-test, and it does not hold up well: Make in India launched Sept 2014 and PLI schemes launched 2020-2021 -- so PLI covers at most the final ~3-4 years of IBEF's 10-year 'after' window, yet gets equal causal credit for the whole decade's rise. This repo's sector-by-sector, launch-date-anchored comparisons (below) are a stricter test of the same underlying claim, and they show a genuinely mixed result -- not the clean uplift IBEF's framing implies."
+      }
+    ]
+  },
+
+  "sector_verdicts": [
+    {
+      "sector": "Electronics & Semiconductor Manufacturing",
+      "hs": "84-85",
+      "pli_launch_dates": [
+        {"scheme": "PLI Large Scale Electronics Manufacturing + SPECS", "date": "2020-04-01", "source": "PIB PRID 1907276"},
+        {"scheme": "PLI IT Hardware", "date": "2021-03-03", "source": "PIB PRID 1907276"},
+        {"scheme": "India Semiconductor Mission (ISM 1.0)", "date": "2021-12-15", "source": "PIB PRID 1781723, Rs 76,000cr outlay"}
+      ],
+      "dpiit_proxy_category": "Electronics (a distinct, narrower category from the much larger 'Computer Software & Hardware' bucket, which is confirmed dominated by unrelated software/platform FDI and excluded as a proxy)",
+      "fdi_equity_inflow_usd_million": {
+        "FY2018-19": 451.88, "FY2019-20": 422.36, "FY2020-21": 375.32, "FY2021-22": 416.99,
+        "FY2022-23": 554.53, "FY2023-24": 695.74, "FY2024-25": 2043.04
+      },
+      "verdict": "rose",
+      "verdict_detail": "Rose with a 2-3 year lag after both PLI-Electronics (2020) and ISM 1.0 (2021) -- by FY2024-25, inflow was +352% above the FY2018-19 baseline, accelerating sharply in the third full year post-ISM-approval. Crucially, this rise moved OPPOSITE the national FDI cycle (total FDI fell 22% in FY2022-23 and 3% in FY2023-24 while Electronics rose 29.5% and 28.9% those same years) -- the strongest evidence in this whole analysis of a genuine sector-specific effect rather than a macro coincidence.",
+      "confounders": [
+        "The FY2024-25 jump to $2,043M could not be traced to specific transactions -- DPIIT does not publish company-level detail for 'Electronics' the way it does for 'Computer Software & Hardware.' A single large fab/ATMP equity infusion (candidates: Tata Electronics Assam/Gujarat, Micron Sanand, CG Power-Renesas) plausibly dominates the jump; this cannot be ruled out or confirmed.",
+        "ISM 2.0 (announced Budget Feb 2026 / reportedly Cabinet-approved 15 Jul 2026) is too recent to have any measurable FDI effect yet -- explicitly not assessable."
+      ]
+    },
+    {
+      "sector": "Specialty Steel & Metals",
+      "hs": "72-73",
+      "pli_launch_dates": [
+        {"scheme": "PLI Specialty Steel", "date": "2021-07-22", "source": "PIB PRID 1737722, Rs 6,322cr outlay"}
+      ],
+      "dpiit_proxy_category": "Metallurgical Industries (cumulative Jan2000-Dec2022 split: 44.1% Special Alloys, 24.2% Non-Ferrous, 18.7% Others, only 13.0% Ferrous -- and the most recent granular sub-sector tables, CY2023/H1-CY2024, report NO Ferrous line item at all)",
+      "fdi_equity_inflow_usd_million": {
+        "FY2018-19": 598.84, "FY2019-20": 2101, "FY2020-21": 1340.47, "FY2021-22": 2272.35,
+        "FY2022-23": 218.59, "FY2023-24": 286.21, "FY2024-25": 950.99
+      },
+      "verdict": "fell",
+      "verdict_detail": "Collapsed after launch: FY2022-23 and FY2023-24 came in ~84% and ~79% below the pre-launch (FY2018-19 to FY2020-21) 3-year average of $1,346.6M/year. FY2024-25 recovered to $950.99M but remains ~29% below that baseline. The one large year (FY2021-22, $2,272M) was driven by H1 activity BEFORE Cabinet approval (22 Jul 2021) and cannot be attributed to the scheme. No inflection point coincides with any of the scheme's actual milestones.",
+      "confounders": [
+        "Global steel-price cycle: 2021's spike and 2022-23's collapse track the global commodity cycle (post-COVID reopening surge, then China-slowdown oversupply) at least as well as any policy explanation.",
+        "The POSCO-JSW $7.3-7.73bn JV's first cash tranche only moved in April 2026 -- none of this headline deal has landed in FDI statistics through the data available (Dec 2025); it could dominate FY2026-27+ figures and should be checked against before crediting any future spike to broad-based PLI success.",
+        "The proxy category itself is dominated by aluminium/non-ferrous players (Vedanta, Hindalco), not steel -- 'no rise in Metallurgical Industries FDI' is a weaker statement than 'no rise in steel FDI specifically,' though the direction of the available evidence still points negative."
+      ]
+    },
+    {
+      "sector": "Auto, EV & Battery",
+      "hs": "87",
+      "pli_launch_dates": [
+        {"scheme": "PLI Advanced Chemistry Cell (ACC) Battery Storage", "date": "2021-05-12", "source": "PIB PRID 1717938, Rs 18,100cr outlay"},
+        {"scheme": "PLI Automobile & Auto Components", "date": "2021-09-15", "source": "PIB PRID 1755062, ~Rs 26,000cr outlay"}
+      ],
+      "dpiit_proxy_category": "Automobile Industry (umbrella of 4 DPIIT sub-sectors: Automobile Industry, Passenger Cars, Auto Ancillaries/Parts, Others/Transport). No dedicated battery/ACC category exists at all -- 'Electrical Equipment' is the nearest (very broad, non-battery-specific) proxy.",
+      "fdi_equity_inflow_usd_million": {
+        "FY2018-19": 2623.22, "FY2019-20": 2824.03, "FY2020-21": 1637.45, "FY2021-22": 6993.55,
+        "FY2022-23": 1902.23, "FY2023-24": 1524.22, "FY2024-25": 1586.31
+      },
+      "verdict": "fell",
+      "verdict_detail": "One strong year (FY2021-22, +327% vs the COVID trough, +148% vs the last full pre-COVID year) fully reverted within one year (-73% in FY2022-23) and has stayed below pre-PLI levels for three straight years since -- FY2024-25 sits 40% below the FY2018-19 baseline. The 'PLI caused a rise' story only survives if FY2021-22 is cherry-picked as the sole comparison year.",
+      "confounders": [
+        "The FY2021-22 spike is traceable in DPIIT's own top-25 deal list to TPG Rise Climate's $328M+$164M investment into Tata Passenger Electric Mobility -- a global-EV-capital PE deal, not PLI-induced greenfield manufacturing, and it predates any PLI disbursement.",
+        "Tata's Agratas and Reliance's Jamnagar battery gigafactories -- the two headline 'committed investment' figures most associated with this sector -- are funded from domestic balance sheets/debt, not foreign equity, and structurally do not appear in this FDI series at all.",
+        "No dedicated DPIIT category exists for batteries/ACC storage -- the ACC-PLI half of this question is genuinely unanswerable from official sectoral statistics, not just under-evidenced.",
+        "Total-economy FDI was roughly flat in FY2021-22 (-1% YoY) while auto FDI rose +327% that year, arguing against a pure 'riding the general cycle' explanation for that one year specifically -- even though the multi-year trend afterward is clearly negative."
+      ]
+    },
+    {
+      "sector": "Pharmaceuticals & Bulk Drug APIs",
+      "hs": "29-30",
+      "pli_launch_dates": [
+        {"scheme": "PLI Bulk Drugs (KSMs/APIs)", "date": "2020-03-21", "source": "PIB PRID 1607483, Rs 6,940cr outlay"},
+        {"scheme": "PLI Pharmaceuticals (formulations)", "date": "2021-02-24", "source": "PIB PRID 1700433, Rs 15,000cr outlay, applications opened Jun 2021"}
+      ],
+      "dpiit_proxy_category": "Drugs & Pharmaceuticals (a single bucket -- cannot be split into bulk-drug/API-specific vs. formulation FDI vs. M&A/stake-sale inflows into existing companies)",
+      "fdi_equity_inflow_usd_million": {
+        "FY2018-19": 265.97, "FY2019-20": 517.80, "FY2020-21": 1490.49, "FY2021-22": 1414.24,
+        "FY2022-23": 2058.41, "FY2023-24": 1064.23, "FY2024-25": 891.43
+      },
+      "verdict": "rose_but_confounded",
+      "verdict_detail": "Rose sharply (+202% in FY2020-21 alone) and peaked at FY2022-23's $2,058M before falling back to $891M by FY2024-25. The timing is the key problem: the biggest jump landed in FY2020-21, BEFORE either PLI scheme had disbursed a rupee or, in Pharma PLI's case, even opened its application window (Jun 2021). Meanwhile PLI's own cumulative investment-realization figures kept climbing through mid-2025 (Bulk Drugs: Rs 4,709cr actual by Jun 2025; Pharma PLI: Rs 38,543cr actual) even as FDI equity inflow was falling -- FDI and PLI-investment-realization are moving in OPPOSITE directions in the most recent two years, a genuine decoupling.",
+      "confounders": [
+        "COVID-19/API-security reshoring is the dominant alternative explanation, not a footnote: China's 2020 lockdowns disrupted global API supply (India was ~68% China-dependent on APIs per TIFAC), triggering a GLOBAL pharma reshoring wave in the US/EU/Japan simultaneously -- independent of India's PLI. Because Bulk Drugs PLI was approved days before India's own lockdown, annual data structurally cannot separate 'COVID-driven' from 'PLI-driven' investment.",
+        "The 'Drugs & Pharmaceuticals' bucket includes acquisition-of-existing-shares deals in established Indian majors -- a single large stake sale can swing an entire year's total; no specific mega-deal was confirmed for the FY2022-23 peak, but it remains a plausible unverified explanation."
+      ]
+    },
+    {
+      "sector": "White Goods Components",
+      "hs": "84 (subset)",
+      "pli_launch_dates": [
+        {"scheme": "PLI White Goods (ACs & LED Lights)", "date": "2021-04-07", "source": "PIB PRID 1710116, Rs 6,238cr outlay"}
+      ],
+      "dpiit_proxy_category": "Electrical Equipments (approximation only -- the scheme's actual product scope, AC compressors/copper tubes/LED components, straddles at least 3 different DPIIT sector buckets: Electrical Equipments, Electronics, and Metallurgical Industries)",
+      "fdi_equity_inflow_usd_million": {
+        "FY2018-19": 976.50, "FY2019-20": 571.38, "FY2020-21": 1411.95, "FY2021-22": 683.70,
+        "FY2022-23": 895.19, "FY2023-24": 1049.37, "FY2024-25": 531.49
+      },
+      "verdict": "fell",
+      "verdict_detail": "Calendar 2021 (the launch year itself) was the LOWEST value in the whole 2018-2025 series. Fiscal-year comparisons are essentially flat over 5 years (FY2022-23 ~7% below, FY2023-24 ~7% above the FY2018-19 baseline), then FY2024-25 fell to the series' lowest annual figure, roughly half the pre-launch level. No sustained post-launch rise is visible in the best-fit proxy sector.",
+      "confounders": [
+        "The scheme reached its full complement of 85 selected companies only on 23 January 2026 -- nearly 5 years after Cabinet approval, after multiple undersubscribed rounds and a reopened application window. Most committed capex is scheduled against production targets running through FY2027-28 -- the real investment wave, if it materializes, is largely still ahead of the data window used here, and this verdict should be revisited in FY2027-28/29 data.",
+        "Named investors (Daikin, Samsung, LG, Danfoss) are Japan/Korea/Denmark multinationals that plausibly route India investment through Singapore or Netherlands holding entities -- documented as a general pattern in India's FDI data (see ibef_cross_check), though not confirmed for these specific deals."
+      ]
+    },
+    {
+      "sector": "Medical Devices",
+      "hs": "90 (subset)",
+      "pli_launch_dates": [
+        {"scheme": "PLI Medical Devices", "date": "2020-03-21", "source": "PIB PRID 1607485, Rs 3,420cr outlay"}
+      ],
+      "dpiit_proxy_category": "Medical and Surgical Appliances (a genuinely distinct, consistently-reported DPIIT line item -- the cleanest category match of any sector in this analysis)",
+      "fdi_equity_inflow_usd_million": {
+        "FY2018-19": 156.72, "FY2020-21": 68.91, "FY2021-22": 208.05,
+        "FY2022-23": 397.20, "FY2023-24": 482.83, "FY2024-25": 626.99
+      },
+      "verdict": "rose",
+      "verdict_detail": "The cleanest positive result in this analysis: inflow fell to a trough in the COVID/launch year (FY2020-21) then rose every single year since, reaching ~4x the FY2018-19 baseline and ~9x the FY2020-21 trough by FY2024-25. As a share of India's total FDI equity inflow (which was flat-to-declining nationally over the same window), medical devices climbed from 0.35% to 1.25% -- not simply riding a national FDI boom, since there wasn't one.",
+      "confounders": [
+        "Small base, single-deal dominance is real: three MNC announcements (Siemens Healthineers ~$157M, Medtronic ~$350M, Wipro GE Healthcare ~$960M over 5yr) are each individually comparable to or larger than an entire year's sector total -- the 'rise' could be a handful of corporate decisions rather than a broad scheme-driven response across the ~25-30 targeted manufacturers.",
+        "100% FDI under the automatic route for medical devices was already open since 2014, six years before PLI -- the scheme added a subsidy on top of an already-open FDI channel rather than creating new foreign-capital access, which weakens (without eliminating) a causal PLI story for the inflow channel itself.",
+        "COVID cuts the opposite way here versus pharma: FY2020-21 was this sector's WORST year, not its best -- the recovery only starts in FY2021-22, overlapping with global China+1 medtech reshoring independent of India's specific scheme."
+      ]
+    }
+  ],
+
+  "control_sector_comparison": {
+    "purpose": "Three sectors with NO PLI scheme, tracked on the identical basis, to test whether the PLI sectors' FDI trend simply reflects India's broader FDI/manufacturing cycle rather than a scheme-specific effect.",
+    "sectors": [
+      {"sector": "Chemicals (Other Than Fertilizers) -- Inorganic Chemicals proxy", "hs": "28", "fdi_equity_inflow_usd_million": {"FY2018-19": 1980.99, "FY2019-20": 1058, "FY2020-21": 847, "FY2021-22": 965.78, "FY2022-23": 1850.01, "FY2023-24": 843.97, "FY2024-25": 1060.56}, "change_pct": -46.5},
+      {"sector": "Rubber Goods -- Plastics proxy (Plastics has no standalone DPIIT category and is folded into Chemicals)", "hs": "39", "fdi_equity_inflow_usd_million": {"FY2018-19": 197.64, "FY2019-20": 81.21, "FY2020-21": 265.95, "FY2021-22": 70.73, "FY2022-23": 160.17, "FY2023-24": 135.35, "FY2024-25": 81.50}, "change_pct": -58.8},
+      {"sector": "Miscellaneous Mechanical & Engineering Industries -- Aircraft & Spacecraft proxy (no dedicated DPIIT aerospace category exists at all)", "hs": "88", "fdi_equity_inflow_usd_million": {"FY2018-19": 162.67, "FY2019-20": 54.36, "FY2020-21": 64.11, "FY2021-22": 411.17, "FY2022-23": 103.58, "FY2023-24": 284.37, "FY2024-25": 153.68}, "change_pct": -5.5}
+    ],
+    "composite_control_change_pct": -44.6,
+    "composite_pli_sector_change_pct": 30.7,
+    "verdict": "The gap between the control-sector average (-44.6%, FY18-19 to FY24-25) and the PLI-sector average (+30.7%) is real, but is driven almost entirely by Pharma and Medical Devices' clean, sustained climbs plus Electronics' fragile late-cycle spike -- not by all six PLI sectors. Auto, Steel, and White Goods declined at rates comparable to or worse than the no-PLI control sectors over the identical window. The honest reading is sector-specific, not a blanket PLI effect: roughly half of the PLI sectors show a real, distinguishable-from-baseline rise; half do not."
+  },
+
+  "state_level_findings": {
+    "data_availability_caveat": "DPIIT state-wise FDI data exists ONLY from October 2019 onward -- there is no official state-level figure for FY2018-19 or the first half of FY2019-20, full stop. Any pre-Oct-2019 state FDI figure encountered elsewhere is not DPIIT-sourced.",
+    "states": [
+      {
+        "state": "Gujarat",
+        "policy": "Semiconductor Policy 2022-27",
+        "fdi_equity_inflow_usd_million": {"FY2020-21": 21890.17, "FY2021-22": 2705.52, "FY2024-25": 5711.02},
+        "finding": "FY2020-21's massive $21.89bn figure (36.79% of ALL India's state-attributed FDI that year) predates the Semiconductor Policy by nearly 2 years and is traced directly to the Jio Platforms mega-raise (see critical_data_quality_findings) -- a telecom/software capital event with no connection to manufacturing policy. Later years (FY2024-25: $5.71bn) plausibly do reflect real semiconductor-adjacent capital (Micron's $825M own-capital portion of its $2.75bn Sanand project could be part of this), but cannot be cleanly separated from other Gujarat FDI in the published data."
+      },
+      {
+        "state": "Assam",
+        "policy": "No dedicated state semiconductor policy -- central PLI + general incentives only",
+        "fdi_equity_inflow_usd_million": {"FY2024-25": 2.88},
+        "finding": "The headline Rs 27,000cr Tata Electronics ATMP at Jagiroad is Tata Sons' own domestic capital -- Assam's actual DPIIT-recorded FDI equity inflow in FY2024-25 was just Rs 24.26 crore ($2.88M), essentially nothing. The investment is real; it simply isn't FDI, and will likely never register as such in this data series."
+      },
+      {
+        "state": "Odisha",
+        "policy": "Industrial Policy Resolution (IPR) 2022, Specialty Steel named a Thrust Sector",
+        "fdi_equity_inflow_usd_million": {"FY2020-21": 19.76, "FY2021-22": 95.33, "FY2022-23": 31.63, "FY2023-24": 8.79, "FY2024-25": 4.65},
+        "finding": "FDI stays under $100M essentially every year despite tens of thousands of crores in real steel capex (Tata Steel Kalinganagar ~Rs 50,000cr, Jindal Stainless Jajpur) -- because the flagship investors are domestic Indian companies. Odisha's steel-hub status is real and well-evidenced elsewhere in this repo; it simply is not, and structurally cannot be, visible in FDI-equity statistics."
+      },
+      {
+        "state": "Karnataka",
+        "policy": "General Industrial Policy 2020-25 (no dedicated steel-sector scheme, confirmed absent)",
+        "fdi_equity_inflow_usd_million": {"FY2020-21": 7670.49, "FY2021-22": 22071.94, "FY2022-23": 10429.37, "FY2023-24": 6571, "FY2024-25": 6618.57, "H1_FY2025-26": 9402.94},
+        "finding": "Consistently one of India's top-3 FDI states nationally (matches IBEF's national ranking, 20.7% cumulative share) -- but this is driven by Bengaluru's software/IT-services economy, not the Bellary-Hospet steel belt (JSW Vijayanagar, India's largest single-site steel plant, is domestically funded). The 'Bengaluru HQ effect' plausibly inflates Karnataka's number for companies with no operations near the actual steel cluster; this could not be directly confirmed for any specific transaction."
+      },
+      {
+        "state": "Tamil Nadu",
+        "policy": "EV Policy 2023, Electronics Hardware Manufacturing Policy 2020",
+        "fdi_equity_inflow_usd_million": {"FY2020-21": 2322.81, "FY2021-22": 3003.16, "FY2022-23": 2168.96, "FY2023-24": 2436, "FY2024-25": 3681.36, "H1_FY2025-26": 3571.32},
+        "finding": "A real, gradual rise since the 2023 EV Policy (FY2022-23 trough $2.17bn to FY2024-25 $3.68bn), though Ola Electric's Rs 7,614cr Krishnagiri commitment -- the sector's headline deal -- is Indian-owned capital and would not itself register as FDI."
+      },
+      {
+        "state": "Andhra Pradesh",
+        "policy": "Electronics Manufacturing Policy 4.0, 2024-29",
+        "fdi_equity_inflow_usd_million": {"FY2020-21": 85.85, "FY2021-22": 224.96, "FY2022-23": 284.22, "FY2023-24": 92.13, "FY2024-25": 233.14, "H1_FY2025-26": 440.65},
+        "finding": "Small in absolute terms but LG Electronics (Rs 5,001cr, Sri City) and Daikin (cumulative Sri City investment over $1bn) are genuine foreign multinationals whose capital plausibly does register here -- of all five states studied, Andhra Pradesh's flagship white-goods investors are the least likely to be a false-FDI-signal case, since LG and Daikin (unlike Tata Steel/Tata Electronics/Ola) are actually foreign-owned."
+      },
+      {
+        "state": "Telangana",
+        "policy": "Next-Gen Life Sciences Policy 2026-30 (launched Jan 2026, too recent to assess)",
+        "fdi_equity_inflow_usd_million": {"FY2020-21": 1155.49, "FY2021-22": 1606.89, "FY2022-23": 1302.57, "FY2023-24": 3029, "FY2024-25": 2994.15, "H1_FY2025-26": 1140.25},
+        "finding": "FY2023-24's jump to $3.03bn predates the Jan 2026 Life Sciences Policy by two years and cannot be attributed to it; Genome Valley's pharma-cluster investment ($1.49bn over 2020-2024 per industry reporting) is a separate, non-DPIIT figure that should not be equated with the FDI-equity numbers here."
+      }
+    ]
+  },
+
+  "methodology_gaps_explicit": [
+    "No sector or state figure in this bulletin should be read as proof of causation -- every verdict above is a correlation test against a launch date, with named confounders, not a controlled experiment.",
+    "DPIIT revises historical figures release to release ('revalidated/reconciled in line with RBI'); treat every number as accurate to a few percent, not to the decimal.",
+    "This bulletin cannot and does not attempt to separate foreign-vs-domestic capital within any DPIIT sector total beyond the specific deals identified by name -- the domestic-capital-dominance findings above are illustrative smoking-gun cases (Jio/Gujarat, Tata Electronics/Assam), not a full accounting.",
+    "IEM data, where cited, is investment INTENT (mixed domestic/foreign), never realized capital -- it is not used as evidence for any verdict above, only reported in critical_data_quality_findings for completeness."
+  ]
+}
