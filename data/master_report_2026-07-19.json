@@ -790,7 +790,8 @@
       "Re-verify Electronics and Medical Devices FDI against a second year of data.",
       "Update disbursal grades against new Parliament-answer PRIDs; fill the four disbursal gaps (Bulk Drugs, Medical Devices, Telecom, Solar PV) via Lok Sabha/Rajya Sabha answers and ministry annual reports -- research pass in flight as of this document.",
       "Re-extract sector/state splits from the next quarterly FDI factsheet; check the updated FDI metadata document (27 Feb 2026) against the 'methodology: Not applicable' version.",
-      "Watch: chemicals PLI Cabinet approval, PLI Textiles cotton broadening, ACC GSSS re-tender, POSCO-JSW cash landing in FY27 FDI data, Semicon 2.0 approvals."
+      "Watch: chemicals PLI Cabinet approval, PLI Textiles cotton broadening, ACC GSSS re-tender, POSCO-JSW cash landing in FY27 FDI data, Semicon 2.0 approvals.",
+      "Re-pull the PARIVESH API; check flagship EC-status transitions (Dholera/Agratas ToR->EC; POSCO-JSW and RRPCL still absent?)."
     ]
   },
   "part_2b_state_implementation_iem": {
@@ -914,5 +915,18 @@
       }
     ],
     "caveats": "No state-x-sector cross-tab published; conversion is a pipeline-affected flow ratio; Appendix V/VI headers disagree (Dec vs Nov 2025) while summing identically to Rs 5,83,096cr."
+  },
+  "part_2c_ec_pipeline_parivesh": {
+    "note": "Gate 3 of the lifecycle: Environmental Clearance as the IEM A-to-B leading indicator, from PARIVESH 2.0's open JSON API (113,804 proposals, SEIAA included; industrial = IND-1/2/3; mining and auto-delisted excluded).",
+    "headlines": [
+      "Gujarat: 1,049 industrial ECs granted (~31% of all-India) + 836 ToR-granted -- the deepest pipeline, predicting its 33.8% IEM implementation share continues.",
+      "Maharashtra: ToR (519) exceeds granted (390) -- the most forward-loaded state.",
+      "Grant flow accelerating: 198 (2023) -> 734 (2024) -> 1,102 (2025) -> 579 (2026 YTD).",
+      "Sector corroboration: synthetic organic chemicals #1 (1,192 granted, Gujarat 56%), metallurgy #2 (641, multi-state), distilleries 504 (the ethanol wave).",
+      "Flagships: Dholera fab + Assam ATMP at ToR; Micron/Kaynes/Reliance-electrolyser EC-granted; all 3 Bulk Drug Parks + 3 PM MITRA parks cleared.",
+      "NEGATIVE FINDINGS: POSCO-JSW JV has no EC application; RRPCL entirely absent from the 2022+ register -- clearance-proof of 'stalled at MoU'.",
+      "Method: the open API (advanceSearchData) is the most refresh-friendly source in the stack -- one GET call; on the quarterly checklist."
+    ],
+    "filters": "EC categories != IEM industries (electronics/battery plants have no EC category -- named-project search only); no bulk grant dates; one EC != one IEM-scale project; 2022+ submissions only."
   }
 }
