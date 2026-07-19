@@ -1,0 +1,229 @@
+<title>Master Sector Scorecard — Trade Partners, Policy Levers, FDI Status &amp; Traffic Light</title>
+<meta name="hz:canvas-width" content="1180">
+<style>
+  :root {
+    color-scheme: light;
+    --page-bg:      #eef1ea;
+    --surface:      #fcfcfa;
+    --ink:          #14180f;
+    --ink-2:        #4f5348;
+    --ink-muted:    #82867a;
+    --rule:         #d7dace;
+    --rule-strong:  #c3c7b8;
+    --accent:       #1f5f5b;
+    --accent-soft:  #dbe9e6;
+    --alert:        #a5402c;
+    --alert-soft:   #f3ded7;
+    --warn:         #c98a1f;
+    --warn-soft:    #f3e9d5;
+    --mismatch:     #7a5aa8;
+    --mismatch-soft:#e7defa;
+    --data-line:    #2a78d6;
+    --font-display: "Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    --font-body: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --font-mono: "IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+      --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634; --alert:#e0785f; --alert-soft:#3a241d;
+      --warn:#e0b23f; --warn-soft:#3a3220; --mismatch:#b39ce0; --mismatch-soft:#2e2540; --data-line:#3987e5;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+    --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634; --alert:#e0785f; --alert-soft:#3a241d;
+    --warn:#e0b23f; --warn-soft:#3a3220; --mismatch:#b39ce0; --mismatch-soft:#2e2540; --data-line:#3987e5;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6; --alert:#a5402c; --alert-soft:#f3ded7;
+    --warn:#c98a1f; --warn-soft:#f3e9d5; --mismatch:#7a5aa8; --mismatch-soft:#e7defa; --data-line:#2a78d6;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  .bulletin { background: var(--page-bg); color: var(--ink); font-family: var(--font-body); padding: 40px 20px 56px; display: flex; justify-content: center; }
+  .sheet { width: 100%; max-width: 1500px; display: flex; flex-direction: column; gap: 28px; }
+
+  .masthead { border-bottom: 2px solid var(--ink); padding-bottom: 16px; display: flex; flex-direction: column; gap: 6px; }
+  .eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); display: flex; gap: 10px; align-items: center; }
+  .eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); display: inline-block; }
+  h1 { font-family: var(--font-display); font-weight: 500; font-size: clamp(24px, 3vw, 32px); margin: 2px 0 0; text-wrap: balance; letter-spacing: -0.01em; }
+  .dek { font-size: 14px; color: var(--ink-2); max-width: 90ch; line-height: 1.55; margin: 4px 0 0; }
+  .source-line { font-family: var(--font-mono); font-size: 11px; color: var(--ink-muted); margin-top: 6px; }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 18px; font-size: 12px; color: var(--ink-2); align-items: center; }
+  .legend-item { display: flex; align-items: center; gap: 7px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .dot.green { background: var(--accent); }
+  .dot.amber { background: var(--warn); }
+  .dot.red { background: var(--alert); }
+
+  .table-scroll { overflow-x: auto; border: 1px solid var(--rule-strong); }
+  table.scorecard { width: 100%; min-width: 1680px; border-collapse: collapse; font-size: 12.5px; background: var(--surface); }
+  table.scorecard th { text-align: left; font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-muted); padding: 10px 14px; border-bottom: 2px solid var(--rule-strong); background: var(--page-bg); position: sticky; top: 0; }
+  table.scorecard td { padding: 12px 14px; border-bottom: 1px solid var(--rule); vertical-align: top; line-height: 1.5; }
+  table.scorecard tr:last-child td { border-bottom: none; }
+  table.scorecard tr:hover td { background: var(--accent-soft); }
+  td.sector-cell { font-weight: 700; color: var(--ink); white-space: nowrap; }
+  td.sector-cell .hs { display: block; font-family: var(--font-mono); font-size: 10px; font-weight: 400; color: var(--ink-muted); margin-top: 2px; }
+  td.country-cell { color: var(--ink-2); min-width: 170px; }
+  td.country-cell .none { color: var(--ink-muted); font-style: italic; }
+  td.policy-cell { color: var(--ink-2); min-width: 220px; }
+  td.trend-cell { color: var(--ink-2); min-width: 240px; }
+  .status-pill { font-family: var(--font-mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.03em; padding: 2px 8px; border-radius: 2px; white-space: nowrap; display: inline-block; }
+  .status-rose { background: var(--accent-soft); color: var(--accent); }
+  .status-fell { background: var(--alert-soft); color: var(--alert); }
+  .status-confounded, .status-control_sector_flat { background: var(--warn-soft); color: var(--warn); }
+  .status-control_sector_fell, .status-no_fdi_country_identified { background: var(--rule); color: var(--ink-2); }
+  td.light-cell { min-width: 210px; }
+  .light-row { display: flex; align-items: flex-start; gap: 8px; }
+  .light-text { font-size: 11.5px; line-height: 1.5; color: var(--ink-2); }
+
+  .errata { border: 1px solid var(--rule-strong); border-left: 3px solid var(--alert); background: var(--surface); padding: 16px 20px; display: flex; flex-direction: column; gap: 10px; }
+  .errata-title { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--alert); }
+  .errata ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+  .errata li { font-size: 13px; line-height: 1.5; color: var(--ink-2); }
+  .errata li b { color: var(--ink); }
+
+  footer.colophon { text-align: center; font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-muted); padding-top: 8px; }
+</style>
+
+<div class="bulletin">
+  <div class="sheet">
+    <div class="masthead">
+      <div class="eyebrow">India Trade — Sector &amp; Policy Recommendations</div>
+      <h1>Master sector scorecard: trade partners, policy levers, FDI status &amp; traffic light</h1>
+      <p class="dek">Every prior bulletin in this repo, condensed into one table across the 10 priority sectors: who to court for FDI, who India actually imports from and exports to today, what policy levers exist, whether real FDI-equity has shown up post-launch, and an overall growing / needs-incentives / lagging call — with the reasoning stated for every row.</p>
+      <div class="source-line">SOURCES: synthesizes sector_country_priority_and_pli_coverage, export_destination_priority_and_pli_coverage, top10_sector_country_strategies, fdi_vs_pli_launch, and state_central_incentives_and_emergent_hubs — all already published in this repo, no new claims introduced here. Traffic-light status is this repo's own judgment call; the rationale column exists so it can be checked. Retrieved 2026-07-19.</div>
+    </div>
+
+    <div class="legend">
+      <div class="legend-item"><span class="dot green"></span>Growing — real FDI and/or capacity both point the same direction, with an active policy lever</div>
+      <div class="legend-item"><span class="dot amber"></span>Needs further incentives / mixed — lever exists but hasn't converted, or investment is landing outside the FDI channel</div>
+      <div class="legend-item"><span class="dot red"></span>Lagging — no effective lever, declining FDI trend, or (Textiles) a structural mismatch</div>
+    </div>
+
+    <div class="table-scroll">
+      <table class="scorecard">
+        <thead>
+          <tr>
+            <th>Sector</th>
+            <th>Key FDI-target countries</th>
+            <th>Leads in imports</th>
+            <th>Leads in exports</th>
+            <th>Policy levers</th>
+            <th>FDI status</th>
+            <th>Investment trend</th>
+            <th>Traffic light</th>
+          </tr>
+        </thead>
+        <tbody id="scorecardBody"></tbody>
+      </table>
+    </div>
+
+    <div class="errata">
+      <div class="errata-title">Errata &amp; methodology notes</div>
+      <ul>
+        <li><b>"Leads in imports/exports" reflects current trade flows</b> (TRADESTAT, FY2025-26) — a different concept from "key FDI-target countries," which is who this repo's country-strategy research recommends courting for investment. The two lists often don't overlap (e.g. Electronics imports mostly from China, but the FDI-target list is Taiwan/Japan/USA — China is a supply-chain dependency, not a courtship target).</li>
+        <li><b>Where a sector isn't among India's top-12 import- or export-growth chapters</b>, that cell says so explicitly rather than leaving it blank or guessing — this is itself informative (e.g. Auto isn't import-growth-dependent; several ground-floor sectors aren't yet export-relevant).</li>
+        <li><b>"FDI status" uses the exact verdict labels from the FDI-vs-PLI-launch bulletin</b> — <code>rose</code> / <code>fell</code> / <code>rose_but_confounded</code> for the 6 PLI sectors, and <code>control_sector_fell</code> / <code>control_sector_flat</code> for the 3 no-PLI sectors tracked there as a comparison group (not evidence of a scheme's own effect, since none exists for them).</li>
+        <li><b>Traffic-light status is a synthesis judgment, not an official rating</b> — every row's rationale is stated so a reader can disagree with the call using the same evidence.</li>
+        <li>Underlying data: <a href="../data/sector_master_scorecard_2026-07-19.json">data/sector_master_scorecard_2026-07-19.json</a>.</li>
+      </ul>
+    </div>
+
+    <footer class="colophon">herrrickshaw/india-trade-sector-policy-recommendations — derived research synthesis; not an official government publication or investment solicitation</footer>
+  </div>
+</div>
+
+<script>
+(function () {
+  var sectors = [
+    {sector:"Electronics & Semiconductor Manufacturing", hs:"84-85",
+      targets:["Taiwan (process tech)","Japan (IJICP)","USA (iCET/TRUST)"],
+      imports:["China","Hong Kong","Singapore"], exports:["USA","UAE","China"],
+      policy:"PLI Electronics/SPECS (Apr 2020) + IT Hardware (Mar 2021) + India Semiconductor Mission, Rs 76,000cr (Dec 2021) + ISM 2.0. Gujarat tops up ISM subsidy 40%, UP 50%.",
+      fdiStatus:"rose", trend:"+352% FY19→FY25 ($452M→$2,043M), 2-3yr lag, rising OPPOSITE the national FDI cycle — the strongest signal in this repo's analysis.",
+      light:"green", reason:"Real, sustained, counter-cyclical FDI rise plus landed capacity (Micron, Tata-PSMC) — the clearest success case."},
+    {sector:"Specialty Steel & Metals", hs:"72-73",
+      targets:["Japan (JFE, Nashik)","Korea (POSCO-JSW $7.73bn)","Europe (tech only)"],
+      imports:["Korea","Indonesia","Japan"], exports:["Italy","USA","Nepal"],
+      policy:"PLI Specialty Steel, Rs 6,322cr (Jul 2021), Rs 44,106cr+Rs 11,887cr committed capacity. Odisha names steel a Thrust Sector.",
+      fdiStatus:"fell", trend:"FDI collapsed ~84%/~79% in the 2yrs post-launch; FY25 still ~29% below baseline. POSCO-JSW cash only moved Apr 2026 — not yet reflected.",
+      light:"amber", reason:"Real capacity growing (Tata Steel, JSW) but on domestic capital — the FDI channel specifically hasn't converted, and India's own safeguard duty complicates courting Japan/Korea."},
+    {sector:"Auto, EV & Battery", hs:"87",
+      targets:["Korea (LGES-JSW, Agratas equipment)","Japan (Toyota $1.9bn, Suzuki)"],
+      imports:["not a top-12 import-growth chapter — export-dominant, not import-dependent"], exports:["USA","Mexico","South Africa"],
+      policy:"PLI ACC Battery, Rs 18,100cr (May 2021) + PLI Auto/Auto Components, ~Rs 26,000cr (Sep 2021). Tamil Nadu: 100% SGST reimbursement 15yr.",
+      fdiStatus:"fell", trend:"+327% launch-year spike (traced to a PE deal, not PLI capex) fully reverted -73% the next year; FY25 sits 40% below FY19 baseline.",
+      light:"amber", reason:"Gigafactory capacity real but domestic-capital-funded (Tata Agratas, Reliance) — FDI channel hasn't materialized; battery supply chain still China-dependent upstream."},
+    {sector:"Pharmaceuticals & Bulk Drug APIs", hs:"29-30",
+      targets:["USA (BIOSECURE-driven CDMO shift)","Germany (weak, adjacent-only)"],
+      imports:["China","USA","Saudi Arabia"], exports:["USA","United Kingdom","South Africa"],
+      policy:"PLI Bulk Drugs, Rs 6,940cr (Mar 2020, 41/53 critical KSMs) + PLI Pharmaceuticals, Rs 15,000cr (Feb 2021). 3 Bulk Drug Parks still under construction.",
+      fdiStatus:"rose_but_confounded", trend:"+202% FY21 jump landed BEFORE either scheme disbursed — points to COVID/API-security reshoring more than PLI. FDI now falling while PLI's own investment figures climb.",
+      light:"amber", reason:"Genuine activity, weak causal story, and China API dependency remains ~74% for the most critical KSMs despite years of rising headlines."},
+    {sector:"White Goods Components", hs:"84 (subset)",
+      targets:["Japan (Daikin, Nidec)","Korea (Samsung, LG)","Denmark (Danfoss)"],
+      imports:["China","Germany","USA"], exports:["USA","UAE","United Kingdom"],
+      policy:"PLI White Goods, Rs 6,238cr (Apr 2021), fully subscribed at 85/85 companies only Jan 2026. AP's Policy 4.0: 20-30% capital subsidy by scale.",
+      fdiStatus:"fell", trend:"Launch year (CY2021) was the LOWEST value in the whole series; FY25 fell to roughly half pre-launch levels. But full subscription only landed Jan 2026 — real wave may be ahead.",
+      light:"amber", reason:"Structurally too early to call — production targets run to FY2027-28; revisit once that data lands rather than reading the current flat trend as failure."},
+    {sector:"Inorganic Chemicals", hs:"28",
+      targets:["Japan (Sumitomo, Mitsubishi Gas Chemical)","Germany (Lanxess, directional)"],
+      imports:["UAE","Japan","China"], exports:["not a top-12 export-growth chapter — net importer, not an exporter here"],
+      policy:"No PLI scheme. Tier-1 ground-floor opportunity ($14.2bn FY25-26 imports, +86.0% growth).",
+      fdiStatus:"control_sector_fell", trend:"As a no-PLI control: FDI fell -46.5% FY19→FY25 — similar direction to several PLI sectors, undercutting a simple 'just needs a scheme' read on its own.",
+      light:"red", reason:"No policy lever, declining FDI, $14.2bn of growing unmet import demand with nothing built against it — the clearest 'needs a first mover' case here."},
+    {sector:"Plastics", hs:"39",
+      targets:["Saudi Arabia & UAE ($44bn RRPCL, MOU-stage)","Qatar","Japan"],
+      imports:["China","South Korea","Singapore"], exports:["not a top-12 export-growth chapter"],
+      policy:"No PLI scheme. Tier-1 ground-floor opportunity ($22.2bn FY25-26 imports, +45.8% growth). RRPCL ($44bn) stuck at MOU stage for years.",
+      fdiStatus:"control_sector_fell", trend:"As a no-PLI control: FDI fell -58.8% FY19→FY25 — the steepest decline of any sector tracked in this scorecard, PLI or not.",
+      light:"red", reason:"Worst FDI trend in this entire scorecard, no lever, and the one large prospective deal remains stuck after years — lagging on every signal."},
+    {sector:"Aircraft & Spacecraft", hs:"88",
+      targets:["France (Tata-Airbus C295, operating)","USA (Boeing, Lockheed)","Israel (IAI)"],
+      imports:["France","Germany","USA"], exports:["not a top-12 export-growth chapter"],
+      policy:"No PLI scheme. Tier-1 ground-floor opportunity ($13.8bn FY25-26 imports, +80.9% growth). Real defense-partnership activity instead of a production incentive.",
+      fdiStatus:"control_sector_flat", trend:"As a no-PLI control: FDI roughly flat (-5.5%) FY19→FY25 — the mildest decline of the three control sectors, consistent with the operating Tata-Airbus line.",
+      light:"amber", reason:"No scheme, but genuine foreign-partner activity is landing and the FDI trend is the least negative of any no-PLI sector — closer to 'quietly working' than lagging."},
+    {sector:"Medical Devices", hs:"90 (subset)",
+      targets:["Germany (Siemens Healthineers)","Japan (Olympus)","USA (Medtronic)"],
+      imports:["China","USA","Germany"], exports:["not a top-12 export-growth chapter — import-dependent, not export-led"],
+      policy:"PLI Medical Devices, Rs 3,420cr (Mar 2020). 100% automatic-route FDI open since 2014, six years before PLI.",
+      fdiStatus:"rose", trend:"Cleanest positive result in this repo: fell to a COVID trough, then rose every year since — ~4x FY19 baseline by FY25; share of total FDI climbed 0.35%→1.25% while total FDI stayed flat.",
+      light:"green", reason:"Clean, sustained, share-gaining rise — though concentrated in a handful of large MNC deals (Siemens, Medtronic, GE-Wipro), so the base is still thin."},
+    {sector:"Textiles & Apparel (cotton-based)", hs:"61-62",
+      targets:[], imports:["not a top-12 import-growth chapter"], exports:["USA","United Kingdom","UAE"],
+      policy:"PLI Textiles (Rs 10,683cr) exists but targets MMF/technical textiles, structurally EXCLUDING the cotton apparel that actually makes up HS61/62 export volume — a scheme/product mismatch, not an absent scheme.",
+      fdiStatus:"no_fdi_country_identified", trend:"No target FDI-source country identified. Real capital is Indian-owned capacity RESHORING from Bangladesh, not inbound FDI. HS61/62 exports are themselves declining (-2.3%, -2.0%).",
+      light:"red", reason:"Structural policy mismatch, declining exports, and no FDI story at all — the fix is broadening PLI Textiles' scope, not a country-courting pitch."}
+  ];
+
+  var statusLabel = {rose:"Rose", fell:"Fell", rose_but_confounded:"Confounded", control_sector_fell:"Control: fell", control_sector_flat:"Control: flat", no_fdi_country_identified:"No target found"};
+
+  var body = document.getElementById("scorecardBody");
+  sectors.forEach(function (s) {
+    var tr = document.createElement("tr");
+    var targetsHtml = s.targets.length ? s.targets.map(function(t){return t;}).join("; ") : '<span class="none">none identified</span>';
+    var importsHtml = s.imports.join("; ");
+    var exportsHtml = s.exports.join("; ");
+    var pillClass = "status-" + s.fdiStatus;
+    tr.innerHTML =
+      '<td class="sector-cell">' + s.sector + '<span class="hs">HS ' + s.hs + '</span></td>' +
+      '<td class="country-cell">' + targetsHtml + '</td>' +
+      '<td class="country-cell">' + importsHtml + '</td>' +
+      '<td class="country-cell">' + exportsHtml + '</td>' +
+      '<td class="policy-cell">' + s.policy + '</td>' +
+      '<td><span class="status-pill ' + pillClass + '">' + statusLabel[s.fdiStatus] + '</span></td>' +
+      '<td class="trend-cell">' + s.trend + '</td>' +
+      '<td class="light-cell"><div class="light-row"><span class="dot ' + s.light + '" style="margin-top:4px;"></span><span class="light-text">' + s.reason + '</span></div></td>';
+    body.appendChild(tr);
+  });
+})();
+</script>

@@ -1,0 +1,134 @@
+{
+  "purpose": "A single master scorecard across the 10 priority sectors, synthesizing every prior bulletin in this repo into one table: who India actually trades with (imports/exports), who to court for FDI, what policy levers exist, whether real FDI has shown up, and a traffic-light read on trajectory.",
+  "retrieved": "2026-07-19",
+  "method": "No new research -- pulls directly from this repo's own prior sourced work: sector_country_priority_and_pli_coverage_2026-07-18.json (import-side top countries, TRADESTAT), export_destination_priority_and_pli_coverage_2026-07-18.json (export-side top countries, TRADESTAT), top10_sector_country_strategies_2026-07-19.json (target FDI-source countries), fdi_vs_pli_launch_2026-07-19.json (real FDI-equity verdicts vs. PLI launch dates), state_central_incentives_and_emergent_hubs_2026-07-18.json and sector_and_policy_recommendations_2026-07-18.json (policy levers). Traffic-light status is this repo's own judgment call, not an official rating -- the rationale is stated for every sector so it can be checked or disputed.",
+
+  "traffic_light_key": {
+    "green": "Growing -- real FDI-equity evidence and/or real committed capacity both point the same direction, with an active policy lever behind it.",
+    "amber": "Needs further incentives / mixed -- either a policy lever exists but hasn't converted to measurable FDI yet, or real investment is landing through non-FDI (domestic) capital while the FDI channel itself lags.",
+    "red": "Lagging -- no effective policy lever, declining real FDI-equity trend, or (Textiles) a structural policy mismatch with no fix in motion."
+  },
+
+  "sectors": [
+    {
+      "sector": "Electronics & Semiconductor Manufacturing",
+      "hs": "84-85",
+      "fdi_target_countries": ["Taiwan (process tech)", "Japan (IJICP)", "USA (iCET/TRUST equipment)"],
+      "leads_in_imports": ["China", "Hong Kong", "Singapore (HS85)"],
+      "leads_in_exports": ["USA", "UAE", "China (HS85)"],
+      "policy_levers": "PLI Electronics/SPECS (Apr 2020) + PLI IT Hardware (Mar 2021) + India Semiconductor Mission, Rs 76,000cr (Dec 2021) + ISM 2.0 (2026). Gujarat tops up ISM subsidy 40%, UP 50%.",
+      "fdi_status": "rose",
+      "investment_trend": "FDI equity inflow +352% FY18-19 to FY24-25 ($452M to $2,043M), 2-3yr lag after launch, rising OPPOSITE the national FDI cycle -- the strongest sector-specific signal in this repo's whole FDI-vs-PLI analysis.",
+      "traffic_light": "green",
+      "traffic_light_reason": "Real, sustained, counter-cyclical FDI rise plus landed capacity (Micron, Tata-PSMC, Tata Electronics Assam) -- the clearest success case in this repo."
+    },
+    {
+      "sector": "Specialty Steel & Metals",
+      "hs": "72-73",
+      "fdi_target_countries": ["Japan (JFE tech + Nashik)", "Korea (POSCO-JSW $7.73bn)", "Europe (technology only, not equity)"],
+      "leads_in_imports": ["Korea", "Indonesia", "Japan (HS72)"],
+      "leads_in_exports": ["Italy", "USA", "Nepal (HS72)"],
+      "policy_levers": "PLI Specialty Steel, Rs 6,322cr outlay (Jul 2021), Rs 44,106cr + Rs 11,887cr committed capacity across rounds 1.0/1.1/1.2. Odisha's IPR 2022 names steel a Thrust Sector; Chhattisgarh raised its rebate ceiling to 150% of investment.",
+      "fdi_status": "fell",
+      "investment_trend": "FDI equity inflow collapsed ~84%/~79% in the two years right after the Jul 2021 launch; FY24-25 stayed ~29% below the pre-launch average. POSCO-JSW's cash didn't move until Apr 2026 -- not yet reflected. Real capacity (Tata Steel Kalinganagar, JSW Vijayanagar) is landing, but funded by domestic capital.",
+      "traffic_light": "amber",
+      "traffic_light_reason": "Strong policy lever and real production capacity growing, but the FDI-equity channel specifically has not worked, and India's own steel safeguard duty complicates courting the very countries (Japan, Korea) it targets -- needs the committed capex to actually convert into foreign capital, not just domestic expansion."
+    },
+    {
+      "sector": "Auto, EV & Battery",
+      "hs": "87",
+      "fdi_target_countries": ["Korea (LGES-JSW, Agratas equipment)", "Japan (Toyota $1.9bn, Suzuki)"],
+      "leads_in_imports": ["not among India's top-12 import-growth chapters -- auto is export-dominant, not import-dependent"],
+      "leads_in_exports": ["USA", "Mexico", "South Africa"],
+      "policy_levers": "PLI ACC Battery Storage, Rs 18,100cr (May 2021) + PLI Auto/Auto Components, ~Rs 26,000cr (Sep 2021). Tamil Nadu: 100% SGST reimbursement 15yr; UP: 30% capital subsidy for first 2 ultra-mega battery/EV projects.",
+      "fdi_status": "fell",
+      "investment_trend": "FDI equity inflow spiked +327% in the launch year (FY21-22, traced to a TPG Rise Climate PE deal, not PLI-induced capex) then fully reverted -73% the next year; FY24-25 sits 40% below the FY18-19 baseline. Tata's Agratas and Reliance's Jamnagar battery gigafactories are domestic capital, invisible to this data regardless of scale.",
+      "traffic_light": "amber",
+      "traffic_light_reason": "Real gigafactory capacity is being built at scale, but almost entirely on domestic balance sheets -- the FDI channel this repo's country-strategy work targets (Korea, Japan) hasn't materialized in the data yet, and India's own battery supply chain remains upstream-dependent on Chinese graphite/lithium/rare earths."
+    },
+    {
+      "sector": "Pharmaceuticals & Bulk Drug APIs",
+      "hs": "29-30",
+      "fdi_target_countries": ["USA (BIOSECURE-driven CDMO shift, Eli Lilly $1bn)", "Germany (weak, adjacent-only)"],
+      "leads_in_imports": ["China", "USA", "Saudi Arabia (HS29, organic chemicals/KSM proxy)"],
+      "leads_in_exports": ["USA", "United Kingdom", "South Africa (HS30)"],
+      "policy_levers": "PLI Bulk Drugs, Rs 6,940cr (Mar 2020, covers 41 of 53 critical KSM/API dependencies) + PLI Pharmaceuticals, Rs 15,000cr (Feb 2021). 3 Central Bulk Drug Parks (AP, Gujarat, HP) still under construction, none operational as of mid-2026.",
+      "fdi_status": "rose_but_confounded",
+      "investment_trend": "FDI equity inflow rose sharply (+202% in FY20-21 alone) but that jump landed BEFORE either scheme had disbursed anything -- timing points to global COVID/API-security reshoring more than PLI. Most recent 2 years: FDI falling while PLI's own investment-realization figures keep climbing -- a real decoupling.",
+      "traffic_light": "amber",
+      "traffic_light_reason": "Genuine investment activity, but the causal story is weak and China API dependency remains ~74% for the most critical KSMs -- the scheme's own targeted gap is not yet closed despite years of rising headline numbers."
+    },
+    {
+      "sector": "White Goods Components",
+      "hs": "84 (subset)",
+      "fdi_target_countries": ["Japan (Daikin, Nidec)", "Korea (Samsung, LG)", "Denmark (Danfoss)"],
+      "leads_in_imports": ["China", "Germany", "USA (HS84 general machinery, white-goods components are a subset)"],
+      "leads_in_exports": ["USA", "UAE", "United Kingdom (HS84 general machinery)"],
+      "policy_levers": "PLI White Goods (ACs & LED Lights), Rs 6,238cr (Apr 2021), fully subscribed at 85/85 companies only as of Jan 2026. Andhra Pradesh's Electronics Manufacturing Policy 4.0: 20-30% capital subsidy by scale; Tamil Nadu names 'Consumer Electronics and Appliances' a priority sub-sector.",
+      "fdi_status": "fell",
+      "investment_trend": "The launch year itself (CY2021) was the LOWEST value in the whole 2018-2025 series; FY24-25 fell to roughly half the pre-launch level -- no sustained rise visible. But the scheme only reached full subscription in Jan 2026, so the real investment wave may still be ahead of this data window.",
+      "traffic_light": "amber",
+      "traffic_light_reason": "Structurally too early to call -- fully subscribed only recently, with production targets running to FY2027-28. Revisit this verdict once FY27-28/29 data lands rather than reading the current flat trend as failure."
+    },
+    {
+      "sector": "Inorganic Chemicals",
+      "hs": "28",
+      "fdi_target_countries": ["Japan (Sumitomo, Mitsubishi Gas Chemical)", "Germany (Lanxess, directional only)"],
+      "leads_in_imports": ["UAE", "Japan", "China"],
+      "leads_in_exports": ["not among India's top-12 export-growth chapters -- India is a net importer here, not an exporter"],
+      "policy_levers": "No PLI scheme exists. Tier-1 ground-floor opportunity in this repo's own import-substitution framework ($14.2bn FY25-26 imports, +86.0% growth).",
+      "fdi_status": "control_sector_fell",
+      "investment_trend": "As a no-PLI control sector: FDI equity inflow fell -46.5% FY18-19 to FY24-25 -- roughly the same direction as the sectors that DO have a scheme, undercutting any 'just needs a PLI' assumption on its own, though the scale of unmet import demand remains real and growing.",
+      "traffic_light": "red",
+      "traffic_light_reason": "No policy lever, declining FDI trend, and $14.2bn of growing import demand with nothing built against it -- the clearest 'genuinely lagging, needs a first mover' case in this scorecard."
+    },
+    {
+      "sector": "Plastics",
+      "hs": "39",
+      "fdi_target_countries": ["Saudi Arabia & UAE ($44bn RRPCL, stalled at MOU stage)", "Qatar", "Japan"],
+      "leads_in_imports": ["China", "South Korea", "Singapore"],
+      "leads_in_exports": ["not among India's top-12 export-growth chapters"],
+      "policy_levers": "No PLI scheme exists. Tier-1 ground-floor opportunity ($22.2bn FY25-26 imports, +45.8% growth). The one headline deal (RRPCL, $44bn) has circulated for years without reaching financial close.",
+      "fdi_status": "control_sector_fell",
+      "investment_trend": "As a no-PLI control sector: FDI equity inflow fell -58.8% FY18-19 to FY24-25 -- the steepest decline of any sector tracked in this scorecard, PLI or not.",
+      "traffic_light": "red",
+      "traffic_light_reason": "Worst FDI trend in this entire scorecard, no policy lever, and the one large prospective deal remains stuck at MOU stage after years -- lagging on every available signal."
+    },
+    {
+      "sector": "Aircraft & Spacecraft",
+      "hs": "88",
+      "fdi_target_countries": ["France (Tata-Airbus C295, operating)", "USA (Boeing, Lockheed)", "Israel (IAI)"],
+      "leads_in_imports": ["France", "Germany", "USA"],
+      "leads_in_exports": ["not among India's top-12 export-growth chapters"],
+      "policy_levers": "No PLI scheme exists. Tier-1 ground-floor opportunity ($13.8bn FY25-26 imports, +80.9% growth). Real defense/strategic-partnership activity (Tata-Airbus JV, Safran MRO, BEL-Safran JV) rather than a production-incentive story.",
+      "fdi_status": "control_sector_flat",
+      "investment_trend": "As a no-PLI control sector: FDI equity inflow was roughly flat (-5.5%) FY18-19 to FY24-25 -- the mildest decline of the three control sectors, consistent with real (if modest) foreign activity like the operating Tata-Airbus C295 line.",
+      "traffic_light": "amber",
+      "traffic_light_reason": "No production-incentive scheme, but genuine foreign-partner activity is landing (France, prospectively USA/Israel) and the FDI trend is the least negative of any sector without a PLI -- closer to 'quietly working' than 'lagging.'"
+    },
+    {
+      "sector": "Medical Devices",
+      "hs": "90 (subset)",
+      "fdi_target_countries": ["Germany (Siemens Healthineers)", "Japan (Olympus)", "USA (Medtronic)"],
+      "leads_in_imports": ["China", "USA", "Germany"],
+      "leads_in_exports": ["not among India's top-12 export-growth chapters -- India is import-dependent here, not export-led"],
+      "policy_levers": "PLI Medical Devices, Rs 3,420cr (Mar 2020, same Cabinet meeting as Bulk Drugs). 100% FDI under the automatic route has been open since 2014, six years before PLI.",
+      "fdi_status": "rose",
+      "investment_trend": "The cleanest positive result in this repo's FDI-vs-PLI analysis: fell to a COVID-year trough then rose every year since, ~4x the FY18-19 baseline by FY24-25, and its share of India's total FDI climbed 0.35%->1.25% while total FDI stayed flat.",
+      "traffic_light": "green",
+      "traffic_light_reason": "Clean, sustained, share-gaining FDI rise -- though concentrated in a handful of large MNC deals (Siemens Healthineers, Medtronic, GE-Wipro), so the base is still thin relative to Electronics."
+    },
+    {
+      "sector": "Textiles & Apparel (cotton-based)",
+      "hs": "61-62",
+      "fdi_target_countries": [],
+      "leads_in_imports": ["not among India's top-12 import-growth chapters"],
+      "leads_in_exports": ["USA", "United Kingdom", "UAE"],
+      "policy_levers": "PLI Textiles exists (Rs 10,683cr) but targets man-made fibre and technical textiles, structurally EXCLUDING the cotton-based apparel that actually makes up HS61/62 export volume -- a genuine scheme/product mismatch, not an absent scheme.",
+      "fdi_status": "no_fdi_country_identified",
+      "investment_trend": "No target FDI-source country was identified in this repo's country-strategy research. The real capital movement is Indian-owned capacity RESHORING from Bangladesh, not inbound foreign investment. HS61/62 exports are themselves declining (-2.3% and -2.0%).",
+      "traffic_light": "red",
+      "traffic_light_reason": "The one sector in this scorecard with a structural policy mismatch AND declining exports AND no FDI story at all -- the fix is broadening PLI Textiles' scope to cotton apparel, not a country-courting pitch."
+    }
+  ]
+}
