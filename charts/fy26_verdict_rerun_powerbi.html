@@ -1,0 +1,356 @@
+<title>FY2025-26 Sector Verdict Re-run — Trade Impact Dashboard</title>
+<meta name="hz:canvas-width" content="1240">
+<style>
+  :root {
+    color-scheme: light;
+    --canvas:#eef0f4; --tile:#ffffff; --tile-border:#dcdfe6; --chrome:#1b2a41; --chrome-ink:#f4f6fa;
+    --ink:#1c1e24; --ink-2:#4a4f5a; --ink-muted:#7d8290;
+    --imports:#2a78d6; --imports-soft:#dbe8f8; --exports:#1f8a70; --exports-soft:#d9efe8;
+    --good:#1f7a4d; --good-soft:#ddefe4; --warn:#b07a10; --warn-soft:#f5ead0; --bad:#a5402c; --bad-soft:#f3ded7;
+    --grid:#e3e5ea; --shadow:0 1px 3px rgba(20,24,33,0.10), 0 1px 2px rgba(20,24,33,0.06);
+    --font:"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+    --mono:"Segoe UI",-apple-system,sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --canvas:#16181d; --tile:#1f2228; --tile-border:#33363e; --chrome:#10151d; --chrome-ink:#e8ebf1;
+      --ink:#e9eaee; --ink-2:#b6bac4; --ink-muted:#818694;
+      --imports:#5b9ce6; --imports-soft:#20304a; --exports:#4cbc9a; --exports-soft:#1c352d;
+      --good:#4cbc82; --good-soft:#1d3628; --warn:#dfa93c; --warn-soft:#3a3220; --bad:#e0785f; --bad-soft:#3a241d;
+      --grid:#2c2f36; --shadow:0 1px 3px rgba(0,0,0,0.4);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --canvas:#16181d; --tile:#1f2228; --tile-border:#33363e; --chrome:#10151d; --chrome-ink:#e8ebf1;
+    --ink:#e9eaee; --ink-2:#b6bac4; --ink-muted:#818694;
+    --imports:#5b9ce6; --imports-soft:#20304a; --exports:#4cbc9a; --exports-soft:#1c352d;
+    --good:#4cbc82; --good-soft:#1d3628; --warn:#dfa93c; --warn-soft:#3a3220; --bad:#e0785f; --bad-soft:#3a241d;
+    --grid:#2c2f36; --shadow:0 1px 3px rgba(0,0,0,0.4);
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --canvas:#eef0f4; --tile:#ffffff; --tile-border:#dcdfe6; --chrome:#1b2a41; --chrome-ink:#f4f6fa;
+    --ink:#1c1e24; --ink-2:#4a4f5a; --ink-muted:#7d8290;
+    --imports:#2a78d6; --imports-soft:#dbe8f8; --exports:#1f8a70; --exports-soft:#d9efe8;
+    --good:#1f7a4d; --good-soft:#ddefe4; --warn:#b07a10; --warn-soft:#f5ead0; --bad:#a5402c; --bad-soft:#f3ded7;
+    --grid:#e3e5ea; --shadow:0 1px 3px rgba(20,24,33,0.10), 0 1px 2px rgba(20,24,33,0.06);
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--canvas); color:var(--ink); font-family:var(--font); }
+  .chrome { background:var(--chrome); color:var(--chrome-ink); padding:14px 26px; display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px; }
+  .chrome .t { font-size:17px; font-weight:600; letter-spacing:0.01em; }
+  .chrome .t span { opacity:0.55; font-weight:400; }
+  .chrome .r { font-size:11.5px; opacity:0.7; }
+  .wrap { max-width:1240px; margin:0 auto; padding:18px 20px 48px; display:flex; flex-direction:column; gap:14px; }
+
+  .slicers { display:flex; flex-wrap:wrap; gap:14px; align-items:center; }
+  .slicer-group { display:flex; gap:4px; background:var(--tile); border:1px solid var(--tile-border); border-radius:6px; padding:4px; box-shadow:var(--shadow); }
+  .slicer-label { font-size:11px; color:var(--ink-muted); align-self:center; padding:0 6px 0 10px; text-transform:uppercase; letter-spacing:0.06em; }
+  .slicer { border:none; background:transparent; color:var(--ink-2); font-family:var(--font); font-size:12.5px; padding:6px 14px; border-radius:4px; cursor:pointer; }
+  .slicer:hover { background:var(--canvas); }
+  .slicer.active { background:var(--chrome); color:var(--chrome-ink); }
+
+  .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:12px; }
+  .kpi { background:var(--tile); border:1px solid var(--tile-border); border-radius:8px; box-shadow:var(--shadow); padding:14px 18px 12px; display:flex; flex-direction:column; gap:2px; }
+  .kpi .lbl { font-size:11px; text-transform:uppercase; letter-spacing:0.06em; color:var(--ink-muted); }
+  .kpi .val { font-size:30px; font-weight:600; font-variant-numeric:tabular-nums; letter-spacing:-0.01em; }
+  .kpi .delta { font-size:12.5px; font-weight:600; }
+  .kpi .delta.up { color:var(--good); } .kpi .delta.down { color:var(--bad); } .kpi .delta.flat { color:var(--ink-muted); font-weight:400; }
+
+  .tile { background:var(--tile); border:1px solid var(--tile-border); border-radius:8px; box-shadow:var(--shadow); padding:16px 20px 18px; }
+  .tile h2 { margin:0 0 2px; font-size:14.5px; font-weight:600; }
+  .tile .sub { font-size:11.5px; color:var(--ink-muted); margin-bottom:12px; }
+  .grid2 { display:grid; grid-template-columns:minmax(0,7fr) minmax(0,5fr); gap:14px; align-items:stretch; }
+  @media (max-width:980px){ .grid2 { grid-template-columns:1fr; } }
+
+  table.matrix { width:100%; border-collapse:collapse; font-size:12.5px; font-variant-numeric:tabular-nums; }
+  table.matrix th { text-align:left; font-size:10.5px; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-muted); font-weight:600; padding:6px 10px 8px 0; border-bottom:2px solid var(--tile-border); }
+  table.matrix th.num, table.matrix td.num { text-align:right; }
+  table.matrix td { padding:9px 10px 9px 0; border-bottom:1px solid var(--grid); vertical-align:top; }
+  table.matrix tr:last-child td { border-bottom:none; }
+  .chip { display:inline-block; font-size:10.5px; font-weight:600; padding:2px 9px; border-radius:10px; white-space:nowrap; }
+  .chip.green { background:var(--good-soft); color:var(--good); }
+  .chip.amber { background:var(--warn-soft); color:var(--warn); }
+  .chip.red { background:var(--bad-soft); color:var(--bad); }
+  .chip.cov-strong { background:var(--good-soft); color:var(--good); }
+  .chip.cov-partial { background:var(--warn-soft); color:var(--warn); }
+  .chip.cov-gap { background:var(--bad-soft); color:var(--bad); }
+  .chip.cov-mismatch { background:var(--bad-soft); color:var(--bad); }
+  .chip.cov-na { background:var(--grid); color:var(--ink-muted); }
+  .arrow { color:var(--ink-muted); padding:0 4px; }
+  .dchip { font-weight:600; font-variant-numeric:tabular-nums; }
+  .dchip.up { color:var(--good); } .dchip.down { color:var(--bad); } .dchip.na { color:var(--ink-muted); font-weight:400; }
+  .reason { font-size:11.5px; color:var(--ink-2); line-height:1.5; max-width:60ch; }
+
+  .scatter-wrap { position:relative; }
+  .tooltip { position:absolute; pointer-events:none; background:var(--chrome); color:var(--chrome-ink); font-size:11.5px; padding:7px 10px; border-radius:5px; opacity:0; transition:opacity 0.08s; max-width:230px; line-height:1.45; z-index:5; }
+  .legend { display:flex; gap:18px; font-size:11.5px; color:var(--ink-2); margin-top:6px; }
+  .legend span { display:inline-flex; align-items:center; gap:6px; }
+  .dot { width:9px; height:9px; border-radius:50%; display:inline-block; }
+
+  table.trade { width:100%; border-collapse:collapse; font-size:12px; font-variant-numeric:tabular-nums; }
+  table.trade th { text-align:left; font-size:10px; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-muted); padding:5px 8px 6px 0; border-bottom:2px solid var(--tile-border); }
+  table.trade th.num, table.trade td.num { text-align:right; }
+  table.trade td { padding:6px 8px 6px 0; border-bottom:1px solid var(--grid); }
+  table.trade tr:last-child td { border-bottom:none; }
+  .bar-cell { display:flex; align-items:center; gap:8px; }
+  .mini-track { flex:1; height:10px; background:var(--canvas); border-radius:2px; overflow:hidden; min-width:40px; }
+  .mini-fill { height:100%; border-radius:2px; }
+
+  .reading { border-left:3px solid var(--imports); background:var(--imports-soft); border-radius:0 6px 6px 0; padding:12px 16px; font-size:12.5px; line-height:1.6; color:var(--ink-2); margin-top:12px; }
+  .reading b { color:var(--ink); }
+
+  .actions { display:flex; flex-direction:column; gap:10px; }
+  .action { display:grid; grid-template-columns:34px 1fr; gap:12px; padding:12px 14px; background:var(--canvas); border:1px solid var(--tile-border); border-radius:6px; }
+  .action .n { width:28px; height:28px; border-radius:50%; background:var(--chrome); color:var(--chrome-ink); display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:600; }
+  .action .a-title { font-size:13px; font-weight:600; }
+  .action .a-why { font-size:12px; color:var(--ink-2); line-height:1.5; margin-top:2px; }
+  .action .a-owner { font-size:10.5px; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-muted); margin-top:4px; }
+
+  .foot { font-size:11px; color:var(--ink-muted); line-height:1.6; }
+  .foot a { color:var(--imports); }
+</style>
+
+<div class="chrome">
+  <div class="t">FY2025-26 Sector Verdict Re-run <span>· Trade Impact Dashboard · India Trade — Sector &amp; Policy Recommendations</span></div>
+  <div class="r">Data refreshed 19 Jul 2026 · FDI: DPIIT Newsletter XXXIV-4 · Trade: TRADESTAT FY2025-26, 5-yr growth</div>
+</div>
+
+<div class="wrap">
+  <div class="slicers">
+    <div class="slicer-group"><span class="slicer-label">Verdict</span>
+      <button class="slicer active" data-verdict="all">All</button>
+      <button class="slicer" data-verdict="green">Green</button>
+      <button class="slicer" data-verdict="amber">Amber</button>
+      <button class="slicer" data-verdict="red">Red</button>
+    </div>
+    <div class="slicer-group"><span class="slicer-label">Flow</span>
+      <button class="slicer active" data-flow="both">Both</button>
+      <button class="slicer" data-flow="imports">Imports</button>
+      <button class="slicer" data-flow="exports">Exports</button>
+    </div>
+  </div>
+
+  <div class="kpis">
+    <div class="kpi"><span class="lbl">FDI equity inflow FY25-26</span><span class="val">$58.8bn</span><span class="delta up">▲ 18% vs FY24-25</span></div>
+    <div class="kpi"><span class="lbl">Imports FY25-26</span><span class="val">$776.0bn</span><span class="delta down">▲ 26.6% over 5 yrs</span></div>
+    <div class="kpi"><span class="lbl">Exports FY25-26</span><span class="val">$441.7bn</span><span class="delta flat">▲ 4.7% over 5 yrs</span></div>
+    <div class="kpi"><span class="lbl">Trade deficit</span><span class="val">−$334bn</span><span class="delta flat">imports grew 5.7× faster</span></div>
+    <div class="kpi"><span class="lbl">Verdict mix (re-run)</span><span class="val">1·6·3</span><span class="delta flat">green · amber · red — was 2·5·3</span></div>
+  </div>
+
+  <div class="tile">
+    <h2>Sector verdicts, re-run on FY2025-26 FDI</h2>
+    <div class="sub">Both former greens fell to amber; Pharma took the green slot. Same criteria as the original scorecard — the moves are data-driven, not re-scored. Filter with the Verdict slicer above.</div>
+    <table class="matrix">
+      <thead><tr><th>Sector</th><th class="num">FY24-25 FDI ($M)</th><th class="num">FY25-26 FDI ($M)</th><th class="num">Δ</th><th>Verdict</th><th>Why it moved (or didn't)</th></tr></thead>
+      <tbody id="matrixBody"></tbody>
+    </table>
+  </div>
+
+  <div class="grid2">
+    <div class="tile">
+      <h2>Growth rate vs. volume — imports &amp; exports by HS chapter</h2>
+      <div class="sub">x: FY2025-26 value, US$bn (log scale) · y: 5-year growth % · HS85-exports (+324%) plotted at the axis cap, labeled. Reference line: all-imports 5-yr growth (+26.6%). Hover any point.</div>
+      <div class="scatter-wrap">
+        <svg id="scatter" viewBox="0 0 660 430" style="width:100%; height:auto;"></svg>
+        <div class="tooltip" id="tip"></div>
+      </div>
+      <div class="legend">
+        <span><span class="dot" style="background:var(--imports)"></span>Imports (12 chapters)</span>
+        <span><span class="dot" style="background:var(--exports)"></span>Exports (7 chapters)</span>
+      </div>
+    </div>
+    <div class="tile">
+      <h2>Chapter table — $bn, growth, scheme coverage</h2>
+      <div class="sub">Toggled by the Flow slicer. Coverage: strong / partial / gap = production-incentive scheme status; mismatch = scheme exists but structurally excludes the chapter.</div>
+      <div id="tradeTables"></div>
+    </div>
+  </div>
+
+  <div class="tile">
+    <h2>The honest reading — is import substitution working?</h2>
+    <div class="reading" id="honestReading"></div>
+  </div>
+
+  <div class="tile">
+    <h2>Final recommendation — action items to further reduce the trade deficit</h2>
+    <div class="sub">Import reduction and export growth, backed by schemes and incentives, is showing real progress on the <b>export</b> side — these are the moves that extend it to the import side.</div>
+    <div class="actions" id="actionsHost"></div>
+  </div>
+
+  <div class="tile foot">
+    Verdicts are this repo's stated judgment re-applied with the original scorecard's criteria; FY25-26 FDI figures are raw DPIIT proxy categories (Newsletter Vol. XXXIV No.4, Table 12, layout-preserving extraction); trade growth is 5-year (FY2020-21 base) from this repo's TRADESTAT bulletins; Aircraft/Chemicals/Plastics have no clean FY-on-FY FDI comparison (proxy too coarse) and Textiles has no FDI proxy at all — marked n/a rather than estimated. Underlying data: <a href="../data/fy26_verdict_rerun_2026-07-19.json">data/fy26_verdict_rerun_2026-07-19.json</a> · Prior verdicts: <a href="sector_master_scorecard.html">master scorecard</a> · Scheme detail: <a href="policy_investment_dashboard.html">policy &amp; investment dashboard</a>
+  </div>
+</div>
+
+<script>
+(function () {
+  var verdicts = [
+    {sector:"Electronics & Semiconductors", fy25:2043.04, fy26:1153.42, chg:-43.5, oldV:"green", newV:"amber", reason:"FDI nearly halved while national FDI grew 18% — the counter-cyclical rise that earned the green did not extend. Capacity real (Micron, CG Semi, Kaynes inaugurated) but increasingly domestic-funded."},
+    {sector:"Medical Devices", fy25:626.99, fy26:373.84, chg:-40.4, oldV:"green", newV:"amber", reason:"The 'cleanest positive result' reversed — the concentration risk the original verdict itself flagged (a few MNC deals carrying the rise) materialized."},
+    {sector:"Pharma & Bulk Drug APIs", fy25:891.43, fy26:1911.64, chg:114.4, oldV:"amber", newV:"green", reason:"Doubled to the series' highest level — and this rise lands AFTER ₹5,433cr disbursement and investment at 237% of commitment, so the COVID-reshoring confounder is now materially weaker."},
+    {sector:"Auto, EV & Battery", fy25:1586.31, fy26:2459.35, chg:55.0, oldV:"amber", newV:"amber", reason:"Strong rebound, but the FY21-22 lesson (one PE deal, fully reverted) demands deal tracing first — and ACC execution is still 1 of 40 GWh, zero disbursed."},
+    {sector:"White Goods Components", fy25:531.49, fy26:840.44, chg:58.1, oldV:"amber", newV:"amber", reason:"First meaningful post-launch rise, exactly as the 'full subscription Jan 2026, wave ahead' read predicted. One year of evidence — amber with an upgraded trend."},
+    {sector:"Specialty Steel & Metals", fy25:950.99, fy26:838.78, chg:-11.8, oldV:"amber", newV:"amber", reason:"Still below pre-launch baseline. POSCO-JSW's $7.73bn moved Apr 2026 — lands in FY26-27 data; next year is the real test."},
+    {sector:"Aircraft & Spacecraft", fy25:null, fy26:268.16, chg:null, oldV:"amber", newV:"amber", reason:"Proxy too coarse for a YoY read. C295 operating, F414 terms finalized. Still no scheme; imports +80.9% (5yr) to $13.8bn."},
+    {sector:"Inorganic Chemicals", fy25:null, fy26:852.87, chg:null, oldV:"red", newV:"red", reason:"Imports +86% (5yr) to $14.2bn, no scheme. Chemicals PLI under formulation + ₹600cr parks scheme budgeted — a signal, not yet capacity. Red until a scheme exists."},
+    {sector:"Plastics", fy25:null, fy26:214.56, chg:null, oldV:"red", newV:"red", reason:"Imports +45.8% (5yr) to $22.2bn — the largest no-scheme import bill here. RRPCL still short of financial close."},
+    {sector:"Textiles & Apparel (cotton)", fy25:null, fy26:null, chg:null, oldV:"red", newV:"red", reason:"Cotton apparel exports still declining and still structurally outside PLI Textiles — the Oct 2025 amendment broadened MMF codes only."}
+  ];
+  var imports = [
+    {hs:"27", name:"Mineral fuels & oils", bn:203.4, g:21.2, cov:"partial"},
+    {hs:"71", name:"Pearls, gems & jewellery", bn:109.4, g:69.1, cov:"na"},
+    {hs:"85", name:"Electrical machinery", bn:104.9, g:101.5, cov:"strong"},
+    {hs:"84", name:"Machinery, mech. appliances", bn:74.0, g:68.8, cov:"partial"},
+    {hs:"29", name:"Organic chemicals", bn:25.4, g:13.5, cov:"partial"},
+    {hs:"39", name:"Plastics", bn:22.2, g:45.8, cov:"gap"},
+    {hs:"15", name:"Animal/veg fats & oils", bn:19.8, g:97.9, cov:"gap"},
+    {hs:"72", name:"Iron & steel", bn:15.8, g:25.2, cov:"partial"},
+    {hs:"90", name:"Optical/medical instruments", bn:15.4, g:59.6, cov:"partial"},
+    {hs:"31", name:"Fertilisers", bn:14.6, g:118.9, cov:"gap"},
+    {hs:"28", name:"Inorganic chemicals", bn:14.2, g:86.0, cov:"gap"},
+    {hs:"88", name:"Aircraft & spacecraft", bn:13.8, g:80.9, cov:"gap"}
+  ];
+  var exportsD = [
+    {hs:"85", name:"Electrical machinery", bn:54.0, g:324.1, cov:"strong"},
+    {hs:"87", name:"Vehicles", bn:26.0, g:43.5, cov:"strong"},
+    {hs:"10", name:"Cereals", bn:12.0, g:47.1, cov:"gap"},
+    {hs:"73", name:"Iron/steel articles", bn:10.4, g:42.8, cov:"partial"},
+    {hs:"72", name:"Iron & steel", bn:10.3, g:5.9, cov:"partial"},
+    {hs:"62", name:"Apparel, not knitted", bn:8.2, g:-2.0, cov:"mismatch"},
+    {hs:"61", name:"Apparel, knitted", bn:7.6, g:-2.3, cov:"mismatch"}
+  ];
+  var honestReading = "The <b>export half</b> of the import-substitution thesis is showing real progress in scheme-covered chapters: Electrical machinery exports <b>+324% (5yr) to $54bn</b>, Vehicles +43.5%, Iron/steel articles +42.8% — while the two chapters PLI structurally misses (cotton apparel) are the only decliners. The <b>import half is not yet visible at chapter level</b>: HS85 imports ALSO doubled (+101.5% to $104.9bn — components feeding the assembly boom), and total imports grew 5.7× faster than exports over five years. Net: the schemes are demonstrably building export engines; they have not yet bent the import curve, and the electronics import bill is largely the input side of the export success. The trade-deficit lever is therefore two-sided: <b>deepen component localization where export momentum exists, and open schemes where the fastest-growing import bills have none.</b>";
+  var actions = [
+    {n:1, t:"Launch the chemicals/petrochemicals PLI now under formulation, covering Inorganic Chemicals (HS28) and Plastics (HS39)", w:"Combined $36.4bn of FY25-26 imports growing 46–86% over 5 years with zero production-incentive coverage — the two largest open gaps in this analysis.", o:"Dept. of Chemicals & Petrochemicals / Cabinet"},
+    {n:2, t:"Extend PLI Textiles to cotton-based apparel (HS61/62)", w:"The only declining export chapters sit exactly in the scheme's structural blind spot; the Oct 2025 amendment broadened MMF codes only.", o:"Ministry of Textiles"},
+    {n:3, t:"Deepen electronics COMPONENT localization through ECMS rather than celebrating assembly exports", w:"HS85 exports +324% but HS85 imports +101.5% to $104.9bn — the import bill is the input side of the export boom. ECMS (₹22,919cr, open now) is the right instrument; its approval pace decides whether the electronics deficit narrows.", o:"MeitY"},
+    {n:4, t:"Fix ACC Battery PLI execution before adding new capacity schemes", w:"1 of 40 allocated GWh commissioned, zero incentive disbursed, one original awardee quietly gone — the widest approval-to-implementation gap of any scheme tracked.", o:"Dept. of Heavy Industry"},
+    {n:5, t:"Re-verify the Electronics and Medical Devices FDI reversals at the next quarterly refresh", w:"Both former greens fell 40%+ against a rising national cycle. One year warrants amber; two consecutive years would be a trend.", o:"This repo (quarterly checklist)"},
+    {n:6, t:"Publish AHIDF-style application-to-disbursement funnels for every PLI scheme", w:"The barrier is proven to be choice, not capability. Scheme transparency is itself a deficit tool: it exposes where approved capacity is stuck.", o:"DPIIT (PLI nodal department)"}
+  ];
+
+  var fmt = function(n){ return n==null ? "n/a" : n.toLocaleString('en-US',{maximumFractionDigits:0}); };
+
+  // ---- verdict matrix ----
+  var mb = document.getElementById("matrixBody");
+  function renderMatrix(filter) {
+    mb.innerHTML = "";
+    verdicts.forEach(function (v) {
+      if (filter !== "all" && v.newV !== filter) return;
+      var chg = v.chg==null ? '<span class="dchip na">n/a</span>' : '<span class="dchip ' + (v.chg>=0?'up':'down') + '">' + (v.chg>=0?'+':'') + v.chg.toFixed(1) + '%</span>';
+      var vchips = v.oldV === v.newV
+        ? '<span class="chip ' + v.newV + '">' + v.newV + '</span>'
+        : '<span class="chip ' + v.oldV + '">' + v.oldV + '</span><span class="arrow">→</span><span class="chip ' + v.newV + '">' + v.newV + '</span>';
+      var tr = document.createElement("tr");
+      tr.innerHTML = '<td><b>' + v.sector + '</b></td><td class="num">' + fmt(v.fy25) + '</td><td class="num">' + fmt(v.fy26) + '</td><td class="num">' + chg + '</td><td>' + vchips + '</td><td class="reason">' + v.reason + '</td>';
+      mb.appendChild(tr);
+    });
+  }
+  renderMatrix("all");
+
+  // ---- scatter ----
+  var svg = document.getElementById("scatter"), tip = document.getElementById("tip");
+  var W=660, H=430, m={l:52,r:16,t:18,b:40};
+  var xmin=Math.log10(5), xmax=Math.log10(280);
+  var ymin=-20, ymax=135, ycap=130;
+  function X(bn){ return m.l + (Math.log10(bn)-xmin)/(xmax-xmin)*(W-m.l-m.r); }
+  function Y(g){ return H-m.b - (Math.min(g,ycap)-ymin)/(ymax-ymin)*(H-m.t-m.b); }
+  function el(n,attrs){ var e=document.createElementNS("http://www.w3.org/2000/svg",n); for(var k in attrs) e.setAttribute(k,attrs[k]); return e; }
+  function css(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+
+  function renderScatter(flow) {
+    svg.innerHTML = "";
+    var ink2=css('--ink-2'), muted=css('--ink-muted'), grid=css('--grid');
+    // gridlines
+    [5,10,25,50,100,250].forEach(function(v){
+      svg.appendChild(el("line",{x1:X(v),y1:m.t,x2:X(v),y2:H-m.b,stroke:grid,"stroke-width":1}));
+      var t=el("text",{x:X(v),y:H-m.b+16,"text-anchor":"middle","font-size":10,fill:muted}); t.textContent="$"+v+"bn"; svg.appendChild(t);
+    });
+    [0,50,100].forEach(function(v){
+      svg.appendChild(el("line",{x1:m.l,y1:Y(v),x2:W-m.r,y2:Y(v),stroke:grid,"stroke-width":v===0?1.5:1}));
+      var t=el("text",{x:m.l-8,y:Y(v)+3,"text-anchor":"end","font-size":10,fill:muted}); t.textContent=v+"%"; svg.appendChild(t);
+    });
+    // reference line: all-imports 5yr growth
+    svg.appendChild(el("line",{x1:m.l,y1:Y(26.6),x2:W-m.r,y2:Y(26.6),stroke:muted,"stroke-width":1,"stroke-dasharray":"4 4"}));
+    var rl=el("text",{x:W-m.r,y:Y(26.6)-5,"text-anchor":"end","font-size":9.5,fill:muted}); rl.textContent="all-imports growth +26.6%"; svg.appendChild(rl);
+    // axis titles
+    var xt=el("text",{x:(m.l+W-m.r)/2,y:H-6,"text-anchor":"middle","font-size":10.5,fill:ink2}); xt.textContent="FY2025-26 value, US$bn (log)"; svg.appendChild(xt);
+    var yt=el("text",{x:12,y:(m.t+H-m.b)/2,"font-size":10.5,fill:ink2,transform:"rotate(-90 12 "+((m.t+H-m.b)/2)+")","text-anchor":"middle"}); yt.textContent="5-yr growth %"; svg.appendChild(yt);
+
+    function drawSeries(data, colorVar, kind) {
+      var color=css(colorVar);
+      data.forEach(function(d){
+        var capped = d.g > ycap;
+        var cx=X(d.bn), cy=Y(d.g);
+        var c=el("circle",{cx:cx,cy:cy,r:6,fill:color,stroke:css('--tile'),"stroke-width":1.5,cursor:"pointer"});
+        c.addEventListener("mousemove",function(ev){
+          tip.style.opacity=1;
+          var host = svg.parentElement.getBoundingClientRect();
+          tip.style.left=(ev.clientX-host.left+14)+"px"; tip.style.top=(ev.clientY-host.top-10)+"px";
+          tip.innerHTML="<b>HS"+d.hs+" "+d.name+"</b><br>"+kind+": $"+d.bn+"bn · "+(d.g>=0?"+":"")+d.g+"% (5yr)<br>coverage: "+d.cov;
+        });
+        c.addEventListener("mouseleave",function(){ tip.style.opacity=0; });
+        svg.appendChild(c);
+        var lbl=el("text",{x:cx+9,y:cy+3,"font-size":9.5,fill:ink2}); lbl.textContent="HS"+d.hs+(capped?" +"+d.g+"%":""); svg.appendChild(lbl);
+        if (capped) svg.appendChild(el("path",{d:"M"+cx+" "+(cy-9)+" l-4 7 h8 z", fill:color}));
+      });
+    }
+    if (flow!=="exports") drawSeries(imports, '--imports', 'imports');
+    if (flow!=="imports") drawSeries(exportsD, '--exports', 'exports');
+  }
+  renderScatter("both");
+
+  // ---- trade tables ----
+  var tt = document.getElementById("tradeTables");
+  function tradeTable(title, data, colorVar) {
+    var maxBn = Math.max.apply(null, data.map(function(d){return d.bn;}));
+    var h = '<div style="font-size:11px; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-muted); margin:10px 0 6px;">' + title + '</div>';
+    h += '<table class="trade"><thead><tr><th>Chapter</th><th class="num">US$bn</th><th style="width:32%">·</th><th class="num">5-yr growth</th><th>Coverage</th></tr></thead><tbody>';
+    data.forEach(function(d){
+      h += '<tr><td><b>HS'+d.hs+'</b> '+d.name+'</td><td class="num">'+d.bn.toFixed(1)+'</td>'+
+        '<td><div class="bar-cell"><div class="mini-track"><div class="mini-fill" style="width:'+Math.max(d.bn/maxBn*100,2)+'%; background:var('+colorVar+');"></div></div></div></td>'+
+        '<td class="num"><span class="dchip '+(d.g>=0?'up':'down')+'">'+(d.g>=0?'+':'')+d.g.toFixed(1)+'%</span></td>'+
+        '<td><span class="chip cov-'+d.cov+'">'+d.cov+'</span></td></tr>';
+    });
+    return h + '</tbody></table>';
+  }
+  function renderTables(flow) {
+    var h = "";
+    if (flow!=="exports") h += tradeTable("Imports — 12 highest-value growth chapters", imports, '--imports');
+    if (flow!=="imports") h += tradeTable("Exports — growth-tier chapters", exportsD, '--exports');
+    tt.innerHTML = h;
+  }
+  renderTables("both");
+
+  document.getElementById("honestReading").innerHTML = honestReading;
+
+  var ah = document.getElementById("actionsHost");
+  actions.forEach(function(a){
+    var d = document.createElement("div");
+    d.className = "action";
+    d.innerHTML = '<div class="n">'+a.n+'</div><div><div class="a-title">'+a.t+'</div><div class="a-why">'+a.w+'</div><div class="a-owner">'+a.o+'</div></div>';
+    ah.appendChild(d);
+  });
+
+  // ---- slicers ----
+  document.querySelectorAll(".slicer[data-verdict]").forEach(function(b){
+    b.addEventListener("click", function(){
+      document.querySelectorAll(".slicer[data-verdict]").forEach(function(x){x.classList.remove("active");});
+      b.classList.add("active");
+      renderMatrix(b.dataset.verdict);
+    });
+  });
+  document.querySelectorAll(".slicer[data-flow]").forEach(function(b){
+    b.addEventListener("click", function(){
+      document.querySelectorAll(".slicer[data-flow]").forEach(function(x){x.classList.remove("active");});
+      b.classList.add("active");
+      renderScatter(b.dataset.flow);
+      renderTables(b.dataset.flow);
+    });
+  });
+})();
+</script>

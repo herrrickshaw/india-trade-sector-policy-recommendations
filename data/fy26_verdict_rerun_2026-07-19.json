@@ -1,0 +1,63 @@
+{
+  "purpose": "Re-runs the master scorecard's 10 sector verdicts against the FY2025-26 FDI data extracted from DPIIT's Q4 FDI Newsletter (Vol. XXXIV No.4), and pairs the verdicts with an import/export growth-vs-volume analysis (percent growth AND US$ billions, so scale and momentum are read together) to assess the overall impact of import substitution -- ending in an explicit set of action items to further reduce the trade deficit. Presented as a Power BI-style interactive dashboard because that is the format most readers of this material already use.",
+  "retrieved": "2026-07-19",
+  "method": "FDI figures: DPIIT FDI Newsletter Vol. XXXIV No.4 Table 12 (sector-wise FY2025-26), layout-preserving extraction, vs the FY2024-25 values already in this repo's FDI-vs-PLI bulletin. Trade figures: this repo's own TRADESTAT-derived chapter tables (FY2025-26 values, 5-year growth). Verdicts are this repo's stated judgment, re-applied with the same criteria as the original scorecard -- the changes are driven by data, not re-scoring.",
+
+  "kpis": {
+    "fdi_equity_inflow_fy2025_26_usd_bn": 58.85, "fdi_growth_pct": 18,
+    "imports_fy2025_26_usd_bn": 776.0, "imports_5yr_growth_pct": 26.6,
+    "exports_fy2025_26_usd_bn": 441.7, "exports_5yr_growth_pct": 4.7,
+    "trade_deficit_usd_bn": 334.3,
+    "verdict_mix": {"green": 1, "amber": 6, "red": 3, "was": "2 green / 5 amber / 3 red"}
+  },
+
+  "verdict_rerun": [
+    {"sector": "Electronics & Semiconductors", "fy25_fdi_usd_m": 2043.04, "fy26_fdi_usd_m": 1153.42, "change_pct": -43.5, "old": "green", "new": "amber", "reason": "The 'strongest signal' sector's FDI nearly halved in a year when national FDI grew 18% -- the counter-cyclical rise that earned the green did not extend. Landed capacity is real (Micron inaugurated Feb 2026, CG Semi Jul 2026, Kaynes Mar 2026) but increasingly domestic-funded; ISM fund utilization was 23%/9% the prior two years. Capacity: still strong. FDI channel: no longer green."},
+    {"sector": "Medical Devices", "fy25_fdi_usd_m": 626.99, "fy26_fdi_usd_m": 373.84, "change_pct": -40.4, "old": "green", "new": "amber", "reason": "The 'cleanest positive result' reversed -- exactly the concentration risk the original verdict flagged (a handful of MNC deals carrying the rise). One bad year on a thin base is not a collapse, but it cannot stay green."},
+    {"sector": "Pharma & Bulk Drug APIs", "fy25_fdi_usd_m": 891.43, "fy26_fdi_usd_m": 1911.64, "change_pct": 114.4, "old": "amber", "new": "green", "reason": "More than doubled to the series' highest level -- and unlike the FY20-21 jump (which predated any disbursement and read as COVID reshoring), this rise lands AFTER Rs 5,433cr of incentive disbursement and actual investment running at 237% of commitment. The confounder objection is now materially weaker. Takes the green slot."},
+    {"sector": "Auto, EV & Battery", "fy25_fdi_usd_m": 1586.31, "fy26_fdi_usd_m": 2459.35, "change_pct": 55.0, "old": "amber", "new": "amber", "reason": "Strong rebound -- but the FY21-22 lesson (a +327% year that was one PE deal, fully reverted) demands deal-level tracing before crediting PLI. Scheme execution still weak: only 1 of 40 allocated ACC GWh commissioned, zero ACC incentive disbursed, PLI-Auto at ~5% of outlay disbursed. Improving amber."},
+    {"sector": "White Goods Components", "fy25_fdi_usd_m": 531.49, "fy26_fdi_usd_m": 840.44, "change_pct": 58.1, "old": "amber", "new": "amber", "reason": "First meaningful post-launch rise, exactly consistent with the original verdict's 'full subscription only Jan 2026 -- wave still ahead' read. One year of evidence; hold amber with an upgraded trend arrow."},
+    {"sector": "Specialty Steel & Metals", "fy25_fdi_usd_m": 950.99, "fy26_fdi_usd_m": 838.78, "change_pct": -11.8, "old": "amber", "new": "amber", "reason": "Still below the pre-launch baseline. POSCO-JSW's $7.73bn cash moved Apr 2026 -- it lands in FY2026-27 data, so next year is the real test. Capacity utilization dipping (76%) and coking-coal dependence unchanged."},
+    {"sector": "Aircraft & Spacecraft", "fy25_fdi_usd_m": null, "fy26_fdi_usd_m": 268.16, "change_pct": null, "old": "amber", "new": "amber", "reason": "Proxy category too coarse for a year-on-year read. Real partnership milestones continue: C295 line operating, GE-HAL F414 terms finalized Apr 2026 (signature pending). Still no production-incentive scheme; imports +80.9% (5yr) to $13.8bn."},
+    {"sector": "Inorganic Chemicals", "fy25_fdi_usd_m": null, "fy26_fdi_usd_m": 852.87, "change_pct": null, "old": "red", "new": "red", "reason": "Imports +86.0% (5yr) to $14.2bn with no scheme -- the clearest open gap in this analysis. Policy signal finally moving: a chemicals PLI is under formulation and a Rs 600cr Chemical Parks Scheme was budgeted FY2026-27 -- but neither is approved capacity yet. Red until a scheme exists."},
+    {"sector": "Plastics", "fy25_fdi_usd_m": null, "fy26_fdi_usd_m": 214.56, "change_pct": null, "old": "red", "new": "red", "reason": "Imports +45.8% (5yr) to $22.2bn -- the largest no-scheme import bill in this set. RRPCL still short of financial close. Nothing changed."},
+    {"sector": "Textiles & Apparel (cotton)", "fy25_fdi_usd_m": null, "fy26_fdi_usd_m": null, "change_pct": null, "old": "red", "new": "red", "reason": "Cotton apparel exports still declining (HS61 -2.3%, HS62 -2.0%) and still structurally outside PLI Textiles -- the Oct 2025 amendment broadened HSN codes entirely within MMF scope. This repo's recommendation (extend PLI to cotton apparel) remains unadopted."}
+  ],
+
+  "trade_impact": {
+    "note": "Values are FY2025-26; growth is 5-year (FY2020-21 base), from this repo's TRADESTAT-derived bulletins. Reading growth AND volume together is the point: a +86% growth rate on $14bn (Inorganic Chemicals) is a different problem from +21% on $203bn (fuels).",
+    "imports": [
+      {"hs": "27", "name": "Mineral fuels & oils", "usd_bn": 203.4, "growth_pct": 21.2, "coverage": "partial"},
+      {"hs": "71", "name": "Pearls, gems & jewellery", "usd_bn": 109.4, "growth_pct": 69.1, "coverage": "na"},
+      {"hs": "85", "name": "Electrical machinery", "usd_bn": 104.9, "growth_pct": 101.5, "coverage": "strong"},
+      {"hs": "84", "name": "Machinery, mechanical appliances", "usd_bn": 74.0, "growth_pct": 68.8, "coverage": "partial"},
+      {"hs": "29", "name": "Organic chemicals", "usd_bn": 25.4, "growth_pct": 13.5, "coverage": "partial"},
+      {"hs": "39", "name": "Plastics", "usd_bn": 22.2, "growth_pct": 45.8, "coverage": "gap"},
+      {"hs": "15", "name": "Animal/veg fats & oils", "usd_bn": 19.8, "growth_pct": 97.9, "coverage": "gap"},
+      {"hs": "72", "name": "Iron & steel", "usd_bn": 15.8, "growth_pct": 25.2, "coverage": "partial"},
+      {"hs": "90", "name": "Optical/medical instruments", "usd_bn": 15.4, "growth_pct": 59.6, "coverage": "partial"},
+      {"hs": "31", "name": "Fertilisers", "usd_bn": 14.6, "growth_pct": 118.9, "coverage": "gap"},
+      {"hs": "28", "name": "Inorganic chemicals", "usd_bn": 14.2, "growth_pct": 86.0, "coverage": "gap"},
+      {"hs": "88", "name": "Aircraft & spacecraft", "usd_bn": 13.8, "growth_pct": 80.9, "coverage": "gap"}
+    ],
+    "exports": [
+      {"hs": "85", "name": "Electrical machinery", "usd_bn": 54.0, "growth_pct": 324.1, "coverage": "strong"},
+      {"hs": "87", "name": "Vehicles", "usd_bn": 26.0, "growth_pct": 43.5, "coverage": "strong"},
+      {"hs": "10", "name": "Cereals", "usd_bn": 12.0, "growth_pct": 47.1, "coverage": "gap"},
+      {"hs": "73", "name": "Iron/steel articles", "usd_bn": 10.4, "growth_pct": 42.8, "coverage": "partial"},
+      {"hs": "72", "name": "Iron & steel", "usd_bn": 10.3, "growth_pct": 5.9, "coverage": "partial"},
+      {"hs": "62", "name": "Apparel, not knitted", "usd_bn": 8.2, "growth_pct": -2.0, "coverage": "mismatch"},
+      {"hs": "61", "name": "Apparel, knitted", "usd_bn": 7.6, "growth_pct": -2.3, "coverage": "mismatch"}
+    ],
+    "honest_reading": "The EXPORT half of the import-substitution thesis is showing real progress in scheme-covered chapters: Electrical machinery exports +324% (5yr) to $54bn, Vehicles +43.5%, Iron/steel articles +42.8% -- while the two chapters PLI structurally misses (cotton apparel) are the only decliners. The IMPORT half is not yet visible at chapter level: HS85 imports ALSO doubled (+101.5% to $104.9bn -- components feeding the assembly boom), and total imports grew 5.7x faster than exports over five years. Net: the schemes are demonstrably building export engines; they have not yet bent the import curve, and the electronics import bill is largely the input side of the export success. The trade-deficit lever is therefore two-sided: deepen components localization where export momentum exists, and open schemes where the fastest-growing import bills have none."
+  },
+
+  "action_items": [
+    {"n": 1, "action": "Launch the chemicals/petrochemicals PLI now under formulation, covering Inorganic Chemicals (HS28) and Plastics (HS39)", "why": "Combined $36.4bn of FY2025-26 imports growing 46-86% over 5 years with zero production-incentive coverage -- the two largest open gaps in this entire analysis.", "owner": "Dept. of Chemicals & Petrochemicals / Cabinet"},
+    {"n": 2, "action": "Extend PLI Textiles to cotton-based apparel (HS61/62)", "why": "The only declining export chapters in this analysis sit exactly in the scheme's structural blind spot; the Oct 2025 amendment broadened MMF codes only. Repo recommendation standing since the mismatch was first documented.", "owner": "Ministry of Textiles"},
+    {"n": 3, "action": "Deepen electronics COMPONENT localization through ECMS rather than celebrating assembly exports", "why": "HS85 exports +324% but HS85 imports +101.5% to $104.9bn -- the import bill is the input side of the export boom. ECMS (Rs 22,919cr, open now) is the right instrument; its approval pace determines whether the electronics deficit actually narrows.", "owner": "MeitY"},
+    {"n": 4, "action": "Fix ACC Battery PLI execution before adding new capacity schemes", "why": "1 of 40 allocated GWh commissioned, zero incentive disbursed, one original awardee quietly gone -- the widest approval-to-implementation gap of any scheme tracked. The Parliamentary Committee's demanded beneficiary-wise review is the vehicle.", "owner": "Dept. of Heavy Industry"},
+    {"n": 5, "action": "Re-verify the Electronics and Medical Devices FDI reversals at the next quarterly refresh before further verdict moves", "why": "Both former greens fell 40%+ in FY2025-26 against a rising national cycle. One year on a thin base warrants amber, not red -- but two consecutive years would be a trend.", "owner": "this repo (quarterly checklist)"},
+    {"n": 6, "action": "Publish AHIDF-style application-to-disbursement funnels for every PLI scheme", "why": "The barrier is proven to be choice, not capability -- a central ministry already runs a nightly-refreshed, state-wise, funnel-complete public dashboard. Scheme-level transparency is itself a deficit-reduction tool: it exposes where approved capacity is stuck.", "owner": "DPIIT (as PLI nodal department)"}
+  ]
+}
