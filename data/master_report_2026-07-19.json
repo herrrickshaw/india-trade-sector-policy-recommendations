@@ -358,25 +358,25 @@
         "evidence": "Production Rs 11.02 lakh cr (136% of target), exports Rs 6.21 lakh cr (127%); smartphones India's #1 export item CY2025 (Rs 2,62,452cr, PRID 2247771). Docked: only 2 of 5 domestic-category mobile applicants performing; jobs 92% of target. LSEM tenure closed 31 Mar 2026."
       },
       {
-        "grade": "A-",
+        "grade": "B",
         "scheme": "PLI Bulk Drugs (KSMs/APIs)",
         "ministry": "DoP",
         "outlay": "Rs 6,940cr",
         "approved": "48 projects / 33 products",
         "committed_investment": "Rs 4,330cr",
         "actual_investment": "Rs 4,763cr (110%)",
-        "disbursed": "no separate figure published",
+        "disbursed": "~Rs 54.81cr (0.8%, Dec 2025, secondary-sourced; FY25 flow Rs 22cr) -- grade revised A- -> B",
         "evidence": "Penicillin-G made in India again after ~30 years (Kakinada, Rs 1,910cr, Rs 2,700cr/yr import substitution) + Clavulanic Acid (Nalagarh); imports avoided Rs 3,591cr; 27 plants commissioned across 15+ named companies; capacity live for 26 of 33 products (~55,100 MT/yr)."
       },
       {
-        "grade": "B+",
+        "grade": "B",
         "scheme": "PLI Medical Devices",
         "ministry": "DoP",
         "outlay": "Rs 3,420cr",
         "approved": "Category A: 7 companies; Category B: 5+",
         "committed_investment": null,
         "actual_investment": null,
-        "disbursed": "no PIB figure",
+        "disbursed": "Rs 157.15cr to 7 applicants (4.6%, Dec 2025, LS reply PRID 2239576) -- grade revised B+ -> B",
         "evidence": "19 greenfield projects commissioned; 44 products incl. linear accelerators, MRI, CT made in India for the first time; cumulative sales Rs 12,344cr incl. Rs 5,869cr exports (Sept 2025)."
       },
       {
@@ -387,7 +387,7 @@
         "approved": "42 beneficiaries incl. 28 MSMEs",
         "committed_investment": "Rs 4,115cr",
         "actual_investment": null,
-        "disbursed": "no PIB figure",
+        "disbursed": "~Rs 1,175cr budget actuals through FY25 (~9.6%); FY26 RE Rs 1,944cr; Rs 331.86cr to 18 cos per LS Dec 2024",
         "evidence": "Sales >6x FY20; exports Rs 21,033cr; BSNL indigenous 4G stack deployed (PRID 2230621)."
       },
       {
@@ -413,14 +413,14 @@
         "evidence": "Component manufacturing 'has commenced' for compressors, motors, copper tubes, LED drivers (PRID 2230621); 30+ investors named. One applicant withdrew (Round 3); Round-3's 84 provisional quietly became 80 final with no explanation; no per-company production status public."
       },
       {
-        "grade": "C+",
+        "grade": "B-",
         "scheme": "PLI Solar PV Modules",
         "ministry": "MNRE",
         "outlay": "Rs 24,000cr",
         "approved": "11 companies Tranche-II (39,600 MW)",
         "committed_investment": "Rs 52,942cr toward 48 GW",
         "actual_investment": null,
-        "disbursed": "no PIB figure",
+        "disbursed": "ZERO BY DESIGN (payable 1yr post-commissioning; ~30 GW modules + 10.5 GW cells commissioned; LS reply Mar 2026) -- grade revised C+ -> B-",
         "evidence": "~38,500 direct jobs by Jun 2025; awardees named (Reliance, First Solar, Waaree, Tata Power Solar...). Commitment data rich, execution/payout thin."
       },
       {
@@ -530,6 +530,21 @@
         "Revision warning: 2024's Part-B grew Rs ~2 lakh cr between the AR 2024-25 snapshot (to Nov) and AR 2025-26's full-year column -- partial-year IEM figures are heavily provisional.",
         "Source: DPIIT Annual Report 2025-26, Appendices III-VI, Grand Total rows extracted from the PDF directly; a previously-generated derived workbook verified accurate on all 24 numbers with one footnote corrected (both parts run 'Up to Dec 2025')."
       ]
+    },
+    "fy2024_25_flow_split_rs_cr": {
+      "Electronics": 5732,
+      "Pharmaceuticals": 2328,
+      "Telecom": 840,
+      "Food Processing": 448,
+      "Automobiles": 322,
+      "White Goods": 210,
+      "Medical Devices": 77,
+      "Specialty Steel": 48,
+      "Textiles": 40,
+      "Drones": 35,
+      "Bulk Drugs": 22,
+      "total": 10114,
+      "source": "Government data via PTI, 13 Jul 2025 -- the only per-scheme flow split found"
     }
   },
   "part_4_companies_ledger": {
@@ -761,7 +776,8 @@
     "IEM 2025 footnote: both Part A and Part B run 'Up to Dec 2025' (an earlier workbook said Part B to Nov).",
     "Prior sector verdicts were set on FY2024-25 data; the FY2025-26 re-run moved three (documented, original kept as dated baseline).",
     "An automated pass fabricated an ICRA steel risk-differentiation claim; caught against the source PDF and retracted in the published bulletin.",
-    "PIB outlay inconsistency (Rs 1.97 vs 1.91 lakh cr) and DAHD/Cabinet AHIDF outlay discrepancy (Rs 29,110 vs 29,610cr): flagged, unreconciled."
+    "PIB outlay inconsistency (Rs 1.97 vs 1.91 lakh cr) and DAHD/Cabinet AHIDF outlay discrepancy (Rs 29,110 vs 29,610cr): flagged, unreconciled.",
+    "Report-card grades revised on Mar-2026 Parliament answers: Bulk Drugs A-->B, Medical Devices B+->B, Solar C+->B- (zero by design, 30 GW commissioned); Telecom payout evidence attached (~Rs 1,175cr through FY25)."
   ],
   "part_9_infrastructure_and_maintenance": {
     "published_outputs": "13 bulletins (charts/ + data/), the 22-slide FDI pitch deck (PPTX/PDF), a 1080x1080 social post, tracked quarterly PDF snapshots (reports/published/), and this master report.",
