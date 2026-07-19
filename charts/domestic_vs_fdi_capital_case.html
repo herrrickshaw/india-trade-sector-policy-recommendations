@@ -1,0 +1,323 @@
+<title>The Case for Domestic Capital vs. FDI, State by State — Benchmarked on RBI/MCLR Rates &amp; ICRA Risk</title>
+<meta name="hz:canvas-width" content="1180">
+<style>
+  :root {
+    color-scheme: light;
+    --page-bg:      #eef1ea;
+    --surface:      #fcfcfa;
+    --ink:          #14180f;
+    --ink-2:        #4f5348;
+    --ink-muted:    #82867a;
+    --rule:         #d7dace;
+    --rule-strong:  #c3c7b8;
+    --accent:       #1f5f5b;
+    --accent-soft:  #dbe9e6;
+    --alert:        #a5402c;
+    --alert-soft:   #f3ded7;
+    --warn:         #c98a1f;
+    --warn-soft:    #f3e9d5;
+    --mismatch:     #7a5aa8;
+    --mismatch-soft:#e7defa;
+    --data-line:    #2a78d6;
+    --data-line-soft:#dbe6f6;
+    --font-display: "Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    --font-body: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --font-mono: "IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+      --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634; --alert:#e0785f; --alert-soft:#3a241d;
+      --warn:#e0b23f; --warn-soft:#3a3220; --mismatch:#b39ce0; --mismatch-soft:#2e2540; --data-line:#3987e5; --data-line-soft:#1c2c40;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+    --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634; --alert:#e0785f; --alert-soft:#3a241d;
+    --warn:#e0b23f; --warn-soft:#3a3220; --mismatch:#b39ce0; --mismatch-soft:#2e2540; --data-line:#3987e5; --data-line-soft:#1c2c40;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6; --alert:#a5402c; --alert-soft:#f3ded7;
+    --warn:#c98a1f; --warn-soft:#f3e9d5; --mismatch:#7a5aa8; --mismatch-soft:#e7defa; --data-line:#2a78d6; --data-line-soft:#dbe6f6;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  .bulletin { background: var(--page-bg); color: var(--ink); font-family: var(--font-body); padding: 40px 20px 56px; display: flex; justify-content: center; }
+  .sheet { width: 100%; max-width: 1160px; display: flex; flex-direction: column; gap: 32px; }
+
+  .masthead { border-bottom: 2px solid var(--ink); padding-bottom: 16px; display: flex; flex-direction: column; gap: 6px; }
+  .eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); display: flex; gap: 10px; align-items: center; }
+  .eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); display: inline-block; }
+  h1 { font-family: var(--font-display); font-weight: 500; font-size: clamp(24px, 3.2vw, 33px); margin: 2px 0 0; text-wrap: balance; letter-spacing: -0.01em; }
+  .dek { font-size: 14px; color: var(--ink-2); max-width: 88ch; line-height: 1.55; margin: 4px 0 0; }
+  .source-line { font-family: var(--font-mono); font-size: 11px; color: var(--ink-muted); margin-top: 6px; }
+
+  .toc { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 12.5px; }
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .toc .sep { color: var(--rule-strong); }
+
+  section.block { display: flex; flex-direction: column; gap: 14px; scroll-margin-top: 20px; }
+  .block-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid var(--rule-strong); padding-bottom: 8px; }
+  .block-title { font-family: var(--font-display); font-size: 22px; margin: 0; }
+  .block-tag { font-family: var(--font-mono); font-size: 12px; color: var(--ink-muted); }
+
+  .panel { background: var(--surface); border: 1px solid var(--rule-strong); padding: 18px 22px; display: flex; flex-direction: column; gap: 12px; }
+
+  .rate-ladder { display: flex; flex-direction: column; gap: 2px; background: var(--rule); border: 1px solid var(--rule-strong); }
+  .rate-row { background: var(--surface); padding: 12px 20px; display: grid; grid-template-columns: 200px 1fr 100px; gap: 16px; align-items: center; }
+  .rate-name { font-size: 13px; font-weight: 600; color: var(--ink); }
+  .rate-name .sub { display: block; font-family: var(--font-mono); font-size: 10px; font-weight: 400; color: var(--ink-muted); margin-top: 2px; }
+  .rate-track { height: 22px; background: var(--page-bg); border-radius: 2px; position: relative; }
+  .rate-fill { height: 100%; border-radius: 2px; background: var(--data-line); }
+  .rate-fill.cheap { background: var(--accent); }
+  .rate-fill.mid { background: var(--warn); }
+  .rate-fill.expensive { background: var(--alert); }
+  .rate-val { text-align: right; font-family: var(--font-mono); font-size: 15px; font-weight: 700; color: var(--ink); }
+
+  .country-ladder { display: flex; flex-direction: column; gap: 2px; background: var(--rule); border: 1px solid var(--rule-strong); }
+  .country-row { background: var(--surface); padding: 10px 20px; display: grid; grid-template-columns: 180px 1fr 90px 140px; gap: 14px; align-items: center; }
+  .country-name { font-size: 12.5px; font-weight: 600; color: var(--ink); }
+  .country-track { height: 16px; background: var(--page-bg); border-radius: 2px; }
+  .country-fill { height: 100%; border-radius: 2px; background: var(--mismatch); }
+  .country-val { text-align: right; font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: var(--ink); }
+  .country-traj { font-size: 10.5px; color: var(--ink-muted); }
+  .india-marker { position: absolute; top: -4px; bottom: -4px; width: 2px; background: var(--alert); }
+  .country-track-wrap { position: relative; }
+  .india-label { position: absolute; top: -18px; font-family: var(--font-mono); font-size: 9px; color: var(--alert); white-space: nowrap; }
+
+  .gap-callout { border: 1px solid var(--rule-strong); border-left: 3px solid var(--data-line); background: var(--data-line-soft); padding: 14px 18px; font-size: 13px; line-height: 1.6; color: var(--ink-2); }
+  .gap-callout b { color: var(--ink); }
+
+  table.icra-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  table.icra-table th { text-align: left; font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-muted); padding: 8px 12px 8px 0; border-bottom: 1px solid var(--rule-strong); }
+  table.icra-table td { padding: 10px 12px 10px 0; border-bottom: 1px solid var(--rule); vertical-align: top; line-height: 1.5; }
+  .diff-pill { font-family: var(--font-mono); font-size: 9.5px; text-transform: uppercase; padding: 2px 7px; border-radius: 2px; white-space: nowrap; display: inline-block; }
+  .diff-strong { background: var(--accent-soft); color: var(--accent); }
+  .diff-moderate, .diff-weak { background: var(--warn-soft); color: var(--warn); }
+  .diff-absent { background: var(--alert-soft); color: var(--alert); }
+  .diff-na { background: var(--rule); color: var(--ink-muted); }
+  .icra-scroll { overflow-x: auto; }
+
+  .state-card { background: var(--surface); border: 1px solid var(--rule-strong); padding: 16px 20px; display: flex; flex-direction: column; gap: 8px; }
+  .state-top { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .state-name { font-family: var(--font-display); font-size: 16px; font-weight: 600; }
+  .case-pill { font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; padding: 3px 10px; border-radius: 2px; }
+  .case-domestic { background: var(--accent-soft); color: var(--accent); }
+  .case-fdi { background: var(--mismatch-soft); color: var(--mismatch); }
+  .case-mixed { background: var(--warn-soft); color: var(--warn); }
+  .state-project { font-size: 12.5px; color: var(--ink-2); }
+  .state-project b { color: var(--ink); }
+  .state-reasoning { font-size: 12px; line-height: 1.55; color: var(--ink-2); padding-top: 6px; border-top: 1px dashed var(--rule); }
+  .states-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px,1fr)); gap: 14px; }
+
+  .case-box { border: 1px solid var(--rule-strong); padding: 20px 24px; display: flex; flex-direction: column; gap: 10px; }
+  .case-box.domestic { border-left: 4px solid var(--accent); background: var(--accent-soft); }
+  .case-box.fdi { border-left: 4px solid var(--mismatch); background: var(--mismatch-soft); }
+  .case-label { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .case-box.domestic .case-label { color: var(--accent); }
+  .case-box.fdi .case-label { color: var(--mismatch); }
+  .case-box p { margin: 0; font-size: 13.5px; line-height: 1.6; color: var(--ink); }
+
+  .callout { border: 1px solid var(--rule-strong); border-left: 3px solid var(--alert); background: var(--alert-soft); padding: 16px 20px; display: flex; flex-direction: column; gap: 6px; }
+  .callout-label { font-family: var(--font-mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--alert); }
+  .callout p { margin: 0; font-size: 13px; line-height: 1.6; color: var(--ink-2); }
+  .callout p b { color: var(--ink); }
+
+  .errata { border: 1px solid var(--rule-strong); border-left: 3px solid var(--alert); background: var(--surface); padding: 16px 20px; display: flex; flex-direction: column; gap: 10px; }
+  .errata-title { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--alert); }
+  .errata ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+  .errata li { font-size: 13px; line-height: 1.5; color: var(--ink-2); }
+  .errata li b { color: var(--ink); }
+
+  footer.colophon { text-align: center; font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-muted); padding-top: 8px; }
+</style>
+
+<div class="bulletin">
+  <div class="sheet">
+    <div class="masthead">
+      <div class="eyebrow">India Trade — Sector &amp; Policy Recommendations</div>
+      <h1>The case for domestic capital in some states, FDI in others — benchmarked on RBI/MCLR rates and ICRA risk</h1>
+      <p class="dek">Extends this repo's FDI-vs-PLI and master-scorecard findings with a "why" — India's own two-tier cost of capital (RBI repo rate, bank MCLR/EBLR, AAA corporate bond yields) benchmarked against target FDI-source countries' policy rates, and cross-checked against ICRA's sector-risk outlooks for whether credit-risk framing actually explains which states get domestic-conglomerate capital and which get foreign FDI.</p>
+      <div class="source-line">SOURCES: RBI/PIB monetary policy statements, bank rate-notification pages (SBI/HDFC/ICICI/PNB/Bank of Baroda), company NCD prospectuses; 9 central banks' policy statements; ICRA sector-outlook press releases (icra.in), verified against source PDFs where possible. State-level financing evidence reuses this repo's own fdi_vs_pli_launch and state_central_incentives bulletins. Retrieved 2026-07-19.</div>
+    </div>
+
+    <div class="toc">
+      <a href="#cost-of-capital">India's two-tier capital cost</a><span class="sep">·</span>
+      <a href="#foreign-rates">Foreign policy rates</a><span class="sep">·</span>
+      <a href="#icra">ICRA risk cross-check</a><span class="sep">·</span>
+      <a href="#pattern">State financing pattern</a><span class="sep">·</span>
+      <a href="#thecase">The case</a>
+    </div>
+
+    <section class="block" id="cost-of-capital">
+      <div class="block-head"><h2 class="block-title">India's domestic capital isn't one price — it's two tiers</h2><span class="block-tag">RBI repo 5.25% · bank MCLR/EBLR ~8.5–10.5% · AAA bonds ~7.4–8.3%</span></div>
+      <div class="panel">
+        <div class="rate-ladder" id="rateLadder"></div>
+        <div class="gap-callout">RBI cut 125bp through 2025 (6.50%→5.25%) — the most aggressive easing cycle since 2019 — then held for 3 straight meetings into mid-2026. But that cheap policy rate doesn't reach ordinary borrowers evenly: <b>67.6% of the banking system's floating-rate book is now EBLR-priced</b> (repo + spread, ~9.5–10.5% for most corporate borrowers), while <b>true AAA issuers — Tata Sons-backed entities, Reliance Industries — bypass banks entirely and raise 3–5yr bonds at ~7.4–8.3%</b>. Adani-rated paper (AA-, one notch down) already pays a real premium: 8.48–8.90% on its Jan 2026 NCD issue. This gap — <b>roughly 100–250+ basis points between the cheapest and most common tier of domestic capital</b> — is the foundation of everything below.</div>
+      </div>
+    </section>
+
+    <section class="block" id="foreign-rates">
+      <div class="block-head"><h2 class="block-title">Every target FDI-source country's policy rate sits below India's</h2><span class="block-tag">Red line = India's 5.25% repo rate</span></div>
+      <div class="panel">
+        <div class="country-ladder" id="countryLadder"></div>
+        <div class="gap-callout">The gap ranges from 4.25 points (Japan, 1.00%) to 1.6 points (Saudi Arabia, 4.25%) below India's repo rate. Against India's <b>ordinary</b> borrower rate (EBLR ~9.5–10.5%), every one of these countries looks far cheaper still — but against India's <b>cheapest</b> tier (AAA bonds, 7.4–8.3%), the US/UAE/Israel/Saudi gap narrows to just 1.5–3 points. Two countries — Japan and Korea — are mid-hiking-cycle as of this data, so their gap is closing in real time. Caveat: these are <i>central bank policy rates</i>, not actual corporate borrowing costs — a real Japanese or German company's own funding cost runs above its central bank's rate by some spread.</div>
+      </div>
+    </section>
+
+    <section class="block" id="icra">
+      <div class="block-head"><h2 class="block-title">Does ICRA's own risk framing explain the pattern? Mixed, and honestly so</h2><span class="block-tag">Checking whether credit-risk agencies differentiate large vs. small players by sector</span></div>
+      <div class="panel">
+        <div class="icra-scroll">
+          <table class="icra-table" id="icraTable">
+            <thead><tr><th>Sector</th><th>ICRA outlook</th><th>Scale differentiation?</th><th>Finding</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="callout">
+        <div class="callout-label">The honest finding</div>
+        <p><b>Steel — the sector most associated with the large-conglomerate names in this analysis — shows NO ICRA risk differentiation by scale at all.</b> An earlier automated pass had fabricated a claim that ICRA distinguishes Tata Steel/JSW/Jindal's risk-absorption capacity from smaller players; checked against the actual source PDF, that claim was unsupported and retracted. ICRA's Dec 2025 steel note discusses industry-wide leverage and Chinese-oversupply margin risk without segmenting by company scale. Defence shows the strongest differentiation (DPSU vs. private financing access), but that's a state-vs-private axis, not large-vs-small-conglomerate. Electronics and Medical Devices have no ICRA sector-wide view at all.</p>
+      </div>
+    </section>
+
+    <section class="block" id="pattern">
+      <div class="block-head"><h2 class="block-title">The pattern, state by state</h2><span class="block-tag">Reusing this repo's own sourced FDI-vs-PLI and state-hub findings</span></div>
+      <div class="states-grid" id="statesGrid"></div>
+    </section>
+
+    <section class="block" id="thecase">
+      <div class="block-head"><h2 class="block-title">The case</h2><span class="block-tag">What the rate gap explains — and what it doesn't</span></div>
+      <div class="case-box domestic">
+        <div class="case-label">The case for domestic capital</div>
+        <p>Where a strategic capacity gap (steel security, semiconductor packaging, EV battery cells) coincides with an existing AAA/AA-rated Indian conglomerate that already has industrial scale <i>and</i> access to India's cheapest capital tier (~7.4–8.3% via bonds, well below the ~9.5–10.5% an ordinary borrower or a foreign entrant's India-risk-adjusted cost of capital would likely face) — domestic self-funding is close to the economically rational choice, not a policy gap to fix with more FDI courtship. It avoids dilution, preserves strategic control the government has explicit self-reliance motives to keep domestic, and isn't meaningfully more expensive than the FDI alternative. Assam (Tata Electronics), Odisha (Tata Steel/Jindal), Gujarat's battery gigafactories (Tata Agratas/Reliance), and Karnataka's steel/EV clusters (JSW/Ola) all fit this shape.</p>
+      </div>
+      <div class="case-box fdi">
+        <div class="case-label">The case for foreign FDI</div>
+        <p>Where the enabling technology or brand is foreign-owned and no scaled domestic incumbent holds an equivalent capability (Daikin's compressor engineering, Samsung/LG's appliance R&amp;D, German automotive platforms) — foreign equity FDI is closer to a requirement than a financing choice; an Indian company can't borrow its way to owning technology it doesn't have. That this capital is also sourced against home-market policy rates 1.6–4.25 points below India's reinforces the economics without being the primary driver. Andhra Pradesh (Daikin, LG), Maharashtra's foreign-OEM auto belt (VW, Mercedes, Stellantis), and Tamil Nadu's Samsung compressor plant all fit this shape.</p>
+      </div>
+      <div class="callout">
+        <div class="callout-label">The honest caveat</div>
+        <p>This is a plausible, partially-evidenced explanation, not a proven causal model. ICRA's own risk framing — the clearest available test of whether "large players can absorb what domestic capital markets price in" actually drives the financing choice — is inconsistent across sectors, and explicitly absent for Steel, the sector this case leans on most. <b>Read the rate gap as a permissive condition that makes domestic self-funding cheap enough to be viable, not as the primary reason conglomerates choose it over FDI</b> — national self-reliance policy, technology availability, and control preferences are doing real work alongside the rate differential, and this dataset can't cleanly separate their relative weights.</p>
+      </div>
+    </section>
+
+    <div class="errata">
+      <div class="errata-title">Errata &amp; methodology notes</div>
+      <ul>
+        <li><b>India-side rate figures carry real staleness risk</b> — SBI and ICICI's MCLR figures are the last confirmed values (Jan 2026), not necessarily today's rate; both revise monthly and later revisions were reported but not independently confirmed.</li>
+        <li><b>Foreign policy rates are central-bank rates, not corporate borrowing costs</b> — a real company's funding cost in any of these countries runs above its central bank's policy rate by some spread; treat the gap figures as directional, not exact.</li>
+        <li><b>The ICRA cross-check deliberately reports a caught-and-retracted fabrication</b> (the Steel differentiation claim) rather than silently correcting it — this repo's practice is to show where automated research nearly went wrong, not just the final clean answer.</li>
+        <li><b>State financing-type labels reflect named flagship projects, not a full state-wide capital-source accounting</b> — every state in this dataset likely has some mix of both domestic and foreign capital; the labels indicate which type dominates the state's most prominent, already-sourced project(s) in this repo.</li>
+        <li>Underlying data: <a href="../data/domestic_vs_fdi_capital_case_2026-07-19.json">data/domestic_vs_fdi_capital_case_2026-07-19.json</a>.</li>
+      </ul>
+    </div>
+
+    <footer class="colophon">herrrickshaw/india-trade-sector-policy-recommendations — derived research synthesis; not an official government publication or investment solicitation</footer>
+  </div>
+</div>
+
+<script>
+(function () {
+  var rates = [
+    {name: "RBI repo rate", sub: "policy floor", val: 5.25, max: 11, cls: "cheap"},
+    {name: "AAA corporate bonds", sub: "Tata Sons / Reliance tier, 3-5yr", val: 7.85, max: 11, cls: "cheap"},
+    {name: "WALR, fresh loans", sub: "all-sector average, May 2026", val: 8.51, max: 11, cls: "mid"},
+    {name: "Bank MCLR, 1yr", sub: "system-wide median, Jun 2026", val: 8.50, max: 11, cls: "mid"},
+    {name: "EBLR, ordinary borrower", sub: "repo + spread, now 67.6% of the system", val: 10.0, max: 11, cls: "expensive"}
+  ];
+  var ladder = document.getElementById("rateLadder");
+  rates.forEach(function (r) {
+    var pct = Math.round((r.val / r.max) * 100);
+    var row = document.createElement("div");
+    row.className = "rate-row";
+    row.innerHTML = '<div class="rate-name">' + r.name + '<span class="sub">' + r.sub + '</span></div>' +
+      '<div class="rate-track"><div class="rate-fill ' + r.cls + '" style="width:' + pct + '%;"></div></div>' +
+      '<div class="rate-val">' + r.val.toFixed(2) + '%</div>';
+    ladder.appendChild(row);
+  });
+
+  var countries = [
+    {country: "Japan", bank: "Bank of Japan", val: 1.00, traj: "hiking from near-zero"},
+    {country: "Denmark", bank: "Danmarks Nationalbank", val: 1.85, traj: "hike, tracks ECB"},
+    {country: "Taiwan", bank: "CBC", val: 2.00, traj: "held 9 straight quarters"},
+    {country: "Eurozone (Germany, France)", bank: "ECB", val: 2.25, traj: "first hike in 3yrs"},
+    {country: "South Korea", bank: "Bank of Korea", val: 2.75, traj: "fresh hiking cycle"},
+    {country: "Israel", bank: "Bank of Israel", val: 3.50, traj: "active cutting cycle"},
+    {country: "USA", bank: "Federal Reserve", val: 3.625, traj: "held after 2025 cuts"},
+    {country: "UAE", bank: "CBUAE", val: 3.65, traj: "tracks the Fed"},
+    {country: "Saudi Arabia", bank: "SAMA", val: 4.25, traj: "tracks the Fed"}
+  ];
+  var maxRate = 6.5;
+  var indiaRepo = 5.25;
+  var cladder = document.getElementById("countryLadder");
+  countries.forEach(function (c) {
+    var pct = Math.round((c.val / maxRate) * 100);
+    var indiaPct = Math.round((indiaRepo / maxRate) * 100);
+    var row = document.createElement("div");
+    row.className = "country-row";
+    row.innerHTML = '<div class="country-name">' + c.country + '<div style="font-family:var(--font-mono); font-size:9.5px; color:var(--ink-muted); margin-top:2px;">' + c.bank + '</div></div>' +
+      '<div class="country-track-wrap"><div class="country-track"><div class="country-fill" style="width:' + pct + '%;"></div></div><div class="india-marker" style="left:' + indiaPct + '%;"></div></div>' +
+      '<div class="country-val">' + c.val.toFixed(2) + '%</div>' +
+      '<div class="country-traj">' + c.traj + '</div>';
+    cladder.appendChild(row);
+  });
+  // india marker label on first row only
+  var firstWrap = cladder.querySelector(".country-track-wrap");
+  if (firstWrap) {
+    var lbl = document.createElement("div");
+    lbl.className = "india-label";
+    lbl.style.left = Math.round((indiaRepo / maxRate) * 100) + "%";
+    lbl.textContent = "India 5.25%";
+    firstWrap.appendChild(lbl);
+  }
+
+  var icraRows = [
+    {sector: "Aircraft & Spacecraft / Defence", outlook: "Positive (Jun 2025)", diff: "strong", diffLabel: "Strongest", finding: "DPSUs get government mobilisation advances; private entities (any size) must raise equity via QIP/preferential allotment — a state-vs-private axis, not strictly large-vs-small."},
+    {sector: "Inorganic Chemicals / Plastics", outlook: "Negative (Apr 2026)", diff: "moderate", diffLabel: "Moderate", finding: "Players with limited Middle East feedstock/export exposure weather shocks better — a diversification differentiator that tends to favor larger, more diversified players."},
+    {sector: "White Goods Components", outlook: "RAC sub-segment, Sep 2025", diff: "weak", diffLabel: "Structural fact only", finding: "~80% of RAC capacity concentrated in the top 7 OEMs — not framed as a risk argument, but the segment is already large-player-dominated."},
+    {sector: "Pharmaceuticals & Bulk Drug APIs", outlook: "Stable (Sep 2025)", diff: "weak", diffLabel: "Weak/implicit", finding: "ICRA's own sample is the 25 leading firms (~60% of revenue) — the Stable view is inherently a large-player lens, not explicitly contrasted against smaller generics players."},
+    {sector: "Auto, EV & Battery", outlook: "8-10% growth FY26, moderating", diff: "weak", diffLabel: "Weak/indirect", finding: "A press snippet references 'comfortable liquidity, especially across tier-I players' — implied, not spelled out as an explicit risk thesis."},
+    {sector: "Specialty Steel & Metals", outlook: "Stable (Dec 2025)", diff: "absent", diffLabel: "Explicitly absent", finding: "No scale-based differentiation in ICRA's actual note — an earlier automated summary fabricated this claim; checked against the source PDF and retracted."},
+    {sector: "Textiles & Apparel", outlook: "Negative→Stable (Feb 2026)", diff: "absent", diffLabel: "Not found", finding: "No ICRA language distinguishing large exporters from smaller job-work units found in accessible notes."},
+    {sector: "Electronics & Semiconductors", outlook: "no sector-wide note", diff: "na", diffLabel: "Coverage gap", finding: "Only individual-company rationales exist (IL JIN, HI-Q Electronics) — no synthesized sector view with an outlook label."},
+    {sector: "Medical Devices", outlook: "no sector-wide note", diff: "na", diffLabel: "Coverage gap", finding: "Only company-level rationales (NPPA pricing risk, import dependency for Meril/Trivitron) — no sector-wide ICRA thesis."}
+  ];
+  var icraBody = document.querySelector("#icraTable tbody");
+  var diffClass = {strong:"diff-strong", moderate:"diff-moderate", weak:"diff-weak", absent:"diff-absent", na:"diff-na"};
+  icraRows.forEach(function (r) {
+    var tr = document.createElement("tr");
+    tr.innerHTML = '<td><b>' + r.sector + '</b></td><td>' + r.outlook + '</td><td><span class="diff-pill ' + diffClass[r.diff] + '">' + r.diffLabel + '</span></td><td>' + r.finding + '</td>';
+    icraBody.appendChild(tr);
+  });
+
+  var states = [
+    {state: "Assam", case: "domestic", project: "Tata Electronics ATMP, Jagiroad — Rs 27,000cr", reasoning: "Pure Tata Sons subsidiary on AAA bond access (~7.4-8.3%) — cheaper than a foreign JV's India-risk-adjusted cost of capital for a facility with no foreign-technology dependency. Assam's actual FY24-25 FDI equity inflow: $2.88M."},
+    {state: "Odisha", case: "domestic", project: "Tata Steel Kalinganagar + Jindal Stainless Jajpur — ~Rs 50,000cr+", reasoning: "Steel is the sector ICRA does NOT differentiate by scale — yet Tata/Jindal self-fund anyway, suggesting self-reliance motive + cheap bond access, not a documented risk-absorption advantage."},
+    {state: "Gujarat — battery/auto", case: "domestic", project: "Tata Agratas + Reliance Jamnagar gigafactories", reasoning: "India's two cheapest-capital-access conglomerates building strategic EV/battery capacity with no domestic incumbent to license from — textbook AAA-tier self-funding over dilution."},
+    {state: "Gujarat — semiconductors", case: "mixed", project: "Micron Sanand ($2.75bn) vs. Tata-PSMC Dholera (Rs 91,000cr JV)", reasoning: "Micron's own capital is genuine US FDI (Micron alone holds the process tech); Dholera is majority-domestic capital paired with Taiwanese KNOW-HOW, not Taiwanese equity — Taiwan is a tech partner, not a capital source."},
+    {state: "Andhra Pradesh", case: "fdi", project: "Daikin-Rechi compressor JV (Rs 547cr) + LG Sri City (Rs 5,001cr)", reasoning: "Neither Daikin's compressor engineering nor LG's appliance R&D has a scaled domestic equivalent — FDI is closer to a requirement than a choice. Japan/Korea's policy rates sit 2.5-4.25 points below India's."},
+    {state: "Tamil Nadu", case: "mixed", project: "Samsung Sriperumbudur compressor (Rs 1,588cr) vs. Ola Electric Krishnagiri (Rs 7,614cr)", reasoning: "Same state, same broad component/auto cluster, opposite financing: Samsung brings Korean tech+capital; Ola (Indian) self-funds domestically — the underlying technology ownership is what differs."},
+    {state: "Maharashtra", case: "fdi", project: "Nidec/Embraco compressor plant + VW/Mercedes/Stellantis auto plants", reasoning: "Disproportionately foreign-OEM-dominated vs. Tamil Nadu/Gujarat's more domestic-conglomerate-heavy clusters — foreign brands serving the Indian market directly. Eurozone's 2.25% rate sits 3 points below India's."},
+    {state: "Karnataka", case: "domestic", project: "JSW Vijayanagar expansion (Rs 15,000cr) + Ola Electric HQ/Battery Centre ($500M)", reasoning: "Manufacturing-hub investment is domestic-conglomerate-funded even though Karnataka's HEADLINE FDI stats are dominated by Bengaluru's unrelated software/HQ effect — aggregate FDI and actual hub financing point different directions here."},
+    {state: "Telangana", case: "mixed", project: "Genome Valley pharma cluster ($1.49bn) + Amara Raja battery (Rs 9,500cr)", reasoning: "Pharma is where ICRA's own Stable-outlook sample blends foreign majors (Novartis, GSK, Roche) and Indian majors (Bharat Biotech) without a clean split — Telangana's mixed financing mirrors that."}
+  ];
+  var caseClass = {domestic: "case-domestic", fdi: "case-fdi", mixed: "case-mixed"};
+  var caseLabel = {domestic: "Domestic capital", fdi: "Foreign FDI", mixed: "Mixed / contrast case"};
+  var grid = document.getElementById("statesGrid");
+  states.forEach(function (s) {
+    var card = document.createElement("div");
+    card.className = "state-card";
+    card.innerHTML = '<div class="state-top"><span class="state-name">' + s.state + '</span><span class="case-pill ' + caseClass[s.case] + '">' + caseLabel[s.case] + '</span></div>' +
+      '<div class="state-project">' + s.project + '</div>' +
+      '<div class="state-reasoning">' + s.reasoning + '</div>';
+    grid.appendChild(card);
+  });
+})();
+</script>
