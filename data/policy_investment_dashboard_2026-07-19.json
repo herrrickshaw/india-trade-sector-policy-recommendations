@@ -2,14 +2,24 @@
   "purpose": "A policy-and-investment dashboard synthesizing a direct, primary-source verification pass across 9 administering ministries/departments (not PIB, not press) for every PLI/incentive scheme this repo tracks: how much of each scheme's outlay is actually utilized, what incentives remain on the table, and whether the application window is still open. Also tests two specific data sources requested for this dashboard -- DPIIT's IEM Form A/B (intent-to-implementation) data and MoSPI's mega-project monitoring -- and reports honestly that neither fits the stated purpose as cleanly as hoped.",
   "retrieved": "2026-07-19",
   "method": "9 parallel research passes, each required to visit the administering ministry's own .gov.in domain directly and prioritize annual reports, Parliamentary Standing Committee submissions, and scheme-portal documents over PIB releases or news coverage. Two further passes specifically tested DPIIT's IEM Part-A/Part-B data for a >Rs150cr project filter, and MoSPI's Infrastructure & Project Monitoring Division (IPMD) mega-project Flash Reports.",
-
   "citation_corrections": [
-    {"finding": "pharmaceuticals.gov.in is a dead domain (confirmed NXDOMAIN via multiple DNS resolvers) -- the Department of Pharmaceuticals' live site is pharma-dept.gov.in.", "action": "Every prior citation to pharmaceuticals.gov.in in this repo should be updated to pharma-dept.gov.in."},
-    {"finding": "The ~74% China API/KSM import-dependency figure used elsewhere in this repo is NOT corroborated anywhere in the Department of Pharmaceuticals' own Annual Report 2025-26 -- the only China reference in that document is an unrelated market-size ranking.", "action": "Re-attribute that figure to its actual (non-DoP) source, or flag it as a third-party estimate rather than an official DoP statistic."},
-    {"finding": "RRPCL (the ~$44bn Ratnagiri Refinery & Petrochemicals project) belongs to the Ministry of Petroleum & Natural Gas (IOCL/BPCL/HPCL joint venture), not the Department of Chemicals and Petrochemicals -- DCPC's own site has zero mention of it.", "action": "Route future RRPCL citations to MoPNG or RRPCL's own site, not DCPC. Status unchanged: still no confirmed financial close found anywhere official."},
-    {"finding": "GE-HAL F414 engine deal status upgraded from this repo's prior 'discussed, not yet signed' -- per GE Aerospace's own press materials, technical/commercial terms were finalized April 2026 (~80% technology transfer, ~99 engines, ~$1bn value, Bengaluru facility targeted operational end-2028), but no ddpmod.gov.in, mod.gov.in, or HAL primary source confirms a signed contract as of this research.", "action": "Update repo language to 'technical terms finalized April 2026, formal signature pending' rather than either 'not yet signed' or 'signed.'"}
+    {
+      "finding": "pharmaceuticals.gov.in is a dead domain (confirmed NXDOMAIN via multiple DNS resolvers) -- the Department of Pharmaceuticals' live site is pharma-dept.gov.in.",
+      "action": "Every prior citation to pharmaceuticals.gov.in in this repo should be updated to pharma-dept.gov.in."
+    },
+    {
+      "finding": "The ~74% China API/KSM import-dependency figure used elsewhere in this repo is NOT corroborated anywhere in the Department of Pharmaceuticals' own Annual Report 2025-26 -- the only China reference in that document is an unrelated market-size ranking.",
+      "action": "Re-attribute that figure to its actual (non-DoP) source, or flag it as a third-party estimate rather than an official DoP statistic."
+    },
+    {
+      "finding": "RRPCL (the ~$44bn Ratnagiri Refinery & Petrochemicals project) belongs to the Ministry of Petroleum & Natural Gas (IOCL/BPCL/HPCL joint venture), not the Department of Chemicals and Petrochemicals -- DCPC's own site has zero mention of it.",
+      "action": "Route future RRPCL citations to MoPNG or RRPCL's own site, not DCPC. Status unchanged: still no confirmed financial close found anywhere official."
+    },
+    {
+      "finding": "GE-HAL F414 engine deal status upgraded from this repo's prior 'discussed, not yet signed' -- per GE Aerospace's own press materials, technical/commercial terms were finalized April 2026 (~80% technology transfer, ~99 engines, ~$1bn value, Bengaluru facility targeted operational end-2028), but no ddpmod.gov.in, mod.gov.in, or HAL primary source confirms a signed contract as of this research.",
+      "action": "Update repo language to 'technical terms finalized April 2026, formal signature pending' rather than either 'not yet signed' or 'signed.'"
+    }
   ],
-
   "scheme_dashboard": [
     {
       "scheme": "PLI Large Scale Electronics Manufacturing (LSEM)",
@@ -152,13 +162,11 @@
       "official_challenge_quote": null
     }
   ],
-
   "pm_mitra_parks": {
     "ministry": "Ministry of Textiles",
     "outlay_note": "7 approved sites (5 greenfield: Tamil Nadu/Virudhunagar, Gujarat/Navsari, Karnataka/Kalaburagi, Madhya Pradesh/Dhar, Uttar Pradesh/Lucknow; 2 brownfield: Telangana/Warangal, Maharashtra/Amravati).",
     "progress": "100% land acquisition completed and transferred to SPVs across all 7; environmental clearance obtained for all; MoUs signed with all 7 states; investment interest/MoUs totaling Rs 63,177cr; Rs 4,808cr of infrastructure works in progress. BUT: commercial production has started in only ONE of the seven parks (Telangana) as of the Ministry's own most recent (2025-26) progress table."
   },
-
   "iem_form_a_b_analysis": {
     "purpose_of_this_section": "Tests whether DPIIT's IEM (Industrial Entrepreneurs Memorandum) Part-A (intent) vs Part-B (implementation) data can be filtered for large (>Rs150cr) projects specifically, to compute an entrepreneurial-activity conversion rate.",
     "honest_finding": "DPIIT's published IEM data has NO investment-size band anywhere -- not in the monthly IEM Statistics Report, not in the Annual Report appendices, not on the NSWS filing portal. The Rs150cr threshold does not belong to DPIIT/IEM at all -- it is MoSPI's separate threshold for Central Sector infrastructure project monitoring, an entirely different dataset with no common key linking it to IEM filings. A clean 'Form A/B for projects above Rs150cr' filter is therefore NOT POSSIBLE from public DPIIT data as it currently stands.",
@@ -166,37 +174,106 @@
     "best_available_proxy": {
       "note": "Since no size-band data exists, this is a same-year AGGREGATE FLOW ratio (Part-B implemented investment that year, divided by Part-A proposed investment that same year) -- explicitly NOT a cohort-matched conversion rate, since Part-B filings in any given year are generated overwhelmingly by Part-A filings from EARLIER years (DPIIT's own raw data shows gaps from months to over a decade -- one company's Part-A dated 1964 had its Part-B filed in 2024).",
       "years": {
-        "2020": {"part_a_rs_cr": 414620, "part_b_rs_cr": 233969, "flow_ratio_pct": 56.4},
-        "2021": {"part_a_rs_cr": 771428, "part_b_rs_cr": 347978, "flow_ratio_pct": 45.1},
-        "2022": {"part_a_rs_cr": 424101, "part_b_rs_cr": 250064, "flow_ratio_pct": 59.0},
-        "2023": {"part_a_rs_cr": 510852, "part_b_rs_cr": 276925, "flow_ratio_pct": 54.2},
-        "2024_up_to_nov": {"part_a_rs_cr": 525115, "part_b_rs_cr": 296398, "flow_ratio_pct": 56.4}
+        "2020": {
+          "part_a_rs_cr": 414620,
+          "part_b_rs_cr": 233969,
+          "flow_ratio_pct": 56.4
+        },
+        "2021": {
+          "part_a_rs_cr": 771428,
+          "part_b_rs_cr": 347978,
+          "flow_ratio_pct": 45.1
+        },
+        "2022": {
+          "part_a_rs_cr": 424101,
+          "part_b_rs_cr": 250064,
+          "flow_ratio_pct": 59.0
+        },
+        "2023": {
+          "part_a_rs_cr": 510852,
+          "part_b_rs_cr": 276925,
+          "flow_ratio_pct": 54.2
+        },
+        "2024_up_to_nov": {
+          "part_a_rs_cr": 525115,
+          "part_b_rs_cr": 296398,
+          "flow_ratio_pct": 56.4
+        }
       },
       "five_year_aggregate_flow_ratio_pct": 53.1,
-      "cumulative_since_1991": {"iems_issued": 112038, "proposed_investment_rs_cr": 15423470, "as_of": "2024-11-30"}
+      "cumulative_since_1991": {
+        "iems_issued": 112038,
+        "proposed_investment_rs_cr": 15423470,
+        "as_of": "2024-11-30"
+      }
     },
     "no_causal_explanation_found": "DPIIT does not appear to publish any narrative explanation for why aggregate Part-A investment consistently exceeds aggregate Part-B (land acquisition delays, financing failures, or just long gestation periods) -- the monthly report's own 'Key Insights' section offers only generic commentary ('mixed investor sentiment'), and no current-format SIA Newsletter discussing this gap could be located."
   },
-
   "mospi_mega_project_analysis": {
     "purpose_of_this_section": "Tests whether MoSPI's Infrastructure and Project Monitoring Division (IPMD) mega-project tracking (Central Sector projects >=Rs150cr, via the PAIMANA portal) can show state-level development activity relevant to this repo's 10 priority sectors.",
     "honest_finding": "MoSPI's mega-project monitoring is scoped ENTIRELY to public infrastructure implemented by central ministries, PSUs, and statutory agencies (NHPC, NTPC, SAIL, AAI, POWERGRID, Port Trusts, NHIDCL, NICDC) -- roads, rail, power generation/transmission, oil & gas midstream, coal mining, PSU steel-plant upgrades, water, telecom trunk, and social infrastructure. NONE of this repo's 10 priority sectors (Electronics, Specialty Steel, Auto/EV/Battery, Pharma, White Goods, Inorganic Chemicals, Plastics, Aircraft & Spacecraft, Medical Devices, Textiles) appear as tracked categories -- confirmed by a full-text search of the March 2026 Flash Report for each sector name, returning zero hits. This data source does not fit the dashboard's stated purpose and is reported here for transparency, not forced into a false fit.",
     "source": "Flash Report on Central Sector Infrastructure Projects Costing Rs150cr & above, March 2026 (data cutoff 21 April 2026), via the PAIMANA portal (ipm.mospi.gov.in).",
     "aggregate_figures": {
-      "ongoing_projects": 1941, "ministries_covered": 17,
-      "original_cost_rs_cr": 3588861, "revised_cost_rs_cr": 4150159,
+      "ongoing_projects": 1941,
+      "ministries_covered": 17,
+      "original_cost_rs_cr": 3588861,
+      "revised_cost_rs_cr": 4150159,
       "implied_cost_overrun_pct": 15.64,
-      "cumulative_expenditure_rs_cr": 1992964, "cumulative_expenditure_pct_of_revised_cost": 48.02,
+      "cumulative_expenditure_rs_cr": 1992964,
+      "cumulative_expenditure_pct_of_revised_cost": 48.02,
       "note": "MoSPI itself no longer labels this 'cost overrun' or publishes a time-overrun/delayed-project count -- both figures above are this research's own computation from the raw cost fields, not a MoSPI-stated headline. MoSPI stopped explicitly classifying projects as 'delayed' after May 2025, a real methodology regression from its pre-2025 reporting (which flagged delayed projects by severity with reasons)."
     },
     "sector_breakdown_present_but_irrelevant": "Roads & Highways (1,120 projects), Coal (119), Railways (246), Oil & Gas (93), Transmission & Distribution (68), Steel (18, entirely SAIL/PSU plant upgrades -- Bhilai, Bokaro, IISCO -- no Tata Steel or JSW projects at all), Energy Storage (15, confirmed to be pumped-hydro plants run by NHPC/NTPC, NOT battery/gigafactory manufacturing).",
     "named_projects_check": "None of this repo's specifically-named flagship projects (Tata Steel Kalinganagar, JSW Vijayanagar, Tata Electronics Assam ATMP, Micron Sanand, Tata-PSMC Dholera fab, Reliance/Tata battery gigafactories, RRPCL) appear anywhere in the March 2026 Flash Report. What DOES appear is enabling PUBLIC infrastructure built around some of these hubs: 'Development of Dholera International Greenfield Airport' (AAI, Rs1,305cr) and 'Transmission System for Reliable Power Supply to Dholera' (POWERGRID, Rs319cr) -- a legitimate but narrow secondary signal (is the government infrastructure around a hub on schedule), not a read on the private project's own performance, and the report gives no cross-reference tagging linking the two.",
     "state_wise_data_exists_but_measures_something_different": "MoSPI's Table 2 does publish a state-wise mega-project count/cost table (e.g. Andhra Pradesh: 138 projects/Rs2,11,025cr; Assam: 88 projects/Rs1,20,333cr) -- but this measures PUBLIC infrastructure investment by state, not private manufacturing/FDI investment by state, so it cannot be used as a proxy for this repo's state-level manufacturing-hub findings without that caveat attached every time it's cited."
   },
-
   "cross_cutting_synthesis": [
     "Across every scheme with a Ministry-published committed-vs-actual investment figure, the pattern from the FDI-vs-PLI-launch bulletin repeats at the scheme-disbursement level: Pharma (both Bulk Drugs and Pharmaceuticals) dramatically over-delivers against its own committed investment; Auto and ACC Battery dramatically under-deliver, with ACC Battery specifically showing zero incentive disbursed and a confirmed (if unstated) awardee exit; Steel and Textiles sit in between, with real but partial conversion of committed capital into actual investment.",
     "Every scheme that reopened its application window multiple times (White Goods: 4 rounds + a 90-day reopening; Textiles: 3 rounds) is described by its own ministry in exclusively positive language ('appetite of industry,' 'continued interest') -- none of the 9 ministries researched ever uses the word 'undersubscribed' about its own scheme in a primary document, even where the repeated-reopening pattern strongly implies it.",
     "The two data sources this dashboard was specifically asked to use -- IEM Form A/B filtered above Rs150cr, and MoSPI's state-level mega-project dashboard -- both turned out not to fit the task as specified, for the same underlying reason: India's investment-tracking infrastructure is fragmented across agencies that don't share a common project-identification key or size threshold. DPIIT tracks entrepreneurial intent-to-implementation with no size filter; MoSPI tracks public-infrastructure cost/schedule performance with a size filter but no private-sector coverage. Neither, on its own, can answer 'how much announced private manufacturing investment in state X actually landed,' which is exactly the question this repo's other bulletins have had to answer instead through company-by-company detective work (e.g. the Jio Platforms/Gujarat finding)."
-  ]
+  ],
+  "dpiit_publications_update": {
+    "purpose_of_this_section": "Follow-up pass on DPIIT's restructured publications listing (dpiit.gov.in/documents/publications), checked interactively in a rendered browser session on 2026-07-19 -- the same listing that blocked automated scraping during the original research pass.",
+    "newest_fdi_data_found": {
+      "document": "Quarterly FDI Factsheet for 4th quarter of FY 2025-26 (published 03.06.2026, covers April 2000 - March 2026)",
+      "url": "https://www.dpiit.gov.in/static/uploads/2026/06/41192ca92c1de34eb064800fbffa0379.pdf",
+      "fy2025_26_full_year_fdi_equity_inflow": {
+        "inr_crore": 516936,
+        "usd_million": 58846,
+        "growth_over_fy2024_25": "+23% INR / +18% USD (FY2024-25: Rs 4,21,929cr / USD 50,018M)"
+      },
+      "significance": "Extends this repo's FDI series by a full year -- the FDI-vs-PLI-launch bulletin's sector tables end at FY2024-25. National FDI equity inflow GREW 18% (USD) in FY2025-26, so any post-FY25 sector re-analysis must re-baseline against a rising national cycle, not the flat/declining one the FY19-FY25 window had. Sector-wise and state-wise FY2025-26 splits are in the same factsheet (Services and Computer Software & Hardware still the top categories; Maharashtra/Karnataka/Gujarat the top states) but were not re-extracted into this repo's sector verdicts yet -- flagged as the first task for the next quarterly refresh.",
+      "also_published": "An updated 'Metadata for Foreign Direct Investment Equity Inflow in India' (27.02.2026) -- worth checking against the older metadata document this repo quotes ('Documentation on methodology: Not applicable') at the next refresh."
+    },
+    "iem_reports_verified_absent": "Searching 'IEM' in the publications section's own search UI (rendered browser, not blocked scraping) returns 'No Data Available' -- and the legacy /sia-statistics/list-iem-filed-1 route is now a dead SPA shell. This upgrades the original finding from 'reporting continuity unconfirmed' to 'the monthly IEM Statistics Report series is verifiably absent from DPIIT's restructured publications listing.' If the series still publishes anywhere, it is not here."
+  },
+  "ahidf_counter_example": {
+    "purpose_of_this_section": "User-requested evaluation of the AHIDF (Animal Husbandry Infrastructure Development Fund, Dept. of Animal Husbandry & Dairying) dashboard as a possible counter-example to this bulletin's central finding that Indian ministries publish no state-wise, funnel-complete scheme dashboards.",
+    "verdict": "A genuine, meaningful counter-example -- with a precise ceiling. AHIDF proves a central ministry CAN run a live, state-wise, funnel-complete public scheme dashboard; it simultaneously proves that even the best current example stops at 'loan disbursed', one gate short of 'project operational.'",
+    "what_the_dashboard_is": "A public, no-login Microsoft Power BI report embedded at ahidf.udyamimitra.in/AHD-dashboard.html (SIDBI-run Udyamimitra infrastructure), refreshed nightly -- footer read 'Data Last Updated on 19-07-26, 12:11 AM', i.e. same-day-fresh when checked.",
+    "funnel_as_published": {
+      "applications_received": 11026,
+      "eligible": 1592,
+      "sanctioned_by_lender": 910,
+      "disbursed": 357,
+      "sanctioned_amount_rs_cr": 20177.7,
+      "disbursed_amount_rs_cr": 5405.3,
+      "interest_subvention_approved_rs_cr": 849.2,
+      "interest_subvention_released_rs_cr": 618.6,
+      "rejected_in_screening": 3974,
+      "withdrawn": 3939,
+      "rejected_by_lenders": 304,
+      "employment_from_sanction_stage": 94593,
+      "note": "The rejection/withdrawal counts are unusually honest funnel-leakage data no PLI ministry publishes. ~96% of applications have not reached disbursement. Employment KPI is a projection 'starting from Sanction Stage', not measured operational employment."
+    },
+    "state_breakdown": "Published live (applications by state: Maharashtra 2,242; UP 1,450; Karnataka 1,095; MP 787), by district (Pune, Satara, Jalna, Nashik lead), and by sanctioning bank (HDFC 155, SBI 140). Authoritative approved-project state table (Lok Sabha USQ 251, Feb 2025): Maharashtra 63 projects/Rs 1,836cr; West Bengal 31; UP 30; Tamil Nadu 29 (Rs 1,295cr); Karnataka and Punjab 26 each -- 366 interest-subvention-approved projects/Rs 10,368cr across 22 states.",
+    "what_it_still_lacks": [
+      "No project/promoter-level list anywhere public -- aggregates only, same as the PLI ministries.",
+      "No commissioned/operational metric -- 'completed projects' figures exist only in ad-hoc parliamentary answers (e.g. Maharashtra: 42 completed of 63 approved), never as a published national series.",
+      "Definitional trap: at least four different 'sanctioned' counts circulate (910 lender sanctions on the dashboard; 541 / 486 / 366 in ministry documents depending on stage and date) -- any citation must specify which gate.",
+      "An unresolved Rs 500cr discrepancy in the scheme's own outlay: dahd.gov.in says Rs 29,110.25cr, the Cabinet/PIB announcement says Rs 29,610.25cr."
+    ],
+    "official_challenges": "Parliamentary Standing Committee on Agriculture/Animal Husbandry flagged DAHD surrendering Rs 1,545.78cr over 2019-20 to 2021-22 with 'vague explanations' and <60% budget utilization in 2022-23 (cited via press coverage of the report, not the report PDF itself -- flagged accordingly). The scheme window closes 31.03.2026 with roughly Rs 5,405cr disbursed against a ~Rs 29,610cr outlay envelope.",
+    "implication_for_this_dashboard": "The cross-cutting synthesis stands, sharpened: the barrier to scheme transparency is not technical (AHIDF's nightly Power BI pipeline proves the capability exists inside the Indian government today) -- it is a choice. The PLI ministries could publish AHIDF-style funnels tomorrow; none do. And even AHIDF stops at the disbursement gate, so 'how much announced investment became an operating plant' remains unanswerable from official dashboards across every scheme this repo tracks."
+  }
 }

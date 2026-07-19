@@ -140,6 +140,8 @@
       <a href="#mitra">PM MITRA parks</a><span class="sep">·</span>
       <a href="#iem">IEM Form A/B</a><span class="sep">·</span>
       <a href="#mospi">MoSPI mega-projects</a><span class="sep">·</span>
+      <a href="#dpiit-update">DPIIT publications update</a><span class="sep">·</span>
+      <a href="#ahidf">AHIDF counter-example</a><span class="sep">·</span>
       <a href="#synthesis">Synthesis</a>
     </div>
 
@@ -169,7 +171,7 @@
       <div class="block-head"><h2 class="block-title">IEM Form A / Form B: can it show conversion for projects above ₹150cr?</h2><span class="block-tag">Honest answer: no, not as DPIIT publishes it</span></div>
       <div class="callout">
         <div class="callout-label">The honest finding</div>
-        <p>DPIIT's published IEM data has <b>no investment-size band anywhere</b> — not in the monthly IEM Statistics Report, not in the Annual Report appendices, not on the NSWS filing portal. The ₹150 crore threshold doesn't belong to DPIIT/IEM at all — it's <b>MoSPI's</b> separate cutoff for Central Sector infrastructure monitoring, a different dataset entirely with no shared key. A clean "Form A/B for projects above ₹150cr" filter is not possible from public data as it stands.</p>
+        <p>DPIIT's published IEM data has <b>no investment-size band anywhere</b> — not in the monthly IEM Statistics Report, not in the Annual Report appendices, not on the NSWS filing portal. The ₹150 crore threshold doesn't belong to DPIIT/IEM at all — it's <b>MoSPI's</b> separate cutoff for Central Sector infrastructure monitoring, a different dataset entirely with no shared key. A clean "Form A/B for projects above ₹150cr" filter is not possible from public data as it stands. <b>Update (verified interactively 2026-07-19):</b> searching "IEM" in DPIIT's restructured publications listing returns <i>"No Data Available"</i>, and the legacy SIA-statistics route is a dead page — the monthly IEM Statistics Report series is now verifiably absent from the listing, not merely unconfirmed.</p>
       </div>
       <div class="panel">
         <div class="block-tag" style="margin-bottom:4px;">Best available proxy: same-year aggregate flow ratio (Part-B ÷ Part-A that year) — NOT a cohort-matched conversion rate</div>
@@ -196,6 +198,26 @@
           <tbody id="stateTableBody"></tbody>
         </table>
         <p class="scheme-detail" style="margin-top:6px;">None of this repo's named flagship private projects (Tata Steel Kalinganagar, Micron Sanand, Tata-PSMC Dholera, Reliance's battery gigafactories, RRPCL) appear in this tracking. What does appear: the enabling public infrastructure around some hubs — "Development of Dholera International Greenfield Airport" (AAI, ₹1,305cr) and "Transmission System for Reliable Power Supply to Dholera" (POWERGRID, ₹319cr).</p>
+      </div>
+    </section>
+
+    <section class="block" id="dpiit-update">
+      <div class="block-head"><h2 class="block-title">DPIIT publications update: the FDI series just gained a year</h2><span class="block-tag">dpiit.gov.in/documents/publications, checked 2026-07-19</span></div>
+      <div class="panel">
+        <p class="scheme-detail">The <b>Quarterly FDI Factsheet for Q4 FY2025-26</b> (published 3 Jun 2026) closes the full FY2025-26 year: <b>FDI equity inflow ₹5,16,936cr / $58.85bn — up 23% in INR and 18% in USD over FY2024-25</b> ($50.02bn). This extends this repo's FDI series by a full year: the FDI-vs-PLI-launch bulletin's sector tables end at FY2024-25, when the national cycle was flat-to-declining — any post-FY25 sector re-analysis must re-baseline against a now-<i>rising</i> national cycle. Sector-wise and state-wise FY2025-26 splits are in the same factsheet (Services and Computer Software &amp; Hardware still top; Maharashtra/Karnataka/Gujarat the top states) but are not yet re-extracted into the sector verdicts — flagged as the first task for the next quarterly refresh, along with the updated FDI metadata document (27 Feb 2026) that may supersede the "Documentation on methodology: Not applicable" version this repo quotes.</p>
+      </div>
+    </section>
+
+    <section class="block" id="ahidf">
+      <div class="block-head"><h2 class="block-title">AHIDF: the counter-example that proves transparency is a choice</h2><span class="block-tag">Animal Husbandry Infrastructure Development Fund, DAHD</span></div>
+      <div class="callout" style="border-left-color: var(--accent); background: var(--accent-soft);">
+        <div class="callout-label" style="color: var(--accent);">The verdict</div>
+        <p>AHIDF's dashboard (a public, no-login Power BI report at ahidf.udyamimitra.in, <b>refreshed nightly</b> — "Data Last Updated on 19-07-26, 12:11 AM" when checked) is a <b>genuine counter-example</b> to everything above: state-wise, district-wise, and bank-wise splits; the full application funnel <i>including rejections and withdrawals</i>; and sanctioned <b>and</b> disbursed amounts side by side. No PLI ministry publishes anything close. <b>Its precise ceiling</b>: still aggregates-only (no project/promoter list), and it stops at "loan disbursed" — one gate short of "project operational."</p>
+      </div>
+      <div class="panel">
+        <div class="block-tag" style="margin-bottom:4px;">The funnel AHIDF actually publishes (₹ crore where amounts)</div>
+        <div class="flow-ladder" id="ahidfFunnel"></div>
+        <p class="scheme-detail" style="margin-top:8px;">Alongside: 3,974 rejected in screening, 3,939 withdrawn, 304 rejected by lenders — <b>~96% of applications have not reached disbursement</b>, and the scheme window closes 31.03.2026 with ~₹5,405cr disbursed against a ~₹29,610cr outlay envelope. State leaders (approved projects, Lok Sabha USQ 251): Maharashtra 63 projects/₹1,836cr, West Bengal 31, UP 30, Tamil Nadu 29/₹1,295cr. Caveats: at least four different "sanctioned" counts circulate depending on stage (910 lender sanctions vs 541/486/366 in ministry documents); the employment KPI (94,593) is a projection "from Sanction Stage," not measured jobs; and DAHD's own page states a ₹29,110cr outlay while the Cabinet announcement says ₹29,610cr — an unresolved ₹500cr discrepancy.</p>
       </div>
     </section>
 
@@ -315,6 +337,21 @@
     flowHost.appendChild(row);
   });
 
+  var ahidfStages = [
+    {label:"Applications received", val:11026, pct:100},
+    {label:"Eligible", val:1592, pct:14.4},
+    {label:"Sanctioned by lender", val:910, pct:8.3},
+    {label:"Disbursed", val:357, pct:3.2}
+  ];
+  var af = document.getElementById("ahidfFunnel");
+  if (af) ahidfStages.forEach(function (s) {
+    var row = document.createElement("div");
+    row.className = "flow-row";
+    row.style.gridTemplateColumns = "190px 1fr 90px";
+    row.innerHTML = '<div class="flow-year">' + s.label + '</div><div class="flow-track"><div class="flow-fill" style="width:' + Math.max(s.pct,1.5) + '%; background: var(--accent);"></div></div><div class="flow-val">' + s.val.toLocaleString('en-IN') + '</div>';
+    af.appendChild(row);
+  });
+
   var sectors = ["Roads & Highways (1,120)","Coal (119)","Railways (246)","Oil & Gas (93)","Transmission & Distribution (68)","Electricity Generation (36)","Steel — SAIL/PSU only (18)","Healthcare (36)","Education (30)","Water Resources (41)","Urban Transport (26)","Aviation — airports (26)","Energy Storage — pumped-hydro (15)"];
   var sp = document.getElementById("sectorProof");
   sectors.forEach(function (s) { var t = document.createElement("span"); t.className = "sector-tag"; t.textContent = s; sp.appendChild(t); });
@@ -337,7 +374,8 @@
   var synth = [
     "Across every scheme with a published committed-vs-actual figure, the pattern from the FDI-vs-PLI-launch bulletin repeats at the scheme-disbursement level: Pharma (both Bulk Drugs and Pharmaceuticals) dramatically over-delivers against its own committed investment; Auto and ACC Battery dramatically under-deliver, with ACC Battery showing zero disbursed incentive and a confirmed (if unstated) awardee exit; Steel and Textiles sit in between.",
     "Every scheme that reopened its application window multiple times (White Goods: 4 rounds + a 90-day reopening; Textiles: 3 rounds) is described by its own ministry in exclusively positive language — none of the 9 ministries researched ever uses the word \"undersubscribed\" about its own scheme in a primary document, even where the repeated-reopening pattern strongly implies it.",
-    "The two data sources this dashboard was specifically asked to use — IEM Form A/B above ₹150cr, and MoSPI's state-level mega-project dashboard — both turned out not to fit the task, for the same underlying reason: India's investment-tracking infrastructure is fragmented across agencies with no shared project-identification key or size threshold. DPIIT tracks entrepreneurial intent-to-implementation with no size filter; MoSPI tracks public-infrastructure cost/schedule performance with a size filter but zero private-sector coverage. Neither can answer \"how much announced private manufacturing investment in state X actually landed\" — which is exactly the question this repo's other bulletins have had to answer instead through company-by-company detective work (e.g. the Jio Platforms/Gujarat finding)."
+    "The two data sources this dashboard was specifically asked to use — IEM Form A/B above ₹150cr, and MoSPI's state-level mega-project dashboard — both turned out not to fit the task, for the same underlying reason: India's investment-tracking infrastructure is fragmented across agencies with no shared project-identification key or size threshold. DPIIT tracks entrepreneurial intent-to-implementation with no size filter; MoSPI tracks public-infrastructure cost/schedule performance with a size filter but zero private-sector coverage. Neither can answer \"how much announced private manufacturing investment in state X actually landed\" — which is exactly the question this repo's other bulletins have had to answer instead through company-by-company detective work (e.g. the Jio Platforms/Gujarat finding).",
+    "The AHIDF counter-example sharpens the verdict: the barrier to scheme transparency is not technical — a central ministry already runs a nightly-refreshed, state-wise, funnel-complete public dashboard today, rejections and withdrawals included. The PLI ministries could publish AHIDF-style funnels tomorrow; none do. And even AHIDF stops at the disbursement gate, so \"how much announced investment became an operating plant\" remains unanswerable from official dashboards across every scheme this repo tracks."
   ];
   var synthHost = document.getElementById("synthList");
   synth.forEach(function (s) { var d = document.createElement("div"); d.className = "synth-item"; d.textContent = s; synthHost.appendChild(d); });
