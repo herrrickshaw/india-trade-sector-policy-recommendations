@@ -245,7 +245,94 @@
       "significance": "Extends this repo's FDI series by a full year -- the FDI-vs-PLI-launch bulletin's sector tables end at FY2024-25. National FDI equity inflow GREW 18% (USD) in FY2025-26, so any post-FY25 sector re-analysis must re-baseline against a rising national cycle, not the flat/declining one the FY19-FY25 window had. Sector-wise and state-wise FY2025-26 splits are in the same factsheet (Services and Computer Software & Hardware still the top categories; Maharashtra/Karnataka/Gujarat the top states) but were not re-extracted into this repo's sector verdicts yet -- flagged as the first task for the next quarterly refresh.",
       "also_published": "An updated 'Metadata for Foreign Direct Investment Equity Inflow in India' (27.02.2026) -- worth checking against the older metadata document this repo quotes ('Documentation on methodology: Not applicable') at the next refresh."
     },
-    "iem_reports_verified_absent": "Searching 'IEM' in the publications section's own search UI (rendered browser, not blocked scraping) returns 'No Data Available' -- and the legacy /sia-statistics/list-iem-filed-1 route is now a dead SPA shell. This upgrades the original finding from 'reporting continuity unconfirmed' to 'the monthly IEM Statistics Report series is verifiably absent from DPIIT's restructured publications listing.' If the series still publishes anywhere, it is not here."
+    "iem_reports_verified_absent": "Searching 'IEM' in the publications section's own search UI (rendered browser, not blocked scraping) returns 'No Data Available' -- and the legacy /sia-statistics/list-iem-filed-1 route is now a dead SPA shell. This upgrades the original finding from 'reporting continuity unconfirmed' to 'the monthly IEM Statistics Report series is verifiably absent from DPIIT's restructured publications listing.' If the series still publishes anywhere, it is not here.",
+    "fy2025_26_sector_extension": {
+      "source": "FDI Newsletter Vol. XXXIV No. 4 (April 2026), Table 12: Sector-wise FDI equity inflow FY2025-26 -- all 27 statement PDFs downloaded from the newsletter page and extracted with layout-preserving text extraction (pdftotext -layout) to keep name-value pairing reliable.",
+      "note": "One-year extension of the FDI-vs-PLI-launch bulletin's sector series (which ended FY2024-25). These are raw DPIIT proxy-category figures; the bulletin's verdicts have NOT been re-run against them yet -- but several trends visibly move.",
+      "sectors_usd_million": {
+        "Electronics (proxy for Electronics & Semiconductor PLI)": {
+          "fy2024_25": 2043.04,
+          "fy2025_26": 1153.42,
+          "change_pct": -43.5,
+          "read": "The 'strongest sector-specific signal' nearly halved -- the counter-cyclical rise did not extend into FY26 even as national FDI grew 18%. Verdict re-examination needed at next refresh."
+        },
+        "Drugs & Pharmaceuticals": {
+          "fy2024_25": 891.43,
+          "fy2025_26": 1911.64,
+          "change_pct": 114.4,
+          "read": "More than doubled -- the prior two-year decline reversed sharply."
+        },
+        "Automobile Industry": {
+          "fy2024_25": 1586.31,
+          "fy2025_26": 2459.35,
+          "change_pct": 55.0,
+          "read": "Strong rebound; still requires deal-level tracing before attributing to PLI (the FY21-22 spike lesson)."
+        },
+        "Metallurgical Industries (Specialty Steel proxy)": {
+          "fy2024_25": 950.99,
+          "fy2025_26": 838.78,
+          "change_pct": -11.8,
+          "read": "Still below pre-launch baseline; POSCO-JSW's Apr-2026 cash lands in FY26-27 data, not this year's."
+        },
+        "Electrical Equipments (White Goods proxy)": {
+          "fy2024_25": 531.49,
+          "fy2025_26": 840.44,
+          "change_pct": 58.1,
+          "read": "First meaningful post-launch rise -- consistent with the 'full subscription only Jan 2026, wave still ahead' read."
+        },
+        "Medical & Surgical Appliances": {
+          "fy2024_25": 626.99,
+          "fy2025_26": 373.84,
+          "change_pct": -40.4,
+          "read": "The 'cleanest positive result' reversed -- consistent with the bulletin's own caveat that the rise was concentrated in a few MNC deals."
+        },
+        "Chemicals Other Than Fertilizers (Inorganic Chemicals control)": {
+          "fy2025_26": 852.87
+        },
+        "Miscellaneous Mechanical & Engineering (Aircraft control)": {
+          "fy2025_26": 268.16
+        },
+        "Rubber Goods (Plastics control)": {
+          "fy2025_26": 214.56
+        },
+        "Computer Software & Hardware (for scale)": {
+          "fy2025_26": 13946.28,
+          "share_of_total_pct": 23.7
+        }
+      },
+      "states_fy2025_26_usd_million": {
+        "Maharashtra": {
+          "amount": 18418.47,
+          "share_pct": 31.3
+        },
+        "Karnataka": {
+          "amount": 12938.67,
+          "share_pct": 21.99
+        },
+        "Delhi": {
+          "amount": 6182.09
+        },
+        "Gujarat": {
+          "amount": 5713.33
+        },
+        "Tamil Nadu": {
+          "amount": 4723.97
+        },
+        "Telangana": {
+          "amount": 2252.86
+        },
+        "Andhra Pradesh": {
+          "amount": 608.59
+        },
+        "Odisha": {
+          "amount": 83.99
+        },
+        "Assam": {
+          "amount": 2.37,
+          "read": "Still essentially zero, against the Rs 27,000cr Tata Electronics headline -- the registered-office/domestic-capital finding holds for a second consecutive year."
+        }
+      }
+    }
   },
   "ahidf_counter_example": {
     "purpose_of_this_section": "User-requested evaluation of the AHIDF (Animal Husbandry Infrastructure Development Fund, Dept. of Animal Husbandry & Dairying) dashboard as a possible counter-example to this bulletin's central finding that Indian ministries publish no state-wise, funnel-complete scheme dashboards.",
