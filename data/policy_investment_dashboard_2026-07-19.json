@@ -207,7 +207,54 @@
         "as_of": "2024-11-30"
       }
     },
-    "no_causal_explanation_found": "DPIIT does not appear to publish any narrative explanation for why aggregate Part-A investment consistently exceeds aggregate Part-B (land acquisition delays, financing failures, or just long gestation periods) -- the monthly report's own 'Key Insights' section offers only generic commentary ('mixed investor sentiment'), and no current-format SIA Newsletter discussing this gap could be located."
+    "no_causal_explanation_found": "DPIIT does not appear to publish any narrative explanation for why aggregate Part-A investment consistently exceeds aggregate Part-B (land acquisition delays, financing failures, or just long gestation periods) -- the monthly report's own 'Key Insights' section offers only generic commentary ('mixed investor sentiment'), and no current-format SIA Newsletter discussing this gap could be located.",
+    "ar_2025_26_appendix_update": {
+      "source": "DPIIT Annual Report 2025-26, Appendices III-VI (verified directly against the 295-page PDF, layout-preserving extraction of the Grand Total rows) -- supersedes the AR 2024-25 series this section originally used. Both Part A and Part B run 'Up to Dec 2025' (an earlier derived workbook's footnote saying Part B ends Nov is incorrect).",
+      "years": {
+        "2021": {
+          "part_a_no": 1489,
+          "part_a_rs_cr": 771428,
+          "part_b_no": 812,
+          "part_b_rs_cr": 347978,
+          "flow_ratio_pct": 45.1
+        },
+        "2022": {
+          "part_a_no": 1185,
+          "part_a_rs_cr": 424101,
+          "part_b_no": 916,
+          "part_b_rs_cr": 250064,
+          "flow_ratio_pct": 59.0
+        },
+        "2023": {
+          "part_a_no": 1267,
+          "part_a_rs_cr": 510852,
+          "part_b_no": 968,
+          "part_b_rs_cr": 276925,
+          "flow_ratio_pct": 54.2
+        },
+        "2024": {
+          "part_a_no": 986,
+          "part_a_rs_cr": 602082,
+          "part_b_no": 1165,
+          "part_b_rs_cr": 493765,
+          "flow_ratio_pct": 82.0
+        },
+        "2025_to_dec": {
+          "part_a_no": 702,
+          "part_a_rs_cr": 530416,
+          "part_b_no": 998,
+          "part_b_rs_cr": 583096,
+          "flow_ratio_pct": 109.9
+        }
+      },
+      "five_year_aggregate_flow_ratio_pct": 68.8,
+      "what_changed": [
+        "The flow ratio broke sharply upward: 82.0% in 2024 and 109.9% in 2025 -- Part B implemented investment EXCEEDED same-year Part A intentions for the first time in the series. Given Part B filings lag Part A by years, this reads as the 2021-22 intent surge (Rs 7.7 lakh cr proposed in 2021 alone) maturing into 2024-25 implementation -- the same-year-flow caveat still applies, but the direction is now implementation catching up with intent, not falling behind it.",
+        "Part A filing COUNTS fell steeply (1,267 in 2023 -> 986 in 2024 -> 702 to Dec 2025) while proposed investment stayed high -- consistent with the April 2025 eligibility-threshold raise (Rs 50cr -> Rs 125cr plant & machinery) cutting smaller filings out of the series, so fewer, larger IEMs.",
+        "Continuity nuance: the MONTHLY IEM Statistics Report series remains verifiably absent from DPIIT's publications listing, but the ANNUAL Report appendix series continued through Dec 2025 -- annual-frequency IEM data survives the NSWS migration; it is specifically the monthly series that stopped.",
+        "Revision warning: AR 2024-25 reported 2024-to-Nov Part B as Rs 2,96,398cr; AR 2025-26's full-2024 figure is Rs 4,93,765cr -- a Rs ~2 lakh cr delta from one December plus revisions. Treat any partial-year IEM figure as heavily provisional."
+      ]
+    }
   },
   "mospi_mega_project_analysis": {
     "purpose_of_this_section": "Tests whether MoSPI's Infrastructure and Project Monitoring Division (IPMD) mega-project tracking (Central Sector projects >=Rs150cr, via the PAIMANA portal) can show state-level development activity relevant to this repo's 10 priority sectors.",

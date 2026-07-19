@@ -174,9 +174,9 @@
         <p>DPIIT's published IEM data has <b>no investment-size band anywhere</b> — not in the monthly IEM Statistics Report, not in the Annual Report appendices, not on the NSWS filing portal. The ₹150 crore threshold doesn't belong to DPIIT/IEM at all — it's <b>MoSPI's</b> separate cutoff for Central Sector infrastructure monitoring, a different dataset entirely with no shared key. A clean "Form A/B for projects above ₹150cr" filter is not possible from public data as it stands. <b>Update (verified interactively 2026-07-19):</b> searching "IEM" in DPIIT's restructured publications listing returns <i>"No Data Available"</i>, and the legacy SIA-statistics route is a dead page — the monthly IEM Statistics Report series is now verifiably absent from the listing, not merely unconfirmed.</p>
       </div>
       <div class="panel">
-        <div class="block-tag" style="margin-bottom:4px;">Best available proxy: same-year aggregate flow ratio (Part-B ÷ Part-A that year) — NOT a cohort-matched conversion rate</div>
+        <div class="block-tag" style="margin-bottom:4px;">Best available proxy: same-year aggregate flow ratio (Part-B ÷ Part-A that year) — NOT a cohort-matched conversion rate. Updated to Annual Report 2025-26, Appendices III–VI (verified against the source PDF's Grand Total rows)</div>
         <div class="flow-ladder" id="flowLadder"></div>
-        <p class="scheme-detail">5-year aggregate (2020 – Nov 2024): <b>53.1%</b>. Part-B filings in any year come overwhelmingly from Part-A filings issued in earlier years — DPIIT's own raw data shows gaps from months to over a decade (one company's Part-A was dated 1964, its Part-B filed in 2024). DPIIT publishes no explanation for why aggregate intent consistently exceeds aggregate implementation.</p>
+        <p class="scheme-detail">5-year aggregate (2021 – Dec 2025): <b>68.8%</b> — and the trend broke sharply upward: <b>82.0% in 2024, then 109.9% in 2025 — Part-B implemented investment exceeded same-year Part-A intentions for the first time in the series</b>. Since Part-B lags Part-A by years, this reads as the 2021-22 intent surge (₹7.7 lakh cr proposed in 2021 alone) maturing into 2024-25 implementation. Part-A filing <i>counts</i> simultaneously fell steeply (1,267 → 986 → 702), consistent with the Apr 2025 threshold raise (₹50cr → ₹125cr) cutting smaller filings — fewer, larger IEMs. Revision warning: AR 2024-25's 2024-to-Nov Part-B figure (₹2.96 lakh cr) became ₹4.94 lakh cr in AR 2025-26's full-2024 column — treat partial-year IEM figures as heavily provisional. Continuity nuance: the <i>monthly</i> IEM report series is dead, but the <i>annual</i> appendix series survives the NSWS migration.</p>
       </div>
     </section>
 
@@ -340,17 +340,19 @@
   mitraPanel.innerHTML = '<p class="scheme-detail">7 approved sites (5 greenfield: Tamil Nadu/Virudhunagar, Gujarat/Navsari, Karnataka/Kalaburagi, Madhya Pradesh/Dhar, Uttar Pradesh/Lucknow; 2 brownfield: Telangana/Warangal, Maharashtra/Amravati). 100% land acquisition completed and transferred to SPVs across all 7; environmental clearance obtained for all; ₹63,177cr in investment interest/MoUs; ₹4,808cr of infrastructure works in progress. <b>But commercial production has started in only ONE of the seven parks (Telangana)</b> as of the Ministry\'s own most recent progress table.</p>';
 
   var flows = [
-    {year:"2020", partA:414620, partB:233969, pct:56.4},
     {year:"2021", partA:771428, partB:347978, pct:45.1},
     {year:"2022", partA:424101, partB:250064, pct:59.0},
     {year:"2023", partA:510852, partB:276925, pct:54.2},
-    {year:"2024*", partA:525115, partB:296398, pct:56.4}
+    {year:"2024", partA:602082, partB:493765, pct:82.0},
+    {year:"2025*", partA:530416, partB:583096, pct:109.9}
   ];
+  var flowMax = 110;
   var flowHost = document.getElementById("flowLadder");
   flows.forEach(function (f) {
+    var over = f.pct > 100;
     var row = document.createElement("div");
     row.className = "flow-row";
-    row.innerHTML = '<div class="flow-year">' + f.year + '</div><div class="flow-track"><div class="flow-fill" style="width:' + f.pct + '%;"></div></div><div class="flow-val">' + f.pct + '%</div>';
+    row.innerHTML = '<div class="flow-year">' + f.year + '</div><div class="flow-track"><div class="flow-fill" style="width:' + Math.round(f.pct / flowMax * 100) + '%;' + (over ? ' background: var(--accent);' : '') + '"></div></div><div class="flow-val">' + f.pct + '%</div>';
     flowHost.appendChild(row);
   });
 
