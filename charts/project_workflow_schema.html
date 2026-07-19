@@ -1,0 +1,194 @@
+<title>Project Workflow &amp; Data-Sourcing Schema — How This Repo Measures the Investment Lifecycle</title>
+<meta name="hz:canvas-width" content="1180">
+<style>
+  :root {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6; --mismatch:#7a5aa8; --mismatch-soft:#e7defa;
+    --font-display:"Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --font-mono:"IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+      --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+      --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+      --data-line:#3987e5; --data-soft:#1c2c40; --mismatch:#b39ce0; --mismatch-soft:#2e2540;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+    --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+    --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+    --data-line:#3987e5; --data-soft:#1c2c40; --mismatch:#b39ce0; --mismatch-soft:#2e2540;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6; --mismatch:#7a5aa8; --mismatch-soft:#e7defa;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; }
+  .bulletin { background:var(--page-bg); color:var(--ink); font-family:var(--font-body); padding:40px 20px 56px; display:flex; justify-content:center; }
+  .sheet { width:100%; max-width:1160px; display:flex; flex-direction:column; gap:30px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:16px; }
+  .eyebrow { font-family:var(--font-mono); font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); display:flex; gap:10px; align-items:center; }
+  .eyebrow::before { content:""; width:7px; height:7px; border-radius:50%; background:var(--accent); }
+  h1 { font-family:var(--font-display); font-weight:500; font-size:clamp(24px,3.1vw,32px); margin:6px 0 0; text-wrap:balance; }
+  .dek { font-size:14px; color:var(--ink-2); max-width:90ch; line-height:1.55; margin:8px 0 0; }
+  section.block { display:flex; flex-direction:column; gap:14px; }
+  .block-head { display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; border-bottom:1px solid var(--rule-strong); padding-bottom:8px; }
+  .block-title { font-family:var(--font-display); font-size:21px; margin:0; }
+  .block-tag { font-family:var(--font-mono); font-size:12px; color:var(--ink-muted); }
+
+  .pipeline { display:flex; flex-direction:column; gap:0; }
+  .gate { display:grid; grid-template-columns:44px 1fr; gap:0 16px; position:relative; padding-bottom:18px; }
+  .gate:not(:last-child)::before { content:""; position:absolute; left:21px; top:44px; bottom:0; width:2px; background:var(--rule-strong); }
+  .gate-num { width:44px; height:44px; border-radius:50%; background:var(--accent); color:var(--page-bg); display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:700; font-size:19px; z-index:1; }
+  .gate.pending .gate-num { background:var(--warn); }
+  .gate-card { background:var(--surface); border:1px solid var(--rule-strong); padding:12px 16px; }
+  .gate-title { font-family:var(--font-display); font-size:16px; font-weight:600; }
+  .gate-src { font-family:var(--font-mono); font-size:10.5px; color:var(--data-line); margin-top:3px; }
+  .gate-rel { font-size:12.5px; color:var(--ink-2); line-height:1.5; margin-top:6px; }
+  .gate-blind { font-size:11.5px; color:var(--ink-2); margin-top:6px; padding:6px 10px; background:var(--alert-soft); border-left:3px solid var(--alert); }
+  .gate-blind b { font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; color:var(--alert); display:block; margin-bottom:2px; }
+
+  .tbl-scroll { overflow-x:auto; border:1px solid var(--rule-strong); }
+  table.src { width:100%; min-width:1050px; border-collapse:collapse; font-size:12px; background:var(--surface); }
+  table.src th { text-align:left; font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; letter-spacing:0.04em; color:var(--ink-muted); padding:8px 10px; border-bottom:2px solid var(--rule-strong); background:var(--page-bg); }
+  table.src td { padding:9px 10px; border-bottom:1px solid var(--rule); vertical-align:top; line-height:1.5; }
+  table.src tr:last-child td { border-bottom:none; }
+  table.src tr:hover td { background:var(--accent-soft); }
+
+  .steps { display:flex; flex-direction:column; gap:10px; }
+  .step { display:grid; grid-template-columns:34px 1fr; gap:12px; padding:12px 14px; background:var(--surface); border:1px solid var(--rule-strong); }
+  .step .n { width:28px; height:28px; border-radius:50%; background:var(--ink); color:var(--page-bg); display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:600; }
+  .step .t { font-size:13.5px; font-weight:600; }
+  .step .p { font-size:12.5px; color:var(--ink-2); line-height:1.55; margin-top:2px; }
+
+  .errata { border:1px solid var(--rule-strong); border-left:3px solid var(--alert); background:var(--surface); padding:16px 20px; }
+  .errata-title { font-family:var(--font-mono); font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--alert); }
+  .errata ul { margin:8px 0 0; padding-left:18px; }
+  .errata li { font-size:13px; line-height:1.5; color:var(--ink-2); margin-bottom:6px; }
+  footer.colophon { text-align:center; font-family:var(--font-mono); font-size:10.5px; color:var(--ink-muted); padding-top:8px; }
+</style>
+
+<div class="bulletin">
+  <div class="sheet">
+    <div class="masthead">
+      <div class="eyebrow">India Trade — Sector &amp; Policy Recommendations</div>
+      <h1>Project workflow &amp; data-sourcing schema: how this repo measures the investment lifecycle</h1>
+      <p class="dek">The repo's architecture, documented for anyone extending or refreshing it. Three layers: the <b>investment-lifecycle measurement schema</b> (which official source measures which gate of a project's life — and where each goes blind), the <b>data-sourcing inventory</b> (owners, access methods, which bulletins each feeds), and the <b>working method</b> (how a checkable question becomes a verified bulletin, derived outputs, and a maintained quarterly artifact).</p>
+    </div>
+
+    <section class="block">
+      <div class="block-head"><h2 class="block-title">The investment lifecycle — seven gates, seven data sources, seven blind spots</h2><span class="block-tag">No single Indian dataset covers the whole pipeline; this schema is how the repo stitches them</span></div>
+      <div class="pipeline" id="pipeline"></div>
+    </section>
+
+    <section class="block">
+      <div class="block-head"><h2 class="block-title">Data-sourcing inventory</h2><span class="block-tag">Source · owner · what it measures · which bulletins consume it · how to reach it</span></div>
+      <div class="tbl-scroll">
+        <table class="src">
+          <thead><tr><th style="width:16%">Source</th><th style="width:11%">Owner</th><th style="width:20%">Measures</th><th style="width:22%">Feeds</th><th style="width:31%">Access method</th></tr></thead>
+          <tbody id="srcBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-head"><h2 class="block-title">The working method — question to maintained artifact</h2><span class="block-tag">Seven steps, applied to every bulletin in this repo</span></div>
+      <div class="steps" id="steps"></div>
+    </section>
+
+    <section class="block">
+      <div class="errata">
+        <div class="errata-title">Known failure modes (encountered, not hypothetical)</div>
+        <ul id="failures"></ul>
+      </div>
+    </section>
+
+    <footer class="colophon">herrrickshaw/india-trade-sector-policy-recommendations — schema data: <a href="../data/project_workflow_schema_2026-07-19.json">data/project_workflow_schema_2026-07-19.json</a></footer>
+  </div>
+</div>
+
+<script>
+(function () {
+  var gates = [
+    {n:1, t:"Announcement / MoU", src:"Press · state summits · PIB events", rel:"Lowest reliability — announcements routinely never materialize (RRPCL has sat at MoU stage for years). This repo treats announcements as claims to verify, never as data.", blind:"Everything. No official series tracks announcement-to-reality conversion."},
+    {n:2, t:"Intent filed — IEM Part A", src:"DPIIT Annual Report, Appendices III/IV (state-wise, sector-wise)", rel:"Official but intent-only: ₹28.4 lakh cr proposed 2021-2025. Threshold ₹125cr P&M; manufacturing only; capital-source-blind (domestic + foreign combined).", blind:"No size band published; the monthly series is dead post-NSWS; the 1951 taxonomy has no Electronics category."},
+    {n:3, t:"Land + Environmental Clearance", src:"PARIVESH (EC/FC/CRZ) — research pass in flight", rel:"The gate BETWEEN intent and production: a project with land and EC is genuinely heading to implementation — the pipeline's leading indicator, and the newest layer being added to this repo.", blind:"EC categories don't map 1:1 to IEM scheduled industries; state-level B-category ECs sit with SEIAAs; directional, not a register.", pending:true},
+    {n:4, t:"Commercial production — IEM Part B", src:"DPIIT Annual Report, Appendices V/VI", rel:"The best implementation series that exists: ₹19.52 lakh cr implemented 2021-2025; the implementation ratio hit 109.9% in 2025. Capital-source-blind — which makes it the right combined measure.", blind:"No state×sector cross-tab; partial-year figures revise by lakh-crores; services excluded."},
+    {n:5, t:"Incentive disbursal — PLI", src:"PIB PRIDs · Lok Sabha/Rajya Sabha replies · ministry ARs · PRS budget actuals", rel:"Fragmented but reconstructable: ₹28,748cr total at 31 Dec 2025; per-scheme figures assembled from four source types in the report card.", blind:"No consolidated per-scheme table exists anywhere; two zeros mean opposite things (Solar by design, ACC by failure)."},
+    {n:6, t:"Foreign capital arrival — FDI equity", src:"DPIIT quarterly factsheets + newsletters · RBI (reinvested basis)", rel:"The only foreign-capital register: $58.85bn equity FY26. But it measures funding source, not activity.", blind:"State attribution by registered office (Jio/Gujarat proof); domestic capital invisible (Assam $2.37M vs ₹27,000cr project); no methodology documentation, by DPIIT's own admission."},
+    {n:7, t:"Trade outcome", src:"TRADESTAT chapter tables · Exim Bank/MOCI cross-check", rel:"Solid at chapter level; deficit cross-validated within 0.3% across independent chains.", blind:"Chapter level cannot separate scheme-caused from macro-caused moves — hence named confounders on every verdict."}
+  ];
+  var ph = document.getElementById("pipeline");
+  gates.forEach(function (g) {
+    var d = document.createElement("div");
+    d.className = "gate" + (g.pending ? " pending" : "");
+    d.innerHTML = '<div class="gate-num">' + g.n + '</div>' +
+      '<div class="gate-card"><div class="gate-title">' + g.t + '</div><div class="gate-src">' + g.src + '</div>' +
+      '<div class="gate-rel">' + g.rel + '</div>' +
+      '<div class="gate-blind"><b>Blind spot</b>' + g.blind + '</div></div>';
+    ph.appendChild(d);
+  });
+
+  var sources = [
+    ["DPIIT FDI factsheets & newsletters","DPIIT","FDI equity by sector/state/country (gate 6)","FDI-vs-PLI bulletin · verdict re-run · state tables","Publications page is a JS SPA — read in a rendered browser; PDFs direct-fetch with a browser user-agent"],
+    ["DPIIT Annual Report appendices III–VI","DPIIT","IEM Part A intent + Part B implementation (gates 2, 4)","State implementation table · IEM grade · policy dashboard","Annual Report PDF; layout-preserving extraction, verified against the document's own Grand Total rows"],
+    ["PIB Parliament-answer releases","PIB (all ministries)","PLI aggregates, disbursals, named companies (gate 5)","PLI report card · policy dashboard · companies ledger","curl with browser UA + redirects; always cite the PRID; sector releases carry company names, cross-scheme roundups don't"],
+    ["Lok Sabha / Rajya Sabha written replies","Parliament","Figures ministries don't publish on their own sites (gate 5)","Report-card gap fills (MedDev ₹157cr; Solar zero-by-design; Telecom actuals)","sansad.in PDFs via the r.jina.ai route with ?source=pqars; ministries often mirror; PIB summarizes with PRIDs"],
+    ["Ministry annual reports (9 ministries)","MeitY · Steel · MHI · DoP · DPIIT · Textiles · DCPC · MoCA · MoD","Scheme status, committed-vs-actual, self-acknowledged challenges","Policy & investment dashboard","Direct PDFs; challenges live in annual reports and committee replies — never on scheme pages"],
+    ["Parliamentary Standing Committee reports","LS/RS committees","The ministry's own sworn admissions","Dashboard challenge quotes (Semicon 23%/9% utilization; ACC 'massive disconnect')","sansad.in when TLS cooperates — the strongest primary source in the stack"],
+    ["TRADESTAT chapter tables","Ministry of Commerce","Imports/exports by HS chapter (gate 7)","Trade bulletins · growth-vs-volume · action items","Extracted in the descriptive companion repo"],
+    ["Exim Bank trackers (monthly)","Exim Bank of India","Independent trade/FDI aggregates + sector credit growth","Cross-validation panels","eximbankindia.in/useful-economic-data — direct PDFs"],
+    ["RBI / bank MCLR / bond data","RBI · banks","Cost-of-capital tiers","Domestic-vs-FDI capital case","RBI via PIB mirrors (rbi.org.in blocks automation); banks' .bank.in rate pages"],
+    ["ICRA sector outlooks","ICRA","Credit-risk framing per sector","Capital-case cross-check","Press-release PDFs — ALWAYS verify against the PDF (one fabricated claim caught and retracted)"],
+    ["MoSPI PAIMANA","MoSPI IPMD","Central Sector public infrastructure only","Dashboard negative-result section","ipm.mospi.gov.in Flash Report PDFs"],
+    ["AHIDF dashboard","DAHD / Udyamimitra","The transparency benchmark (nightly funnel dashboard)","Counter-example · action item #6","Public Power BI embed, no login"],
+    ["PARIVESH (EC/FC/CRZ)","MoEFCC","Gate 3 — the intent-to-production pipeline","Pipeline bulletin (in flight)","JS SPA — hunt JSON APIs; legacy environmentclearance.nic.in often more scrapable"],
+    ["IBEF / press / corporate filings","various","Cross-checks and identity fills only","Labeled non-primary fills (Lyfius, Kinvan, Meril)","Never laundered into primary attribution"]
+  ];
+  var sb = document.getElementById("srcBody");
+  sources.forEach(function (r) {
+    var tr = document.createElement("tr");
+    tr.innerHTML = '<td><b>'+r[0]+'</b></td><td>'+r[1]+'</td><td>'+r[2]+'</td><td>'+r[3]+'</td><td style="font-size:11.5px; color:var(--ink-2);">'+r[4]+'</td>';
+    sb.appendChild(tr);
+  });
+
+  var steps = [
+    {t:"Frame the checkable question", p:"Every bulletin starts as a falsifiable question (did FDI rise after launch? is the incentive actually paid?) — not a topic. The three-numbers rule: never conflate FDI inflow, committed investment, and disbursal."},
+    {t:"Parallel primary-source research", p:"Fan out background agents per ministry/source with explicit briefs: primary over PIB, PIB over press; cite document + date + ID; flag gaps rather than estimate; access workarounds included in the brief."},
+    {t:"Verify before publishing", p:"Layout-preserving extraction checked against the document's own Grand Total rows; independent chains cross-validated (deficit within 0.3%); fabrications caught against source PDFs are retracted IN the published bulletin."},
+    {t:"Data JSON first, chart second", p:"Every bulletin is a sourced data JSON (data/) plus a chart page (charts/) in one design-token system. The JSON is the citable artifact — listed in the repo manifest, consumable by the report synthesizer."},
+    {t:"State the judgment, show the evidence", p:"Grades and traffic lights are declared judgments with criteria; every row carries checkable evidence; revisions are displayed (A− → B), never silently applied; negative results get published too."},
+    {t:"Derive, don't duplicate", p:"The master report JSON is the source of truth; the 22-slide deck, dashboards, PDF snapshots and Word documents regenerate from data via the synthesizer and build_deck.sh. Templates encode the formats."},
+    {t:"Maintain on a cadence", p:"The GitHub Actions quarterly workflow regenerates the tracked PDF snapshot and opens a re-verification issue from the ministry-by-ministry checklist; new dated files supersede rather than overwrite."}
+  ];
+  var sh = document.getElementById("steps");
+  steps.forEach(function (s, i) {
+    var d = document.createElement("div");
+    d.className = "step";
+    d.innerHTML = '<div class="n">'+(i+1)+'</div><div><div class="t">'+s.t+'</div><div class="p">'+s.p+'</div></div>';
+    sh.appendChild(d);
+  });
+
+  var failures = [
+    "Gov sites block automation inconsistently: 403s (PIB, MeitY, texmin — browser UA fixes), TLS drops (sansad, pharma-dept, dot, mnre — the r.jina.ai route), dead SPAs (old SIA statistics), dead domains (pharmaceuticals.gov.in).",
+    "Official numbers disagree with themselves: PIB outlay ₹1.91 vs ₹1.97 lakh cr; DAHD vs Cabinet on AHIDF's outlay; DPIIT appendix headers say Dec vs Nov 2025 over identical totals. Flag, never reconcile silently.",
+    "Partial-year figures revise massively — IEM 2024 Part B grew ~₹2 lakh cr between consecutive Annual Reports.",
+    "Two zeros can mean opposite things (Solar's designed zero vs ACC's failed zero) — always read the mechanism, not just the number.",
+    "Session limits kill background agents mid-run — relaunch with the prior attempt's partial lesson folded into the next brief."
+  ];
+  var fh = document.getElementById("failures");
+  failures.forEach(function (f) { var li = document.createElement("li"); li.textContent = f; fh.appendChild(li); });
+})();
+</script>
