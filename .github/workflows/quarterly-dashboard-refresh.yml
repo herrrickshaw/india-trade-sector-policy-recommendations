@@ -1,0 +1,82 @@
+# Quarterly refresh for the Policy & Investment Insight Dashboard.
+#
+# What it does, every quarter (1 Jan / 1 Apr / 1 Jul / 1 Oct, 06:00 UTC):
+#   1. Regenerates the dashboard PDF snapshot from whatever data JSON currently
+#      exists in the repo (mechanical — uses scripts/report_synthesizer.py with
+#      headless Chrome, preinstalled on ubuntu runners), stamps it with the
+#      calendar quarter, and commits it to reports/published/.
+#   2. Opens a dated GitHub Issue with the ministry-by-ministry re-verification
+#      checklist, so a human (or a future Claude session pointed at the issue)
+#      re-checks the underlying figures. The DATA does not update itself —
+#      refreshing the numbers requires working through the checklist and
+#      editing data/policy_investment_dashboard_*.json, after which the next
+#      run (or a manual workflow_dispatch) snapshots the updated PDF.
+#
+# Manual run: Actions tab -> "Quarterly dashboard refresh" -> Run workflow.
+
+name: Quarterly dashboard refresh
+
+on:
+  schedule:
+    - cron: "0 6 1 1,4,7,10 *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install synthesizer dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Regenerate dashboard PDF snapshot
+        id: build
+        run: |
+          set -euo pipefail
+          # Latest date-stamped dashboard JSON wins (refreshed data lands as a new dated file)
+          DATA_JSON=$(ls data/policy_investment_dashboard_*.json | sort | tail -1)
+          echo "Using $DATA_JSON"
+          python3 scripts/report_synthesizer.py "$DATA_JSON" \
+            --html charts/policy_investment_dashboard.html \
+            --formats pdf --out-dir reports/published/
+          MONTH=$(date -u +%m); YEAR=$(date -u +%Y)
+          QUARTER=$(( (10#$MONTH - 1) / 3 + 1 ))
+          STAMP="${YEAR}-Q${QUARTER}"
+          BASENAME=$(basename "$DATA_JSON" .json)
+          mv "reports/published/${BASENAME}.pdf" "reports/published/policy_investment_dashboard_${STAMP}.pdf"
+          echo "stamp=${STAMP}" >> "$GITHUB_OUTPUT"
+
+      - name: Commit snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports/published/
+          if git diff --cached --quiet; then
+            echo "No changes to commit (snapshot identical to existing)."
+          else
+            git commit -m "chore: quarterly dashboard PDF snapshot ${{ steps.build.outputs.stamp }}"
+            git push
+          fi
+
+      - name: Open re-verification issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          STAMP="${{ steps.build.outputs.stamp }}"
+          # Skip if this quarter's issue already exists (manual re-runs shouldn't duplicate)
+          if gh issue list --search "in:title \"Quarterly dashboard re-verification ${STAMP}\"" --json number --jq 'length' | grep -qv '^0$'; then
+            echo "Issue for ${STAMP} already exists, skipping."
+            exit 0
+          fi
+          gh issue create \
+            --title "Quarterly dashboard re-verification ${STAMP}" \
+            --body "$(cat .github/QUARTERLY_CHECKLIST.md)"
