@@ -1,0 +1,218 @@
+<title>State-wise Investment Implementation — Domestic + Foreign Combined (IEM Part B) &amp; Sector Leaders</title>
+<meta name="hz:canvas-width" content="1180">
+<style>
+  :root {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6; --mismatch:#7a5aa8; --mismatch-soft:#e7defa;
+    --font-display:"Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --font-mono:"IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+      --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+      --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+      --data-line:#3987e5; --data-soft:#1c2c40; --mismatch:#b39ce0; --mismatch-soft:#2e2540;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+    --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+    --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+    --data-line:#3987e5; --data-soft:#1c2c40; --mismatch:#b39ce0; --mismatch-soft:#2e2540;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6; --mismatch:#7a5aa8; --mismatch-soft:#e7defa;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; }
+  .bulletin { background:var(--page-bg); color:var(--ink); font-family:var(--font-body); padding:40px 20px 56px; display:flex; justify-content:center; }
+  .sheet { width:100%; max-width:1160px; display:flex; flex-direction:column; gap:30px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:16px; }
+  .eyebrow { font-family:var(--font-mono); font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); display:flex; gap:10px; align-items:center; }
+  .eyebrow::before { content:""; width:7px; height:7px; border-radius:50%; background:var(--accent); }
+  h1 { font-family:var(--font-display); font-weight:500; font-size:clamp(24px,3.1vw,32px); margin:6px 0 0; text-wrap:balance; }
+  .dek { font-size:14px; color:var(--ink-2); max-width:90ch; line-height:1.55; margin:8px 0 0; }
+  .source-line { font-family:var(--font-mono); font-size:11px; color:var(--ink-muted); margin-top:8px; }
+  section.block { display:flex; flex-direction:column; gap:14px; }
+  .block-head { display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; border-bottom:1px solid var(--rule-strong); padding-bottom:8px; }
+  .block-title { font-family:var(--font-display); font-size:21px; margin:0; }
+  .block-tag { font-family:var(--font-mono); font-size:12px; color:var(--ink-muted); }
+  .panel { background:var(--surface); border:1px solid var(--rule-strong); padding:18px 22px; }
+  .defs { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:10px; }
+  .def { background:var(--surface); border:1px solid var(--rule-strong); border-left:3px solid var(--data-line); padding:10px 14px; font-size:12.5px; line-height:1.5; color:var(--ink-2); }
+
+  .tbl-scroll { overflow-x:auto; border:1px solid var(--rule-strong); }
+  table.st { width:100%; min-width:1080px; border-collapse:collapse; font-size:12px; font-variant-numeric:tabular-nums; background:var(--surface); }
+  table.st th { text-align:left; font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; letter-spacing:0.04em; color:var(--ink-muted); padding:8px 10px 8px 0; border-bottom:2px solid var(--rule-strong); background:var(--page-bg); position:sticky; top:0; }
+  table.st th:first-child, table.st td:first-child { padding-left:12px; }
+  table.st th.num, table.st td.num { text-align:right; }
+  table.st td { padding:8px 10px 8px 0; border-bottom:1px solid var(--rule); vertical-align:top; }
+  table.st tr:last-child td { border-bottom:none; }
+  table.st tr:hover td { background:var(--accent-soft); }
+  .share-cell { display:flex; align-items:center; gap:6px; min-width:90px; }
+  .share-track { flex:1; height:9px; background:var(--page-bg); border-radius:2px; overflow:hidden; }
+  .share-fill { height:100%; background:var(--accent); border-radius:2px; }
+  .read-cell { font-size:11px; line-height:1.45; color:var(--ink-2); max-width:34ch; }
+  .conv { font-weight:600; }
+  .conv.hi { color:var(--accent); } .conv.mid { color:var(--warn); } .conv.lo { color:var(--alert); }
+  .fdi-cell { color:var(--mismatch); font-weight:600; }
+  .anom { font-family:var(--font-mono); font-size:9px; text-transform:uppercase; background:var(--alert-soft); color:var(--alert); padding:1px 6px; border-radius:2px; margin-left:6px; }
+  .riser { font-family:var(--font-mono); font-size:9px; text-transform:uppercase; background:var(--accent-soft); color:var(--accent); padding:1px 6px; border-radius:2px; margin-left:6px; }
+
+  .div-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:12px; }
+  .div-card { background:var(--surface); border:1px solid var(--rule-strong); padding:14px 18px; }
+  .div-card.b1 { border-top:4px solid var(--accent); } .div-card.b2 { border-top:4px solid var(--mismatch); } .div-card.b3 { border-top:4px solid var(--data-line); }
+  .div-title { font-family:var(--font-display); font-size:15px; font-weight:600; margin-bottom:6px; }
+  .div-states { font-size:12px; color:var(--ink); margin-bottom:6px; }
+  .div-meaning { font-size:11.5px; color:var(--ink-2); line-height:1.5; font-style:italic; }
+
+  .errata { border:1px solid var(--rule-strong); border-left:3px solid var(--alert); background:var(--surface); padding:16px 20px; }
+  .errata-title { font-family:var(--font-mono); font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--alert); }
+  .errata ul { margin:8px 0 0; padding-left:18px; }
+  .errata li { font-size:13px; line-height:1.5; color:var(--ink-2); margin-bottom:6px; }
+  footer.colophon { text-align:center; font-family:var(--font-mono); font-size:10.5px; color:var(--ink-muted); padding-top:8px; }
+</style>
+
+<div class="bulletin">
+  <div class="sheet">
+    <div class="masthead">
+      <div class="eyebrow">India Trade — Sector &amp; Policy Recommendations</div>
+      <h1>State-wise investment implementation: domestic + foreign combined, on IEM Part B</h1>
+      <p class="dek">FDI tables miss domestic capital; announcement trackers miss what never gets built. <b>IEM Part B</b> — the filing an industrial undertaking makes when commercial production actually commences — is the one official series that measures <b>implemented</b> industrial investment regardless of who funded it. This bulletin ranks states on it (2021–2025, ₹19.52 lakh cr across 4,859 implemented projects), computes each state's intent-to-implementation conversion, contrasts against FY2025-26 FDI equity to infer the financing mix, and identifies the sector leaders driving implementation.</p>
+      <div class="source-line">SOURCES: DPIIT Annual Report 2025-26, Appendices III/V/VI (Grand-Total-verified extraction from the source PDF); FDI comparison from DPIIT FDI Newsletter XXXIV-4 Table 13. Retrieved 2026-07-19.</div>
+    </div>
+
+    <section class="block">
+      <div class="defs">
+        <div class="def"><b>Measures:</b> implemented projects under the I(D&amp;R) Act — manufacturing only, services excluded (Karnataka's software economy is invisible here by design).</div>
+        <div class="def"><b>Threshold:</b> only large filings (₹50cr plant &amp; machinery; ₹125cr from Apr 2025).</div>
+        <div class="def"><b>Capital-blind:</b> a Tata plant and a Daikin plant file identically — domestic + foreign combined, which is exactly the point.</div>
+        <div class="def"><b>Taxonomy:</b> the 1951 list has no Electronics category — that investment sits under Electricals Equipment / Comm-Office / Telecom.</div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-head"><h2 class="block-title">The state table — implemented investment, ₹ crore</h2><span class="block-tag">Top 3 states = 63.3% of all implemented industrial investment</span></div>
+      <div class="tbl-scroll">
+        <table class="st">
+          <thead><tr><th>#</th><th>State</th><th class="num">2021</th><th class="num">2022</th><th class="num">2023</th><th class="num">2024</th><th class="num">2025*</th><th class="num">5-yr total</th><th>Share</th><th class="num">A→B conv.</th><th class="num">FY26 FDI $M</th><th>Financing read</th></tr></thead>
+          <tbody id="stBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-head"><h2 class="block-title">Where IEM and FDI diverge — the financing patterns</h2><span class="block-tag">The same states, two very different official mirrors</span></div>
+      <div class="div-grid" id="divGrid"></div>
+    </section>
+
+    <section class="block">
+      <div class="block-head"><h2 class="block-title">Sector leaders — what is actually getting built</h2><span class="block-tag">Part B by scheduled industry, 2021–2025</span></div>
+      <div class="tbl-scroll">
+        <table class="st" style="min-width:900px;">
+          <thead><tr><th>#</th><th>Sector</th><th class="num">5-yr total ₹cr</th><th>Share</th><th class="num">2025 alone ₹cr</th><th>Read</th></tr></thead>
+          <tbody id="secBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="errata">
+        <div class="errata-title">Caveats &amp; methodology notes</div>
+        <ul>
+          <li><b>A→B conversion is a same-period flow ratio, not cohort-matched</b> — Part B in any year comes from Part A filings of earlier years. Punjab's 356% and Gujarat's 178% are pipeline effects (old filings landing), not same-year magic.</li>
+          <li><b>No state×sector cross-tab exists</b> — DPIIT publishes the two marginals separately, so "which sector leads in which state" is inferred only where external evidence exists (Odisha = metals), never computed.</li>
+          <li><b>Appendix V says "Up to Dec 2025", Appendix VI says "Up to Nov 2025" — yet both grand-total to the identical ₹5,83,096cr.</b> An internal labeling inconsistency in DPIIT's own document, flagged not reconciled.</li>
+          <li><b>2025 is partial and IEM partial-year figures revise heavily</b> (2024's Part B grew ~₹2 lakh cr between consecutive Annual Reports).</li>
+          <li>Underlying data: <a href="../data/state_iem_implementation_2026-07-19.json">data/state_iem_implementation_2026-07-19.json</a> · Related: <a href="pli_report_card.html">PLI report card</a> · <a href="domestic_vs_fdi_capital_case.html">domestic vs. FDI capital case</a>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="colophon">herrrickshaw/india-trade-sector-policy-recommendations — derived research synthesis; not an official government publication or investment solicitation</footer>
+  </div>
+</div>
+
+<script>
+(function () {
+  var states = [
+    {r:1,s:"Gujarat",y:[104968,39259,61407,208025,246595],t:660254,sh:33.8,cv:177.8,fdi:5713,read:"Both engines at scale — implementing 178% of same-period intent (pre-2021 pipeline landing). ₹4.55 lakh cr in 2024-25 alone."},
+    {r:2,s:"Odisha",y:[89167,37266,25138,80875,104041],t:336487,sh:17.2,cv:60.1,fdi:84,read:"THE domestic-capital state, quantified: #2 in implementation, 0.14% of FDI. Tata Steel/Jindal capex — invisible to FDI data, enormous here."},
+    {r:3,s:"Maharashtra",y:[45855,35675,52201,42949,61308],t:237988,sh:12.2,cv:34.9,fdi:18418,read:"#3 implementation AND #1 FDI (31.3%) — the most FDI-weighted major manufacturing state; conversion of its huge intent just 35%."},
+    {r:4,s:"Andhra Pradesh",y:[10350,45217,10536,23662,50680],t:140445,sh:7.2,cv:85.4,fdi:609,read:"Domestic-led with selective genuine FDI (Sri City: Daikin, LG); 85% conversion, accelerating 2025."},
+    {r:5,s:"Uttar Pradesh",y:[11333,8896,13720,28115,11890],t:73954,sh:3.8,cv:null,fdi:null,read:"Noida electronics/appliance cluster; 2024 spike."},
+    {r:6,s:"Rajasthan",y:[7571,17403,8868,16880,20651],t:71373,sh:3.7,cv:68.2,fdi:null,read:"Steady riser; cement/metals belt."},
+    {r:7,s:"Madhya Pradesh",y:[14500,7153,12801,18674,11700],t:64828,sh:3.3,cv:68.3,fdi:null,read:"Consistent mid-tier implementer."},
+    {r:8,s:"Punjab",y:[5627,4466,32182,7144,7874],t:57293,sh:2.9,cv:355.7,fdi:null,read:"356% conversion is a small-base artifact (2023 spike vs tiny intent) — old filings landing."},
+    {r:9,s:"Tamil Nadu",y:[13684,9268,6746,7763,7166],t:44627,sh:2.3,cv:49.3,fdi:4724,read:"Modest in IEM terms — its auto cluster predates the window; FDI outweighs new large-project implementation."},
+    {r:10,s:"Chhattisgarh",y:[16492,2766,1310,18235,4747],t:43550,sh:2.2,cv:35.7,fdi:null,read:"Steel/metals, lumpy years."},
+    {r:11,s:"Karnataka",y:[6327,8042,6368,7272,14454],t:42463,sh:2.2,cv:21.3,fdi:12939,read:"THE inversion: 2.2% of implementation, 22% of FDI. Its FDI is software/services (invisible to IEM); manufacturing conversion weakest of the majors."},
+    {r:12,s:"Haryana",y:[3562,2891,6652,5358,7369],t:25832,sh:1.3,cv:43.5,fdi:null,read:"Gurgaon-belt auto/components."},
+    {r:13,s:"Telangana",y:[6739,3915,3464,6158,4858],t:25134,sh:1.3,cv:28.1,fdi:2253,read:"Modest so far — but 2025 Part A intent spiked to ₹60,991cr (life sciences); watch the B column from 2026."},
+    {r:14,s:"Assam",y:[452,633,18778,1528,1229],t:22620,sh:1.2,cv:83.4,fdi:2.37,read:"2023's ₹18,778cr is the Tata Electronics-era surge registering in IEM — against $2.37M FDI. The clearest single-state proof of what IEM captures and FDI can't."},
+    {r:15,s:"West Bengal",y:[1967,3735,4930,6011,5842],t:22485,sh:1.2,cv:null,fdi:229,read:"Steady small-scale implementation despite the 2025 incentive revocation."}
+  ];
+  var f = function(n){ return n==null ? "—" : n.toLocaleString('en-IN'); };
+  var sb = document.getElementById("stBody");
+  states.forEach(function (d) {
+    var convCls = d.cv==null ? "" : (d.cv>=80 ? "hi" : (d.cv>=40 ? "mid" : "lo"));
+    var tr = document.createElement("tr");
+    tr.innerHTML = '<td>'+d.r+'</td><td><b>'+d.s+'</b></td>' +
+      d.y.map(function(v){return '<td class="num">'+f(v)+'</td>';}).join('') +
+      '<td class="num"><b>'+f(d.t)+'</b></td>' +
+      '<td><div class="share-cell"><div class="share-track"><div class="share-fill" style="width:'+Math.max(d.sh/33.8*100,2)+'%"></div></div><span style="font-size:11px;">'+d.sh.toFixed(1)+'%</span></div></td>' +
+      '<td class="num"><span class="conv '+convCls+'">'+(d.cv==null?"—":d.cv.toFixed(1)+"%")+'</span></td>' +
+      '<td class="num fdi-cell">'+(d.fdi==null?"—":f(Math.round(d.fdi)))+'</td>' +
+      '<td class="read-cell">'+d.read+'</td>';
+    sb.appendChild(tr);
+  });
+
+  var divs = [
+    {cls:"b1", t:"High implementation, negligible FDI", s:"Odisha (17.2% of implementation, 0.14% of FDI) · Assam (₹18,778cr in 2023 vs $2.37M FDI) · Chhattisgarh · Rajasthan · MP", m:"Domestic-funded manufacturing — real, large, and structurally invisible to anyone reading only FDI tables."},
+    {cls:"b2", t:"High FDI, modest implementation", s:"Karnataka (22% of FDI, 2.2% of implementation — Bengaluru software) · Tamil Nadu ($4.7bn FDI vs 2.3% share — auto cluster predates the window)", m:"Headline FDI is not new large-scale manufacturing; IEM strips the services/HQ effect out."},
+    {cls:"b3", t:"Both engines running", s:"Gujarat (#1 implementation, 33.8% + #4 FDI) · Maharashtra (#3 + #1 FDI) · Andhra Pradesh (85% conversion + genuine Sri City FDI)", m:"The states winning both channels — Gujarat's 178% conversion signals a deep pre-existing pipeline."}
+  ];
+  var dg = document.getElementById("divGrid");
+  divs.forEach(function (d) {
+    var c = document.createElement("div");
+    c.className = "div-card " + d.cls;
+    c.innerHTML = '<div class="div-title">'+d.t+'</div><div class="div-states">'+d.s+'</div><div class="div-meaning">'+d.m+'</div>';
+    dg.appendChild(c);
+  });
+
+  var sectors = [
+    {r:1,s:"Metallurgical Industries",t:469693,sh:24.1,y25:209301,tag:"riser",read:"The implementation engine — ₹2.09 lakh cr in 2025 alone, the largest single-year sector figure in the series. Odisha/Gujarat/Chhattisgarh steel-and-metals capex, overwhelmingly domestic-funded."},
+    {r:2,s:"Chemicals (except fertilizers)",t:286230,sh:14.7,y25:81169,tag:null,read:"The quiet giant: #2 WITH NO PLI SCHEME — ₹50-80,000cr/yr of private chemical capex landing regardless. Sharpens the question of why imports still grew 86%."},
+    {r:3,s:"Electricals Equipment",t:189548,sh:9.7,y25:34904,tag:null,read:"Where electronics/white-goods manufacturing lands in the 1951 taxonomy."},
+    {r:4,s:"Glass",t:131208,sh:6.7,y25:3062,tag:"anom",read:"₹1.22 lakh cr of the total sits in ONE year (2024) vs ₹1-3,000cr every other year — one mega-project or a data quirk; not a trend."},
+    {r:5,s:"Food Processing",t:102893,sh:5.3,y25:12073,tag:null,read:"Consistent riser (₹7,236cr → ₹36,888cr by 2024) — matches Food Processing PLI paying at scale."},
+    {r:6,s:"Cement & Gypsum",t:101094,sh:5.2,y25:11642,tag:null,read:"Steady infrastructure-linked capex."},
+    {r:7,s:"Fuels",t:88451,sh:4.5,y25:70117,tag:"anom",read:"₹70,117cr of the total is one year (2025) — likely a single refinery/energy mega-filing."},
+    {r:8,s:"Misc. Industries",t:82669,sh:4.2,y25:18460,tag:null,read:"Catch-all bucket; 2024 spike ₹46,464cr."},
+    {r:9,s:"Transportation Industry",t:81764,sh:4.2,y25:19138,tag:null,read:"The auto/EV capex channel — rising."},
+    {r:10,s:"Textiles",t:58318,sh:3.0,y25:23854,tag:"riser",read:"2025 riser (₹23,854cr vs ₹5-10,000cr/yr prior) — large projects finally implementing even as PLI disbursal sits at 0.5%."},
+    {r:11,s:"Fermentation Industries",t:43977,sh:2.3,y25:24237,tag:"riser",read:"Ethanol/biofuel capacity wave."},
+    {r:12,s:"Drugs & Pharmaceuticals",t:40109,sh:2.1,y25:18077,tag:"riser",read:"5x climb from 2021 — lines up with the FDI doubling and the A-grade PLI: pharma is where every measure now points the same way."}
+  ];
+  var secB = document.getElementById("secBody");
+  sectors.forEach(function (d) {
+    var tag = d.tag==="anom" ? '<span class="anom">anomaly</span>' : (d.tag==="riser" ? '<span class="riser">2025 riser</span>' : "");
+    var tr = document.createElement("tr");
+    tr.innerHTML = '<td>'+d.r+'</td><td><b>'+d.s+'</b>'+tag+'</td><td class="num"><b>'+f(d.t)+'</b></td>' +
+      '<td><div class="share-cell"><div class="share-track"><div class="share-fill" style="width:'+Math.max(d.sh/24.1*100,2)+'%"></div></div><span style="font-size:11px;">'+d.sh.toFixed(1)+'%</span></div></td>' +
+      '<td class="num">'+f(d.y25)+'</td><td class="read-cell" style="max-width:52ch;">'+d.read+'</td>';
+    secB.appendChild(tr);
+  });
+})();
+</script>

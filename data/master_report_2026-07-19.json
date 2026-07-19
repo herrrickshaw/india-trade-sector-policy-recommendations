@@ -2,7 +2,6 @@
   "purpose": "The master reference document for the India Trade & FDI/PLI analysis: every finding, figure, grade, and correction from the full research program in one place, with sources. This document is the source of truth from which the FDI pitch deck, dashboards, and bulletins can be updated -- when a number changes here, the derived outputs follow.",
   "retrieved": "2026-07-19",
   "method": "Compiled from the program's published bulletins, which rest on: direct extraction from DPIIT/RBI/ministry primary documents (annual reports, appendices, scheme portals); PIB Parliament-answer releases verified against release text with PRIDs; Parliamentary Standing Committee submissions (sansad.in); 20+ parallel research passes with adversarial verification; and independent cross-validation against Exim Bank of India and IBEF. Letter grades and traffic-light verdicts are stated judgments with criteria shown; every checkable claim carries its source.",
-
   "executive_summary": [
     "India's FY2025-26 trade position: exports $441.7bn (+0.9% YoY), imports grew +7.4%, trade deficit $333.2bn -- widened 17.5% in a single year. Over 5 years imports grew 5.7x faster than exports. FDI equity inflow $58.85bn (+18% YoY); total FDI incl. reinvested earnings $88.3bn (Apr-Feb).",
     "The PLI program's outcome numbers are large and compounding (Rs 2.16 lakh cr investment, Rs 20.41 lakh cr production, Rs 8.3 lakh cr exports, 14.39 lakh jobs as of 31 Dec 2025) -- but incentive DISBURSAL stands at Rs 28,748cr, roughly 15% of the outlay, and is concentrated in two sectors (Electronics and Pharma).",
@@ -11,90 +10,518 @@
     "India's official investment-tracking data has documented, admitted defects: state-wise FDI is attributed by registered office (proven via Jio Platforms/Gujarat), the monthly IEM statistics series died with the NSWS migration, MoSPI's mega-project portal covers no private manufacturing, and no PLI ministry publishes beneficiary-level production status. AHIDF proves the capability exists (a nightly-refreshed, funnel-complete public dashboard) -- so the opacity is a choice.",
     "Six ranked action items to further reduce the trade deficit: launch the chemicals/plastics PLI ($36.4bn uncovered imports), extend PLI Textiles to cotton apparel, deepen ECMS component localization, fix ACC Battery execution (zero disbursed), re-verify the Electronics/Medical-Devices FDI reversals next quarter, and mandate AHIDF-style funnels for every scheme."
   ],
-
   "part_1_trade_position_fy2025_26": {
     "headline_numbers": [
-      {"metric": "Merchandise exports", "value": "$441.7bn", "change": "+0.9% YoY; +4.7% over 5yrs", "source": "MOCI via Exim Bank May-2026 tracker; matches repo TRADESTAT tables"},
-      {"metric": "Merchandise imports", "value": "$776.0bn", "change": "+7.4% YoY; +26.6% over 5yrs", "source": "TRADESTAT FY2025-26"},
-      {"metric": "Trade deficit", "value": "$333.2bn", "change": "widened from $283.5bn (+17.5% in one year)", "source": "Exim/MOCI; repo computed $334.3bn -- cross-validated within 0.3%"},
-      {"metric": "Non-petroleum exports", "value": "$387.9bn", "change": "+3.6%", "source": "Exim May-2026"},
-      {"metric": "FDI equity inflow", "value": "$58.85bn (Rs 5,16,936cr)", "change": "+18% USD / +23% INR", "source": "DPIIT Q4 FY26 Factsheet, 3 Jun 2026"},
-      {"metric": "Total FDI incl. reinvested earnings", "value": "$88.3bn (Apr-Feb FY26)", "change": "rising", "source": "RBI basis, via Exim tracker"},
-      {"metric": "Deficit driver, bilateral", "value": "China -$112.2bn", "change": "more than double the next-largest, unmoved by 6 years of PLI", "source": "repo country bulletin"}
+      {
+        "metric": "Merchandise exports",
+        "value": "$441.7bn",
+        "change": "+0.9% YoY; +4.7% over 5yrs",
+        "source": "MOCI via Exim Bank May-2026 tracker; matches repo TRADESTAT tables"
+      },
+      {
+        "metric": "Merchandise imports",
+        "value": "$776.0bn",
+        "change": "+7.4% YoY; +26.6% over 5yrs",
+        "source": "TRADESTAT FY2025-26"
+      },
+      {
+        "metric": "Trade deficit",
+        "value": "$333.2bn",
+        "change": "widened from $283.5bn (+17.5% in one year)",
+        "source": "Exim/MOCI; repo computed $334.3bn -- cross-validated within 0.3%"
+      },
+      {
+        "metric": "Non-petroleum exports",
+        "value": "$387.9bn",
+        "change": "+3.6%",
+        "source": "Exim May-2026"
+      },
+      {
+        "metric": "FDI equity inflow",
+        "value": "$58.85bn (Rs 5,16,936cr)",
+        "change": "+18% USD / +23% INR",
+        "source": "DPIIT Q4 FY26 Factsheet, 3 Jun 2026"
+      },
+      {
+        "metric": "Total FDI incl. reinvested earnings",
+        "value": "$88.3bn (Apr-Feb FY26)",
+        "change": "rising",
+        "source": "RBI basis, via Exim tracker"
+      },
+      {
+        "metric": "Deficit driver, bilateral",
+        "value": "China -$112.2bn",
+        "change": "more than double the next-largest, unmoved by 6 years of PLI",
+        "source": "repo country bulletin"
+      }
     ],
     "import_chapters_fy2025_26": [
-      {"hs": "27", "name": "Mineral fuels & oils", "usd_bn": 203.4, "growth_5yr_pct": 21.2, "scheme_coverage": "partial"},
-      {"hs": "71", "name": "Pearls, gems & jewellery", "usd_bn": 109.4, "growth_5yr_pct": 69.1, "scheme_coverage": "na"},
-      {"hs": "85", "name": "Electrical machinery", "usd_bn": 104.9, "growth_5yr_pct": 101.5, "scheme_coverage": "strong"},
-      {"hs": "84", "name": "Machinery, mechanical appliances", "usd_bn": 74.0, "growth_5yr_pct": 68.8, "scheme_coverage": "partial"},
-      {"hs": "29", "name": "Organic chemicals", "usd_bn": 25.4, "growth_5yr_pct": 13.5, "scheme_coverage": "partial"},
-      {"hs": "39", "name": "Plastics", "usd_bn": 22.2, "growth_5yr_pct": 45.8, "scheme_coverage": "gap"},
-      {"hs": "15", "name": "Animal/veg fats & oils", "usd_bn": 19.8, "growth_5yr_pct": 97.9, "scheme_coverage": "gap"},
-      {"hs": "72", "name": "Iron & steel", "usd_bn": 15.8, "growth_5yr_pct": 25.2, "scheme_coverage": "partial"},
-      {"hs": "90", "name": "Optical/medical instruments", "usd_bn": 15.4, "growth_5yr_pct": 59.6, "scheme_coverage": "partial"},
-      {"hs": "31", "name": "Fertilisers", "usd_bn": 14.6, "growth_5yr_pct": 118.9, "scheme_coverage": "gap"},
-      {"hs": "28", "name": "Inorganic chemicals", "usd_bn": 14.2, "growth_5yr_pct": 86.0, "scheme_coverage": "gap"},
-      {"hs": "88", "name": "Aircraft & spacecraft", "usd_bn": 13.8, "growth_5yr_pct": 80.9, "scheme_coverage": "gap"}
+      {
+        "hs": "27",
+        "name": "Mineral fuels & oils",
+        "usd_bn": 203.4,
+        "growth_5yr_pct": 21.2,
+        "scheme_coverage": "partial"
+      },
+      {
+        "hs": "71",
+        "name": "Pearls, gems & jewellery",
+        "usd_bn": 109.4,
+        "growth_5yr_pct": 69.1,
+        "scheme_coverage": "na"
+      },
+      {
+        "hs": "85",
+        "name": "Electrical machinery",
+        "usd_bn": 104.9,
+        "growth_5yr_pct": 101.5,
+        "scheme_coverage": "strong"
+      },
+      {
+        "hs": "84",
+        "name": "Machinery, mechanical appliances",
+        "usd_bn": 74.0,
+        "growth_5yr_pct": 68.8,
+        "scheme_coverage": "partial"
+      },
+      {
+        "hs": "29",
+        "name": "Organic chemicals",
+        "usd_bn": 25.4,
+        "growth_5yr_pct": 13.5,
+        "scheme_coverage": "partial"
+      },
+      {
+        "hs": "39",
+        "name": "Plastics",
+        "usd_bn": 22.2,
+        "growth_5yr_pct": 45.8,
+        "scheme_coverage": "gap"
+      },
+      {
+        "hs": "15",
+        "name": "Animal/veg fats & oils",
+        "usd_bn": 19.8,
+        "growth_5yr_pct": 97.9,
+        "scheme_coverage": "gap"
+      },
+      {
+        "hs": "72",
+        "name": "Iron & steel",
+        "usd_bn": 15.8,
+        "growth_5yr_pct": 25.2,
+        "scheme_coverage": "partial"
+      },
+      {
+        "hs": "90",
+        "name": "Optical/medical instruments",
+        "usd_bn": 15.4,
+        "growth_5yr_pct": 59.6,
+        "scheme_coverage": "partial"
+      },
+      {
+        "hs": "31",
+        "name": "Fertilisers",
+        "usd_bn": 14.6,
+        "growth_5yr_pct": 118.9,
+        "scheme_coverage": "gap"
+      },
+      {
+        "hs": "28",
+        "name": "Inorganic chemicals",
+        "usd_bn": 14.2,
+        "growth_5yr_pct": 86.0,
+        "scheme_coverage": "gap"
+      },
+      {
+        "hs": "88",
+        "name": "Aircraft & spacecraft",
+        "usd_bn": 13.8,
+        "growth_5yr_pct": 80.9,
+        "scheme_coverage": "gap"
+      }
     ],
     "export_chapters_fy2025_26": [
-      {"hs": "85", "name": "Electrical machinery", "usd_bn": 54.0, "growth_5yr_pct": 324.1, "scheme_coverage": "strong"},
-      {"hs": "87", "name": "Vehicles", "usd_bn": 26.0, "growth_5yr_pct": 43.5, "scheme_coverage": "strong"},
-      {"hs": "10", "name": "Cereals", "usd_bn": 12.0, "growth_5yr_pct": 47.1, "scheme_coverage": "gap"},
-      {"hs": "73", "name": "Iron/steel articles", "usd_bn": 10.4, "growth_5yr_pct": 42.8, "scheme_coverage": "partial"},
-      {"hs": "72", "name": "Iron & steel", "usd_bn": 10.3, "growth_5yr_pct": 5.9, "scheme_coverage": "partial"},
-      {"hs": "62", "name": "Apparel, not knitted", "usd_bn": 8.2, "growth_5yr_pct": -2.0, "scheme_coverage": "mismatch (PLI covers MMF only)"},
-      {"hs": "61", "name": "Apparel, knitted", "usd_bn": 7.6, "growth_5yr_pct": -2.3, "scheme_coverage": "mismatch (PLI covers MMF only)"}
+      {
+        "hs": "85",
+        "name": "Electrical machinery",
+        "usd_bn": 54.0,
+        "growth_5yr_pct": 324.1,
+        "scheme_coverage": "strong"
+      },
+      {
+        "hs": "87",
+        "name": "Vehicles",
+        "usd_bn": 26.0,
+        "growth_5yr_pct": 43.5,
+        "scheme_coverage": "strong"
+      },
+      {
+        "hs": "10",
+        "name": "Cereals",
+        "usd_bn": 12.0,
+        "growth_5yr_pct": 47.1,
+        "scheme_coverage": "gap"
+      },
+      {
+        "hs": "73",
+        "name": "Iron/steel articles",
+        "usd_bn": 10.4,
+        "growth_5yr_pct": 42.8,
+        "scheme_coverage": "partial"
+      },
+      {
+        "hs": "72",
+        "name": "Iron & steel",
+        "usd_bn": 10.3,
+        "growth_5yr_pct": 5.9,
+        "scheme_coverage": "partial"
+      },
+      {
+        "hs": "62",
+        "name": "Apparel, not knitted",
+        "usd_bn": 8.2,
+        "growth_5yr_pct": -2.0,
+        "scheme_coverage": "mismatch (PLI covers MMF only)"
+      },
+      {
+        "hs": "61",
+        "name": "Apparel, knitted",
+        "usd_bn": 7.6,
+        "growth_5yr_pct": -2.3,
+        "scheme_coverage": "mismatch (PLI covers MMF only)"
+      }
     ],
     "honest_reading": "The export half of the import-substitution thesis is showing real progress in scheme-covered chapters -- the only declining export chapters are the cotton-apparel ones PLI structurally misses. The import half is not yet visible at chapter level: HS85 imports also doubled (components feeding the assembly boom), and total imports grew 5.7x faster than exports over five years. The trade-deficit lever is two-sided: deepen component localization where export momentum exists, and open schemes where the fastest-growing import bills have none."
   },
-
   "part_2_sector_verdicts": {
     "criteria": "Same criteria across both runs: did real DPIIT/RBI-tracked FDI equity inflow rise after the scheme's launch, distinguishable from the national cycle and from named confounders? Traffic lights: green = real, sustained, attributable rise; amber = mixed/confounded/too early; red = no lever or declining with no scheme.",
     "verdicts_table": [
-      {"sector": "Electronics & Semiconductors", "fy19_fdi_usd_m": 451.88, "fy25_fdi_usd_m": 2043.04, "fy26_fdi_usd_m": 1153.42, "fy26_change_pct": -43.5, "original_verdict": "green", "rerun_verdict": "amber", "note": "FDI nearly halved in FY26 while national FDI grew 18%; landed capacity real (Micron, CG Semi, Kaynes producing) but increasingly domestic-funded; ISM fund utilization was 23% (FY24) and 9% (FY25) per MeitY's Parliament submissions."},
-      {"sector": "Medical Devices", "fy19_fdi_usd_m": 156.72, "fy25_fdi_usd_m": 626.99, "fy26_fdi_usd_m": 373.84, "fy26_change_pct": -40.4, "original_verdict": "green", "rerun_verdict": "amber", "note": "The 'cleanest positive result' reversed -- the concentration risk the original verdict flagged (a few MNC deals) materialized. 19 greenfield plants commissioned; production story ahead of FDI story."},
-      {"sector": "Pharma & Bulk Drug APIs", "fy19_fdi_usd_m": 265.97, "fy25_fdi_usd_m": 891.43, "fy26_fdi_usd_m": 1911.64, "fy26_change_pct": 114.4, "original_verdict": "amber (rose but confounded)", "rerun_verdict": "green", "note": "Doubled to the series' highest level, landing AFTER Rs 5,433cr disbursement and investment at 237% of commitment -- the COVID-reshoring counter-explanation is now materially weaker."},
-      {"sector": "Auto, EV & Battery", "fy19_fdi_usd_m": 2623.22, "fy25_fdi_usd_m": 1586.31, "fy26_fdi_usd_m": 2459.35, "fy26_change_pct": 55.0, "original_verdict": "amber", "rerun_verdict": "amber (improving)", "note": "Strong rebound but the FY21-22 lesson (one PE deal, +327%, fully reverted) demands deal tracing; ACC execution still 1 of 40 GWh commissioned, zero disbursed."},
-      {"sector": "White Goods Components", "fy19_fdi_usd_m": 976.5, "fy25_fdi_usd_m": 531.49, "fy26_fdi_usd_m": 840.44, "fy26_change_pct": 58.1, "original_verdict": "amber (too early)", "rerun_verdict": "amber (improving)", "note": "First meaningful post-launch rise, consistent with full subscription only landing Jan 2026 -- one year of evidence."},
-      {"sector": "Specialty Steel & Metals", "fy19_fdi_usd_m": 598.84, "fy25_fdi_usd_m": 950.99, "fy26_fdi_usd_m": 838.78, "fy26_change_pct": -11.8, "original_verdict": "amber", "rerun_verdict": "amber", "note": "Still below pre-launch baseline; POSCO-JSW's $7.73bn moved Apr 2026 and lands in FY27 data -- next year is the real test. Capacity utilization dipped to 76%."},
-      {"sector": "Aircraft & Spacecraft", "fy19_fdi_usd_m": null, "fy25_fdi_usd_m": null, "fy26_fdi_usd_m": 268.16, "fy26_change_pct": null, "original_verdict": "amber", "rerun_verdict": "amber", "note": "Proxy too coarse for YoY reads. C295 line operating; GE-HAL F414 terms finalized Apr 2026, signature pending. No production-incentive scheme; imports +80.9% (5yr)."},
-      {"sector": "Inorganic Chemicals", "fy19_fdi_usd_m": null, "fy25_fdi_usd_m": null, "fy26_fdi_usd_m": 852.87, "fy26_change_pct": null, "original_verdict": "red", "rerun_verdict": "red", "note": "Imports +86% to $14.2bn, no scheme. Chemicals PLI under formulation + Rs 600cr Chemical Parks budgeted FY26-27 -- a signal, not capacity."},
-      {"sector": "Plastics", "fy19_fdi_usd_m": null, "fy25_fdi_usd_m": null, "fy26_fdi_usd_m": 214.56, "fy26_change_pct": null, "original_verdict": "red", "rerun_verdict": "red", "note": "Imports +45.8% to $22.2bn -- the largest no-scheme import bill. RRPCL (belongs to MoPNG, not DCPC) still short of financial close."},
-      {"sector": "Textiles & Apparel (cotton)", "fy19_fdi_usd_m": null, "fy25_fdi_usd_m": null, "fy26_fdi_usd_m": null, "fy26_change_pct": null, "original_verdict": "red", "rerun_verdict": "red", "note": "Cotton apparel exports still declining and still structurally outside PLI Textiles; the Oct 2025 amendment broadened HSN codes entirely within MMF scope. Ministry's own National Fibre Mission note admits the scheme 'focuses on downstream MMF fabrics and apparel' with fibre schemes operating 'in silos with limited convergence.'"}
+      {
+        "sector": "Electronics & Semiconductors",
+        "fy19_fdi_usd_m": 451.88,
+        "fy25_fdi_usd_m": 2043.04,
+        "fy26_fdi_usd_m": 1153.42,
+        "fy26_change_pct": -43.5,
+        "original_verdict": "green",
+        "rerun_verdict": "amber",
+        "note": "FDI nearly halved in FY26 while national FDI grew 18%; landed capacity real (Micron, CG Semi, Kaynes producing) but increasingly domestic-funded; ISM fund utilization was 23% (FY24) and 9% (FY25) per MeitY's Parliament submissions."
+      },
+      {
+        "sector": "Medical Devices",
+        "fy19_fdi_usd_m": 156.72,
+        "fy25_fdi_usd_m": 626.99,
+        "fy26_fdi_usd_m": 373.84,
+        "fy26_change_pct": -40.4,
+        "original_verdict": "green",
+        "rerun_verdict": "amber",
+        "note": "The 'cleanest positive result' reversed -- the concentration risk the original verdict flagged (a few MNC deals) materialized. 19 greenfield plants commissioned; production story ahead of FDI story."
+      },
+      {
+        "sector": "Pharma & Bulk Drug APIs",
+        "fy19_fdi_usd_m": 265.97,
+        "fy25_fdi_usd_m": 891.43,
+        "fy26_fdi_usd_m": 1911.64,
+        "fy26_change_pct": 114.4,
+        "original_verdict": "amber (rose but confounded)",
+        "rerun_verdict": "green",
+        "note": "Doubled to the series' highest level, landing AFTER Rs 5,433cr disbursement and investment at 237% of commitment -- the COVID-reshoring counter-explanation is now materially weaker."
+      },
+      {
+        "sector": "Auto, EV & Battery",
+        "fy19_fdi_usd_m": 2623.22,
+        "fy25_fdi_usd_m": 1586.31,
+        "fy26_fdi_usd_m": 2459.35,
+        "fy26_change_pct": 55.0,
+        "original_verdict": "amber",
+        "rerun_verdict": "amber (improving)",
+        "note": "Strong rebound but the FY21-22 lesson (one PE deal, +327%, fully reverted) demands deal tracing; ACC execution still 1 of 40 GWh commissioned, zero disbursed."
+      },
+      {
+        "sector": "White Goods Components",
+        "fy19_fdi_usd_m": 976.5,
+        "fy25_fdi_usd_m": 531.49,
+        "fy26_fdi_usd_m": 840.44,
+        "fy26_change_pct": 58.1,
+        "original_verdict": "amber (too early)",
+        "rerun_verdict": "amber (improving)",
+        "note": "First meaningful post-launch rise, consistent with full subscription only landing Jan 2026 -- one year of evidence."
+      },
+      {
+        "sector": "Specialty Steel & Metals",
+        "fy19_fdi_usd_m": 598.84,
+        "fy25_fdi_usd_m": 950.99,
+        "fy26_fdi_usd_m": 838.78,
+        "fy26_change_pct": -11.8,
+        "original_verdict": "amber",
+        "rerun_verdict": "amber",
+        "note": "Still below pre-launch baseline; POSCO-JSW's $7.73bn moved Apr 2026 and lands in FY27 data -- next year is the real test. Capacity utilization dipped to 76%."
+      },
+      {
+        "sector": "Aircraft & Spacecraft",
+        "fy19_fdi_usd_m": null,
+        "fy25_fdi_usd_m": null,
+        "fy26_fdi_usd_m": 268.16,
+        "fy26_change_pct": null,
+        "original_verdict": "amber",
+        "rerun_verdict": "amber",
+        "note": "Proxy too coarse for YoY reads. C295 line operating; GE-HAL F414 terms finalized Apr 2026, signature pending. No production-incentive scheme; imports +80.9% (5yr)."
+      },
+      {
+        "sector": "Inorganic Chemicals",
+        "fy19_fdi_usd_m": null,
+        "fy25_fdi_usd_m": null,
+        "fy26_fdi_usd_m": 852.87,
+        "fy26_change_pct": null,
+        "original_verdict": "red",
+        "rerun_verdict": "red",
+        "note": "Imports +86% to $14.2bn, no scheme. Chemicals PLI under formulation + Rs 600cr Chemical Parks budgeted FY26-27 -- a signal, not capacity."
+      },
+      {
+        "sector": "Plastics",
+        "fy19_fdi_usd_m": null,
+        "fy25_fdi_usd_m": null,
+        "fy26_fdi_usd_m": 214.56,
+        "fy26_change_pct": null,
+        "original_verdict": "red",
+        "rerun_verdict": "red",
+        "note": "Imports +45.8% to $22.2bn -- the largest no-scheme import bill. RRPCL (belongs to MoPNG, not DCPC) still short of financial close."
+      },
+      {
+        "sector": "Textiles & Apparel (cotton)",
+        "fy19_fdi_usd_m": null,
+        "fy25_fdi_usd_m": null,
+        "fy26_fdi_usd_m": null,
+        "fy26_change_pct": null,
+        "original_verdict": "red",
+        "rerun_verdict": "red",
+        "note": "Cotton apparel exports still declining and still structurally outside PLI Textiles; the Oct 2025 amendment broadened HSN codes entirely within MMF scope. Ministry's own National Fibre Mission note admits the scheme 'focuses on downstream MMF fabrics and apparel' with fibre schemes operating 'in silos with limited convergence.'"
+      }
     ],
     "control_sectors_note": "Original-run control group (no-PLI sectors, FY19-FY25): Chemicals -46.5%, Rubber Goods (plastics proxy) -58.8%, Misc Mechanical (aircraft proxy) -5.5% -- against the six PLI sectors' +30.7% average, but that gap was carried by 2-3 sectors, not all six."
   },
-
   "part_3_pli_program_assessment": {
     "aggregates_three_vintages": [
-      {"as_of": "~Nov 2024", "source": "PRID 2114011 (22 Mar 2025)", "investment": "Rs 1.61 lakh cr", "production": "~Rs 14 lakh cr", "exports": "Rs 5.31 lakh cr", "jobs": ">11.5 lakh", "applications": 764, "disbursed": "Rs 14,020cr"},
-      {"as_of": "30 Jun 2025", "source": "PRID 2201280 (DPIIT Year-End Review, 10 Dec 2025)", "investment": ">Rs 1.88 lakh cr", "production": ">Rs 17 lakh cr", "exports": ">Rs 7.5 lakh cr", "jobs": ">12.3 lakh", "applications": null, "disbursed": null},
-      {"as_of": "31 Dec 2025", "source": "PRID 2230621 (20 Feb 2026) + PRID 2246089/2246085 (27 Mar 2026)", "investment": ">Rs 2.16 lakh cr", "production": ">Rs 20.41 lakh cr", "exports": ">Rs 8.3 lakh cr", "jobs": ">14.39 lakh", "applications": 836, "disbursed": "Rs 28,748cr"}
+      {
+        "as_of": "~Nov 2024",
+        "source": "PRID 2114011 (22 Mar 2025)",
+        "investment": "Rs 1.61 lakh cr",
+        "production": "~Rs 14 lakh cr",
+        "exports": "Rs 5.31 lakh cr",
+        "jobs": ">11.5 lakh",
+        "applications": 764,
+        "disbursed": "Rs 14,020cr"
+      },
+      {
+        "as_of": "30 Jun 2025",
+        "source": "PRID 2201280 (DPIIT Year-End Review, 10 Dec 2025)",
+        "investment": ">Rs 1.88 lakh cr",
+        "production": ">Rs 17 lakh cr",
+        "exports": ">Rs 7.5 lakh cr",
+        "jobs": ">12.3 lakh",
+        "applications": null,
+        "disbursed": null
+      },
+      {
+        "as_of": "31 Dec 2025",
+        "source": "PRID 2230621 (20 Feb 2026) + PRID 2246089/2246085 (27 Mar 2026)",
+        "investment": ">Rs 2.16 lakh cr",
+        "production": ">Rs 20.41 lakh cr",
+        "exports": ">Rs 8.3 lakh cr",
+        "jobs": ">14.39 lakh",
+        "applications": 836,
+        "disbursed": "Rs 28,748cr"
+      }
     ],
     "outlay_inconsistency": "PIB states the total program outlay as Rs 1.97 lakh cr (Year-End Review) and Rs 1.91 lakh cr (PRID 2230621) in different releases -- flagged, not reconciled.",
     "scheme_report_card": [
-      {"grade": "A", "scheme": "PLI Pharmaceuticals (formulations)", "ministry": "DoP", "outlay": "Rs 15,000cr", "approved": "55 applicants incl. 20 MSMEs", "committed_investment": "Rs 17,275cr", "actual_investment": "Rs 40,890cr (237%)", "disbursed": "Rs 5,433cr (36% of outlay, Oct 2025, ministry AR)", "evidence": "Combined pharma-PLI sales Rs 3.19 lakh cr incl. Rs 2.04 lakh cr exports; 191 KSMs/DIs/APIs first-time produced in India; sales target already exceeded (PRID 2204595)."},
-      {"grade": "A-", "scheme": "Electronics (LSEM + IT Hardware)", "ministry": "MeitY", "outlay": "Rs 11,324cr (LSEM)", "approved": "32 beneficiaries", "committed_investment": "target Rs 7,000cr", "actual_investment": "Rs 17,519cr (250% of target)", "disbursed": "Rs 15,554cr combined LSEM+ITHW (~Mar 2026, PRID 2246089)", "evidence": "Production Rs 11.02 lakh cr (136% of target), exports Rs 6.21 lakh cr (127%); smartphones India's #1 export item CY2025 (Rs 2,62,452cr, PRID 2247771). Docked: only 2 of 5 domestic-category mobile applicants performing; jobs 92% of target. LSEM tenure closed 31 Mar 2026."},
-      {"grade": "A-", "scheme": "PLI Bulk Drugs (KSMs/APIs)", "ministry": "DoP", "outlay": "Rs 6,940cr", "approved": "48 projects / 33 products", "committed_investment": "Rs 4,330cr", "actual_investment": "Rs 4,763cr (110%)", "disbursed": "no separate figure published", "evidence": "Penicillin-G made in India again after ~30 years (Kakinada, Rs 1,910cr, Rs 2,700cr/yr import substitution) + Clavulanic Acid (Nalagarh); imports avoided Rs 3,591cr; 27 plants commissioned across 15+ named companies; capacity live for 26 of 33 products (~55,100 MT/yr)."},
-      {"grade": "B+", "scheme": "PLI Medical Devices", "ministry": "DoP", "outlay": "Rs 3,420cr", "approved": "Category A: 7 companies; Category B: 5+", "committed_investment": null, "actual_investment": null, "disbursed": "no PIB figure", "evidence": "19 greenfield projects commissioned; 44 products incl. linear accelerators, MRI, CT made in India for the first time; cumulative sales Rs 12,344cr incl. Rs 5,869cr exports (Sept 2025)."},
-      {"grade": "B", "scheme": "PLI Telecom & Networking", "ministry": "DoT", "outlay": "Rs 12,195cr", "approved": "42 beneficiaries incl. 28 MSMEs", "committed_investment": "Rs 4,115cr", "actual_investment": null, "disbursed": "no PIB figure", "evidence": "Sales >6x FY20; exports Rs 21,033cr; BSNL indigenous 4G stack deployed (PRID 2230621)."},
-      {"grade": "B", "scheme": "PLI Food Processing", "ministry": "MoFPI", "outlay": "Rs 10,900cr", "approved": "171 applications", "committed_investment": null, "actual_investment": ">Rs 9,200cr", "disbursed": "Rs 1,084cr (Oct 2024, Explainer 155082)", "evidence": "One of the few schemes paying at scale -- yet PIB names not a single beneficiary; the Britannia/ITC/Nestle names exist only on MoFPI's own PDF."},
-      {"grade": "B-", "scheme": "PLI White Goods (ACs & LEDs)", "ministry": "DPIIT", "outlay": "Rs 6,238cr", "approved": "85 companies across 4 rounds (final 23 Jan 2026)", "committed_investment": "Rs 11,198cr", "actual_investment": null, "disbursed": "Rs 281.4cr (4.5%, Aug 2025)", "evidence": "Component manufacturing 'has commenced' for compressors, motors, copper tubes, LED drivers (PRID 2230621); 30+ investors named. One applicant withdrew (Round 3); Round-3's 84 provisional quietly became 80 final with no explanation; no per-company production status public."},
-      {"grade": "C+", "scheme": "PLI Solar PV Modules", "ministry": "MNRE", "outlay": "Rs 24,000cr", "approved": "11 companies Tranche-II (39,600 MW)", "committed_investment": "Rs 52,942cr toward 48 GW", "actual_investment": null, "disbursed": "no PIB figure", "evidence": "~38,500 direct jobs by Jun 2025; awardees named (Reliance, First Solar, Waaree, Tata Power Solar...). Commitment data rich, execution/payout thin."},
-      {"grade": "C+", "scheme": "PLI Drones", "ministry": "MoCA", "outlay": "Rs 120cr", "approved": "23 provisional beneficiaries", "committed_investment": null, "actual_investment": null, "disbursed": "~Rs 30cr (FY22-23)", "evidence": "Sector turnover up 7x. A tiny scheme that broadly did its job."},
-      {"grade": "D+", "scheme": "PLI Automobile & Auto Components", "ministry": "MHI", "outlay": "Rs 25,938cr", "approved": "82 applicants (18 OEM + 64 component)", "committed_investment": "Rs 67,690cr (vs Rs 42,500cr target)", "actual_investment": "Rs 35,657cr (Sept 2025)", "disbursed": "Rs 2,377.56cr (9.2%, ~Mar 2026 -- up from Rs 1,350.83cr at Dec 2025)", "evidence": "Incremental sales Rs 32,879cr against a Rs 2,31,500cr projection; FY26-to-Dec sales Rs 13,126cr by 72 companies. 332nd Standing Committee: 'serious concern over the massive disconnect between the approved subsidy path and the actual meagre allocations and utilisations.'"},
-      {"grade": "D", "scheme": "PLI Specialty Steel", "ministry": "Ministry of Steel", "outlay": "Rs 6,322cr", "approved": "44 projects/19 cos (R1.0) + 42/25 (R1.1); R1.2 launched Nov 2025", "committed_investment": "Rs 43,874cr (R1.0+1.1)", "actual_investment": ">Rs 22,000cr", "disbursed": "Rs 48cr (0.8%, Mar 2025, PRID 2114011)", "evidence": "PIB discloses 14 of 58 Round-1 projects WITHDREW -- attrition absent from steel.gov.in. 9,000 direct jobs real; capacity utilization industry-wide dipped to 76%; coking coal import dependence ~57 MMT/yr."},
-      {"grade": "D", "scheme": "PLI Textiles (MMF/technical)", "ministry": "MoT", "outlay": "Rs 10,683cr", "approved": "170 applicants across 3 rounds", "committed_investment": "Rs 41,533cr", "actual_investment": "Rs 6,416cr of Rs 28,711cr for R1-2 (~22%)", "disbursed": "Rs 54.5cr (0.5%, Aug 2025, PRID 2152545 -- to exactly 2 unnamed companies)", "evidence": "Only 26 of 74 R1-2 applicants had commenced production; zero beneficiary names in any PIB release; cotton apparel remains structurally excluded."},
-      {"grade": "F", "scheme": "PLI ACC Battery Storage", "ministry": "MHI", "outlay": "Rs 18,100cr", "approved": "40 of 50 GWh allocated; 3 active firms (originally 4)", "committed_investment": "Rs 9,000cr minimum required", "actual_investment": "Rs 2,878cr (Oct 2025)", "disbursed": "ZERO (31 Dec 2025, PRID 2214039)", "evidence": "Ola's 1 GWh (of 40) in 'pilot production' since Mar 2024, 'working toward stabilizing operations for full-scale commercial production' per PIB. Hyundai Global Motors' original 20 GWh exited without 'withdrew' appearing in any government document; the freed capacity was re-tendered (10 GWh to Reliance R2, 10 GWh earmarked GSSS)."}
+      {
+        "grade": "A",
+        "scheme": "PLI Pharmaceuticals (formulations)",
+        "ministry": "DoP",
+        "outlay": "Rs 15,000cr",
+        "approved": "55 applicants incl. 20 MSMEs",
+        "committed_investment": "Rs 17,275cr",
+        "actual_investment": "Rs 40,890cr (237%)",
+        "disbursed": "Rs 5,433cr (36% of outlay, Oct 2025, ministry AR)",
+        "evidence": "Combined pharma-PLI sales Rs 3.19 lakh cr incl. Rs 2.04 lakh cr exports; 191 KSMs/DIs/APIs first-time produced in India; sales target already exceeded (PRID 2204595)."
+      },
+      {
+        "grade": "A-",
+        "scheme": "Electronics (LSEM + IT Hardware)",
+        "ministry": "MeitY",
+        "outlay": "Rs 11,324cr (LSEM)",
+        "approved": "32 beneficiaries",
+        "committed_investment": "target Rs 7,000cr",
+        "actual_investment": "Rs 17,519cr (250% of target)",
+        "disbursed": "Rs 15,554cr combined LSEM+ITHW (~Mar 2026, PRID 2246089)",
+        "evidence": "Production Rs 11.02 lakh cr (136% of target), exports Rs 6.21 lakh cr (127%); smartphones India's #1 export item CY2025 (Rs 2,62,452cr, PRID 2247771). Docked: only 2 of 5 domestic-category mobile applicants performing; jobs 92% of target. LSEM tenure closed 31 Mar 2026."
+      },
+      {
+        "grade": "A-",
+        "scheme": "PLI Bulk Drugs (KSMs/APIs)",
+        "ministry": "DoP",
+        "outlay": "Rs 6,940cr",
+        "approved": "48 projects / 33 products",
+        "committed_investment": "Rs 4,330cr",
+        "actual_investment": "Rs 4,763cr (110%)",
+        "disbursed": "no separate figure published",
+        "evidence": "Penicillin-G made in India again after ~30 years (Kakinada, Rs 1,910cr, Rs 2,700cr/yr import substitution) + Clavulanic Acid (Nalagarh); imports avoided Rs 3,591cr; 27 plants commissioned across 15+ named companies; capacity live for 26 of 33 products (~55,100 MT/yr)."
+      },
+      {
+        "grade": "B+",
+        "scheme": "PLI Medical Devices",
+        "ministry": "DoP",
+        "outlay": "Rs 3,420cr",
+        "approved": "Category A: 7 companies; Category B: 5+",
+        "committed_investment": null,
+        "actual_investment": null,
+        "disbursed": "no PIB figure",
+        "evidence": "19 greenfield projects commissioned; 44 products incl. linear accelerators, MRI, CT made in India for the first time; cumulative sales Rs 12,344cr incl. Rs 5,869cr exports (Sept 2025)."
+      },
+      {
+        "grade": "B",
+        "scheme": "PLI Telecom & Networking",
+        "ministry": "DoT",
+        "outlay": "Rs 12,195cr",
+        "approved": "42 beneficiaries incl. 28 MSMEs",
+        "committed_investment": "Rs 4,115cr",
+        "actual_investment": null,
+        "disbursed": "no PIB figure",
+        "evidence": "Sales >6x FY20; exports Rs 21,033cr; BSNL indigenous 4G stack deployed (PRID 2230621)."
+      },
+      {
+        "grade": "B",
+        "scheme": "PLI Food Processing",
+        "ministry": "MoFPI",
+        "outlay": "Rs 10,900cr",
+        "approved": "171 applications",
+        "committed_investment": null,
+        "actual_investment": ">Rs 9,200cr",
+        "disbursed": "Rs 1,084cr (Oct 2024, Explainer 155082)",
+        "evidence": "One of the few schemes paying at scale -- yet PIB names not a single beneficiary; the Britannia/ITC/Nestle names exist only on MoFPI's own PDF."
+      },
+      {
+        "grade": "B-",
+        "scheme": "PLI White Goods (ACs & LEDs)",
+        "ministry": "DPIIT",
+        "outlay": "Rs 6,238cr",
+        "approved": "85 companies across 4 rounds (final 23 Jan 2026)",
+        "committed_investment": "Rs 11,198cr",
+        "actual_investment": null,
+        "disbursed": "Rs 281.4cr (4.5%, Aug 2025)",
+        "evidence": "Component manufacturing 'has commenced' for compressors, motors, copper tubes, LED drivers (PRID 2230621); 30+ investors named. One applicant withdrew (Round 3); Round-3's 84 provisional quietly became 80 final with no explanation; no per-company production status public."
+      },
+      {
+        "grade": "C+",
+        "scheme": "PLI Solar PV Modules",
+        "ministry": "MNRE",
+        "outlay": "Rs 24,000cr",
+        "approved": "11 companies Tranche-II (39,600 MW)",
+        "committed_investment": "Rs 52,942cr toward 48 GW",
+        "actual_investment": null,
+        "disbursed": "no PIB figure",
+        "evidence": "~38,500 direct jobs by Jun 2025; awardees named (Reliance, First Solar, Waaree, Tata Power Solar...). Commitment data rich, execution/payout thin."
+      },
+      {
+        "grade": "C+",
+        "scheme": "PLI Drones",
+        "ministry": "MoCA",
+        "outlay": "Rs 120cr",
+        "approved": "23 provisional beneficiaries",
+        "committed_investment": null,
+        "actual_investment": null,
+        "disbursed": "~Rs 30cr (FY22-23)",
+        "evidence": "Sector turnover up 7x. A tiny scheme that broadly did its job."
+      },
+      {
+        "grade": "D+",
+        "scheme": "PLI Automobile & Auto Components",
+        "ministry": "MHI",
+        "outlay": "Rs 25,938cr",
+        "approved": "82 applicants (18 OEM + 64 component)",
+        "committed_investment": "Rs 67,690cr (vs Rs 42,500cr target)",
+        "actual_investment": "Rs 35,657cr (Sept 2025)",
+        "disbursed": "Rs 2,377.56cr (9.2%, ~Mar 2026 -- up from Rs 1,350.83cr at Dec 2025)",
+        "evidence": "Incremental sales Rs 32,879cr against a Rs 2,31,500cr projection; FY26-to-Dec sales Rs 13,126cr by 72 companies. 332nd Standing Committee: 'serious concern over the massive disconnect between the approved subsidy path and the actual meagre allocations and utilisations.'"
+      },
+      {
+        "grade": "D",
+        "scheme": "PLI Specialty Steel",
+        "ministry": "Ministry of Steel",
+        "outlay": "Rs 6,322cr",
+        "approved": "44 projects/19 cos (R1.0) + 42/25 (R1.1); R1.2 launched Nov 2025",
+        "committed_investment": "Rs 43,874cr (R1.0+1.1)",
+        "actual_investment": ">Rs 22,000cr",
+        "disbursed": "Rs 48cr (0.8%, Mar 2025, PRID 2114011)",
+        "evidence": "PIB discloses 14 of 58 Round-1 projects WITHDREW -- attrition absent from steel.gov.in. 9,000 direct jobs real; capacity utilization industry-wide dipped to 76%; coking coal import dependence ~57 MMT/yr."
+      },
+      {
+        "grade": "D",
+        "scheme": "PLI Textiles (MMF/technical)",
+        "ministry": "MoT",
+        "outlay": "Rs 10,683cr",
+        "approved": "170 applicants across 3 rounds",
+        "committed_investment": "Rs 41,533cr",
+        "actual_investment": "Rs 6,416cr of Rs 28,711cr for R1-2 (~22%)",
+        "disbursed": "Rs 54.5cr (0.5%, Aug 2025, PRID 2152545 -- to exactly 2 unnamed companies)",
+        "evidence": "Only 26 of 74 R1-2 applicants had commenced production; zero beneficiary names in any PIB release; cotton apparel remains structurally excluded."
+      },
+      {
+        "grade": "F",
+        "scheme": "PLI ACC Battery Storage",
+        "ministry": "MHI",
+        "outlay": "Rs 18,100cr",
+        "approved": "40 of 50 GWh allocated; 3 active firms (originally 4)",
+        "committed_investment": "Rs 9,000cr minimum required",
+        "actual_investment": "Rs 2,878cr (Oct 2025)",
+        "disbursed": "ZERO (31 Dec 2025, PRID 2214039)",
+        "evidence": "Ola's 1 GWh (of 40) in 'pilot production' since Mar 2024, 'working toward stabilizing operations for full-scale commercial production' per PIB. Hyundai Global Motors' original 20 GWh exited without 'withdrew' appearing in any government document; the freed capacity was re-tendered (10 GWh to Reliance R2, 10 GWh earmarked GSSS)."
+      }
     ],
     "iem_record": {
       "grade": "B+",
       "series": [
-        {"year": "2021", "part_a_filed": 1489, "part_a_rs_cr": 771428, "part_b_filed": 812, "part_b_rs_cr": 347978, "implementation_ratio_pct": 45.1},
-        {"year": "2022", "part_a_filed": 1185, "part_a_rs_cr": 424101, "part_b_filed": 916, "part_b_rs_cr": 250064, "implementation_ratio_pct": 59.0},
-        {"year": "2023", "part_a_filed": 1267, "part_a_rs_cr": 510852, "part_b_filed": 968, "part_b_rs_cr": 276925, "implementation_ratio_pct": 54.2},
-        {"year": "2024", "part_a_filed": 986, "part_a_rs_cr": 602082, "part_b_filed": 1165, "part_b_rs_cr": 493765, "implementation_ratio_pct": 82.0},
-        {"year": "2025 (to Dec)", "part_a_filed": 702, "part_a_rs_cr": 530416, "part_b_filed": 998, "part_b_rs_cr": 583096, "implementation_ratio_pct": 109.9}
+        {
+          "year": "2021",
+          "part_a_filed": 1489,
+          "part_a_rs_cr": 771428,
+          "part_b_filed": 812,
+          "part_b_rs_cr": 347978,
+          "implementation_ratio_pct": 45.1
+        },
+        {
+          "year": "2022",
+          "part_a_filed": 1185,
+          "part_a_rs_cr": 424101,
+          "part_b_filed": 916,
+          "part_b_rs_cr": 250064,
+          "implementation_ratio_pct": 59.0
+        },
+        {
+          "year": "2023",
+          "part_a_filed": 1267,
+          "part_a_rs_cr": 510852,
+          "part_b_filed": 968,
+          "part_b_rs_cr": 276925,
+          "implementation_ratio_pct": 54.2
+        },
+        {
+          "year": "2024",
+          "part_a_filed": 986,
+          "part_a_rs_cr": 602082,
+          "part_b_filed": 1165,
+          "part_b_rs_cr": 493765,
+          "implementation_ratio_pct": 82.0
+        },
+        {
+          "year": "2025 (to Dec)",
+          "part_a_filed": 702,
+          "part_a_rs_cr": 530416,
+          "part_b_filed": 998,
+          "part_b_rs_cr": 583096,
+          "implementation_ratio_pct": 109.9
+        }
       ],
       "findings": [
         "Implementation exceeded same-year intent for the first time in 2025 (109.9%) -- reading as the 2021-22 intent surge (Rs 7.7 lakh cr proposed in 2021) maturing into implementation. Same-year flow ratio, not cohort-matched -- Part-B lags Part-A by months to decades.",
@@ -105,40 +532,139 @@
       ]
     }
   },
-
   "part_4_companies_ledger": {
     "note": "PRODUCING = official text credits commenced production/commissioning. INVESTED = named approved investor/beneficiary. Non-PIB identities labeled.",
     "entries": [
-      {"scheme": "Electronics (LSEM)", "producing": "Foxconn Hon Hai and Padget/Dixon (first incentive recipients, PRID 1885189); Samsung (beneficiary; smartphone exports #1)", "invested": "Pegatron, Rising Star, Wistron (now Tata), Lava, Bhagwati/Micromax, Optiemus, UTL Neolyncs, AT&S, Sahasra", "gaps": "Company-wise iPhone export splits (Tata $26.3bn vs Foxconn $25.6bn) are press, not PIB"},
-      {"scheme": "Semiconductors (ISM)", "producing": "Micron Sanand (PM-inaugurated 28 Feb 2026, PRID 2233998); Kaynes Sanand (31 Mar 2026, >6.33M chips/day, exporting, PRID 2247278); CG Semi/CG Power+Renesas (4 Jul 2026, PRID 2281125)", "invested": "Tata-PSMC Dholera fab Rs 91,526cr (FSA signed Mar 2025, not yet producing); Tata Electronics Assam ATMP Rs 27,120cr; HCL-Foxconn (UP); SiCSem & 3DGS (Odisha); CDIL (Punjab); ASIP (Andhra)", "gaps": null},
-      {"scheme": "Bulk Drugs / Pharma", "producing": "Penicillin-G Kakinada (= Lyfius/Aurobindo per BSE filing, non-PIB); Clavulanic Acid Nalagarh (= Kinvan, non-PIB); Meghmani LLP, Hetero Drugs, Andhra Organics, Centrient, Honour Lab +10 more across 27 commissioned plants (PRID 2010924)", "invested": "Sun Pharma, Aurobindo, Dr Reddy's, Cipla, Torrent, Biocon, Zydus among 55 formulation applicants (ministry list)", "gaps": "Macleods (Rifampicin) never appears in PIB"},
-      {"scheme": "Medical Devices", "producing": "Siemens Healthcare Bengaluru (CT/MRI), Wipro GE, Philips GBS (MRI coils), Panacea (linear accelerators), Sahajanand (stents), Poly Medicure, Nipro, Trivitron (PRID 2010924)", "invested": null, "gaps": "Meril (Vapi) and BPL Medical: PM-inauguration releases name locations/products only; identities are press"},
-      {"scheme": "White Goods", "producing": "Compressors, motors, copper tubes, LED drivers 'commenced' (PRID 2230621) -- companies unnamed", "invested": "Daikin, Voltas, Hindalco, Amber, LG, Blue Star, Havells, Panasonic, Haier, Midea, Nidec, Dixon, Signify, Crompton Greaves + more (PRIDs 2064740/2094465/2217743)", "gaps": "Mitsubishi Electric never named in PIB"},
-      {"scheme": "Auto / ACC", "producing": "Ola Cell Technologies -- 1 GWh pilot production since Mar 2024 (PRID 2214039)", "invested": "Tata Motors & Mahindra (EV capacity, PRID 2115609); Reliance New Energy (15 GWh); Rajesh Exports/ACC Energy Storage (5 GWh)", "gaps": "8 DVA-certified OEMs and 10 component champions counted but never named"},
-      {"scheme": "Telecom", "producing": "BSNL indigenous 4G stack deployed", "invested": "Tejas Networks, HFCL, VVDN, Dixon Electro, ITI, Syrma SGS, Nokia India, Foxconn Tech India, Jabil, Flextronics +30 incl. 28 MSMEs (PRIDs 1763872/1872271)", "gaps": null},
-      {"scheme": "Solar PV", "producing": null, "invested": "Reliance, First Solar, Waaree, Avaada, ReNew, JSW, Vikram, Tata Power Solar (PRID 1911380)", "gaps": "No PIB release credits a specific PLI solar plant with commenced production"},
-      {"scheme": "Textiles / Steel / Food Processing", "producing": null, "invested": null, "gaps": "ZERO company names in PIB for all three; Food Processing beneficiaries only on MoFPI's PDF; the transparency tell -- underperforming schemes are also the anonymous ones"}
+      {
+        "scheme": "Electronics (LSEM)",
+        "producing": "Foxconn Hon Hai and Padget/Dixon (first incentive recipients, PRID 1885189); Samsung (beneficiary; smartphone exports #1)",
+        "invested": "Pegatron, Rising Star, Wistron (now Tata), Lava, Bhagwati/Micromax, Optiemus, UTL Neolyncs, AT&S, Sahasra",
+        "gaps": "Company-wise iPhone export splits (Tata $26.3bn vs Foxconn $25.6bn) are press, not PIB"
+      },
+      {
+        "scheme": "Semiconductors (ISM)",
+        "producing": "Micron Sanand (PM-inaugurated 28 Feb 2026, PRID 2233998); Kaynes Sanand (31 Mar 2026, >6.33M chips/day, exporting, PRID 2247278); CG Semi/CG Power+Renesas (4 Jul 2026, PRID 2281125)",
+        "invested": "Tata-PSMC Dholera fab Rs 91,526cr (FSA signed Mar 2025, not yet producing); Tata Electronics Assam ATMP Rs 27,120cr; HCL-Foxconn (UP); SiCSem & 3DGS (Odisha); CDIL (Punjab); ASIP (Andhra)",
+        "gaps": null
+      },
+      {
+        "scheme": "Bulk Drugs / Pharma",
+        "producing": "Penicillin-G Kakinada (= Lyfius/Aurobindo per BSE filing, non-PIB); Clavulanic Acid Nalagarh (= Kinvan, non-PIB); Meghmani LLP, Hetero Drugs, Andhra Organics, Centrient, Honour Lab +10 more across 27 commissioned plants (PRID 2010924)",
+        "invested": "Sun Pharma, Aurobindo, Dr Reddy's, Cipla, Torrent, Biocon, Zydus among 55 formulation applicants (ministry list)",
+        "gaps": "Macleods (Rifampicin) never appears in PIB"
+      },
+      {
+        "scheme": "Medical Devices",
+        "producing": "Siemens Healthcare Bengaluru (CT/MRI), Wipro GE, Philips GBS (MRI coils), Panacea (linear accelerators), Sahajanand (stents), Poly Medicure, Nipro, Trivitron (PRID 2010924)",
+        "invested": null,
+        "gaps": "Meril (Vapi) and BPL Medical: PM-inauguration releases name locations/products only; identities are press"
+      },
+      {
+        "scheme": "White Goods",
+        "producing": "Compressors, motors, copper tubes, LED drivers 'commenced' (PRID 2230621) -- companies unnamed",
+        "invested": "Daikin, Voltas, Hindalco, Amber, LG, Blue Star, Havells, Panasonic, Haier, Midea, Nidec, Dixon, Signify, Crompton Greaves + more (PRIDs 2064740/2094465/2217743)",
+        "gaps": "Mitsubishi Electric never named in PIB"
+      },
+      {
+        "scheme": "Auto / ACC",
+        "producing": "Ola Cell Technologies -- 1 GWh pilot production since Mar 2024 (PRID 2214039)",
+        "invested": "Tata Motors & Mahindra (EV capacity, PRID 2115609); Reliance New Energy (15 GWh); Rajesh Exports/ACC Energy Storage (5 GWh)",
+        "gaps": "8 DVA-certified OEMs and 10 component champions counted but never named"
+      },
+      {
+        "scheme": "Telecom",
+        "producing": "BSNL indigenous 4G stack deployed",
+        "invested": "Tejas Networks, HFCL, VVDN, Dixon Electro, ITI, Syrma SGS, Nokia India, Foxconn Tech India, Jabil, Flextronics +30 incl. 28 MSMEs (PRIDs 1763872/1872271)",
+        "gaps": null
+      },
+      {
+        "scheme": "Solar PV",
+        "producing": null,
+        "invested": "Reliance, First Solar, Waaree, Avaada, ReNew, JSW, Vikram, Tata Power Solar (PRID 1911380)",
+        "gaps": "No PIB release credits a specific PLI solar plant with commenced production"
+      },
+      {
+        "scheme": "Textiles / Steel / Food Processing",
+        "producing": null,
+        "invested": null,
+        "gaps": "ZERO company names in PIB for all three; Food Processing beneficiaries only on MoFPI's PDF; the transparency tell -- underperforming schemes are also the anonymous ones"
+      }
     ]
   },
-
   "part_5_capital_and_financing": {
     "india_two_tier_cost_of_capital": [
-      {"tier": "RBI repo rate", "rate": "5.25%", "note": "After 125bp of cuts through 2025; held 3 straight meetings into mid-2026 (61st MPC, 5 Jun 2026)"},
-      {"tier": "AAA corporate bonds 3-5yr (Tata Sons / Reliance tier)", "rate": "~7.4-8.3%", "note": "The cheapest domestic tier; AA- (Adani) pays 8.6-8.9%"},
-      {"tier": "WALR fresh rupee loans", "rate": "8.51% (May 2026)", "note": "All-sector average"},
-      {"tier": "1-yr MCLR system median", "rate": "8.50% (Jun 2026)", "note": "SBI 8.70 / HDFC 8.45 / ICICI 8.35 / PNB 8.80 / BoB 8.75"},
-      {"tier": "EBLR-priced ordinary corporate borrower", "rate": "~9.5-10.5%", "note": "Repo + spread; now 67.6% of the banking system's floating-rate book"}
+      {
+        "tier": "RBI repo rate",
+        "rate": "5.25%",
+        "note": "After 125bp of cuts through 2025; held 3 straight meetings into mid-2026 (61st MPC, 5 Jun 2026)"
+      },
+      {
+        "tier": "AAA corporate bonds 3-5yr (Tata Sons / Reliance tier)",
+        "rate": "~7.4-8.3%",
+        "note": "The cheapest domestic tier; AA- (Adani) pays 8.6-8.9%"
+      },
+      {
+        "tier": "WALR fresh rupee loans",
+        "rate": "8.51% (May 2026)",
+        "note": "All-sector average"
+      },
+      {
+        "tier": "1-yr MCLR system median",
+        "rate": "8.50% (Jun 2026)",
+        "note": "SBI 8.70 / HDFC 8.45 / ICICI 8.35 / PNB 8.80 / BoB 8.75"
+      },
+      {
+        "tier": "EBLR-priced ordinary corporate borrower",
+        "rate": "~9.5-10.5%",
+        "note": "Repo + spread; now 67.6% of the banking system's floating-rate book"
+      }
     ],
     "target_country_policy_rates": [
-      {"country": "Japan", "rate": "1.00%", "trajectory": "hiking from near-zero (highest since 1995)"},
-      {"country": "Denmark", "rate": "1.85%", "trajectory": "hike, tracks ECB"},
-      {"country": "Taiwan", "rate": "2.00%", "trajectory": "held 9 straight quarters"},
-      {"country": "Eurozone (Germany/France)", "rate": "2.25%", "trajectory": "first hike in 3 years"},
-      {"country": "South Korea", "rate": "2.75%", "trajectory": "fresh hiking cycle (Jul 2026)"},
-      {"country": "Israel", "rate": "3.50%", "trajectory": "active cutting cycle"},
-      {"country": "USA", "rate": "3.50-3.75%", "trajectory": "held after 2025 cuts"},
-      {"country": "UAE", "rate": "3.65%", "trajectory": "tracks the Fed"},
-      {"country": "Saudi Arabia", "rate": "4.25%", "trajectory": "tracks the Fed"}
+      {
+        "country": "Japan",
+        "rate": "1.00%",
+        "trajectory": "hiking from near-zero (highest since 1995)"
+      },
+      {
+        "country": "Denmark",
+        "rate": "1.85%",
+        "trajectory": "hike, tracks ECB"
+      },
+      {
+        "country": "Taiwan",
+        "rate": "2.00%",
+        "trajectory": "held 9 straight quarters"
+      },
+      {
+        "country": "Eurozone (Germany/France)",
+        "rate": "2.25%",
+        "trajectory": "first hike in 3 years"
+      },
+      {
+        "country": "South Korea",
+        "rate": "2.75%",
+        "trajectory": "fresh hiking cycle (Jul 2026)"
+      },
+      {
+        "country": "Israel",
+        "rate": "3.50%",
+        "trajectory": "active cutting cycle"
+      },
+      {
+        "country": "USA",
+        "rate": "3.50-3.75%",
+        "trajectory": "held after 2025 cuts"
+      },
+      {
+        "country": "UAE",
+        "rate": "3.65%",
+        "trajectory": "tracks the Fed"
+      },
+      {
+        "country": "Saudi Arabia",
+        "rate": "4.25%",
+        "trajectory": "tracks the Fed"
+      }
     ],
     "financing_pattern_findings": [
       "Every target FDI-source country's policy rate sits below India's 5.25% repo -- from 4.25 points cheaper (Japan) to 1.6 (Saudi). Against India's ordinary-borrower tier the gap is 6-8.5 points; against the AAA tier it narrows to 1.5-3 for the US/UAE/Israel/Saudi.",
@@ -147,28 +673,83 @@
       "Exim Bank CEAT tracker (May-26 YoY): bank credit to Electronics +23.9%, Vehicles +26.4%, Pharma +22.6%, Iron & Steel +22.6% -- independent corroboration that domestic EBLR-priced credit is funding PLI-sector capacity."
     ]
   },
-
   "part_6_data_infrastructure_assessment": {
     "entries": [
-      {"source": "DPIIT state-wise FDI statistics", "verdict": "Unreliable for hub attribution", "detail": "Attributed by registered office, not factory location; DPIIT's own metadata says 'Documentation on methodology: Not applicable.' Proof: 9 of Gujarat's top-10 FY2020-21 deals were Jio Platforms (registered Ahmedabad), two years before the Semiconductor Policy. Assam registered $2.88M (FY25) then $2.37M (FY26) against a Rs 27,000cr Tata project -- domestic capital is structurally invisible to FDI data."},
-      {"source": "IEM (DPIIT/NSWS)", "verdict": "Annual series alive, monthly dead, no size filter", "detail": "See Part 3. The Rs 150cr threshold belongs to MoSPI's separate dataset; no shared key."},
-      {"source": "MoSPI PAIMANA mega-project portal", "verdict": "Public infrastructure only -- zero coverage of the 10 priority sectors", "detail": "1,941 Central Sector projects, Rs 41.5 lakh cr revised cost, 15.64% implied cost overrun (computed -- MoSPI stopped publishing 'delayed' classifications after May 2025, a transparency regression). Steel category = SAIL upgrades only; 'Energy Storage' = pumped hydro. Useful only for enabling infrastructure around hubs (Dholera airport/transmission)."},
-      {"source": "AHIDF dashboard (DAHD)", "verdict": "The counter-example: transparency is a choice", "detail": "Public no-login Power BI, refreshed nightly; state/district/bank-wise; full funnel incl. rejections (11,026 applications -> 1,592 eligible -> 910 sanctioned -> 357 disbursed, ~96% never reach disbursement). Ceiling: aggregates only, stops at 'loan disbursed' -- one gate short of 'project operational.' Also: an unresolved Rs 500cr outlay discrepancy between DAHD's page and the Cabinet announcement."},
-      {"source": "PIB", "verdict": "Best current source for disbursal + company names -- with sector-specific blind spots", "detail": "Parliament-answer releases carry the freshest scheme figures. But PIB names zero companies for Textiles/Steel/Food Processing, and inauguration releases sometimes name only sites, not companies."},
-      {"source": "Exim Bank trackers", "verdict": "Valuable independent cross-check", "detail": "Government institution, separate publishing chain; monthly trade/FDI and sector-credit trackers. Deficit figure cross-validated the repo's computation within 0.3%."},
-      {"source": "Dead/moved domains", "verdict": "Citation hygiene required", "detail": "pharmaceuticals.gov.in is NXDOMAIN (now pharma-dept.gov.in); makeinindia.gov.in does not exist (makeinindia.com); the legacy DPIIT SIA-statistics route is a dead SPA shell; meity.gov.in and pib.gov.in 403 plain fetches (browser UA works)."}
+      {
+        "source": "DPIIT state-wise FDI statistics",
+        "verdict": "Unreliable for hub attribution",
+        "detail": "Attributed by registered office, not factory location; DPIIT's own metadata says 'Documentation on methodology: Not applicable.' Proof: 9 of Gujarat's top-10 FY2020-21 deals were Jio Platforms (registered Ahmedabad), two years before the Semiconductor Policy. Assam registered $2.88M (FY25) then $2.37M (FY26) against a Rs 27,000cr Tata project -- domestic capital is structurally invisible to FDI data."
+      },
+      {
+        "source": "IEM (DPIIT/NSWS)",
+        "verdict": "Annual series alive, monthly dead, no size filter",
+        "detail": "See Part 3. The Rs 150cr threshold belongs to MoSPI's separate dataset; no shared key."
+      },
+      {
+        "source": "MoSPI PAIMANA mega-project portal",
+        "verdict": "Public infrastructure only -- zero coverage of the 10 priority sectors",
+        "detail": "1,941 Central Sector projects, Rs 41.5 lakh cr revised cost, 15.64% implied cost overrun (computed -- MoSPI stopped publishing 'delayed' classifications after May 2025, a transparency regression). Steel category = SAIL upgrades only; 'Energy Storage' = pumped hydro. Useful only for enabling infrastructure around hubs (Dholera airport/transmission)."
+      },
+      {
+        "source": "AHIDF dashboard (DAHD)",
+        "verdict": "The counter-example: transparency is a choice",
+        "detail": "Public no-login Power BI, refreshed nightly; state/district/bank-wise; full funnel incl. rejections (11,026 applications -> 1,592 eligible -> 910 sanctioned -> 357 disbursed, ~96% never reach disbursement). Ceiling: aggregates only, stops at 'loan disbursed' -- one gate short of 'project operational.' Also: an unresolved Rs 500cr outlay discrepancy between DAHD's page and the Cabinet announcement."
+      },
+      {
+        "source": "PIB",
+        "verdict": "Best current source for disbursal + company names -- with sector-specific blind spots",
+        "detail": "Parliament-answer releases carry the freshest scheme figures. But PIB names zero companies for Textiles/Steel/Food Processing, and inauguration releases sometimes name only sites, not companies."
+      },
+      {
+        "source": "Exim Bank trackers",
+        "verdict": "Valuable independent cross-check",
+        "detail": "Government institution, separate publishing chain; monthly trade/FDI and sector-credit trackers. Deficit figure cross-validated the repo's computation within 0.3%."
+      },
+      {
+        "source": "Dead/moved domains",
+        "verdict": "Citation hygiene required",
+        "detail": "pharmaceuticals.gov.in is NXDOMAIN (now pharma-dept.gov.in); makeinindia.gov.in does not exist (makeinindia.com); the legacy DPIIT SIA-statistics route is a dead SPA shell; meity.gov.in and pib.gov.in 403 plain fetches (browser UA works)."
+      }
     ]
   },
-
   "part_7_action_items": [
-    {"n": 1, "action": "Launch the chemicals/petrochemicals PLI covering Inorganic Chemicals (HS28) and Plastics (HS39)", "justification": "Combined $36.4bn FY26 imports growing 46-86% over 5yrs, zero coverage -- the two largest open gaps.", "owner": "DCPC / Cabinet"},
-    {"n": 2, "action": "Extend PLI Textiles to cotton-based apparel (HS61/62)", "justification": "The only declining export chapters sit in the scheme's structural blind spot; Oct 2025 amendment broadened MMF codes only.", "owner": "Ministry of Textiles"},
-    {"n": 3, "action": "Deepen electronics COMPONENT localization through ECMS", "justification": "HS85 exports +324% but imports +101.5% to $104.9bn; ECMS (Rs 22,919cr, open) decides whether the electronics deficit narrows.", "owner": "MeitY"},
-    {"n": 4, "action": "Fix ACC Battery PLI execution before adding new capacity schemes", "justification": "1 of 40 GWh commissioned, zero disbursed, one awardee quietly gone; the Standing Committee's demanded beneficiary-wise review is the vehicle.", "owner": "Dept. of Heavy Industry"},
-    {"n": 5, "action": "Re-verify the Electronics and Medical Devices FDI reversals next quarter", "justification": "Both former greens fell 40%+ against a rising cycle; one year warrants amber, two would be a trend.", "owner": "This repo (quarterly checklist)"},
-    {"n": 6, "action": "Publish AHIDF-style application-to-disbursement funnels for every PLI scheme", "justification": "Capability proven inside government; scheme transparency exposes where approved capacity is stuck.", "owner": "DPIIT (PLI nodal)"}
+    {
+      "n": 1,
+      "action": "Launch the chemicals/petrochemicals PLI covering Inorganic Chemicals (HS28) and Plastics (HS39)",
+      "justification": "Combined $36.4bn FY26 imports growing 46-86% over 5yrs, zero coverage -- the two largest open gaps.",
+      "owner": "DCPC / Cabinet"
+    },
+    {
+      "n": 2,
+      "action": "Extend PLI Textiles to cotton-based apparel (HS61/62)",
+      "justification": "The only declining export chapters sit in the scheme's structural blind spot; Oct 2025 amendment broadened MMF codes only.",
+      "owner": "Ministry of Textiles"
+    },
+    {
+      "n": 3,
+      "action": "Deepen electronics COMPONENT localization through ECMS",
+      "justification": "HS85 exports +324% but imports +101.5% to $104.9bn; ECMS (Rs 22,919cr, open) decides whether the electronics deficit narrows.",
+      "owner": "MeitY"
+    },
+    {
+      "n": 4,
+      "action": "Fix ACC Battery PLI execution before adding new capacity schemes",
+      "justification": "1 of 40 GWh commissioned, zero disbursed, one awardee quietly gone; the Standing Committee's demanded beneficiary-wise review is the vehicle.",
+      "owner": "Dept. of Heavy Industry"
+    },
+    {
+      "n": 5,
+      "action": "Re-verify the Electronics and Medical Devices FDI reversals next quarter",
+      "justification": "Both former greens fell 40%+ against a rising cycle; one year warrants amber, two would be a trend.",
+      "owner": "This repo (quarterly checklist)"
+    },
+    {
+      "n": 6,
+      "action": "Publish AHIDF-style application-to-disbursement funnels for every PLI scheme",
+      "justification": "Capability proven inside government; scheme transparency exposes where approved capacity is stuck.",
+      "owner": "DPIIT (PLI nodal)"
+    }
   ],
-
   "part_8_corrections_ledger": [
     "pharmaceuticals.gov.in -> pharma-dept.gov.in (dead domain).",
     "~74% China API-dependency figure: not corroborated in DoP's own Annual Report; re-attribute or drop.",
@@ -182,7 +763,6 @@
     "An automated pass fabricated an ICRA steel risk-differentiation claim; caught against the source PDF and retracted in the published bulletin.",
     "PIB outlay inconsistency (Rs 1.97 vs 1.91 lakh cr) and DAHD/Cabinet AHIDF outlay discrepancy (Rs 29,110 vs 29,610cr): flagged, unreconciled."
   ],
-
   "part_9_infrastructure_and_maintenance": {
     "published_outputs": "13 bulletins (charts/ + data/), the 22-slide FDI pitch deck (PPTX/PDF), a 1080x1080 social post, tracked quarterly PDF snapshots (reports/published/), and this master report.",
     "tools": [
@@ -196,5 +776,127 @@
       "Re-extract sector/state splits from the next quarterly FDI factsheet; check the updated FDI metadata document (27 Feb 2026) against the 'methodology: Not applicable' version.",
       "Watch: chemicals PLI Cabinet approval, PLI Textiles cotton broadening, ACC GSSS re-tender, POSCO-JSW cash landing in FY27 FDI data, Semicon 2.0 approvals."
     ]
+  },
+  "part_2b_state_implementation_iem": {
+    "note": "State-wise IMPLEMENTED industrial investment, domestic + foreign combined (IEM Part B, DPIIT AR 2025-26 Appendix V), with intent-to-implementation conversion and FY26 FDI contrast. All-India 2021-2025: Rs 19,51,828cr across 4,859 implemented IEMs; top 3 states = 63.3%.",
+    "top_states": [
+      {
+        "rank": 1,
+        "state": "Gujarat",
+        "implemented_2021_25_rs_cr": 660254,
+        "share_pct": 33.8,
+        "a_to_b_conversion_pct": 177.8,
+        "fy26_fdi_usd_m": 5713,
+        "read": "Both engines; Rs 4.55 lakh cr in 2024-25 alone"
+      },
+      {
+        "rank": 2,
+        "state": "Odisha",
+        "implemented_2021_25_rs_cr": 336487,
+        "share_pct": 17.2,
+        "a_to_b_conversion_pct": 60.1,
+        "fy26_fdi_usd_m": 84,
+        "read": "#2 implementation, 0.14% of FDI -- the domestic-capital state quantified"
+      },
+      {
+        "rank": 3,
+        "state": "Maharashtra",
+        "implemented_2021_25_rs_cr": 237988,
+        "share_pct": 12.2,
+        "a_to_b_conversion_pct": 34.9,
+        "fy26_fdi_usd_m": 18418,
+        "read": "#3 implementation AND #1 FDI"
+      },
+      {
+        "rank": 4,
+        "state": "Andhra Pradesh",
+        "implemented_2021_25_rs_cr": 140445,
+        "share_pct": 7.2,
+        "a_to_b_conversion_pct": 85.4,
+        "fy26_fdi_usd_m": 609,
+        "read": "Domestic-led + selective Sri City FDI"
+      },
+      {
+        "rank": 5,
+        "state": "Uttar Pradesh",
+        "implemented_2021_25_rs_cr": 73954,
+        "share_pct": 3.8,
+        "a_to_b_conversion_pct": null,
+        "fy26_fdi_usd_m": null,
+        "read": "Noida cluster"
+      },
+      {
+        "rank": 9,
+        "state": "Tamil Nadu",
+        "implemented_2021_25_rs_cr": 44627,
+        "share_pct": 2.3,
+        "a_to_b_conversion_pct": 49.3,
+        "fy26_fdi_usd_m": 4724,
+        "read": "Auto cluster predates window"
+      },
+      {
+        "rank": 11,
+        "state": "Karnataka",
+        "implemented_2021_25_rs_cr": 42463,
+        "share_pct": 2.2,
+        "a_to_b_conversion_pct": 21.3,
+        "fy26_fdi_usd_m": 12939,
+        "read": "The inversion: 22% of FDI, 2.2% of implementation"
+      },
+      {
+        "rank": 14,
+        "state": "Assam",
+        "implemented_2021_25_rs_cr": 22620,
+        "share_pct": 1.2,
+        "a_to_b_conversion_pct": 83.4,
+        "fy26_fdi_usd_m": 2.37,
+        "read": "2023 Tata-era surge in IEM vs $2.37M FDI"
+      }
+    ],
+    "sector_leaders": [
+      {
+        "rank": 1,
+        "sector": "Metallurgical Industries",
+        "implemented_rs_cr": 469693,
+        "share_pct": 24.1,
+        "note": "Rs 2.09 lakh cr in 2025 alone; domestic-funded steel/metals"
+      },
+      {
+        "rank": 2,
+        "sector": "Chemicals (except fertilizers)",
+        "implemented_rs_cr": 286230,
+        "share_pct": 14.7,
+        "note": "The quiet giant -- #2 with NO PLI scheme"
+      },
+      {
+        "rank": 3,
+        "sector": "Electricals Equipment",
+        "implemented_rs_cr": 189548,
+        "share_pct": 9.7,
+        "note": "Electronics/white goods in 1951 taxonomy"
+      },
+      {
+        "rank": 4,
+        "sector": "Glass",
+        "implemented_rs_cr": 131208,
+        "share_pct": 6.7,
+        "note": "ANOMALY: Rs 1.22 lakh cr in one year (2024)"
+      },
+      {
+        "rank": 5,
+        "sector": "Food Processing",
+        "implemented_rs_cr": 102893,
+        "share_pct": 5.3,
+        "note": "Consistent riser"
+      },
+      {
+        "rank": 11,
+        "sector": "Drugs & Pharmaceuticals",
+        "implemented_rs_cr": 40109,
+        "share_pct": 2.1,
+        "note": "2025 riser (5x from 2021) -- every pharma measure now points the same way"
+      }
+    ],
+    "caveats": "No state-x-sector cross-tab published; conversion is a pipeline-affected flow ratio; Appendix V/VI headers disagree (Dec vs Nov 2025) while summing identically to Rs 5,83,096cr."
   }
 }
