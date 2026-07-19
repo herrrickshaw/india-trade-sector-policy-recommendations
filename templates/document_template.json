@@ -1,0 +1,34 @@
+{
+  "purpose": "{{One-sentence statement of what this document establishes and for whom. This field becomes the subtitle under the title.}}",
+  "retrieved": "{{YYYY-MM-DD}}",
+  "method": "{{How the findings were produced: sources consulted (primary over secondary), extraction method, verification steps. Becomes the italic method line.}}",
+
+  "headline_findings": [
+    "{{Finding 1 — lead with the number, follow with the meaning.}}",
+    "{{Finding 2.}}",
+    "{{Finding 3 — include at least one finding that cuts AGAINST the convenient story; this document family always does.}}"
+  ],
+
+  "detail_sections": {
+    "section_one_name": {
+      "summary": "{{Paragraph. Dict keys become headings — rename these keys to real section names.}}",
+      "key_figures": [
+        {"metric": "{{Metric A}}", "value": "{{0,000}}", "period": "{{FY / date}}", "source": "{{primary source, dated}}"},
+        {"metric": "{{Metric B}}", "value": "{{0,000}}", "period": "{{FY / date}}", "source": "{{primary source, dated}}"}
+      ]
+    },
+    "section_two_name": {
+      "summary": "{{Lists of same-shaped dicts render as tables; lists of strings render as bullets; nested dicts become sub-headings.}}"
+    }
+  },
+
+  "caveats_and_gaps": [
+    "{{Explicit limitation 1 — what could not be verified and why, stated rather than smoothed over.}}",
+    "{{Explicit limitation 2.}}"
+  ],
+
+  "action_items": [
+    {"n": 1, "action": "{{Do X}}", "why": "{{The number that justifies it}}", "owner": "{{Who}}"},
+    {"n": 2, "action": "{{Do Y}}", "why": "{{Why}}", "owner": "{{Who}}"}
+  ]
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Slide Deck Template — India Trade Design System</title>
+<meta name="hz:slide-selector" content=".slide" />
+<meta name="hz:canvas-width" content="1920" />
+<meta name="hz:canvas-height" content="1080" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #2a2f38; }
+  :root {
+    --ink:#12181f; --paper:#f5f1e7; --paper-dim:#e9e3d3;
+    --navy:#0e1c2e; --navy-2:#16283e;
+    --gold:#d9932f; --gold-soft:#f2e2c2;
+    --teal:#1f6f5c; --teal-soft:#d7e9e2;
+    --alert:#a5402c; --alert-soft:#f0d9d0;
+    --ink-muted:#6b7280; --rule:#d8d2c0;
+    --font-display: Georgia, "Times New Roman", serif;
+    --font-body: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .slide { position:relative; width:1920px; height:1080px; overflow:hidden; background:var(--paper); color:var(--ink); font-family:var(--font-body); }
+  .eyebrow { font-weight:700; font-size:22px; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold); }
+  .pagenum { position:absolute; bottom:40px; right:56px; font-weight:600; font-size:16px; color:var(--ink-muted); }
+  .pagenum.on-dark { color:#93a0ad; }
+  .footer-brand { position:absolute; bottom:40px; left:56px; font-weight:600; font-size:16px; color:var(--ink-muted); }
+  h1.headline { font-family:var(--font-display); font-weight:700; font-size:68px; line-height:1.08; color:var(--navy); }
+  h1.headline.on-dark { color:var(--paper); }
+  p.dek { font-size:26px; line-height:1.5; color:#3c4450; }
+  p.dek.on-dark { color:#c7cdd3; }
+  .stat-row { display:flex; gap:2px; background:var(--rule); }
+  .stat-tile { flex:1; background:var(--paper); padding:34px 36px; display:flex; flex-direction:column; gap:10px; }
+  .stat-tile .label { font-weight:700; font-size:17px; text-transform:uppercase; letter-spacing:0.06em; color:var(--ink-muted); }
+  .stat-tile .value { font-family:var(--font-display); font-weight:700; font-size:56px; color:var(--navy); }
+  .stat-tile .sub { font-size:18px; color:#3c4450; line-height:1.4; }
+</style>
+</head>
+<body>
+
+<!-- ============ SLIDE 1 — TITLE (dark) ============ -->
+<div class="slide" style="background: var(--navy);">
+  <div style="position:absolute; top:0; left:0; width:100%; height:14px; background:linear-gradient(90deg, var(--gold), var(--teal));"></div>
+  <div style="position:absolute; top:120px; left:120px; right:120px;">
+    <div class="eyebrow">{{EYEBROW — e.g. Report series name}}</div>
+    <h1 class="headline on-dark" style="font-size:96px; margin-top:24px; max-width:1500px;">{{Headline claim.}}<br>{{Second line.}}</h1>
+    <p class="dek on-dark" style="max-width:1180px; margin-top:32px; font-size:30px;">{{One-paragraph dek: what this deck argues and for whom.}}</p>
+  </div>
+  <div style="position:absolute; bottom:120px; left:120px; display:flex; gap:70px;">
+    <div><div style="font-family:var(--font-display); font-weight:700; font-size:52px; color:var(--gold);">{{$0.0bn}}</div><div style="font-size:18px; color:#93a0ad; margin-top:6px;">{{stat label}}</div></div>
+    <div><div style="font-family:var(--font-display); font-weight:700; font-size:52px; color:var(--gold);">{{+0%}}</div><div style="font-size:18px; color:#93a0ad; margin-top:6px;">{{stat label}}</div></div>
+  </div>
+  <div class="pagenum on-dark">01 / 04</div>
+</div>
+
+<!-- ============ SLIDE 2 — STAT ROW ============ -->
+<div class="slide">
+  <div style="padding:100px 120px 0;">
+    <div class="eyebrow">{{Section eyebrow}}</div>
+    <h1 class="headline" style="margin-top:20px;">{{Section headline making one claim}}</h1>
+    <p class="dek" style="margin-top:24px; max-width:1500px;">{{Supporting sentence with the key caveat stated, not hidden.}}</p>
+  </div>
+  <div style="position:absolute; top:420px; left:120px; right:120px;">
+    <div class="stat-row">
+      <div class="stat-tile"><div class="label">{{Metric A}}</div><div class="value">{{value}}</div><div class="sub">{{one-line read}}</div></div>
+      <div class="stat-tile"><div class="label">{{Metric B}}</div><div class="value">{{value}}</div><div class="sub">{{one-line read}}</div></div>
+      <div class="stat-tile"><div class="label">{{Metric C}}</div><div class="value">{{value}}</div><div class="sub">{{one-line read}}</div></div>
+    </div>
+  </div>
+  <div style="position:absolute; top:700px; left:120px; right:120px; background:var(--navy); padding:44px 52px; border-radius:4px;">
+    <p style="font-size:26px; color:var(--paper); line-height:1.6;">{{The so-what sentence, with the key phrase <b style="color:var(--gold);">highlighted</b>.}}</p>
+  </div>
+  <div class="footer-brand">{{FOOTER BRAND}}</div>
+  <div class="pagenum">02 / 04</div>
+</div>
+
+<!-- ============ SLIDE 3 — THREE CARDS ============ -->
+<div class="slide">
+  <div style="padding:80px 120px 0;">
+    <div class="eyebrow">{{Section eyebrow}}</div>
+    <h1 class="headline" style="margin-top:16px; font-size:50px;">{{Three-way comparison headline}}</h1>
+  </div>
+  <div style="position:absolute; top:320px; left:120px; right:120px; display:flex; gap:24px;">
+    <div style="flex:1; background:var(--paper-dim); border-left:5px solid var(--alert); border-radius:3px; padding:26px 30px;">
+      <div style="font-weight:700; font-size:20px; color:var(--navy);">{{Card 1 title}}</div>
+      <div style="font-family:var(--font-display); font-weight:700; font-size:40px; color:var(--alert); margin-top:8px;">{{−0.0%}}</div>
+      <p style="font-size:16px; color:#3c4450; line-height:1.5; margin-top:8px;">{{Two-sentence explanation.}}</p>
+    </div>
+    <div style="flex:1; background:var(--paper-dim); border-left:5px solid var(--gold); border-radius:3px; padding:26px 30px;">
+      <div style="font-weight:700; font-size:20px; color:var(--navy);">{{Card 2 title}}</div>
+      <div style="font-family:var(--font-display); font-weight:700; font-size:40px; color:var(--gold); margin-top:8px;">{{~0.0}}</div>
+      <p style="font-size:16px; color:#3c4450; line-height:1.5; margin-top:8px;">{{Two-sentence explanation.}}</p>
+    </div>
+    <div style="flex:1; background:var(--teal-soft); border-left:5px solid var(--teal); border-radius:3px; padding:26px 30px;">
+      <div style="font-weight:700; font-size:20px; color:var(--navy);">{{Card 3 title}}</div>
+      <div style="font-family:var(--font-display); font-weight:700; font-size:40px; color:var(--teal); margin-top:8px;">{{+0.0%}}</div>
+      <p style="font-size:16px; color:#3c4450; line-height:1.5; margin-top:8px;">{{Two-sentence explanation.}}</p>
+    </div>
+  </div>
+  <div style="position:absolute; bottom:120px; left:120px; right:120px; background:var(--alert-soft); border-radius:4px; padding:28px 36px;">
+    <div style="font-weight:700; font-size:16px; color:var(--alert); text-transform:uppercase; letter-spacing:0.05em;">{{Honest caveat label}}</div>
+    <p style="font-size:18px; color:var(--ink); line-height:1.6; margin-top:10px;">{{State the limitation or confounder plainly — this deck family never ships a sales-only page.}}</p>
+  </div>
+  <div class="footer-brand">{{FOOTER BRAND}}</div>
+  <div class="pagenum">03 / 04</div>
+</div>
+
+<!-- ============ SLIDE 4 — CALL TO ACTION (dark) ============ -->
+<div class="slide" style="background: var(--navy);">
+  <div style="position:absolute; top:0; left:0; width:100%; height:14px; background:linear-gradient(90deg, var(--gold), var(--teal));"></div>
+  <div style="padding:130px 120px 0;">
+    <div class="eyebrow">{{Next steps}}</div>
+    <h1 class="headline on-dark" style="margin-top:24px; font-size:72px;">{{Closing ask, one sentence}}</h1>
+    <p class="dek on-dark" style="margin-top:28px; font-size:28px;">{{Summary of the offer/ask and the honest exception if one exists.}}</p>
+  </div>
+  <div style="position:absolute; top:600px; left:120px; display:flex; gap:50px;">
+    <div><div style="font-weight:700; font-size:19px; color:var(--gold); text-transform:uppercase;">{{Contact label}}</div><div style="font-family:var(--font-display); font-weight:700; font-size:28px; color:var(--paper); margin-top:10px;">{{Name / org}}</div></div>
+    <div><div style="font-weight:700; font-size:19px; color:var(--gold); text-transform:uppercase;">{{Source label}}</div><div style="font-family:var(--font-display); font-weight:700; font-size:28px; color:var(--paper); margin-top:10px;">{{URL}}</div></div>
+  </div>
+  <div style="position:absolute; bottom:60px; left:120px; right:120px; font-size:16px; color:#6b7280;">{{Disclaimer line — sources and what this is not.}}</div>
+</div>
+
+</body>
+</html>
