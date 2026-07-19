@@ -1,0 +1,224 @@
+<title>PARIVESH EC Pipeline — State-wise Clearances as the IEM A→B Leading Indicator</title>
+<meta name="hz:canvas-width" content="1180">
+<style>
+  :root {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6; --mismatch:#7a5aa8; --mismatch-soft:#e7defa;
+    --font-display:"Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --font-mono:"IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+      --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+      --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+      --data-line:#3987e5; --data-soft:#1c2c40; --mismatch:#b39ce0; --mismatch-soft:#2e2540;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+    --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+    --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+    --data-line:#3987e5; --data-soft:#1c2c40; --mismatch:#b39ce0; --mismatch-soft:#2e2540;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6; --mismatch:#7a5aa8; --mismatch-soft:#e7defa;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; }
+  .bulletin { background:var(--page-bg); color:var(--ink); font-family:var(--font-body); padding:40px 20px 56px; display:flex; justify-content:center; }
+  .sheet { width:100%; max-width:1160px; display:flex; flex-direction:column; gap:30px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:16px; }
+  .eyebrow { font-family:var(--font-mono); font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); display:flex; gap:10px; align-items:center; }
+  .eyebrow::before { content:""; width:7px; height:7px; border-radius:50%; background:var(--accent); }
+  h1 { font-family:var(--font-display); font-weight:500; font-size:clamp(24px,3.1vw,32px); margin:6px 0 0; text-wrap:balance; }
+  .dek { font-size:14px; color:var(--ink-2); max-width:90ch; line-height:1.55; margin:8px 0 0; }
+  .source-line { font-family:var(--font-mono); font-size:11px; color:var(--ink-muted); margin-top:8px; }
+  section.block { display:flex; flex-direction:column; gap:14px; }
+  .block-head { display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; border-bottom:1px solid var(--rule-strong); padding-bottom:8px; }
+  .block-title { font-family:var(--font-display); font-size:21px; margin:0; }
+  .block-tag { font-family:var(--font-mono); font-size:12px; color:var(--ink-muted); }
+  .panel { background:var(--surface); border:1px solid var(--rule-strong); padding:18px 22px; }
+  .api-callout { border:1px solid var(--rule-strong); border-left:3px solid var(--accent); background:var(--accent-soft); padding:14px 18px; font-size:13px; line-height:1.6; color:var(--ink-2); }
+  .api-callout b { color:var(--ink); }
+  .api-callout code { font-family:var(--font-mono); font-size:11px; background:var(--surface); padding:1px 6px; border-radius:3px; word-break:break-all; }
+
+  .tbl-scroll { overflow-x:auto; border:1px solid var(--rule-strong); }
+  table.st { width:100%; min-width:1020px; border-collapse:collapse; font-size:12px; font-variant-numeric:tabular-nums; background:var(--surface); }
+  table.st th { text-align:left; font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; letter-spacing:0.04em; color:var(--ink-muted); padding:8px 10px; border-bottom:2px solid var(--rule-strong); background:var(--page-bg); }
+  table.st th.num, table.st td.num { text-align:right; }
+  table.st td { padding:9px 10px; border-bottom:1px solid var(--rule); vertical-align:top; }
+  table.st tr:last-child td { border-bottom:none; }
+  table.st tr:hover td { background:var(--accent-soft); }
+  .bar-pair { display:flex; align-items:center; gap:2px; height:12px; min-width:120px; }
+  .bp-granted { height:100%; background:var(--accent); border-radius:2px 0 0 2px; }
+  .bp-tor { height:100%; background:var(--warn); border-radius:0 2px 2px 0; }
+  .read-cell { font-size:11px; line-height:1.45; color:var(--ink-2); max-width:40ch; }
+  .rank-chip { font-family:var(--font-mono); font-size:9.5px; background:var(--data-soft); color:var(--data-line); padding:1px 7px; border-radius:9px; white-space:nowrap; }
+
+  .sec-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(330px,1fr)); gap:12px; }
+  .sec-card { background:var(--surface); border:1px solid var(--rule-strong); border-top:4px solid var(--data-line); padding:14px 18px; }
+  .sec-title { font-family:var(--font-display); font-size:14.5px; font-weight:600; }
+  .sec-num { font-family:var(--font-mono); font-size:20px; font-weight:700; color:var(--data-line); margin:4px 0 2px; }
+  .sec-leaders { font-size:11.5px; color:var(--ink-2); }
+  .sec-read { font-size:11.5px; color:var(--ink-2); line-height:1.5; margin-top:6px; font-style:italic; }
+
+  table.np { width:100%; border-collapse:collapse; font-size:12px; }
+  table.np th { text-align:left; font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; letter-spacing:0.04em; color:var(--ink-muted); padding:6px 10px 8px 0; border-bottom:2px solid var(--rule-strong); }
+  table.np td { padding:8px 10px 8px 0; border-bottom:1px solid var(--rule); vertical-align:top; line-height:1.5; }
+  table.np tr:last-child td { border-bottom:none; }
+  .st-chip { font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; padding:2px 8px; border-radius:2px; white-space:nowrap; }
+  .st-granted { background:var(--accent-soft); color:var(--accent); }
+  .st-tor { background:var(--warn-soft); color:var(--warn); }
+  .st-absent { background:var(--alert-soft); color:var(--alert); }
+  .prop { font-family:var(--font-mono); font-size:10px; color:var(--ink-muted); }
+
+  .callout { border:1px solid var(--rule-strong); border-left:3px solid var(--alert); background:var(--alert-soft); padding:14px 18px; }
+  .callout-label { font-family:var(--font-mono); font-size:10.5px; text-transform:uppercase; letter-spacing:0.06em; color:var(--alert); }
+  .callout p { margin:6px 0 0; font-size:13px; line-height:1.6; color:var(--ink-2); }
+  .callout p b { color:var(--ink); }
+  .errata { border:1px solid var(--rule-strong); border-left:3px solid var(--alert); background:var(--surface); padding:16px 20px; }
+  .errata-title { font-family:var(--font-mono); font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--alert); }
+  .errata ul { margin:8px 0 0; padding-left:18px; }
+  .errata li { font-size:13px; line-height:1.5; color:var(--ink-2); margin-bottom:6px; }
+  footer.colophon { text-align:center; font-family:var(--font-mono); font-size:10.5px; color:var(--ink-muted); padding-top:8px; }
+</style>
+
+<div class="bulletin">
+  <div class="sheet">
+    <div class="masthead">
+      <div class="eyebrow">India Trade — Sector &amp; Policy Recommendations</div>
+      <h1>The clearance pipeline: PARIVESH EC data as the IEM A→B leading indicator</h1>
+      <p class="dek">Between filing intent (IEM Part A) and commencing production (Part B) sits the gate this repo could not previously see: land acquired, Environmental Clearance obtained. This bulletin fills it — gate 3 of the <a href="project_workflow_schema.html">lifecycle schema</a> — with the complete national EC register: which states' implementation surge has pipeline behind it, which sectors are loading next, and which flagship projects have (and haven't) entered the clearance system at all.</p>
+      <div class="source-line">SOURCE: PARIVESH 2.0 open JSON API, full extraction 19-Jul-2026 — 113,804 EC proposals, submissions 2022→present, SEIAA state-level clearances included (104,583 SEIAA + 9,221 MoEFCC). Industrial = IND-1/2/3 sectors; mining and delisted records excluded. Aggregate CSV: <a href="../data/parivesh_ec_state_sector_status_2026-07-19.csv">data/parivesh_ec_state_sector_status_2026-07-19.csv</a>.</div>
+    </div>
+
+    <section class="block">
+      <div class="api-callout"><b>The methodological find:</b> PARIVESH 2.0 exposes a fully open JSON API — no key, no pagination, no CAPTCHA — returning the complete national EC register in one call: <code>parivesh.nic.in/parivesh_api/trackYourProposal/advanceSearchData?majorClearanceType=1&amp;…</code>. One GET replaces what took nine research agents elsewhere in this repo. And the feared coverage gap is dead: <b>state-level (SEIAA, Category B) clearances ARE in the central portal</b>, since PARIVESH became the mandatory single window in Feb 2024. Now on the quarterly checklist.</div>
+    </section>
+
+    <section class="block">
+      <div class="block-head"><h2 class="block-title">State-wise industrial EC pipeline</h2><span class="block-tag">Green = EC granted (ready to build) · amber = ToR granted (EIA underway, ~12-18 months before EC)</span></div>
+      <div class="tbl-scroll">
+        <table class="st">
+          <thead><tr><th>State</th><th class="num">EC granted</th><th class="num">ToR granted</th><th style="width:16%">Granted | ToR</th><th class="num">In process</th><th class="num">Dead</th><th>IEM impl. rank</th><th>Read</th></tr></thead>
+          <tbody id="stBody"></tbody>
+        </table>
+      </div>
+      <div class="panel" style="font-size:12.5px; color:var(--ink-2); line-height:1.6;">Grant flow is <b>accelerating</b>: by last-update year, industrial grants ran 198 (2023) → 734 (2024) → 1,102 (2025) → 579 (2026 YTD) — consistent with the IEM implementation ratio breaking upward (82% → 109.9%). Gujarat holds ~31% of all industrial EC grants <i>and</i> the deepest ToR pipeline; Maharashtra is the most forward-loaded state (ToR 519 &gt; granted 390).</div>
+    </section>
+
+    <section class="block">
+      <div class="block-head"><h2 class="block-title">What's loading next — granted ECs by EIA activity</h2><span class="block-tag">The clearance register corroborates the implementation sector leaders</span></div>
+      <div class="sec-grid" id="secGrid"></div>
+    </section>
+
+    <section class="block">
+      <div class="block-head"><h2 class="block-title">Flagship projects in the clearance register</h2><span class="block-tag">Direct pipeline evidence, with proposal numbers — including two negative findings</span></div>
+      <div class="panel">
+        <table class="np">
+          <thead><tr><th>Project</th><th>Proposal no.</th><th>EC status</th><th>Read</th></tr></thead>
+          <tbody id="npBody"></tbody>
+        </table>
+      </div>
+      <div class="callout">
+        <div class="callout-label">The two absences matter as much as the presences</div>
+        <p><b>POSCO-JSW's $7.73bn steel JV has no EC application in the portal at all</b> — the Apr-2026 cash movement this repo flagged will show up in FY27 FDI data before any clearance-visible construction exists. And <b>RRPCL (~$44bn) is entirely absent from the 2022+ register</b> — the "stalled at MoU" verdict now has clearance-register proof: a project of that scale with zero EC activity is not under implementation.</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="errata">
+        <div class="errata-title">Using EC as the pipeline indicator — four stated filters</div>
+        <ul>
+          <li><b>EC categories ≠ IEM scheduled industries.</b> Clean overlap only for metallurgy, cement, chemicals, pharma. <b>Electronics, semiconductor and battery plants have no EC category of their own</b> — they appear under INFRA-2 building-construction (if &gt;20,000 m² built-up) or not at all; category aggregates miss them, so only named-project search covers them.</li>
+          <li><b>No grant date in the bulk record</b> — submission date plus a last-update proxy only; exact grant dates need per-proposal calls.</li>
+          <li><b>One EC ≠ one IEM-scale project</b> — a 30 TPA API unit and an 18 MTPA steel plant each count once. Read counts alongside investment values, never instead.</li>
+          <li><b>2022+ submissions only</b>; legacy ECs live on environmentclearance.nic.in (needs pinned DNS), and estate-based projects can piggyback on an industrial estate's EC without appearing individually. DELISTED_BY_SYSTEM records (25,032) are auto-cleanup and excluded from all conversion math.</li>
+          <li>Underlying data: <a href="../data/parivesh_ec_pipeline_2026-07-19.json">data/parivesh_ec_pipeline_2026-07-19.json</a> · state×sector×status CSV in data/ · Related: <a href="state_iem_implementation.html">state IEM implementation</a> · <a href="project_workflow_schema.html">lifecycle schema</a>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="colophon">herrrickshaw/india-trade-sector-policy-recommendations — derived research synthesis; not an official government publication or investment solicitation</footer>
+  </div>
+</div>
+
+<script>
+(function () {
+  var states = [
+    {s:"Gujarat", g:1049, t:836, ip:236, d:482, r:1, read:"~31% of ALL industrial grants AND the deepest ToR pipeline — the intent→clearance→production chain fully lit; predicts its 33.8% IEM share continues."},
+    {s:"Maharashtra", g:390, t:519, ip:80, d:287, r:3, read:"ToR EXCEEDS grants — the most forward-loaded pipeline of any state."},
+    {s:"Odisha", g:280, t:83, ip:63, d:145, r:2, read:"Strong granted stock fits its #2 implementation rank; thin ToR pipeline suggests the steel wave is cresting, not accelerating."},
+    {s:"Karnataka", g:220, t:175, ip:45, d:157, r:11, read:"More EC activity than its modest IEM rank implies — manufacturing building beneath the services-FDI headline (see Foxconn below)."},
+    {s:"Chhattisgarh", g:154, t:157, ip:66, d:121, r:10, read:"ToR ≈ granted: metals pipeline still loading."},
+    {s:"West Bengal", g:148, t:107, ip:34, d:121, r:15, read:"EC activity well above its implementation rank — despite the 2025 incentive revocation."},
+    {s:"Andhra Pradesh", g:146, t:80, ip:24, d:113, r:4, read:"Moderate counts, high implementation — its Part B rides fewer, larger projects."},
+    {s:"Rajasthan", g:141, t:150, ip:30, d:108, r:6, read:"ToR > granted: deepening."},
+    {s:"Uttar Pradesh", g:140, t:121, ip:27, d:43, r:5, read:"Lowest dead-share of the majors — applications that enter tend to survive."},
+    {s:"Telangana", g:114, t:57, ip:18, d:52, r:13, read:"The ₹60,991cr 2025 intent spike hasn't shown up as EC volume yet."},
+    {s:"Punjab", g:103, t:94, ip:18, d:62, r:8, read:"Steady mid-tier flow."},
+    {s:"Madhya Pradesh", g:89, t:83, ip:34, d:40, r:7, read:"Balanced pipeline."},
+    {s:"Tamil Nadu", g:87, t:81, ip:25, d:56, r:9, read:"Modest flow, consistent with its mature-cluster profile."},
+    {s:"Uttarakhand", g:79, t:17, ip:6, d:7, r:18, read:"High grant rate, shallow pipeline."},
+    {s:"Assam", g:72, t:27, ip:7, d:30, r:14, read:"Real industrial flow beyond the Tata anchor."},
+    {s:"Jharkhand", g:68, t:69, ip:14, d:53, r:16, read:"ToR ≈ granted: metals loading."}
+  ];
+  var maxG = 1049 + 836;
+  var sb = document.getElementById("stBody");
+  states.forEach(function (d) {
+    var gw = Math.max(d.g/maxG*100, 1), tw = Math.max(d.t/maxG*100, 1);
+    var tr = document.createElement("tr");
+    tr.innerHTML = '<td><b>'+d.s+'</b></td><td class="num">'+d.g.toLocaleString()+'</td><td class="num">'+d.t.toLocaleString()+'</td>'+
+      '<td><div class="bar-pair"><div class="bp-granted" style="width:'+gw+'%"></div><div class="bp-tor" style="width:'+tw+'%"></div></div></td>'+
+      '<td class="num">'+d.ip+'</td><td class="num">'+d.d+'</td><td><span class="rank-chip">IEM #'+d.r+'</span></td><td class="read-cell">'+d.read+'</td>';
+    sb.appendChild(tr);
+  });
+
+  var secs = [
+    {t:"5(f) Synthetic organic chemicals", n:"1,192 granted", l:"Gujarat 670 (56% of all-India) · Maharashtra 157 · Telangana 62 · Karnataka 61", read:"The largest industrial EC category — Gujarat's 56% share explains both the Chemicals-#2-implementation finding and the pharma 2025 riser. The chemicals wave has deep clearance pipeline behind it."},
+    {t:"3(a) Metallurgical industries", n:"641 granted", l:"Chhattisgarh 111 · West Bengal 76 · Punjab 54 · Gujarat 52 · Jharkhand 50 · Odisha 43", read:"Corroborates Metallurgical as the #1 implementation sector — and the leaders spread far beyond Odisha: the next steel wave is multi-state."},
+    {t:"5(g) Distilleries (ethanol)", n:"504 granted", l:"UP · Maharashtra · Punjab · MP", read:"Matches the Fermentation 2025 riser (₹24,237cr implemented) — the ethanol wave has clearance depth."},
+    {t:"3(b) Cement", n:"148 granted", l:"Rajasthan 24 · Gujarat 16 · UP 14", read:"Steady infrastructure-linked flow."},
+    {t:"Oil & gas / refining / petrochem", n:"144 granted", l:"incl. 17 petrochemical complexes, 8 refineries", read:"Real petrochem clearances exist — but NOT RRPCL (see below)."},
+    {t:"Pesticides + fertilizers", n:"173 granted", l:"Gujarat-heavy", read:"Adjacent chemicals flow."}
+  ];
+  var sg = document.getElementById("secGrid");
+  secs.forEach(function (s) {
+    var c = document.createElement("div");
+    c.className = "sec-card";
+    c.innerHTML = '<div class="sec-title">'+s.t+'</div><div class="sec-num">'+s.n+'</div><div class="sec-leaders">'+s.l+'</div><div class="sec-read">'+s.read+'</div>';
+    sg.appendChild(c);
+  });
+
+  var projects = [
+    {p:"Tata Semiconductor fab, Dholera (₹91,526cr)", n:"SIA/GJ/INFRA2/579457/2026", st:"tor", stx:"ToR Granted", read:"The fab is in the EIA stage — clearance path confirmed."},
+    {p:"Tata Semiconductor ATMP, Jagiroad, Assam (₹27,120cr)", n:"SIA/AS/INFRA2/534537/2025", st:"tor", stx:"ToR Granted", read:"Likewise in EIA."},
+    {p:"Micron OSAT, Sanand (expansions)", n:"SIA/GJ/INFRA2/562857/2025 · 573383/2026", st:"granted", stx:"EC Granted", read:"Already producing; expansions cleared."},
+    {p:"Kaynes Semicon OSAT, Sanand", n:"SIA/GJ/INFRA2/534857/2025", st:"granted", stx:"EC Granted", read:"Producing since Mar 2026."},
+    {p:"Agratas (Tata) 20 GWh gigafactory", n:"SIA/GJ/INFRA2/464582/2024", st:"tor", stx:"ToR Granted", read:"Battery plant in EIA — pipeline real, production ahead."},
+    {p:"Reliance electrolyser gigafactory", n:"SIA/GJ/INFRA2/580565/2026", st:"granted", stx:"EC Granted", read:"Cleared to build."},
+    {p:"PM MITRA parks — MP, Maharashtra, Karnataka", n:"3 proposals", st:"granted", stx:"EC Granted ×3", read:"Three of seven parks cleared — ahead of the 1-of-7-in-production status."},
+    {p:"Bulk Drug Parks — Gujarat, HP, AP", n:"multiple", st:"granted", stx:"EC Granted ×3", read:"All three parks cleared (Gujarat 2023; HP & AP 2025)."},
+    {p:"Foxconn mobile plant, Devanahalli, Karnataka", n:"SIA/KA/INFRA2/525578/2025", st:"granted", stx:"EC Granted", read:"Karnataka manufacturing building beneath the services-FDI headline."},
+    {p:"POSCO-JSW steel JV ($7.73bn)", n:"—", st:"absent", stx:"ABSENT", read:"No greenfield JV EC application exists — the JV has not entered the clearance pipeline."},
+    {p:"RRPCL west-coast refinery (~$44bn)", n:"—", st:"absent", stx:"ABSENT", read:"Zero EC activity in the 2022+ register — clearance-register proof of the 'stalled at MoU' verdict."}
+  ];
+  var nb = document.getElementById("npBody");
+  projects.forEach(function (p) {
+    var tr = document.createElement("tr");
+    tr.innerHTML = '<td><b>'+p.p+'</b></td><td class="prop">'+p.n+'</td><td><span class="st-chip st-'+p.st+'">'+p.stx+'</span></td><td style="font-size:11.5px; color:var(--ink-2);">'+p.read+'</td>';
+    nb.appendChild(tr);
+  });
+})();
+</script>

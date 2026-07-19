@@ -1,0 +1,802 @@
+state,sector,status_bucket,count
+ANDAMAN AND NICOBAR ISLANDS,INFRA-1,dead,1
+ANDAMAN AND NICOBAR ISLANDS,INFRA-1,granted,2
+ANDAMAN AND NICOBAR ISLANDS,INFRA-2,dead,1
+ANDAMAN AND NICOBAR ISLANDS,INFRA-2,granted,1
+ANDAMAN AND NICOBAR ISLANDS,Industrial Projects - 2,granted,4
+ANDAMAN AND NICOBAR ISLANDS,Industrial Projects - 2,tor_granted,1
+ANDAMAN AND NICOBAR ISLANDS,Non-Coal Mining,granted,8
+ANDAMAN AND NICOBAR ISLANDS,Non-Coal Mining,in_process,1
+ANDAMAN AND NICOBAR ISLANDS,Thermal Projects,dead,1
+ANDHRA PRADESH,INFRA-1,dead,12
+ANDHRA PRADESH,INFRA-1,granted,28
+ANDHRA PRADESH,INFRA-1,in_process,5
+ANDHRA PRADESH,INFRA-1,tor_granted,7
+ANDHRA PRADESH,INFRA-2,dead,32
+ANDHRA PRADESH,INFRA-2,granted,121
+ANDHRA PRADESH,INFRA-2,in_process,25
+ANDHRA PRADESH,INFRA-2,tor_granted,30
+ANDHRA PRADESH,Industrial Projects - 1,dead,48
+ANDHRA PRADESH,Industrial Projects - 1,granted,45
+ANDHRA PRADESH,Industrial Projects - 1,in_process,11
+ANDHRA PRADESH,Industrial Projects - 1,tor_granted,28
+ANDHRA PRADESH,Industrial Projects - 2,dead,27
+ANDHRA PRADESH,Industrial Projects - 2,granted,49
+ANDHRA PRADESH,Industrial Projects - 2,in_process,6
+ANDHRA PRADESH,Industrial Projects - 2,tor_granted,24
+ANDHRA PRADESH,Industrial Projects - 3,dead,38
+ANDHRA PRADESH,Industrial Projects - 3,granted,52
+ANDHRA PRADESH,Industrial Projects - 3,in_process,7
+ANDHRA PRADESH,Industrial Projects - 3,tor_granted,28
+ANDHRA PRADESH,Non-Coal Mining,dead,559
+ANDHRA PRADESH,Non-Coal Mining,granted,2077
+ANDHRA PRADESH,Non-Coal Mining,in_process,269
+ANDHRA PRADESH,Non-Coal Mining,tor_granted,574
+ANDHRA PRADESH,None,in_process,83
+ANDHRA PRADESH,River Valley and Hydroelectric Projects,dead,5
+ANDHRA PRADESH,River Valley and Hydroelectric Projects,granted,7
+ANDHRA PRADESH,River Valley and Hydroelectric Projects,in_process,5
+ANDHRA PRADESH,River Valley and Hydroelectric Projects,tor_granted,25
+ANDHRA PRADESH,Thermal Projects,dead,3
+ANDHRA PRADESH,Thermal Projects,granted,3
+ARUNACHAL PRADESH,Coal Mining,in_process,1
+ARUNACHAL PRADESH,INFRA-2,dead,2
+ARUNACHAL PRADESH,INFRA-2,in_process,1
+ARUNACHAL PRADESH,Industrial Projects - 1,dead,1
+ARUNACHAL PRADESH,Industrial Projects - 1,in_process,1
+ARUNACHAL PRADESH,Industrial Projects - 1,tor_granted,3
+ARUNACHAL PRADESH,Industrial Projects - 2,dead,1
+ARUNACHAL PRADESH,Industrial Projects - 2,granted,4
+ARUNACHAL PRADESH,Industrial Projects - 2,in_process,3
+ARUNACHAL PRADESH,Industrial Projects - 2,tor_granted,1
+ARUNACHAL PRADESH,Non-Coal Mining,granted,2
+ARUNACHAL PRADESH,Non-Coal Mining,in_process,1
+ARUNACHAL PRADESH,Non-Coal Mining,tor_granted,1
+ARUNACHAL PRADESH,River Valley and Hydroelectric Projects,dead,5
+ARUNACHAL PRADESH,River Valley and Hydroelectric Projects,granted,7
+ARUNACHAL PRADESH,River Valley and Hydroelectric Projects,in_process,4
+ARUNACHAL PRADESH,River Valley and Hydroelectric Projects,tor_granted,9
+ASSAM,Coal Mining,dead,4
+ASSAM,Coal Mining,in_process,2
+ASSAM,Coal Mining,tor_granted,2
+ASSAM,INFRA-1,dead,1
+ASSAM,INFRA-1,granted,1
+ASSAM,INFRA-1,tor_granted,3
+ASSAM,INFRA-2,dead,26
+ASSAM,INFRA-2,granted,97
+ASSAM,INFRA-2,in_process,9
+ASSAM,INFRA-2,tor_granted,16
+ASSAM,Industrial Projects - 1,dead,12
+ASSAM,Industrial Projects - 1,granted,16
+ASSAM,Industrial Projects - 1,in_process,4
+ASSAM,Industrial Projects - 1,tor_granted,19
+ASSAM,Industrial Projects - 2,dead,15
+ASSAM,Industrial Projects - 2,granted,43
+ASSAM,Industrial Projects - 2,in_process,3
+ASSAM,Industrial Projects - 2,tor_granted,6
+ASSAM,Industrial Projects - 3,dead,3
+ASSAM,Industrial Projects - 3,granted,13
+ASSAM,Industrial Projects - 3,tor_granted,2
+ASSAM,Non-Coal Mining,dead,342
+ASSAM,Non-Coal Mining,granted,889
+ASSAM,Non-Coal Mining,in_process,93
+ASSAM,Non-Coal Mining,tor_granted,31
+ASSAM,None,in_process,10
+ASSAM,River Valley and Hydroelectric Projects,dead,1
+ASSAM,River Valley and Hydroelectric Projects,granted,1
+ASSAM,River Valley and Hydroelectric Projects,tor_granted,6
+ASSAM,Thermal Projects,granted,1
+ASSAM,Thermal Projects,tor_granted,2
+BIHAR,INFRA-1,dead,9
+BIHAR,INFRA-1,granted,11
+BIHAR,INFRA-1,in_process,1
+BIHAR,INFRA-1,tor_granted,13
+BIHAR,INFRA-2,dead,15
+BIHAR,INFRA-2,granted,108
+BIHAR,INFRA-2,in_process,12
+BIHAR,INFRA-2,tor_granted,17
+BIHAR,Industrial Projects - 1,dead,4
+BIHAR,Industrial Projects - 1,granted,16
+BIHAR,Industrial Projects - 1,in_process,2
+BIHAR,Industrial Projects - 1,tor_granted,18
+BIHAR,Industrial Projects - 2,dead,2
+BIHAR,Industrial Projects - 2,granted,11
+BIHAR,Industrial Projects - 2,in_process,1
+BIHAR,Industrial Projects - 2,tor_granted,4
+BIHAR,Industrial Projects - 3,granted,1
+BIHAR,Industrial Projects - 3,tor_granted,1
+BIHAR,Non-Coal Mining,dead,80
+BIHAR,Non-Coal Mining,granted,1353
+BIHAR,Non-Coal Mining,in_process,270
+BIHAR,Non-Coal Mining,tor_granted,449
+BIHAR,None,in_process,20
+BIHAR,River Valley and Hydroelectric Projects,dead,1
+BIHAR,River Valley and Hydroelectric Projects,tor_granted,5
+BIHAR,Thermal Projects,dead,5
+BIHAR,Thermal Projects,granted,3
+BIHAR,Thermal Projects,in_process,1
+BIHAR,Thermal Projects,tor_granted,4
+CHANDIGARH,INFRA-2,dead,10
+CHANDIGARH,INFRA-2,granted,6
+CHANDIGARH,INFRA-2,in_process,4
+CHANDIGARH,INFRA-2,tor_granted,3
+CHANDIGARH,Industrial Projects - 1,dead,1
+CHHATTISGARH,Coal Mining,dead,27
+CHHATTISGARH,Coal Mining,granted,58
+CHHATTISGARH,Coal Mining,in_process,13
+CHHATTISGARH,Coal Mining,tor_granted,33
+CHHATTISGARH,INFRA-1,dead,1
+CHHATTISGARH,INFRA-1,granted,2
+CHHATTISGARH,INFRA-2,dead,15
+CHHATTISGARH,INFRA-2,granted,24
+CHHATTISGARH,INFRA-2,in_process,14
+CHHATTISGARH,INFRA-2,tor_granted,6
+CHHATTISGARH,Industrial Projects - 1,dead,111
+CHHATTISGARH,Industrial Projects - 1,granted,131
+CHHATTISGARH,Industrial Projects - 1,in_process,55
+CHHATTISGARH,Industrial Projects - 1,tor_granted,138
+CHHATTISGARH,Industrial Projects - 2,dead,10
+CHHATTISGARH,Industrial Projects - 2,granted,21
+CHHATTISGARH,Industrial Projects - 2,in_process,11
+CHHATTISGARH,Industrial Projects - 2,tor_granted,14
+CHHATTISGARH,Industrial Projects - 3,granted,2
+CHHATTISGARH,Industrial Projects - 3,tor_granted,5
+CHHATTISGARH,Non-Coal Mining,dead,1209
+CHHATTISGARH,Non-Coal Mining,granted,804
+CHHATTISGARH,Non-Coal Mining,in_process,352
+CHHATTISGARH,Non-Coal Mining,tor_granted,340
+CHHATTISGARH,None,dead,1
+CHHATTISGARH,None,in_process,57
+CHHATTISGARH,River Valley and Hydroelectric Projects,dead,3
+CHHATTISGARH,River Valley and Hydroelectric Projects,in_process,1
+CHHATTISGARH,River Valley and Hydroelectric Projects,tor_granted,13
+CHHATTISGARH,Thermal Projects,dead,11
+CHHATTISGARH,Thermal Projects,granted,20
+CHHATTISGARH,Thermal Projects,in_process,7
+CHHATTISGARH,Thermal Projects,tor_granted,10
+DELHI,INFRA-1,dead,1
+DELHI,INFRA-1,granted,1
+DELHI,INFRA-1,in_process,1
+DELHI,INFRA-2,dead,46
+DELHI,INFRA-2,granted,80
+DELHI,INFRA-2,in_process,29
+DELHI,INFRA-2,tor_granted,15
+DELHI,Industrial Projects - 1,dead,2
+DELHI,Non-Coal Mining,dead,2
+DELHI,None,in_process,1
+DELHI,Thermal Projects,dead,2
+DELHI,Thermal Projects,granted,2
+DELHI,Thermal Projects,tor_granted,2
+GOA,INFRA-1,dead,1
+GOA,INFRA-1,tor_granted,1
+GOA,INFRA-2,dead,20
+GOA,INFRA-2,granted,32
+GOA,INFRA-2,in_process,17
+GOA,INFRA-2,tor_granted,2
+GOA,Industrial Projects - 1,dead,3
+GOA,Industrial Projects - 1,granted,6
+GOA,Industrial Projects - 1,in_process,6
+GOA,Industrial Projects - 1,tor_granted,3
+GOA,Industrial Projects - 2,dead,1
+GOA,Industrial Projects - 2,granted,2
+GOA,Industrial Projects - 2,tor_granted,3
+GOA,Industrial Projects - 3,tor_granted,1
+GOA,Non-Coal Mining,dead,15
+GOA,Non-Coal Mining,granted,73
+GOA,Non-Coal Mining,in_process,8
+GOA,Non-Coal Mining,tor_granted,14
+GOA,None,in_process,2
+GUJARAT,Coal Mining,dead,5
+GUJARAT,Coal Mining,granted,3
+GUJARAT,Coal Mining,in_process,2
+GUJARAT,Coal Mining,tor_granted,5
+GUJARAT,INFRA-1,dead,17
+GUJARAT,INFRA-1,granted,32
+GUJARAT,INFRA-1,in_process,9
+GUJARAT,INFRA-1,tor_granted,28
+GUJARAT,INFRA-2,dead,175
+GUJARAT,INFRA-2,granted,1917
+GUJARAT,INFRA-2,in_process,244
+GUJARAT,INFRA-2,tor_granted,79
+GUJARAT,Industrial Projects - 1,dead,78
+GUJARAT,Industrial Projects - 1,granted,118
+GUJARAT,Industrial Projects - 1,in_process,53
+GUJARAT,Industrial Projects - 1,tor_granted,109
+GUJARAT,Industrial Projects - 2,dead,48
+GUJARAT,Industrial Projects - 2,granted,87
+GUJARAT,Industrial Projects - 2,in_process,23
+GUJARAT,Industrial Projects - 2,tor_granted,38
+GUJARAT,Industrial Projects - 3,dead,356
+GUJARAT,Industrial Projects - 3,granted,844
+GUJARAT,Industrial Projects - 3,in_process,160
+GUJARAT,Industrial Projects - 3,tor_granted,689
+GUJARAT,Non-Coal Mining,dead,1823
+GUJARAT,Non-Coal Mining,granted,2348
+GUJARAT,Non-Coal Mining,in_process,443
+GUJARAT,Non-Coal Mining,tor_granted,926
+GUJARAT,None,in_process,508
+GUJARAT,River Valley and Hydroelectric Projects,dead,3
+GUJARAT,River Valley and Hydroelectric Projects,granted,1
+GUJARAT,River Valley and Hydroelectric Projects,tor_granted,8
+GUJARAT,Thermal Projects,dead,8
+GUJARAT,Thermal Projects,granted,9
+GUJARAT,Thermal Projects,in_process,2
+GUJARAT,Thermal Projects,tor_granted,3
+HARYANA,INFRA-1,dead,3
+HARYANA,INFRA-1,granted,1
+HARYANA,INFRA-1,in_process,3
+HARYANA,INFRA-1,tor_granted,6
+HARYANA,INFRA-2,dead,140
+HARYANA,INFRA-2,granted,411
+HARYANA,INFRA-2,in_process,159
+HARYANA,INFRA-2,tor_granted,212
+HARYANA,Industrial Projects - 1,dead,6
+HARYANA,Industrial Projects - 1,granted,12
+HARYANA,Industrial Projects - 1,in_process,2
+HARYANA,Industrial Projects - 1,tor_granted,17
+HARYANA,Industrial Projects - 2,dead,19
+HARYANA,Industrial Projects - 2,granted,13
+HARYANA,Industrial Projects - 2,in_process,4
+HARYANA,Industrial Projects - 2,tor_granted,6
+HARYANA,Industrial Projects - 3,dead,17
+HARYANA,Industrial Projects - 3,granted,16
+HARYANA,Industrial Projects - 3,in_process,8
+HARYANA,Industrial Projects - 3,tor_granted,20
+HARYANA,Non-Coal Mining,dead,8
+HARYANA,Non-Coal Mining,granted,49
+HARYANA,Non-Coal Mining,in_process,8
+HARYANA,Non-Coal Mining,tor_granted,41
+HARYANA,None,in_process,6
+HARYANA,Thermal Projects,granted,2
+HARYANA,Thermal Projects,tor_granted,2
+HIMACHAL PRADESH,INFRA-1,granted,2
+HIMACHAL PRADESH,INFRA-1,tor_granted,2
+HIMACHAL PRADESH,INFRA-2,dead,12
+HIMACHAL PRADESH,INFRA-2,granted,20
+HIMACHAL PRADESH,INFRA-2,in_process,10
+HIMACHAL PRADESH,INFRA-2,tor_granted,5
+HIMACHAL PRADESH,Industrial Projects - 1,dead,11
+HIMACHAL PRADESH,Industrial Projects - 1,granted,4
+HIMACHAL PRADESH,Industrial Projects - 1,tor_granted,3
+HIMACHAL PRADESH,Industrial Projects - 2,granted,5
+HIMACHAL PRADESH,Industrial Projects - 2,in_process,2
+HIMACHAL PRADESH,Industrial Projects - 2,tor_granted,3
+HIMACHAL PRADESH,Industrial Projects - 3,dead,3
+HIMACHAL PRADESH,Industrial Projects - 3,granted,1
+HIMACHAL PRADESH,Industrial Projects - 3,tor_granted,3
+HIMACHAL PRADESH,Non-Coal Mining,dead,70
+HIMACHAL PRADESH,Non-Coal Mining,granted,394
+HIMACHAL PRADESH,Non-Coal Mining,in_process,66
+HIMACHAL PRADESH,Non-Coal Mining,tor_granted,61
+HIMACHAL PRADESH,None,in_process,6
+HIMACHAL PRADESH,River Valley and Hydroelectric Projects,dead,1
+HIMACHAL PRADESH,River Valley and Hydroelectric Projects,granted,2
+HIMACHAL PRADESH,River Valley and Hydroelectric Projects,in_process,4
+JAMMU AND KASHMIR,INFRA-1,dead,1
+JAMMU AND KASHMIR,INFRA-2,dead,14
+JAMMU AND KASHMIR,INFRA-2,granted,4
+JAMMU AND KASHMIR,INFRA-2,in_process,8
+JAMMU AND KASHMIR,INFRA-2,tor_granted,8
+JAMMU AND KASHMIR,Industrial Projects - 1,dead,11
+JAMMU AND KASHMIR,Industrial Projects - 1,granted,3
+JAMMU AND KASHMIR,Industrial Projects - 1,in_process,3
+JAMMU AND KASHMIR,Industrial Projects - 1,tor_granted,8
+JAMMU AND KASHMIR,Industrial Projects - 2,dead,4
+JAMMU AND KASHMIR,Industrial Projects - 2,granted,2
+JAMMU AND KASHMIR,Industrial Projects - 3,dead,6
+JAMMU AND KASHMIR,Industrial Projects - 3,granted,2
+JAMMU AND KASHMIR,Industrial Projects - 3,in_process,2
+JAMMU AND KASHMIR,Industrial Projects - 3,tor_granted,2
+JAMMU AND KASHMIR,Non-Coal Mining,dead,118
+JAMMU AND KASHMIR,Non-Coal Mining,granted,158
+JAMMU AND KASHMIR,Non-Coal Mining,in_process,30
+JAMMU AND KASHMIR,Non-Coal Mining,tor_granted,6
+JAMMU AND KASHMIR,River Valley and Hydroelectric Projects,dead,1
+JAMMU AND KASHMIR,River Valley and Hydroelectric Projects,granted,3
+JAMMU AND KASHMIR,River Valley and Hydroelectric Projects,tor_granted,2
+JHARKHAND,Coal Mining,dead,36
+JHARKHAND,Coal Mining,granted,70
+JHARKHAND,Coal Mining,in_process,14
+JHARKHAND,Coal Mining,tor_granted,24
+JHARKHAND,INFRA-1,dead,2
+JHARKHAND,INFRA-2,dead,21
+JHARKHAND,INFRA-2,granted,93
+JHARKHAND,INFRA-2,in_process,13
+JHARKHAND,INFRA-2,tor_granted,13
+JHARKHAND,Industrial Projects - 1,dead,46
+JHARKHAND,Industrial Projects - 1,granted,60
+JHARKHAND,Industrial Projects - 1,in_process,13
+JHARKHAND,Industrial Projects - 1,tor_granted,62
+JHARKHAND,Industrial Projects - 2,dead,5
+JHARKHAND,Industrial Projects - 2,granted,7
+JHARKHAND,Industrial Projects - 2,in_process,1
+JHARKHAND,Industrial Projects - 2,tor_granted,3
+JHARKHAND,Industrial Projects - 3,dead,2
+JHARKHAND,Industrial Projects - 3,granted,1
+JHARKHAND,Industrial Projects - 3,tor_granted,4
+JHARKHAND,Non-Coal Mining,dead,152
+JHARKHAND,Non-Coal Mining,granted,1145
+JHARKHAND,Non-Coal Mining,in_process,146
+JHARKHAND,Non-Coal Mining,tor_granted,189
+JHARKHAND,None,in_process,17
+JHARKHAND,Thermal Projects,dead,4
+JHARKHAND,Thermal Projects,granted,4
+JHARKHAND,Thermal Projects,in_process,1
+JHARKHAND,Thermal Projects,tor_granted,1
+KARNATAKA,Coal Mining,dead,2
+KARNATAKA,INFRA-1,dead,17
+KARNATAKA,INFRA-1,granted,30
+KARNATAKA,INFRA-1,in_process,17
+KARNATAKA,INFRA-1,tor_granted,48
+KARNATAKA,INFRA-2,dead,219
+KARNATAKA,INFRA-2,granted,999
+KARNATAKA,INFRA-2,in_process,207
+KARNATAKA,INFRA-2,tor_granted,237
+KARNATAKA,Industrial Projects - 1,dead,55
+KARNATAKA,Industrial Projects - 1,granted,75
+KARNATAKA,Industrial Projects - 1,in_process,15
+KARNATAKA,Industrial Projects - 1,tor_granted,62
+KARNATAKA,Industrial Projects - 2,dead,58
+KARNATAKA,Industrial Projects - 2,granted,74
+KARNATAKA,Industrial Projects - 2,in_process,19
+KARNATAKA,Industrial Projects - 2,tor_granted,49
+KARNATAKA,Industrial Projects - 3,dead,44
+KARNATAKA,Industrial Projects - 3,granted,71
+KARNATAKA,Industrial Projects - 3,in_process,11
+KARNATAKA,Industrial Projects - 3,tor_granted,64
+KARNATAKA,Non-Coal Mining,dead,761
+KARNATAKA,Non-Coal Mining,granted,1744
+KARNATAKA,Non-Coal Mining,in_process,402
+KARNATAKA,Non-Coal Mining,tor_granted,165
+KARNATAKA,None,in_process,43
+KARNATAKA,River Valley and Hydroelectric Projects,dead,5
+KARNATAKA,River Valley and Hydroelectric Projects,granted,3
+KARNATAKA,River Valley and Hydroelectric Projects,tor_granted,4
+KARNATAKA,Thermal Projects,dead,2
+KERALA,INFRA-1,dead,2
+KERALA,INFRA-1,granted,7
+KERALA,INFRA-1,in_process,1
+KERALA,INFRA-1,tor_granted,8
+KERALA,INFRA-2,dead,15
+KERALA,INFRA-2,granted,67
+KERALA,INFRA-2,in_process,76
+KERALA,INFRA-2,tor_granted,14
+KERALA,Industrial Projects - 1,dead,8
+KERALA,Industrial Projects - 1,granted,5
+KERALA,Industrial Projects - 1,in_process,9
+KERALA,Industrial Projects - 1,tor_granted,4
+KERALA,Industrial Projects - 2,dead,1
+KERALA,Industrial Projects - 2,granted,1
+KERALA,Industrial Projects - 3,dead,1
+KERALA,Industrial Projects - 3,tor_granted,1
+KERALA,Non-Coal Mining,dead,206
+KERALA,Non-Coal Mining,granted,341
+KERALA,Non-Coal Mining,in_process,654
+KERALA,Non-Coal Mining,tor_granted,121
+KERALA,None,in_process,2
+KERALA,River Valley and Hydroelectric Projects,dead,1
+KERALA,River Valley and Hydroelectric Projects,in_process,2
+KERALA,River Valley and Hydroelectric Projects,tor_granted,1
+LADAKH,INFRA-2,dead,2
+LADAKH,INFRA-2,in_process,1
+LADAKH,Non-Coal Mining,dead,12
+LAKSHADWEEP,INFRA-1,tor_granted,3
+LAKSHADWEEP,INFRA-2,tor_granted,9
+MADHYA PRADESH,Coal Mining,dead,20
+MADHYA PRADESH,Coal Mining,granted,33
+MADHYA PRADESH,Coal Mining,in_process,9
+MADHYA PRADESH,Coal Mining,tor_granted,26
+MADHYA PRADESH,INFRA-1,dead,10
+MADHYA PRADESH,INFRA-1,granted,6
+MADHYA PRADESH,INFRA-1,in_process,2
+MADHYA PRADESH,INFRA-1,tor_granted,12
+MADHYA PRADESH,INFRA-2,dead,35
+MADHYA PRADESH,INFRA-2,granted,81
+MADHYA PRADESH,INFRA-2,in_process,55
+MADHYA PRADESH,INFRA-2,tor_granted,54
+MADHYA PRADESH,Industrial Projects - 1,dead,21
+MADHYA PRADESH,Industrial Projects - 1,granted,26
+MADHYA PRADESH,Industrial Projects - 1,in_process,17
+MADHYA PRADESH,Industrial Projects - 1,tor_granted,35
+MADHYA PRADESH,Industrial Projects - 2,dead,11
+MADHYA PRADESH,Industrial Projects - 2,granted,39
+MADHYA PRADESH,Industrial Projects - 2,in_process,5
+MADHYA PRADESH,Industrial Projects - 2,tor_granted,17
+MADHYA PRADESH,Industrial Projects - 3,dead,8
+MADHYA PRADESH,Industrial Projects - 3,granted,24
+MADHYA PRADESH,Industrial Projects - 3,in_process,12
+MADHYA PRADESH,Industrial Projects - 3,tor_granted,31
+MADHYA PRADESH,Non-Coal Mining,dead,2339
+MADHYA PRADESH,Non-Coal Mining,granted,2389
+MADHYA PRADESH,Non-Coal Mining,in_process,1134
+MADHYA PRADESH,Non-Coal Mining,tor_granted,2077
+MADHYA PRADESH,None,in_process,43
+MADHYA PRADESH,River Valley and Hydroelectric Projects,dead,7
+MADHYA PRADESH,River Valley and Hydroelectric Projects,granted,21
+MADHYA PRADESH,River Valley and Hydroelectric Projects,in_process,16
+MADHYA PRADESH,River Valley and Hydroelectric Projects,tor_granted,48
+MADHYA PRADESH,Thermal Projects,dead,8
+MADHYA PRADESH,Thermal Projects,granted,12
+MADHYA PRADESH,Thermal Projects,in_process,3
+MADHYA PRADESH,Thermal Projects,tor_granted,5
+MAHARASHTRA,Coal Mining,dead,25
+MAHARASHTRA,Coal Mining,granted,35
+MAHARASHTRA,Coal Mining,in_process,12
+MAHARASHTRA,Coal Mining,tor_granted,18
+MAHARASHTRA,INFRA-1,dead,29
+MAHARASHTRA,INFRA-1,granted,26
+MAHARASHTRA,INFRA-1,in_process,7
+MAHARASHTRA,INFRA-1,tor_granted,36
+MAHARASHTRA,INFRA-2,dead,1567
+MAHARASHTRA,INFRA-2,granted,3603
+MAHARASHTRA,INFRA-2,in_process,747
+MAHARASHTRA,INFRA-2,tor_granted,1163
+MAHARASHTRA,Industrial Projects - 1,dead,59
+MAHARASHTRA,Industrial Projects - 1,granted,60
+MAHARASHTRA,Industrial Projects - 1,in_process,28
+MAHARASHTRA,Industrial Projects - 1,tor_granted,112
+MAHARASHTRA,Industrial Projects - 2,dead,95
+MAHARASHTRA,Industrial Projects - 2,granted,121
+MAHARASHTRA,Industrial Projects - 2,in_process,19
+MAHARASHTRA,Industrial Projects - 2,tor_granted,106
+MAHARASHTRA,Industrial Projects - 3,dead,133
+MAHARASHTRA,Industrial Projects - 3,granted,209
+MAHARASHTRA,Industrial Projects - 3,in_process,33
+MAHARASHTRA,Industrial Projects - 3,tor_granted,301
+MAHARASHTRA,Non-Coal Mining,dead,634
+MAHARASHTRA,Non-Coal Mining,granted,3829
+MAHARASHTRA,Non-Coal Mining,in_process,152
+MAHARASHTRA,Non-Coal Mining,tor_granted,73
+MAHARASHTRA,None,dead,2
+MAHARASHTRA,None,in_process,169
+MAHARASHTRA,River Valley and Hydroelectric Projects,dead,16
+MAHARASHTRA,River Valley and Hydroelectric Projects,granted,16
+MAHARASHTRA,River Valley and Hydroelectric Projects,in_process,16
+MAHARASHTRA,River Valley and Hydroelectric Projects,tor_granted,41
+MAHARASHTRA,Thermal Projects,dead,6
+MAHARASHTRA,Thermal Projects,granted,8
+MAHARASHTRA,Thermal Projects,in_process,3
+MAHARASHTRA,Thermal Projects,tor_granted,2
+MANIPUR,INFRA-2,granted,1
+MANIPUR,Non-Coal Mining,dead,2
+MANIPUR,Non-Coal Mining,granted,2
+MEGHALAYA,Coal Mining,dead,1
+MEGHALAYA,Coal Mining,granted,3
+MEGHALAYA,Coal Mining,in_process,4
+MEGHALAYA,Coal Mining,tor_granted,8
+MEGHALAYA,INFRA-2,dead,1
+MEGHALAYA,INFRA-2,granted,1
+MEGHALAYA,INFRA-2,in_process,1
+MEGHALAYA,INFRA-2,tor_granted,3
+MEGHALAYA,Industrial Projects - 1,dead,4
+MEGHALAYA,Industrial Projects - 1,granted,4
+MEGHALAYA,Industrial Projects - 1,tor_granted,2
+MEGHALAYA,Industrial Projects - 2,granted,1
+MEGHALAYA,Non-Coal Mining,dead,27
+MEGHALAYA,Non-Coal Mining,granted,137
+MEGHALAYA,Non-Coal Mining,in_process,45
+MEGHALAYA,Non-Coal Mining,tor_granted,40
+MEGHALAYA,None,in_process,3
+MEGHALAYA,River Valley and Hydroelectric Projects,dead,1
+MEGHALAYA,River Valley and Hydroelectric Projects,tor_granted,1
+MEGHALAYA,Thermal Projects,dead,2
+MEGHALAYA,Thermal Projects,granted,2
+MIZORAM,INFRA-2,dead,2
+MIZORAM,INFRA-2,in_process,6
+MIZORAM,Industrial Projects - 2,in_process,1
+MIZORAM,Non-Coal Mining,dead,1
+NAGALAND,Non-Coal Mining,dead,1
+ODISHA,Coal Mining,dead,18
+ODISHA,Coal Mining,granted,34
+ODISHA,Coal Mining,in_process,9
+ODISHA,Coal Mining,tor_granted,12
+ODISHA,INFRA-1,dead,8
+ODISHA,INFRA-1,granted,7
+ODISHA,INFRA-1,in_process,3
+ODISHA,INFRA-1,tor_granted,13
+ODISHA,INFRA-2,dead,61
+ODISHA,INFRA-2,granted,150
+ODISHA,INFRA-2,in_process,59
+ODISHA,INFRA-2,tor_granted,32
+ODISHA,Industrial Projects - 1,dead,90
+ODISHA,Industrial Projects - 1,granted,66
+ODISHA,Industrial Projects - 1,in_process,30
+ODISHA,Industrial Projects - 1,tor_granted,70
+ODISHA,Industrial Projects - 2,dead,53
+ODISHA,Industrial Projects - 2,granted,210
+ODISHA,Industrial Projects - 2,in_process,30
+ODISHA,Industrial Projects - 2,tor_granted,9
+ODISHA,Industrial Projects - 3,dead,2
+ODISHA,Industrial Projects - 3,granted,4
+ODISHA,Industrial Projects - 3,in_process,3
+ODISHA,Industrial Projects - 3,tor_granted,4
+ODISHA,Non-Coal Mining,dead,860
+ODISHA,Non-Coal Mining,granted,1413
+ODISHA,Non-Coal Mining,in_process,250
+ODISHA,Non-Coal Mining,tor_granted,105
+ODISHA,None,in_process,56
+ODISHA,River Valley and Hydroelectric Projects,dead,5
+ODISHA,River Valley and Hydroelectric Projects,granted,2
+ODISHA,River Valley and Hydroelectric Projects,in_process,3
+ODISHA,River Valley and Hydroelectric Projects,tor_granted,10
+ODISHA,Thermal Projects,dead,12
+ODISHA,Thermal Projects,granted,14
+ODISHA,Thermal Projects,in_process,1
+ODISHA,Thermal Projects,tor_granted,14
+PUDUCHERRY,INFRA-1,tor_granted,1
+PUDUCHERRY,INFRA-2,dead,1
+PUDUCHERRY,INFRA-2,granted,5
+PUDUCHERRY,INFRA-2,in_process,1
+PUDUCHERRY,INFRA-2,tor_granted,1
+PUDUCHERRY,Industrial Projects - 1,dead,6
+PUDUCHERRY,Industrial Projects - 1,tor_granted,3
+PUDUCHERRY,Industrial Projects - 2,dead,2
+PUDUCHERRY,Industrial Projects - 2,granted,1
+PUDUCHERRY,Industrial Projects - 2,in_process,1
+PUDUCHERRY,Industrial Projects - 2,tor_granted,4
+PUDUCHERRY,Industrial Projects - 3,dead,1
+PUDUCHERRY,Industrial Projects - 3,granted,3
+PUDUCHERRY,Industrial Projects - 3,tor_granted,6
+PUNJAB,INFRA-1,dead,1
+PUNJAB,INFRA-1,granted,2
+PUNJAB,INFRA-2,dead,90
+PUNJAB,INFRA-2,granted,320
+PUNJAB,INFRA-2,in_process,71
+PUNJAB,INFRA-2,tor_granted,131
+PUNJAB,Industrial Projects - 1,dead,41
+PUNJAB,Industrial Projects - 1,granted,61
+PUNJAB,Industrial Projects - 1,in_process,12
+PUNJAB,Industrial Projects - 1,tor_granted,62
+PUNJAB,Industrial Projects - 2,dead,10
+PUNJAB,Industrial Projects - 2,granted,13
+PUNJAB,Industrial Projects - 2,in_process,2
+PUNJAB,Industrial Projects - 2,tor_granted,5
+PUNJAB,Industrial Projects - 3,dead,11
+PUNJAB,Industrial Projects - 3,granted,29
+PUNJAB,Industrial Projects - 3,in_process,4
+PUNJAB,Industrial Projects - 3,tor_granted,27
+PUNJAB,Non-Coal Mining,dead,38
+PUNJAB,Non-Coal Mining,granted,157
+PUNJAB,Non-Coal Mining,in_process,38
+PUNJAB,Non-Coal Mining,tor_granted,102
+PUNJAB,None,in_process,17
+PUNJAB,River Valley and Hydroelectric Projects,tor_granted,1
+PUNJAB,Thermal Projects,dead,4
+PUNJAB,Thermal Projects,granted,2
+PUNJAB,Thermal Projects,tor_granted,1
+RAJASTHAN,Coal Mining,dead,15
+RAJASTHAN,Coal Mining,granted,2
+RAJASTHAN,Coal Mining,tor_granted,2
+RAJASTHAN,INFRA-1,dead,23
+RAJASTHAN,INFRA-1,granted,7
+RAJASTHAN,INFRA-1,in_process,4
+RAJASTHAN,INFRA-1,tor_granted,13
+RAJASTHAN,INFRA-2,dead,100
+RAJASTHAN,INFRA-2,granted,248
+RAJASTHAN,INFRA-2,in_process,93
+RAJASTHAN,INFRA-2,tor_granted,65
+RAJASTHAN,Industrial Projects - 1,dead,63
+RAJASTHAN,Industrial Projects - 1,granted,60
+RAJASTHAN,Industrial Projects - 1,in_process,14
+RAJASTHAN,Industrial Projects - 1,tor_granted,52
+RAJASTHAN,Industrial Projects - 2,dead,9
+RAJASTHAN,Industrial Projects - 2,granted,29
+RAJASTHAN,Industrial Projects - 2,in_process,2
+RAJASTHAN,Industrial Projects - 2,tor_granted,10
+RAJASTHAN,Industrial Projects - 3,dead,36
+RAJASTHAN,Industrial Projects - 3,granted,52
+RAJASTHAN,Industrial Projects - 3,in_process,14
+RAJASTHAN,Industrial Projects - 3,tor_granted,88
+RAJASTHAN,Non-Coal Mining,dead,15568
+RAJASTHAN,Non-Coal Mining,granted,14454
+RAJASTHAN,Non-Coal Mining,in_process,1698
+RAJASTHAN,Non-Coal Mining,tor_granted,2252
+RAJASTHAN,None,dead,1
+RAJASTHAN,None,in_process,14
+RAJASTHAN,River Valley and Hydroelectric Projects,dead,3
+RAJASTHAN,River Valley and Hydroelectric Projects,granted,1
+RAJASTHAN,River Valley and Hydroelectric Projects,in_process,1
+RAJASTHAN,River Valley and Hydroelectric Projects,tor_granted,8
+RAJASTHAN,Thermal Projects,dead,1
+RAJASTHAN,Thermal Projects,granted,2
+RAJASTHAN,Thermal Projects,in_process,1
+RAJASTHAN,Thermal Projects,tor_granted,3
+SIKKIM,INFRA-2,dead,4
+SIKKIM,INFRA-2,granted,5
+SIKKIM,INFRA-2,in_process,1
+SIKKIM,INFRA-2,tor_granted,1
+SIKKIM,River Valley and Hydroelectric Projects,dead,2
+SIKKIM,River Valley and Hydroelectric Projects,granted,4
+SIKKIM,River Valley and Hydroelectric Projects,tor_granted,3
+TAMIL NADU,Coal Mining,granted,1
+TAMIL NADU,Coal Mining,in_process,1
+TAMIL NADU,INFRA-1,dead,12
+TAMIL NADU,INFRA-1,granted,19
+TAMIL NADU,INFRA-1,in_process,6
+TAMIL NADU,INFRA-1,tor_granted,16
+TAMIL NADU,INFRA-2,dead,139
+TAMIL NADU,INFRA-2,granted,628
+TAMIL NADU,INFRA-2,in_process,188
+TAMIL NADU,INFRA-2,tor_granted,131
+TAMIL NADU,Industrial Projects - 1,dead,23
+TAMIL NADU,Industrial Projects - 1,granted,31
+TAMIL NADU,Industrial Projects - 1,in_process,12
+TAMIL NADU,Industrial Projects - 1,tor_granted,38
+TAMIL NADU,Industrial Projects - 2,dead,12
+TAMIL NADU,Industrial Projects - 2,granted,20
+TAMIL NADU,Industrial Projects - 2,in_process,4
+TAMIL NADU,Industrial Projects - 2,tor_granted,10
+TAMIL NADU,Industrial Projects - 3,dead,21
+TAMIL NADU,Industrial Projects - 3,granted,36
+TAMIL NADU,Industrial Projects - 3,in_process,9
+TAMIL NADU,Industrial Projects - 3,tor_granted,33
+TAMIL NADU,Non-Coal Mining,dead,446
+TAMIL NADU,Non-Coal Mining,granted,2294
+TAMIL NADU,Non-Coal Mining,in_process,398
+TAMIL NADU,Non-Coal Mining,tor_granted,535
+TAMIL NADU,None,in_process,23
+TAMIL NADU,River Valley and Hydroelectric Projects,dead,5
+TAMIL NADU,River Valley and Hydroelectric Projects,granted,4
+TAMIL NADU,River Valley and Hydroelectric Projects,in_process,4
+TAMIL NADU,River Valley and Hydroelectric Projects,tor_granted,7
+TAMIL NADU,Thermal Projects,dead,17
+TAMIL NADU,Thermal Projects,granted,14
+TAMIL NADU,Thermal Projects,tor_granted,3
+TELANGANA,Coal Mining,dead,8
+TELANGANA,Coal Mining,granted,25
+TELANGANA,Coal Mining,in_process,2
+TELANGANA,Coal Mining,tor_granted,5
+TELANGANA,INFRA-1,dead,4
+TELANGANA,INFRA-1,granted,4
+TELANGANA,INFRA-1,in_process,1
+TELANGANA,INFRA-1,tor_granted,7
+TELANGANA,INFRA-2,dead,199
+TELANGANA,INFRA-2,granted,935
+TELANGANA,INFRA-2,in_process,136
+TELANGANA,INFRA-2,tor_granted,332
+TELANGANA,Industrial Projects - 1,dead,16
+TELANGANA,Industrial Projects - 1,granted,30
+TELANGANA,Industrial Projects - 1,in_process,4
+TELANGANA,Industrial Projects - 1,tor_granted,27
+TELANGANA,Industrial Projects - 2,dead,6
+TELANGANA,Industrial Projects - 2,granted,20
+TELANGANA,Industrial Projects - 2,in_process,3
+TELANGANA,Industrial Projects - 2,tor_granted,5
+TELANGANA,Industrial Projects - 3,dead,30
+TELANGANA,Industrial Projects - 3,granted,64
+TELANGANA,Industrial Projects - 3,in_process,11
+TELANGANA,Industrial Projects - 3,tor_granted,25
+TELANGANA,Non-Coal Mining,dead,251
+TELANGANA,Non-Coal Mining,granted,1033
+TELANGANA,Non-Coal Mining,in_process,129
+TELANGANA,Non-Coal Mining,tor_granted,137
+TELANGANA,None,granted,1
+TELANGANA,None,in_process,100
+TELANGANA,River Valley and Hydroelectric Projects,dead,3
+TELANGANA,River Valley and Hydroelectric Projects,granted,1
+TELANGANA,River Valley and Hydroelectric Projects,tor_granted,6
+TELANGANA,Thermal Projects,dead,3
+TELANGANA,Thermal Projects,granted,2
+TELANGANA,Thermal Projects,tor_granted,1
+THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU,INFRA-2,dead,11
+THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU,INFRA-2,granted,26
+THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU,INFRA-2,in_process,8
+THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU,Industrial Projects - 1,dead,2
+THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU,Industrial Projects - 1,granted,2
+THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU,Industrial Projects - 1,tor_granted,1
+THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU,Industrial Projects - 2,dead,3
+THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU,Industrial Projects - 2,granted,3
+THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU,Industrial Projects - 2,in_process,1
+THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU,Industrial Projects - 2,tor_granted,2
+THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU,Industrial Projects - 3,tor_granted,1
+THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU,Non-Coal Mining,dead,6
+THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU,Non-Coal Mining,in_process,2
+TRIPURA,INFRA-2,in_process,4
+TRIPURA,Industrial Projects - 1,in_process,4
+TRIPURA,Industrial Projects - 2,dead,6
+TRIPURA,Industrial Projects - 2,granted,5
+TRIPURA,Industrial Projects - 2,in_process,20
+TRIPURA,Industrial Projects - 2,tor_granted,3
+TRIPURA,Non-Coal Mining,dead,6
+TRIPURA,Non-Coal Mining,granted,18
+TRIPURA,Non-Coal Mining,in_process,94
+TRIPURA,Thermal Projects,granted,1
+UTTAR PRADESH,Coal Mining,dead,2
+UTTAR PRADESH,Coal Mining,granted,7
+UTTAR PRADESH,Coal Mining,in_process,1
+UTTAR PRADESH,Coal Mining,tor_granted,2
+UTTAR PRADESH,INFRA-1,dead,10
+UTTAR PRADESH,INFRA-1,granted,10
+UTTAR PRADESH,INFRA-1,in_process,11
+UTTAR PRADESH,INFRA-1,tor_granted,31
+UTTAR PRADESH,INFRA-2,dead,132
+UTTAR PRADESH,INFRA-2,granted,520
+UTTAR PRADESH,INFRA-2,in_process,166
+UTTAR PRADESH,INFRA-2,tor_granted,163
+UTTAR PRADESH,Industrial Projects - 1,dead,16
+UTTAR PRADESH,Industrial Projects - 1,granted,40
+UTTAR PRADESH,Industrial Projects - 1,in_process,10
+UTTAR PRADESH,Industrial Projects - 1,tor_granted,38
+UTTAR PRADESH,Industrial Projects - 2,dead,18
+UTTAR PRADESH,Industrial Projects - 2,granted,74
+UTTAR PRADESH,Industrial Projects - 2,in_process,16
+UTTAR PRADESH,Industrial Projects - 2,tor_granted,56
+UTTAR PRADESH,Industrial Projects - 3,dead,9
+UTTAR PRADESH,Industrial Projects - 3,granted,26
+UTTAR PRADESH,Industrial Projects - 3,in_process,1
+UTTAR PRADESH,Industrial Projects - 3,tor_granted,27
+UTTAR PRADESH,Non-Coal Mining,dead,258
+UTTAR PRADESH,Non-Coal Mining,granted,1590
+UTTAR PRADESH,Non-Coal Mining,in_process,370
+UTTAR PRADESH,Non-Coal Mining,tor_granted,901
+UTTAR PRADESH,None,in_process,44
+UTTAR PRADESH,River Valley and Hydroelectric Projects,dead,11
+UTTAR PRADESH,River Valley and Hydroelectric Projects,in_process,6
+UTTAR PRADESH,River Valley and Hydroelectric Projects,tor_granted,20
+UTTAR PRADESH,Thermal Projects,dead,14
+UTTAR PRADESH,Thermal Projects,granted,6
+UTTAR PRADESH,Thermal Projects,in_process,3
+UTTAR PRADESH,Thermal Projects,tor_granted,3
+UTTARAKHAND,INFRA-1,dead,4
+UTTARAKHAND,INFRA-1,granted,18
+UTTARAKHAND,INFRA-2,dead,21
+UTTARAKHAND,INFRA-2,granted,130
+UTTARAKHAND,INFRA-2,in_process,8
+UTTARAKHAND,INFRA-2,tor_granted,22
+UTTARAKHAND,Industrial Projects - 1,dead,1
+UTTARAKHAND,Industrial Projects - 1,granted,14
+UTTARAKHAND,Industrial Projects - 1,in_process,3
+UTTARAKHAND,Industrial Projects - 1,tor_granted,7
+UTTARAKHAND,Industrial Projects - 2,dead,3
+UTTARAKHAND,Industrial Projects - 2,granted,10
+UTTARAKHAND,Industrial Projects - 2,in_process,1
+UTTARAKHAND,Industrial Projects - 2,tor_granted,6
+UTTARAKHAND,Industrial Projects - 3,dead,3
+UTTARAKHAND,Industrial Projects - 3,granted,55
+UTTARAKHAND,Industrial Projects - 3,in_process,2
+UTTARAKHAND,Industrial Projects - 3,tor_granted,4
+UTTARAKHAND,Non-Coal Mining,dead,75
+UTTARAKHAND,Non-Coal Mining,granted,331
+UTTARAKHAND,Non-Coal Mining,in_process,8
+UTTARAKHAND,Non-Coal Mining,tor_granted,113
+UTTARAKHAND,None,in_process,7
+UTTARAKHAND,River Valley and Hydroelectric Projects,dead,1
+UTTARAKHAND,River Valley and Hydroelectric Projects,granted,1
+UTTARAKHAND,River Valley and Hydroelectric Projects,in_process,1
+UTTARAKHAND,River Valley and Hydroelectric Projects,tor_granted,2
+UTTARAKHAND,Thermal Projects,granted,1
+UTTARAKHAND,Thermal Projects,in_process,2
+WEST BENGAL,Coal Mining,dead,7
+WEST BENGAL,Coal Mining,granted,7
+WEST BENGAL,Coal Mining,in_process,6
+WEST BENGAL,Coal Mining,tor_granted,11
+WEST BENGAL,INFRA-1,dead,5
+WEST BENGAL,INFRA-1,granted,3
+WEST BENGAL,INFRA-1,in_process,3
+WEST BENGAL,INFRA-1,tor_granted,7
+WEST BENGAL,INFRA-2,dead,37
+WEST BENGAL,INFRA-2,granted,160
+WEST BENGAL,INFRA-2,in_process,24
+WEST BENGAL,INFRA-2,tor_granted,43
+WEST BENGAL,Industrial Projects - 1,dead,95
+WEST BENGAL,Industrial Projects - 1,granted,102
+WEST BENGAL,Industrial Projects - 1,in_process,25
+WEST BENGAL,Industrial Projects - 1,tor_granted,75
+WEST BENGAL,Industrial Projects - 2,dead,21
+WEST BENGAL,Industrial Projects - 2,granted,26
+WEST BENGAL,Industrial Projects - 2,in_process,4
+WEST BENGAL,Industrial Projects - 2,tor_granted,7
+WEST BENGAL,Industrial Projects - 3,dead,5
+WEST BENGAL,Industrial Projects - 3,granted,20
+WEST BENGAL,Industrial Projects - 3,in_process,5
+WEST BENGAL,Industrial Projects - 3,tor_granted,25
+WEST BENGAL,Non-Coal Mining,dead,210
+WEST BENGAL,Non-Coal Mining,granted,380
+WEST BENGAL,Non-Coal Mining,in_process,110
+WEST BENGAL,Non-Coal Mining,tor_granted,320
+WEST BENGAL,None,in_process,50
+WEST BENGAL,River Valley and Hydroelectric Projects,tor_granted,1
+WEST BENGAL,Thermal Projects,dead,2
+WEST BENGAL,Thermal Projects,granted,4
+WEST BENGAL,Thermal Projects,in_process,2
+WEST BENGAL,Thermal Projects,tor_granted,3

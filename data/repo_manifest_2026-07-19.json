@@ -112,6 +112,14 @@
       ]
     },
     {
+      "title": "PARIVESH EC pipeline (IEM A-to-B leading indicator)",
+      "chart": "charts/parivesh_ec_pipeline.html",
+      "data": [
+        "data/parivesh_ec_pipeline_2026-07-19.json",
+        "data/parivesh_ec_state_sector_status_2026-07-19.csv"
+      ]
+    },
+    {
       "title": "FDI pitch deck (22 slides)",
       "chart": "fdi_pitch/fdi_pitch_deck.html",
       "data": [],

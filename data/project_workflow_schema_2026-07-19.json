@@ -1,44 +1,194 @@
 {
   "purpose": "The project's own architecture, documented: (1) the investment-lifecycle measurement schema -- which official data source measures which gate of a project's life from announcement to trade outcome, and where each source goes blind; (2) the full data-sourcing inventory with owners, access methods, and the bulletins each source feeds; (3) the working method -- how a research question becomes a verified bulletin, then derived outputs, then a maintained quarterly artifact. This is the map for anyone extending or refreshing the repo.",
   "retrieved": "2026-07-19",
-
   "investment_lifecycle_gates": [
-    {"gate": 1, "stage": "Announcement / MoU", "measured_by": "Press, state investment summits, PIB events", "reliability": "Lowest -- announcements routinely never materialize (RRPCL stuck at MoU for years). This repo treats announcements as claims to verify, never as data.", "blind_spot": "Everything; no official series tracks announcement-to-reality conversion."},
-    {"gate": 2, "stage": "Intent filed (IEM Part A)", "measured_by": "DPIIT IEM Part A -- Annual Report Appendices III/IV (state-wise, sector-wise)", "reliability": "Official, but intent only. Rs 28.4 lakh cr proposed 2021-2025. Threshold Rs 125cr P&M (from Apr 2025); manufacturing only; capital-source-blind (domestic + foreign combined).", "blind_spot": "No size band published; monthly series dead post-NSWS; 1951 taxonomy has no Electronics category."},
-    {"gate": 3, "stage": "Land + Environmental Clearance", "measured_by": "PARIVESH portal (EC/FC/CRZ) -- the gate BETWEEN intent and production; a project with land and EC is genuinely heading to implementation", "reliability": "Research pass in flight as of this document -- the newest layer being added. EC categories do not map 1:1 to IEM scheduled industries; state-level B-category ECs sit with SEIAAs.", "blind_spot": "Mapping limits under evaluation; the pipeline indicator is directional, not a register."},
-    {"gate": 4, "stage": "Commercial production (IEM Part B)", "measured_by": "DPIIT IEM Part B -- Appendices V/VI. Rs 19.52 lakh cr implemented 2021-2025; implementation ratio hit 109.9% in 2025", "reliability": "The best implementation series that exists -- and capital-source-blind, which makes it the right domestic+foreign combined measure.", "blind_spot": "No state-x-sector cross-tab; partial-year figures revise by lakh-crores; services excluded."},
-    {"gate": 5, "stage": "Incentive disbursal (PLI)", "measured_by": "PIB Parliament-answer releases (PRIDs), Lok Sabha/Rajya Sabha written replies, ministry annual reports, PRS budget-actuals", "reliability": "Fragmented but reconstructable: Rs 28,748cr total at 31 Dec 2025; per-scheme figures assembled from 4+ source types in the report card.", "blind_spot": "No consolidated per-scheme disbursal table is published anywhere; two schemes' zeros mean opposite things (Solar by design, ACC by failure)."},
-    {"gate": 6, "stage": "Foreign capital arrival (FDI equity)", "measured_by": "DPIIT quarterly factsheets + FDI newsletters (sector/state/country tables); RBI for reinvested-earnings basis", "reliability": "The only foreign-capital register -- $58.85bn equity FY26. But it measures FUNDING SOURCE, not activity.", "blind_spot": "State attribution by registered office (Jio/Gujarat proof); domestic capital structurally invisible (Assam $2.37M vs Rs 27,000cr project); no methodology documentation by DPIIT's own admission."},
-    {"gate": 7, "stage": "Trade outcome (imports substituted / exports grown)", "measured_by": "TRADESTAT chapter tables (FY values + growth); Exim Bank/MOCI aggregates as independent cross-check", "reliability": "Solid at chapter level; deficit figures cross-validated within 0.3% across chains.", "blind_spot": "Chapter level cannot separate scheme-caused from macro-caused moves -- which is why the verdicts carry named confounders."}
+    {
+      "gate": 1,
+      "stage": "Announcement / MoU",
+      "measured_by": "Press, state investment summits, PIB events",
+      "reliability": "Lowest -- announcements routinely never materialize (RRPCL stuck at MoU for years). This repo treats announcements as claims to verify, never as data.",
+      "blind_spot": "Everything; no official series tracks announcement-to-reality conversion."
+    },
+    {
+      "gate": 2,
+      "stage": "Intent filed (IEM Part A)",
+      "measured_by": "DPIIT IEM Part A -- Annual Report Appendices III/IV (state-wise, sector-wise)",
+      "reliability": "Official, but intent only. Rs 28.4 lakh cr proposed 2021-2025. Threshold Rs 125cr P&M (from Apr 2025); manufacturing only; capital-source-blind (domestic + foreign combined).",
+      "blind_spot": "No size band published; monthly series dead post-NSWS; 1951 taxonomy has no Electronics category."
+    },
+    {
+      "gate": 3,
+      "stage": "Land + Environmental Clearance",
+      "measured_by": "PARIVESH 2.0 open JSON API -- full national EC register (113,804 proposals, SEIAA included), extracted 19-Jul-2026",
+      "reliability": "NOW LIVE in this repo: 3,407 industrial ECs granted from 2022+ cohorts, flow accelerating (198 -> 734 -> 1,102/yr); ToR-granted = deepest forward signal. The most refresh-friendly source in the stack (one API call).",
+      "blind_spot": "EC categories don't map 1:1 to IEM industries; electronics/battery plants have no EC category of their own; no grant date in bulk record; one EC != one IEM-scale project."
+    },
+    {
+      "gate": 4,
+      "stage": "Commercial production (IEM Part B)",
+      "measured_by": "DPIIT IEM Part B -- Appendices V/VI. Rs 19.52 lakh cr implemented 2021-2025; implementation ratio hit 109.9% in 2025",
+      "reliability": "The best implementation series that exists -- and capital-source-blind, which makes it the right domestic+foreign combined measure.",
+      "blind_spot": "No state-x-sector cross-tab; partial-year figures revise by lakh-crores; services excluded."
+    },
+    {
+      "gate": 5,
+      "stage": "Incentive disbursal (PLI)",
+      "measured_by": "PIB Parliament-answer releases (PRIDs), Lok Sabha/Rajya Sabha written replies, ministry annual reports, PRS budget-actuals",
+      "reliability": "Fragmented but reconstructable: Rs 28,748cr total at 31 Dec 2025; per-scheme figures assembled from 4+ source types in the report card.",
+      "blind_spot": "No consolidated per-scheme disbursal table is published anywhere; two schemes' zeros mean opposite things (Solar by design, ACC by failure)."
+    },
+    {
+      "gate": 6,
+      "stage": "Foreign capital arrival (FDI equity)",
+      "measured_by": "DPIIT quarterly factsheets + FDI newsletters (sector/state/country tables); RBI for reinvested-earnings basis",
+      "reliability": "The only foreign-capital register -- $58.85bn equity FY26. But it measures FUNDING SOURCE, not activity.",
+      "blind_spot": "State attribution by registered office (Jio/Gujarat proof); domestic capital structurally invisible (Assam $2.37M vs Rs 27,000cr project); no methodology documentation by DPIIT's own admission."
+    },
+    {
+      "gate": 7,
+      "stage": "Trade outcome (imports substituted / exports grown)",
+      "measured_by": "TRADESTAT chapter tables (FY values + growth); Exim Bank/MOCI aggregates as independent cross-check",
+      "reliability": "Solid at chapter level; deficit figures cross-validated within 0.3% across chains.",
+      "blind_spot": "Chapter level cannot separate scheme-caused from macro-caused moves -- which is why the verdicts carry named confounders."
+    }
   ],
-
   "data_source_inventory": [
-    {"source": "DPIIT FDI factsheets & newsletters", "owner": "DPIIT", "measures": "FDI equity by sector/state/country (gate 6)", "feeds": "FDI-vs-PLI bulletin, verdict re-run, state tables", "access": "dpiit.gov.in publications page (JS SPA -- read in rendered browser; PDFs direct-fetch with browser UA)"},
-    {"source": "DPIIT Annual Report appendices III-VI", "owner": "DPIIT", "measures": "IEM Part A intent + Part B implementation (gates 2, 4)", "feeds": "State implementation table, IEM record grade, policy dashboard", "access": "Annual Report PDF; layout-preserving extraction, verify against Grand Total rows"},
-    {"source": "PIB Parliament-answer releases", "owner": "PIB (all ministries)", "measures": "PLI aggregates, disbursals, named companies (gate 5)", "feeds": "PLI report card, policy dashboard, companies ledger", "access": "curl with browser UA + redirects; cite PRID always; sector releases carry company names, cross-scheme roundups do not"},
-    {"source": "Lok Sabha / Rajya Sabha written replies", "owner": "Parliament / answering ministry", "measures": "Scheme-level figures ministries do not publish on their own sites (gate 5)", "feeds": "Report card gap-fills (MedDev Rs 157cr, Solar zero-by-design, Telecom actuals)", "access": "sansad.in PDFs via r.jina.ai proxy with ?source=pqars suffix; ministry sites often mirror; PIB summarizes with PRIDs"},
-    {"source": "Ministry annual reports (9 ministries)", "owner": "MeitY, Steel, MHI, DoP, DPIIT, Textiles, DCPC, MoCA, MoD", "measures": "Scheme status, committed-vs-actual, self-acknowledged challenges (gates 4-5)", "feeds": "Policy & investment dashboard", "access": "Direct PDFs; challenges live in annual reports and Standing Committee replies, never on scheme pages"},
-    {"source": "Parliamentary Standing Committee reports", "owner": "Lok Sabha/Rajya Sabha committees", "measures": "The ministry's own sworn admissions (fund surrenders, underutilization)", "feeds": "Dashboard challenge quotes (Semicon 23%/9% utilization; ACC 'massive disconnect')", "access": "sansad.in when TLS cooperates; the strongest primary source in the stack"},
-    {"source": "TRADESTAT chapter tables", "owner": "Ministry of Commerce", "measures": "Imports/exports by HS chapter, values + growth (gate 7)", "feeds": "Trade bulletins, growth-vs-volume analysis, action items", "access": "Extracted in the descriptive companion repo"},
-    {"source": "Exim Bank trackers (monthly)", "owner": "Exim Bank of India", "measures": "Independent trade/FDI aggregates + sector credit growth", "feeds": "Cross-validation panels (deficit within 0.3%; PLI-sector credit +22-26%)", "access": "eximbankindia.in/useful-economic-data, direct PDFs"},
-    {"source": "RBI / bank MCLR pages / bond data", "owner": "RBI, banks", "measures": "Cost-of-capital tiers", "feeds": "Domestic-vs-FDI capital case", "access": "RBI via PIB mirrors (rbi.org.in blocks automation); bank .bank.in rate pages"},
-    {"source": "ICRA sector outlook notes", "owner": "ICRA", "measures": "Credit-risk framing per sector", "feeds": "Capital case cross-check", "access": "icra.in press-release PDFs -- ALWAYS verify against the PDF (one fabricated claim was caught and retracted)"},
-    {"source": "MoSPI PAIMANA", "owner": "MoSPI IPMD", "measures": "Central Sector PUBLIC infrastructure only", "feeds": "Dashboard negative-result section (zero priority-sector coverage; useful for hub-enabling infrastructure only)", "access": "ipm.mospi.gov.in Flash Report PDFs"},
-    {"source": "AHIDF dashboard", "owner": "DAHD via Udyamimitra", "measures": "The transparency benchmark: nightly funnel-complete scheme dashboard", "feeds": "Dashboard counter-example; action item #6", "access": "Public Power BI embed, no login"},
-    {"source": "PARIVESH (EC/FC/CRZ)", "owner": "MoEFCC", "measures": "Gate 3 -- the intent-to-production pipeline", "feeds": "Pipeline bulletin (in flight)", "access": "JS SPA; hunt JSON APIs; legacy environmentclearance.nic.in often more scrapable"},
-    {"source": "IBEF / press / corporate filings", "owner": "various", "measures": "Cross-checks and identity fills only", "feeds": "Labeled non-primary fills (Lyfius/Kinvan/Meril identities)", "access": "Never laundered into primary attribution"}
+    {
+      "source": "DPIIT FDI factsheets & newsletters",
+      "owner": "DPIIT",
+      "measures": "FDI equity by sector/state/country (gate 6)",
+      "feeds": "FDI-vs-PLI bulletin, verdict re-run, state tables",
+      "access": "dpiit.gov.in publications page (JS SPA -- read in rendered browser; PDFs direct-fetch with browser UA)"
+    },
+    {
+      "source": "DPIIT Annual Report appendices III-VI",
+      "owner": "DPIIT",
+      "measures": "IEM Part A intent + Part B implementation (gates 2, 4)",
+      "feeds": "State implementation table, IEM record grade, policy dashboard",
+      "access": "Annual Report PDF; layout-preserving extraction, verify against Grand Total rows"
+    },
+    {
+      "source": "PIB Parliament-answer releases",
+      "owner": "PIB (all ministries)",
+      "measures": "PLI aggregates, disbursals, named companies (gate 5)",
+      "feeds": "PLI report card, policy dashboard, companies ledger",
+      "access": "curl with browser UA + redirects; cite PRID always; sector releases carry company names, cross-scheme roundups do not"
+    },
+    {
+      "source": "Lok Sabha / Rajya Sabha written replies",
+      "owner": "Parliament / answering ministry",
+      "measures": "Scheme-level figures ministries do not publish on their own sites (gate 5)",
+      "feeds": "Report card gap-fills (MedDev Rs 157cr, Solar zero-by-design, Telecom actuals)",
+      "access": "sansad.in PDFs via r.jina.ai proxy with ?source=pqars suffix; ministry sites often mirror; PIB summarizes with PRIDs"
+    },
+    {
+      "source": "Ministry annual reports (9 ministries)",
+      "owner": "MeitY, Steel, MHI, DoP, DPIIT, Textiles, DCPC, MoCA, MoD",
+      "measures": "Scheme status, committed-vs-actual, self-acknowledged challenges (gates 4-5)",
+      "feeds": "Policy & investment dashboard",
+      "access": "Direct PDFs; challenges live in annual reports and Standing Committee replies, never on scheme pages"
+    },
+    {
+      "source": "Parliamentary Standing Committee reports",
+      "owner": "Lok Sabha/Rajya Sabha committees",
+      "measures": "The ministry's own sworn admissions (fund surrenders, underutilization)",
+      "feeds": "Dashboard challenge quotes (Semicon 23%/9% utilization; ACC 'massive disconnect')",
+      "access": "sansad.in when TLS cooperates; the strongest primary source in the stack"
+    },
+    {
+      "source": "TRADESTAT chapter tables",
+      "owner": "Ministry of Commerce",
+      "measures": "Imports/exports by HS chapter, values + growth (gate 7)",
+      "feeds": "Trade bulletins, growth-vs-volume analysis, action items",
+      "access": "Extracted in the descriptive companion repo"
+    },
+    {
+      "source": "Exim Bank trackers (monthly)",
+      "owner": "Exim Bank of India",
+      "measures": "Independent trade/FDI aggregates + sector credit growth",
+      "feeds": "Cross-validation panels (deficit within 0.3%; PLI-sector credit +22-26%)",
+      "access": "eximbankindia.in/useful-economic-data, direct PDFs"
+    },
+    {
+      "source": "RBI / bank MCLR pages / bond data",
+      "owner": "RBI, banks",
+      "measures": "Cost-of-capital tiers",
+      "feeds": "Domestic-vs-FDI capital case",
+      "access": "RBI via PIB mirrors (rbi.org.in blocks automation); bank .bank.in rate pages"
+    },
+    {
+      "source": "ICRA sector outlook notes",
+      "owner": "ICRA",
+      "measures": "Credit-risk framing per sector",
+      "feeds": "Capital case cross-check",
+      "access": "icra.in press-release PDFs -- ALWAYS verify against the PDF (one fabricated claim was caught and retracted)"
+    },
+    {
+      "source": "MoSPI PAIMANA",
+      "owner": "MoSPI IPMD",
+      "measures": "Central Sector PUBLIC infrastructure only",
+      "feeds": "Dashboard negative-result section (zero priority-sector coverage; useful for hub-enabling infrastructure only)",
+      "access": "ipm.mospi.gov.in Flash Report PDFs"
+    },
+    {
+      "source": "AHIDF dashboard",
+      "owner": "DAHD via Udyamimitra",
+      "measures": "The transparency benchmark: nightly funnel-complete scheme dashboard",
+      "feeds": "Dashboard counter-example; action item #6",
+      "access": "Public Power BI embed, no login"
+    },
+    {
+      "source": "PARIVESH (EC/FC/CRZ)",
+      "owner": "MoEFCC",
+      "measures": "Gate 3 -- the intent-to-production pipeline",
+      "feeds": "EC pipeline bulletin; lifecycle schema gate 3",
+      "access": "OPEN JSON API (advanceSearchData) -- full register in one unauthenticated call, SEIAA included"
+    },
+    {
+      "source": "IBEF / press / corporate filings",
+      "owner": "various",
+      "measures": "Cross-checks and identity fills only",
+      "feeds": "Labeled non-primary fills (Lyfius/Kinvan/Meril identities)",
+      "access": "Never laundered into primary attribution"
+    }
   ],
-
   "working_method": [
-    {"step": 1, "name": "Frame the checkable question", "practice": "Every bulletin starts as a falsifiable question (did FDI rise after launch? is the incentive actually paid?) -- not a topic. The three-numbers rule: never conflate FDI inflow, committed investment, and disbursal."},
-    {"step": 2, "name": "Parallel primary-source research", "practice": "Fan out background agents per ministry/source with explicit instructions: primary over PIB, PIB over press; cite document+date+ID; flag gaps rather than estimate; known access workarounds included in the brief."},
-    {"step": 3, "name": "Verify before publishing", "practice": "Extract with layout preservation and check against the document's own Grand Total rows; cross-validate independent chains (repo deficit vs Exim within 0.3%); when an automated pass fabricates (ICRA steel), catch it against the source PDF and retract IN THE PUBLISHED BULLETIN."},
-    {"step": 4, "name": "Data JSON first, chart second", "practice": "Every bulletin is a sourced data JSON (data/) plus a chart page (charts/) in one design-token system; the JSON is the citable artifact, listed in repo_manifest and consumable by the report synthesizer."},
-    {"step": 5, "name": "State the judgment, show the evidence", "practice": "Grades and traffic lights are declared judgments with criteria; every row carries checkable evidence; revisions are displayed (A- -> B), never silently applied; confounders and negative results are published (MoSPI/IEM 'does not fit' sections)."},
-    {"step": 6, "name": "Derive, don't duplicate", "practice": "The master report JSON is the source of truth; the 22-slide deck, dashboards, PDF snapshots, and Word docs regenerate from data via the synthesizer and build_deck.sh pipeline. Templates in templates/ encode the formats."},
-    {"step": 7, "name": "Maintain on a cadence", "practice": "GitHub Actions quarterly workflow regenerates the tracked PDF snapshot and opens a re-verification issue from the ministry-by-ministry checklist; new dated data files supersede rather than overwrite; the manifest keeps everything enumerable."}
+    {
+      "step": 1,
+      "name": "Frame the checkable question",
+      "practice": "Every bulletin starts as a falsifiable question (did FDI rise after launch? is the incentive actually paid?) -- not a topic. The three-numbers rule: never conflate FDI inflow, committed investment, and disbursal."
+    },
+    {
+      "step": 2,
+      "name": "Parallel primary-source research",
+      "practice": "Fan out background agents per ministry/source with explicit instructions: primary over PIB, PIB over press; cite document+date+ID; flag gaps rather than estimate; known access workarounds included in the brief."
+    },
+    {
+      "step": 3,
+      "name": "Verify before publishing",
+      "practice": "Extract with layout preservation and check against the document's own Grand Total rows; cross-validate independent chains (repo deficit vs Exim within 0.3%); when an automated pass fabricates (ICRA steel), catch it against the source PDF and retract IN THE PUBLISHED BULLETIN."
+    },
+    {
+      "step": 4,
+      "name": "Data JSON first, chart second",
+      "practice": "Every bulletin is a sourced data JSON (data/) plus a chart page (charts/) in one design-token system; the JSON is the citable artifact, listed in repo_manifest and consumable by the report synthesizer."
+    },
+    {
+      "step": 5,
+      "name": "State the judgment, show the evidence",
+      "practice": "Grades and traffic lights are declared judgments with criteria; every row carries checkable evidence; revisions are displayed (A- -> B), never silently applied; confounders and negative results are published (MoSPI/IEM 'does not fit' sections)."
+    },
+    {
+      "step": 6,
+      "name": "Derive, don't duplicate",
+      "practice": "The master report JSON is the source of truth; the 22-slide deck, dashboards, PDF snapshots, and Word docs regenerate from data via the synthesizer and build_deck.sh pipeline. Templates in templates/ encode the formats."
+    },
+    {
+      "step": 7,
+      "name": "Maintain on a cadence",
+      "practice": "GitHub Actions quarterly workflow regenerates the tracked PDF snapshot and opens a re-verification issue from the ministry-by-ministry checklist; new dated data files supersede rather than overwrite; the manifest keeps everything enumerable."
+    }
   ],
-
   "known_failure_modes": [
     "Gov sites block automation inconsistently: 403s (PIB, meity, texmin -- browser UA fixes), TLS drops (sansad, pharma-dept, dot, mnre -- r.jina.ai route), dead SPAs (old SIA statistics), dead domains (pharmaceuticals.gov.in).",
     "Official numbers disagree with themselves: PIB outlay Rs 1.91 vs 1.97 lakh cr; DAHD vs Cabinet AHIDF outlay; DPIIT appendix headers Dec-vs-Nov over identical totals. Flag, never reconcile silently.",

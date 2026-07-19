@@ -13,6 +13,7 @@ Auto-opened by `.github/workflows/quarterly-dashboard-refresh.yml`. The PDF snap
 - [ ] **MoSPI PAIMANA** — latest Flash Report aggregates (was 1,941 projects, 15.64% implied cost overrun); whether "delayed" classification was reinstated (dropped after May 2025).
 
 - [ ] **PIB disbursal aggregates** — latest cross-scheme figures (was ₹28,748cr / 836 applications at 31 Dec 2025, PRID 2230621); scheme-wise disbursals (Electronics ₹15,554cr, Auto ₹2,377.56cr, Steel ₹48cr, ACC zero); any newer Parliament-answer PRIDs.
+- [ ] **PARIVESH EC pipeline** — re-pull the open API (`parivesh.nic.in/parivesh_api/trackYourProposal/advanceSearchData?majorClearanceType=1&...`), regenerate the state×sector×status aggregate, check flagship-project status changes (Dholera fab ToR→EC? Agratas ToR→EC? POSCO-JSW JV still absent? RRPCL still absent?).
 - [ ] **Exim Bank trackers** (eximbankindia.in/useful-economic-data) — 'India's International Trade and Investment' (monthly) for trade/FDI cross-validation; CEAT Industry Tracker for sector credit growth.
 
 ## Rate benchmarks (feeds the domestic-vs-FDI capital case too)
