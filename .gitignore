@@ -1,1 +1,4 @@
 .DS_Store
+reports/*.pdf
+reports/*.docx
+reports/*.pptx

@@ -1,0 +1,18 @@
+{
+  "purpose": "A single machine-readable index of every chart/data pair published in this repo -- the same list rendered as a table in the README, and the manifest the report synthesizer script (scripts/report_synthesizer.py) reads for batch operations. Update this file whenever a new bulletin is added; nothing else in the repo should need to enumerate charts/data by hand.",
+  "retrieved": "2026-07-19",
+  "entries": [
+    {"title": "Are import-dependent sectors getting government attention?", "chart": "charts/import_dependency_policy_gap_analysis.html", "data": ["data/import_dependency_policy_gap_analysis_2026-07-18.json"]},
+    {"title": "Where India's forex actually goes — country by country", "chart": "charts/country_trade_deficit_and_policy_history.html", "data": ["data/country_trade_deficit_and_policy_history_2026-07-18.json", "data/country_commodity_breakdown_2026-07-18.json"]},
+    {"title": "Priority trade partners by import-growth sector, and real PLI coverage", "chart": "charts/sector_country_priority_and_pli_coverage.html", "data": ["data/sector_country_priority_and_pli_coverage_2026-07-18.json"]},
+    {"title": "Priority export destinations by growth sector, and the export side of PLI", "chart": "charts/export_destination_priority_and_pli_coverage.html", "data": ["data/export_destination_priority_and_pli_coverage_2026-07-18.json"]},
+    {"title": "Sector & Policy Recommendations", "chart": "charts/sector_and_policy_recommendations.html", "data": ["data/sector_and_policy_recommendations_2026-07-18.json"]},
+    {"title": "Beyond PLI: state incentives and emergent state hubs", "chart": "charts/state_central_incentives_and_emergent_hubs.html", "data": ["data/state_central_incentives_and_emergent_hubs_2026-07-18.json"]},
+    {"title": "Top 10 FDI sectors: country strategies, game theory & the official tariff timeline", "chart": "charts/top10_sector_country_strategies.html", "data": ["data/top10_sector_country_strategies_2026-07-19.json"]},
+    {"title": "Did the money actually show up? FDI equity inflow vs. PLI scheme launch dates", "chart": "charts/fdi_vs_pli_launch_correlation.html", "data": ["data/fdi_vs_pli_launch_2026-07-19.json"]},
+    {"title": "Master sector scorecard", "chart": "charts/sector_master_scorecard.html", "data": ["data/sector_master_scorecard_2026-07-19.json"]},
+    {"title": "The case for domestic capital in some states, FDI in others", "chart": "charts/domestic_vs_fdi_capital_case.html", "data": ["data/domestic_vs_fdi_capital_case_2026-07-19.json"]},
+    {"title": "FDI pitch deck (20 slides)", "chart": "fdi_pitch/fdi_pitch_deck.html", "data": [], "exports": ["fdi_pitch/India_Trade_FDI_Pitch_Deck.pptx", "fdi_pitch/India_Trade_FDI_Pitch_Deck.pdf"]},
+    {"title": "FDI pitch — social post (5 funded sectors)", "chart": "fdi_pitch/social/fdi_pitch_post.html", "data": [], "exports": ["fdi_pitch/social/fdi_pitch_post.png"]}
+  ]
+}

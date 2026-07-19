@@ -1,0 +1,3 @@
+This directory is the default --out-dir for scripts/report_synthesizer.py.
+Generated PDF/DOCX/PPTX reports are gitignored (regeneratable build artifacts,
+not sourced content) -- run the synthesizer to populate it locally.

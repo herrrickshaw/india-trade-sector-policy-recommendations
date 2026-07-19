@@ -8,7 +8,7 @@ Both repos were originally one (`mospi-dataset-analysis`); they were split so th
 
 **Start here:** [Sector &amp; Policy Recommendations](#sector--policy-recommendations) is the capstone that ties everything below into tiered, actionable recommendations — including two findings validated against NITI Aayog's Trade Watch that don't appear anywhere else in this repo: a **CBAM export risk** ($20.7bn) and a **structurally declining export sector** (gems/jewellery, -29.9%).
 
-**Contents:** [Session findings](#session-findings-as-of-2026-07-18) · [Import policy gaps](#are-import-dependent-sectors-getting-government-attention) · [Country-by-country trade history](#where-indias-forex-actually-goes--country-by-country-with-a-decade-of-policy-history) · [Import partners &amp; PLI](#priority-trade-partners-by-import-growth-sector-and-real-pli-coverage) · [Export destinations &amp; PLI](#priority-export-destinations-by-growth-sector-and-the-export-side-of-pli) · [Sector &amp; Policy Recommendations](#sector--policy-recommendations) · [State &amp; central incentives, emergent hubs](#beyond-pli-state-incentives-and-emergent-state-hubs) · [Top 10 sectors: country strategies, game theory &amp; tariffs](#top-10-fdi-sectors-country-specific-strategies-a-game-theory-frame-and-the-official-tariff-timeline) · [Did the money show up? FDI vs. PLI launch dates](#did-the-money-actually-show-up-fdi-equity-inflow-vs-pli-scheme-launch-dates) · [Master sector scorecard](#master-sector-scorecard) · [Domestic capital vs. FDI, state by state](#the-case-for-domestic-capital-in-some-states-fdi-in-others) · [FDI pitch deck](#fdi-pitch-deck)
+**Contents:** [Session findings](#session-findings-as-of-2026-07-18) · [Import policy gaps](#are-import-dependent-sectors-getting-government-attention) · [Country-by-country trade history](#where-indias-forex-actually-goes--country-by-country-with-a-decade-of-policy-history) · [Import partners &amp; PLI](#priority-trade-partners-by-import-growth-sector-and-real-pli-coverage) · [Export destinations &amp; PLI](#priority-export-destinations-by-growth-sector-and-the-export-side-of-pli) · [Sector &amp; Policy Recommendations](#sector--policy-recommendations) · [State &amp; central incentives, emergent hubs](#beyond-pli-state-incentives-and-emergent-state-hubs) · [Top 10 sectors: country strategies, game theory &amp; tariffs](#top-10-fdi-sectors-country-specific-strategies-a-game-theory-frame-and-the-official-tariff-timeline) · [Did the money show up? FDI vs. PLI launch dates](#did-the-money-actually-show-up-fdi-equity-inflow-vs-pli-scheme-launch-dates) · [Master sector scorecard](#master-sector-scorecard) · [Domestic capital vs. FDI, state by state](#the-case-for-domestic-capital-in-some-states-fdi-in-others) · [FDI pitch deck](#fdi-pitch-deck) · [Data &amp; charts reference](#data--charts-reference) · [Report synthesizer](#report-synthesizer-json--pdfwordppt)
 
 ## Session findings (as of 2026-07-18)
 
@@ -131,6 +131,49 @@ Underlying data: [`data/domestic_vs_fdi_capital_case_2026-07-19.json`](https://h
 [`fdi_pitch/India_Trade_FDI_Pitch_Deck.pptx`](fdi_pitch/India_Trade_FDI_Pitch_Deck.pptx) (editable in PowerPoint/Keynote) / [`fdi_pitch/India_Trade_FDI_Pitch_Deck.pdf`](fdi_pitch/India_Trade_FDI_Pitch_Deck.pdf) (standalone PDF) — a 20-slide investor-facing deck built from the figures above, pitching six funded, PLI-backed sectors (Electronics &amp; Semiconductors, Specialty Steel, Auto/EV/Battery, Pharma APIs, White Goods components, Medical Devices) plus three unclaimed "ground floor" import-substitution opportunities (Inorganic Chemicals, Plastics, Aircraft &amp; Spacecraft) for foreign direct investment. Two slides summarise the [state &amp; central incentives bulletin](#beyond-pli-state-incentives-and-emergent-state-hubs) above; four more carry the [top-10-sector country-strategy analysis](#top-10-fdi-sectors-country-specific-strategies-a-game-theory-frame-and-the-official-tariff-timeline) — a country-strategy matrix, a Generalized Nash Equilibrium tariff-rate-quota frame, and the official 2025-2026 tariff timeline; one more carries the [master sector scorecard](#master-sector-scorecard) — a 10-tile traffic-light grid (2 green, 5 amber, 3 red); one more carries the [domestic-capital-vs-FDI rate case](#the-case-for-domestic-capital-in-some-states-fdi-in-others) — plus a risk slide (CBAM export exposure, currency volatility) rather than omitting known downsides. Source: [`fdi_pitch/fdi_pitch_deck.html`](https://herrrickshaw.github.io/india-trade-sector-policy-recommendations/fdi_pitch/fdi_pitch_deck.html) (20 fixed 1920×1080 canvases, one per slide) — both the PPTX and PDF are rendered from this HTML, one full-bleed image per slide, so re-editing text means editing the HTML and re-exporting, not typing directly into PowerPoint.
 
 **Social post version**: [`fdi_pitch/social/fdi_pitch_post.png`](fdi_pitch/social/fdi_pitch_post.png) — a single 1080×1080 square graphic condensing just the 5 funded, PLI-backed sectors (not the 3 "ground floor" ones) into one shareable image, for LinkedIn/X/Instagram rather than a full deck. Source: [`fdi_pitch/social/fdi_pitch_post.html`](https://herrrickshaw.github.io/india-trade-sector-policy-recommendations/fdi_pitch/social/fdi_pitch_post.html).
+
+## Data &amp; charts reference
+
+Every chart/data pair in this repo, in one table — the same list machine-readable at [`data/repo_manifest_2026-07-19.json`](https://herrrickshaw.github.io/india-trade-sector-policy-recommendations/data/repo_manifest_2026-07-19.json), which the [report synthesizer](#report-synthesizer-json--pdfwordppt) below reads for batch operations. Update that manifest whenever a new bulletin is added — nothing else in the repo should need to enumerate charts/data by hand.
+
+| Bulletin | Chart (HTML) | Data (JSON) |
+|---|---|---|
+| Are import-dependent sectors getting government attention? | [`import_dependency_policy_gap_analysis.html`](charts/import_dependency_policy_gap_analysis.html) | [`import_dependency_policy_gap_analysis_2026-07-18.json`](data/import_dependency_policy_gap_analysis_2026-07-18.json) |
+| Where India's forex actually goes — country by country | [`country_trade_deficit_and_policy_history.html`](charts/country_trade_deficit_and_policy_history.html) | [`country_trade_deficit_and_policy_history_2026-07-18.json`](data/country_trade_deficit_and_policy_history_2026-07-18.json), [`country_commodity_breakdown_2026-07-18.json`](data/country_commodity_breakdown_2026-07-18.json) |
+| Priority trade partners by import-growth sector, and real PLI coverage | [`sector_country_priority_and_pli_coverage.html`](charts/sector_country_priority_and_pli_coverage.html) | [`sector_country_priority_and_pli_coverage_2026-07-18.json`](data/sector_country_priority_and_pli_coverage_2026-07-18.json) |
+| Priority export destinations by growth sector, and the export side of PLI | [`export_destination_priority_and_pli_coverage.html`](charts/export_destination_priority_and_pli_coverage.html) | [`export_destination_priority_and_pli_coverage_2026-07-18.json`](data/export_destination_priority_and_pli_coverage_2026-07-18.json) |
+| Sector &amp; Policy Recommendations | [`sector_and_policy_recommendations.html`](charts/sector_and_policy_recommendations.html) | [`sector_and_policy_recommendations_2026-07-18.json`](data/sector_and_policy_recommendations_2026-07-18.json) |
+| Beyond PLI: state incentives and emergent state hubs | [`state_central_incentives_and_emergent_hubs.html`](charts/state_central_incentives_and_emergent_hubs.html) | [`state_central_incentives_and_emergent_hubs_2026-07-18.json`](data/state_central_incentives_and_emergent_hubs_2026-07-18.json) |
+| Top 10 FDI sectors: country strategies, game theory &amp; tariffs | [`top10_sector_country_strategies.html`](charts/top10_sector_country_strategies.html) | [`top10_sector_country_strategies_2026-07-19.json`](data/top10_sector_country_strategies_2026-07-19.json) |
+| Did the money actually show up? FDI vs. PLI launch dates | [`fdi_vs_pli_launch_correlation.html`](charts/fdi_vs_pli_launch_correlation.html) | [`fdi_vs_pli_launch_2026-07-19.json`](data/fdi_vs_pli_launch_2026-07-19.json) |
+| Master sector scorecard | [`sector_master_scorecard.html`](charts/sector_master_scorecard.html) | [`sector_master_scorecard_2026-07-19.json`](data/sector_master_scorecard_2026-07-19.json) |
+| Domestic capital vs. FDI, state by state | [`domestic_vs_fdi_capital_case.html`](charts/domestic_vs_fdi_capital_case.html) | [`domestic_vs_fdi_capital_case_2026-07-19.json`](data/domestic_vs_fdi_capital_case_2026-07-19.json) |
+| FDI pitch deck (20 slides) | [`fdi_pitch_deck.html`](fdi_pitch/fdi_pitch_deck.html) | — (exports: [`.pptx`](fdi_pitch/India_Trade_FDI_Pitch_Deck.pptx), [`.pdf`](fdi_pitch/India_Trade_FDI_Pitch_Deck.pdf)) |
+| FDI pitch — social post | [`fdi_pitch_post.html`](fdi_pitch/social/fdi_pitch_post.html) | — (export: [`.png`](fdi_pitch/social/fdi_pitch_post.png)) |
+
+## Report synthesizer (JSON → PDF/Word/PPT)
+
+[`scripts/report_synthesizer.py`](scripts/report_synthesizer.py) — turns any data JSON in this repo (or a new one you drop in, following the same loose "purpose/sectors/findings" shape) into a standalone **PDF**, **Word (.docx)**, and **PowerPoint (.pptx)** report, so that when the underlying figures get refreshed, anyone using this repo can regenerate a shareable report without hand-building slides. Two modes:
+
+- **`--html <chart.html>`** — renders the paired chart bulletin exactly as designed via headless Chrome's print-to-PDF, for a PDF that matches the published page pixel-for-pixel.
+- **JSON-only (no `--html`)** — walks the JSON generically (nested objects become headings and subsections, lists of similarly-shaped objects become tables, lists of strings become bullets) to build the Word and PowerPoint versions, and a plain PDF if no HTML is available. This is deliberately schema-agnostic: it doesn't need per-bulletin templates, so it keeps working as new bulletins with new JSON shapes are added.
+
+```bash
+cd scripts
+pip install -r requirements.txt      # python-docx, python-pptx, pypdf
+python3 report_synthesizer.py ../data/fdi_vs_pli_launch_2026-07-19.json \
+  --html ../charts/fdi_vs_pli_launch_correlation.html \
+  --formats pdf,docx,pptx \
+  --out-dir ../reports/
+```
+
+Or batch-run every bulletin in the repo via the manifest:
+
+```bash
+python3 report_synthesizer.py --manifest ../data/repo_manifest_2026-07-19.json --formats pdf,docx,pptx --out-dir ../reports/
+```
+
+See the script's own header comment for the full CLI and the JSON-shape conventions it expects.
 
 ## Methodology notes
 
