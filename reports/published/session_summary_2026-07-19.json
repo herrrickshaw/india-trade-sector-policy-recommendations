@@ -381,6 +381,19 @@
     "Snapshot-diff mechanics proven: same-day re-run compared against the afternoon snapshot and caught the state flip -- exactly the behavior the Monday runs will exhibit week-over-week.",
     "Evidence committed and pushed. Next scheduled firings: daily PIB 07:17 tomorrow; weekly Monday 27-Jul 08:23."
    ]
+  },
+  {
+   "phase": "50",
+   "title": "Interlinkage graph verified against Drishti IAS + 6 other IAS sources -- 12 confirmed, 3 resolved, 1 disputed, NIPU-2026 vindicated",
+   "repo": "digital-twin-for-ipa (layers/10_interlinkages.json: verification block, 12 new edges, 3 corrections)",
+   "headline_finding": "Two agents checked all 23 edges' RELATIONSHIP claims against drishtiias.com and vajiram/pwonlyias/insights/clearias/forumias/nextias/visionias. Twelve edges confirmed (AIF-PMFME 'over and above the 35% subsidy' verbatim on two source families; ECMS-ISM boundary; RoDTEP halt-and-restoration; RDI two-tier design; SIGHT fertilizer offtake; UCF leverage; KUSUM-SuryaGhar; Gati Shakti fundless meta-layer; UP state top-up stacking). Best result: NIPU-2026 -- Drishti concluded our register entry was a mis-entry (truncated 'NIPUN'), but the PIB register proves the acronym is OFFICIAL, in the Cabinet release title itself (PRID 2284800, 15-Jul-2026, National Investment Policy for Urea-2026). The aggregators are five days behind the primary source -- recorded as the standing demonstration of why register entries never get dropped on aggregator silence.",
+   "details": [
+    "Resolved: (1) ECMS-MPMS boundary -- finished phones (sales-linked 2.25-5%) vs component layer, coupled by MPMS's +1.5% domestic-sourcing bonus, reclassified as a feeds edge; (2) shipbuilding arithmetic -- two independent sources corroborate IIF Rs 5,000cr sitting INSIDE MDF Rs 25,000cr (MIF 20,000 equity + IIF 5,000), so 24,736+25,000+19,989 = 69,725 exactly and our 74,725 reading is superseded (displayed correction).",
+    "Downgraded to DISPUTED: coal-gasification incentive percentage -- the secondary sources contradict EACH OTHER (Drishti: 20% of P&M in 4 instalments for the Rs 8,500cr scheme; PWOnlyIAS: 15% of capex or lump sum whichever lower in 2 instalments from the same Feb-2024 guidelines; VisionIAS-family ties 20%/4 to the separate Rs 37,500cr surface-gasification scheme). No percentage will be cited until read from the coal.gov.in guideline PDF.",
+    "Still open: SEZ+PLI eligibility (no source resolves it; new context: SEZ Rule 18 amended Apr-2026 allowing DTA sales for semiconductor/component SEZ units). Silent-but-unopposed: same-capex PLI+SPECS stacking (sole anchor remains the OFFICIAL MeitY FAQ Clause 3.6) and EPCG+PLI.",
+    "12 new edges added (all SECONDARY): strongest is PM E-DRIVE's stackability with PLI-Auto/PLI-ACC written INTO the scheme terms ('independent of and in addition to'); plus MPMS->ECMS demand-pull, ECMS as horizontal enabler across the 6-scheme electronics stack, AIF's GENERAL convergence clause (any Central/State scheme), AIF+CGTMSE and AHIDF+CGS guarantee layers, EBP GST-cut tax stack, RDI's nested FoF third layer, UP-Semiconductor||ISM per-layer state top-ups, MEIS->RoDTEP lineage, proposed gasification GST-cess reimbursement, and one flagged-for-verification possible ELI->PM-VBRY rename.",
+    "Status corrections: ISM 2.0's Rs 1,000cr (PRS layer) clarified as the FY27 operational allocation only -- approved Semicon 2.0 outlay is Rs 1.27 lakh cr (Cabinet 15-Jul-2026), consistent with catalog v1. Spot-checks confirmed: E-DRIVE e-2W to 31-Jul-2026, MPMS Rs 62,500cr, ECMS 22,919->40,000 sequence. RDI first disbursals: no source reports money reaching fund managers yet (nothing later than Nov-2025)."
+   ]
   }
  ],
  "cross_cutting_insights": [
@@ -412,5 +425,5 @@
   "scripts/report_synthesizer.py -- the JSON-to-PDF/Word/PPT tool described in phase 9 above, the newest piece of session infrastructure and the one used to generate this very document.",
   "data/repo_manifest_2026-07-19.json -- machine-readable index of every chart/data pair, consumed both by the README's reference table and by the synthesizer's batch mode."
  ],
- "current_status": "All 49 phases logged across four public repos. The twin's automation is verified in production conditions: the exact cron pipeline ran end-to-end and caught a real portal-recovery event, delivering the alert email unprompted. System fully operational; next firings are on the installed schedule."
+ "current_status": "All 50 phases logged across four public repos. The interlinkage graph is now source-verified edge-by-edge: 12 confirmed, 2 resolved, 1 vindicated against the aggregators (NIPU-2026), 1 honestly disputed pending the official PDF, 1 still open (SEZ+PLI), and 12 new edges added -- on top of the operationally-live automation loop."
 }
