@@ -1,0 +1,883 @@
+{
+ "purpose": "Extends the beyond-PLI analysis to five years: every incentive-scheme launch in India's Cabinet-decision register 2021-2025 (plus the 2026 YTD register already analyzed), classified by sector and instrument type, with outlays and PRIDs. Built by five parallel classification agents over the repo's PIB index (data/pib_index.sqlite, 83,734 releases 2020-2026). Tests whether 2026's pivot away from production-linked design is a trend or a blip.",
+ "retrieved": "2026-07-19",
+ "method": "Five parallel year-backfills of the PIB day-wise register (one request per day, all ministries via the day page's ministry grouping) merged into the index; five classification agents each swept their year's 'Cabinet approves' rows (~178-257 per year), deduplicated multi-PRID postings, excluded routine decisions (road/rail sanctions, MSP/DA fixations, plain continuations), and fetched detail pages for outlays. 2026 rows come from the beyond_pli_incentives bulletin.",
+ "headline": "The pivot away from production-linked design is a five-year trend, not a 2026 blip: NEW production-linked scheme launches fell 11 (2021) to 1 (2022) to 1 (2023) to 0 (2024) to 2 (2025, both hybrids) -- and even at the 2021 peak, production-linked outlay was only 11.2% of newly committed money. The 'linked' payout base itself migrated: production-linked (2021) to design-linked to EMPLOYMENT-linked (ELI 2025, Rs 99,446cr -- larger than any single PLI scheme).",
+ "yearly_summary": [
+  {
+   "year": 2021,
+   "era": "The PLI big bang -- plus the quiet mission money",
+   "launches": 25,
+   "pli_family": 12,
+   "new_production_linked_schemes": 11,
+   "classified_outlay_crore": 1047631,
+   "production_linked_share_pct": 11.2,
+   "signature": "11 PLI schemes launched (telecom, IT-hardware, pharma, food, solar, white goods, ACC, steel, textiles, auto, drones) + Semicon India Rs 76,000cr -- but RDSS Rs 3.04L cr, AMRUT 2.0 Rs 2.77L cr and SBM-U 2.0 Rs 1.42L cr carried 6x the money"
+  },
+  {
+   "year": 2022,
+   "era": "Rescue & consolidation",
+   "launches": 11,
+   "pli_family": 1,
+   "new_production_linked_schemes": 1,
+   "classified_outlay_crore": 316550,
+   "production_linked_share_pct": 6.2,
+   "signature": "BSNL revival Rs 1.64L cr, ECLGS +Rs 50,000cr, agri interest subvention Rs 34,856cr; only solar PLI Tranche-II was new PLI; Biofuels amendment pulled E20 forward to 2025-26"
+  },
+  {
+   "year": 2023,
+   "era": "Missions & viability-gap funding arrive",
+   "launches": 10,
+   "pli_family": 1,
+   "new_production_linked_schemes": 1,
+   "classified_outlay_crore": 122848,
+   "production_linked_share_pct": 13.8,
+   "signature": "Green Hydrogen Mission Rs 19,744cr (SIGHT = PLI-like), BESS VGF, PM-eBus Sewa VGF Rs 20,000cr central, PM Vishwakarma, Quantum Mission; IT-hardware PLI 2.0 the lone PLI"
+  },
+  {
+   "year": 2024,
+   "era": "The capex-subsidy year -- zero new PLI",
+   "launches": 17,
+   "pli_family": 0,
+   "new_production_linked_schemes": 0,
+   "classified_outlay_crore": 178415,
+   "production_linked_share_pct": 0.0,
+   "signature": "Four ISM semiconductor units approved (Rs 1.29L cr investment), PM-Surya Ghar Rs 75,021cr rooftop capex subsidy, offshore wind VGF, PM E-DRIVE Rs 10,900cr demand-side, NMEO-Oilseeds, 12 industrial cities, space VC fund, BioE3"
+  },
+  {
+   "year": 2025,
+   "era": "Funds & mega-packages; the payout base migrates to jobs",
+   "launches": 13,
+   "pli_family": 2,
+   "new_production_linked_schemes": 2,
+   "classified_outlay_crore": 393670,
+   "production_linked_share_pct": 7.7,
+   "signature": "RDI fund Rs 1L cr, ELI Rs 99,446cr (employment-linked!), shipbuilding package Rs 69,725cr, Critical Mineral Mission Rs 34,300cr, Export Promotion Mission Rs 25,060cr + CGSE Rs 20,000cr; ECMS and REPM the two (hybrid) production-linked entries"
+  },
+  {
+   "year": 2026,
+   "era": "De-risking inputs (YTD)",
+   "launches": 17,
+   "pli_family": 0,
+   "new_production_linked_schemes": 0,
+   "classified_outlay_crore": 190000,
+   "production_linked_share_pct": 0.0,
+   "signature": "Per the beyond-PLI bulletin: Urban Challenge Fund Rs 1L cr, gasification VGF Rs 37,500cr, BHAVYA Rs 33,660cr parks, BMI insurance pool, NIPU-2026, ECLGS 5.0 -- land/credit/risk instruments; MPMS (PLI-LSEM successor) the only output-linked entry"
+  }
+ ],
+ "cross_cutting_findings": [
+  "Production-linked was never where the money was: even in 2021, the 11 PLI launches (Rs 1.17L cr) were 11.2% of the year's Rs 10.5L cr of classified new commitments -- infra missions (RDSS, AMRUT 2.0, SBM-U 2.0) carried 6x the outlay with none of the narrative.",
+  "The 'linked' design migrated from output to inputs to jobs: production-linked (2021) -> design-linked (DLI, semicon) -> employment-linked (ELI 2025, Rs 99,446cr, larger than any single PLI) -> 2026's pure de-risking instruments.",
+  "Coal gasification shows the escalation pattern for a repo-flagged gap: Rs 8,500cr incentive (Jan 2024, PRID 1999219) -> Rs 37,500cr scheme (May 2026, PRID 2260621) -- a 4.4x escalation on the same import-substitution target within 28 months.",
+  "A critical-minerals chain assembled in under a year (2025): National Critical Mineral Mission Rs 34,300cr (Jan) + recycling incentive Rs 1,500cr (Sep) + rare-earth magnets Rs 7,280cr (Nov) -- the new import-substitution frontier, upstream of every PLI sector's supply chain.",
+  "Maritime became a package sector without ever getting a PLI: flagging subsidy Rs 1,624cr (2021) -> Vadinar ship repair (2026) -> Rs 69,725cr shipbuilding package + Rs 12,980cr BMI insurance pool -- consistent with the trade analysis' freight/insurance exposure findings.",
+  "Ethanol's instrument trail is visible end-to-end in the register: Biofuels amendment advancing E20 (2022, PRID 1826265) -> procurement mechanism (2025, PRID 2097305) -- the precedent the abstract's Act 3 documents, running on offtake+pricing, never a PLI.",
+  "Caveat: counts and outlays are Cabinet gate-1 commitments; multi-year outlays are not annualized and mission totals mix central/state/market shares. Grand totals are indicative, not additive fiscal cost."
+ ],
+ "yearly_detail": {
+  "2021": {
+   "year": 2021,
+   "total_cabinet_rows": 257,
+   "unique_decisions": 137,
+   "routine_excluded": 113,
+   "launches": [
+    {
+     "scheme": "PLI Scheme for Telecom and Networking Products",
+     "date": "2021-02-17",
+     "prid": 1698685,
+     "sector": "telecom",
+     "instrument_type": "production-linked",
+     "outlay_crore": 12195,
+     "pli_family": true
+    },
+    {
+     "scheme": "PLI Scheme for IT Hardware",
+     "date": "2021-02-24",
+     "prid": 1700425,
+     "sector": "electronics/semiconductors",
+     "instrument_type": "production-linked",
+     "outlay_crore": 7350,
+     "pli_family": true
+    },
+    {
+     "scheme": "PLI Scheme for Pharmaceuticals",
+     "date": "2021-02-24",
+     "prid": 1700433,
+     "sector": "pharma",
+     "instrument_type": "production-linked",
+     "outlay_crore": 15000,
+     "pli_family": true
+    },
+    {
+     "scheme": "PLI Scheme for Food Processing Industry",
+     "date": "2021-03-31",
+     "prid": 1708691,
+     "sector": "food-processing",
+     "instrument_type": "production-linked",
+     "outlay_crore": 10900,
+     "pli_family": true
+    },
+    {
+     "scheme": "PLI High Efficiency Solar PV Modules",
+     "date": "2021-04-07",
+     "prid": 1710113,
+     "sector": "solar/renewables",
+     "instrument_type": "production-linked",
+     "outlay_crore": 4500,
+     "pli_family": true
+    },
+    {
+     "scheme": "PLI Scheme for White Goods (ACs & LED)",
+     "date": "2021-04-07",
+     "prid": 1710116,
+     "sector": "white-goods",
+     "instrument_type": "production-linked",
+     "outlay_crore": 6238,
+     "pli_family": true
+    },
+    {
+     "scheme": "PLI ACC Battery Storage",
+     "date": "2021-05-12",
+     "prid": 1717938,
+     "sector": "auto/EV",
+     "instrument_type": "production-linked",
+     "outlay_crore": 18100,
+     "pli_family": true
+    },
+    {
+     "scheme": "Deep Ocean Mission",
+     "date": "2021-06-16",
+     "prid": 1727525,
+     "sector": "other",
+     "instrument_type": "mission",
+     "outlay_crore": 4077,
+     "pli_family": false
+    },
+    {
+     "scheme": "LGSCAS + ECLGS corpus enhancement",
+     "date": "2021-06-30",
+     "prid": 1731454,
+     "sector": "MSME/credit",
+     "instrument_type": "credit-guarantee",
+     "outlay_crore": 50000,
+     "pli_family": false
+    },
+    {
+     "scheme": "BharatNet PPP VGF (16 states)",
+     "date": "2021-06-30",
+     "prid": 1731456,
+     "sector": "telecom",
+     "instrument_type": "viability-gap",
+     "outlay_crore": 19041,
+     "pli_family": false
+    },
+    {
+     "scheme": "Revamped Distribution Sector Scheme (RDSS)",
+     "date": "2021-06-30",
+     "prid": 1731473,
+     "sector": "fuels/energy",
+     "instrument_type": "infra-package",
+     "outlay_crore": 303758,
+     "pli_family": false
+    },
+    {
+     "scheme": "Merchant ship flagging promotion subsidy",
+     "date": "2021-07-14",
+     "prid": 1735373,
+     "sector": "maritime/shipping",
+     "instrument_type": "other",
+     "outlay_crore": 1624,
+     "pli_family": false
+    },
+    {
+     "scheme": "Special Livestock Sector Package",
+     "date": "2021-07-14",
+     "prid": 1735379,
+     "sector": "agriculture",
+     "instrument_type": "other",
+     "outlay_crore": 9800,
+     "pli_family": false
+    },
+    {
+     "scheme": "PLI Scheme for Specialty Steel",
+     "date": "2021-07-22",
+     "prid": 1737722,
+     "sector": "steel",
+     "instrument_type": "production-linked",
+     "outlay_crore": 6322,
+     "pli_family": true
+    },
+    {
+     "scheme": "NMEO-Oil Palm",
+     "date": "2021-08-18",
+     "prid": 1746942,
+     "sector": "agriculture",
+     "instrument_type": "mission",
+     "outlay_crore": 11040,
+     "pli_family": false
+    },
+    {
+     "scheme": "PLI Scheme for Textiles (MMF + technical)",
+     "date": "2021-09-08",
+     "prid": 1753118,
+     "sector": "textiles",
+     "instrument_type": "production-linked",
+     "outlay_crore": 10683,
+     "pli_family": true
+    },
+    {
+     "scheme": "PLI Automobile & Auto Components",
+     "date": "2021-09-15",
+     "prid": 1755062,
+     "sector": "auto/EV",
+     "instrument_type": "production-linked",
+     "outlay_crore": 25938,
+     "pli_family": true
+    },
+    {
+     "scheme": "PLI Drones & Drone Components",
+     "date": "2021-09-15",
+     "prid": 1755062,
+     "sector": "drones",
+     "instrument_type": "production-linked",
+     "outlay_crore": 120,
+     "pli_family": true
+    },
+    {
+     "scheme": "Telecom Structural Reforms Package",
+     "date": "2021-09-15",
+     "prid": 1755086,
+     "sector": "telecom",
+     "instrument_type": "other",
+     "outlay_crore": null,
+     "pli_family": false
+    },
+    {
+     "scheme": "NARCL Security Receipts guarantee (bad bank)",
+     "date": "2021-09-15",
+     "prid": 1755511,
+     "sector": "other",
+     "instrument_type": "credit-guarantee",
+     "outlay_crore": 30600,
+     "pli_family": false
+    },
+    {
+     "scheme": "PM MITRA - 7 mega textile parks",
+     "date": "2021-10-06",
+     "prid": 1761408,
+     "sector": "textiles",
+     "instrument_type": "infra-package",
+     "outlay_crore": 4445,
+     "pli_family": false
+    },
+    {
+     "scheme": "AMRUT 2.0",
+     "date": "2021-10-12",
+     "prid": 1763350,
+     "sector": "infrastructure/urban",
+     "instrument_type": "mission",
+     "outlay_crore": 277000,
+     "pli_family": false
+    },
+    {
+     "scheme": "Swachh Bharat Mission (Urban) 2.0",
+     "date": "2021-10-12",
+     "prid": 1763354,
+     "sector": "infrastructure/urban",
+     "instrument_type": "mission",
+     "outlay_crore": 141600,
+     "pli_family": false
+    },
+    {
+     "scheme": "Semicon India programme",
+     "date": "2021-12-15",
+     "prid": 1781723,
+     "sector": "electronics/semiconductors",
+     "instrument_type": "capex-subsidy",
+     "outlay_crore": 76000,
+     "pli_family": true
+    },
+    {
+     "scheme": "RuPay/BHIM-UPI P2M incentive",
+     "date": "2021-12-15",
+     "prid": 1781727,
+     "sector": "other",
+     "instrument_type": "other",
+     "outlay_crore": 1300,
+     "pli_family": false
+    }
+   ]
+  },
+  "2022": {
+   "year": 2022,
+   "total_cabinet_rows": 208,
+   "unique_decisions": 109,
+   "routine_excluded": 98,
+   "launches": [
+    {
+     "scheme": "Intra-State Transmission System \u2013 Green Energy Corridor Phase-II",
+     "date": "2022-01-06",
+     "prid": 1788010,
+     "sector": "solar/renewables",
+     "instrument_type": "capex-subsidy",
+     "outlay_crore": 12031.33,
+     "outlay_text": "Rs.12,031.33 crore total; Central Financial Assistance 33% = Rs.3,970.34 crore",
+     "pli_family": false,
+     "note": "New Phase-II tranche; 10,750 ckm lines in 7 states for 450GW RE target"
+    },
+    {
+     "scheme": "Equity infusion of Rs.1,500 crore in IREDA",
+     "date": "2022-01-19",
+     "prid": 1790941,
+     "sector": "solar/renewables",
+     "instrument_type": "fund",
+     "outlay_crore": 1500,
+     "outlay_text": "Rs.1,500 crore equity infusion",
+     "pli_family": false,
+     "note": "Capitalizes renewable-energy lender to expand green project financing capacity"
+    },
+    {
+     "scheme": "Raising and Accelerating MSME Performance (RAMP)",
+     "date": "2022-03-30",
+     "prid": 1811360,
+     "sector": "MSME/credit",
+     "instrument_type": "other",
+     "outlay_crore": 6062.45,
+     "outlay_text": "Rs.6,062.45 crore (USD 808 million; USD 500M World Bank loan + USD 308M GoI)",
+     "pli_family": false,
+     "note": "New World Bank-assisted MSME competitiveness and market/credit access programme"
+    },
+    {
+     "scheme": "Amendments to National Policy on Biofuels-2018",
+     "date": "2022-05-18",
+     "prid": 1826265,
+     "sector": "fuels/energy",
+     "instrument_type": "investment-policy",
+     "outlay_crore": null,
+     "outlay_text": "No outlay; policy amendment",
+     "pli_family": false,
+     "note": "E20 blending advanced to 2025-26; more feedstocks; export permitted"
+    },
+    {
+     "scheme": "BSNL revival package",
+     "date": "2022-07-27",
+     "prid": 1845422,
+     "sector": "telecom",
+     "instrument_type": "infra-package",
+     "outlay_crore": 164000,
+     "outlay_text": "Rs.1.64 lakh crore",
+     "pli_family": false,
+     "note": "Third revival package: spectrum allotment, capex, debt restructuring for BSNL"
+    },
+    {
+     "scheme": "Interest subvention of 1.5% on short-term agriculture loans up to Rs.3 lakh",
+     "date": "2022-08-17",
+     "prid": 1852523,
+     "sector": "agriculture",
+     "instrument_type": "interest-subvention",
+     "outlay_crore": 34856,
+     "outlay_text": "Rs.34,856 crore for 2022-23 to 2024-25",
+     "pli_family": false,
+     "note": "Restored subvention to lenders with fresh three-year budgetary support"
+    },
+    {
+     "scheme": "Enhancement of Emergency Credit Line Guarantee Scheme corpus",
+     "date": "2022-08-17",
+     "prid": 1852527,
+     "sector": "MSME/credit",
+     "instrument_type": "credit-guarantee",
+     "outlay_crore": 50000,
+     "outlay_text": "Corpus enhanced by Rs.50,000 crore to Rs.5 lakh crore limit",
+     "pli_family": false,
+     "note": "Additional guarantee cover earmarked exclusively for hospitality and related sectors"
+    },
+    {
+     "scheme": "PLI Scheme Tranche-II on High Efficiency Solar PV Modules",
+     "date": "2022-09-21",
+     "prid": 1861127,
+     "sector": "solar/renewables",
+     "instrument_type": "production-linked",
+     "outlay_crore": 19500,
+     "outlay_text": "Rs.19,500 crore outlay",
+     "pli_family": true,
+     "note": "Targets 65 GW integrated module manufacturing capacity; Rs.94,000 crore investment expected"
+    },
+    {
+     "scheme": "Modifications to Programme for Development of Semiconductors and Display Manufacturing Ecosystem",
+     "date": "2022-09-21",
+     "prid": 1861129,
+     "sector": "electronics/semiconductors",
+     "instrument_type": "capex-subsidy",
+     "outlay_crore": null,
+     "outlay_text": "Uniform 50% fiscal support of project cost across all nodes; within existing Rs.76,000 crore programme",
+     "pli_family": false,
+     "note": "Raised incentives to flat 50%, added discrete/compound fabs and packaging"
+    },
+    {
+     "scheme": "Prime Minister's Development Initiative for North East Region (PM-DevINE)",
+     "date": "2022-10-12",
+     "prid": 1867079,
+     "sector": "infrastructure/urban",
+     "instrument_type": "mission",
+     "outlay_crore": 6600,
+     "outlay_text": "Rs.6,600 crore for 2022-23 to 2025-26",
+     "pli_family": false,
+     "note": "New central-sector scheme funding NE infrastructure and livelihood projects"
+    },
+    {
+     "scheme": "One-time grant to PSU OMCs for domestic LPG losses",
+     "date": "2022-10-12",
+     "prid": 1867085,
+     "sector": "fuels/energy",
+     "instrument_type": "other",
+     "outlay_crore": 22000,
+     "outlay_text": "Rs.22,000 crore one-time grant",
+     "pli_family": false,
+     "note": "Sectoral support package compensating oil companies for below-cost LPG sales"
+    }
+   ]
+  },
+  "2023": {
+   "year": 2023,
+   "total_cabinet_rows": 178,
+   "unique_decisions": 93,
+   "routine_excluded": 83,
+   "launches": [
+    {
+     "scheme": "National Green Hydrogen Mission",
+     "date": "2023-01-04",
+     "prid": 1888545,
+     "sector": "fuels/energy",
+     "instrument_type": "mission",
+     "outlay_crore": 19744,
+     "outlay_text": "Initial outlay Rs.19,744 crore, including Rs.17,490 crore for SIGHT incentive programme",
+     "pli_family": false,
+     "note": "5 MMT/yr green hydrogen by 2030; SIGHT gives PLI-like production incentives"
+    },
+    {
+     "scheme": "Incentive scheme for promotion of RuPay Debit Cards and low-value BHIM-UPI transactions (P2M)",
+     "date": "2023-01-11",
+     "prid": 1890312,
+     "sector": "other",
+     "instrument_type": "other",
+     "outlay_crore": 2600,
+     "outlay_text": "Financial outlay of Rs.2,600 crore for FY 2022-23",
+     "pli_family": false,
+     "note": "Pays acquiring banks per-transaction incentives; FY2022-23 tranche of payments-promotion scheme"
+    },
+    {
+     "scheme": "National Quantum Mission",
+     "date": "2023-04-19",
+     "prid": 1917888,
+     "sector": "other",
+     "instrument_type": "mission",
+     "outlay_crore": 6003.65,
+     "outlay_text": "Total cost Rs.6,003.65 crore, 2023-24 to 2030-31",
+     "pli_family": false,
+     "note": "Scales scientific and industrial quantum R&D; four thematic hubs"
+    },
+    {
+     "scheme": "National Medical Devices Policy, 2023",
+     "date": "2023-04-26",
+     "prid": 1919982,
+     "sector": "pharma",
+     "instrument_type": "investment-policy",
+     "outlay_crore": null,
+     "outlay_text": "No outlay stated; framework policy targeting $50bn sector by 2030",
+     "pli_family": false,
+     "note": "Regulatory streamlining, infrastructure, R&D and investment facilitation framework"
+    },
+    {
+     "scheme": "Production Linked Incentive Scheme 2.0 for IT Hardware",
+     "date": "2023-05-17",
+     "prid": 1924766,
+     "sector": "electronics/semiconductors",
+     "instrument_type": "production-linked",
+     "outlay_crore": 17000,
+     "outlay_text": "Budgetary outlay Rs.17,000 crore over 6 years",
+     "pli_family": true,
+     "note": "Laptops, tablets, servers; expected Rs.3.35 lakh crore incremental production"
+    },
+    {
+     "scheme": "City Investments to Innovate, Integrate and Sustain 2.0 (CITIIS 2.0)",
+     "date": "2023-05-31",
+     "prid": 1928598,
+     "sector": "infrastructure/urban",
+     "instrument_type": "fund",
+     "outlay_crore": 1866,
+     "outlay_text": "Rs.1,760 crore loan from AFD/KfW plus EU grant (~Rs.1,866 crore total)",
+     "pli_family": false,
+     "note": "Challenge-based funding for city climate and circular-economy projects, 2023-2027"
+    },
+    {
+     "scheme": "PM Vishwakarma",
+     "date": "2023-08-16",
+     "prid": 1949410,
+     "sector": "MSME/credit",
+     "instrument_type": "other",
+     "outlay_crore": 13000,
+     "outlay_text": "Financial outlay Rs.13,000 crore, FY2023-24 to FY2027-28",
+     "pli_family": false,
+     "note": "18 artisan trades; concessional credit, toolkit incentive, skilling, marketing support"
+    },
+    {
+     "scheme": "PM-eBus Sewa",
+     "date": "2023-08-16",
+     "prid": 1949429,
+     "sector": "auto/EV",
+     "instrument_type": "viability-gap",
+     "outlay_crore": 57613,
+     "outlay_text": "Estimated cost Rs.57,613 crore, of which central support Rs.20,000 crore",
+     "pli_family": false,
+     "note": "10,000 e-buses on PPP model across 169 cities"
+    },
+    {
+     "scheme": "Viability Gap Funding for development of Battery Energy Storage Systems (BESS)",
+     "date": "2023-09-06",
+     "prid": 1955112,
+     "sector": "solar/renewables",
+     "instrument_type": "viability-gap",
+     "outlay_crore": 3760,
+     "outlay_text": "Initial outlay Rs.9,400 crore including budgetary support (VGF) of Rs.3,760 crore",
+     "pli_family": false,
+     "note": "VGF up to 40% of capital cost for 4,000 MWh BESS capacity"
+    },
+    {
+     "scheme": "Central Sector Scheme for providing Drones to Women Self Help Groups",
+     "date": "2023-11-29",
+     "prid": 1980681,
+     "sector": "drones",
+     "instrument_type": "capex-subsidy",
+     "outlay_crore": 1261,
+     "outlay_text": "Outlay Rs.1,261 crore for 2024-25 to 2025-26",
+     "pli_family": false,
+     "note": "15,000 drones to SHGs for agricultural rental services; 80% capex subsidy"
+    }
+   ]
+  },
+  "2024": {
+   "year": 2024,
+   "total_cabinet_rows": 234,
+   "unique_decisions": 129,
+   "routine_excluded": 112,
+   "launches": [
+    {
+     "scheme": "Coal/Lignite Gasification Incentive Scheme",
+     "date": "2024-01-24",
+     "prid": 1999219,
+     "sector": "fuels/energy",
+     "instrument_type": "capex-subsidy",
+     "outlay_crore": 8500,
+     "outlay_text": "Rs 8,500 crore financial assistance, three categories (PSU/private), up to 15% of capex per project",
+     "pli_family": false,
+     "note": "New incentive for coal-to-SNG/chemicals gasification projects; verified from detail page"
+    },
+    {
+     "scheme": "Pradhan Mantri Matsya Kisan Samridhi Sah-Yojana (PM-MKSSY)",
+     "date": "2024-02-08",
+     "prid": 2004216,
+     "sector": "agriculture",
+     "instrument_type": "other",
+     "outlay_crore": 6000,
+     "outlay_text": "Rs 6,000 crore over FY2023-24 to FY2026-27; 50% public (incl World Bank/AFD), 50% private",
+     "pli_family": false,
+     "note": "Formalization, aquaculture insurance and performance incentives for fisheries micro/small enterprises"
+    },
+    {
+     "scheme": "PM-Surya Ghar: Muft Bijli Yojana",
+     "date": "2024-02-29",
+     "prid": 2010130,
+     "sector": "solar/renewables",
+     "instrument_type": "capex-subsidy",
+     "outlay_crore": 75021,
+     "outlay_text": "Rs 75,021 crore for rooftop solar in one crore households",
+     "pli_family": false,
+     "note": "Rooftop solar subsidy plus 300 free units/month; flagship residential solar launch"
+    },
+    {
+     "scheme": "Three semiconductor units under India Semiconductor Mission",
+     "date": "2024-02-29",
+     "prid": 2010132,
+     "sector": "electronics/semiconductors",
+     "instrument_type": "capex-subsidy",
+     "outlay_crore": null,
+     "outlay_text": "Combined investment Rs 1,25,600 crore (Tata-PSMC fab 91,000 + TSAT Assam 27,000 + CG Power 7,600); fiscal support under Rs 76,000 crore Semicon programme",
+     "pli_family": false,
+     "note": "Tata Dholera fab, Tata Assam ATMP, CG Power-Renesas ATMP approvals"
+    },
+    {
+     "scheme": "IndiaAI Mission",
+     "date": "2024-03-07",
+     "prid": 2012355,
+     "sector": "other",
+     "instrument_type": "mission",
+     "outlay_crore": 10300,
+     "outlay_text": "Over Rs 10,300 crore over five years",
+     "pli_family": false,
+     "note": "AI compute infrastructure, startup financing, datasets platform; duplicate PRID 2012375 merged"
+    },
+    {
+     "scheme": "Uttar Poorva Transformative Industrialization Scheme (UNNATI) 2024",
+     "date": "2024-03-07",
+     "prid": 2012360,
+     "sector": "other",
+     "instrument_type": "capex-subsidy",
+     "outlay_crore": 10037,
+     "outlay_text": "Rs 10,037 crore over 10 years (Part A incentives Rs 9,737 crore)",
+     "pli_family": false,
+     "note": "North-East industrialization incentives: capital investment, interest subvention, manufacturing/services support"
+    },
+    {
+     "scheme": "Viability Gap Funding scheme for Offshore Wind Energy Projects",
+     "date": "2024-06-19",
+     "prid": 2026699,
+     "sector": "solar/renewables",
+     "instrument_type": "viability-gap",
+     "outlay_crore": 7453,
+     "outlay_text": "Rs 7,453 crore (Rs 6,853 crore VGF for 1 GW + Rs 600 crore port upgradation)",
+     "pli_family": false,
+     "note": "First offshore wind VGF; 1 GW off Gujarat and Tamil Nadu coasts"
+    },
+    {
+     "scheme": "Clean Plant Programme",
+     "date": "2024-08-09",
+     "prid": 2043920,
+     "sector": "agriculture",
+     "instrument_type": "other",
+     "outlay_crore": 1765.67,
+     "outlay_text": "Rs 1,765.67 crore",
+     "pli_family": false,
+     "note": "Nine clean plant centres for virus-free horticulture planting material under MIDH"
+    },
+    {
+     "scheme": "BioE3 (Biotechnology for Economy, Environment and Employment) Policy",
+     "date": "2024-08-24",
+     "prid": 2048568,
+     "sector": "other",
+     "instrument_type": "investment-policy",
+     "outlay_crore": null,
+     "outlay_text": "No consolidated outlay stated in release",
+     "pli_family": false,
+     "note": "High-performance biomanufacturing policy: biofoundries, bio-AI hubs, six thematic sectors"
+    },
+    {
+     "scheme": "12 Industrial Nodes/Cities under National Industrial Corridor Development Programme",
+     "date": "2024-08-28",
+     "prid": 2049312,
+     "sector": "infrastructure/urban",
+     "instrument_type": "infra-package",
+     "outlay_crore": 28602,
+     "outlay_text": "Rs 28,602 crore estimated investment",
+     "pli_family": false,
+     "note": "Greenfield plug-and-play industrial smart cities across 10 states"
+    },
+    {
+     "scheme": "Kaynes Semicon unit, Sanand (India Semiconductor Mission)",
+     "date": "2024-09-02",
+     "prid": 2050859,
+     "sector": "electronics/semiconductors",
+     "instrument_type": "capex-subsidy",
+     "outlay_crore": null,
+     "outlay_text": "Investment Rs 3,300 crore; fiscal support under Rs 76,000 crore Semicon programme",
+     "pli_family": false,
+     "note": "Fourth ISM unit approval; 6.3 million chips/day OSAT capacity"
+    },
+    {
+     "scheme": "Digital Agriculture Mission",
+     "date": "2024-09-02",
+     "prid": 2050966,
+     "sector": "agriculture",
+     "instrument_type": "mission",
+     "outlay_crore": 2817,
+     "outlay_text": "Rs 2,817 crore (central share Rs 1,940 crore)",
+     "pli_family": false,
+     "note": "AgriStack, farmer digital identities, crop survey DPI; part of seven-scheme package"
+    },
+    {
+     "scheme": "PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE)",
+     "date": "2024-09-11",
+     "prid": 2053889,
+     "sector": "auto/EV",
+     "instrument_type": "other",
+     "outlay_crore": 10900,
+     "outlay_text": "Rs 10,900 crore over two years",
+     "pli_family": false,
+     "note": "FAME successor: demand incentives for e-2W/3W/ambulances/trucks, e-buses, charging infrastructure"
+    },
+    {
+     "scheme": "PM-eBus Sewa Payment Security Mechanism",
+     "date": "2024-09-11",
+     "prid": 2053890,
+     "sector": "auto/EV",
+     "instrument_type": "credit-guarantee",
+     "outlay_crore": 3435,
+     "outlay_text": "Rs 3,435 crore",
+     "pli_family": false,
+     "note": "Payment security fund covering PTA payment defaults to e-bus operators"
+    },
+    {
+     "scheme": "National Mission on Edible Oils - Oilseeds (NMEO-Oilseeds)",
+     "date": "2024-10-03",
+     "prid": 2061646,
+     "sector": "agriculture",
+     "instrument_type": "mission",
+     "outlay_crore": 10103,
+     "outlay_text": "Rs 10,103 crore over 2024-25 to 2030-31",
+     "pli_family": false,
+     "note": "Domestic oilseed production push toward edible-oil self-reliance; import substitution"
+    },
+    {
+     "scheme": "Venture Capital Fund for Space Sector (IN-SPACe)",
+     "date": "2024-10-24",
+     "prid": 2067664,
+     "sector": "space",
+     "instrument_type": "fund",
+     "outlay_crore": 1000,
+     "outlay_text": "Rs 1,000 crore over up to five years",
+     "pli_family": false,
+     "note": "SEBI AIF backing space startups, Rs 10-60 crore per company"
+    },
+    {
+     "scheme": "National Mission on Natural Farming",
+     "date": "2024-11-25",
+     "prid": 2077094,
+     "sector": "agriculture",
+     "instrument_type": "mission",
+     "outlay_crore": 2481,
+     "outlay_text": "Rs 2,481 crore (GoI Rs 1,584 crore + states Rs 897 crore) till 2025-26",
+     "pli_family": false,
+     "note": "Standalone centrally sponsored natural-farming mission; 15,000 clusters, one crore farmers"
+    }
+   ]
+  },
+  "2025": {
+   "year": 2025,
+   "total_cabinet_rows": 191,
+   "unique_decisions": 101,
+   "routine_excluded": 88,
+   "launches": [
+    {
+     "scheme": "Ethanol procurement mechanism (EBP)",
+     "date": "2025-01-29",
+     "prid": 2097305,
+     "sector": "fuels/energy",
+     "instrument_type": "other",
+     "outlay_crore": null,
+     "pli_family": false
+    },
+    {
+     "scheme": "National Critical Mineral Mission",
+     "date": "2025-01-29",
+     "prid": 2097308,
+     "sector": "other",
+     "instrument_type": "mission",
+     "outlay_crore": 34300,
+     "pli_family": false
+    },
+    {
+     "scheme": "Electronics Component Manufacturing Scheme (ECMS)",
+     "date": "2025-03-28",
+     "prid": 2116172,
+     "sector": "electronics/semiconductors",
+     "instrument_type": "production-linked",
+     "outlay_crore": 22919,
+     "pli_family": true
+    },
+    {
+     "scheme": "Employment Linked Incentive (ELI) Scheme",
+     "date": "2025-07-01",
+     "prid": 2141127,
+     "sector": "other",
+     "instrument_type": "other",
+     "outlay_crore": 99446,
+     "pli_family": false
+    },
+    {
+     "scheme": "Research Development and Innovation (RDI) Scheme",
+     "date": "2025-07-01",
+     "prid": 2141130,
+     "sector": "other",
+     "instrument_type": "fund",
+     "outlay_crore": 100000,
+     "pli_family": false
+    },
+    {
+     "scheme": "PM Dhan-Dhaanya Krishi Yojana",
+     "date": "2025-07-16",
+     "prid": 2145146,
+     "sector": "agriculture",
+     "instrument_type": "mission",
+     "outlay_crore": null,
+     "pli_family": false
+    },
+    {
+     "scheme": "NCDC grant-in-aid",
+     "date": "2025-07-31",
+     "prid": 2150641,
+     "sector": "MSME/credit",
+     "instrument_type": "fund",
+     "outlay_crore": 2000,
+     "pli_family": false
+    },
+    {
+     "scheme": "Critical Mineral Recycling incentive",
+     "date": "2025-09-03",
+     "prid": 2163454,
+     "sector": "other",
+     "instrument_type": "capex-subsidy",
+     "outlay_crore": 1500,
+     "pli_family": false
+    },
+    {
+     "scheme": "Shipbuilding & Maritime Package (SBFAS 2.0 + MDF + SbDS)",
+     "date": "2025-09-24",
+     "prid": 2170573,
+     "sector": "maritime/shipping",
+     "instrument_type": "infra-package",
+     "outlay_crore": 69725,
+     "pli_family": false
+    },
+    {
+     "scheme": "Mission for Aatmanirbharta in Pulses",
+     "date": "2025-10-01",
+     "prid": 2173547,
+     "sector": "agriculture",
+     "instrument_type": "mission",
+     "outlay_crore": 11440,
+     "pli_family": false
+    },
+    {
+     "scheme": "Export Promotion Mission",
+     "date": "2025-11-12",
+     "prid": 2189381,
+     "sector": "other",
+     "instrument_type": "mission",
+     "outlay_crore": 25060,
+     "pli_family": false
+    },
+    {
+     "scheme": "Credit Guarantee Scheme for Exporters (CGSE)",
+     "date": "2025-11-12",
+     "prid": 2189389,
+     "sector": "MSME/credit",
+     "instrument_type": "credit-guarantee",
+     "outlay_crore": 20000,
+     "pli_family": false
+    },
+    {
+     "scheme": "Rare Earth Permanent Magnets (REPM) scheme",
+     "date": "2025-11-26",
+     "prid": 2194684,
+     "sector": "other",
+     "instrument_type": "production-linked",
+     "outlay_crore": 7280,
+     "pli_family": true
+    }
+   ]
+  }
+ },
+ "see_also": [
+  "data/beyond_pli_incentives_2026-07-19.json (2026 register, full detail)",
+  "data/pib_index.sqlite (the underlying 83,734-release register)"
+ ]
+}

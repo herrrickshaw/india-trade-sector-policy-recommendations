@@ -119,6 +119,13 @@
       ]
     },
     {
+      "title": "Five-year incentive evolution 2021-2026 (93 launches from the Cabinet register)",
+      "chart": "charts/pib_five_year_incentive_evolution.html",
+      "data": [
+        "data/pib_five_year_incentive_evolution_2026-07-19.json"
+      ]
+    },
+    {
       "title": "Beyond PLI: the 2026 non-PLI incentive wave (from the PIB index)",
       "chart": "charts/beyond_pli_incentives.html",
       "data": [

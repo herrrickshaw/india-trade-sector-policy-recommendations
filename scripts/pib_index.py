@@ -34,7 +34,7 @@ import urllib.request, urllib.parse, http.cookiejar
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DB_PATH = ROOT / "data/pib_index.sqlite"
+DB_PATH = ROOT / "data/pib_index.sqlite"  # override with --db (e.g. parallel per-year backfills)
 BASE = "https://www.pib.gov.in/AllReleasem.aspx?MenuId=3&Lang=1&Reg=3"
 FACTSHEETS = "https://www.pib.gov.in/AllFactSheet.aspx?reg=3&lang=1"
 DETAIL = "https://www.pib.gov.in/PressReleasePage.aspx?PRID={prid}"
@@ -246,7 +246,9 @@ def stats():
 
 
 def main():
+    global DB_PATH
     ap = argparse.ArgumentParser()
+    ap.add_argument("--db", help="alternate sqlite path (parallel backfills merge later)")
     ap.add_argument("--backfill", nargs=2, metavar=("FROM", "TO"))
     ap.add_argument("--update", action="store_true")
     ap.add_argument("--factsheets", action="store_true")
@@ -254,6 +256,8 @@ def main():
     ap.add_argument("--stats", action="store_true")
     ap.add_argument("--query")
     a = ap.parse_args()
+    if a.db:
+        DB_PATH = Path(a.db)
     if a.backfill:
         index_days(dt.date.fromisoformat(a.backfill[0]), dt.date.fromisoformat(a.backfill[1]))
     if a.update:
