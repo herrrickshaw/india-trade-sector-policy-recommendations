@@ -315,6 +315,18 @@
     "requirements.txt: automation scripts are deliberately stdlib-only (curl via subprocess); system tools documented (poppler, tesseract); optional pypdf/pandas for analysis extras; companion-repo dependencies cross-referenced (weasyprint under homebrew python, yfinance in the investor map).",
     "Crontab lines documented in the README (daily PIB 07:17, weekly Mon 08:23) but NOT auto-installed -- deliberate, given this machine's launchd/TCC history."
    ]
+  },
+  {
+   "phase": "44",
+   "title": "Cron jobs installed -- the twin's auto-update cadences are now live on this machine",
+   "repo": "digital-twin-for-ipa (crontab + state/cron.log)",
+   "headline_finding": "The two documented cadences were installed into the user crontab and verified: daily 07:17 PIB register update (refresh_twin.py pib -> policy repo's pib_index.py --update) and weekly Monday 08:23 full check (64-portal route health + UNNATI notice diff + NSWS + RBI WSS). Verified two ways: crontab -l shows both entries, and a dry-run under a cron-like minimal environment (env -i with the crontab's PATH) executed cleanly, resolving the Jul-20-2026 RBI WSS issue.",
+   "details": [
+    "Both jobs log to state/cron.log; snapshots continue landing as append-only dated JSONs in state/ with CHANGE lines on diffs.",
+    "Why this scheduler should work where the old launchd job never fired: these are cron (not launchd) jobs, and both repos live in the home root -- NOT in TCC-protected ~/Downloads, which was what killed the daily_combined_report launchd job with permission denials.",
+    "Known limitation accepted: cron silently skips runs while the Mac is asleep/off at the scheduled minute (no launchd-style catch-up); daytime slots (07:17 / Mon 08:23) chosen to maximize hit rate. Health check after a quiet week: state/cron.log + whether new dated snapshots appear in state/.",
+    "pib_index.py confirmed stdlib-only (urllib/sqlite3), so /usr/bin/python3 runs both jobs without any package installs."
+   ]
   }
  ],
  "cross_cutting_insights": [
@@ -346,5 +358,5 @@
   "scripts/report_synthesizer.py -- the JSON-to-PDF/Word/PPT tool described in phase 9 above, the newest piece of session infrastructure and the one used to generate this very document.",
   "data/repo_manifest_2026-07-19.json -- machine-readable index of every chart/data pair, consumed both by the README's reference table and by the synthesizer's batch mode."
  ],
- "current_status": "All 43 phases published across four public repos. The digital twin is now self-refreshing in design and executable in practice: canonical model -> 312-instrument index -> generated catalogue, with live-tested update scripts, a 64-portal directory with health snapshots, an abbreviations glossary, and documented (not yet installed) cron cadences."
+ "current_status": "All 44 phases published across four public repos. The digital twin is now operationally live: cron-scheduled daily PIB updates and weekly portal/UNNATI/RBI checks feeding append-only snapshots, on top of the canonical model, 312-instrument index, generated catalogue, directory and glossary."
 }
