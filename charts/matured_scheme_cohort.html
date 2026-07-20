@@ -1,0 +1,153 @@
+<title>The Matured Cohort — 18 Schemes Whose Returns Are Already In (2008–2020 → 2026)</title>
+<meta name="hz:canvas-width" content="1180">
+<style>
+  :root {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6; --mismatch:#7a5aa8;
+    --font-display:"Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --font-mono:"IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+      --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+      --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+      --data-line:#3987e5; --data-soft:#1c2c40; --mismatch:#a98fd6;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+    --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+    --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+    --data-line:#3987e5; --data-soft:#1c2c40; --mismatch:#a98fd6;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6; --mismatch:#7a5aa8;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; }
+  .bulletin { background:var(--page-bg); color:var(--ink); font-family:var(--font-body); padding:40px 20px 56px; display:flex; justify-content:center; }
+  .sheet { width:100%; max-width:1100px; display:flex; flex-direction:column; gap:26px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:16px; }
+  .eyebrow { font-family:var(--font-mono); font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); display:flex; gap:10px; align-items:center; }
+  .eyebrow::before { content:""; width:7px; height:7px; border-radius:50%; background:var(--accent); }
+  h1 { font-family:var(--font-display); font-weight:500; font-size:clamp(24px,3.1vw,32px); margin:6px 0 0; text-wrap:balance; }
+  .dek { font-size:14px; color:var(--ink-2); max-width:90ch; line-height:1.55; margin:8px 0 0; }
+  .source-line { font-family:var(--font-mono); font-size:11px; color:var(--ink-muted); margin-top:8px; }
+
+  section.block { background:var(--surface); border:1px solid var(--rule-strong); padding:20px 24px; }
+  .block-tag { font-family:var(--font-mono); font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent); }
+  .block-title { font-family:var(--font-display); font-size:20px; font-weight:600; margin:4px 0 10px; }
+  .block-note { font-size:13px; color:var(--ink-2); line-height:1.6; max-width:100ch; }
+  .block-note b { color:var(--ink); }
+
+  .board { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--rule-strong); border:1px solid var(--rule-strong); margin-top:12px; }
+  .board > div { background:var(--surface); padding:14px 16px; }
+  .board .n { font-family:var(--font-display); font-size:30px; font-weight:700; }
+  .board .lbl { font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; letter-spacing:0.07em; margin-bottom:4px; }
+  .board .who { font-size:10.5px; line-height:1.55; color:var(--ink-2); margin-top:6px; }
+  .g .lbl,.g .n { color:var(--accent); } .p .lbl,.p .n { color:var(--warn); } .l .lbl,.l .n { color:var(--alert); }
+
+  .sch { border:1px solid var(--rule); margin-top:12px; }
+  .sch-hd { display:flex; flex-wrap:wrap; gap:8px 14px; align-items:baseline; padding:9px 14px; background:var(--page-bg); border-bottom:1px solid var(--rule); }
+  .sch-name { font-family:var(--font-display); font-size:14.5px; font-weight:700; }
+  .st { display:inline-block; font-family:var(--font-mono); font-size:9px; font-weight:700; padding:1.5px 8px; border-radius:999px; }
+  .st.g { background:var(--accent-soft); color:var(--accent); } .st.p { background:var(--warn-soft); color:var(--warn); } .st.l { background:var(--alert-soft); color:var(--alert); }
+  .sch-design { font-family:var(--font-mono); font-size:9.5px; color:var(--ink-muted); flex:1 1 260px; }
+  .sch-body { padding:8px 14px 11px; font-size:11.5px; line-height:1.55; color:var(--ink-2); }
+  .sch-body b { color:var(--ink); }
+  .traj { font-family:var(--font-mono); font-size:10px; color:var(--data-line); margin-top:4px; line-height:1.7; }
+  .traj .pr { color:var(--ink-muted); }
+
+  .readings { border-left:3px solid var(--accent); background:var(--accent-soft); padding:12px 16px; margin-top:12px; }
+  .readings .lbl { font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; letter-spacing:0.06em; color:var(--accent); }
+  .readings ul { margin:6px 0 0; padding-left:16px; }
+  .readings li { font-size:12px; line-height:1.6; color:var(--ink-2); margin-bottom:6px; }
+  .readings li b { color:var(--ink); }
+  .callout { border-left:3px solid var(--warn); background:var(--warn-soft); padding:12px 16px; margin-top:12px; font-size:12.5px; line-height:1.6; color:var(--ink-2); }
+  .callout b { color:var(--ink); }
+  footer.colophon { text-align:center; font-family:var(--font-mono); font-size:10.5px; color:var(--ink-muted); padding-top:8px; }
+</style>
+
+<div class="bulletin">
+  <div class="sheet">
+    <div class="masthead">
+      <div class="eyebrow">India Trade — Sector &amp; Policy Recommendations · The Matured Cohort</div>
+      <h1>Eighteen schemes whose returns are already in</h1>
+      <p class="dek">The incentive → investment → outcome loop, judged where it has had time to close: 18 major schemes launched 2008–2020, each traced launch-to-outcome <b>inside the PIB register</b> (122,141 releases, 2017–2026) with PRID-cited waypoints — the method that built the ethanol case, applied to the whole cohort. Verdict pattern: <b>every closed-success ran on a demand-side guarantee or procurement design</b>; the laggards were voluntary-uptake models and serially-redesigned build-outs.</p>
+      <div class="source-line">SOURCE: three tracer agents over data/pib_index.sqlite (register extended 2017–2020 by parallel backfill; pre-2017 launches reconstructed from later releases). Parliament-answer figures preferred; loop verdicts are register-internal. Retrieved 2026-07-20.</div>
+    </div>
+
+    <section class="block">
+      <div class="block-tag">Scoreboard</div>
+      <div class="block-title">8 closed · 8 partial · 2 laggards</div>
+      <div class="board">
+        <div class="g"><div class="lbl">Closed-success</div><div class="n">8</div><div class="who">EBP ethanol · UJALA/LED · coal auctions · MUDRA · Startup India · M-SIPS→LSEM→MPMS · UDAN · FAME→E-DRIVE</div></div>
+        <div class="p"><div class="lbl">Partial</div><div class="n">8</div><div class="who">Solar (capacity late, manufacturing closed) · KUSUM · NIP-2012 urea · Make in India · Mega Food Parks · Sagarmala · DFC · rail exports</div></div>
+        <div class="l"><div class="lbl">Laggard</div><div class="n">2</div><div class="who">SATAT/CBG (50 of 5,000 plants) · BharatNet (three redesigns)</div></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-tag">Energy transition</div>
+      <div class="block-title">The precedent-setters — and the biggest miss</div>
+      <div id="th-energy"></div>
+    </section>
+    <section class="block">
+      <div class="block-tag">Transport &amp; connectivity</div>
+      <div class="block-title">Networks built, networks pending</div>
+      <div id="th-transport"></div>
+    </section>
+    <section class="block">
+      <div class="block-tag">Finance &amp; industry</div>
+      <div class="block-title">Credit at scale, and the mobile-manufacturing bridge</div>
+      <div id="th-finance"></div>
+    </section>
+
+    <section class="block">
+      <div class="block-tag">What the cohort teaches</div>
+      <div class="block-title">Design beats sector</div>
+      <div class="readings"><div class="lbl">Six findings only the closed loops can show</div><ul>
+        <li><b>Every closed-success ran on a demand-side guarantee or procurement design:</b> administered price + offtake (ethanol), bulk procurement (UJALA's 10× price crash), revenue-share auctions (coal), VGF route auctions (UDAN), credit guarantees (MUDRA), capex + tariff protection (M-SIPS/PMP → mobiles). The 2025–26 wave's guaranteed-buyer/guaranteed-terms instruments are a <b>reversion to the proven family</b>.</li>
+        <li><b>Design beats sector:</b> solar capacity ran late while solar <i>manufacturing</i> closed emphatically (8.2→100 GW ALMM); FAME's demand-pull succeeded while ACC's production payout stalled — the instrument, not the industry, predicts closure.</li>
+        <li><b>Voluntary-uptake models fail quietly:</b> SATAT's 3,694 LOIs became ~50 plants (&lt;1%); Mega Food Parks got 24 of 41 operational in 15 years — both ended in unheralded course-corrections (mandatory blending; discontinuation).</li>
+        <li><b>Misses are never announced:</b> solar's 2022 target passed without a miss statement (achieved Feb-2025); the register records outcomes, it does not confess. This is why the registry tracks portals and Parliament answers.</li>
+        <li><b>The employment-linked design has decade-old roots</b> — PMRPY (2018) and ABRY (₹22,810cr, 2020) prefigure ELI 2025.</li>
+        <li><b>The honest timescale is ~8–10 years:</b> the two biggest trade-balance swings — mobiles (production 28×, exports 127×, imports 75% of demand → 0.02%; #1 export) and ethanol (₹1.97L cr forex saved) — each took about a decade from instrument to closed loop. That is the yardstick for the 2026 bets (gasification, NIPU, critical minerals).</li>
+      </ul></div>
+      <div class="callout"><b>Caveats:</b> loop verdicts are register-internal (PIB's own figures — MUDRA is judged on disbursement, not credit quality; the register is silent on NPAs); pre-2017 launches are traced through later releases because the modern portal's day-wise record begins in 2017; celebratory releases were used only for milestone counts, with Parliament answers preferred throughout.</div>
+    </section>
+
+    <footer class="colophon">herrrickshaw/india-trade-sector-policy-recommendations — data (full trajectories, all PRIDs): <a href="../data/matured_scheme_cohort_2026-07-20.json">data/matured_scheme_cohort_2026-07-20.json</a> · register: <a href="../data/pib_index.sqlite">pib_index.sqlite</a> (122,141 releases) · companions: <a href="pib_five_year_incentive_evolution.html">five-year evolution</a> · <a href="scheme_registry.html">scheme registry</a></footer>
+  </div>
+</div>
+
+<script>
+const d = {"themes": {"energy": [{"scheme": "Ethanol Blended Petrol (2014 pricing era)", "loop": "CLOSED-SUCCESS", "latest": "20% blending ~5y early; Rs 1.97L cr forex saved; ~316 lakh MT crude substituted (PRID 2283118)", "traj": [["2018-06-27", "procured 38cr L (ESY14) -> ~140cr L (17-18); admin price since 2014", 1536696], ["2021-07-19", "1.53% (ESY14) -> 7.93% (ESY21); E20 notified", 1736751], ["2021-12-17", "302.30cr L supplied ESY21", 1782735], ["2022-06-05", "10% five months early; Rs 41,500cr forex; Rs 40,600cr to farmers", 1831289]], "design": "administered price + guaranteed OMC offtake + feedstock widening", "link": "direct crude substitution", "note": "cleanest launch-to-outcome loop in the register"}, {"scheme": "UJALA / LED + SLNP (2015)", "loop": "CLOSED-SUCCESS", "latest": "36.87cr bulbs; Rs 19,153cr annual savings; procurement price Rs ~310 -> Rs 38 (10x crash); 1.03cr streetlights (PRID 2090639)", "traj": [["2017-07-20", "25.01cr bulbs", 1496506], ["2020-01-05", "36.13cr bulbs; 46.92bn kWh/yr saved; 9,394MW peak avoided", 1598481]], "design": "zero-subsidy bulk procurement via EESL crashing prices", "link": "cut fossil generation; built domestic LED mfg displacing lamp imports", "note": "direct distribution plateaued vs 77cr ambition, but market transformation exceeded: private sector sold 115+cr LEDs"}, {"scheme": "SATAT / CBG (2018)", "loop": "LAGGARD", "latest": "50 of 5,000 plants (1%); FY23 offtake 11,227T vs 15 MMT/yr target (<0.1%); pivot to mandatory CBG Blending Obligation from FY26 (PRID 1986252/1979705)", "traj": [["2018-10-01", "launch: 5,000 plants/15 MMT by 2023-24", 1548031], ["2022-12-08", "3,694 LOIs but 38 commissioned", 1881749], ["2023-08-10", "11,227T procured FY23", 1947505]], "design": "voluntary LOI + assured price offtake", "link": "intended gas-import substitution never materialized", "note": "largest target-vs-outcome gap in the register; voluntary model failed until mandate"}, {"scheme": "Solar 100GW + ALMM/PLI manufacturing", "loop": "PARTIAL", "latest": "100.33GW installed Feb-2025 (target was 2022 -- ~3y late); module mfg 2GW (2014) -> 60GW (2024) -> 100GW ALMM-listed (Aug-2025, 21->100 makers) (PRIDs 2100603, 2156173)", "traj": [["2017-11-24", "100GW-by-2022 trajectory announced", 1510879], ["2023-12-23", "PLI LoAs 48.3GW module capacity", 1989822]], "design": "parks+tenders for capacity; ALMM market-access + PLI for manufacturing", "link": "explicit import substitution vs Chinese modules; cell/wafer upstream still import-dependent", "note": "capacity target missed by ~3 years (never stated as a miss in register); manufacturing loop closed emphatically"}, {"scheme": "Commercial coal auctions (2020)", "loop": "CLOSED-SUCCESS", "latest": "15 rolling tranches by Jul-2026; 100+MT captive/commercial output by Nov FY25; Rs 6,656cr/yr state revenue from tranche 1 (PRIDs 2283411, 2072033)", "traj": [["2020-11-09", "tranche-1: 19/38 mines, 29% avg premium", 1671487], ["2024-11-09", "100MT crossed, +33% YoY", 2072033]], "design": "revenue-share auctions, no end-use restriction, 100% FDI", "link": "non-coking coal import substitution", "note": "later tranches thinner bidding but model demonstrably working"}, {"scheme": "PM-KUSUM (2019)", "loop": "PARTIAL", "latest": "10,203MW of ~34,800MW target (29%) after 7y; Comp-B pumps 9.4L installed carry the gains; Comp-A at 7% of sanctions; 21.77L farmers (PRIDs 2201309, 2244667)", "traj": [["2023-12-12", "140MW + 2.73L pumps", 1985576], ["2025-12-10", "10,203MW; Rs 7,106cr released", 2201309]], "design": "30% CFA pumps + DISCOM PBI plants", "link": "de-dieselisation trims crude imports", "note": "pump component works; grid-plant component badly lags"}], "transport_connectivity": [{"scheme": "UDAN (2016)", "loop": "CLOSED-SUCCESS", "latest": "679 routes, 95 aerodromes, 1.68cr passengers, 3.58L flights; national operational airports 74 (2014) -> 165 (Jul-2026); succeeded by Modified UDAN Rs28,840cr + Viksit UDAN launch 04-Jul-2026", "traj": [["2019-12-23", "~35L passengers", 1597205], ["2022-07-21", ">1cr passengers; annual 2.6L->33L", 1843405], ["2024-10-21", "601 routes/86 airports/144L pax", 2066780], ["2026-03-25", "663 routes/95 aerodromes/162.47L pax", 2245096]], "link": "tier-2/3 cargo+tourism; Krishi UDAN agri-exports", "note": "cumulative VGF disbursed never published -- flagged"}, {"scheme": "FAME-I/II -> EMPS -> PM E-DRIVE", "loop": "CLOSED-SUCCESS", "latest": "PM E-DRIVE 21.24L EVs sold at 30-12-2025 (e-2W 74% of target; e-3W L5 100%, closed early); extended to 31-Mar-2028", "traj": [["2019-11-19", "FAME-I 2.85L vehicles", 1592217], ["2022-12-13", "FAME-II 7.46L EVs", 1883045], ["2024-02-09", "FAME-II close: 13.41L EVs Rs5,790cr; outlay to Rs11,500cr", 2001991], ["2023-03-14", "2,435 e-buses on road", 1906790]], "link": "crude-import substitution via demand-pull + PLI ecosystem", "note": "succession fully traceable in register incl misuse penalties"}, {"scheme": "BharatNet (2011/2014)", "loop": "LAGGARD", "latest": "2,22,341 GPs undertaken / 2,14,904 service-ready (Dec-2025); Amended BharatNet Rs1,39,579cr in state-led rollout", "traj": [["2018-01-08", "Phase-I 1L GPs done", 1515906], ["2021-06-30", "PPP redesign Rs29,432cr VGF", 1731456], ["2023-08-04", "ABP re-baseline Rs1.4L cr", 2086701]], "link": "services exportability substrate; no forex metric", "note": "three redesigns each reset targets; usage metrics absent"}, {"scheme": "Sagarmala (2015)", "loop": "PARTIAL", "latest": "845 projects Rs6.06L cr / 315 complete Rs1.57L cr; port turnaround 96h (2014) -> 49.5h (2025); 915 MT major-port cargo FY26; successor wave = Rs69,725cr shipbuilding package + Sagarmala 2.0 Rs85,482cr", "traj": [["2022-12-20", "Rs1,891cr released; 151 projects", 1885078], ["2025-06-26", "Sagarmala Finance Corp (first maritime NBFC)", 2139902], ["2026-04-11", "portfolio state", 2251071]], "link": "ports carry 95% of trade volume; turnaround halving cuts export logistics cost", "note": "CEZ pillar quietly faded; execution loop open"}, {"scheme": "Dedicated Freight Corridors", "loop": "PARTIAL", "latest": "EDFC complete (Dec-2023); WDFC trucks-on-trains commercial (545 rakes, Rs36.95cr rev FY25 Apr-Dec); final Vaitarana-JNPT leg unevidenced in register", "traj": [["2020-12-29", "first commissioning EDFC 351km", 1684342], ["2023-02-08", "1,724km commissioned", 1897378], ["2023-12-13", "EDFC complete", 1985782]], "link": "double-stack to JNPT/Mundra export gateways; transit 30h->12h", "note": ""}, {"scheme": "Rail manufacturing/export base", "loop": "PARTIAL", "latest": "1,002 rail cars exported since 2016; 3,800+ bogies, 5,000+ propulsion systems; Marhowra locos to Africa from 2025", "traj": [["2025-07-27", "export base figures", 2149114]], "link": "direct forex earner; no consolidated export-value figure in register", "note": "sleeper fleet pre-delivery"}], "finance_industry": [{"scheme": "MUDRA (2015)", "design": "collateral-free micro loans; limit Rs10L->20L (2024)", "trajectory": [["2017-07-18", "FY16/FY17 sanctions", "Rs 1.37/1.81 L cr", 1496027], ["2019-02-01", "cumulative", "15.56cr loans Rs 7.23L cr", 1562143], ["2023-04-08", "8y", "40.82cr loans Rs 23.2L cr", 1914739], ["2025-04-08", "10y", "52.37cr loans Rs 33.65L cr", 2119954]], "latest": ["2026-04-08", "57cr+ loans, Rs 40.07L cr disbursed; women ~60% accounts; 12cr+ new-entrepreneur accounts", 2249942], "loop": "CLOSED-SUCCESS", "link": "domestic credit; indirect trade channel", "note": "success on disbursement/inclusion metrics only -- register silent on NPAs"}, {"scheme": "Startup India (2016)", "design": "DPIIT recognition + FFS Rs10,000cr via AIFs + seed fund + guarantees", "trajectory": [["2023-02-03", "FFS", "Rs7,980cr to 99 AIFs; Rs14,077cr into 791 startups", 1895964], ["2024-02-02", "recognised", "117,254", 2002100], ["2026-02-13", "recognised+jobs", "2.07 lakh startups, 21.9 lakh jobs", 2227597]], "latest": ["2026-04-13", "FFS 1.0 fully committed (145 AIFs, Rs25,500cr+ into 1,370+ startups) -> FoF 2.0 Rs10,000cr notified; record 55,200 recognitions FY26", 2251638], "loop": "CLOSED-SUCCESS", "link": "crowds in foreign LP capital", "note": "<500 (2016) -> 2.07 lakh (2026); formally succeeded"}, {"scheme": "M-SIPS (2012) -> PLI-LSEM -> MPMS", "design": "20-25% capex subsidy era -> production-linked era -> brand era", "trajectory": [["2018-07-09", "Samsung Noida inaugurated", "", 1538166], ["2019-02-11", "pre-PLI base", "127 handset units; M-SIPS+PMP operative", 1563771], ["2020-03-21", "bridge", "PLI-LSEM approved", 1607487], ["2025-02-04", "factories", "2 (2014) -> 300+ units; #2 mobile maker", 2099656], ["2025-07-23", "production/exports", "Rs18,000cr -> Rs5.45L cr (28x); exports Rs1,500cr -> Rs2L cr (127x); imports 75% of demand -> 0.02%; LSEM cumulative prod Rs8.45L cr, exports Rs4.66L cr, 1.30L jobs", 2147394]], "latest": ["2026-07-15", "LSEM tenure ended; MPMS Rs62,500cr successor; 99.2% of phones used in India made domestically; smartphones #1 export category 2025", 2284789], "loop": "CLOSED-SUCCESS", "link": "largest single trade-balance swing in the register (net importer -> net exporter)", "note": "CORRECTION: '121% of export target' not found in register -- use register-native figures"}, {"scheme": "Mega Food Parks (2008)", "design": "Rs50cr/park capital grant via SPVs", "trajectory": [["2020-02-04", "sanctioned", "39 parks", 1601874], ["2021-07-20", "operational", "22", 1737176], ["2023-12-05", "final", "41 approved / 24 operational / 17 pending; DISCONTINUED w.e.f. 01-04-2021", 1982721]], "latest": ["2024-07-25", "41 lifetime; no new sanctions", 2036980], "loop": "PARTIAL", "link": "agri-export infra; export throughput never quantified", "note": "~58% operational after 15 years; quiet discontinuation after third-party evaluation"}, {"scheme": "NIP-2012 urea plants", "design": "assured-return gas-linked pricing for new/revived capacity", "trajectory": [["2019-06-21", "revival pipeline", "5 units +63.5 LMTPA", 1575119], ["2022-10-19", "HURL Barauni commissioned", "", 1869233], ["2022-11-12", "RFCL Ramagundam dedicated", "", 1875464], ["2024-12-10", "output", "6 new units of 12.7 LMT each (4 PSU JV + 2 private incl Matix)", 2082780]], "latest": ["2026-07-15", "NIPU-2026 as explicit extension (RoE 12-16%); 33 units/269.42 LMT capacity but gap still import-filled", 2284800], "loop": "PARTIAL", "link": "direct import substitution; self-sufficiency missed -> NIPU", "note": "capacity loop closed, endpoint missed"}, {"scheme": "Make in India (2014)", "design": "umbrella facilitation, no own fiscal instrument", "trajectory": [["2018-07-18", "FDI FY18", "$61.96bn", 1539042], ["2021-05-24", "FDI FY21", "$81.72bn record", 1721268], ["2024-09-25", "decade", "$667.4bn cumulative (+119%); mfg FDI equity $165.1bn", 2058603]], "latest": ["2025-09-25", "11 years; FY25 FDI $81.04bn -- plateau since FY21; EoDB 142->63", 2171059], "loop": "PARTIAL", "link": "FDI is the register's hardest forex-side outcome", "note": "decade up, momentum flat"}]}};
+
+  const cls = s => s==='CLOSED-SUCCESS'?'g':(s==='PARTIAL'?'p':'l');
+  const render = (list, el) => {
+    document.getElementById(el).innerHTML = list.map(s=>{
+      const design = s.design || (s.launch && s.launch.instrument_design) || '';
+      const latest = typeof s.latest==='string' ? s.latest : (Array.isArray(s.latest)? s.latest[1] : JSON.stringify(s.latest_outcome||''));
+      const traj = (s.traj||[]).map(t=>`<span>${t[0]} — ${t[1]}${t[2]?` <span class='pr'>· PRID ${t[2]}</span>`:''}</span>`).join('<br>');
+      return `<div class="sch">
+        <div class="sch-hd"><span class="sch-name">${s.scheme}</span><span class="st ${cls(s.loop||s.loop_status)}">${s.loop||s.loop_status}</span><span class="sch-design">${design}</span></div>
+        <div class="sch-body"><b>Where it stands:</b> ${latest}${s.link?`<br><b>Trade/forex link:</b> ${s.link}`:''}${s.note?`<br><b>Note:</b> ${s.note}`:''}${traj?`<div class="traj">${traj}</div>`:''}</div>
+      </div>`;
+    }).join('');
+  };
+  render(d.themes.energy, 'th-energy');
+  render(d.themes.transport_connectivity, 'th-transport');
+  render(d.themes.finance_industry, 'th-finance');
+</script>

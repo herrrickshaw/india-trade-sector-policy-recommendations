@@ -1,0 +1,551 @@
+{
+ "purpose": "The matured cohort: 18 major schemes launched 2008-2020 whose incentive -> investment -> outcome loop can now be judged, each traced launch-to-outcome INSIDE the PIB register (122,141 releases, 2017-2026) with PRID-cited trajectory waypoints. Extends the ethanol precedent to a full cohort and answers: which instrument designs actually produce trade and forex results in India?",
+ "retrieved": "2026-07-20",
+ "method": "Register extended to 2017-2020 by four parallel day-wise backfills (modern portal's boundary is 2017; pre-2017 launches reconstructed from launch dates and baselines stated in later releases -- the ethanol method). Three thematic tracer agents (energy, transport/connectivity, finance/industry) built 3-6-waypoint trajectories per scheme from Parliament-answer and Cabinet releases preferentially; loop verdicts are register-internal. Two further agents classified the 2017-2020 Cabinet registers (61 launches), completing the 2017-2026 launch dataset (154 launches).",
+ "scoreboard": {
+  "CLOSED-SUCCESS": 8,
+  "PARTIAL": 8,
+  "LAGGARD": 2,
+  "closed_success": [
+   "EBP ethanol",
+   "UJALA/LED",
+   "Commercial coal auctions",
+   "MUDRA",
+   "Startup India",
+   "M-SIPS->PLI-LSEM->MPMS",
+   "UDAN",
+   "FAME-I/II->EMPS->E-DRIVE"
+  ],
+  "partial": [
+   "Solar 100GW+manufacturing",
+   "PM-KUSUM",
+   "NIP-2012 urea",
+   "Make in India",
+   "Mega Food Parks",
+   "Sagarmala",
+   "Dedicated Freight Corridors",
+   "Rail manufacturing/export base"
+  ],
+  "laggard": [
+   "SATAT/CBG",
+   "BharatNet"
+  ]
+ },
+ "headline": "Across 18 matured schemes, every CLOSED-SUCCESS loop ran on a demand-side guarantee or procurement design -- administered price + offtake (ethanol), bulk procurement (UJALA's 10x LED price crash), revenue-share auctions (coal), VGF route auctions (UDAN), credit guarantees (MUDRA), capex + tariff protection (M-SIPS/PMP -> mobiles: production 28x, exports 127x, imports 75% of demand -> 0.02%). The two laggards were a voluntary-uptake model (SATAT: 50 of 5,000 plants) and a thrice-redesigned build-out (BharatNet). The 2025-26 instrument wave's return to guaranteed-buyer/guaranteed-terms designs is, in hindsight, a reversion to the proven family.",
+ "themes": {
+  "energy": [
+   {
+    "scheme": "Ethanol Blended Petrol (2014 pricing era)",
+    "loop": "CLOSED-SUCCESS",
+    "latest": "20% blending ~5y early; Rs 1.97L cr forex saved; ~316 lakh MT crude substituted (PRID 2283118)",
+    "traj": [
+     [
+      "2018-06-27",
+      "procured 38cr L (ESY14) -> ~140cr L (17-18); admin price since 2014",
+      1536696
+     ],
+     [
+      "2021-07-19",
+      "1.53% (ESY14) -> 7.93% (ESY21); E20 notified",
+      1736751
+     ],
+     [
+      "2021-12-17",
+      "302.30cr L supplied ESY21",
+      1782735
+     ],
+     [
+      "2022-06-05",
+      "10% five months early; Rs 41,500cr forex; Rs 40,600cr to farmers",
+      1831289
+     ]
+    ],
+    "design": "administered price + guaranteed OMC offtake + feedstock widening",
+    "link": "direct crude substitution",
+    "note": "cleanest launch-to-outcome loop in the register"
+   },
+   {
+    "scheme": "UJALA / LED + SLNP (2015)",
+    "loop": "CLOSED-SUCCESS",
+    "latest": "36.87cr bulbs; Rs 19,153cr annual savings; procurement price Rs ~310 -> Rs 38 (10x crash); 1.03cr streetlights (PRID 2090639)",
+    "traj": [
+     [
+      "2017-07-20",
+      "25.01cr bulbs",
+      1496506
+     ],
+     [
+      "2020-01-05",
+      "36.13cr bulbs; 46.92bn kWh/yr saved; 9,394MW peak avoided",
+      1598481
+     ]
+    ],
+    "design": "zero-subsidy bulk procurement via EESL crashing prices",
+    "link": "cut fossil generation; built domestic LED mfg displacing lamp imports",
+    "note": "direct distribution plateaued vs 77cr ambition, but market transformation exceeded: private sector sold 115+cr LEDs"
+   },
+   {
+    "scheme": "SATAT / CBG (2018)",
+    "loop": "LAGGARD",
+    "latest": "50 of 5,000 plants (1%); FY23 offtake 11,227T vs 15 MMT/yr target (<0.1%); pivot to mandatory CBG Blending Obligation from FY26 (PRID 1986252/1979705)",
+    "traj": [
+     [
+      "2018-10-01",
+      "launch: 5,000 plants/15 MMT by 2023-24",
+      1548031
+     ],
+     [
+      "2022-12-08",
+      "3,694 LOIs but 38 commissioned",
+      1881749
+     ],
+     [
+      "2023-08-10",
+      "11,227T procured FY23",
+      1947505
+     ]
+    ],
+    "design": "voluntary LOI + assured price offtake",
+    "link": "intended gas-import substitution never materialized",
+    "note": "largest target-vs-outcome gap in the register; voluntary model failed until mandate"
+   },
+   {
+    "scheme": "Solar 100GW + ALMM/PLI manufacturing",
+    "loop": "PARTIAL",
+    "latest": "100.33GW installed Feb-2025 (target was 2022 -- ~3y late); module mfg 2GW (2014) -> 60GW (2024) -> 100GW ALMM-listed (Aug-2025, 21->100 makers) (PRIDs 2100603, 2156173)",
+    "traj": [
+     [
+      "2017-11-24",
+      "100GW-by-2022 trajectory announced",
+      1510879
+     ],
+     [
+      "2023-12-23",
+      "PLI LoAs 48.3GW module capacity",
+      1989822
+     ]
+    ],
+    "design": "parks+tenders for capacity; ALMM market-access + PLI for manufacturing",
+    "link": "explicit import substitution vs Chinese modules; cell/wafer upstream still import-dependent",
+    "note": "capacity target missed by ~3 years (never stated as a miss in register); manufacturing loop closed emphatically"
+   },
+   {
+    "scheme": "Commercial coal auctions (2020)",
+    "loop": "CLOSED-SUCCESS",
+    "latest": "15 rolling tranches by Jul-2026; 100+MT captive/commercial output by Nov FY25; Rs 6,656cr/yr state revenue from tranche 1 (PRIDs 2283411, 2072033)",
+    "traj": [
+     [
+      "2020-11-09",
+      "tranche-1: 19/38 mines, 29% avg premium",
+      1671487
+     ],
+     [
+      "2024-11-09",
+      "100MT crossed, +33% YoY",
+      2072033
+     ]
+    ],
+    "design": "revenue-share auctions, no end-use restriction, 100% FDI",
+    "link": "non-coking coal import substitution",
+    "note": "later tranches thinner bidding but model demonstrably working"
+   },
+   {
+    "scheme": "PM-KUSUM (2019)",
+    "loop": "PARTIAL",
+    "latest": "10,203MW of ~34,800MW target (29%) after 7y; Comp-B pumps 9.4L installed carry the gains; Comp-A at 7% of sanctions; 21.77L farmers (PRIDs 2201309, 2244667)",
+    "traj": [
+     [
+      "2023-12-12",
+      "140MW + 2.73L pumps",
+      1985576
+     ],
+     [
+      "2025-12-10",
+      "10,203MW; Rs 7,106cr released",
+      2201309
+     ]
+    ],
+    "design": "30% CFA pumps + DISCOM PBI plants",
+    "link": "de-dieselisation trims crude imports",
+    "note": "pump component works; grid-plant component badly lags"
+   }
+  ],
+  "transport_connectivity": [
+   {
+    "scheme": "UDAN (2016)",
+    "loop": "CLOSED-SUCCESS",
+    "latest": "679 routes, 95 aerodromes, 1.68cr passengers, 3.58L flights; national operational airports 74 (2014) -> 165 (Jul-2026); succeeded by Modified UDAN Rs28,840cr + Viksit UDAN launch 04-Jul-2026",
+    "traj": [
+     [
+      "2019-12-23",
+      "~35L passengers",
+      1597205
+     ],
+     [
+      "2022-07-21",
+      ">1cr passengers; annual 2.6L->33L",
+      1843405
+     ],
+     [
+      "2024-10-21",
+      "601 routes/86 airports/144L pax",
+      2066780
+     ],
+     [
+      "2026-03-25",
+      "663 routes/95 aerodromes/162.47L pax",
+      2245096
+     ]
+    ],
+    "link": "tier-2/3 cargo+tourism; Krishi UDAN agri-exports",
+    "note": "cumulative VGF disbursed never published -- flagged"
+   },
+   {
+    "scheme": "FAME-I/II -> EMPS -> PM E-DRIVE",
+    "loop": "CLOSED-SUCCESS",
+    "latest": "PM E-DRIVE 21.24L EVs sold at 30-12-2025 (e-2W 74% of target; e-3W L5 100%, closed early); extended to 31-Mar-2028",
+    "traj": [
+     [
+      "2019-11-19",
+      "FAME-I 2.85L vehicles",
+      1592217
+     ],
+     [
+      "2022-12-13",
+      "FAME-II 7.46L EVs",
+      1883045
+     ],
+     [
+      "2024-02-09",
+      "FAME-II close: 13.41L EVs Rs5,790cr; outlay to Rs11,500cr",
+      2001991
+     ],
+     [
+      "2023-03-14",
+      "2,435 e-buses on road",
+      1906790
+     ]
+    ],
+    "link": "crude-import substitution via demand-pull + PLI ecosystem",
+    "note": "succession fully traceable in register incl misuse penalties"
+   },
+   {
+    "scheme": "BharatNet (2011/2014)",
+    "loop": "LAGGARD",
+    "latest": "2,22,341 GPs undertaken / 2,14,904 service-ready (Dec-2025); Amended BharatNet Rs1,39,579cr in state-led rollout",
+    "traj": [
+     [
+      "2018-01-08",
+      "Phase-I 1L GPs done",
+      1515906
+     ],
+     [
+      "2021-06-30",
+      "PPP redesign Rs29,432cr VGF",
+      1731456
+     ],
+     [
+      "2023-08-04",
+      "ABP re-baseline Rs1.4L cr",
+      2086701
+     ]
+    ],
+    "link": "services exportability substrate; no forex metric",
+    "note": "three redesigns each reset targets; usage metrics absent"
+   },
+   {
+    "scheme": "Sagarmala (2015)",
+    "loop": "PARTIAL",
+    "latest": "845 projects Rs6.06L cr / 315 complete Rs1.57L cr; port turnaround 96h (2014) -> 49.5h (2025); 915 MT major-port cargo FY26; successor wave = Rs69,725cr shipbuilding package + Sagarmala 2.0 Rs85,482cr",
+    "traj": [
+     [
+      "2022-12-20",
+      "Rs1,891cr released; 151 projects",
+      1885078
+     ],
+     [
+      "2025-06-26",
+      "Sagarmala Finance Corp (first maritime NBFC)",
+      2139902
+     ],
+     [
+      "2026-04-11",
+      "portfolio state",
+      2251071
+     ]
+    ],
+    "link": "ports carry 95% of trade volume; turnaround halving cuts export logistics cost",
+    "note": "CEZ pillar quietly faded; execution loop open"
+   },
+   {
+    "scheme": "Dedicated Freight Corridors",
+    "loop": "PARTIAL",
+    "latest": "EDFC complete (Dec-2023); WDFC trucks-on-trains commercial (545 rakes, Rs36.95cr rev FY25 Apr-Dec); final Vaitarana-JNPT leg unevidenced in register",
+    "traj": [
+     [
+      "2020-12-29",
+      "first commissioning EDFC 351km",
+      1684342
+     ],
+     [
+      "2023-02-08",
+      "1,724km commissioned",
+      1897378
+     ],
+     [
+      "2023-12-13",
+      "EDFC complete",
+      1985782
+     ]
+    ],
+    "link": "double-stack to JNPT/Mundra export gateways; transit 30h->12h",
+    "note": ""
+   },
+   {
+    "scheme": "Rail manufacturing/export base",
+    "loop": "PARTIAL",
+    "latest": "1,002 rail cars exported since 2016; 3,800+ bogies, 5,000+ propulsion systems; Marhowra locos to Africa from 2025",
+    "traj": [
+     [
+      "2025-07-27",
+      "export base figures",
+      2149114
+     ]
+    ],
+    "link": "direct forex earner; no consolidated export-value figure in register",
+    "note": "sleeper fleet pre-delivery"
+   }
+  ],
+  "finance_industry": [
+   {
+    "scheme": "MUDRA (2015)",
+    "design": "collateral-free micro loans; limit Rs10L->20L (2024)",
+    "trajectory": [
+     [
+      "2017-07-18",
+      "FY16/FY17 sanctions",
+      "Rs 1.37/1.81 L cr",
+      1496027
+     ],
+     [
+      "2019-02-01",
+      "cumulative",
+      "15.56cr loans Rs 7.23L cr",
+      1562143
+     ],
+     [
+      "2023-04-08",
+      "8y",
+      "40.82cr loans Rs 23.2L cr",
+      1914739
+     ],
+     [
+      "2025-04-08",
+      "10y",
+      "52.37cr loans Rs 33.65L cr",
+      2119954
+     ]
+    ],
+    "latest": [
+     "2026-04-08",
+     "57cr+ loans, Rs 40.07L cr disbursed; women ~60% accounts; 12cr+ new-entrepreneur accounts",
+     2249942
+    ],
+    "loop": "CLOSED-SUCCESS",
+    "link": "domestic credit; indirect trade channel",
+    "note": "success on disbursement/inclusion metrics only -- register silent on NPAs"
+   },
+   {
+    "scheme": "Startup India (2016)",
+    "design": "DPIIT recognition + FFS Rs10,000cr via AIFs + seed fund + guarantees",
+    "trajectory": [
+     [
+      "2023-02-03",
+      "FFS",
+      "Rs7,980cr to 99 AIFs; Rs14,077cr into 791 startups",
+      1895964
+     ],
+     [
+      "2024-02-02",
+      "recognised",
+      "117,254",
+      2002100
+     ],
+     [
+      "2026-02-13",
+      "recognised+jobs",
+      "2.07 lakh startups, 21.9 lakh jobs",
+      2227597
+     ]
+    ],
+    "latest": [
+     "2026-04-13",
+     "FFS 1.0 fully committed (145 AIFs, Rs25,500cr+ into 1,370+ startups) -> FoF 2.0 Rs10,000cr notified; record 55,200 recognitions FY26",
+     2251638
+    ],
+    "loop": "CLOSED-SUCCESS",
+    "link": "crowds in foreign LP capital",
+    "note": "<500 (2016) -> 2.07 lakh (2026); formally succeeded"
+   },
+   {
+    "scheme": "M-SIPS (2012) -> PLI-LSEM -> MPMS",
+    "design": "20-25% capex subsidy era -> production-linked era -> brand era",
+    "trajectory": [
+     [
+      "2018-07-09",
+      "Samsung Noida inaugurated",
+      "",
+      1538166
+     ],
+     [
+      "2019-02-11",
+      "pre-PLI base",
+      "127 handset units; M-SIPS+PMP operative",
+      1563771
+     ],
+     [
+      "2020-03-21",
+      "bridge",
+      "PLI-LSEM approved",
+      1607487
+     ],
+     [
+      "2025-02-04",
+      "factories",
+      "2 (2014) -> 300+ units; #2 mobile maker",
+      2099656
+     ],
+     [
+      "2025-07-23",
+      "production/exports",
+      "Rs18,000cr -> Rs5.45L cr (28x); exports Rs1,500cr -> Rs2L cr (127x); imports 75% of demand -> 0.02%; LSEM cumulative prod Rs8.45L cr, exports Rs4.66L cr, 1.30L jobs",
+      2147394
+     ]
+    ],
+    "latest": [
+     "2026-07-15",
+     "LSEM tenure ended; MPMS Rs62,500cr successor; 99.2% of phones used in India made domestically; smartphones #1 export category 2025",
+     2284789
+    ],
+    "loop": "CLOSED-SUCCESS",
+    "link": "largest single trade-balance swing in the register (net importer -> net exporter)",
+    "note": "CORRECTION: '121% of export target' not found in register -- use register-native figures"
+   },
+   {
+    "scheme": "Mega Food Parks (2008)",
+    "design": "Rs50cr/park capital grant via SPVs",
+    "trajectory": [
+     [
+      "2020-02-04",
+      "sanctioned",
+      "39 parks",
+      1601874
+     ],
+     [
+      "2021-07-20",
+      "operational",
+      "22",
+      1737176
+     ],
+     [
+      "2023-12-05",
+      "final",
+      "41 approved / 24 operational / 17 pending; DISCONTINUED w.e.f. 01-04-2021",
+      1982721
+     ]
+    ],
+    "latest": [
+     "2024-07-25",
+     "41 lifetime; no new sanctions",
+     2036980
+    ],
+    "loop": "PARTIAL",
+    "link": "agri-export infra; export throughput never quantified",
+    "note": "~58% operational after 15 years; quiet discontinuation after third-party evaluation"
+   },
+   {
+    "scheme": "NIP-2012 urea plants",
+    "design": "assured-return gas-linked pricing for new/revived capacity",
+    "trajectory": [
+     [
+      "2019-06-21",
+      "revival pipeline",
+      "5 units +63.5 LMTPA",
+      1575119
+     ],
+     [
+      "2022-10-19",
+      "HURL Barauni commissioned",
+      "",
+      1869233
+     ],
+     [
+      "2022-11-12",
+      "RFCL Ramagundam dedicated",
+      "",
+      1875464
+     ],
+     [
+      "2024-12-10",
+      "output",
+      "6 new units of 12.7 LMT each (4 PSU JV + 2 private incl Matix)",
+      2082780
+     ]
+    ],
+    "latest": [
+     "2026-07-15",
+     "NIPU-2026 as explicit extension (RoE 12-16%); 33 units/269.42 LMT capacity but gap still import-filled",
+     2284800
+    ],
+    "loop": "PARTIAL",
+    "link": "direct import substitution; self-sufficiency missed -> NIPU",
+    "note": "capacity loop closed, endpoint missed"
+   },
+   {
+    "scheme": "Make in India (2014)",
+    "design": "umbrella facilitation, no own fiscal instrument",
+    "trajectory": [
+     [
+      "2018-07-18",
+      "FDI FY18",
+      "$61.96bn",
+      1539042
+     ],
+     [
+      "2021-05-24",
+      "FDI FY21",
+      "$81.72bn record",
+      1721268
+     ],
+     [
+      "2024-09-25",
+      "decade",
+      "$667.4bn cumulative (+119%); mfg FDI equity $165.1bn",
+      2058603
+     ]
+    ],
+    "latest": [
+     "2025-09-25",
+     "11 years; FY25 FDI $81.04bn -- plateau since FY21; EoDB 142->63",
+     2171059
+    ],
+    "loop": "PARTIAL",
+    "link": "FDI is the register's hardest forex-side outcome",
+    "note": "decade up, momentum flat"
+   }
+  ]
+ },
+ "cross_cutting_findings": [
+  "Design beats sector: successes and failures appear in the same sectors (solar capacity PARTIAL but solar manufacturing loop closed; FAME demand-pull succeeded while ACC production-payout stalled) -- the instrument, not the industry, predicts closure.",
+  "Voluntary-uptake models fail quietly: SATAT's 3,694 LOIs -> ~50 plants and Mega Food Parks' 24/41 operational both ended in course-corrections (mandatory blending obligation; discontinuation) that the launch releases never anticipated.",
+  "Misses are never announced: solar's 2022 target passed without a miss statement (achieved 2025); Food Parks were discontinued in a line of a Parliament answer; SATAT's pivot to mandates is dated but unheralded. The register records outcomes; it does not confess.",
+  "The employment-linked design has deep roots: PMRPY (2018, full EPF subsidy) and ABRY (2020, Rs 22,810cr) prefigure ELI 2025 -- the payout base's migration to jobs is a decade-old thread, not an invention.",
+  "Trade-balance swings concentrate: mobiles (net importer -> #1 export) and ethanol (Rs 1.97L cr forex saved) dwarf every other traced outcome -- both took ~8-10 years from instrument to closed loop, the honest timescale for the 2026 wave's bets (gasification, NIPU, critical minerals).",
+  "CAVEATS: loop verdicts are register-internal (PIB's own figures; MUDRA judged on disbursement not credit quality); pre-2017 launches traced through later releases; celebratory releases used only for milestone counts, Parliament answers preferred."
+ ],
+ "see_also": [
+  "data/pib_index.sqlite (122,141 releases)",
+  "data/pib_five_year_incentive_evolution_2026-07-19.json",
+  "scratchpad classifications 2017-18 (28 launches) and 2019-20 (33 launches) folded into the quarterly series"
+ ]
+}

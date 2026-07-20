@@ -1,0 +1,511 @@
+{
+ "purpose": "Cabinet-register incentive launches 2017-2020, classified by two agents (completes the 2017-2026 launch dataset begun with the 93 launches of 2021-2026; feeds the retrospective quarterly series).",
+ "retrieved": "2026-07-20",
+ "summary": {
+  "2017-2018": {
+   "cabinet_rows": 1180,
+   "launches": 28
+  },
+  "2019-2020": {
+   "cabinet_rows": 954,
+   "launches": 33
+  }
+ },
+ "launches_2017_2018": [
+  {
+   "scheme": "M-SIPS amendment",
+   "date": "2017-01-18",
+   "prid": 1480674,
+   "sector": "electronics",
+   "instrument_type": "capex-subsidy",
+   "outlay_crore": 10000,
+   "pli_family": false,
+   "note": "20-25% capex subsidy extended; PLI precursor"
+  },
+  {
+   "scheme": "Solar Park Scheme doubling 20->40GW",
+   "date": "2017-02-22",
+   "prid": 1514292,
+   "sector": "renewable-energy",
+   "instrument_type": "capex-subsidy",
+   "outlay_crore": 8100,
+   "pli_family": false
+  },
+  {
+   "scheme": "DMI&SP steel procurement preference",
+   "date": "2017-05-03",
+   "prid": 1489103,
+   "sector": "steel",
+   "instrument_type": "investment-policy",
+   "outlay_crore": null,
+   "pli_family": false
+  },
+  {
+   "scheme": "National Steel Policy 2017",
+   "date": "2017-05-03",
+   "prid": 1489109,
+   "sector": "steel",
+   "instrument_type": "investment-policy",
+   "outlay_crore": null,
+   "pli_family": false
+  },
+  {
+   "scheme": "SAMPADA/PMKSY umbrella",
+   "date": "2017-05-03",
+   "prid": 1489119,
+   "sector": "food-processing",
+   "instrument_type": "capex-subsidy",
+   "outlay_crore": 6000,
+   "pli_family": false
+  },
+  {
+   "scheme": "i3 National Biopharma Mission",
+   "date": "2017-05-17",
+   "prid": 1490032,
+   "sector": "pharma-biotech",
+   "instrument_type": "mission",
+   "outlay_crore": null,
+   "outlay_text": "$250M, 50% World Bank",
+   "pli_family": false
+  },
+  {
+   "scheme": "Public Procurement (Make in India) Order",
+   "date": "2017-05-24",
+   "prid": 1490691,
+   "sector": "cross-sector",
+   "instrument_type": "investment-policy",
+   "outlay_crore": null,
+   "pli_family": false
+  },
+  {
+   "scheme": "GST Budgetary Support (hill/NE)",
+   "date": "2017-08-16",
+   "prid": 1499900,
+   "sector": "himalayan-NE",
+   "instrument_type": "duty-remission",
+   "outlay_crore": 27413,
+   "pli_family": false,
+   "note": "4,284 units, to 31.3.2027"
+  },
+  {
+   "scheme": "Footwear & Leather special package (IFLDP precursor)",
+   "date": "2017-12-15",
+   "prid": 1512800,
+   "sector": "leather",
+   "instrument_type": "capex-subsidy",
+   "outlay_crore": 2600,
+   "pli_family": false
+  },
+  {
+   "scheme": "MDR subsidy on digital payments <Rs2000",
+   "date": "2017-12-15",
+   "prid": 1512812,
+   "sector": "digital-payments",
+   "instrument_type": "other",
+   "outlay_crore": null,
+   "pli_family": false
+  },
+  {
+   "scheme": "SCBTS/Samarth textiles skilling",
+   "date": "2017-12-20",
+   "prid": 1513467,
+   "sector": "textiles",
+   "instrument_type": "other",
+   "outlay_crore": 1300,
+   "pli_family": false
+  },
+  {
+   "scheme": "FDI liberalization (SBR/aviation)",
+   "date": "2018-01-10",
+   "prid": 1516115,
+   "sector": "cross-sector",
+   "instrument_type": "investment-policy",
+   "outlay_crore": null,
+   "pli_family": false
+  },
+  {
+   "scheme": "Champion Services Sectors fund",
+   "date": "2018-02-28",
+   "prid": 1522078,
+   "sector": "services",
+   "instrument_type": "fund",
+   "outlay_crore": 5000,
+   "pli_family": false
+  },
+  {
+   "scheme": "Crop Residue Mechanisation subsidy",
+   "date": "2018-03-07",
+   "prid": 1523143,
+   "sector": "agriculture",
+   "instrument_type": "capex-subsidy",
+   "outlay_crore": 1151.8,
+   "pli_family": false
+  },
+  {
+   "scheme": "NEIDS 2017",
+   "date": "2018-03-21",
+   "prid": 1525687,
+   "sector": "NE-industry",
+   "instrument_type": "capex-subsidy",
+   "outlay_crore": 3000,
+   "pli_family": false
+  },
+  {
+   "scheme": "Silk Industry integrated scheme",
+   "date": "2018-03-21",
+   "prid": 1525692,
+   "sector": "textiles-sericulture",
+   "instrument_type": "mission",
+   "outlay_crore": 2161.68,
+   "pli_family": false
+  },
+  {
+   "scheme": "PMRPY full 12% EPF wage subsidy",
+   "date": "2018-03-28",
+   "prid": 1526912,
+   "sector": "cross-sector",
+   "instrument_type": "other",
+   "outlay_crore": null,
+   "pli_family": false,
+   "note": "ELI precursor: employment-linked"
+  },
+  {
+   "scheme": "National Bamboo Mission restructured",
+   "date": "2018-04-25",
+   "prid": 1530125,
+   "sector": "agriculture",
+   "instrument_type": "mission",
+   "outlay_crore": 1290,
+   "pli_family": false
+  },
+  {
+   "scheme": "Micro Irrigation Fund (NABARD)",
+   "date": "2018-05-16",
+   "prid": 1532263,
+   "sector": "agriculture",
+   "instrument_type": "fund",
+   "outlay_crore": 5000,
+   "pli_family": false
+  },
+  {
+   "scheme": "National Policy on Biofuels 2018",
+   "date": "2018-05-16",
+   "prid": 1532264,
+   "sector": "energy-biofuels",
+   "instrument_type": "investment-policy",
+   "outlay_crore": null,
+   "outlay_text": "Rs 5,000cr VGF signalled for 2G ethanol",
+   "pli_family": false
+  },
+  {
+   "scheme": "Sugar crisis package",
+   "date": "2018-06-06",
+   "prid": 1534489,
+   "sector": "sugar",
+   "instrument_type": "interest-subvention",
+   "outlay_crore": 7000,
+   "pli_family": false,
+   "note": "incl ethanol capacity soft loans -- EBP capacity push"
+  },
+  {
+   "scheme": "NEIA Trust corpus grant",
+   "date": "2018-06-27",
+   "prid": 1536687,
+   "sector": "exports",
+   "instrument_type": "fund",
+   "outlay_crore": 2000,
+   "pli_family": false
+  },
+  {
+   "scheme": "ECGC capital infusion",
+   "date": "2018-06-27",
+   "prid": 1536689,
+   "sector": "exports",
+   "instrument_type": "credit-guarantee",
+   "outlay_crore": 2000,
+   "pli_family": false
+  },
+  {
+   "scheme": "PM-AASHA",
+   "date": "2018-09-12",
+   "prid": 1545775,
+   "sector": "agriculture",
+   "instrument_type": "other",
+   "outlay_crore": 15053,
+   "pli_family": false
+  },
+  {
+   "scheme": "Enhanced Recovery oil/gas incentives",
+   "date": "2018-09-12",
+   "prid": 1545777,
+   "sector": "oil-gas",
+   "instrument_type": "duty-remission",
+   "outlay_crore": null,
+   "pli_family": false
+  },
+  {
+   "scheme": "Sugar export assistance",
+   "date": "2018-09-26",
+   "prid": 1547295,
+   "sector": "sugar",
+   "instrument_type": "other",
+   "outlay_crore": 5538,
+   "pli_family": false
+  },
+  {
+   "scheme": "National Digital Communications Policy 2018",
+   "date": "2018-09-26",
+   "prid": 1547309,
+   "sector": "telecom",
+   "instrument_type": "investment-policy",
+   "outlay_crore": null,
+   "pli_family": false
+  },
+  {
+   "scheme": "Agriculture Export Policy 2018",
+   "date": "2018-12-06",
+   "prid": 1554960,
+   "sector": "agri-exports",
+   "instrument_type": "investment-policy",
+   "outlay_crore": null,
+   "pli_family": false
+  }
+ ],
+ "launches_2019_2020": [
+  {
+   "s": "AMIF agri-market fund",
+   "d": "2019-02-06",
+   "p": 1562955,
+   "t": "fund",
+   "cr": 2000
+  },
+  {
+   "s": "CPSU solar Ph-II VGF",
+   "d": "2019-02-06",
+   "p": 1562962,
+   "t": "viability-gap",
+   "cr": 8580
+  },
+  {
+   "s": "PM-KUSUM",
+   "d": "2019-02-19",
+   "p": 1565274,
+   "t": "capex-subsidy",
+   "cr": 34422
+  },
+  {
+   "s": "Rooftop Solar Ph-II",
+   "d": "2019-02-19",
+   "p": 1565282,
+   "t": "capex-subsidy",
+   "cr": 11814
+  },
+  {
+   "s": "NPE 2019 (parent of PLI-LSEM/SPECS/EMC2.0)",
+   "d": "2019-02-19",
+   "p": 1565285,
+   "t": "investment-policy",
+   "cr": null
+  },
+  {
+   "s": "PM JI-VAN (2G ethanol VGF)",
+   "d": "2019-02-28",
+   "p": 1566711,
+   "t": "viability-gap",
+   "cr": 1969.5
+  },
+  {
+   "s": "Software Products Policy 2019",
+   "d": "2019-02-28",
+   "p": 1566747,
+   "t": "investment-policy",
+   "cr": null
+  },
+  {
+   "s": "FAME-II",
+   "d": "2019-02-28",
+   "p": 1566757,
+   "t": "capex-subsidy",
+   "cr": 10000
+  },
+  {
+   "s": "RoSCTL",
+   "d": "2019-03-07",
+   "p": 1567804,
+   "t": "duty-remission",
+   "cr": null
+  },
+  {
+   "s": "Hydro promotion measures (large hydro = RE)",
+   "d": "2019-03-07",
+   "p": 1567817,
+   "t": "investment-policy",
+   "cr": null
+  },
+  {
+   "s": "SWAMIH stalled-housing fund",
+   "d": "2019-11-06",
+   "p": 1590679,
+   "t": "fund",
+   "cr": 10000
+  },
+  {
+   "s": "PCGS NBFC pooled-asset guarantee",
+   "d": "2019-12-11",
+   "p": 1595952,
+   "t": "credit-guarantee",
+   "cr": null
+  },
+  {
+   "s": "RoDTEP",
+   "d": "2020-03-13",
+   "p": 1606281,
+   "t": "duty-remission",
+   "cr": null
+  },
+  {
+   "s": "PLI Bulk Drugs + parks",
+   "d": "2020-03-21",
+   "p": 1607483,
+   "t": "production-linked",
+   "cr": 9940,
+   "pli": true
+  },
+  {
+   "s": "PLI MedDev + parks",
+   "d": "2020-03-21",
+   "p": 1607485,
+   "t": "production-linked",
+   "cr": 3820,
+   "pli": true
+  },
+  {
+   "s": "PLI-LSEM",
+   "d": "2020-03-21",
+   "p": 1607487,
+   "t": "production-linked",
+   "cr": 40995,
+   "pli": true
+  },
+  {
+   "s": "EMC 2.0",
+   "d": "2020-03-21",
+   "p": 1607489,
+   "t": "infra-package",
+   "cr": 3762
+  },
+  {
+   "s": "SPECS",
+   "d": "2020-03-21",
+   "p": 1607491,
+   "t": "capex-subsidy",
+   "cr": 3285
+  },
+  {
+   "s": "ECLGS",
+   "d": "2020-05-20",
+   "p": 1625306,
+   "t": "credit-guarantee",
+   "cr": 300000
+  },
+  {
+   "s": "NBFC Special Liquidity SPV",
+   "d": "2020-05-20",
+   "p": 1625310,
+   "t": "fund",
+   "cr": 30000
+  },
+  {
+   "s": "PMMSY",
+   "d": "2020-05-20",
+   "p": 1625314,
+   "t": "mission",
+   "cr": 20050
+  },
+  {
+   "s": "PM-FME",
+   "d": "2020-05-20",
+   "p": 1625320,
+   "t": "capex-subsidy",
+   "cr": 10000
+  },
+  {
+   "s": "MSME FoF + sub-debt + new definition",
+   "d": "2020-06-01",
+   "p": 1628344,
+   "t": "fund",
+   "cr": 70000
+  },
+  {
+   "s": "Shishu-MUDRA 2% subvention",
+   "d": "2020-06-24",
+   "p": 1633895,
+   "t": "interest-subvention",
+   "cr": 1542
+  },
+  {
+   "s": "AHIDF",
+   "d": "2020-06-24",
+   "p": 1633918,
+   "t": "fund",
+   "cr": 15000
+  },
+  {
+   "s": "ARHC rental housing",
+   "d": "2020-07-08",
+   "p": 1637215,
+   "t": "other",
+   "cr": null
+  },
+  {
+   "s": "Agriculture Infrastructure Fund",
+   "d": "2020-07-08",
+   "p": 1637221,
+   "t": "fund",
+   "cr": 100000
+  },
+  {
+   "s": "Revamped PPP VGF (social windows)",
+   "d": "2020-11-11",
+   "p": 1671910,
+   "t": "viability-gap",
+   "cr": 8100
+  },
+  {
+   "s": "PLI for 10 key sectors",
+   "d": "2020-11-11",
+   "p": 1671912,
+   "t": "production-linked",
+   "cr": 145980,
+   "pli": true
+  },
+  {
+   "s": "ABRY EPF wage subsidy",
+   "d": "2020-12-09",
+   "p": 1679336,
+   "t": "other",
+   "cr": 22810
+  },
+  {
+   "s": "PM-WANI",
+   "d": "2020-12-09",
+   "p": 1679342,
+   "t": "investment-policy",
+   "cr": null
+  },
+  {
+   "s": "Ethanol distillation capacity subvention (modified)",
+   "d": "2020-12-30",
+   "p": 1684626,
+   "t": "interest-subvention",
+   "cr": null
+  },
+  {
+   "s": "CBIC industrial nodes (Krishnapatnam/Tumakuru/GN)",
+   "d": "2020-12-30",
+   "p": 1684629,
+   "t": "infra-package",
+   "cr": 7725
+  }
+ ]
+}

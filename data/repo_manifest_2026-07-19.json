@@ -140,6 +140,14 @@
       ]
     },
     {
+      "title": "The matured cohort: 18 schemes traced launch-to-outcome (2008-2020 -> 2026)",
+      "chart": "charts/matured_scheme_cohort.html",
+      "data": [
+        "data/matured_scheme_cohort_2026-07-20.json",
+        "data/pib_launch_register_2017_2020_2026-07-20.json"
+      ]
+    },
+    {
       "title": "Five-year incentive evolution 2021-2026 (93 launches from the Cabinet register)",
       "chart": "charts/pib_five_year_incentive_evolution.html",
       "data": [
