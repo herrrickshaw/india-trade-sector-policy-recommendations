@@ -34,14 +34,15 @@
 h1 { string-set: sectiontitle content(); }
 #pgtotal { string-set: totalpages content(); position: absolute; width: 0; height: 0; overflow: hidden; color: transparent; }
 
-/* ---- Force light rendering regardless of tokens ---- */
+/* ---- Force light rendering regardless of tokens ----
+   NOTE: keep .bulletin/.sheet as flex — forcing display:block here sends
+   WeasyPrint into an infinite layout loop on some bulletins (6h hang).
+   The blank-first-page bug is fixed by #pgtotal position:absolute above,
+   which stops the injected span from opening a line box before the flex
+   container. */
 html { background: #ffffff; }
-/* block, not flex: WeasyPrint treats a page-spanning flex container as
-   hard-to-fragment and pushes it to a fresh page, blanking each section's
-   first page */
-.bulletin { background: #ffffff !important; padding: 0 !important; display: block !important; }
-.sheet { max-width: none !important; display: block !important; }
-.sheet > * { margin-bottom: 12pt; }
+.bulletin { background: #ffffff !important; padding: 0 !important; }
+.sheet { max-width: none !important; gap: 16px !important; }
 
 /* ---- Typography scale-down for A4 ---- */
 body { font-size: 9.5pt; }
