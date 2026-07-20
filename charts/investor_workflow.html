@@ -1,0 +1,154 @@
+<title>The Investor's Route — Schemes, NSWS, Ministry Connects & the Statutory Path</title>
+<meta name="hz:canvas-width" content="1180">
+<style>
+  :root {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6; --mismatch:#7a5aa8;
+    --font-display:"Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --font-mono:"IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+      --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+      --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+      --data-line:#3987e5; --data-soft:#1c2c40; --mismatch:#a98fd6;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+    --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+    --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+    --data-line:#3987e5; --data-soft:#1c2c40; --mismatch:#a98fd6;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6; --mismatch:#7a5aa8;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; }
+  .bulletin { background:var(--page-bg); color:var(--ink); font-family:var(--font-body); padding:40px 20px 56px; display:flex; justify-content:center; }
+  .sheet { width:100%; max-width:1100px; display:flex; flex-direction:column; gap:26px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:16px; }
+  .eyebrow { font-family:var(--font-mono); font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); display:flex; gap:10px; align-items:center; }
+  .eyebrow::before { content:""; width:7px; height:7px; border-radius:50%; background:var(--accent); }
+  h1 { font-family:var(--font-display); font-weight:500; font-size:clamp(24px,3.1vw,32px); margin:6px 0 0; text-wrap:balance; }
+  .dek { font-size:14px; color:var(--ink-2); max-width:90ch; line-height:1.55; margin:8px 0 0; }
+  .source-line { font-family:var(--font-mono); font-size:11px; color:var(--ink-muted); margin-top:8px; }
+
+  section.block { background:var(--surface); border:1px solid var(--rule-strong); padding:20px 24px; }
+  .block-tag { font-family:var(--font-mono); font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent); }
+  .block-title { font-family:var(--font-display); font-size:20px; font-weight:600; margin:4px 0 10px; }
+
+  .step { display:grid; grid-template-columns:56px 1fr; gap:14px; padding:14px 0; border-bottom:1px solid var(--rule); }
+  .step:last-child { border-bottom:none; }
+  .s-num { width:40px; height:40px; border-radius:50%; background:var(--accent); color:var(--surface); font-family:var(--font-display); font-size:19px; font-weight:700; display:flex; align-items:center; justify-content:center; }
+  .s-name { font-family:var(--font-display); font-size:15.5px; font-weight:700; margin-bottom:3px; }
+  .s-what { font-size:12.5px; line-height:1.6; color:var(--ink-2); }
+  .s-what b { color:var(--ink); }
+  .s-tool { font-family:var(--font-mono); font-size:10px; color:var(--data-line); margin-top:5px; }
+  .s-note { font-size:11.5px; line-height:1.55; color:var(--ink-2); background:var(--accent-soft); border-left:3px solid var(--accent); padding:7px 11px; margin-top:7px; }
+  .s-note b { color:var(--ink); }
+
+  table.fig { width:100%; border-collapse:collapse; font-size:12px; margin-top:12px; }
+  table.fig th { text-align:left; font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-muted); padding:5px 10px 7px 0; border-bottom:2px solid var(--rule-strong); }
+  table.fig td { padding:8px 10px 8px 0; border-bottom:1px solid var(--rule); vertical-align:top; line-height:1.5; color:var(--ink-2); }
+  table.fig tr:last-child td { border-bottom:none; }
+  td.k { font-weight:700; color:var(--ink); white-space:nowrap; }
+  td.mono { font-family:var(--font-mono); font-size:10px; }
+
+  .candor { border-left:3px solid var(--alert); background:var(--alert-soft); padding:12px 16px; margin-top:12px; }
+  .candor .lbl { font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; letter-spacing:0.06em; color:var(--alert); }
+  .candor ul { margin:6px 0 0; padding-left:16px; }
+  .candor li { font-size:12px; line-height:1.6; color:var(--ink-2); margin-bottom:6px; }
+  .candor li b { color:var(--ink); }
+  .callout { border-left:3px solid var(--warn); background:var(--warn-soft); padding:12px 16px; margin-top:12px; font-size:12.5px; line-height:1.6; color:var(--ink-2); }
+  .callout b { color:var(--ink); }
+  footer.colophon { text-align:center; font-family:var(--font-mono); font-size:10.5px; color:var(--ink-muted); padding-top:8px; }
+</style>
+
+<div class="bulletin">
+  <div class="sheet">
+    <div class="masthead">
+      <div class="eyebrow">India Trade — Sector &amp; Policy Recommendations · Investor Workflow</div>
+      <h1>From sector to sanction: the investor's route through India's incentive stack</h1>
+      <p class="dek">Eight steps from "which schemes apply to me" to incentive claims — with <b>NSWS as the spine</b> (registration → Know-Your-Approvals → single-window applications → scheme gateways), the site-verified catalog for applicability, live-window checks, per-scheme portals and ministry connects, the seven statutory gates on the critical path, and the candor layer an investment brochure never carries.</p>
+      <div class="source-line">ASSEMBLED 2026-07-20 from the site-verified ministry catalog (16 ministries + NSWS), scheme registry, PLI report card, and the seven-gate workflow schema. Portals and contacts as verified on government sites.</div>
+    </div>
+
+    <section class="block">
+      <div class="block-tag">The workflow</div>
+      <div class="block-title">Eight steps, each with its tool and its honest footnote</div>
+      <div id="steps"></div>
+    </section>
+
+    <section class="block">
+      <div class="block-tag">Ministry connects</div>
+      <div class="block-title">Who actually answers — nodal agencies, PMAs and portals</div>
+      <table class="fig">
+        <thead><tr><th>Connect</th><th>Contact / portal</th><th>For</th></tr></thead>
+        <tbody id="connects"></tbody>
+      </table>
+      <div class="callout"><b>The NSWS spine:</b> register at nsws.gov.in → run <b>Know Your Approvals</b> (personalized central + state approval checklist) → apply through the single window (32 ministries, 34 States/UTs live) → use the six scheme gateways (Vehicle Scrapping · Ethanol · IFLDP · Solar PLI · Green Hydrogen · PM GatiShakti) where applicable — each carries validated documents, nodal contacts and the apply flow. Helpline <b>1800-102-5841</b> (Mon–Sat 9–6) · contactus-nsws[at]investindia[dot]org[dot]in · weekday 3–4pm technical grievance connect.</div>
+    </section>
+
+    <section class="block">
+      <div class="block-tag">Candor layer</div>
+      <div class="block-title">What to underwrite, not just what to apply for</div>
+      <div class="candor">
+        <div class="lbl">Five rules from the program's verified record</div>
+        <ul>
+          <li><b>Three-numbers discipline:</b> FDI inflow ≠ committed investment ≠ disbursed incentive. Never let a pitch conflate them.</li>
+          <li><b>Verify on portals, not pages:</b> six ministry scheme pages were provably stale in the 20-Jul-2026 sweep, two ministry domains are dead, one scheme list doesn't render. The E-DRIVE "closure" that was actually an extension is the standing example.</li>
+          <li><b>Underwrite output-linked incentives slowly:</b> ~15% of PLI outlay disbursed in five years — with grade-A exceptions (Pharma, Electronics). Where instruments pay on <b>investment</b> (capex/VGF/parks/credit), cash arrives with the build.</li>
+          <li><b>Attrition precedents are real:</b> 14 of 58 steel projects withdrew; White Goods slid 85→80 beneficiaries unexplained; an ACC awardee vanished; Drones PLI expired without a successor.</li>
+          <li><b>The state layer changes the math:</b> states top up central capex schemes 40–50% in semiconductor cases; hub choice (Gujarat's 178% intent→implementation conversion, EC-pipeline depth as the forward indicator) materially changes both the package and the probability of completion.</li>
+        </ul>
+      </div>
+      <div class="callout"><b>Dated triggers on the calendar:</b> UNNATI registration closes <b>30-Sep-2026</b> · beyond-E20 decision due <b>31-Oct-2026</b> · ALMM List-II window ends <b>31-Dec-2026</b> · PLI Food Processing sunsets <b>FY2026-27</b> · flat-10% US tariff replacement expiry <b>24-Jul-2026</b> (trade-lane risk).</div>
+    </section>
+
+    <footer class="colophon">herrrickshaw/india-trade-sector-policy-recommendations — data: <a href="../data/investor_workflow_2026-07-20.json">data/investor_workflow_2026-07-20.json</a> · companions: <a href="ministry_incentive_catalog.html">ministry catalog</a> · <a href="scheme_registry.html">scheme registry</a> · <a href="pli_report_card.html">report card</a> · <a href="project_workflow_schema.html">seven-gate schema</a></footer>
+  </div>
+</div>
+
+<script>
+const STEPS = [
+ ["Locate your sector's incentive set","Match sector → instruments: production-linked (mostly closed; <b>MPMS/ECMS</b> are the live electronics lanes), capex subsidies (DoP SPI/SMDI, UNNATI, state packages), park infrastructure (BHAVYA, PM MITRA, pharma/device parks — apply to SPVs), VGF (gasification, offshore wind, UDAN), credit/guarantees (CGTMSE, ECLGS 5.0), duty instruments (RoDTEP/EPCG/SEZ; SPMEPCI for EVs), price-support (EBP/SATAT offtake).","Ministry incentive catalog + master sector scorecard","The five-year register shows the state now pays for <b>inputs</b> (land, credit, risk, capex) more than output — if you missed a PLI window, the live money is in capex/cluster/credit lanes."],
+ ["Check the window before anything else","Verify on the <b>scheme portal</b>, never the ministry page. Open now: UNNATI (→30-Sep-2026), Coal Gasification 2026 R1, DoP API-CF + SMDI calls, MoFPI EoIs, ECMS (extended), ALMM enlistment, AHIDF/NLM loans, Steel R&amp;D, NTTM rolling.","Scheme registry + catalog OPEN flags · NSWS gateway notices","PLI windows are almost all closed; successors (MPMS) and later rounds are the re-entry points — track <b>Cabinet approvals</b>, not ministry pages."],
+ ["Structure the entity and FDI route","Confirm the sector's FDI cap/route (automatic vs FIFP approval). Any land-border-country investor anywhere in the chain triggers the amended Press Note 3 <b>Beneficial-Owner</b> test (Cabinet 10-Mar-2026). Semicon 2.0 explicitly admits OCI-owned companies in design.","DPIIT FDI policy + PN3 amendment · this repo's country strategies","Official state-wise FDI data credits your <b>registered office</b>, not your factory — your investment may 'appear' in the wrong state."],
+ ["Enter through NSWS","Register at nsws.gov.in → run <b>Know Your Approvals</b> to generate the personalized central + state approval checklist → apply through the single window → use the scheme gateways where applicable. File <b>IEM Part A</b> (manufacturing intent) here — it is gate 2 of the lifecycle and the baseline your implementation is later measured against.","nsws.gov.in — Central/State Approvals · Schemes · KYA","32 ministries + 34 States/UTs live; helpline 1800-102-5841; the gateway carried the only formal IFLDP closure notice found anywhere — treat NSWS notices as authoritative on windows."],
+ ["Apply on the scheme's own portal","Each scheme runs its own portal with a PMA: ECMS ecms.meity.gov.in · IT-HW 2.pliithw.com · telecom pli-telecom.udyamimitra.in · White Goods pliwhitegoods.ifciltd.com · UNNATI unnati.dpiit.gov.in · BHAVYA nicdc.in/bhavya · textiles pli.texmin.gov.in · food plimofpi.ifciltd.com + SAMPADA · AHIDF/NLM udyamimitra · solar/hydrogen via SECI/IREDA tenders · gasification via Coal RFPs · exports via DGFT.","Portal per scheme — full list in the ministry catalog","<b>PMA contacts are the real connect</b>: IFCI (pli[at]ifciltd.com), C-DAC (DLI), SECI/IREDA, NICDC, state SPVs, MAI Empowered Committee."],
+ ["Clear the statutory gates in parallel","The seven-gate lifecycle is the critical path: IEM-A → land (plug-and-play parks compress this) → <b>EC via PARIVESH</b> → build → IEM-B at production → claims. The EC register correlates <b>0.96</b> with actual implementation — it is both your obligation and the market's best forward indicator.","PARIVESH portal · state single windows via NSWS","Pick states by demonstrated conversion: Gujarat runs the full chain at 33.8% of national implementation, 178% intent→implementation."],
+ ["Claim — with calibrated expectations","Claims run annually on incremental sales (PLI), commissioning+1y (solar), per-contract (SBFAS ~14%), per-route (UDAN VGF), per-loan (subventions). Calibrate to the report card: Pharma (A) and Electronics (A−) pay; Auto accelerating; Steel/Textiles thin; ACC zero in five years.","PLI report card + registry attrition record","Model output-linked incentives as <b>upside, not base case</b> — except capex/VGF/credit instruments, which pay with the build."],
+ ["Monitor the policy surface","Windows move (ECMS extended, textiles amended thrice, E-DRIVE extended), successors arrive by Cabinet (MPMS + Semicon 2.0 in one day), and ~₹1.9 lakh cr of new non-PLI lanes opened in 2026 alone. Re-verify your scheme's portal quarterly; track the Cabinet register.","pib_index.sqlite --update · quarterly registry refresh","Nearest dated triggers: UNNATI 30-Sep-2026 · E20 decision 31-Oct-2026 · ALMM List-II 31-Dec-2026 · PLISFPI sunset FY27."]
+];
+document.getElementById('steps').innerHTML = STEPS.map((s,i)=>`
+ <div class="step"><div class="s-num">${i+1}</div><div>
+   <div class="s-name">${s[0]}</div>
+   <div class="s-what">${s[1]}</div>
+   <div class="s-tool">TOOL: ${s[2]}</div>
+   <div class="s-note"><b>Investor note:</b> ${s[3]}</div>
+ </div></div>`).join('');
+const CONNECTS = [
+ ["NSWS / Invest India","1800-102-5841 · contactus-nsws[at]investindia.org.in","Single-window registration, KYA, approval routing, scheme gateways"],
+ ["IFCI Ltd (PMA)","pli[at]ifciltd.com · pliithw[at]ifciltd.com","PLI LSEM/MPMS-era, IT Hardware, White Goods, Food Processing claims"],
+ ["MeitY / ISM","ecms-meity[at]meity.gov.in · ism.gov.in","ECMS, Semicon 2.0, DLI (C-DAC nodal)"],
+ ["DoT","ddgic-dot[at]gov.in · ttdf.usof.gov.in","Telecom PLI, TTDF grants, testing-cost reimbursement"],
+ ["MNRE / SECI / IREDA","IREDA cmd[at]ireda.in · +91-11-24682206-19 · MNRE 011-24360707","Solar PLI, SIGHT hydrogen, offshore VGF, ALMM enlistment"],
+ ["DoP","pharma-dept.gov.in/schemes (live calls) · prip portal","Pharma PLIs, SPI/API-CF, SMDI, PRIP, park SPVs"],
+ ["State park SPVs","via PM MITRA (7 states) · drug/device parks · NICDC (BHAVYA)","Plug-and-play land + 40–50% state top-ups on central capex"],
+ ["DGFT","dgft.gov.in/CP · regional authorities · Niryat Bandhu","IEC, RoDTEP/RoSCTL, EPCG/AA, Export Promotion Mission"],
+ ["Udyamimitra (SIDBI)","ahidf.udyamimitra.in · nlm.udyamimitra.in","AHIDF/NLM loans + subvention portals"]
+];
+document.getElementById('connects').innerHTML = CONNECTS.map(c=>`<tr><td class="k">${c[0]}</td><td class="mono">${c[1]}</td><td>${c[2]}</td></tr>`).join('');
+</script>

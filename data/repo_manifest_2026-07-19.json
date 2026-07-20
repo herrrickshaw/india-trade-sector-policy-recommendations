@@ -119,6 +119,13 @@
       ]
     },
     {
+      "title": "Investor workflow: from sector to sanction via NSWS (8 steps, connects, candor)",
+      "chart": "charts/investor_workflow.html",
+      "data": [
+        "data/investor_workflow_2026-07-20.json"
+      ]
+    },
+    {
       "title": "Ministry incentive catalog (site-verified, 16 ministries + NSWS gateway)",
       "chart": "charts/ministry_incentive_catalog.html",
       "data": [
