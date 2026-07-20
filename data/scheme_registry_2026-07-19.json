@@ -32,7 +32,7 @@
   "closures_and_transitions": [
     {"event": "PLI-LSEM tenure closed", "date": "2026-03-31", "detail": "Five-year window ended; successor MPMS approved 15 Jul 2026 (PRID 2284789) -- continuity for smartphones, India's #1 export item"},
     {"event": "PLI Drones expired", "date": "2024-03-31", "detail": "Three-year window ran out; no successor. Rs 30cr of Rs 120cr disbursed; 23 beneficiaries"},
-    {"event": "FAME-II ended -> PM E-DRIVE -> also ended", "date": "2024-03-31 and 2026-03-31", "detail": "FAME-II closed Mar 2024; PM E-DRIVE (Rs 10,900cr, PRID 2053889) ran exactly two years to 31 Mar 2026; NCRPB fleet-replacement scheme (PRID 2268342) is a partial, regional follow-on only"},
+    {"event": "FAME-II ended -> PM E-DRIVE (REVISED: extended, not ended)", "date": "2024-03-31; segment-wise from 2025-12-26", "detail": "FAME-II closed Mar 2024 (bridged by EMPS Apr-Sep 2024). CORRECTION 2026-07-20 (site-verified on pmedrive.heavyindustries.gov.in, superseding this registry's first edition which recorded E-DRIVE as ended 31 Mar 2026): PM E-DRIVE was EXTENDED segment-wise -- e-2W to 31 Jul 2026, e-3W rickshaws/carts to 31 Mar 2028; only the e-3W L5 segment closed 26 Dec 2025 (final OEM claims 25 Apr 2026). Portal live with new E-Truck and E-Bus sub-portals."},
     {"event": "ECLGS sunset -> revival as 5.0", "date": "2023-03-31 -> 2026-05-05", "detail": "The COVID credit-guarantee line lapsed in 2023 and was revived three years later (PRID 2258114) -- a closure that un-closed"},
     {"event": "IT Hardware PLI 1.0 replaced by 2.0", "date": "2023-05-17", "detail": "Rs 7,350cr design superseded by Rs 17,000cr within 27 months (PRID 1924766)"},
     {"event": "Specialty Steel Round-1 attrition", "date": "disclosed 2025-03-22", "detail": "14 of 58 projects withdrew (PRID 2114011); Round 1.2 re-opened with MoUs 9 Feb 2026"},
@@ -43,6 +43,10 @@
     {"event": "Solar PLI T1 folded into T2", "date": "2022-09-21", "detail": "Rs 4,500cr Tranche-1 design absorbed into Rs 19,500cr Tranche-2 (PRID 1861127)"}
   ],
 
+  "corrections": [
+    {"date": "2026-07-20", "what": "PM E-DRIVE status revised from 'ended 31 Mar 2026' to 'EXTENDED segment-wise' (e-2W -> 31 Jul 2026; e-3W R/C -> 31 Mar 2028; L5 closed 26 Dec 2025) after direct verification of the live scheme portal during the ministry-catalog sweep. The original entry relied on the scheme's announced two-year window; the portal shows the extensions."},
+    {"date": "2026-07-20", "what": "Added from NSWS verification: IFLDP (DPIIT/leather, Rs 1,700cr, 2021-26) -- NSWS carries a formal notice of closure of its application portal, consistent with the scheme's 31 Mar 2026 sunset; a closure the ministry-side pages do not surface."}
+  ],
   "readings": [
     "The scheme lifecycle now has observable ends: LSEM is the first PLI to complete a full tenure and be succeeded; Drones is the first to simply expire. End-dates are no longer hypothetical -- Food Processing's window closes FY2026-27 with no successor announced, the next one to watch.",
     "Attrition is reported only under duress: steel's 14 withdrawals surfaced in one PIB line; White Goods' 85->80 has never been explained; ACC's lost awardee was discovered by document comparison, not disclosure.",

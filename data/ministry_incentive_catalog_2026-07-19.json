@@ -1,0 +1,137 @@
+{
+  "purpose": "Ministry-wise catalog of every company-facing incentive policy this program tracks, VERIFIED AGAINST EACH MINISTRY'S OWN WEBSITE (plus the NSWS gateway) by six parallel agents on 2026-07-20. For each ministry: active schemes with what companies actually get, application windows open right now, closed/legacy schemes, and the health of the ministry's own scheme pages. ~100 policies across 16 ministries + NSWS.",
+  "retrieved": "2026-07-20",
+  "method": "Six agents each covering a ministry cluster; verification via direct fetch of ministry sites, their headless CMS APIs where the public site is a JS shell, dedicated scheme portals, and rendered-browser passes; NSWS (nsws.gov.in) verified in-session. Counts, rates and dates are as stated on the government pages fetched; 'not published'/'not verifiable' recorded where that is the truth. Full per-policy detail (URLs, notes) preserved below.",
+  "headlines": [
+    "ACCESS ARCHITECTURE: the ministry web estate has quietly gone headless -- MeitY, DoT and DPIIT are client-rendered shells whose real content lives in public WordPress JSON APIs (site.gov.in/cms/wp-json/...), and commerce.gov.in's content API answers to the Basic-auth header shipped in its own JS bundle. Meanwhile three domains are dead or unreachable (fert.nic.in and texmin.nic.in DNS-dead, mines.gov.in timing out), msme.gov.in's scheme list never renders even in a browser, and six scheme pages are provably stale (ACC re-tender absent, steel PLI frozen at Mar 2025 under a fresh footer stamp, MNRE PLI last updated Aug 2023, MoPNG still citing '20% by 2030').",
+    "OPEN RIGHT NOW (as of 20 Jul 2026): UNNATI 2024 registration to 30-Sep-2026; Coal Gasification 2026 Round-1 (RFP 05-Jun, pre-application conference 16-Jul); DoP's API-CF and SMDI calls (23-Jun/03-Jul-2026); MoFPI cold-chain irradiation EoI + PM-FME + Operation Greens claims; Steel R&D proposals; AHIDF and NLM loan portals; ECMS window (extended 30-Jul-2025); ALMM enlistment (re-opened May 2026); PM E-DRIVE e-2W claims to 31-Jul-2026.",
+    "VERIFIED CLOSURES beyond the scheme registry: SPECS and EMC 2.0 both closed to applications 31-Mar-2024; ATUFS closed (claims settlement only); Interest Equalisation Scheme lapsed 31-Dec-2024 (successor: NIRYAT PROTSAHAN subvention); IFLDP application portal closed (NSWS notice) at its Rs 1,700cr window's end; M-SIPS and original EMC are maintained legacy pages.",
+    "CORRECTION APPLIED to the scheme registry: PM E-DRIVE was extended segment-wise (e-2W to 31-Jul-2026, e-rickshaws/carts to 31-Mar-2028; only L5 closed 26-Dec-2025) -- the live portal contradicts the announced two-year window."
+  ],
+
+  "nsws_gateway": {
+    "what": "National Single Window System (nsws.gov.in) -- the DPIIT/Invest India application gateway: 32 ministries and 34 States/UTs live; last reviewed 07-Jul-2026. Its public 'Government Schemes' catalog curates six scheme gateways (Vehicle Scrapping Policy, Ethanol Policy + Helpdesk, IFLDP, Solar PV PLI, National Green Hydrogen Mission, PM GatiShakti), each with About/documents/links/contacts and an 'Apply for Scheme Related Approvals' flow into the Know-Your-Approvals engine.",
+    "unique_contributions": [
+      "IFLDP (DPIIT, leather/footwear): Rs 1,700cr to 31-Mar-2026, seven sub-schemes with concrete rates -- CETP assistance 70% (80% NE) capped Rs 200cr; IDLS modernization subsidy 30% MSME / 20% others (40%/30% NE); mega-cluster assistance 50% (70% NE) capped Rs 125cr; brand promotion Rs 100cr -- a company-facing scheme absent from every ministry-cluster brief",
+      "Formal 'Notice for closure of NSWS portal for Submission of Applications under IFLDP 2021-26' -- an application-window closure the ministry-side pages never surface",
+      "NSWS is itself the durable verification target for application-window status: scheme pages carry validated documents and the apply flow shows whether a window is live"
+    ],
+    "access_note": "Outer site is server-rendered Drupal (curl-friendly); /portal/* scheme pages are a React SPA needing a browser. No public API for a full scheme registry -- the catalog is 6 curated gateways, not comprehensive."
+  },
+
+  "ministries": [
+    {"ministry": "MeitY", "site_health": "Next.js shell; REAL CONTENT at www.meity.gov.in/cms/wp-json (headless WordPress) -- 22-scheme API list", "active": [
+      {"s": "MPMS (LSEM successor)", "t": "production-linked", "d": "2.25-5% on eligible mobile-phone sales FY27-FY31 (+1.5% domestic sourcing, +3% Indian-brand design/R&D); Rs 62,500cr -- NOT on the MeitY site yet (Cabinet press only)"},
+      {"s": "PLI IT Hardware 2.0", "t": "production-linked", "d": "~5% avg on incremental sales 6y; portal 2.pliithw.com; notified 29-May-2023"},
+      {"s": "Semicon 2.0", "t": "capex-subsidy", "d": "Rs 1,27,500cr, six pillars: CMOS fabs 40% pari-passu, other fabs/adv-packaging 35%, conventional packaging 25%, NEW equipment/materials/chemicals/gases pillar, design seed-money + DLI for startups; site updated 15-Jul-2026"},
+      {"s": "ECMS", "t": "production-linked+capex hybrid", "d": "Components/sub-assemblies; notified 08-Apr-2025; window EXTENDED (Amendment-2, 30-Jul-2025); ecms.meity.gov.in"},
+      {"s": "DLI", "t": "design-linked", "d": "50% of design spend up to Rs 15cr + 6%/4% deployment incentive up to Rs 30cr (per notification); C-DAC nodal"},
+      {"s": "IndiaAI Mission", "t": "R&D-grant", "d": "Subsidised GPU compute, startup financing; Rs 10,371.92cr; runs on indiaai.gov.in, not in MeitY scheme list"}],
+     "closed": ["PLI-LSEM (tenure ended 31-Mar-2026; 4-6% on incremental sales; page does not state the closure)", "SPECS (25% capex; applications closed 31-Mar-2024)", "EMC 2.0 (applications closed 31-Mar-2024; disbursal to Mar-2028)", "IT-HW 1.0 (superseded 2023)", "M-SIPS (closed 31-Dec-2018, page maintained)", "EMC original 2012 (closed 2017; 19 clusters + 3 CFCs, Rs 1,470cr approved)"]},
+    {"ministry": "DoT", "site_health": "Next.js shell; real content at dot.gov.in/cms/wp-json", "active": [
+      {"s": "PLI Telecom & Networking", "t": "production-linked", "d": "Rs 12,195cr (Rs 2,500cr MSME-earmarked); +1% design-led manufacturing adder (Jun-2022); portal pli-telecom.udyamimitra.in"},
+      {"s": "TTDF", "t": "R&D-grant", "d": "Milestone grants for 5G/6G/quantum/chipsets via Digital Bharat Nidhi; serial CfPs since 2022; testing-cost reimbursement added 10-Mar-2025"},
+      {"s": "TDIP", "t": "R&D-grant", "d": "NEW umbrella: tech development, 3GPP/ITU standardisation, incubation, export promotion (page modified 11-May-2026)"},
+      {"s": "Testing & certification reimbursement for startups/MSEs", "t": "R&D-grant", "d": "Partial reimbursement of TEC/NCCS/NABL charges"},
+      {"s": "Amended BharatNet Programme", "t": "VGF-successor", "d": "DBN-funded rollout via BSNL/state agreements (replaced the PPP/VGF concession model)"}], "closed": []},
+    {"ministry": "DPIIT", "site_health": "Next.js shell; real content at www.dpiit.gov.in/cms/wp-json", "active": [
+      {"s": "BHAVYA", "t": "infra", "d": "Rs 33,660cr, 100 plug-and-play parks FY27-FY32; portal nicdc.in/bhavya LIVE"},
+      {"s": "UNNATI 2024", "t": "capex-subsidy", "d": "NE units: capital investment + interest + manufacturing/services-linked incentives, Rs 10,037cr; REGISTRATION OPEN to 30-Sep-2026 (unnati.dpiit.gov.in)"},
+      {"s": "PLI White Goods", "t": "production-linked", "d": "4-6% on incremental sales 5y, AC/LED components; FY22-FY29"},
+      {"s": "J&K NCSS", "t": "capex-subsidy", "d": "Rs 28,400cr; four incentives (CII/CIS/GST-linked/working-capital subvention); operational 01-Apr-2021 to 31-MAR-2037 -- the longest-window scheme in the catalog"},
+      {"s": "GST Budgetary Support", "t": "duty-remission", "d": "Rs 27,413cr GST reimbursement for legacy excise-exemption units (hill states); claims-based, no new entrants"},
+      {"s": "NICDP", "t": "infra", "d": "20 corridor projects incl. the 12 industrial smart cities (Aug 2024)"},
+      {"s": "Startup India: SISFS + CGSS + FoF 2.0", "t": "fund/credit-guarantee", "d": "Seed grants via incubators; startup credit guarantees; Rs 10,000cr FoF 2.0 via AIFs"},
+      {"s": "IFLDP (via NSWS)", "t": "capex-subsidy/park-infra", "d": "Rs 1,700cr leather/footwear programme -- IDLS 30%/20% modernization subsidy, CETP 70-80%, mega-clusters 50-70% -- application portal CLOSED at window end 31-Mar-2026"}],
+     "closed": ["IDS 2017 (J&K/Ladakh + HP/UK; closed 2021/2022, liabilities to FY29)", "NEIDS 2017 (closed; succeeded by UNNATI)", "NEIIPP 2007 (closed 2017)"]},
+    {"ministry": "Dept of Commerce / DGFT", "site_health": "commerce.gov.in React SPA (content API needs the bundle's Basic-auth header); dgft.gov.in served normally this pass (no TLS block encountered)", "active": [
+      {"s": "Export Promotion Mission: NIRYAT PROTSAHAN + NIRYAT DISHA", "t": "interest-equalisation/credit", "d": "Flagged NEW on DGFT: MSME export-credit subvention, collateral support, alt-credit; quality/branding/market-access/logistics support"},
+      {"s": "RoDTEP", "t": "duty-remission", "d": "Embedded-tax remission as transferable credits; live service + Appendix-2G"},
+      {"s": "RoSCTL", "t": "duty-remission", "d": "Made-ups/garments embedded-tax rebate scrips"},
+      {"s": "EPCG + Advance Authorisation/DFIA", "t": "duty-remission", "d": "Duty-free capital goods against export obligation; duty-free inputs; modules migrating to new e-platform"},
+      {"s": "SEZ framework", "t": "duty-remission", "d": "SEZ Act 2005 + 50+ dated rule amendments through 2024 (WFH 43A, floor-wise denotification)"},
+      {"s": "MAI", "t": "grant via EPCs", "d": "Trade fairs/BSMs/branding; Empowered Committee minutes current to 24-Nov-2025"}],
+     "closed": ["Interest Equalisation Scheme (lapsed 31-Dec-2024; successor = NIRYAT PROTSAHAN)", "MEIS/SEIS (legacy, scrip lookup only)"],
+     "gaps": ["TIES not findable by name on the rebuilt commerce SPA", "2025 exporter credit-guarantee not a standalone named scheme -- subsumed in NIRYAT PROTSAHAN"]},
+    {"ministry": "MHI", "site_health": "Serves Hindi at English URLs; PLI-ACC page CONFIRMED STALE (still 30GWh/3 firms, no GSSS re-tender) while the same menu posts a July-2026 ACC outlook report; FAME-II page still present-tense", "active": [
+      {"s": "PLI Auto & Components", "t": "production-linked", "d": "Sales-linked on AAT (BEV/H2) products, Rs 25,938cr; incentive FY23-FY27, disbursal to FY28"},
+      {"s": "PLI ACC", "t": "production-linked", "d": "Per-kWh with DVA 25%->60% and Rs 225cr/GWh investment; performance period 01-Jan-2025 to 31-Dec-2029; zero disbursed"},
+      {"s": "PM E-DRIVE", "t": "demand-incentive", "d": "EXTENDED: e-2W to 31-Jul-2026, e-3W R/C to 31-Mar-2028 (L5 closed 26-Dec-2025); e-trucks/e-buses/e-ambulances lanes; portal live with new sub-portals"},
+      {"s": "SPMEPCI", "t": "duty-concession-for-investment", "d": "Reduced CBU e-car import duty against committed domestic EV mfg investment (approved 15-Mar-2024; page states no numbers)"},
+      {"s": "Capital Goods Phase II", "t": "grant", "d": "Rs 1,207cr, 32 projects (CoEs/CEFCs); proposal-based via cgscheme portal"},
+      {"s": "REPM", "t": "production-linked hybrid", "d": "Sintered rare-earth magnets; MHI notification 15-Dec-2025 (listing page only, no scheme page yet)"}],
+     "closed": ["FAME-II (ended 31-Mar-2024; bridged by EMPS Apr-Sep 2024)", "Capital Goods Phase I (legacy)"]},
+    {"ministry": "Ministry of Steel", "site_health": "steel.gov.in/pli frozen at Feb-Mar 2025 (no Round 1.2, no 14-withdrawal disclosure) under a 'Last updated July 17, 2026' template stamp; SIMS reports stop at Oct 2025", "active": [
+      {"s": "PLI Specialty Steel 1.0/1.1", "t": "production-linked", "d": "Rs 6,322cr; page status (28-Feb-2025): committed Rs 27,106cr / achieved Rs 19,850cr investment; 1.1: 42 MoUs with 25 companies (24-Mar-2025)"},
+      {"s": "Steel R&D scheme", "t": "R&D-grant", "d": "OPEN -- live proposal invitation + Apply link; disbursement documents published"}], "closed": []},
+    {"ministry": "Dept of Pharmaceuticals", "site_health": "Fully curl-accessible (pharma-dept.gov.in); best-maintained scheme section in the catalog; publishes approved-applicant lists PIB never names", "active": [
+      {"s": "PLI Pharma / Bulk Drugs / MedDev", "t": "production-linked x3", "d": "All operational, applicant lists dated 06-Nov-2023 on site (Bulk Drugs: 41 KSM/API targets)"},
+      {"s": "Bulk Drug Parks (GJ/HP/AP) + MedDev Parks (HP/MP/TN/UP)", "t": "park-infra", "d": "State grants for common facilities; units apply to state SPVs"},
+      {"s": "PRIP", "t": "R&D-grant", "d": "Pharma-MedTech research funding; dedicated portal prip.pharma-dept.gov.in"},
+      {"s": "SPI (RPTUAS + API-CF + clusters)", "t": "capex-subsidy", "d": "Schedule-M/WHO-GMP upgradation subsidy (revamped 2024, clause mods 21-MAR-2026); API-CF applications OPEN NOW"},
+      {"s": "SMDI", "t": "capex-subsidy", "d": "MedDev clusters/common facilities/components/clinical studies; calls for proposals 23-Jun and 03-Jul-2026 OPEN NOW"}], "closed": []},
+    {"ministry": "MoFPI", "site_health": "Fully accessible; SAMPADA portals live per component", "active": [
+      {"s": "PLISFPI", "t": "production-linked", "d": "Rs 10,900cr; SUNSET CONFIRMED on site: 2021-22 to 2026-27 (FY27 last incentive year); claims portal live"},
+      {"s": "PMKSY: cold chain / CEFPPC / Operation Greens / clusters / labs", "t": "capex-subsidy 35-50%", "d": "Multiple OPEN windows: irradiation EoI (20-May-2026), CEFPPC registration, OG transport-subsidy claims"},
+      {"s": "PM-FME", "t": "credit-linked 35%", "d": "Micro units, max Rs 10L + SHG seed capital; portal open, 100+ model DPRs"}],
+     "closed": ["Mega Food Parks (new approvals discontinued Apr-2021; projects completing)"]},
+    {"ministry": "Ministry of Textiles", "site_health": "texmin.nic.in DNS-DEAD; live site texmin.gov.in is a Next.js SPA (curl sees an empty shell) with a broken search -- browser required", "active": [
+      {"s": "PLI Textiles", "t": "production-linked", "d": "ACTIVELY AMENDED: notifications 09-Oct-2024, 24-Feb-2025, 09-Oct-2025 + guidelines 17-Oct-2025 -- windows modified post-launch; portal pli.texmin.gov.in"},
+      {"s": "PM MITRA", "t": "park-infra", "d": "7 parks confirmed; REVISED guidelines 28-Aug-2025"},
+      {"s": "NTTM", "t": "R&D-grant", "d": "Rolling research proposals OPEN; startup support (GREAT); portal nttm.texmin.gov.in"},
+      {"s": "SAMARTH", "t": "training-cost funding", "d": "Companies as implementing partners (skilling, extension resolution on site)"}],
+     "closed": ["ATUFS/TUF (cut-off 13-Aug-2019; residual claims only, IMSC minutes to Nov-2024; site never prints the word 'closed')"],
+     "gaps": ["Mission for Cotton Productivity (Cabinet May-2026) NOT FOUND on the ministry site -- gate-1-to-site lag", "Tex-RAMPS found on site (new 100% central innovation/startup scheme) -- not in any brief"]},
+    {"ministry": "MNRE", "site_health": "Accessible; PLI page stale (last updated 08-Aug-2023, no disbursal data); offshore-wind page pre-dates its own Rs 7,453cr VGF Cabinet approval", "active": [
+      {"s": "PLI Solar T1+T2", "t": "production-linked", "d": "Rs 24,000cr; 5y payouts post-commissioning (design confirms the Rs 0-disbursed-by-design Lok Sabha answer); T1 8,737 MW / T2 39,600 MW awarded"},
+      {"s": "PM-Surya Ghar", "t": "capex-subsidy", "d": "Rooftop CFA via national portal (SPA); innovative-projects CfP + startup challenge via NISE live"},
+      {"s": "NGHM/SIGHT", "t": "mission-incentive", "d": "Electrolyser + green-H2 production tranches; steel/shipping pilots; testing-scheme and innovative-pathways CfPs 2025-26; hubs + valley clusters"},
+      {"s": "Offshore wind VGF", "t": "VGF", "d": "Model-A VGF confirmed on page (Rs 7,453cr outlay only in Cabinet release)"},
+      {"s": "Small Hydro FY27-FY31", "t": "capex-subsidy", "d": "1-25 MW; administrative approval listed (schemes page updated 15-May-2026)"},
+      {"s": "ALMM", "t": "market-access", "d": "List-II (cells) enforcement with limited window to 31-DEC-2026; DCR portal re-opened per O.M. 25-May-2026; 100 GW module capacity crossed"}], "closed": []},
+    {"ministry": "MoPNG", "site_health": "Accessible; EBP page stale (still '20% by 2030')", "active": [
+      {"s": "EBP instruments", "t": "price-support + subvention", "d": "Administered feedstock-differential pricing, GST 18->5%, EISS distillery subvention, LTOAs -- the abstract's precedent, all confirmed on-page"},
+      {"s": "SATAT", "t": "assured offtake", "d": "OMC long-term CBG purchase at assured price; PSL status; continuous EoI"}],
+     "gaps": ["Bio-ATF/SAF: no incentive instrument on the ministry pages (targets exist in press only)"]},
+    {"ministry": "Ministry of Coal", "site_health": "Accessible; full RFP document trail; outlays live only in PDFs", "active": [
+      {"s": "Gasification 2024 scheme", "t": "capex support", "d": "Rs 8,500cr; Round-1 concluded -- Category-III LoA Apr-2026; 2nd-tranche Cat-II/III RFPs from 30-Sep-2025"},
+      {"s": "Gasification 2026 scheme", "t": "VGF-style", "d": "Rs 37,500cr; Round-1 OPEN NOW: RFP 05-Jun-2026, application timeline 07-Jul, pre-application conference 16-Jul, PMA RFP 17-Jul"}], "closed": []},
+    {"ministry": "Ministry of Mines", "site_health": "UNREACHABLE (all variants timed out 2026-07-20; WebFetch ECONNREFUSED) -- NCMM, recycling incentive, EL auctions unverifiable on-site", "active": [
+      {"s": "NCMM / Critical Mineral Recycling (Rs 1,500cr) ", "t": "mission/capex", "d": "Per Cabinet record only -- site verification impossible; REPM turns out to sit under MHI, not Mines"}], "closed": []},
+    {"ministry": "MoPSW", "site_health": "Accessible; incentive material under /en/orders/guideline (Policy page holds only a draft Water Metro policy); MDF and flagging scheme absent from main site", "active": [
+      {"s": "SBFAS 2.0", "t": "contract-value subsidy", "d": "Rs 24,736cr incl Rs 4,001cr Shipbreaking Credit Note; extended to 31-MAR-2036; modified guidelines 07-Jan-2026, amended 14-May-2026; ~14% assistance rate FY26"},
+      {"s": "SbDS", "t": "cluster/capacity/risk support", "d": "Rs 19,989cr; three guideline sets 26-Dec-2025; first approvals Jul-2026 (Porbandar greenfield cluster, Vadinar Rs 1,570cr ship repair)"},
+      {"s": "Maritime Development Fund", "t": "fund", "d": "Rs 25,000cr; operationalisation stage, not yet on ministry site"},
+      {"s": "Flagging subsidy (2021)", "t": "tender subsidy", "d": "15%/10% of L1 foreign quote in govt cargo tenders; 5-year window ends FY26; lives on the dashboard subdomain, not the main site"},
+      {"s": "GTTP + inland tonnage tax", "t": "demand + tax", "d": "Green tug procurement mandate; tonnage tax extended to inland vessels (Finance Act 2025)"}], "closed": ["Coastal Berth Scheme (archived Nov-2023)"]},
+    {"ministry": "MoCA", "site_health": "Accessible but sparse schemes navigation; drone-PLI pages live with NO closure notice; no page for the ATF fund", "active": [
+      {"s": "Modified UDAN / Viksit UDAN", "t": "VGF", "d": "Rs 28,840cr FY27-FY36: Rs 10,043cr airline VGF + 100 airports + 200 helipads + O&M caps; PM launched Viksit UDAN 04-Jul-2026; workshop 16-Jul-2026"},
+      {"s": "ATF Price Stabilisation", "t": "revolving budgetary support", "d": "Up to Rs 10,000cr interest-free to OMCs, 36 months (West Asia crisis: ATF Rs 60.5->142/l)"},
+      {"s": "MRO concessions", "t": "tax concession", "d": "GST 18->5% with ITC (2020), uniform 5% on parts (2024), AAI royalty abolished (2021)"}],
+     "closed": ["PLI Drones (window FY22-FY24 ended; guidelines/application pages still live, no closure notice)"]},
+    {"ministry": "Dept of Fertilizers", "site_health": "fert.nic.in DNS-DEAD on every resolver tried -- entire department verified via PIB/Cabinet records only", "active": [
+      {"s": "NIPU-2026", "t": "investment-policy", "d": "8-9 gas-based urea plants (~10 MT); fixed/variable cost separation; RoE band 12-16%; forex risk conversion after 4y; >Rs 250cr/plant savings vs NIP-2012"},
+      {"s": "NBS", "t": "per-nutrient subsidy to companies", "d": "28 P&K grades; Kharif-2026 rates notified"},
+      {"s": "MDA for city compost/FOM", "t": "marketing assistance", "d": "Rs 1,500/MT under GOBARdhan-linked 2023 revision (lower confidence -- site dead)"}],
+     "closed": ["NIP-2012 (superseded by NIPU-2026 for new investment)"]},
+    {"ministry": "Ministry of MSME", "site_health": "msme.gov.in SPA never renders its /all-schemes list even in a browser; schemes verified via their dedicated portals (cgtmse.in, zed.msme.gov.in, champions.gov.in live; kviconline + sfurti unreachable)", "active": [
+      {"s": "CGTMSE", "t": "credit-guarantee", "d": "Collateral-free cover raised to Rs 10cr (Budget 2025); 75-85% guarantee"},
+      {"s": "PMEGP", "t": "margin-money subsidy", "d": "15-35% on projects to Rs 50L/20L via KVIC (portal unreachable today)"},
+      {"s": "RAMP", "t": "programme-for-results", "d": "Rs 6,062.45cr World-Bank-backed, 2022-2027, via state plans"},
+      {"s": "ZED certification", "t": "certification subsidy", "d": "80/60/50% by size + Rs 5L tech support; portal live"},
+      {"s": "SFURTI", "t": "cluster grant", "d": "Rs 2.5-5cr per cluster (portal unreachable today; restructuring reported)"}],
+     "gaps": ["Original CLCSS status genuinely ambiguous (conflicting public information); SCLCSS (SC/ST 25% variant) verifiably operational"]},
+    {"ministry": "FAHD (Fisheries/AHD)", "site_health": "dahd.gov.in + AHIDF/NLM portals live and current -- the transparency benchmark", "active": [
+      {"s": "AHIDF", "t": "3% interest subvention + credit guarantee", "d": "Rs 29,610cr revamped (Feb-2024) to FY26; loans to 90% of project cost; 'Apply for Loan' live with training sessions"},
+      {"s": "PMMSY + PM-MKSSY", "t": "capital subsidy 40-60% / performance grants", "d": "Rs 20,050cr + Rs 6,000cr; PMMSY site still states FY21-FY25 period (stale re extensions); MKSSY early-stage (~Rs 11.84cr sanctioned by Mar-2025)"},
+      {"s": "NLM entrepreneurship", "t": "50% capital subsidy", "d": "Rs 25-50L caps by activity; portal nlm.udyamimitra.in live"}], "closed": []}
+  ],
+
+  "cross_cutting_findings": [
+    "The verification layer is now load-bearing: five flagship schemes' ministry pages contradict reality (ACC re-tender, steel Round-1.2/withdrawals, E-DRIVE extension, FAME-II closure, EBP targets) -- Cabinet releases and live portals beat ministry scheme pages for currency, which is exactly why the registry tracks PRIDs and portals, not pages.",
+    "Headless-CMS access pattern (site.gov.in/cms/wp-json) is the single most useful discovery for the quarterly refresh: MeitY, DoT and DPIIT all serve complete, dated scheme content through it while their public sites render nothing to curl.",
+    "Application windows cluster in capex/cluster schemes (DoP SPI/SMDI, MoFPI, gasification, UNNATI) while PLI windows are almost all closed -- consistent with the five-year instrument migration: the state is currently BUYING capacity and infrastructure, not output.",
+    "Three central-government domains are dead or dark (fert.nic.in, texmin.nic.in, mines.gov.in) and one ministry's scheme list is unrenderable (msme.gov.in) -- for four of 16 ministries the official web estate cannot answer 'what schemes do you run'.",
+    "NSWS is the best single cross-ministry surface for application-window truth (it carried the only formal IFLDP closure notice found anywhere) but its catalog covers only 6 scheme gateways -- it is a gateway, not a registry."
+  ]
+}

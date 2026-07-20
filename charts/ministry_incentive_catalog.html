@@ -1,0 +1,223 @@
+<title>Ministry Incentive Catalog — Every Company-Facing Policy, Site-Verified</title>
+<meta name="hz:canvas-width" content="1180">
+<style>
+  :root {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6; --mismatch:#7a5aa8;
+    --font-display:"Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --font-mono:"IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+      --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+      --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+      --data-line:#3987e5; --data-soft:#1c2c40; --mismatch:#a98fd6;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+    --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+    --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+    --data-line:#3987e5; --data-soft:#1c2c40; --mismatch:#a98fd6;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6; --mismatch:#7a5aa8;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; }
+  .bulletin { background:var(--page-bg); color:var(--ink); font-family:var(--font-body); padding:40px 20px 56px; display:flex; justify-content:center; }
+  .sheet { width:100%; max-width:1100px; display:flex; flex-direction:column; gap:26px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:16px; }
+  .eyebrow { font-family:var(--font-mono); font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); display:flex; gap:10px; align-items:center; }
+  .eyebrow::before { content:""; width:7px; height:7px; border-radius:50%; background:var(--accent); }
+  h1 { font-family:var(--font-display); font-weight:500; font-size:clamp(24px,3.1vw,32px); margin:6px 0 0; text-wrap:balance; }
+  .dek { font-size:14px; color:var(--ink-2); max-width:90ch; line-height:1.55; margin:8px 0 0; }
+  .source-line { font-family:var(--font-mono); font-size:11px; color:var(--ink-muted); margin-top:8px; }
+
+  section.block { background:var(--surface); border:1px solid var(--rule-strong); padding:20px 24px; }
+  .block-tag { font-family:var(--font-mono); font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent); }
+  .block-title { font-family:var(--font-display); font-size:20px; font-weight:600; margin:4px 0 10px; }
+  .block-note { font-size:13px; color:var(--ink-2); line-height:1.6; max-width:100ch; }
+  .block-note b { color:var(--ink); }
+
+  .min-card { border:1px solid var(--rule); margin-top:12px; }
+  .min-hd { display:flex; flex-wrap:wrap; gap:8px 14px; align-items:baseline; padding:10px 14px; background:var(--page-bg); border-bottom:1px solid var(--rule); }
+  .min-name { font-family:var(--font-display); font-size:15.5px; font-weight:700; }
+  .min-health { font-family:var(--font-mono); font-size:9.5px; color:var(--ink-muted); flex:1 1 300px; line-height:1.5; }
+  .min-health.bad { color:var(--alert); }
+  .min-body { padding:8px 14px 12px; }
+  .pol { display:grid; grid-template-columns:230px 130px 1fr; gap:10px; padding:6px 0; border-bottom:1px solid var(--rule); font-size:11.5px; line-height:1.5; }
+  .pol:last-child { border-bottom:none; }
+  .pol .n { font-weight:700; color:var(--ink); }
+  .pol .t { font-family:var(--font-mono); font-size:9px; color:var(--mismatch); text-transform:uppercase; }
+  .pol .d { color:var(--ink-2); }
+  .pol .d b { color:var(--ink); }
+  .closedline { font-size:11px; color:var(--ink-muted); padding:8px 0 2px; line-height:1.6; }
+  .closedline b { color:var(--warn); font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; }
+  .open-pill { display:inline-block; font-family:var(--font-mono); font-size:8.5px; font-weight:700; background:var(--accent-soft); color:var(--accent); padding:1px 6px; border-radius:999px; margin-left:4px; }
+
+  .callout { border-left:3px solid var(--warn); background:var(--warn-soft); padding:12px 16px; margin-top:12px; font-size:12.5px; line-height:1.6; color:var(--ink-2); }
+  .callout b { color:var(--ink); }
+  .readings { border-left:3px solid var(--accent); background:var(--accent-soft); padding:12px 16px; margin-top:12px; }
+  .readings .lbl { font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; letter-spacing:0.06em; color:var(--accent); }
+  .readings ul { margin:6px 0 0; padding-left:16px; }
+  .readings li { font-size:12px; line-height:1.6; color:var(--ink-2); margin-bottom:6px; }
+  .readings li b { color:var(--ink); }
+  footer.colophon { text-align:center; font-family:var(--font-mono); font-size:10.5px; color:var(--ink-muted); padding-top:8px; }
+  @media (max-width:820px){ .pol { grid-template-columns:1fr; gap:2px; } }
+</style>
+
+<div class="bulletin">
+  <div class="sheet">
+    <div class="masthead">
+      <div class="eyebrow">India Trade — Sector &amp; Policy Recommendations · Ministry Incentive Catalog</div>
+      <h1>Every company-facing incentive policy, ministry by ministry — verified on the government's own websites</h1>
+      <p class="dek">Six parallel agents swept 16 ministries' websites, CMS APIs and scheme portals (plus the NSWS gateway) and verified ~100 company-facing incentive policies: what companies actually get, which application windows are <b>open right now</b>, which schemes have closed, and — repeatedly the sharpest finding — where the ministry's own page contradicts reality. One correction already applied to the scheme registry from this sweep (PM E-DRIVE: extended, not ended).</p>
+      <div class="source-line">VERIFIED 2026-07-20 against ministry sites, headless CMS APIs (meity/dot/dpiit …/cms/wp-json), dedicated portals, and nsws.gov.in. Access failures recorded, not papered over. Full detail: data/ministry_incentive_catalog_2026-07-19.json.</div>
+    </div>
+
+    <section class="block">
+      <div class="block-tag">The four headline findings</div>
+      <div class="block-title">What the sweep established</div>
+      <div class="readings"><div class="lbl">Read before the tables</div><ul>
+        <li><b>The ministry web estate has gone headless — and partly dark.</b> MeitY, DoT and DPIIT render nothing to a plain fetch; their real content sits in public WordPress JSON APIs (<span style="font-family:var(--font-mono);font-size:10.5px">site.gov.in/cms/wp-json/…</span>). Meanwhile <b>fert.nic.in and texmin.nic.in are DNS-dead, mines.gov.in is unreachable</b>, and msme.gov.in's scheme list never renders even in a browser — for 4 of 16 ministries the official web estate cannot answer "what schemes do you run".</li>
+        <li><b>Open windows cluster in capex/cluster/credit schemes, not PLI:</b> UNNATI (to 30-Sep-2026), Coal Gasification 2026 Round-1, DoP's API-CF + SMDI calls (Jun–Jul 2026), MoFPI EoIs, Steel R&amp;D, AHIDF/NLM loan portals, ECMS (extended), ALMM enlistment. Nearly every PLI window is closed — the live money matches the five-year instrument migration.</li>
+        <li><b>Scheme pages lie by staleness:</b> the ACC page still shows the pre-re-tender world; steel's PLI page is frozen at Mar-2025 under a fresh "Last updated July 17, 2026" stamp; FAME-II reads present-tense two years after closing; MNRE's PLI page predates its own zero-disbursal answer; MoPNG still targets "20% by 2030". Cabinet releases + live portals beat ministry pages.</li>
+        <li><b>NSWS</b> (32 ministries, 34 states live) is the best cross-ministry surface for application-window truth — it carried the only formal <b>IFLDP closure notice</b> found anywhere, plus the full ₹1,700cr sub-scheme rates — but its catalog is six curated gateways, not a registry.</li>
+      </ul></div>
+    </section>
+
+    <section class="block">
+      <div class="block-tag">The catalog · 16 ministries</div>
+      <div class="block-title">Active schemes, open windows, closures, site health</div>
+      <div id="catalog"></div>
+      <div class="callout"><b>Registry correction from this sweep (2026-07-20):</b> PM E-DRIVE was recorded as ended 31 Mar 2026 in the scheme registry's first edition; the live portal shows segment-wise <b>extension</b> — e-2W to 31 Jul 2026, e-rickshaws/carts to 31 Mar 2028, only L5 closed (26 Dec 2025). The registry has been revised with the correction displayed.</div>
+    </section>
+
+    <footer class="colophon">herrrickshaw/india-trade-sector-policy-recommendations — data: <a href="../data/ministry_incentive_catalog_2026-07-19.json">data/ministry_incentive_catalog_2026-07-19.json</a> · companions: <a href="scheme_registry.html">scheme registry</a> · <a href="pib_five_year_incentive_evolution.html">five-year evolution</a></footer>
+  </div>
+</div>
+
+<script>
+const M = [
+ {n:"MeitY", h:"Next.js shell — real content at meity.gov.in/cms/wp-json (22-scheme API)", bad:false, p:[
+  ["MPMS (LSEM successor)","prod-linked","2.25–5% on mobile-phone sales FY27–FY31, +1.5% sourcing / +3% Indian-brand adders, <b>₹62,500cr</b> — not on the ministry site yet"],
+  ["PLI IT Hardware 2.0","prod-linked","~5% avg on incremental sales, 6y; portal 2.pliithw.com"],
+  ["Semicon 2.0","capex-subsidy","<b>₹1,27,500cr</b>, six pillars: CMOS fabs 40%, other fabs/adv-pkg 35%, conv-pkg 25%, NEW equipment/materials pillar, design seed + DLI"],
+  ["ECMS","hybrid","components/sub-assemblies; window <b>extended</b> (30-Jul-2025)<span class='open-pill'>OPEN</span>"],
+  ["DLI","design-linked","50% of design spend ≤₹15cr + 6%/4% deployment ≤₹30cr"],
+  ["IndiaAI Mission","R&D-grant","subsidised GPU compute + startup financing, ₹10,371.92cr (indiaai.gov.in)"]],
+  c:"CLOSED: PLI-LSEM (tenure ended 31-Mar-2026, page silent) · SPECS &amp; EMC 2.0 (both closed 31-Mar-2024) · IT-HW 1.0 · M-SIPS (2018) · EMC-2012"},
+ {n:"DoT", h:"Next.js shell — real content at dot.gov.in/cms/wp-json", bad:false, p:[
+  ["PLI Telecom & Networking","prod-linked","₹12,195cr (₹2,500cr MSME lane); +1% design-led adder"],
+  ["TTDF","R&D-grant","milestone grants 5G/6G/quantum/chipsets; serial CfPs; testing-cost reimbursement added Mar-2025"],
+  ["TDIP (new)","R&D-grant","umbrella for tech development, 3GPP/ITU standardisation, incubation, export promotion"],
+  ["Testing/cert reimbursement","R&D-grant","TEC/NCCS/NABL charges for startups & MSEs<span class='open-pill'>OPEN</span>"]], c:""},
+ {n:"DPIIT", h:"Next.js shell — real content at dpiit.gov.in/cms/wp-json", bad:false, p:[
+  ["BHAVYA","infra","₹33,660cr, 100 plug-and-play parks FY27–FY32; portal live"],
+  ["UNNATI 2024","capex-subsidy","NE capital/interest/MSLI incentives ₹10,037cr; <b>registration open to 30-Sep-2026</b><span class='open-pill'>OPEN</span>"],
+  ["PLI White Goods","prod-linked","4–6% on incremental sales, AC/LED components, FY22–FY29"],
+  ["J&K NCSS","capex-subsidy","₹28,400cr, four incentives, operational to <b>31-Mar-2037</b> — longest window in the catalog"],
+  ["GST Budgetary Support","duty-remission","₹27,413cr for legacy hill-state units (claims only)"],
+  ["Startup India (SISFS/CGSS/FoF 2.0)","fund/guarantee","seed grants via incubators; startup credit guarantees; ₹10,000cr FoF 2.0"],
+  ["IFLDP (via NSWS)","capex/park","₹1,700cr leather: IDLS 30%/20%, CETP 70–80%, clusters 50–70% — <b>application portal closed</b> at 31-Mar-2026 sunset"]],
+  c:"CLOSED: IDS-2017 (liabilities to FY29) · NEIDS-2017 (→ UNNATI) · NEIIPP-2007"},
+ {n:"Commerce / DGFT", h:"commerce.gov.in SPA (content API uses the bundle's own Basic-auth); DGFT served normally this pass", bad:false, p:[
+  ["Export Promotion Mission (NIRYAT PROTSAHAN + DISHA)","subvention/credit","NEW on DGFT: MSME export-credit subvention, collateral support; quality/branding/market-access lanes"],
+  ["RoDTEP · RoSCTL","duty-remission","embedded-tax remission credits; live services"],
+  ["EPCG · Advance Authorisation","duty-remission","duty-free capital goods / inputs against export obligation"],
+  ["SEZ framework","duty-remission","Act 2005 + 50+ rule amendments through 2024"],
+  ["MAI","grant via EPCs","fairs/BSMs/branding; EC minutes current to Nov-2025"]],
+  c:"CLOSED: Interest Equalisation Scheme (lapsed 31-Dec-2024 → NIRYAT PROTSAHAN) · MEIS/SEIS legacy. GAPS: TIES unfindable on the rebuilt SPA; 2025 exporter credit-guarantee subsumed in EPM"},
+ {n:"MHI", h:"Hindi served at English URLs; ACC page CONFIRMED STALE (no GSSS re-tender); FAME-II page still present-tense", bad:true, p:[
+  ["PLI Auto & Components","prod-linked","AAT sales-linked, ₹25,938cr; incentive FY23–FY27"],
+  ["PLI ACC","prod-linked","per-kWh, DVA 25→60%, ₹225cr/GWh; performance 2025–2029; ₹0 disbursed"],
+  ["PM E-DRIVE","demand","<b>EXTENDED</b>: e-2W→31-Jul-2026, e-3W R/C→31-Mar-2028 (L5 closed); e-truck/e-bus sub-portals live<span class='open-pill'>OPEN</span>"],
+  ["SPMEPCI","duty-for-investment","CBU e-car duty cut vs committed mfg investment (page states no numbers)"],
+  ["Capital Goods Ph-II","grant","₹1,207cr, 32 projects; proposal portal"],
+  ["REPM","hybrid","rare-earth magnets, notified 15-Dec-2025 (sits under MHI, not Mines)"]],
+  c:"CLOSED: FAME-II (31-Mar-2024; EMPS bridge) · Capital Goods Ph-I"},
+ {n:"Steel", h:"PLI page frozen at Feb–Mar 2025 (no R1.2, no 14 withdrawals) under a fresh 'updated 17-Jul-2026' template stamp", bad:true, p:[
+  ["PLI Specialty Steel 1.0/1.1","prod-linked","₹6,322cr; committed ₹27,106cr vs achieved ₹19,850cr (page, Feb-2025); 1.1: 42 MoUs / 25 cos"],
+  ["Steel R&D scheme","R&D-grant","live proposal invitation + Apply link<span class='open-pill'>OPEN</span>"]], c:""},
+ {n:"Pharma (DoP)", h:"Best-maintained scheme section in the catalog; publishes applicant lists PIB never names", bad:false, p:[
+  ["PLI ×3 (Pharma/Bulk Drugs/MedDev)","prod-linked","operational; approved-applicant lists (06-Nov-2023) on site"],
+  ["Bulk Drug + MedDev Parks","park-infra","7 state parks; units apply to SPVs"],
+  ["PRIP","R&D-grant","pharma-medtech research portal live"],
+  ["SPI (RPTUAS/API-CF)","capex-subsidy","Schedule-M upgradation subsidy (mods 21-Mar-2026); <b>API-CF applications invited</b><span class='open-pill'>OPEN</span>"],
+  ["SMDI","capex-subsidy","clusters/components/clinical-studies; <b>calls 23-Jun &amp; 03-Jul-2026</b><span class='open-pill'>OPEN</span>"]], c:""},
+ {n:"MoFPI", h:"Fully accessible; SAMPADA portals live per component", bad:false, p:[
+  ["PLISFPI","prod-linked","₹10,900cr; <b>sunset confirmed on site: FY27 last incentive year</b>"],
+  ["PMKSY (cold chain/CEFPPC/OG/clusters)","capex 35–50%","irradiation EoI, CEFPPC registration, OG subsidy claims<span class='open-pill'>OPEN</span>"],
+  ["PM-FME","credit-linked 35%","micro units ≤₹10L + SHG seed capital<span class='open-pill'>OPEN</span>"]],
+  c:"CLOSED: Mega Food Parks (new approvals ended Apr-2021)"},
+ {n:"Textiles", h:"texmin.nic.in DNS-DEAD; live texmin.gov.in is a JS shell with broken search — browser required", bad:true, p:[
+  ["PLI Textiles","prod-linked","actively amended: notifications Oct-2024→Oct-2025 modified windows; portal pli.texmin.gov.in"],
+  ["PM MITRA","park-infra","7 parks; revised guidelines 28-Aug-2025"],
+  ["NTTM","R&D-grant","rolling research proposals + startup support<span class='open-pill'>OPEN</span>"],
+  ["SAMARTH","training","companies as skilling implementation partners"]],
+  c:"CLOSED: ATUFS (cut-off 2019; claims only — site never prints 'closed'). GAP: Cotton Productivity Mission (Cabinet May-2026) absent from the site; Tex-RAMPS found (new, not in any brief)"},
+ {n:"MNRE", h:"PLI page stale (Aug-2023); offshore-wind page predates its own ₹7,453cr VGF approval", bad:true, p:[
+  ["PLI Solar T1+T2","prod-linked","₹24,000cr; 5y post-commissioning payouts (confirms ₹0-by-design); 48.3 GW awarded across tranches"],
+  ["PM-Surya Ghar","capex-subsidy","rooftop CFA; innovative-projects CfP + startup challenge live<span class='open-pill'>OPEN</span>"],
+  ["NGHM / SIGHT","mission","electrolyser + H2-production tranches; steel/shipping pilots; 2025-26 CfPs<span class='open-pill'>OPEN</span>"],
+  ["Offshore wind VGF","VGF","Model-A VGF confirmed on page"],
+  ["Small Hydro FY27–31","capex-subsidy","1–25 MW; approval listed May-2026"],
+  ["ALMM","market-access","List-II cells window to <b>31-Dec-2026</b>; enlistment re-opened May-2026<span class='open-pill'>OPEN</span>"]], c:""},
+ {n:"MoPNG", h:"EBP page stale (still '20% by 2030')", bad:true, p:[
+  ["EBP instruments","price-support","administered pricing + GST 5% + EISS subvention + LTOAs — the ethanol precedent, on-page"],
+  ["SATAT","assured offtake","OMC long-term CBG purchase; continuous EoI<span class='open-pill'>OPEN</span>"]], c:"GAP: no bio-ATF/SAF incentive instrument on ministry pages"},
+ {n:"Coal", h:"Full RFP document trail; outlays live only in PDFs", bad:false, p:[
+  ["Gasification 2024","capex support","₹8,500cr; R1 Cat-III LoA Apr-2026; 2nd-tranche RFPs Sep-2025"],
+  ["Gasification 2026","VGF-style","<b>₹37,500cr; Round-1 open now</b> — RFP 05-Jun, pre-app conference 16-Jul-2026<span class='open-pill'>OPEN</span>"]], c:""},
+ {n:"Mines", h:"UNREACHABLE (timeouts on every variant, 2026-07-20) — NCMM / recycling incentive unverifiable on-site; REPM turns out to be MHI's", bad:true, p:[
+  ["NCMM + recycling incentive","mission/capex","₹34,300cr + ₹1,500cr per Cabinet record only"]], c:""},
+ {n:"Ports & Shipping", h:"Incentive material under /orders/guideline; MDF + flagging scheme absent from main site", bad:false, p:[
+  ["SBFAS 2.0","contract subsidy","₹24,736cr incl ₹4,001cr Shipbreaking Credit Note; <b>extended to 31-Mar-2036</b>; ~14% rate FY26"],
+  ["SbDS","cluster/capacity/risk","₹19,989cr; guidelines Dec-2025; first approvals Jul-2026 (Porbandar, Vadinar)"],
+  ["Maritime Development Fund","fund","₹25,000cr; operationalisation stage"],
+  ["Flagging subsidy","tender subsidy","15%/10% in govt cargo tenders; window ends FY26"],
+  ["GTTP + inland tonnage tax","demand/tax","green-tug procurement mandate; tonnage tax extended (FA 2025)"]],
+  c:"ARCHIVED: Coastal Berth Scheme (Nov-2023)"},
+ {n:"Civil Aviation", h:"Sparse schemes nav; drone-PLI pages live with NO closure notice; no page for the ATF fund", bad:true, p:[
+  ["Modified UDAN / Viksit UDAN","VGF","₹28,840cr FY27–36: ₹10,043cr airline VGF + 100 airports + 200 helipads; Viksit UDAN launched 04-Jul-2026"],
+  ["ATF Price Stabilisation","revolving support","≤₹10,000cr interest-free via OMCs, 36 months"],
+  ["MRO concessions","tax","GST 18→5% + parts at 5% + AAI royalty abolished"]],
+  c:"CLOSED: PLI Drones (FY24 end; pages still live, no notice)"},
+ {n:"Fertilizers", h:"fert.nic.in DNS-DEAD on every resolver — whole department verified via Cabinet records only", bad:true, p:[
+  ["NIPU-2026","investment-policy","8–9 gas-based urea plants (~10 MT); RoE band 12–16%; >₹250cr/plant savings vs NIP-2012"],
+  ["NBS","company subsidy","per-nutrient-kg on 28 P&K grades; Kharif-2026 notified"]],
+  c:"SUPERSEDED: NIP-2012 (for new investment)"},
+ {n:"MSME", h:"msme.gov.in scheme list never renders even in a browser; verified via dedicated portals", bad:true, p:[
+  ["CGTMSE","credit-guarantee","cover raised to ₹10cr (Budget 2025); 75–85%<span class='open-pill'>OPEN</span>"],
+  ["PMEGP","margin-money 15–35%","via KVIC (portal unreachable today)"],
+  ["RAMP","prog-for-results","₹6,062cr World-Bank-backed to 2027"],
+  ["ZED","cert subsidy 50–80%","portal live<span class='open-pill'>OPEN</span>"],
+  ["SFURTI","cluster grant","₹2.5–5cr/cluster (portal unreachable; restructuring reported)"]],
+  c:"AMBIGUOUS: original CLCSS status conflicting; SCLCSS (SC/ST 25%) verifiably live"},
+ {n:"Fisheries / AHD", h:"dahd.gov.in + AHIDF/NLM portals live and current — the transparency benchmark", bad:false, p:[
+  ["AHIDF","3% subvention + guarantee","₹29,610cr revamped; loans to 90% of project cost; Apply-for-Loan live<span class='open-pill'>OPEN</span>"],
+  ["PMMSY + PM-MKSSY","capital subsidy 40–60%","₹20,050cr + ₹6,000cr (MKSSY early-stage)"],
+  ["NLM entrepreneurship","50% capital subsidy","₹25–50L caps; portal live<span class='open-pill'>OPEN</span>"]], c:""}
+];
+const root = document.getElementById('catalog');
+root.innerHTML = M.map(m => `
+ <div class="min-card">
+   <div class="min-hd"><span class="min-name">${m.n}</span><span class="min-health${m.bad?' bad':''}">${m.h}</span></div>
+   <div class="min-body">
+     ${m.p.map(p=>`<div class="pol"><span class="n">${p[0]}</span><span class="t">${p[1]}</span><span class="d">${p[2]}</span></div>`).join('')}
+     ${m.c?`<div class="closedline"><b>Endings &amp; gaps:</b> ${m.c}</div>`:''}
+   </div>
+ </div>`).join('');
+</script>
