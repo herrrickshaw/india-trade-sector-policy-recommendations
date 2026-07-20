@@ -1,0 +1,270 @@
+{
+ "purpose": "A full summary of this working session: two public GitHub repos built to analyze India's trade data and FDI/PLI policy, the chronological arc of every bulletin produced, and the cross-cutting insights that emerged across the analyses -- including several that only became visible by comparing bulletins against each other, not from any single one alone.",
+ "session_date": "2026-07-19",
+ "user": "umashankartd1991@gmail.com",
+ "repo_architecture": {
+  "origin": "Both repos were originally one (mospi-dataset-analysis); split so the descriptive 'what does the data show' analysis and the prescriptive 'what should be done about it' recommendations could be published, versioned, and read independently. The original repo was kept, with a banner pointing to the split.",
+  "repos": [
+   {
+    "name": "india-trade-data-analysis",
+    "role": "Descriptive half: MoSPI macro indicators (CPI/WPI/GDP), currency & forex reserves, TRADESTAT-derived trade-balance and HSN-chapter analysis, a 5-year trade/currency synthesis chart (published as HTML + PDF), and a Colab live-reference notebook.",
+    "url": "https://github.com/herrrickshaw/india-trade-data-analysis",
+    "pages": "https://herrrickshaw.github.io/india-trade-data-analysis/"
+   },
+   {
+    "name": "india-trade-sector-policy-recommendations",
+    "role": "Prescriptive half: turns the descriptive repo's chapter rankings and country-concentration findings into explicit, checkable sector/policy recommendations, an FDI pitch deck, and (this session's main body of work) a rigorous accountability check on whether PLI schemes actually c\u2026",
+    "url": "https://github.com/herrrickshaw/india-trade-sector-policy-recommendations",
+    "pages": "https://herrrickshaw.github.io/india-trade-sector-policy-recommendations/"
+   }
+  ]
+ },
+ "chronological_deliverables": [
+  {
+   "phase": "1",
+   "title": "5-year trade/currency synthesis, published as PDF",
+   "repo": "india-trade-data-analysis",
+   "headline_finding": "The capstone chart of the descriptive repo, also published as a 6-page standalone PDF for offline reading, with the README restructured so every headline insight sits at the top under 'Session findings' while each section keeps its own data-source citation separately."
+  },
+  {
+   "phase": "2",
+   "title": "FDI pitch deck v1 -- 5 sectors",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Built as a 12-slide investor deck (HTML source -> headless-Chrome screenshots -> PPTX -> PDF pipeline) pitching 5 PLI-backed sectors (Electronics, Specialty Steel, Auto/EV/Battery, Pharma APIs, White Goods) plus a risk slide (CBAM export exposure, currency volatility), all figur\u2026"
+  },
+  {
+   "phase": "3",
+   "title": "5-sector social post + caption",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "A single 1080x1080 shareable graphic condensing the 5 funded sectors for LinkedIn/X/Instagram, with a sub-100-word caption, currency-converted to USD to match the deck."
+  },
+  {
+   "phase": "4",
+   "title": "State & central incentives + emergent hubs bulletin",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Central PLI is only half the incentive picture -- states layer their own capital subsidies, SGST reimbursement, and land/power concessions on top (e.g. Gujarat tops up the ISM semiconductor subsidy by 40%, UP by 50%). Real hubs are emerging with hard evidence behind each: Gujara\u2026"
+  },
+  {
+   "phase": "5",
+   "title": "Top 10 FDI sectors: country strategies, game theory & tariff timeline",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Extended the 5-sector framework to 10 (adding Inorganic Chemicals, Plastics, Aircraft & Spacecraft, Medical Devices) with real, sourced target FDI-source countries per sector. Corrected two prior assumptions on closer sourcing: Germany is EXITING (not entering) Specialty Steel v\u2026"
+  },
+  {
+   "phase": "6",
+   "title": "FDI-vs-PLI-launch accountability check, cross-referenced against IBEF",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "The centerpiece of this session: tested whether REAL DPIIT/RBI-tracked FDI equity inflow actually rose after each PLI scheme's launch date, as distinct from the government's self-reported 'committed investment' figures. Built from 8 parallel research passes, each required to cit\u2026"
+  },
+  {
+   "phase": "6a",
+   "title": "The Jio Platforms / Gujarat data-quality finding",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "The single most important methodology finding of the session. DPIIT's own metadata document states 'Documentation on methodology: Not applicable' for its FDI statistics. State-wise FDI is attributed by a company's REGISTERED OFFICE address, not its factory location. Direct proof\u2026"
+  },
+  {
+   "phase": "7",
+   "title": "Master sector scorecard",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "One table synthesizing every prior bulletin across the 10 priority sectors: key FDI-target countries, actual import/export leader countries, policy levers, FDI status, investment trend, and a traffic-light verdict with reasoning stated per row. Result: 2 green (Electronics, Medi\u2026"
+  },
+  {
+   "phase": "8",
+   "title": "The case for domestic capital in some states, FDI in others",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Built the economic 'why' behind the domestic-vs-FDI pattern: India's own cost of capital is two-tiered, not one price. AAA-rated conglomerates (Tata Sons, Reliance) raise 3-5yr bonds at ~7.4-8.3%; ordinary corporate borrowers now mostly face EBLR-priced loans at ~9.5-10.5% (67.6\u2026"
+  },
+  {
+   "phase": "9",
+   "title": "Repo manifest, Data & Charts reference, and the report synthesizer tool",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Built scripts/report_synthesizer.py -- a schema-agnostic tool that turns ANY bulletin's data JSON into a standalone PDF (pixel-faithful via headless-Chrome print-to-PDF when paired with its chart HTML, generic-table fallback otherwise), Word (.docx), and PowerPoint (.pptx) repor\u2026"
+  },
+  {
+   "phase": "10",
+   "title": "Primary ministry-website verification pass (completed)",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "9 parallel research agents visited the administering ministries' own websites directly (MeitY, Ministry of Steel, Department of Heavy Industry, Department of Pharmaceuticals, DPIIT, Ministry of Textiles, Chemicals/Civil-Aviation/Defence, plus dedicated IEM and MoSPI passes), pri\u2026"
+  },
+  {
+   "phase": "11",
+   "title": "Policy & investment insight dashboard",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Synthesized the full ministry-verification pass into a dashboard bulletin covering all 14 PLI/incentive schemes: utilization, incentives remaining, application-window status, official challenge quotes. Also tested -- and honestly rejected -- the two data sources requested for it\u2026"
+  },
+  {
+   "phase": "12",
+   "title": "Tracked quarterly PDF snapshot + refresh workflow",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Published a version-tracked, quarter-stamped PDF snapshot of the dashboard (reports/published/policy_investment_dashboard_2026-Q3.pdf) and a GitHub Actions workflow that runs every quarter: regenerates the PDF from the latest dated data JSON and opens a dated re-verification iss\u2026"
+  },
+  {
+   "phase": "13",
+   "title": "AHIDF dashboard evaluation -- the counter-example",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Evaluated the Animal Husbandry Infrastructure Development Fund's public dashboard as a possible counter-example to the finding that no ministry publishes state-wise, funnel-complete scheme data. Verdict: a genuine counter-example with a precise ceiling. AHIDF runs a no-login, NI\u2026"
+  },
+  {
+   "phase": "14",
+   "title": "DPIIT publications update + FY2025-26 FDI newsletter analysis",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Read DPIIT's restructured publications listing interactively in a rendered browser (bypassing the bot-gating that blocked earlier scraping), then downloaded all 27 statement PDFs from FDI Newsletter Vol. XXXIV No. 4 (April 2026) and extracted the sector/state tables with layout-\u2026"
+  },
+  {
+   "phase": "15",
+   "title": "IEM appendix verification against Annual Report 2025-26",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Verified a previously-Claude-generated IEM workbook's figures directly against the DPIIT Annual Report 2025-26 PDF (Appendices III-VI, Grand Total rows): all 24 numbers accurate; one footnote corrected (both Part A and Part B run 'Up to Dec 2025'). The new series materially chan\u2026"
+  },
+  {
+   "phase": "16",
+   "title": "FY2025-26 verdict re-run -- Power BI-style trade impact dashboard",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Re-ran all 10 sector verdicts against the FY2025-26 FDI data: both former greens fell to amber (Electronics -43.5%, Medical Devices -40.4%, against a national FDI cycle up 18%) and Pharma took the green slot (+114%, landing after Rs 5,433cr of disbursement, materially weakening\u2026"
+  },
+  {
+   "phase": "17",
+   "title": "Verdict re-run slide added to FDI deck (21 slides) + templates/ directory",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Two closing deliverables. (1) The FY2025-26 verdict re-run became slide 20 of the FDI pitch deck (now 21 slides, PPTX/PDF rebuilt and verified) -- the three verdict movers as cards (Electronics -43.5% and Medical Devices -40.4%, both green-to-amber; Pharma +114%, amber-to-green)\u2026"
+  },
+  {
+   "phase": "18",
+   "title": "PLI report card -- disbursal grades, IEM record, PIB-credited companies, Exim cross-check",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Graded the government's own side of the PLI bargain: incentive disbursal stands at Rs 28,748cr across all 14 sectors as of 31 Dec 2025 -- roughly 15% of the Rs 1.91-1.97 lakh cr outlay (PIB states the outlay inconsistently across its own releases) -- verified against Parliament-answer PRIDs, not press. Grades: Pharma A (36% of outlay disbursed, sales Rs 3.19 lakh cr), Electronics A- (every outcome target exceeded, Rs 15,554cr disbursed, smartphones India's #1 export item CY2025), down to Specialty Steel D (Rs 48cr = 0.8% disbursed, and PIB discloses 14 of 58 Round-1 projects WITHDREW -- attrition absent from the Ministry's own site) and ACC Battery F (zero disbursed; Ola's 1 GWh still 'pilot production' since Mar 2024 in PIB's own words). IEM record graded B+ on the 82%->109.9% implementation-ratio surge. PIB-credited producing companies listed per scheme with PRIDs, attribution kept honest -- Lyfius/Kinvan/Meril identities are corporate-filing/press, not PIB, and Textiles/Steel/Food Processing get zero company names in PIB at all: the underperforming schemes are also the anonymous ones. Independent Exim Bank cross-check: FY26 trade deficit $333.2bn matches the repo's computed $334.3bn within 0.3%; the deficit widened 17.5% in a single year; bank credit to PLI sectors accelerating (Electronics +23.9%, Vehicles +26.4% YoY). Also added as slide 21 of the FDI pitch deck (now 22 slides, PPTX/PDF rebuilt): the five grade buckets as color-coded columns, framed for investors as 'the grade is the probability the scheme's money actually arrives.'"
+  },
+  {
+   "phase": "19",
+   "title": "Report-card template + master report (the source-of-truth document)",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Two closing infrastructure pieces. (1) A report-card template added to templates/ (grade badges A-F with evidence rows, named-entities chips, pattern callout, corrections block -- encoding the repo's conventions: grades are judgment, evidence is the checkable part, an F never rests on paraphrase alone), with pre-built PPTX/PDF. (2) The MASTER REPORT (data/master_report_2026-07-19.json -> India_Trade_Master_Report_2026-07-19.docx/.pdf in reports/published/, 14 pages, 12 data tables): every finding, figure, grade and correction from the program in one document across nine parts -- trade position, sector verdicts with full FDI series, the 13-scheme graded PLI assessment, IEM record, companies ledger with PRIDs, capital/financing analysis, data-infrastructure assessment, action items, corrections ledger. Designated the source of truth from which the pitch deck and dashboards update. A research pass filling the four disbursal gaps (Bulk Drugs, Medical Devices, Telecom, Solar PV) via Lok Sabha/Rajya Sabha answers was in flight as of this phase."
+  },
+  {
+   "phase": "20",
+   "title": "State-wise investment implementation (domestic+foreign, IEM Part B) + sector leaders",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Built the state table the FDI data could never provide: implemented industrial investment 2021-2025 combining domestic and foreign capital, on IEM Part B (Rs 19.52 lakh cr across 4,859 projects). Gujarat alone is 33.8% (Rs 4.55 lakh cr in 2024-25 alone, 178% intent-to-implementation conversion); top 3 states = 63.3%. The IEM-vs-FDI contrast quantifies the financing thesis per state: Odisha #2 in implementation with 0.14% of FDI; Karnataka the inversion (22% of FDI, 2.2% of implementation); Assam's 2023 Tata-era Rs 18,778cr registers in IEM against $2.37M FDI. Sector leaders: Metallurgical Industries #1 (24.1%, Rs 2.09 lakh cr in 2025 alone) and Chemicals #2 (14.7%) WITH NO PLI SCHEME -- private chemical capex landing at scale regardless. Master report gained part 2b."
+  },
+  {
+   "phase": "21",
+   "title": "Disbursal gaps filled via Parliament answers; three grades revised in the open",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Lok Sabha/Rajya Sabha written replies filled all four disbursal gaps: Medical Devices Rs 157.15cr (4.6%, LS 13 Mar 2026), Solar PV zero BY DESIGN (payable 1yr post-commissioning, while ~30 GW module capacity is commissioned -- the opposite of ACC's execution-failure zero), Telecom ~Rs 1,175cr through FY25 and accelerating, Bulk Drugs ~Rs 55cr (0.8%, secondary-sourced and flagged). Three grades revised with the revisions shown: Bulk Drugs A- -> B, Medical Devices B+ -> B, Solar C+ -> B-. Also captured the FY2024-25 per-scheme flow split (Rs 10,114cr) and a working route into sansad.in answer PDFs for future collectors. Deck slide and master report updated."
+  },
+  {
+   "phase": "22",
+   "title": "Project workflow & data-sourcing schema",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Documented the program's own architecture as a bulletin: the seven-gate investment-lifecycle measurement schema (announcement -> IEM Part A -> land/EC via PARIVESH -> IEM Part B -> PLI disbursal -> FDI equity -> trade outcome, with the official source and blind spot at each gate), the 14-source data inventory with access methods, the seven-step working method, and the encountered failure modes. The map for anyone extending or refreshing the repo. PARIVESH EC-pipeline research (gate 3) in flight."
+  },
+  {
+   "phase": "23",
+   "title": "PARIVESH EC pipeline -- gate 3 goes live",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Discovered that PARIVESH 2.0 exposes a fully open JSON API returning the complete national Environmental Clearance register in one call (113,804 proposals, SEIAA state-level clearances included -- the feared Category-B gap is dead). Built the gate-3 bulletin: Gujarat holds ~31% of industrial EC grants AND the deepest ToR pipeline (corroborating and predicting its 33.8% IEM implementation share); Maharashtra is the most forward-loaded state (ToR > granted); grant flow accelerating in step with the IEM ratio's break to 109.9%. Sector split corroborates the implementation leaders (synthetic organic chemicals 1,192 granted with Gujarat at 56%; metallurgy 641, multi-state). Flagship reads with proposal numbers: Dholera fab and Assam ATMP at ToR stage, Micron/Kaynes/Reliance-electrolyser cleared, all three Bulk Drug Parks and three PM MITRA parks cleared -- and two negative findings that matter as much: POSCO-JSW's $7.73bn JV has no EC application at all, and RRPCL is entirely absent, clearance-register proof of the stalled-at-MoU verdict. Lifecycle schema gate 3 updated to live; the API re-pull added to the quarterly checklist; master report gained part 2c. Also added as slide 22 of the FDI pitch deck (now 23 slides, PPTX/PDF rebuilt): the state pipeline bars, flagship clearance statuses, and the absences-are-due-diligence callout, framed for investors as 'any Indian project's clearance reality is one API call away.' Correlation then quantified: EC granted vs Part B implemented value (2024-25) across 16 states = Pearson 0.961 / Spearman 0.794 / log-log 0.864 -- clearance stock explains ~92% of variance in implementation levels (not growth rates), with residuals naming the over-performers (AP, MP, Odisha) and under-performers (Jharkhand, Assam, Karnataka -0.35 -- its pipeline-building read quantified)."
+  },
+  {
+   "phase": "24",
+   "title": "The complete compendium -- one PDF for the whole program",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Compiled everything into a single coherent 140-page PDF (India_Trade_Compendium_2026-07-19.pdf, tracked in reports/published/ and copied to Downloads): generated cover + page-numbered TOC + PDF bookmarks; the master report as the narrative spine; the workflow & data-sourcing schema; all 16 bulletins printed pixel-faithfully from their live HTML in lifecycle order; and the 23-slide FDI pitch deck as the closing appendix. Built with the repo's own print pipeline, TOC page numbers computed from actual per-section counts and verified."
+  },
+  {
+   "phase": "25",
+   "title": "The narrative abstract -- why import substitution, told in eight acts",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Built the program's opening frame as an 8-act narrative (per the plan-then-write narrative-function model, arXiv:2406.00554): the $333.2bn deficit and rupee slide as the stakes; PLI as the plan; PIB-verified ethanol blending as the import-substitution precedent (1.53%->20% blending 'five years ahead of schedule' per Factsheet 150699, Rs 1.97 lakh cr forex saved per PRID 2283118, with MoPNG's own admitted downsides kept); and the repo's findings as conflict (15% disbursed, greens reversed), twist (defective official data), turning point (109.9% implementation ratio, EC-IEM r=0.96, Pharma clean win), resolution (six actions) and continuation. Wired as the first section of the compendium, README opener, and index card."
+  },
+  {
+   "phase": "26",
+   "title": "Quarterly refresh blueprint -- TOGAF layers x modern data architecture",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Upgraded the quarterly workflow from a checklist to an operating architecture, merging the maintainer's TOGAF blueprint (business/data/application/technology/operations layering, backlog, success metrics) with the Modern Data Architecture playbook: 14-source ingestion layer, immutable dated data/*.json snapshots (corrections ledger as audit log), per-gate CHANGE-DATA-CAPTURE deltas instead of full re-scans (with the dedup mandate: PIB cumulative figures supersede, never sum), a Lambda speed layer for mid-quarter events, the seven-step regeneration pipeline, refresh months Jul/Oct/Jan/Apr, week-by-week runbook, five encountered failure modes with standing responses, and a prioritized automation backlog. Cadence mapped onto SAFe for Government (each refresh = a Program Increment; verification gates = quality-in-flow; corrections ledger = the governance artifact). QUARTERLY_CHECKLIST.md declared the operator view of the blueprint."
+  },
+  {
+   "phase": "27",
+   "title": "PIB date-wise x ministry SQL index (ships the blueprint's top backlog item)",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "scripts/pib_index.py + data/pib_index.sqlite: 9,657 PIB press releases (2026 YTD) indexed date-wise by ministry with PRID/title/url, the PIB factsheet listing (22), and a cited_in_repo flag -- every PRID and factsheet cited in the repo's data JSONs (32) resolves to an indexed row, all 22 pre-2026 citations back-filled with date/ministry/title from detail pages. Key access discovery: POST to www.pib.gov.in, never the bare domain -- the 301 redirect turns POSTs into GETs and ASP.NET filters silently reset to today (looks like token rejection, is not); one day-page request covers all ministries via <h3> grouping. Quarterly delta is now one command: --update --factsheets --seed-cited."
+  },
+  {
+   "phase": "28",
+   "title": "Beyond PLI -- the 2026 non-PLI incentive wave (first bulletin FROM the PIB index)",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Swept the full 2026 Cabinet register from the new PIB index: ~Rs 1.9 lakh crore of commitments that deliberately avoid production-linked design (Urban Challenge Fund Rs 1L cr, gasification VGF Rs 37,500cr, BHAVYA parks Rs 33,660cr, BMI maritime insurance pool Rs 12,980cr, ECLGS 5.0, NIPU-2026) -- de-risking inputs where PLI pays for output. Three of the four repo-flagged import gaps (fuels/fertilisers/cotton + pulses) received 2026 instruments; plastics and inorganic chemicals remain the only large uncovered heads."
+  },
+  {
+   "phase": "29",
+   "title": "Five-year incentive evolution 2021-2026 -- 93 launches via 5 parallel backfills + 5 classification agents",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "PIB index extended to 83,734 releases (2020-2026) by five parallel year-workers; five agents classified each year's Cabinet register into 93 incentive launches. The 2026 pivot is a TREND: new production-linked schemes 11 (2021) -> 1 -> 1 -> 0 (2024) -> 2 -> 0; production-linked was only 11.2% of new-commitment money even at the 2021 peak (infra missions carried 6x); the 'linked' payout base migrated output -> design -> employment (ELI 2025 Rs 99,446cr, larger than any single PLI); coal gasification escalated 4.4x on the repo-flagged gap; a critical-minerals chain assembled in 2025; maritime became a Rs 69,725cr package sector with no PLI."
+  },
+  {
+   "phase": "30",
+   "title": "Scheme registry -- launch dates, windows, applicants, and how the closed ones closed",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "16-entry PLI-family registry (Cabinet launch PRIDs, incentive windows, officially-reported applicant counts with 'not published' recorded as data) + closures timeline: LSEM first to complete a tenure (31 Mar 2026 -> MPMS); Drones first to expire with no successor (31 Mar 2024); ACC stalled at zero with a vanished 20 GWh awardee; Steel 14-of-58 withdrawal; White Goods 85->80 unexplained; ECLGS lapsed then revived; next watch: Food Processing sunset FY27. 836 approved applications programme-wide but only ~half the schemes ever had per-scheme counts published."
+  },
+  {
+   "phase": "31",
+   "title": "Ministry incentive catalog -- 16 ministries + NSWS, site-verified by six agents",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "~100 company-facing policies verified on ministry sites/CMS APIs/portals. Access-architecture discovery: MeitY/DoT/DPIIT are JS shells whose real content lives in public wp-json CMS APIs; fert.nic.in + texmin.nic.in DNS-dead, mines.gov.in unreachable, msme.gov.in scheme list unrenderable -- 4 of 16 ministries cannot answer 'what schemes do you run' via their web estate. Six scheme pages provably stale. Open-now windows cluster in capex/cluster/credit lanes (UNNATI to 30-Sep-2026, gasification R1, DoP API-CF/SMDI, ECMS extended). NSWS verified (32 ministries/34 states; 6 scheme gateways) -- contributed IFLDP's Rs 1,700cr sub-scheme rates and the only formal closure notice of its application window found anywhere. DISPLAYED CORRECTION to the registry: PM E-DRIVE extended segment-wise (e-2W 31-Jul-2026, e-3W R/C 31-Mar-2028), not ended -- the live portal beat the announced window. Session-limit deaths of all six agents were recovered by relaunch after reset + transcript-resume after a process restart."
+  },
+  {
+   "phase": "32",
+   "title": "Investor workflow -- from sector to sanction via NSWS",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Investor-facing capstone: eight steps (sector->instrument mapping, portal-not-page window checks, PN3 Beneficial-Owner structuring, NSWS KYA + single window, per-scheme portals with PMA contacts, seven statutory gates with PARIVESH EC as the 0.96 forward indicator, calibrated claims from the report card, quarterly monitoring), a ministry-connects table (IFCI/C-DAC/SECI/IREDA/NICDC/state SPVs/NSWS helpline), a candor layer (three-numbers discipline, ~15% five-year PLI disbursal, attrition precedents, 40-50% state top-ups), and the dated trigger calendar (UNNATI 30-Sep-2026, E20 decision 31-Oct-2026, ALMM List-II 31-Dec-2026, PLISFPI sunset FY27)."
+  },
+  {
+   "phase": "33",
+   "title": "Simplified quarterly PDF on the NITI Trade Watch template + linked-movements roster",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "Replaced the fragile 19-section pixel-faithful compendium pipeline (two passes, Chrome pre-execution, a 6-hour WeasyPrint layout hang, ~3h runtime) with build_quarterly_report.py: one generated HTML rendered in a single WeasyPrint pass (~1 second, 12 pages) structured on NITI Aayog's Trade Watch Quarterly template -- Highlights, the recurring linked-movements roster (each row pairs a policy movement with the trade movement it answers and the forex link), merchandise performance, partners, FY26 verdicts, special theme, matured-schemes section, policy developments with displayed corrections, lifecycle monitor, statistical annex. Quarterly refresh = edit sourced figures and re-run."
+  },
+  {
+   "phase": "34",
+   "title": "The matured cohort -- 18 schemes traced launch-to-outcome (2008-2020 -> 2026)",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "PIB register extended to 122,141 releases (2017-2026) by four parallel backfills (modern portal's day-wise boundary is 2017 -- recorded honestly; pre-2017 launches traced through later releases, the ethanol method). Three tracer agents followed 18 major schemes with PRID-cited trajectories: scoreboard 8 closed-success / 8 partial / 2 laggards. Core finding: every closed-success ran on a demand-side guarantee or procurement design (ethanol offtake Rs 1.97L cr saved; UJALA bulk procurement Rs 310->38 LED crash; coal revenue-share auctions; UDAN VGF auctions 74->165 airports; MUDRA guarantees Rs 40L cr; M-SIPS+PMP->LSEM->MPMS: mobile production 28x, exports 127x, imports 75% of demand -> 0.02%). Laggards: SATAT (50 of 5,000 plants -- pivoted to mandate) and BharatNet (three redesigns). Design beats sector; misses are never announced; employment-linked payouts have decade-old roots (PMRPY/ABRY -> ELI); honest instrument-to-loop timescale ~8-10 years. Two further agents classified the 2017-2020 Cabinet registers (61 launches), completing the 2017-2026 launch dataset at 154 launches."
+  },
+  {
+   "phase": "35",
+   "title": "Retrospective quarterly series FY2014-15 -> FY2026-27 (13 documents)",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "build_quarterly_series.py generates 13 one-page Trade-Watch PDFs, one per fiscal year: quarterly policy launches (PRID-cited from the classified register + traced 2014-16 cohort), verified anchors per year (deficit series -191 -> -333; blending 1.53% -> 20%; mobile factories 2 -> 300+; solar 2.82 -> 100.33 GW; MUDRA Rs 1.37L cr -> Rs 40L cr; FDI $62bn -> $81bn plateau), and a policy<->trade<->forex linkage line per year -- the linked-movements roster format run backward through the decade. Years the register cannot reach carry fewer anchors, stated plainly."
+  }
+ ],
+ "cross_cutting_insights": [
+  {
+   "insight": "Three financially distinct numbers get conflated in almost all public PLI commentary, and this repo insists on keeping them separate throughout: (1) FDI EQUITY INFLOW -- real foreign money that arrived, DPIIT/RBI-tracked; (2) PLI COMMITTED/ACTUAL INVESTMENT -- company-announced\u2026"
+  },
+  {
+   "insight": "A state's or sector's 'hub' status (real, landed manufacturing capacity) and its 'FDI share' (DPIIT/RBI-tracked foreign equity) are measuring genuinely different things, not the same thing imperfectly. Odisha is a real steel hub with under $100M/year in FDI, because its flagship\u2026"
+  },
+  {
+   "insight": "Sectors split cleanly by WHO OWNS THE ENABLING TECHNOLOGY. Where a strategic capacity gap coincides with an existing Indian conglomerate that already has the industrial scale and the technology (or doesn't need foreign technology) -- steel, semiconductor packaging/ATMP, EV batte\u2026"
+  },
+  {
+   "insight": "Every major finding in this session that looked like a clean, attributable causal story turned out to have a stronger or equally plausible alternative explanation once checked: Pharma's FDI rise lines up better with global COVID/API-security reshoring than with either pharma PLI\u2026"
+  },
+  {
+   "insight": "India's domestic capital is not one price. This session quantified a real, ~100-250+ basis-point gap between what a AAA-rated national-champion conglomerate pays for capital (~7.4-8.3% via bonds) and what an ordinary EBLR-priced corporate borrower pays (~9.5-10.5%, now the prici\u2026"
+  },
+  {
+   "insight": "This session's research practice deliberately surfaced its own errors rather than silently correcting them: an automated pass fabricated a claim that ICRA differentiates large-vs-small steel players by risk-absorption capacity; when checked against the actual ICRA source PDF, th\u2026"
+  },
+  {
+   "insight": "Government data infrastructure has real, documented, admitted gaps: DPIIT's own metadata document states it publishes no methodology for its FDI statistics; IEM (Industrial Entrepreneurs Memorandum) sector-level data exists but has no 'Electronics' category at all in its legacy\u2026"
+  }
+ ],
+ "tools_and_infrastructure_built": [
+  "HTML-slide-deck-to-PPTX/PDF pipeline: headless Chrome full-page screenshot -> PIL crop -> python-pptx assembly -> soffice PDF conversion, reused across the entire FDI deck's evolution from 12 to 20 slides.",
+  "A consistent design-token CSS system (light/dark theme, Iowan Old Style serif + system sans + IBM Plex Mono) reused across all 10+ chart bulletins in the sector-policy-recommendations repo.",
+  "scripts/report_synthesizer.py -- the JSON-to-PDF/Word/PPT tool described in phase 9 above, the newest piece of session infrastructure and the one used to generate this very document.",
+  "data/repo_manifest_2026-07-19.json -- machine-readable index of every chart/data pair, consumed both by the README's reference table and by the synthesizer's batch mode."
+ ],
+ "current_status": "All 35 phases published and pushed (latest commit 1d4a1ab). The repo now carries 26 bulletins, the 12-page NITI-template quarterly report with its linked-movements roster and matured-schemes section, the 13-document retrospective quarterly series (FY2014-15 -> FY2026-27), the 122,141-release PIB SQL register (2017-2026) with a 154-launch classified Cabinet dataset, the site-verified ministry catalog, the scheme registry with displayed corrections, and the investor workflow. The matured-cohort verdict -- every closed-success loop ran on a demand-side guarantee or procurement design, on an ~8-10 year timescale -- is the program's capstone empirical finding, and 2025-26's instrument wave is, in hindsight, a reversion to that proven family."
+}
