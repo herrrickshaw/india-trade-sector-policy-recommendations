@@ -109,14 +109,46 @@ counts.</div>
 
 <h2>Contents</h2>
 <table class="toc">
+<tr><td><a href="#s0">The quarter at a glance: linked movements in policy, trade &amp; forex</a><span class="p" href="#s0"></span></td></tr>
 <tr><td><a href="#s1">1 · Merchandise trade performance</a><span class="p" href="#s1"></span></td></tr>
 <tr><td><a href="#s2">2 · Trade by partner</a><span class="p" href="#s2"></span></td></tr>
 <tr><td><a href="#s3">3 · Sector performance &amp; verdicts (FY2025-26)</a><span class="p" href="#s3"></span></td></tr>
 <tr><td><a href="#s4">4 · Special theme: the migration away from production-linked design</a><span class="p" href="#s4"></span></td></tr>
+<tr><td><a href="#s4b">4b · Matured schemes: the returns already in</a><span class="p" href="#s4b"></span></td></tr>
 <tr><td><a href="#s5">5 · Trade &amp; investment policy developments</a><span class="p" href="#s5"></span></td></tr>
 <tr><td><a href="#s6">6 · Investment lifecycle monitor</a><span class="p" href="#s6"></span></td></tr>
 <tr><td><a href="#s7">7 · Statistical annex</a><span class="p" href="#s7"></span></td></tr>
 </table>
+</section>
+
+<section id="s0">
+<h1 class="sec">The quarter at a glance: linked movements</h1>
+<p class="lead">The recurring roster this report is built around: each row pairs a <b>policy movement</b> with
+the <b>trade movement</b> it answers and the <b>forex consequence</b> that links them — because in this
+economy the three are one system: deficits are paid in forex, forex pressure motivates substitution policy,
+and policy (when it works) shows up back in the trade ledger.</p>
+<table>
+<tr><th>Policy movement (this cycle)</th><th>Trade movement it answers</th><th>Forex link</th></tr>
+<tr><td class="k">Import-substitution wave: gasification ₹37,500cr, NIPU-2026 urea, pulses &amp; cotton missions</td>
+    <td>Deficit widened 17.5% to −$333.2bn; fuels 26.2% of the bill; fertiliser imports +118.9%</td>
+    <td>Rupee −11.9%/12mo (vs ~3.3%/yr prior decade) — every widening is paid in forex; ethanol's precedent shows the loop can close (₹1.97L cr saved)</td></tr>
+<tr><td class="k">MPMS + Semicon 2.0 + ECMS tranches (electronics continuity)</td>
+    <td>Electronics exports +324%/5y to $54bn (smartphones #1 export) but imports doubled to $104.9bn — the component gap</td>
+    <td>Net electronics forex still negative; component localisation is the swing variable the new schemes target</td></tr>
+<tr><td class="k">Bharat Maritime Insurance Pool (₹12,980cr sovereign guarantee)</td>
+    <td>Russia at 35.8–35.9% of crude imports, discount-driven, dirham-settled</td>
+    <td>Keeps the discounted-crude lane open against insurance exclusion — a forex saving defended by insurance capacity, invisible in any scheme table</td></tr>
+<tr><td class="k">Press Note 3 Beneficial-Owner amendment; FDI $88.3bn (equity +18%)</td>
+    <td>China −$112.2bn bilateral deficit, 58% industrial inputs, unmoved by six years of PLI</td>
+    <td>Capital inflows part-fund the goods deficit — FDI attraction and import substitution are two halves of one balance-of-payments policy</td></tr>
+<tr><td class="k">Export Promotion Mission (NIRYAT PROTSAHAN subvention + guarantees) after IES lapsed</td>
+    <td>Exports +0.9% y/y — flat against 7.4% import growth; USA is top-8 destination in 11 of 12 growth chapters</td>
+    <td>US tariff-regime expiry (24-Jul-2026) is the near-term forex-earnings risk on the most concentrated destination</td></tr>
+<tr><td class="k">E20 achieved five years early; beyond-E20 decision due 31-Oct-2026</td>
+    <td>~316 lakh MT of crude never imported (cumulative)</td>
+    <td>₹1.97 lakh crore of forex saved since 2014-15 — the completed loop every new substitution scheme is measured against</td></tr>
+</table>
+<div class="src">Figures: TRADESTAT/Exim (trade), PIB PRID-cited releases (policy), RBI-reference rupee series (forex). Each cycle this roster is re-drawn from the quarter's register — the template of this report.</div>
 </section>
 
 <section id="s1">
@@ -194,6 +226,45 @@ five years, that reads as revealed preference.</p>
 UNNATI (→30-Sep-2026), Gasification 2026 Round-1, DoP API-CF/SMDI, ECMS (extended), ALMM. The full 8-step
 investor route (NSWS → KYA → portals → gates) is published as the investor-workflow bulletin.</div>
 <div class="src">Five-year evolution bulletin (all 93 launches PRID-cited); beyond-PLI 2026 bulletin.</div>
+</section>
+
+<section id="s4b">
+<h1 class="sec">4b · Matured schemes: the returns already in</h1>
+<p class="lead">The counterpart to the theme chapter: schemes launched 2014–2020 whose incentive → investment →
+outcome loop has <b>already closed</b> — the cohort that shows which instrument designs actually produce
+trade and forex results in India. (The PIB register is being extended to 2017–2020 for a full launch-to-outcome
+trace; the modern portal's day-wise record begins in 2017, so 2014–16 launches are traced through later
+releases — the method that built the ethanol case.)</p>
+<table>
+<tr><th>Scheme (launch era)</th><th>Instrument design</th><th>Outcome now on record</th><th>Trade/forex link</th></tr>
+<tr><td class="k">Ethanol Blended Petrol (2014 pricing era)</td><td>Administered pricing + guaranteed OMC offtake + distillery subvention + GST 5%</td>
+    <td>Blending 1.53% → 20% "five years ahead of schedule" (Factsheet 150699); &gt;₹1.66L cr to farmers</td>
+    <td class="n">₹1.97L cr forex saved; ~316 lakh MT crude substituted (PRID 2283118)</td></tr>
+<tr><td class="k">M-SIPS → PLI-LSEM (2012/2020)</td><td>Capex subsidy era → production-linked era</td>
+    <td>Smartphone base built: LSEM completed its tenure with exports at 121% of target; Foxconn/Dixon/Samsung producing</td>
+    <td class="n">Smartphones = India's #1 export item (CY2025); electronics exports $54bn</td></tr>
+<tr><td class="k">Solar manufacturing push (NSM era → PLI T1/T2)</td><td>Market-access (ALMM) + tender-linked PLI post-commissioning</td>
+    <td>100 GW of ALMM-listed module capacity crossed (Aug 2025); ~30 GW commissioned under PLI design</td>
+    <td class="n">Import-dependence in modules falling; List-II cell enforcement (to 31-Dec-2026) extends it upstream</td></tr>
+<tr><td class="k">UDAN (2016)</td><td>Route-level VGF to airlines</td>
+    <td>Regional network built enough to justify a 10-year, ₹28,840cr Modified UDAN successor (FY27–36)</td>
+    <td class="n">Demand-side; services/tourism earnings channel</td></tr>
+<tr><td class="k">FAME-I/II (2015/2019) → EMPS → PM E-DRIVE</td><td>Demand incentives via OEMs</td>
+    <td>An EV market real enough that successors are extended segment-wise (e-2W to Jul-2026, e-3W to Mar-2028)</td>
+    <td class="n">Petroleum-import avoidance channel; battery imports remain the offset (ACC gap)</td></tr>
+<tr><td class="k">NIP-2012 urea plants</td><td>Assured-return investment policy</td>
+    <td>Plants built (Matix, Ramagundam et al.) — the precedent NIPU-2026 explicitly extends with better terms (RoE band 12–16%)</td>
+    <td class="n">Urea import substitution; fertiliser imports (+118.9%) are the gap NIPU now targets</td></tr>
+<tr><td class="k">SATAT (2018)</td><td>Assured-price CBG offtake by OMCs</td>
+    <td>Ecosystem instruments in place (PSL status, FOM recognition, LTOAs); scale still modest — the honest laggard in the cohort</td>
+    <td class="n">Gas-import substitution channel, largely unrealised yet</td></tr>
+</table>
+<p><b>What the matured cohort teaches:</b> the completed successes share a demand-side guarantee (offtake,
+administered price, assured return, market access) rather than an output payout — ethanol, urea-NIP, ALMM and
+M-SIPS-era electronics all closed their loops on <b>guaranteed-buyer or guaranteed-terms designs</b>. That is
+precisely the design family 2025–26's new instruments (NIPU, gasification VGF, BMI pool, offtake mechanisms)
+return to — the five-year migration of §4 is, in hindsight, a reversion to what had already worked.</p>
+<div class="src">Session-verified figures (PRIDs as cited; ministry portals for LSEM/ALMM/E-DRIVE). Full launch-to-outcome cohort bulletin in progress on the extended 2017-2026 register.</div>
 </section>
 
 <section id="s5">
