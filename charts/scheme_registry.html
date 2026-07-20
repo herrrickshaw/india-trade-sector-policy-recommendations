@@ -1,0 +1,148 @@
+<title>Scheme Registry — Launch Dates, Windows, Applicants & Closures</title>
+<meta name="hz:canvas-width" content="1180">
+<style>
+  :root {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6; --mismatch:#7a5aa8;
+    --font-display:"Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --font-mono:"IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+      --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+      --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+      --data-line:#3987e5; --data-soft:#1c2c40; --mismatch:#a98fd6;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+    --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+    --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+    --data-line:#3987e5; --data-soft:#1c2c40; --mismatch:#a98fd6;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6; --mismatch:#7a5aa8;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; }
+  .bulletin { background:var(--page-bg); color:var(--ink); font-family:var(--font-body); padding:40px 20px 56px; display:flex; justify-content:center; }
+  .sheet { width:100%; max-width:1100px; display:flex; flex-direction:column; gap:26px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:16px; }
+  .eyebrow { font-family:var(--font-mono); font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); display:flex; gap:10px; align-items:center; }
+  .eyebrow::before { content:""; width:7px; height:7px; border-radius:50%; background:var(--accent); }
+  h1 { font-family:var(--font-display); font-weight:500; font-size:clamp(24px,3.1vw,32px); margin:6px 0 0; text-wrap:balance; }
+  .dek { font-size:14px; color:var(--ink-2); max-width:90ch; line-height:1.55; margin:8px 0 0; }
+  .source-line { font-family:var(--font-mono); font-size:11px; color:var(--ink-muted); margin-top:8px; }
+
+  section.block { background:var(--surface); border:1px solid var(--rule-strong); padding:20px 24px; }
+  .block-tag { font-family:var(--font-mono); font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent); }
+  .block-title { font-family:var(--font-display); font-size:20px; font-weight:600; margin:4px 0 10px; }
+  .block-note { font-size:13px; color:var(--ink-2); line-height:1.6; max-width:100ch; }
+  .block-note b { color:var(--ink); }
+
+  .tbl-scroll { overflow-x:auto; border:1px solid var(--rule); }
+  table.fig { width:100%; min-width:1040px; border-collapse:collapse; font-size:11.5px; }
+  table.fig th { text-align:left; font-family:var(--font-mono); font-size:9px; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-muted); padding:6px 10px 7px 8px; border-bottom:2px solid var(--rule-strong); position:sticky; top:0; background:var(--surface); }
+  table.fig td { padding:8px 10px 8px 8px; border-bottom:1px solid var(--rule); vertical-align:top; line-height:1.45; color:var(--ink-2); }
+  table.fig tr:last-child td { border-bottom:none; }
+  td.k { font-weight:700; color:var(--ink); }
+  td.mono { font-family:var(--font-mono); font-size:10px; white-space:nowrap; color:var(--ink-muted); }
+  .st { display:inline-block; font-family:var(--font-mono); font-size:9px; font-weight:700; padding:1.5px 7px; border-radius:999px; white-space:nowrap; }
+  .st.active { background:var(--accent-soft); color:var(--accent); }
+  .st.closed { background:var(--data-soft); color:var(--data-line); }
+  .st.expired { background:var(--warn-soft); color:var(--warn); }
+  .st.stalled { background:var(--alert-soft); color:var(--alert); }
+
+  .timeline { margin-top:12px; }
+  .tl-row { display:grid; grid-template-columns:150px 1fr; gap:14px; padding:9px 0; border-bottom:1px solid var(--rule); }
+  .tl-row:last-child { border-bottom:none; }
+  .tl-date { font-family:var(--font-mono); font-size:11px; font-weight:700; color:var(--data-line); }
+  .tl-body { font-size:12px; line-height:1.55; color:var(--ink-2); }
+  .tl-body b { color:var(--ink); }
+
+  .callout { border-left:3px solid var(--warn); background:var(--warn-soft); padding:12px 16px; margin-top:12px; font-size:12.5px; line-height:1.6; color:var(--ink-2); }
+  .callout b { color:var(--ink); }
+  .readings { border-left:3px solid var(--accent); background:var(--accent-soft); padding:12px 16px; margin-top:12px; }
+  .readings .lbl { font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; letter-spacing:0.06em; color:var(--accent); }
+  .readings ul { margin:6px 0 0; padding-left:16px; }
+  .readings li { font-size:12px; line-height:1.6; color:var(--ink-2); margin-bottom:6px; }
+  .readings li b { color:var(--ink); }
+  footer.colophon { text-align:center; font-family:var(--font-mono); font-size:10.5px; color:var(--ink-muted); padding-top:8px; }
+</style>
+
+<div class="bulletin">
+  <div class="sheet">
+    <div class="masthead">
+      <div class="eyebrow">India Trade — Sector &amp; Policy Recommendations · Scheme Registry</div>
+      <h1>Every scheme's launch, window, applicants — and how the closed ones closed</h1>
+      <p class="dek">One registry for the incentive schemes this program tracks: launch date with its Cabinet PRID, the incentive window (start → end), applicant and beneficiary counts <b>only where a release or Parliament answer states them</b>, and the closure record. Of the 14 PLI-family schemes: one completed its tenure and was succeeded (LSEM → MPMS), one expired with no successor (Drones), one is stalled at zero disbursal with a vanished awardee (ACC), and one lost 24% of its projects to withdrawal (Specialty Steel).</p>
+      <div class="source-line">SOURCES: launch dates + PRIDs from data/pib_index.sqlite (Cabinet register 2020–2026); windows from scheme guidelines as stated in PIB/ministry releases; applicant counts from PIB releases and Lok/Rajya Sabha answers only — "not published" is recorded where no official count exists. Retrieved 2026-07-19.</div>
+    </div>
+
+    <section class="block">
+      <div class="block-tag">The PLI family · 16 entries</div>
+      <div class="block-title">Registry: launch → window → applicants → status</div>
+      <div class="tbl-scroll">
+      <table class="fig">
+        <thead><tr><th>Scheme</th><th>Launched (PRID)</th><th>Incentive window</th><th>Applicants / beneficiaries (as officially reported)</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td class="k">LSEM (smartphones)</td><td class="mono">01 Apr 2020 · 1662096</td><td>FY21–FY25 (+1y)</td><td>16 approved in first mobile round; Foxconn, Dixon, Samsung PIB-credited</td><td><span class="st closed">TENURE CLOSED 31 Mar 2026</span> → MPMS</td></tr>
+          <tr><td class="k">Bulk Drugs (KSM/API)</td><td class="mono">21 Mar 2020 · 1607483</td><td>FY21–FY30</td><td>Zero beneficiary names in any PIB release — <b>not published</b></td><td><span class="st active">ACTIVE</span></td></tr>
+          <tr><td class="k">Medical Devices</td><td class="mono">21 Mar 2020 · 1607485</td><td>FY21–FY28</td><td>28 applicants; 7 paid ₹157.15cr to Dec 2025 (PRID 2239576)</td><td><span class="st active">ACTIVE</span></td></tr>
+          <tr><td class="k">Telecom &amp; Networking</td><td class="mono">17 Feb 2021 · 1698685</td><td>FY22–FY26 (+1y opt)</td><td>42 named beneficiaries</td><td><span class="st active">ACTIVE · final years</span></td></tr>
+          <tr><td class="k">IT Hardware 1.0 → 2.0</td><td class="mono">24 Feb 2021 · 1700425 → 17 May 2023 · 1924766</td><td>2.0: FY24–FY29</td><td>Per-scheme counts not in PIB; combined LSEM+ITHW disbursal ₹15,554cr</td><td><span class="st closed">1.0 SUBSUMED</span> <span class="st active">2.0 ACTIVE</span></td></tr>
+          <tr><td class="k">Pharmaceuticals</td><td class="mono">24 Feb 2021 · 1700433</td><td>Sales FY23–FY28</td><td>List on DoP site; PIB reports outcomes (250% of investment target) without a count</td><td><span class="st active">ACTIVE · flagship</span></td></tr>
+          <tr><td class="k">Food Processing</td><td class="mono">31 Mar 2021 · 1708691</td><td>FY22–FY27</td><td>171 approved applications (PRID 2230621); names only on MoFPI PDF</td><td><span class="st active">ACTIVE · sunset FY27, no successor announced</span></td></tr>
+          <tr><td class="k">Solar PV T1 → T2</td><td class="mono">07 Apr 2021 · 1710113 → 21 Sep 2022 · 1861127</td><td>5y post-commissioning (→ early 2030s)</td><td>Count not in PIB; ~30 GW commissioned (MNRE)</td><td><span class="st active">ACTIVE · ₹0 by design</span></td></tr>
+          <tr><td class="k">White Goods</td><td class="mono">07 Apr 2021 · 1710116</td><td>FY22–FY29</td><td>85 selected → 84 → <b>80</b>; shrinkage never explained</td><td><span class="st active">ACTIVE · quiet attrition</span></td></tr>
+          <tr><td class="k">ACC Battery</td><td class="mono">12 May 2021 · 1717938</td><td>5y post-commissioning (→ ~FY30)</td><td>4 awardees → 3 (Hyundai Global Motors' 20 GWh vanished); Ola 1 GWh of 40 in pilot since Mar 2024</td><td><span class="st stalled">STALLED · ₹0 · re-tender</span></td></tr>
+          <tr><td class="k">Specialty Steel</td><td class="mono">22 Jul 2021 · 1737722</td><td>FY24–FY28 (+R1.2)</td><td>58 Round-1 projects, <b>14 withdrew</b> (PRID 2114011); R1.2 MoUs Feb 2026</td><td><span class="st active">ACTIVE · 24% attrition</span></td></tr>
+          <tr><td class="k">Textiles (MMF/technical)</td><td class="mono">08 Sep 2021 · 1753118</td><td>Incentives FY26–FY30</td><td>74 applicants R1/R2; only 26 commenced production; ₹54.5cr paid to 2 unnamed firms</td><td><span class="st active">ACTIVE · payouts just began</span></td></tr>
+          <tr><td class="k">Auto &amp; Components</td><td class="mono">15 Sep 2021 · 1755062</td><td>Sales FY24–FY28 (start delayed 1y)</td><td>Champion OEM/component approvals per MHI rounds; no consolidated PIB count</td><td><span class="st active">ACTIVE · accelerating</span></td></tr>
+          <tr><td class="k">Drones &amp; Components</td><td class="mono">15 Sep 2021 · 1755062</td><td>FY22–FY24</td><td>23 provisional beneficiaries; ₹30cr of ₹120cr disbursed (PRID 1913565)</td><td><span class="st expired">EXPIRED 31 Mar 2024 · no successor</span></td></tr>
+          <tr><td class="k">Semicon India 1.0 → 2.0</td><td class="mono">15 Dec 2021 · 1781723 → 15 Jul 2026 · 2284796</td><td>1.0 fully committed → 2.0 long-term</td><td>Unit approvals: Micron '23; Tata fab + TSAT + CG Power Feb '24; Kaynes Sep '24; +2 units May '26</td><td><span class="st closed">1.0 COMMITTED</span> <span class="st active">2.0 ACTIVE</span></td></tr>
+          <tr><td class="k">ECMS → · MPMS</td><td class="mono">28 Mar 2025 · 2116172 · 15 Jul 2026 · 2284789</td><td>ECMS FY26–FY31; MPMS TBN</td><td>ECMS: 3 tranches in 10 months, 22 proposals in tranche 3 alone; MPMS applications not yet open</td><td><span class="st active">ACTIVE · fastest cadence</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="callout"><b>Aggregate applicant reporting:</b> 836 approved applications across the PLI programme as of 31 Dec 2025 (PRID 2230621) — but only about half the schemes have ever had per-scheme counts published in a release or Parliament answer, and Bulk Drugs / Solar / ACC have <b>zero beneficiary names in any PIB release</b>. "Not published" is recorded in this registry deliberately: the absence is data, and AHIDF's nightly application funnel remains the proof that per-applicant transparency is a choice.</div>
+    </section>
+
+    <section class="block">
+      <div class="block-tag">Closures &amp; transitions</div>
+      <div class="block-title">How schemes have actually ended (or un-ended)</div>
+      <div class="timeline">
+        <div class="tl-row"><div class="tl-date">31 Mar 2023</div><div class="tl-body"><b>ECLGS sunset</b> — the COVID credit line lapsed… then was revived three years later as <b>ECLGS 5.0</b> (5 May 2026, PRID 2258114). A closure that un-closed.</div></div>
+        <div class="tl-row"><div class="tl-date">17 May 2023</div><div class="tl-body"><b>IT Hardware 1.0 replaced by 2.0</b> — ₹7,350cr design superseded by ₹17,000cr within 27 months. The quietest closure in the family.</div></div>
+        <div class="tl-row"><div class="tl-date">31 Mar 2024</div><div class="tl-body"><b>PLI Drones expired</b> — the first PLI to complete its window and simply end, no successor. Sector turnover rose ~7× during it. Same day: <b>FAME-II ended</b>, succeeded by PM E-DRIVE (Sep 2024).</div></div>
+        <div class="tl-row"><div class="tl-date">22 Mar 2025</div><div class="tl-body"><b>Specialty Steel attrition disclosed</b> — 14 of 58 Round-1 projects withdrew (one line in PRID 2114011, absent from the ministry's own pages); Round 1.2 re-opened with MoUs 9 Feb 2026.</div></div>
+        <div class="tl-row"><div class="tl-date">2024–2026</div><div class="tl-body"><b>ACC's shrinking bench</b> — Hyundai Global Motors (20 GWh) vanished from every current DHI document; 10 GWh re-tendered under GSSS; zero disbursal five years post-launch. <b>White Goods</b> slid 85 → 84 → 80 beneficiaries with no explanatory release.</div></div>
+        <div class="tl-row"><div class="tl-date">31 Mar 2026</div><div class="tl-body"><b>LSEM tenure closed</b> — the first PLI to complete a full five-year tenure. Successor <b>MPMS</b> approved 15 Jul 2026 in the same Cabinet as <b>Semicon 2.0</b> — both continuations of committed lanes, not new production-linked lanes. Same day: <b>PM E-DRIVE's two-year window ended</b>; only the regional NCRPB fleet scheme (3 Jun 2026) follows on.</div></div>
+        <div class="tl-row"><div class="tl-date">FY2025-26</div><div class="tl-body"><b>NMEO-Oil Palm reaches its scheduled end</b>; NMEO-Oilseeds (₹10,103cr) carries the edible-oil mandate to 2030-31. <b>Modified UDAN</b> (25 Mar 2026) relaunches regional connectivity for FY27–FY36.</div></div>
+        <div class="tl-row"><div class="tl-date">Next to watch</div><div class="tl-body"><b>Food Processing's window closes FY2026-27</b> with no successor announced — the registry's next scheduled ending. Telecom PLI enters its optional final year.</div></div>
+      </div>
+      <div class="readings">
+        <div class="lbl">Registry readings</div>
+        <ul>
+          <li><b>Scheme endings are now observable, not hypothetical:</b> one tenure completed (LSEM), one expiry without successor (Drones), one demand-side scheme ended on schedule (E-DRIVE) — end-date discipline exists, which makes the successor decision (or its absence) the real policy signal.</li>
+          <li><b>Attrition is disclosed only under duress:</b> steel's withdrawals surfaced in one PIB sentence; White Goods' shrinkage and ACC's lost awardee were found by comparing documents, not by any announcement.</li>
+          <li><b>Applicant transparency is bimodal</b> — Parliament-answer schemes report counts (MedDev 28/7), the rest report nothing. There is no middle tier.</li>
+          <li><b>Successions confirm the five-year instrument trend:</b> both 15 Jul 2026 successors (MPMS, Semicon 2.0) continue committed lanes rather than opening new production-linked ones.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="colophon">herrrickshaw/india-trade-sector-policy-recommendations — data: <a href="../data/scheme_registry_2026-07-19.json">data/scheme_registry_2026-07-19.json</a> · grades &amp; disbursals: <a href="pli_report_card.html">PLI report card</a> · all 93 launches: <a href="pib_five_year_incentive_evolution.html">five-year evolution</a></footer>
+  </div>
+</div>

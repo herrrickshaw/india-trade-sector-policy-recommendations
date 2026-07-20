@@ -119,6 +119,13 @@
       ]
     },
     {
+      "title": "Scheme registry: launch dates, windows, applicants & closures",
+      "chart": "charts/scheme_registry.html",
+      "data": [
+        "data/scheme_registry_2026-07-19.json"
+      ]
+    },
+    {
       "title": "Five-year incentive evolution 2021-2026 (93 launches from the Cabinet register)",
       "chart": "charts/pib_five_year_incentive_evolution.html",
       "data": [
