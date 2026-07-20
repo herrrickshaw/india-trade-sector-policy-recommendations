@@ -129,7 +129,8 @@
       "title": "Ministry incentive catalog (site-verified, 16 ministries + NSWS gateway)",
       "chart": "charts/ministry_incentive_catalog.html",
       "data": [
-        "data/ministry_incentive_catalog_2026-07-19.json"
+        "data/ministry_incentive_catalog_2026-07-19.json",
+        "data/ministry_master_list_2026-07-20.json"
       ]
     },
     {

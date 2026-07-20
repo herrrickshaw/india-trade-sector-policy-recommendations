@@ -247,6 +247,12 @@
    "title": "New repo: focus-sector-investor-map -- companies x government initiatives",
    "repo": "focus-sector-investor-map (new, public)",
    "headline_finding": "Bridged the policy program and the market-data stack in a new public repo: the 38,495-company multi-market universe joined to Damodaran's 48,156-company industry classification and mapped into the program's 12 focus sectors -> 894 liquid, market-validated companies -> 175-name shortlist verified for profitability PER NAME via yfinance (147 PROFITABLE / 17 not / 11 unverified excluded, not assumed; 102 with the stated global-expansion signal) -> plus the foreign-investor x initiative pairing table: 12 PRID-verified pairs (Foxconn/Samsung->LSEM->MPMS, Micron/PSMC/Renesas->ISM, First Solar->PLI-T2/ALMM, AM/NS->Specialty Steel, Suzuki->PLI-Auto), 7 prospective lanes (Semicon 2.0 equipment pillar->AMAT/LRCX, shipbuilding package, NIPU-2026, ACC re-tender eyes-open), and retained negative findings (POSCO-JSW's missing EC application, Hyundai's lapsed ACC award, White Goods attrition). Fully reproducible via two scripts; every proxy and join limitation stated in the README."
+  },
+  {
+   "phase": "38",
+   "title": "Investor map bulletin (coverage-first, global) + master ministry list",
+   "repo": "india-trade-sector-policy-recommendations + focus-sector-investor-map",
+   "headline_finding": "Rebuilt the investor map coverage-first per direction: the full Damodaran classification universe mapped to the 12 incentivized sectors WITHOUT a profitability gate -- 19,795 companies across 107 countries (profitability stays a per-name attribute, 147 verified). Published as a policy-repo bulletin: per-sector cards showing global pool -> India's pool -> the incentive lane, with the courting pools matching the FDI-sourcing strategies one-for-one (TW 789 + KR 487 + CN 837 electronics for ECMS/Semicon 2.0; CA 833 + AU 515 metals for the critical-minerals chain; US pharma 724/medtech 204; VN/ID as shipbuilding peers) and chemicals & plastics as the standout asymmetry (2,453 global / 481 India / no scheme). Plus the MASTER MINISTRY LIST: all 86 ministries/departments the government publishes under, derived from the program's own 122k-release register with activity counts -- 16 flagged CATALOGED from the incentive sweep, extending to the remaining 70 (Finance, Defence, S&T, Agriculture, Power, MoHUA, Road Transport...) is the stated next step."
   }
  ],
  "cross_cutting_insights": [
@@ -278,5 +284,5 @@
   "scripts/report_synthesizer.py -- the JSON-to-PDF/Word/PPT tool described in phase 9 above, the newest piece of session infrastructure and the one used to generate this very document.",
   "data/repo_manifest_2026-07-19.json -- machine-readable index of every chart/data pair, consumed both by the README's reference table and by the synthesizer's batch mode."
  ],
- "current_status": "All 37 phases published. Three public repos now carry the program: india-trade-data-analysis (descriptive), india-trade-sector-policy-recommendations (prescriptive: 27 bulletins, quarterly report + retrospective series, 122k-release PIB register, matured-cohort verdicts, decade report card, investor workflow), and the new focus-sector-investor-map (the bridge to the market-data stack: 894 screened companies, 147 verified-profitable, and the foreign-investor x initiative pairing table with verified, prospective and deliberately-retained stalled pairs)."
+ "current_status": "All 38 phases published across three public repos. The investor layer is complete coverage-first (19,795 companies/107 countries mapped to the incentivized sectors, with verified-profitability and pairing attribute layers), and the ministry universe is now enumerated in full (86 entities from the register; 16 incentive-cataloged, 70 pending the next sweep)."
 }
