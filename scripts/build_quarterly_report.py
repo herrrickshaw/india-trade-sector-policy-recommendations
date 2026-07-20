@@ -300,7 +300,8 @@ throughout.</p>
 trade outcome.</p>
 <table>
 <tr><th>Gate</th><th>This cycle's reading</th><th>Signal</th></tr>
-<tr><td class="k">IEM implementation ratio</td><td class="n">82% (2024) → 109.9% (2025)</td><td>Implemented investment exceeded same-year intent for the first time — the 2021-22 intent surge matured into plants</td></tr>
+<tr><td class="k">IEM implemented value (LEVEL)</td><td class="n">≈₹19.5 lakh cr (2021–25)</td><td>Derived from Gujarat's ₹6.60L cr at its 33.8% national share; growth is front-loaded into the latest years — Gujarat alone implemented ₹4.55L cr in 2024-25 and metallurgical industries ₹2.09L cr nationally in 2025, so the level is accelerating, not just the ratio</td></tr>
+<tr><td class="k">IEM implementation ratio</td><td class="n">82% (2024) → 109.9% (2025)</td><td>Implemented investment exceeded same-year intent for the first time — the 2021-22 intent surge matured into plants; each refresh reports levels + y/y growth alongside this ratio (checklist step)</td></tr>
 <tr><td class="k">Environmental clearances</td><td class="n">198 → 734 → 1,102/yr</td><td>Grant flow accelerating; EC grants correlate <b>0.96</b> with state implementation value — the best forward indicator found</td></tr>
 <tr><td class="k">State leadership</td><td class="n">Gujarat 33.8%</td><td>Full-chain leader (intent, clearance, production; 178% conversion); top-3 states hold 63.3%; Odisha is #2 implementer with 0.14% of FDI (domestic steel capital)</td></tr>
 <tr><td class="k">PLI disbursal</td><td class="n">₹28,748cr ≈ 15%</td><td>Concentrated in two sectors; ACC at zero; FY25 flow ₹10,114cr and accelerating in electronics/auto</td></tr>
