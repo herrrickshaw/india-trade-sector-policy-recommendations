@@ -290,6 +290,18 @@
     "Punjab IBDP 2026 (gazette 8-Mar-2026): overall ceiling 100% of FCI (125% in Border/Kandi districts or the 9 priority sectors), absolute cap Rs 500cr, one-time irrevocable 10-15y eligibility-period choice with lapse-if-unused annual ceilings. Heads: 100% stamp + electricity duty exemption, capital subsidy 20% FCI cap Rs 10cr, 75% net-SGST reimbursement, employment subsidy Rs 3,000-4,000/mo per Punjab-resident employee 5y (floor Rs 25cr FCI + 50 jobs), CGTMSE fee 100% reimbursed, and a distinctive paddy-straw-boiler subsidy (50%, up to Rs 7.5cr) that sits ABOVE the overall ceiling. Mega thresholds: FCI > Rs 500cr, IT/ITeS > Rs 250cr, or the first 3 GCCs creating 1,000+ jobs.",
     "Both cluster entries in layer 12 upgraded from 'not extractable' to fully quantified; README OCR flags cleared; raw structured schedules in ocr_extracts_gj_pb.json with method note."
    ]
+  },
+  {
+   "phase": "42",
+   "title": "Canonical data model, 312-instrument flat index, source flowchart, auto-update engine -- and UNNATI verified CLOSED-oversubscribed",
+   "repo": "digital-twin-for-ipa (layers/00_data_model.json, 13_flat_instrument_index.json, 14_update_engine.json, docs/DATA_MODEL.md)",
+   "headline_finding": "The twin's accumulated data now has a clean extraction model: nine keyed entity types (OfferingEntity, Instrument, ApplicationWindow, InterlinkageEdge, BudgetObservation, Company, Pairing, SourceRoute, append-only Observation) that every sweep maps into, plus a flat query-ready index normalizing ALL 312 instruments (195 central + 117 state) from catalog v1, v2 and the state layer into one schema. Identity rules: renames tracked as successor_of (LSEM->MPMS, PSI-2019->MIISP-2025, TS-iPASS->TG-iPASS); central instruments never merged with their state top-ups (linked via stacks edges); 'not published' is a valid observation, not a missing row.",
+   "details": [
+    "UNNATI 2024 live-verified on unnati.dpiit.gov.in: registration STOPPED because applications exceeded the funding allocated to the states (all 8 NE states) -- stronger than the lapsed 31-Mar-2026 window; disposal of registered applications by 30-09-2026; Amendment dated 01-Apr-2026 on portal; resumes only if rejections free funds. Status corrected in the NE cluster and flat index. Oversubscription is itself a demand signal for a NE scheme.",
+    "Auto-update engine (layer 14): per-source refresh design -- PIB daily (pib_index.py exists), NSWS + RBI WSS archive + UNNATI notice-diff weekly, top-20 instrument pages monthly, full agent sweep + PRS DFG + DPIIT FDI quarterly fact sheets quarterly; event triggers on Cabinet PRID keyword match, gazette uploads and UNNATI notice text change. Pipeline: fetch -> Observation rows -> diff -> corrections DISPLAYED with superseded_on -> rebuild index + bulletins.",
+    "Orbis (Bureau van Dijk) mapped as the target source for the twin's known coverage gap (unlisted companies, ownership trees, GUO): license-blocked, no free API; the Company entity carries a bvd_id slot ready for it; free partial proxies named -- GLEIF LEI, MCA master data, OpenCorporates. Current company layer remains Damodaran + yfinance + screener.in.",
+    "Information flowchart (docs/DATA_MODEL.md, mermaid, renders on GitHub): 8 source families -> 9 model entities -> 4 product families (flat index, bulletins, quarterly Trade Watch + FY series, investor map), with the refresh-cadence table and the corrections rule."
+   ]
   }
  ],
  "cross_cutting_insights": [
@@ -321,5 +333,5 @@
   "scripts/report_synthesizer.py -- the JSON-to-PDF/Word/PPT tool described in phase 9 above, the newest piece of session infrastructure and the one used to generate this very document.",
   "data/repo_manifest_2026-07-19.json -- machine-readable index of every chart/data pair, consumed both by the README's reference table and by the synthesizer's batch mode."
  ],
- "current_status": "All 41 phases published across four public repos. The digital twin's state layer is now fully quantified end-to-end: no remaining un-extractable policy documents -- the two scanned PDFs (Viksit Gujarat 2026, Punjab IBDP 2026) were OCR'd and their complete incentive matrices added to layer 12."
+ "current_status": "All 42 phases published across four public repos. The digital twin is now a modeled system, not a document pile: 312 instruments in one canonical schema across both government tiers, a source->model->product flowchart, and a per-source auto-update engine (PIB daily through quarterly sweeps, with an Orbis upgrade path for unlisted-company coverage). UNNATI 2024 verified CLOSED-oversubscribed on the DPIIT portal."
 }
