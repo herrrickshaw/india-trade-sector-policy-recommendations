@@ -1,0 +1,55 @@
+{
+  "purpose": "Looks past PLI: identifies the incentive schemes the government launched in 2026 for sectors OUTSIDE the 14 PLI sectors, from the full 2026 Cabinet-decision register in the repo's PIB index (data/pib_index.sqlite, 9,657 releases). Answers two questions: (1) what non-production-linked instruments are being deployed, sector by sector, and (2) do they land on the uncovered import heads this repo's gap analysis flagged?",
+  "retrieved": "2026-07-19",
+  "method": "SQL sweep of pib_index.sqlite for all 2026 releases titled 'Cabinet approves…'/'CCEA…' (the high-precision launch channel), routine items excluded (MSP fixations, DA instalments, road/rail project sanctions, name changes); each surviving scheme's detail page fetched from PIB for outlay and instrument design. Every row carries its PRID. First bulletin produced FROM the index rather than by browsing PIB -- the pib_prid_sweep backlog item paying for itself.",
+  "headline": "2026's incentive wave is deliberately NOT more PLI: ~Rs 1.9 lakh crore of new commitments use missions, viability-gap funding, sovereign guarantees, credit backstops and plug-and-play land -- de-risking inputs instead of paying for output -- and three of the four import-gap sectors this repo flagged (fuels, fertilisers, cotton, pulses) received instruments this year. Plastics and chemicals remain the only large uncovered import heads.",
+
+  "import_substitution_launches": [
+    {"scheme": "Scheme for Promotion of Surface Coal/Lignite Gasification Projects", "date": "2026-05-13", "prid": 2260621, "outlay": "Rs 37,500 crore", "instrument": "Viability-gap style financial support; 100 MT coal gasification target by 2030", "targets_gap": "Mineral fuels & chemical feedstocks (HS27 -- the 26.2%-of-import-bill head this repo flagged as having 'nothing sized to its scale'); PIB's own wording: 'reducing dependence on imports of key products'", "coverage_read": "PARTIAL -- targets syngas/chemicals feedstock substitution, not crude oil itself"},
+    {"scheme": "National Investment Policy for Urea-2026 (NIPU-2026)", "date": "2026-07-15", "prid": 2284800, "outlay": "Investment policy (no headline outlay); new gas-based urea units", "instrument": "Investment policy: assured offtake/pricing framework to crowd in private urea capacity", "targets_gap": "Fertilisers (HS31, +118.9% import growth -- the repo's fastest-growing uncovered head; approved 3 days before the gap bulletin published)", "coverage_read": "DIRECT hit on the gap"},
+    {"scheme": "Mission for Aatmanirbharta in Pulses", "date": "approved 2025-10-01; detailed 2026-03-17", "prid": 2241411, "outlay": "Rs 11,440 crore (2025-26 to 2030-31)", "instrument": "Centrally sponsored mission; 1,000 post-harvest processing units approved", "targets_gap": "Agri import bill (pulses are a recurring import dependency alongside edible oils)", "coverage_read": "DIRECT, six-year horizon"},
+    {"scheme": "Mission for Cotton Productivity", "date": "2026-05-05", "prid": 2258111, "outlay": "Rs 5,659.22 crore (2026-27 to 2030-31)", "instrument": "Productivity mission (HYV seeds, farm-to-fibre '5F' chain)", "targets_gap": "Cotton -- upstream of the repo's cotton-apparel finding (the only DECLINING export chapters sit in PLI Textiles' MMF blind spot)", "coverage_read": "PARTIAL -- fixes fibre supply, not apparel manufacturing competitiveness"}
+  ],
+
+  "trade_enablers": [
+    {"scheme": "Export Promotion Mission -- NIRYAT PROTSAHAN sub-scheme", "date": "2026-01-02", "prid": 2210874, "outlay": "Interest subvention on pre/post-shipment export credit for MSMEs", "instrument": "Credit-cost reduction, the export-side counterpart of PLI's production payout", "note": "First rollout interventions of the Budget-announced Export Promotion Mission"},
+    {"scheme": "Bharat Maritime Insurance Pool (BMI pool)", "date": "2026-04-18", "prid": 2253242, "outlay": "Rs 12,980 crore sovereign guarantee", "instrument": "Domestic insurance pool so Indian trade keeps 'affordable insurance for vessels carrying cargo from any international origin'", "note": "Sanctions-resilience infrastructure -- directly relevant to the Russia crude flow (35.8-35.9% of imports) this repo tracks; de-risks the trade lane no PLI touches"},
+    {"scheme": "Ship Repair Facility at Vadinar", "date": "2026-05-05", "prid": 2258115, "outlay": "Rs 1,570 crore (Deendayal Port Authority + Cochin Shipyard)", "instrument": "State capex into maritime services", "note": "Ship repair import substitution (repairs currently done abroad)"}
+  ],
+
+  "horizontal_factor_cost_launches": [
+    {"scheme": "Bharat Audyogik Vikas Yojna (BHAVYA)", "date": "2026-03-18", "prid": 2241785, "outlay": "Rs 33,660 crore", "instrument": "100 plug-and-play industrial parks", "note": "Attacks gate 3 of this repo's lifecycle schema (land + clearance) for ALL sectors -- the gate the EC-IEM correlation (r=0.96) showed is binding"},
+    {"scheme": "Urban Challenge Fund", "date": "2026-02-14", "prid": 2227986, "outlay": "Rs 1,00,000 crore central assistance (25% of project cost, min 50% market-raised -> ~Rs 4 lakh crore total)", "instrument": "Challenge fund with mandatory market leverage", "note": "Largest single 2026 commitment; urban infrastructure as manufacturing substrate"},
+    {"scheme": "Startup India Fund of Funds 2.0", "date": "2026-02-14", "prid": 2227988, "outlay": "Rs 10,000 crore corpus", "instrument": "Fund-of-funds via SIDBI-managed vehicles"},
+    {"scheme": "SIDBI equity support", "date": "2026-01-21", "prid": 2216720, "outlay": "Rs 5,000 crore equity infusion (3 tranches to FY28)", "instrument": "Balance-sheet expansion of the MSME lender"},
+    {"scheme": "Emergency Credit Line Guarantee Scheme 5.0", "date": "2026-05-05", "prid": 2258114, "outlay": "100% credit guarantee for MSMEs, 90% for non-MSME & airlines (NCGTC)", "instrument": "Credit backstop revived beyond its COVID origins"},
+    {"scheme": "NIIF additional commitment", "date": "2026-06-29", "prid": 2279107, "outlay": "Rs 30,000 crore additional GoI commitment to new NIIF funds", "instrument": "Anchor capital to crowd institutional money into infrastructure"}
+  ],
+
+  "sector_stabilizers": [
+    {"scheme": "Modified UDAN (Regional Connectivity 2.0)", "date": "2026-03-25", "prid": 2245096, "outlay": "Rs 28,840 crore over 10 years (FY27-FY36)", "sector": "Aviation (demand-side)"},
+    {"scheme": "ATF Price Stabilization support", "date": "2026-06-03", "prid": 2268646, "outlay": "Rs 10,000 crore one-time to OMCs for airlines", "sector": "Aviation (West Asia crisis response)"},
+    {"scheme": "Small Hydro Power Development Scheme FY27-31", "date": "2026-03-18", "prid": 2241799, "outlay": "Rs 2,584.60 crore for ~1,500 MW (1-25 MW projects)", "sector": "Renewables outside the solar-PLI lane; hill/NE states"},
+    {"scheme": "NCRPB truck & bus replacement scheme (Delhi-NCR)", "date": "2026-06-03", "prid": 2268342, "outlay": "Fleet-replacement support", "sector": "Auto demand-side + air quality"}
+  ],
+
+  "policy_gates": [
+    {"item": "FDI land-border-country (LBC) guideline amendment", "date": "2026-03-10", "prid": 2237806, "what": "Defines 'Beneficial Owner' criteria for Press Note 3 screening -- the gate through which any China-linked FDI must pass", "relevance": "Direct input to this repo's China-deficit and FDI-sourcing analyses: clarified BO rules change the feasibility of JV structures (e.g. electronics-component partnerships under ECMS)"}
+  ],
+
+  "pli_family_same_window_for_contrast": [
+    {"item": "Semicon 2.0", "prid": 2284796, "date": "2026-07-15"},
+    {"item": "Mobile Phone Manufacturing Scheme (MPMS) -- successor to wound-down PLI-LSEM", "prid": 2284789, "date": "2026-07-15"},
+    {"item": "ECMS 3rd tranche: 22 proposals approved", "prid": 2210864, "date": "2026-01-02"},
+    {"item": "Two more semiconductor units (Rs 3,900+ crore)", "prid": 2258116, "date": "2026-05-05"}
+  ],
+
+  "readings": [
+    "Instrument shift: the 2026 wave pays for INPUTS and RISK (land via BHAVYA, credit via ECLGS/SIDBI/FoF, insurance via BMI pool, price risk via the ATF fund, viability gaps via gasification) where PLI pays for OUTPUT. After the disbursal report card showed only ~15% of PLI outlay actually paid, the pivot away from production-linked design reads as revealed preference.",
+    "Three of the four uncovered import heads this repo flagged now have 2026 instruments: fuels (gasification, partial), fertilisers (NIPU-2026, direct), cotton (mission, partial upstream), plus pulses. The remaining large uncovered heads are PLASTICS (HS39) and INORGANIC CHEMICALS (HS28) -- the proposed chemicals PLI is still at formulation stage in this window -- and aircraft (HS88), where UDAN/ATF are demand-side only.",
+    "BHAVYA is the schema-aware scheme: Rs 33,660 crore aimed at exactly the land+clearance gate (gate 3) whose EC-grant flow this repo showed correlates 0.96 with state implementation.",
+    "The BMI pool quietly hardens the Russia crude lane (35.8-35.9% of crude imports) against insurance-market exclusion -- trade-flow de-risking that never appears in any scheme-utilization table.",
+    "Caveat: titles and outlays are Cabinet COMMITMENTS (gate 1 of the lifecycle schema). By this repo's own rules, none of these count as delivered until they show up at gates 4-7; the quarterly refresh should track their first disbursals/tenders the way it tracks PLI."
+  ],
+  "compendium_note": "Not yet in the compendium build SECTIONS (added while the 19-section rebuild was in flight); joins at the next quarterly rebuild."
+}

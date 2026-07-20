@@ -119,6 +119,13 @@
       ]
     },
     {
+      "title": "Beyond PLI: the 2026 non-PLI incentive wave (from the PIB index)",
+      "chart": "charts/beyond_pli_incentives.html",
+      "data": [
+        "data/beyond_pli_incentives_2026-07-19.json"
+      ]
+    },
+    {
       "title": "Quarterly refresh blueprint (TOGAF layers x modern data architecture)",
       "chart": "charts/quarterly_refresh_blueprint.html",
       "data": [
