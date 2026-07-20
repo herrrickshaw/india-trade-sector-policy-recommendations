@@ -266,6 +266,19 @@
     "Honest negatives kept as data: ELI has no page on labour.gov.in and epfindia.gov.in was unreachable by every channel; Tourism's Budget-2025 hotel infra-lending measures have no on-site operationalization artifact; Bharat Small Reactors appear nowhere on dae.gov.in; IN-SPACe's seed fund/VC fund are unverifiable behind a ServiceNow JS shell.",
     "Reusable access discovery: much of the government web estate is JS shells over headless WordPress at cms-<ministry>.digifootprint.gov.in/wp-json (powermin, mohua, jalshakti, dsir, moes, tourism, msde, mdoner) -- with per-site exceptions documented (dfpd.gov.in needs a real browser; ayush.gov.in's schemes live in its Angular JS bundle; birac.nic.in resolves only via pinned IP 164.100.228.150)."
    ]
+  },
+  {
+   "phase": "40",
+   "title": "State-government incentive sweep: layer 12 of the digital twin -- 30 states/UTs, 117 site-verified policies",
+   "repo": "digital-twin-for-ipa (layers/12_state_catalog/, 6 cluster files)",
+   "headline_finding": "Six parallel agents swept state single-window and industries-department websites (first launch killed en masse by the usage limit; relaunched verbatim after reset). The layer's central thesis-confirming result: the central-to-state incentive stack is now PRIMARY-SOURCE-verified in four places -- UP's ECMS top-up states verbatim 'Equal to Central ECMS incentives' (doubling the central payout), Assam's Electronics Policy 2023 adds 40% on top of central ISM capex assistance (the Tata OSAT package, gazette-verified), AP's IDP 4.0 pays a PLI top-up of 10% of the central PLI award, and Kerala pays a 20% PLI-investor top-up. What layer 10 had only from consultant sites is now on government pages.",
+   "details": [
+    "A 2025-26 state policy wave documented: Maharashtra MIISP 2025 (the actual PSI-2019 successor, GR 31-12-2025) plus five new Nov-Dec 2025 sector policies (GCC, AVGC-XR, MATRIX, Gems & Jewellery, Bamboo); Punjab IBDP 2026 (gazette 08-03-2026, supersedes 2022); Uttarakhand MIIP 2025; Karnataka Industrial Policy 2025-30 (shift to a capex-vs-production-linked choice: 2.5/2.0/1.0% of turnover by zone, 60%-of-VFA cap); MP's Feb-2025 policy family (IPP with the BIPA 40%->10% EFCI formula, EV, Semiconductor, Drone); Viksit Gujarat Industrial Policy 2026; Mizoram 2025; Meghalaya MIIPP 2024; Telangana Next-Gen Life Sciences 2026-30.",
+    "Fully quantified packages: TN's four mutually-exclusive options (100% SGST 15y / fixed capital by district / flexible to 40% EFA / turnover-linked); Rajasthan RIPS 2024 (irreversible choice: 75% SGST-7y, 13-28% capital, 1.2-2% turnover + boosters); Odisha IPR 2022 (UNCAPPED 20-30% capital subsidy, 20-year green-hydrogen power package); J&K NCSS + IP 2021-30 stack (30-50% capital, 100% GST-linked 10y capped 300% of P&M, 100% state SGST 10y) -- including an internal inconsistency flagged inside the official J&K PDF (working-capital subvention stated two different ways).",
+    "Honest gaps recorded as data: Telangana and Delhi have NO current umbrella industrial policy; West Bengal's reported 2025 large-industry scheme unverifiable (Silpasathi states only MSME + Tourism grant schemes exist); Bihar's policy web presence dead outside Udyami/BIADA; Manipur (site refuses connections) and Arunachal (JS shell) unverifiable; Goa still lists an interest-subsidy scheme that textually lapsed in 2011.",
+    "Two hijacked/squatted domains discovered and flagged everywhere (README, cluster files, session memory): wbidc.com (suspended, iframing an ad domain) and investinassam.com (gambling-link blog) -- real portals are silpasathi.wb.gov.in and eodb.assam.gov.in. Additional dead/wrong domains: invest.karnataka.gov.in (real: investkarnataka.co.in), morth.nic.in, udyog.bihar.gov.in, dic.nagaland.gov.in, goa-idc.com.",
+    "Flagged for follow-up: OCR the two scanned policy PDFs (Viksit Gujarat 2026, Punjab IBDP 2026 gazette); verify UNNATI 2024 registration status (Nagaland's page states the window ran to 31-Mar-2026, i.e. already lapsed); Haryana incentive texts sit behind the investharyana.in login (names recovered from the public JS bundle only)."
+   ]
   }
  ],
  "cross_cutting_insights": [
@@ -297,5 +310,5 @@
   "scripts/report_synthesizer.py -- the JSON-to-PDF/Word/PPT tool described in phase 9 above, the newest piece of session infrastructure and the one used to generate this very document.",
   "data/repo_manifest_2026-07-19.json -- machine-readable index of every chart/data pair, consumed both by the README's reference table and by the synthesizer's batch mode."
  ],
- "current_status": "All 39 phases published across four public repos. The digital twin (digital-twin-for-ipa) is live with 11 layers: 86/86 entities resolved, catalog v2 across 8 sweep clusters, a 23-edge scheme-interlinkage graph with no existing substitute anywhere, and the PRS budget-utilization overlay."
+ "current_status": "All 40 phases published across four public repos. The digital twin now spans both government tiers: 86/86 central entities (catalog v2, 8 clusters) AND 30 states/UTs (state catalog, 6 clusters, 117 policies), joined by the 23-edge interlinkage graph -- whose stacking thesis the state layer confirms with four on-page central-to-state top-ups -- and the PRS budget-utilization overlay."
 }
