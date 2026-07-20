@@ -338,6 +338,17 @@
     "Scheduler-overlap decision documented in workflows/README.md: keep cron primary (zero-dependency, fires without n8n alive) and use n8n's manual trigger for alerting runs, OR activate n8n schedules and remove the two crontab lines -- n8n only fires while its process runs, so it would need a keep-alive.",
     "n8n itself: npm install -g n8n kicked off (large package); workflow import (n8n import:workflow) pending install completion -- the JSON is the durable artifact either way and imports into any n8n instance."
    ]
+  },
+  {
+   "phase": "46",
+   "title": "n8n local install -- Node-26 incompatibility found and worked around via nvm Node 22",
+   "repo": "machine setup (no repo changes; workflow JSON already pushed in phase 45)",
+   "headline_finding": "The first npm install -g n8n under Homebrew Node v26 FAILED SILENTLY: exit code 0 but npm rolled the package back because n8n's isolated-vm native dependency does not compile on Node 26 (n8n targets LTS 20/22) -- leaving only a dangling /opt/homebrew/bin/n8n symlink (removed). This 'exit-0 but rolled back' failure mode is worth remembering for any global npm install with native deps.",
+   "details": [
+    "Workaround in progress at time of writing: Node 22.23.1 installed via the machine's existing nvm; npm install -g n8n re-running under that toolchain (background).",
+    "Next step once it lands: n8n import:workflow --input=workflows/n8n_twin_refresh.json, then verify registration; SMTP credential attachment and Active toggle remain manual UI steps by design (no real creds in repo).",
+    "Scheduler stance unchanged: crontab stays primary; n8n adds the CHANGE-detection/email/commit pipeline and on-demand manual runs."
+   ]
   }
  ],
  "cross_cutting_insights": [
@@ -369,5 +380,5 @@
   "scripts/report_synthesizer.py -- the JSON-to-PDF/Word/PPT tool described in phase 9 above, the newest piece of session infrastructure and the one used to generate this very document.",
   "data/repo_manifest_2026-07-19.json -- machine-readable index of every chart/data pair, consumed both by the README's reference table and by the synthesizer's batch mode."
  ],
- "current_status": "All 45 phases published across four public repos. The twin now has two interchangeable schedulers: the installed crontab (primary, zero-dependency) and an importable n8n workflow adding CHANGE-detection, email alerting, and snapshot commits -- with the UNNATI-resumption flip wired as the highest-value alert."
+ "current_status": "All 46 phases logged across four public repos. Twin automation: crontab live and test-run; n8n workflow pushed; local n8n install being redone under nvm Node 22 after the Node-26 isolated-vm build failure (a silent exit-0 rollback)."
 }
