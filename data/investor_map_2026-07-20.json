@@ -1,0 +1,638 @@
+{
+ "purpose": "The investor map as a policy bulletin: for each of the 12 sectors the Indian government is incentivizing, where the world's companies in that sector actually are (the courting map -- 19,795 companies across 107 countries from the global classification universe, coverage-first with NO profitability gate), how many India already lists, which incentive lane courts them, and the verified foreign-investor x initiative pairings. Full data + reproducible scripts live in the companion repo focus-sector-investor-map.",
+ "retrieved": "2026-07-20",
+ "method": "Base = Damodaran's 48,156-company global classification (all exchanges), mapped to the 12 focus sectors -- deliberately ungated: the question is where suitable companies EXIST, not which pass a screen. Market-layer (liquidity/momentum, 20 markets) and per-name profitability (yfinance-verified, 147 names) are attribute layers in the companion repo. Initiative lanes from the site-verified ministry catalog; pairings PRID-cited from the PIB register.",
+ "sector_map": [
+  {
+   "sector": "Electronics & Semiconductors",
+   "global_companies": 3449,
+   "india_listed": 100,
+   "top_countries": [
+    {
+     "country": "China",
+     "n": 837
+    },
+    {
+     "country": "Taiwan",
+     "n": 789
+    },
+    {
+     "country": "South Korea",
+     "n": 487
+    },
+    {
+     "country": "United States",
+     "n": 312
+    },
+    {
+     "country": "Japan",
+     "n": 237
+    },
+    {
+     "country": "India",
+     "n": 100
+    },
+    {
+     "country": "Hong Kong",
+     "n": 84
+    },
+    {
+     "country": "Malaysia",
+     "n": 60
+    }
+   ],
+   "initiative_lane": "MPMS Rs 62,500cr + ECMS (extended) + Semicon 2.0's six pillars incl. the new equipment/materials lane"
+  },
+  {
+   "sector": "Pharma & Bulk Drugs",
+   "global_companies": 2453,
+   "india_listed": 197,
+   "top_countries": [
+    {
+     "country": "United States",
+     "n": 724
+    },
+    {
+     "country": "China",
+     "n": 386
+    },
+    {
+     "country": "South Korea",
+     "n": 226
+    },
+    {
+     "country": "India",
+     "n": 197
+    },
+    {
+     "country": "Canada",
+     "n": 132
+    },
+    {
+     "country": "Taiwan",
+     "n": 125
+    },
+    {
+     "country": "Sweden",
+     "n": 76
+    },
+    {
+     "country": "Japan",
+     "n": 73
+    }
+   ],
+   "initiative_lane": "PLI Pharma (the family's A) + bulk-drug parks + PRIP R&D + SPI/API-CF calls OPEN"
+  },
+  {
+   "sector": "Medical Devices",
+   "global_companies": 842,
+   "india_listed": 19,
+   "top_countries": [
+    {
+     "country": "United States",
+     "n": 204
+    },
+    {
+     "country": "China",
+     "n": 138
+    },
+    {
+     "country": "South Korea",
+     "n": 92
+    },
+    {
+     "country": "Taiwan",
+     "n": 58
+    },
+    {
+     "country": "Sweden",
+     "n": 54
+    },
+    {
+     "country": "Japan",
+     "n": 39
+    },
+    {
+     "country": "Australia",
+     "n": 29
+    },
+    {
+     "country": "Israel",
+     "n": 28
+    }
+   ],
+   "initiative_lane": "PLI MedDev + 4 device parks + SMDI calls OPEN + National MedDev Policy 2023"
+  },
+  {
+   "sector": "Auto, EV & Components",
+   "global_companies": 962,
+   "india_listed": 139,
+   "top_countries": [
+    {
+     "country": "China",
+     "n": 254
+    },
+    {
+     "country": "India",
+     "n": 139
+    },
+    {
+     "country": "South Korea",
+     "n": 121
+    },
+    {
+     "country": "Japan",
+     "n": 108
+    },
+    {
+     "country": "United States",
+     "n": 68
+    },
+    {
+     "country": "Taiwan",
+     "n": 66
+    },
+    {
+     "country": "Germany",
+     "n": 19
+    },
+    {
+     "country": "Pakistan",
+     "n": 15
+    }
+   ],
+   "initiative_lane": "PLI Auto (accelerating) + SPMEPCI duty-for-investment + PM E-DRIVE demand-side + ACC re-tender (eyes open)"
+  },
+  {
+   "sector": "Specialty Steel & Metals",
+   "global_companies": 2593,
+   "india_listed": 236,
+   "top_countries": [
+    {
+     "country": "Canada",
+     "n": 833
+    },
+    {
+     "country": "Australia",
+     "n": 515
+    },
+    {
+     "country": "India",
+     "n": 236
+    },
+    {
+     "country": "China",
+     "n": 226
+    },
+    {
+     "country": "United States",
+     "n": 92
+    },
+    {
+     "country": "South Korea",
+     "n": 90
+    },
+    {
+     "country": "United Kingdom",
+     "n": 65
+    },
+    {
+     "country": "Japan",
+     "n": 61
+    }
+   ],
+   "initiative_lane": "PLI Specialty Steel R1.2 + National Critical Mineral Mission Rs 34,300cr + recycling incentive + REPM magnets"
+  },
+  {
+   "sector": "Chemicals & Plastics",
+   "global_companies": 2453,
+   "india_listed": 481,
+   "top_countries": [
+    {
+     "country": "China",
+     "n": 612
+    },
+    {
+     "country": "India",
+     "n": 481
+    },
+    {
+     "country": "Japan",
+     "n": 190
+    },
+    {
+     "country": "South Korea",
+     "n": 187
+    },
+    {
+     "country": "United States",
+     "n": 114
+    },
+    {
+     "country": "Taiwan",
+     "n": 108
+    },
+    {
+     "country": "Thailand",
+     "n": 61
+    },
+    {
+     "country": "Malaysia",
+     "n": 56
+    }
+   ],
+   "initiative_lane": "THE GAP: largest uncovered import heads; gasification Rs 37,500cr feeds petrochem feedstocks; chemicals PLI still at formulation -- first-mover lane"
+  },
+  {
+   "sector": "White Goods & Electricals",
+   "global_companies": 2129,
+   "india_listed": 234,
+   "top_countries": [
+    {
+     "country": "China",
+     "n": 501
+    },
+    {
+     "country": "United States",
+     "n": 249
+    },
+    {
+     "country": "India",
+     "n": 234
+    },
+    {
+     "country": "South Korea",
+     "n": 177
+    },
+    {
+     "country": "Taiwan",
+     "n": 152
+    },
+    {
+     "country": "Japan",
+     "n": 114
+    },
+    {
+     "country": "Malaysia",
+     "n": 56
+    },
+    {
+     "country": "Hong Kong",
+     "n": 52
+    }
+   ],
+   "initiative_lane": "PLI White Goods (component localization; note 85->80 attrition)"
+  },
+  {
+   "sector": "Aerospace & Defence",
+   "global_companies": 319,
+   "india_listed": 23,
+   "top_countries": [
+    {
+     "country": "United States",
+     "n": 79
+    },
+    {
+     "country": "China",
+     "n": 68
+    },
+    {
+     "country": "India",
+     "n": 23
+    },
+    {
+     "country": "South Korea",
+     "n": 21
+    },
+    {
+     "country": "Israel",
+     "n": 16
+    },
+    {
+     "country": "United Kingdom",
+     "n": 14
+    },
+    {
+     "country": "Canada",
+     "n": 12
+    },
+    {
+     "country": "France",
+     "n": 12
+    }
+   ],
+   "initiative_lane": "MRO concessions + defence corridors; HS88 uncovered -- the gap is the opportunity"
+  },
+  {
+   "sector": "Shipbuilding & Marine",
+   "global_companies": 359,
+   "india_listed": 28,
+   "top_countries": [
+    {
+     "country": "China",
+     "n": 39
+    },
+    {
+     "country": "India",
+     "n": 28
+    },
+    {
+     "country": "Indonesia",
+     "n": 27
+    },
+    {
+     "country": "Japan",
+     "n": 26
+    },
+    {
+     "country": "Vietnam",
+     "n": 26
+    },
+    {
+     "country": "Greece",
+     "n": 19
+    },
+    {
+     "country": "Hong Kong",
+     "n": 18
+    },
+    {
+     "country": "Taiwan",
+     "n": 16
+    }
+   ],
+   "initiative_lane": "Rs 69,725cr package: SBFAS 2.0 to 2036 (~14%), MDF Rs 25,000cr, SbDS clusters (Porbandar/Vadinar)"
+  },
+  {
+   "sector": "Textiles & Apparel",
+   "global_companies": 1291,
+   "india_listed": 399,
+   "top_countries": [
+    {
+     "country": "India",
+     "n": 399
+    },
+    {
+     "country": "China",
+     "n": 138
+    },
+    {
+     "country": "Pakistan",
+     "n": 100
+    },
+    {
+     "country": "Hong Kong",
+     "n": 84
+    },
+    {
+     "country": "Taiwan",
+     "n": 73
+    },
+    {
+     "country": "South Korea",
+     "n": 72
+    },
+    {
+     "country": "Bangladesh",
+     "n": 69
+    },
+    {
+     "country": "Japan",
+     "n": 63
+    }
+   ],
+   "initiative_lane": "PLI Textiles (amended windows) + PM MITRA parks + Cotton Mission upstream"
+  },
+  {
+   "sector": "Food Processing",
+   "global_companies": 1450,
+   "india_listed": 220,
+   "top_countries": [
+    {
+     "country": "India",
+     "n": 220
+    },
+    {
+     "country": "China",
+     "n": 167
+    },
+    {
+     "country": "Japan",
+     "n": 118
+    },
+    {
+     "country": "United States",
+     "n": 78
+    },
+    {
+     "country": "South Korea",
+     "n": 62
+    },
+    {
+     "country": "Thailand",
+     "n": 60
+    },
+    {
+     "country": "Indonesia",
+     "n": 54
+    },
+    {
+     "country": "Malaysia",
+     "n": 49
+    }
+   ],
+   "initiative_lane": "PLISFPI sunsets FY27; PMKSY capex windows OPEN (cold chain, CEFPPC) are the entry"
+  },
+  {
+   "sector": "Green Energy & Fuels",
+   "global_companies": 1495,
+   "india_listed": 63,
+   "top_countries": [
+    {
+     "country": "United States",
+     "n": 219
+    },
+    {
+     "country": "Canada",
+     "n": 212
+    },
+    {
+     "country": "China",
+     "n": 148
+    },
+    {
+     "country": "Australia",
+     "n": 113
+    },
+    {
+     "country": "India",
+     "n": 63
+    },
+    {
+     "country": "United Kingdom",
+     "n": 56
+    },
+    {
+     "country": "Indonesia",
+     "n": 49
+    },
+    {
+     "country": "Hong Kong",
+     "n": 46
+    }
+   ],
+   "initiative_lane": "SIGHT hydrogen tranches + ALMM (List-II window to 31-Dec-2026) + offshore wind VGF + gasification R1 OPEN"
+  }
+ ],
+ "verified_profitable_layer": {
+  "note": "attribute layer, not a gate",
+  "count": 147,
+  "with_expansion_signal": 102
+ },
+ "pairings": {
+  "verified": [
+   {
+    "company": "Foxconn (Hon Hai)",
+    "ticker": "2317.TW",
+    "sector": "Electronics & Semiconductors",
+    "initiative": "PLI-LSEM (first incentive approved, PRID 1885189) -> MPMS successor lane + ECMS components",
+    "status": "PRODUCING (PIB-credited)"
+   },
+   {
+    "company": "Samsung Electronics",
+    "ticker": "005930.KS",
+    "sector": "Electronics & Semiconductors",
+    "initiative": "PLI-LSEM beneficiary (PRID 1662096); Noida plant (PRID 1538166) -> MPMS lane",
+    "status": "PRODUCING (PIB-credited)"
+   },
+   {
+    "company": "Micron Technology",
+    "ticker": "MU",
+    "sector": "Semiconductors",
+    "initiative": "India Semiconductor Mission ATMP, Sanand (unit approved 2023; ISM unit list)",
+    "status": "APPROVED/BUILDING"
+   },
+   {
+    "company": "PSMC (Powerchip)",
+    "ticker": "6770.TW",
+    "sector": "Semiconductors",
+    "initiative": "Technology partner of the Tata Dholera fab (Cabinet approval Feb-2024, PRID 2010132)",
+    "status": "APPROVED (partner)"
+   },
+   {
+    "company": "Renesas Electronics",
+    "ticker": "6723.T",
+    "sector": "Semiconductors",
+    "initiative": "CG Power ATMP JV (Cabinet approval Feb-2024, PRID 2010132)",
+    "status": "APPROVED (partner)"
+   },
+   {
+    "company": "Suzuki Motor",
+    "ticker": "7269.T",
+    "sector": "Auto & EV",
+    "initiative": "PLI Auto ecosystem via Maruti Suzuki; EV exports from India (e-Vitara line)",
+    "status": "PRODUCING"
+   },
+   {
+    "company": "Hyundai Motor",
+    "ticker": "005380.KS",
+    "sector": "Auto & EV / ACC",
+    "initiative": "PLI Auto participant -- CAUTION: affiliate Hyundai Global Motors' 20 GWh ACC award vanished from DHI documents (registry finding)",
+    "status": "PRODUCING (auto); ACC award lapsed"
+   },
+   {
+    "company": "LG Electronics",
+    "ticker": "066570.KS",
+    "sector": "White Goods",
+    "initiative": "PLI White Goods (AC/LED components) -- note beneficiary-list attrition 85->80",
+    "status": "PARTICIPANT"
+   },
+   {
+    "company": "Daikin Industries",
+    "ticker": "6367.T",
+    "sector": "White Goods (AC components)",
+    "initiative": "PLI White Goods compressor/component localization lane",
+    "status": "PARTICIPANT"
+   },
+   {
+    "company": "POSCO Holdings",
+    "ticker": "005490.KS",
+    "sector": "Specialty Steel",
+    "initiative": "POSCO-JSW $7.73bn JV MoU -- NEGATIVE FINDING: no EC application on PARIVESH register; Specialty Steel R1.2 is the live lane",
+    "status": "MoU-STAGE (clearance-proof of stall)"
+   },
+   {
+    "company": "ArcelorMittal (AM/NS India)",
+    "ticker": "MT",
+    "sector": "Specialty Steel",
+    "initiative": "PLI Specialty Steel participant via AM/NS; R1.2 MoUs (Feb-2026)",
+    "status": "PARTICIPANT"
+   },
+   {
+    "company": "First Solar",
+    "ticker": "FSLR",
+    "sector": "Solar Manufacturing",
+    "initiative": "PLI Solar Tranche-II LoA cohort (SECI awards, Apr-2023) + ALMM enlistment",
+    "status": "BUILDING/PRODUCING"
+   }
+  ],
+  "prospective": [
+   {
+    "company": "Applied Materials",
+    "ticker": "AMAT",
+    "sector": "Semicon equipment",
+    "initiative": "Semicon 2.0's NEW equipment/materials/chemicals/gases pillar (Cabinet 15-Jul-2026, PRID 2284796); Bengaluru R&D commitment announced",
+    "status": "PROSPECTIVE"
+   },
+   {
+    "company": "Lam Research",
+    "ticker": "LRCX",
+    "sector": "Semicon equipment",
+    "initiative": "Semicon 2.0 equipment pillar; India supplier-ecosystem commitments announced",
+    "status": "PROSPECTIVE"
+   },
+   {
+    "company": "Merck KGaA / Linde",
+    "ticker": "MRK.DE / LIN",
+    "sector": "Semicon materials & gases",
+    "initiative": "Semicon 2.0 materials/gases pillar",
+    "status": "PROSPECTIVE"
+   },
+   {
+    "company": "Airbus",
+    "ticker": "AIR.PA",
+    "sector": "Aerospace",
+    "initiative": "C295 Vadodara line with Tata (defence corridor); MRO GST/royalty concessions; HS88 remains an uncovered import head -- the gap is the opportunity",
+    "status": "PRODUCING (defence JV)"
+   },
+   {
+    "company": "Global shipowners/yards (Maersk, HD Hyundai HI, Mitsui OSK)",
+    "ticker": "MAERSK-B.CO / 329180.KS / 9104.T",
+    "sector": "Shipbuilding & Marine",
+    "initiative": "Rs 69,725cr package: SBFAS 2.0 (~14% assistance, to 2036), Maritime Development Fund Rs 25,000cr, SbDS clusters (Porbandar/Vadinar approvals Jul-2026)",
+    "status": "PROSPECTIVE (MoUs reported at ministry events)"
+   },
+   {
+    "company": "Global cell/battery majors (LGES, CATL, Panasonic Energy)",
+    "ticker": "373220.KS / 300750.SZ / 6752.T",
+    "sector": "ACC Battery",
+    "initiative": "ACC 10 GWh re-tender (GSSS) after awardee attrition -- the F-graded scheme is also the open capacity",
+    "status": "PROSPECTIVE (eyes-open: zero disbursal to date)"
+   },
+   {
+    "company": "Urea/ammonia technology majors (KBR, Casale via EPCs)",
+    "ticker": "KBR",
+    "sector": "Fertilizers",
+    "initiative": "NIPU-2026: 8-9 gas-based plants, RoE band 12-16%, forex-risk mitigation (PRID 2284800)",
+    "status": "PROSPECTIVE"
+   }
+  ],
+  "method_note": "Verified pairs come from PIB releases, Cabinet approvals and ministry unit-lists collected by the trade-policy program (india-trade-sector-policy-recommendations); prospective pairs name the Cabinet-approved lane and the company's publicly announced India intent. The negative findings (POSCO EC absence, Hyundai ACC lapse, White Goods attrition) are retained deliberately -- pairing quality includes knowing which pairings are stalled."
+ },
+ "readings": [
+  "The courting pools match the FDI-sourcing strategies almost one-for-one: Taiwan (789) + South Korea (487) + China (837) hold the electronics-component pool ECMS/Semicon 2.0 targets; Canada (833) and Australia (515) hold the metals/critical-minerals pool the NCMM chain needs; the US holds pharma (724) and medtech (204); Vietnam (26) and Indonesia (27) appear as shipbuilding peers -- competitors as much as sources.",
+  "India already lists meaningful domestic pools in textiles (399), chemicals (481), food (220) and steel/metals (236) -- sectors where the play is upgrading listed incumbents, versus electronics/medtech where the pool must be imported (India lists just 10 screened electronics names vs Taiwan's 789 classified).",
+  "Chemicals & Plastics is the standout asymmetry: 2,453 companies globally, 481 in India, the largest uncovered import heads, and no dedicated scheme -- the first-mover lane this program's action items have flagged since the gap analysis.",
+  "Coverage-first matters: gating on profitability first would have hidden exactly the turnaround/expansion candidates incentives exist to attract; profitability is an attribute to check per courting conversation (147 names already verified in the companion repo)."
+ ]
+}

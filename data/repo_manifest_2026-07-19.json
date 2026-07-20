@@ -140,6 +140,13 @@
       ]
     },
     {
+      "title": "The investor map: global company pools per incentivized sector + pairings",
+      "chart": "charts/investor_map.html",
+      "data": [
+        "data/investor_map_2026-07-20.json"
+      ]
+    },
+    {
       "title": "The decade report card: 2014-2026 graded, open windows, ministries to approach",
       "chart": "charts/decade_report_card.html",
       "data": [
