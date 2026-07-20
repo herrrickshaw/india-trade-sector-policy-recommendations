@@ -349,6 +349,16 @@
     "Next step once it lands: n8n import:workflow --input=workflows/n8n_twin_refresh.json, then verify registration; SMTP credential attachment and Active toggle remain manual UI steps by design (no real creds in repo).",
     "Scheduler stance unchanged: crontab stays primary; n8n adds the CHANGE-detection/email/commit pipeline and on-demand manual runs."
    ]
+  },
+  {
+   "phase": "47",
+   "title": "n8n installed under Node 22 and the twin workflow imported -- TwinRefreshIPA001 registered",
+   "repo": "digital-twin-for-ipa (workflows/n8n_twin_refresh.json id-fix) + machine setup",
+   "headline_finding": "n8n installed cleanly under nvm Node 22.23.1 (~/.nvm/versions/node/v22.23.1/bin/n8n) after the Node-26 isolated-vm build failure, and the workflow imported and verified: n8n list:workflow shows 'TwinRefreshIPA001 | Digital Twin IPA -- auto-refresh'. The import surfaced one final format requirement -- a top-level workflow id field (SQLITE NOT-NULL constraint without it) -- now fixed in the repo JSON and pushed.",
+   "details": [
+    "Imported INACTIVE by design: the crontab remains the primary scheduler; activating n8n's schedules would double-fire the jobs. Usage: PATH=~/.nvm/versions/node/v22.23.1/bin:$PATH n8n -> http://localhost:5678 -> attach SMTP credential to the email node -> use Manual-run trigger for on-demand refreshes with CHANGE-detection + alerting, or toggle Active and remove the two crontab lines.",
+    "Timezone pinned Asia/Kolkata in workflow settings; the dangling /opt/homebrew/bin/n8n symlink from the failed Node-26 attempt was removed."
+   ]
   }
  ],
  "cross_cutting_insights": [
@@ -380,5 +390,5 @@
   "scripts/report_synthesizer.py -- the JSON-to-PDF/Word/PPT tool described in phase 9 above, the newest piece of session infrastructure and the one used to generate this very document.",
   "data/repo_manifest_2026-07-19.json -- machine-readable index of every chart/data pair, consumed both by the README's reference table and by the synthesizer's batch mode."
  ],
- "current_status": "All 46 phases logged across four public repos. Twin automation: crontab live and test-run; n8n workflow pushed; local n8n install being redone under nvm Node 22 after the Node-26 isolated-vm build failure (a silent exit-0 rollback)."
+ "current_status": "All 47 phases logged across four public repos. Twin automation complete on both tracks: crontab live and test-run (daily PIB, weekly checks), and n8n installed with the workflow imported as TwinRefreshIPA001 (inactive; manual-trigger alerting pipeline ready, SMTP credential pending user attachment)."
 }
