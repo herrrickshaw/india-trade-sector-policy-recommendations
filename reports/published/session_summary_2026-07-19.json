@@ -370,6 +370,17 @@
     "Cron: the weekly Monday line now pipes refresh output through send_twin_alert.py --if-changes (tee to cron.log preserved). Honest process note: the crontab rewrite took four attempts -- the daily line's 'cd' prefix kept getting dropped in regenerated content; a Python-side assertion (count of cd-prefix == 2) caught it and the final install is verified correct.",
     "n8n: the emailSend node was replaced with a credential-free executeCommand calling the same script; TwinRefreshIPA001 re-imported successfully -- the workflow now needs NO credential setup at all. workflows/README.md updated to document the design."
    ]
+  },
+  {
+   "phase": "49",
+   "title": "End-to-end weekly pipeline test -- validated by a real, organic route-recovery event",
+   "repo": "digital-twin-for-ipa (state/ snapshots + cron.log evidence, committed)",
+   "headline_finding": "The full weekly pipeline was run once under the exact installed cron invocation (env -i with the crontab's PATH) and validated itself with a REAL event rather than a synthetic trigger: UP Nivesh Mitra had come back online since the afternoon snapshot, producing 'CHANGE route UP Nivesh Mitra: ok=False -> True (200)', which flowed through CHANGE detection and delivered a genuine alert email ('[digital-twin] 1 change(s) detected 2026-07-20') to the user's inbox. Exit 0 end to end.",
+   "details": [
+    "Full chain in one pass: 64 routes checked (3 down -- DSIR CMS, BIRAC, Silpasathi, all known access quirks) -> UNNATI still registration_stopped=True -> NSWS pages live -> RBI WSS current at Jul-20-2026 -> tee to state/cron.log -> --if-changes alert -> email delivered.",
+    "Snapshot-diff mechanics proven: same-day re-run compared against the afternoon snapshot and caught the state flip -- exactly the behavior the Monday runs will exhibit week-over-week.",
+    "Evidence committed and pushed. Next scheduled firings: daily PIB 07:17 tomorrow; weekly Monday 27-Jul 08:23."
+   ]
   }
  ],
  "cross_cutting_insights": [
@@ -401,5 +412,5 @@
   "scripts/report_synthesizer.py -- the JSON-to-PDF/Word/PPT tool described in phase 9 above, the newest piece of session infrastructure and the one used to generate this very document.",
   "data/repo_manifest_2026-07-19.json -- machine-readable index of every chart/data pair, consumed both by the README's reference table and by the synthesizer's batch mode."
  ],
- "current_status": "All 48 phases logged across four public repos. The twin's automation loop is closed end-to-end: cron-scheduled refreshes -> append-only snapshots -> CHANGE detection -> credential-free email alerts (tested, delivered), with n8n as the imported alternative scheduler needing zero credential setup."
+ "current_status": "All 49 phases logged across four public repos. The twin's automation is verified in production conditions: the exact cron pipeline ran end-to-end and caught a real portal-recovery event, delivering the alert email unprompted. System fully operational; next firings are on the installed schedule."
 }
