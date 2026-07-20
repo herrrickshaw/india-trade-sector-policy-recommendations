@@ -279,6 +279,17 @@
     "Two hijacked/squatted domains discovered and flagged everywhere (README, cluster files, session memory): wbidc.com (suspended, iframing an ad domain) and investinassam.com (gambling-link blog) -- real portals are silpasathi.wb.gov.in and eodb.assam.gov.in. Additional dead/wrong domains: invest.karnataka.gov.in (real: investkarnataka.co.in), morth.nic.in, udyog.bihar.gov.in, dic.nagaland.gov.in, goa-idc.com.",
     "Flagged for follow-up: OCR the two scanned policy PDFs (Viksit Gujarat 2026, Punjab IBDP 2026 gazette); verify UNNATI 2024 registration status (Nagaland's page states the window ran to 31-Mar-2026, i.e. already lapsed); Haryana incentive texts sit behind the investharyana.in login (names recovered from the public JS bundle only)."
    ]
+  },
+  {
+   "phase": "41",
+   "title": "OCR extraction of the two scanned state policies -- Viksit Gujarat 2026 and Punjab IBDP 2026 fully quantified",
+   "repo": "digital-twin-for-ipa (layers/12_state_catalog/ocr_extracts_gj_pb.json)",
+   "headline_finding": "The two policies flagged un-extractable in phase 40 were OCR'd end-to-end (pdftoppm 150dpi + tesseract over all 107 pages) and turned out to be ENGLISH throughout -- the language check found the only vernacular content is the Punjabi script inside Punjab's state emblem, so no translation was needed. The Gujarat file was image-only merely because it is a CorelDRAW brochure export; the Punjab gazette is scanned print. Both full incentive matrices are now machine-readable in the twin.",
+   "details": [
+    "Viksit Gujarat 2026: choose-your-combination structure (capital subsidy + 7% interest subsidy + Rs 1-2/unit power tariff) inside taluka-graded eFCI ceilings -- MSME 35/45%, Large-thrust 25/35%, Mega 30/35% (Rs 1,000cr + 250 jobs + thrust), Ultra-Mega 35/40% (Rs 10,000cr + 3,000 jobs), and a special 45/50% ceiling for toys/footwear/robots/drones/sports goods. EPF 100% reimbursed 5-10y; stamp duty waived Ultra-Mega only; SC/ST +5% ceiling. 21 thrust sectors including two new signals vs Aatmanirbhar-2022: nuclear power equipment (SMRs) and semiconductor ancillaries (UHP chemicals/gases). R&D early-bird: first 5 centres >= Rs 300cr get 50% capital subsidy up to Rs 50cr/yr + Rs 10,000/person/month payroll subsidy.",
+    "Punjab IBDP 2026 (gazette 8-Mar-2026): overall ceiling 100% of FCI (125% in Border/Kandi districts or the 9 priority sectors), absolute cap Rs 500cr, one-time irrevocable 10-15y eligibility-period choice with lapse-if-unused annual ceilings. Heads: 100% stamp + electricity duty exemption, capital subsidy 20% FCI cap Rs 10cr, 75% net-SGST reimbursement, employment subsidy Rs 3,000-4,000/mo per Punjab-resident employee 5y (floor Rs 25cr FCI + 50 jobs), CGTMSE fee 100% reimbursed, and a distinctive paddy-straw-boiler subsidy (50%, up to Rs 7.5cr) that sits ABOVE the overall ceiling. Mega thresholds: FCI > Rs 500cr, IT/ITeS > Rs 250cr, or the first 3 GCCs creating 1,000+ jobs.",
+    "Both cluster entries in layer 12 upgraded from 'not extractable' to fully quantified; README OCR flags cleared; raw structured schedules in ocr_extracts_gj_pb.json with method note."
+   ]
   }
  ],
  "cross_cutting_insights": [
@@ -310,5 +321,5 @@
   "scripts/report_synthesizer.py -- the JSON-to-PDF/Word/PPT tool described in phase 9 above, the newest piece of session infrastructure and the one used to generate this very document.",
   "data/repo_manifest_2026-07-19.json -- machine-readable index of every chart/data pair, consumed both by the README's reference table and by the synthesizer's batch mode."
  ],
- "current_status": "All 40 phases published across four public repos. The digital twin now spans both government tiers: 86/86 central entities (catalog v2, 8 clusters) AND 30 states/UTs (state catalog, 6 clusters, 117 policies), joined by the 23-edge interlinkage graph -- whose stacking thesis the state layer confirms with four on-page central-to-state top-ups -- and the PRS budget-utilization overlay."
+ "current_status": "All 41 phases published across four public repos. The digital twin's state layer is now fully quantified end-to-end: no remaining un-extractable policy documents -- the two scanned PDFs (Viksit Gujarat 2026, Punjab IBDP 2026) were OCR'd and their complete incentive matrices added to layer 12."
 }
