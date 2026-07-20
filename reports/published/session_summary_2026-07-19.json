@@ -235,6 +235,12 @@
    "title": "Retrospective quarterly series FY2014-15 -> FY2026-27 (13 documents)",
    "repo": "india-trade-sector-policy-recommendations",
    "headline_finding": "build_quarterly_series.py generates 13 one-page Trade-Watch PDFs, one per fiscal year: quarterly policy launches (PRID-cited from the classified register + traced 2014-16 cohort), verified anchors per year (deficit series -191 -> -333; blending 1.53% -> 20%; mobile factories 2 -> 300+; solar 2.82 -> 100.33 GW; MUDRA Rs 1.37L cr -> Rs 40L cr; FDI $62bn -> $81bn plateau), and a policy<->trade<->forex linkage line per year -- the linked-movements roster format run backward through the decade. Years the register cannot reach carry fewer anchors, stated plainly."
+  },
+  {
+   "phase": "36",
+   "title": "The decade report card -- 2014-2026 graded, open windows, ministries to approach",
+   "repo": "india-trade-sector-policy-recommendations",
+   "headline_finding": "The program's capstone one-pager in three parts: (1) twelve years of policy graded on delivered outcomes -- the A-row (ethanol, M-SIPS->LSEM mobiles, UJALA, MUDRA, Startup India, UDAN, FAME, coal auctions, PLI Pharma) is uniformly demand-side guarantee/procurement designs, the D-F row (SATAT, BharatNet, Auto/Steel/Textiles disbursal, ACC's zero) is voluntary uptake and unpaid production promises, and the 2023-26 wave is marked IN-FLIGHT on the cohort's ~8-10-year loop timescale; (2) portal-verified open investment windows with deadlines (PM E-DRIVE e-2W 31-Jul-2026, UNNATI 30-Sep-2026, ALMM List-II 31-Dec-2026, gasification R1 live, DoP API-CF/SMDI calls, ECMS extended, MPMS Rs 62,500cr window imminent); (3) ministries ranked for investors -- Tier 1 DoP/MeitY/DPIIT-NSWS/FAHD/Coal (windows + delivery + working portals), Tier 2 MoFPI/MNRE/MoPSW/Commerce/MSME-via-portals, eyes-open MHI/Steel/Textiles and the dead-website departments (Fertilizers, Mines) reachable via Cabinet frameworks and NSWS."
   }
  ],
  "cross_cutting_insights": [
@@ -266,5 +272,5 @@
   "scripts/report_synthesizer.py -- the JSON-to-PDF/Word/PPT tool described in phase 9 above, the newest piece of session infrastructure and the one used to generate this very document.",
   "data/repo_manifest_2026-07-19.json -- machine-readable index of every chart/data pair, consumed both by the README's reference table and by the synthesizer's batch mode."
  ],
- "current_status": "All 35 phases published and pushed (latest commit 1d4a1ab). The repo now carries 26 bulletins, the 12-page NITI-template quarterly report with its linked-movements roster and matured-schemes section, the 13-document retrospective quarterly series (FY2014-15 -> FY2026-27), the 122,141-release PIB SQL register (2017-2026) with a 154-launch classified Cabinet dataset, the site-verified ministry catalog, the scheme registry with displayed corrections, and the investor workflow. The matured-cohort verdict -- every closed-success loop ran on a demand-side guarantee or procurement design, on an ~8-10 year timescale -- is the program's capstone empirical finding, and 2025-26's instrument wave is, in hindsight, a reversion to that proven family."
+ "current_status": "All 36 phases published and pushed (latest commit 368350d). The program closes with the decade report card as its synthesis: 27 bulletins, the NITI-template quarterly report + linked-movements roster, the 13-document retrospective series, the 122,141-release PIB register with a 154-launch classified Cabinet dataset, the matured cohort's capstone finding (closed-success loops run on demand-side guarantee/procurement designs over ~8-10 years), the site-verified ministry catalog, the scheme registry with displayed corrections, the investor workflow, and the decade report card grading 2014-2026 with open windows and a three-tier ministry approach list for investors."
 }
