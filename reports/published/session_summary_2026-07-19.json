@@ -359,6 +359,17 @@
     "Imported INACTIVE by design: the crontab remains the primary scheduler; activating n8n's schedules would double-fire the jobs. Usage: PATH=~/.nvm/versions/node/v22.23.1/bin:$PATH n8n -> http://localhost:5678 -> attach SMTP credential to the email node -> use Manual-run trigger for on-demand refreshes with CHANGE-detection + alerting, or toggle Active and remove the two crontab lines.",
     "Timezone pinned Asia/Kolkata in workflow settings; the dangling /opt/homebrew/bin/n8n symlink from the failed Node-26 attempt was removed."
    ]
+  },
+  {
+   "phase": "48",
+   "title": "Email alerting live and tested -- credential-free design via runtime plist sourcing",
+   "repo": "digital-twin-for-ipa (scripts/send_twin_alert.py; cron weekly pipe; n8n workflow re-imported)",
+   "headline_finding": "Rather than attaching the Gmail app password to n8n's credential store (which would mean handling the secret in plain text -- the established credential boundary), the alert path was built credential-free: send_twin_alert.py sources GMAIL_USER/GMAIL_APP_PASSWORD/MAIL_TO at runtime from the environment, falling back to the EnvironmentVariables block of the machine's existing dailybrief launchd plist. The secret flows plist -> process -> Gmail and never entered the session context (redacted at the shell), the repo, n8n's store, or any log.",
+   "details": [
+    "Tested with three delivered emails: basic --test send; silent path verified (no CHANGE lines -> no email); real alert format triggered by a synthetic CHANGE line ('[digital-twin] 1 change(s) detected'). Alert body includes CHANGE lines, portals-down list, and raw tail; the UNNATI registration_stopped=False flip is wired as a synthetic high-priority CHANGE.",
+    "Cron: the weekly Monday line now pipes refresh output through send_twin_alert.py --if-changes (tee to cron.log preserved). Honest process note: the crontab rewrite took four attempts -- the daily line's 'cd' prefix kept getting dropped in regenerated content; a Python-side assertion (count of cd-prefix == 2) caught it and the final install is verified correct.",
+    "n8n: the emailSend node was replaced with a credential-free executeCommand calling the same script; TwinRefreshIPA001 re-imported successfully -- the workflow now needs NO credential setup at all. workflows/README.md updated to document the design."
+   ]
   }
  ],
  "cross_cutting_insights": [
@@ -390,5 +401,5 @@
   "scripts/report_synthesizer.py -- the JSON-to-PDF/Word/PPT tool described in phase 9 above, the newest piece of session infrastructure and the one used to generate this very document.",
   "data/repo_manifest_2026-07-19.json -- machine-readable index of every chart/data pair, consumed both by the README's reference table and by the synthesizer's batch mode."
  ],
- "current_status": "All 47 phases logged across four public repos. Twin automation complete on both tracks: crontab live and test-run (daily PIB, weekly checks), and n8n installed with the workflow imported as TwinRefreshIPA001 (inactive; manual-trigger alerting pipeline ready, SMTP credential pending user attachment)."
+ "current_status": "All 48 phases logged across four public repos. The twin's automation loop is closed end-to-end: cron-scheduled refreshes -> append-only snapshots -> CHANGE detection -> credential-free email alerts (tested, delivered), with n8n as the imported alternative scheduler needing zero credential setup."
 }
