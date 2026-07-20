@@ -1,0 +1,130 @@
+<title>The Decade Report Card — Policies 2014–2026, Open Windows, and Who to Approach</title>
+<meta name="hz:canvas-width" content="1180">
+<style>
+  :root {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6; --mismatch:#7a5aa8;
+    --font-display:"Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --font-mono:"IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+      --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+      --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+      --data-line:#3987e5; --data-soft:#1c2c40; --mismatch:#a98fd6;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
+    --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
+    --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
+    --data-line:#3987e5; --data-soft:#1c2c40; --mismatch:#a98fd6;
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8; --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7; --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --data-line:#2a78d6; --data-soft:#dbe6f6; --mismatch:#7a5aa8;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; }
+  .bulletin { background:var(--page-bg); color:var(--ink); font-family:var(--font-body); padding:40px 20px 56px; display:flex; justify-content:center; }
+  .sheet { width:100%; max-width:1100px; display:flex; flex-direction:column; gap:26px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:16px; }
+  .eyebrow { font-family:var(--font-mono); font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); display:flex; gap:10px; align-items:center; }
+  .eyebrow::before { content:""; width:7px; height:7px; border-radius:50%; background:var(--accent); }
+  h1 { font-family:var(--font-display); font-weight:500; font-size:clamp(24px,3.1vw,32px); margin:6px 0 0; text-wrap:balance; }
+  .dek { font-size:14px; color:var(--ink-2); max-width:90ch; line-height:1.55; margin:8px 0 0; }
+  .source-line { font-family:var(--font-mono); font-size:11px; color:var(--ink-muted); margin-top:8px; }
+  section.block { background:var(--surface); border:1px solid var(--rule-strong); padding:20px 24px; }
+  .block-tag { font-family:var(--font-mono); font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent); }
+  .block-title { font-family:var(--font-display); font-size:20px; font-weight:600; margin:4px 0 10px; }
+  .block-note { font-size:13px; color:var(--ink-2); line-height:1.6; max-width:100ch; }
+  .block-note b { color:var(--ink); }
+  .grade-row { display:grid; grid-template-columns:56px 1fr; gap:14px; padding:10px 0; border-bottom:1px solid var(--rule); }
+  .grade-row:last-child { border-bottom:none; }
+  .g-badge { width:44px; height:44px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-size:22px; font-weight:700; color:var(--surface); }
+  .gA { background:var(--accent); } .gB { background:var(--data-line); } .gC { background:var(--warn); } .gD { background:var(--alert); }
+  .g-items { font-size:12px; line-height:1.65; color:var(--ink-2); }
+  .g-items b { color:var(--ink); }
+  table.fig { width:100%; border-collapse:collapse; font-size:12px; margin-top:12px; }
+  table.fig th { text-align:left; font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-muted); padding:5px 10px 7px 0; border-bottom:2px solid var(--rule-strong); }
+  table.fig td { padding:8px 10px 8px 0; border-bottom:1px solid var(--rule); vertical-align:top; line-height:1.5; color:var(--ink-2); }
+  table.fig tr:last-child td { border-bottom:none; }
+  td.k { font-weight:700; color:var(--ink); }
+  td.dl { font-family:var(--font-mono); font-size:10.5px; color:var(--alert); white-space:nowrap; }
+  .tier { border-left:3px solid var(--accent); background:var(--accent-soft); padding:10px 14px; margin-top:10px; font-size:12px; line-height:1.6; color:var(--ink-2); }
+  .tier.t2 { border-color:var(--data-line); background:var(--data-soft); }
+  .tier.t3 { border-color:var(--warn); background:var(--warn-soft); }
+  .tier b { color:var(--ink); }
+  .tier .hd { font-family:var(--font-mono); font-size:9.5px; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:4px; }
+  .tier .hd { color:var(--accent); } .tier.t2 .hd { color:var(--data-line); } .tier.t3 .hd { color:var(--warn); }
+  .callout { border-left:3px solid var(--warn); background:var(--warn-soft); padding:12px 16px; margin-top:12px; font-size:12.5px; line-height:1.6; color:var(--ink-2); }
+  .callout b { color:var(--ink); }
+  footer.colophon { text-align:center; font-family:var(--font-mono); font-size:10.5px; color:var(--ink-muted); padding-top:8px; }
+</style>
+
+<div class="bulletin">
+  <div class="sheet">
+    <div class="masthead">
+      <div class="eyebrow">India Trade — Sector &amp; Policy Recommendations · The Decade Report Card</div>
+      <h1>2014–2026: what delivered, what's open, and who to approach</h1>
+      <p class="dek">The program's one-page synthesis: every major policy of the decade <b>graded on delivered outcomes</b> (loop verdicts for the matured era, disbursal for the PLI era, IN-FLIGHT honestly marked for 2023–26 launches), the <b>schemes open for investment right now</b>, and the <b>ministries an investor should approach</b> — ranked by open windows, delivery record and whether their portals actually work.</p>
+      <div class="source-line">SYNTHESIS of the matured cohort (18 traces), PLI report card, site-verified ministry catalog, and scheme registry. Retrieved 2026-07-20; every underlying figure PRID- or portal-cited in the source bulletins.</div>
+    </div>
+
+    <section class="block">
+      <div class="block-tag">Part 1 · The grades</div>
+      <div class="block-title">Twelve years of policy, graded on outcomes</div>
+      <div class="grade-row"><div class="g-badge gA">A</div><div class="g-items"><b>Closed loops — demand-side guarantee &amp; procurement designs, every one:</b> Ethanol/EBP (20% blend 5y early, ₹1.97L cr forex saved) · M-SIPS→LSEM→MPMS (mobiles: production 28×, exports 127×, imports 75%→0.02% of demand) · UJALA (LED ₹310→₹38) · MUDRA (₹40L cr) · Startup India (&lt;500→2.07 lakh) · UDAN (74→165 airports) · FAME lineage (unbroken since 2015) · coal auctions (15 tranches) · <b>PLI Pharma</b> (36% disbursed, 237% investment, Penicillin-G back — the PLI family's A).</div></div>
+      <div class="grade-row"><div class="g-badge gB">B</div><div class="g-items"><b>Partial-strong:</b> Solar (capacity 3y late; manufacturing loop closed 2→100 GW ALMM) · PLI Electronics (₹15,554cr disbursed, tenure completed) · Sagarmala/DFC/rail exports (turnaround halved; EDFC done; 1,002 rail cars exported) · NIP-2012 urea (6 plants; self-sufficiency missed → NIPU) · PLI Food/Telecom/BulkDrugs/MedDev (modest real payouts).</div></div>
+      <div class="grade-row"><div class="g-badge gC">C</div><div class="g-items"><b>Partial-weak:</b> PM-KUSUM (29% of MW target) · Make in India ($667bn decade, ~$81bn plateau) · Mega Food Parks (24/41, discontinued) · PLI White Goods/Solar disbursal (₹281cr / ₹0-by-design) · PLI Drones (expired, no successor).</div></div>
+      <div class="grade-row"><div class="g-badge gD">D–F</div><div class="g-items"><b>Laggards &amp; the F:</b> SATAT (50 of 5,000 plants — the register's largest miss, saved only by a mandate) · BharatNet (three redesigns, 12+ years) · PLI Auto/Steel/Textiles disbursal (₹2,378cr accelerating / ₹48cr + 24% attrition / ₹54.5cr) · <b>PLI ACC: zero in five years — the F</b>.</div></div>
+      <div class="callout"><b>IN-FLIGHT, not graded:</b> the 2023–26 wave (Green Hydrogen SIGHT, critical-minerals chain, RDI ₹1L cr, ELI ₹99,446cr, shipbuilding ₹69,725cr, gasification ₹37,500cr, BHAVYA, NIPU-2026, MPMS, Semicon 2.0). The cohort's honest loop timescale is <b>~8–10 years</b> — but their designs are the proven A-row family: guaranteed terms, procurement, capex.</div>
+    </section>
+
+    <section class="block">
+      <div class="block-tag">Part 2 · Open for investment now</div>
+      <div class="block-title">Live windows, verified on portals (20 Jul 2026)</div>
+      <table class="fig">
+        <thead><tr><th>Window</th><th>Closes</th><th>What you get · where</th></tr></thead>
+        <tbody>
+          <tr><td class="k">PM E-DRIVE e-2W claims (MHI)</td><td class="dl">31-Jul-2026</td><td>Demand incentives via OEM portal (e-3W R/C runs to 31-Mar-2028)</td></tr>
+          <tr><td class="k">UNNATI 2024 (DPIIT)</td><td class="dl">30-Sep-2026</td><td>NE capital/interest/MSLI incentives, ₹10,037cr · unnati.dpiit.gov.in</td></tr>
+          <tr><td class="k">ALMM enlistment (MNRE)</td><td class="dl">List-II to 31-Dec-2026</td><td>Market access for module/cell makers · DCR portal re-opened</td></tr>
+          <tr><td class="k">Coal Gasification 2026 R1 (Coal)</td><td class="dl">timeline live</td><td>Share of ₹37,500cr · RFP + pre-app conference held 16-Jul · coal.gov.in</td></tr>
+          <tr><td class="k">DoP: API-CF + SMDI calls</td><td class="dl">calls live</td><td>Pharma/medtech cluster capex, Schedule-M upgradation subsidy · pharma-dept.gov.in/schemes</td></tr>
+          <tr><td class="k">ECMS (MeitY) · MPMS watch</td><td class="dl">extended · TBN</td><td>Components hybrid incentives · ecms.meity.gov.in; MPMS ₹62,500cr window imminent</td></tr>
+          <tr><td class="k">MoFPI stack</td><td class="dl">rolling EoIs</td><td>Cold-chain/CEFPPC 35–50% capex, PM-FME, Operation Greens claims · SAMPADA portals</td></tr>
+          <tr><td class="k">AHIDF + NLM (FAHD)</td><td class="dl">open portals</td><td>3% subvention + guarantee; 50% livestock capital subsidy · udyamimitra portals</td></tr>
+          <tr><td class="k">SBFAS 2.0 + SbDS (MoPSW)</td><td class="dl">standing to 2036</td><td>~14% shipbuilding contract assistance; cluster/risk proposals</td></tr>
+          <tr><td class="k">NGHM CfPs (MNRE) · SATAT EoI (MoPNG)</td><td class="dl">live</td><td>Hydrogen pilots/testing; CBG offtake now demand-backed by the blending mandate</td></tr>
+          <tr><td class="k">Startup stack + CGTMSE/ZED</td><td class="dl">standing</td><td>FoF 2.0 via AIFs, seed, guarantees to ₹10cr, certification subsidy</td></tr>
+          <tr><td class="k">Steel R&amp;D · NTTM research</td><td class="dl">open/rolling</td><td>Grant funding · steel.gov.in Apply link; nttm.texmin.gov.in</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="block">
+      <div class="block-tag">Part 3 · Who to approach</div>
+      <div class="block-title">Ministries ranked by windows, delivery and working portals</div>
+      <div class="tier"><div class="hd">Tier 1 — go first</div>
+        <b>DoP</b> (best-maintained scheme section, live calls, grade-A delivery) · <b>MeitY</b> (A− record; ECMS live, MPMS imminent, Semicon 2.0's six pillars) · <b>DPIIT / Invest India / NSWS</b> (the gateway: KYA → single window across 32 ministries/34 states; UNNATI deadline; BHAVYA; startup stack; the FDI rulebook) · <b>FAHD</b> (the transparency benchmark — live funnels, real subvention money) · <b>Ministry of Coal</b> (gasification R1 open, with 15 auction tranches proving the machinery works).</div>
+      <div class="tier t2"><div class="hd">Tier 2 — engage</div>
+        <b>MoFPI</b> (multiple capex windows; PLISFPI sunsets FY27) · <b>MNRE/SECI/IREDA</b> (ALMM to 31-Dec; SIGHT CfPs; payouts post-commissioning by design) · <b>MoPSW</b> (₹69,725cr package, fresh guidelines; MDF operationalising) · <b>Commerce/DGFT</b> (RoDTEP/EPCG/EPM export stack) · <b>MSME</b> (via cgtmse.in / zed.msme.gov.in — not the ministry site).</div>
+      <div class="tier t3"><div class="hd">Approach with eyes open</div>
+        <b>MHI</b> (E-DRIVE deadlines near; ACC stalled at zero; stale pages) · <b>Steel</b> (24% Round-1 attrition; R1.2 MoU-stage) · <b>Textiles</b> (windows amended thrice in a year; verify only on pli.texmin.gov.in) · <b>Fertilizers &amp; Mines</b> (NIPU-2026 and the critical-minerals chain are real money, but both departments' websites are dead/unreachable — go via Cabinet frameworks, NSWS and nodal PSUs).</div>
+      <div class="callout"><b>Bottom line:</b> the A-row of the decade is uniformly demand-side guarantee/procurement designs; the F-row is voluntary uptake and unpaid production promises. Entering now: the open money is <b>capex/cluster/credit</b>, the reliable counterparties are the ministries with working portals and delivery records, and this quarter's dated deadlines are <b>PM E-DRIVE e-2W (31-Jul)</b>, <b>UNNATI (30-Sep)</b> and <b>ALMM List-II (31-Dec-2026)</b>. Route everything through NSWS (Know Your Approvals → single window) per the investor workflow.</div>
+    </section>
+
+    <footer class="colophon">herrrickshaw/india-trade-sector-policy-recommendations — data: <a href="../data/decade_report_card_2026-07-20.json">data/decade_report_card_2026-07-20.json</a> · sources: <a href="matured_scheme_cohort.html">matured cohort</a> · <a href="pli_report_card.html">PLI report card</a> · <a href="ministry_incentive_catalog.html">ministry catalog</a> · <a href="investor_workflow.html">investor workflow</a></footer>
+  </div>
+</div>

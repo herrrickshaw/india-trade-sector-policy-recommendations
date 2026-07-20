@@ -1,0 +1,83 @@
+{
+  "purpose": "The overall report card: every major policy implemented 2014-2026 graded on delivered outcomes (matured cohort loop verdicts for the 2014-2020 era; disbursal report card for the PLI era; too-early-to-grade noted honestly for 2023-26 launches), plus the schemes open for investment right now and the ministries investors should approach first -- the program's one-page synthesis.",
+  "retrieved": "2026-07-20",
+  "method": "Synthesis of the matured-scheme cohort (18 launch-to-outcome traces, PRID-cited), the PLI disbursal report card (grades with stated criteria), the site-verified ministry catalog (open windows, portal quality), and the scheme registry (closures/attrition). Grades for the matured era are loop-based (did the incentive->investment->outcome loop close?); grades for the PLI era are delivery-based (disbursal + production). 2023-2026 launches are marked IN-FLIGHT, not graded -- the cohort shows the honest loop timescale is ~8-10 years.",
+
+  "decade_grades": {
+    "A_closed_loops": [
+      {"policy": "Ethanol Blended Petrol (2014 pricing era)", "outcome": "20% blending ~5y early; Rs 1.97L cr forex saved; ~316 lakh MT crude substituted", "design": "administered price + guaranteed offtake"},
+      {"policy": "M-SIPS -> PLI-LSEM -> MPMS (mobiles)", "outcome": "production 28x, exports 127x, imports 75% of demand -> 0.02%; smartphones = #1 export", "design": "capex subsidy + tariff protection -> production-linked -> brand incentives"},
+      {"policy": "UJALA / LED (2015)", "outcome": "LED price Rs ~310 -> Rs 38; 36.87cr bulbs; Rs 19,153cr/yr savings", "design": "zero-subsidy bulk procurement"},
+      {"policy": "MUDRA (2015)", "outcome": "57cr+ loans, Rs 40.07L cr disbursed (judged on disbursement; register silent on NPAs)", "design": "credit guarantee"},
+      {"policy": "Startup India (2016)", "outcome": "<500 -> 2.07 lakh recognised startups; FFS 1.0 fully deployed -> FoF 2.0", "design": "recognition + fund-of-funds"},
+      {"policy": "UDAN (2016)", "outcome": "679 routes, 95 aerodromes, 1.68cr passengers; airports 74 -> 165; succeeded by Modified UDAN", "design": "VGF route auctions"},
+      {"policy": "FAME -> EMPS -> PM E-DRIVE", "outcome": "13.4L EVs (FAME-II) + 21.2L (E-DRIVE); succession unbroken since 2015", "design": "demand incentives via OEMs"},
+      {"policy": "Commercial coal auctions (2020)", "outcome": "15 rolling tranches; 100+ MT output; Rs 6,656cr/yr state revenue from tranche 1", "design": "revenue-share auctions"},
+      {"policy": "PLI Pharmaceuticals (2021, in-flight but delivering)", "outcome": "Rs 5,433cr disbursed (36% of outlay); investment 237% of target; Penicillin-G restored; FDI +114%", "design": "production-linked (the family's best performer)"}
+    ],
+    "B_partial_strong": [
+      {"policy": "Solar capacity + ALMM/PLI manufacturing", "outcome": "100.33 GW installed (3y late) but manufacturing loop closed: 2 -> 100 GW ALMM module capacity"},
+      {"policy": "PLI Electronics (LSEM+ITHW disbursal Rs 15,554cr)", "outcome": "the PLI family's other real payer; tenure completed, MPMS succeeds"},
+      {"policy": "Sagarmala / DFC / rail exports", "outcome": "port turnaround halved (96h -> 49.5h); EDFC complete; 1,002 rail cars exported -- execution loops still open"},
+      {"policy": "NIP-2012 urea plants", "outcome": "6 plants built (Matix, Ramagundam et al.); self-sufficiency missed -> NIPU-2026 extends the design"},
+      {"policy": "PLI Food / Telecom / Bulk Drugs / MedDev", "outcome": "modest but real disbursal (Rs 1,084cr / ~1,175cr / ~55cr / 157cr); Food sunsets FY27"}
+    ],
+    "C_partial_weak": [
+      {"policy": "PM-KUSUM", "outcome": "29% of MW target after 7y; pumps work, grid-plants at 7% of sanctions"},
+      {"policy": "Make in India (umbrella)", "outcome": "FDI $667bn decade cumulative but ~$81bn plateau since FY21; EoDB 142 -> 63"},
+      {"policy": "Mega Food Parks", "outcome": "24 of 41 operational in 15 years; quietly discontinued 2021"},
+      {"policy": "PLI White Goods / Solar (disbursal)", "outcome": "Rs 281cr / Rs 0-by-design; White Goods beneficiary list slid 85 -> 80"},
+      {"policy": "PLI Drones (expired)", "outcome": "Rs 30cr of Rs 120cr used; sector turnover ~7x; no successor"}
+    ],
+    "D_F_laggards": [
+      {"policy": "SATAT / CBG (2018)", "outcome": "50 of 5,000 plants (<1%); voluntary model abandoned for a mandate -- the register's largest miss"},
+      {"policy": "BharatNet", "outcome": "three redesigns; 2.15L GPs service-ready 12+ years in; usage metrics never published"},
+      {"policy": "PLI Auto / Specialty Steel / Textiles (disbursal)", "outcome": "Rs 2,378cr (accelerating) / Rs 48cr + 14-of-58 withdrawals / Rs 54.5cr to 2 unnamed firms"},
+      {"policy": "PLI ACC Battery", "outcome": "zero disbursed in five years; an awardee vanished; capacity re-tendered -- the family's F"}
+    ],
+    "in_flight_ungraded": "2023-2026 launches (Green Hydrogen SIGHT, critical-minerals chain, RDI fund, ELI, shipbuilding package, gasification 2026, BHAVYA, NIPU-2026, MPMS, Semicon 2.0) are IN-FLIGHT: the cohort's ~8-10-year loop timescale means grading them now would be premature -- their designs, however, are the proven family (guaranteed terms, procurement, capex)."
+  },
+
+  "open_for_investment_now": [
+    {"window": "UNNATI 2024 (NE industrialization)", "closes": "30-Sep-2026", "what": "capital + interest + MSLI incentives; portal unnati.dpiit.gov.in", "ministry": "DPIIT"},
+    {"window": "Coal Gasification 2026 Round-1", "closes": "timeline live (pre-app conference held 16-Jul-2026)", "what": "share of Rs 37,500cr; RFP on coal.gov.in", "ministry": "Coal"},
+    {"window": "DoP SPI: API-CF common facilities + SMDI calls", "closes": "calls of 23-Jun/03-Jul-2026 live", "what": "capex support for pharma/medtech clusters, Schedule-M upgradation subsidy", "ministry": "DoP"},
+    {"window": "ECMS (electronics components)", "closes": "extended window (Amendment-2)", "what": "turnover+capex hybrid incentives; ecms.meity.gov.in", "ministry": "MeitY"},
+    {"window": "MPMS (mobile manufacturing)", "closes": "applications not yet open -- watch", "what": "2.25-5% + adders, Rs 62,500cr FY27-31", "ministry": "MeitY"},
+    {"window": "MoFPI: cold-chain EoI, CEFPPC units, PM-FME, Operation Greens claims", "closes": "rolling/EoI-based", "what": "35-50% capex grants; SAMPADA portals", "ministry": "MoFPI"},
+    {"window": "AHIDF + NLM", "closes": "open portals", "what": "3% subvention + guarantee (dairy/meat/feed); 50% capital subsidy (livestock)", "ministry": "FAHD"},
+    {"window": "ALMM enlistment (solar)", "closes": "List-II window to 31-Dec-2026", "what": "market access for module/cell makers; DCR portal re-opened", "ministry": "MNRE"},
+    {"window": "NGHM CfPs (testing, pilots, startups)", "closes": "2025-26 calls live", "what": "SIGHT tranches + pilot funding", "ministry": "MNRE"},
+    {"window": "Steel R&D + NTTM research", "closes": "open/rolling", "what": "R&D grants", "ministry": "Steel / Textiles"},
+    {"window": "PM E-DRIVE e-2W claims", "closes": "31-Jul-2026 (e-3W R/C to 31-Mar-2028)", "what": "demand incentives via OEM portal", "ministry": "MHI"},
+    {"window": "SBFAS 2.0 (shipbuilding, to 2036) + SbDS proposals", "closes": "standing", "what": "~14% contract assistance + cluster/risk support", "ministry": "MoPSW"},
+    {"window": "Startup stack (FoF 2.0 via AIFs, SISFS, CGSS) + CGTMSE/ZED", "closes": "standing", "what": "equity, seed, guarantees, certification subsidy", "ministry": "DPIIT / MSME"},
+    {"window": "SATAT CBG EoI + mandatory blending demand", "closes": "continuous", "what": "assured-price offtake, now demand-backed by the blending mandate", "ministry": "MoPNG"}
+  ],
+
+  "ministries_to_approach": {
+    "tier_1_go_first": [
+      {"ministry": "DoP (pharma-dept.gov.in)", "why": "Best-maintained scheme section in government; live calls NOW; the PLI family's grade-A delivery record; parks + PRIP + SPI stack"},
+      {"ministry": "MeitY (via cms/wp-json + ism.gov.in)", "why": "A- delivery record; ECMS window extended, MPMS imminent, Semicon 2.0's six pillars incl. the new equipment/materials lane"},
+      {"ministry": "DPIIT / Invest India / NSWS", "why": "The gateway itself (KYA -> single window, 32 ministries/34 states) + UNNATI deadline + BHAVYA parks + startup stack; owns the FDI rulebook"},
+      {"ministry": "FAHD (dahd.gov.in)", "why": "The transparency benchmark -- live application funnel, active loan portals, real subvention money"},
+      {"ministry": "Ministry of Coal", "why": "Gasification 2026 Round-1 open with a working auction machinery behind it (15 coal tranches prove execution)"}
+    ],
+    "tier_2_engage": [
+      {"ministry": "MoFPI", "why": "Multiple open capex windows -- but PLISFPI sunsets FY27; enter via PMKSY components"},
+      {"ministry": "MNRE / SECI / IREDA", "why": "ALMM window (31-Dec-2026), SIGHT CfPs; caveat: PLI payouts are post-commissioning by design"},
+      {"ministry": "MoPSW", "why": "Rs 69,725cr package with fresh guidelines (Jan/May-2026); MDF still operationalising"},
+      {"ministry": "Commerce / DGFT", "why": "Export instrument stack (RoDTEP/EPCG/EPM); NIRYAT PROTSAHAN new"},
+      {"ministry": "MSME ministry (via portals, not the site)", "why": "CGTMSE Rs 10cr cover, ZED, RAMP -- use cgtmse.in / zed.msme.gov.in directly"}
+    ],
+    "approach_with_eyes_open": [
+      {"ministry": "MHI", "why": "E-DRIVE claims deadlines near; ACC stalled at zero with stale pages; Capital Goods Ph-II proposal-based"},
+      {"ministry": "Ministry of Steel", "why": "24% Round-1 attrition disclosed; R1.2 MoU-stage; R&D window open"},
+      {"ministry": "Ministry of Textiles", "why": "PLI windows amended three times in a year; verify on pli.texmin.gov.in (site is a JS shell; texmin.nic.in is dead)"},
+      {"ministry": "Fertilizers / Mines", "why": "NIPU-2026 and the critical-minerals chain are real money, but both departments' websites are dead/unreachable -- approach via Cabinet frameworks, NSWS and nodal PSUs"}
+    ]
+  },
+
+  "bottom_line": "Twelve years of policy graded on outcomes: the A-row is uniformly demand-side guarantee/procurement designs, the F-row is voluntary uptake and unpaid production promises. For an investor entering now: the open money is capex/cluster/credit (not PLI), the reliable counterparties are the ministries with working portals and delivery records (DoP, MeitY, DPIIT/NSWS, FAHD, Coal), and the two dated deadlines that matter this quarter are UNNATI (30-Sep-2026) and ALMM List-II (31-Dec-2026).",
+  "see_also": ["data/matured_scheme_cohort_2026-07-20.json", "data/pli_report_card_2026-07-19.json", "data/ministry_incentive_catalog_2026-07-19.json", "data/investor_workflow_2026-07-20.json"]
+}

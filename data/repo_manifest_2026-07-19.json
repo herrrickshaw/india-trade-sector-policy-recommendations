@@ -140,6 +140,13 @@
       ]
     },
     {
+      "title": "The decade report card: 2014-2026 graded, open windows, ministries to approach",
+      "chart": "charts/decade_report_card.html",
+      "data": [
+        "data/decade_report_card_2026-07-20.json"
+      ]
+    },
+    {
       "title": "The matured cohort: 18 schemes traced launch-to-outcome (2008-2020 -> 2026)",
       "chart": "charts/matured_scheme_cohort.html",
       "data": [
