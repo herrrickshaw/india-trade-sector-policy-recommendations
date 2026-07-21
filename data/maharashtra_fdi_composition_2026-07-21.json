@@ -1,0 +1,274 @@
+{
+  "built": "2026-07-21",
+  "fdi_fpi_boundary": {
+    "rule": "FDI is investment through equity instruments by a person resident outside India in (a) an unlisted Indian company, or (b) 10 percent or more of the post issue paid-up equity capital on a fully diluted basis of a listed Indian company. Foreign Portfolio Investment is any investment by a person resident outside India in equity instruments that is (a) less than 10 percent of the post issue paid-up equity capital on a fully diluted basis of a listed Indian company or (b) less than 10 percent of the paid-up value of each series of equity instruments of a listed Indian company. Once an investment is FDI it remains FDI even if the holding later falls below 10 percent.",
+    "threshold": "10 percent of post issue paid-up equity capital, fully diluted basis (listed companies). Any foreign equity in an UNLISTED company is FDI regardless of percentage.",
+    "source_title": "RBI Master Direction - Foreign Investment in India, RBI/FED/2017-18/60, FED Master Direction No.11/2017-18, dated January 4, 2018 (page states last updated June 15, 2026). Statutory basis: Foreign Exchange Management (Non-debt Instruments) Rules, 2019, notified 17 October 2019.",
+    "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=11200",
+    "dpiit_includes_portfolio": false,
+    "fpi_state_attributed": false,
+    "note": "DPIIT's FDI equity inflow EXCLUDES portfolio money, and the factsheet proves this on its own face: in Table II.A ('AS PER INTERNATIONAL BEST PRACTICES') FPI appears as a SEPARATE final column headed 'Investment by FPI's Foreign Portfolio investor Fund (net)', sitting OUTSIDE the 'Total FDI Inflow' column. So the user's premise -- that Maharashtra's headline FDI number might be stock-market money -- is definitionally FALSE for the portfolio channel: sub-10% listed-equity purchases are never in the DPIIT state table at all. SEPARATELY VERIFIED NEGATIVE: no official dataset attributes FPI to Indian states. SEBI's AUC page (https://www.sebi.gov.in/statistics/fpi-investment/asset-under-custody.html) publishes AUC only country-wise (top 10 countries), category-wise, and sector-wise; there is no state dimension. DPIIT Annexure-C is FDI-only. Therefore 'Maharashtra's share of FPI' is not a computable official statistic. CAVEAT ON THE BOUNDARY: the 10% line is a legal-form test, not an economic-substance test. A >=10% stake bought on the secondary market from an existing shareholder is FDI and enters Maharashtra's number, even though not one rupee reaches the company or any project. That is the real leak, not FPI (see greenfield_vs_acquisition)."
+  },
+  "maharashtra_fdi": [
+    {
+      "period": "FY2023-24 (April-March)",
+      "usd_mn": 15116,
+      "rs_cr": 125101,
+      "share_of_india_pct": 34.03,
+      "table_heading": "F. STATES/UTs ATTRACTING HIGHEST FDI EQUITY INFLOW",
+      "source": "DPIIT Quarterly Fact Sheet on Foreign Direct Investment (FDI) Inflow, from April 2000 to March 2026 (updated up to March 2026), Section F",
+      "url": "https://www.dpiit.gov.in/static/uploads/2026/06/41192ca92c1de34eb064800fbffa0379.pdf",
+      "note": "share_of_india_pct computed by me = 15,116 / 44,423 India FDI equity inflow FY2023-24 (USD mn, DPIIT Table II.A). Not a DPIIT-published percentage."
+    },
+    {
+      "period": "FY2024-25 (April-March)",
+      "usd_mn": 19589,
+      "rs_cr": 164875,
+      "share_of_india_pct": 39.16,
+      "table_heading": "F. STATES/UTs ATTRACTING HIGHEST FDI EQUITY INFLOW",
+      "source": "DPIIT Quarterly Fact Sheet on FDI Inflow, April 2000 to March 2026, Section F",
+      "url": "https://www.dpiit.gov.in/static/uploads/2026/06/41192ca92c1de34eb064800fbffa0379.pdf",
+      "note": "share computed by me = 19,589 / 50,018 (USD mn)."
+    },
+    {
+      "period": "FY2025-26 (April-March), provisional",
+      "usd_mn": 18418,
+      "rs_cr": 161892,
+      "share_of_india_pct": 31.30,
+      "table_heading": "F. STATES/UTs ATTRACTING HIGHEST FDI EQUITY INFLOW",
+      "source": "DPIIT Quarterly Fact Sheet on FDI Inflow, April 2000 to March 2026, Section F",
+      "url": "https://www.dpiit.gov.in/static/uploads/2026/06/41192ca92c1de34eb064800fbffa0379.pdf",
+      "note": "share computed by me = 18,418 / 58,846 (USD mn). DPIIT marks FY2025-26 provisional, 'subject to reconciliation with RBI, Mumbai'."
+    },
+    {
+      "period": "Cumulative October 2019 - March 2026",
+      "usd_mn": 107094.0,
+      "rs_cr": 859196.43,
+      "share_of_india_pct": 31.35,
+      "table_heading": "Annexure-C: STATE-WISE FDI EQUITY INFLOW FROM OCTOBER 2019 TO March 2026",
+      "source": "DPIIT Quarterly Fact Sheet on FDI Inflow, April 2000 to March 2026, Annexure-C. Gross-Total of Annexure-C = Rs 27,25,513.87 crore / USD 341,611.72 mn.",
+      "url": "https://www.dpiit.gov.in/static/uploads/2026/06/41192ca92c1de34eb064800fbffa0379.pdf",
+      "note": "31.35% is DPIIT's own published percentage and is a share of the Oct-2019-onwards total (USD 341,612 mn), NOT of the April-2000 cumulative (USD 787,728 mn). Do not mix the two bases."
+    },
+    {
+      "period": "India national context, cumulative April 2000 - March 2026",
+      "usd_mn": 787728.04,
+      "rs_cr": 5285866.08,
+      "share_of_india_pct": 0,
+      "table_heading": "A. TOTAL FDI INFLOW (from April, 2000 to March, 2026) / CUMULATIVE AMOUNT OF FDI EQUITY INFLOW (excluding, amount remitted through RBI's NRI Schemes)",
+      "source": "DPIIT Quarterly Fact Sheet on FDI Inflow, April 2000 to March 2026, Section I.A",
+      "url": "https://www.dpiit.gov.in/static/uploads/2026/06/41192ca92c1de34eb064800fbffa0379.pdf",
+      "note": "THREE DIFFERENT AGGREGATES, DO NOT CONFUSE: (1) FDI EQUITY INFLOW cumulative = USD 787,728 mn / Rs 52,85,866 cr -- this is the DPIIT database concept used for all state and sector tables. (2) TOTAL FDI INFLOW cumulative = USD 1,166,462 mn = equity + re-invested earnings + other capital, from RBI. (3) FPI is outside both. Annual: total FDI inflow FY2025-26 = USD 94,527 mn vs FDI equity inflow FY2025-26 = USD 58,846 mn."
+    }
+  ],
+  "attribution_artefact": {
+    "rule": "Attribution follows the Indian COMPANY that receives the inward remittance -- i.e. the entity/office reporting the inflow -- not the physical location of the project the money funds. Pre-October 2019 the unit of attribution was explicitly the RBI REGIONAL OFFICE to which the inflow was reported; from October 2019 DPIIT publishes a state-wise series instead. DPIIT's own wording for the Maharashtra deal list is 'Remittance-wise - through Indian companies', which is the clearest statement that the company, not the project site, is the unit.",
+    "dpiit_caveat_verbatim": "IMPORTANT NEGATIVE FINDING: DPIIT publishes NO explicit footnote stating that state attribution reflects the registered/reporting office rather than the project location. The nearest published wording, quoted verbatim, is: (a) current factsheet, Section F notes -- 'i. Cumulative State-wise/UT-wise FDI equity inflow (from October, 2019 to March, 2026) are at - Annex-'C'.' / 'ii. %age worked out in USD terms & FDI inflow received through Government Route + Automatic Route + acquisition of existing shares only.' / 'iii. State wise data is maintained w.e.f. October, 2019. Figures are provisional.'; (b) Annexure-C note -- 'Note: State wise data is maintained w.e.f. October, 2019'; (c) legacy regional-office table title -- 'STATEMENT ON RBI'S REGIONAL OFFICES (WITH STATE COVERED) RECEIVED FDI EQUITY INFLOWS FROM APRIL 2019 TO JUNE 2019 (As Reported to Regional Offices of RBI)'; (d) DPIIT Maharashtra synopsis -- 'DETAILS OF TOP 25 FDI EQUITY INFLOW RECEIVED IN MAHARASHTRA STATE (Remittance-wise - through Indian companies, from October 2019 to December 2024)' and 'The FDI equity Inflow reported at Maharashtra state is INR 6,71,862.69 crore (USD 85.74 billion), which is 31.36% for the period October, 2019 to December, 2024 on the basis of the cumulative Inflow received through government route, acquisition of shares route and RBI's automatic route.' The phrase 'reported at Maharashtra state' does the work, but DPIIT never spells out the consequence. The absence of an explicit caveat is itself a finding.",
+    "mumbai_office_covers": [
+      "MAHARASHTRA",
+      "DADRA & NAGAR HAVELI",
+      "DAMAN & DIU"
+    ],
+    "mumbai_office_note": "VERIFIED for the legacy RBI-regional-office series: DPIIT Table No.16 lists 'MUMBAI -- MAHARASHTRA, DADRA & NAGAR HAVELI, DAMAN & DIU', FDI Rs 109,074.37 million / USD 1,567.71 mn = 9.60% for April-June 2019. IMPORTANT UPDATE: in the CURRENT state-wise series this bundling no longer applies -- 'Dadra and Nagar Haveli and Daman and Diu' is a separate line (Sr.No.23, Rs 1,360.44 cr / USD 181.29 mn / 0.05%) in Annexure-C, distinct from Maharashtra. So the old Mumbai-RO composition artefact has been fixed, and it was tiny anyway (0.05%). Note also the legacy row 'NEW DELHI -- DELHI, PART OF UP AND HARYANA', which was a far bigger composition problem than Mumbai's.",
+    "region_not_indicated": {
+      "value": "LEGACY (RBI regional-office series, April-June 2019): 'REGION NOT INDICATED' = Rs 181,194.06 million / USD 2,606.77 million = 15.96% of all FDI equity inflow that quarter -- LARGER than the entire Mumbai regional office (9.60%). CURRENT (state-wise series, Oct 2019 - Mar 2026): 'State Not Indicated' = Rs 246.69 crore / USD 32.93 million = 0.01% of the total. Sr.No.34 of Annexure-C.",
+      "period": "Legacy: April-June 2019 quarter. Current: cumulative October 2019 - March 2026.",
+      "note": "THIS IS A MAJOR CORRECTION TO THE RESEARCH PREMISE. The brief anticipated that the unallocated line 'is often very large'. That WAS true of the pre-Oct-2019 RBI-regional-office series (15.96% in the last quarter it was published) but is emphatically NOT true today: the unallocated residual has collapsed to 0.01%. Cross-check confirming near-complete coverage: Annexure-C Gross-Total is USD 341,612 mn for Oct-2019 to Mar-2026, while summing DPIIT's own annual FDI equity inflows over roughly the same window (half of FY2019-20 at ~25,000 plus FY2020-21 59,636 + FY2021-22 58,773 + FY2022-23 46,034 + FY2023-24 44,423 + FY2024-25 50,018 + FY2025-26 58,846) gives ~USD 342,700 mn. The state table therefore accounts for essentially 100% of national FDI equity inflow, with no large hidden bucket. Consequence: the attribution problem for Maharashtra is NOT missing data -- it is that the data is complete but assigned to the wrong geography (headquarters, not project)."
+    },
+    "url": "https://www.dpiit.gov.in/static/uploads/2026/06/41192ca92c1de34eb064800fbffa0379.pdf",
+    "legacy_table16_url": "https://www.dpiit.gov.in/static/uploads/2025/07/4db474c97e5ab80c12c2c8d11fa2d579.pdf",
+    "worked_example_of_the_artefact": "DPIIT's own top-25 list for Maharashtra (Oct 2019 - Dec 2024) is the cleanest illustration, because DPIIT itself names the recipient company and the activity. Rank 1, 2 and 4 are all 'Reliance Retail Ventures Limited', activity 'Storage and warehousing n.e.c.', from Saudi Arabia's Public Investment Fund (Rs 9,555.00 cr / USD 1,287.39 mn), Singapore's SLP Rainbow Holdings Pte. Ltd. (Rs 8,812.50 cr / USD 1,199.66 mn) and Qatar Holding LLC (Rs 8,278.00 cr / USD 996.78 mn). These are stakes in a nationwide retail/warehousing group booked 100% to Maharashtra because RRVL is Mumbai-registered; the warehouses and stores they finance are spread across every state. Rank 3 is 'AMBUJA CEMENTS LIMITED', 'Manufacture of clinkers and cement', Harmonia Trade and Investment Ltd, Mauritius, Rs 8,340.57 cr / USD 1,000.15 mn -- Ambuja's plants are overwhelmingly in Himachal, Gujarat, Rajasthan, Chhattisgarh and Maharashtra, yet the whole inflow lands in Maharashtra's column. Rank 5 is 'HDFC Credila Financial Services Limited', 'Other credit granting', Kopvoorn B.V., Netherland, Rs 7,642.23 cr / USD 916.41 mn -- a pure financial-services transaction with no physical project anywhere. Source: DPIIT Table No. 6.3(i) FDI SYNOPSIS ON STATE - MAHARASHTRA (As on 31.12.2024), https://www.dpiit.gov.in/static/uploads/2025/12/8cea5811b255d0e7106c82ea0939aeed.pdf"
+  },
+  "sector_composition": [
+    {
+      "level": "maharashtra",
+      "sector": "Services Sector (Financial, Banking, Insurance, Non-Financial/Business, Outsourcing, R&D, Courier, Tech. Testing and Analysis)",
+      "share_pct": 23.26,
+      "period": "October 2019 - December 2024",
+      "amount_rs_cr": 158023.81,
+      "amount_usd_mn": 19942.37,
+      "source": "DPIIT Table No. 6.3(i): FDI SYNOPSIS ON STATE - MAHARASHTRA (As on 31.12.2024), section 4 'SHARE OF TOP FIVE SECTORS IN FDI EQUITY INFLOW REPORTED AT MAHARASHTRA'",
+      "url": "https://www.dpiit.gov.in/static/uploads/2025/12/8cea5811b255d0e7106c82ea0939aeed.pdf"
+    },
+    {
+      "level": "maharashtra",
+      "sector": "Construction (Infrastructure) Activities",
+      "share_pct": 16.13,
+      "period": "October 2019 - December 2024",
+      "amount_rs_cr": 106734.62,
+      "amount_usd_mn": 13829.92,
+      "source": "DPIIT Table No. 6.3(i) FDI SYNOPSIS ON STATE - MAHARASHTRA (As on 31.12.2024)",
+      "url": "https://www.dpiit.gov.in/static/uploads/2025/12/8cea5811b255d0e7106c82ea0939aeed.pdf"
+    },
+    {
+      "level": "maharashtra",
+      "sector": "Computer Software & Hardware",
+      "share_pct": 13.77,
+      "period": "October 2019 - December 2024",
+      "amount_rs_cr": 93146.63,
+      "amount_usd_mn": 11808.71,
+      "source": "DPIIT Table No. 6.3(i) FDI SYNOPSIS ON STATE - MAHARASHTRA (As on 31.12.2024)",
+      "url": "https://www.dpiit.gov.in/static/uploads/2025/12/8cea5811b255d0e7106c82ea0939aeed.pdf"
+    },
+    {
+      "level": "maharashtra",
+      "sector": "Trading",
+      "share_pct": 5.47,
+      "period": "October 2019 - December 2024",
+      "amount_rs_cr": 36902.67,
+      "amount_usd_mn": 4693.53,
+      "source": "DPIIT Table No. 6.3(i) FDI SYNOPSIS ON STATE - MAHARASHTRA (As on 31.12.2024)",
+      "url": "https://www.dpiit.gov.in/static/uploads/2025/12/8cea5811b255d0e7106c82ea0939aeed.pdf"
+    },
+    {
+      "level": "maharashtra",
+      "sector": "Automobile Industry (the only unambiguous plant-and-machinery manufacturing sector in Maharashtra's published top five)",
+      "share_pct": 4.33,
+      "period": "October 2019 - December 2024",
+      "amount_rs_cr": 29197.24,
+      "amount_usd_mn": 3708.17,
+      "source": "DPIIT Table No. 6.3(i) FDI SYNOPSIS ON STATE - MAHARASHTRA (As on 31.12.2024)",
+      "url": "https://www.dpiit.gov.in/static/uploads/2025/12/8cea5811b255d0e7106c82ea0939aeed.pdf"
+    },
+    {
+      "level": "maharashtra",
+      "sector": "MEMO: Services + Computer Software & Hardware + Trading combined (the three non-plant categories)",
+      "share_pct": 42.5,
+      "period": "October 2019 - December 2024",
+      "source": "Sum computed by me from DPIIT Table No. 6.3(i) top-five sector table: 23.26 + 13.77 + 5.47. Only the top five sectors are published, so the true non-plant share is HIGHER than 42.5% -- the unpublished 37.04% tail certainly contains further services/financial lines.",
+      "url": "https://www.dpiit.gov.in/static/uploads/2025/12/8cea5811b255d0e7106c82ea0939aeed.pdf"
+    },
+    {
+      "level": "maharashtra",
+      "sector": "MEMO: earlier vintage for trend comparison (As on 31.12.2020, Oct 2019 - Dec 2020) -- Construction (Infrastructure) 33.73%, Services 14.19%, Computer Software & Hardware 8.92%, Drugs & Pharmaceuticals 5.73%, Trading 5.42%",
+      "share_pct": 0,
+      "period": "October 2019 - December 2020",
+      "source": "DPIIT Table No. 6.3.(ii): FDI SYNOPSIS ON STATE - MAHARASHTRA (As on 31.12.2020). Shows the mix is volatile and dominated by a handful of large deals -- Maharashtra was ranked 2nd with 27.74% then, 1st with 31.36% by Dec 2024.",
+      "url": "https://www.dpiit.gov.in/static/uploads/2025/07/e4eba6334081f8a70570db16b22058dc.pdf"
+    },
+    {
+      "level": "india",
+      "sector": "Services Sector (Financial, Banking, Insurance, Non-Financial/Business, Outsourcing, R&D, Courier, Tech. Testing and Analysis)",
+      "share_pct": 16.0,
+      "period": "Cumulative April 2000 - March 2026",
+      "amount_rs_cr": 853631,
+      "amount_usd_mn": 128853,
+      "source": "DPIIT Quarterly Fact Sheet on FDI Inflow, April 2000 to March 2026, Section E 'SECTORS ATTRACTING HIGHEST FDI EQUITY INFLOW'",
+      "url": "https://www.dpiit.gov.in/static/uploads/2026/06/41192ca92c1de34eb064800fbffa0379.pdf"
+    },
+    {
+      "level": "india",
+      "sector": "Computer Software & Hardware",
+      "share_pct": 16.0,
+      "period": "Cumulative April 2000 - March 2026",
+      "amount_rs_cr": 907251,
+      "amount_usd_mn": 124644,
+      "source": "DPIIT Quarterly Fact Sheet on FDI Inflow, April 2000 to March 2026, Section E",
+      "url": "https://www.dpiit.gov.in/static/uploads/2026/06/41192ca92c1de34eb064800fbffa0379.pdf"
+    },
+    {
+      "level": "india",
+      "sector": "Trading",
+      "share_pct": 7.0,
+      "period": "Cumulative April 2000 - March 2026",
+      "amount_rs_cr": 369756,
+      "amount_usd_mn": 51586,
+      "source": "DPIIT Quarterly Fact Sheet on FDI Inflow, April 2000 to March 2026, Section E",
+      "url": "https://www.dpiit.gov.in/static/uploads/2026/06/41192ca92c1de34eb064800fbffa0379.pdf"
+    },
+    {
+      "level": "india",
+      "sector": "Automobile Industry",
+      "share_pct": 5.0,
+      "period": "Cumulative April 2000 - March 2026",
+      "amount_rs_cr": 270230,
+      "amount_usd_mn": 40314,
+      "source": "DPIIT Quarterly Fact Sheet on FDI Inflow, April 2000 to March 2026, Section E",
+      "url": "https://www.dpiit.gov.in/static/uploads/2026/06/41192ca92c1de34eb064800fbffa0379.pdf"
+    },
+    {
+      "level": "india",
+      "sector": "MEMO: national Services + Computer S&H + Trading combined = 39% cumulative. Maharashtra's equivalent (42.5%) is HIGHER, consistent with -- but not proof of -- the Mumbai financial-centre hypothesis.",
+      "share_pct": 39.0,
+      "period": "Cumulative April 2000 - March 2026",
+      "source": "Sum computed by me from DPIIT Section E published percentages (16 + 16 + 7). NOTE THE PERIOD MISMATCH: the national figure is Apr 2000 - Mar 2026 while the Maharashtra figure is Oct 2019 - Dec 2024. They are NOT strictly comparable.",
+      "url": "https://www.dpiit.gov.in/static/uploads/2026/06/41192ca92c1de34eb064800fbffa0379.pdf"
+    }
+  ],
+  "greenfield_vs_acquisition": {
+    "dpiit_includes_acquisitions": true,
+    "evidence": "CONFIRMED VERBATIM, and repeated identically under the country table (Section D), the sector table (Section E) and the state table (Section F) of the March 2026 factsheet: '%age worked out in USD terms & FDI inflow received through Government Route + Automatic Route + acquisition of existing shares only.' The same is stated for Maharashtra specifically in DPIIT Table No. 6.3(i): 'on the basis of the cumulative Inflow received through government route, acquisition of shares route and RBI's automatic route', and in the note to both the country and sector tables of that document: 'Amount includes the Inflow received through government route, acquisition of existing shares & RBI's automatic route only'. Purchases of EXISTING shares -- secondary acquisitions and M&A -- are therefore inside the headline number. Money paid to a selling shareholder is counted as 'FDI into Maharashtra' even though it creates zero new capital formation and may never touch the company's balance sheet. A second, separate confirmation that the series is transaction-flow rather than capital-formation: factsheet Table II.A note (ii) 'Inflow under the acquisition of shares in March, 2011, August, 2011 & October, 2011, include net FDI on account of transfer of participating interest from Reliance Industries Ltd. to BP Exploration (Alpha)' and note (iii) 'RBI had included Swap of Shares of USD 3.1 billion under equity components during December 2006' -- a share SWAP, involving no cash investment at all, was booked as FDI equity inflow.",
+    "url": "https://www.dpiit.gov.in/static/uploads/2026/06/41192ca92c1de34eb064800fbffa0379.pdf",
+    "unctad_greenfield_india": {
+      "value": "NOT RETRIEVED FROM PRIMARY SOURCE IN THIS SESSION. unctad.org returned HTTP 403 to both WebFetch and curl for the World Investment Report chapter PDF. Secondary press reporting of UNCTAD WIR figures for India (greenfield announcements ~USD 74.12 bn; ~1,080 projects, 4th globally; projected capex ~USD 110 bn) was seen in search results but is NOT primary-verified and is therefore deliberately NOT asserted here as fact. Per the no-invention rule this must be re-collected from unctad.org before citation.",
+      "year": "unverified",
+      "url": "https://unctad.org/topic/investment/world-investment-report",
+      "note": "The greenfield-vs-DPIIT comparison remains the right method and is worth completing. Caution when it is done: UNCTAD greenfield figures are ANNOUNCEMENTS (forward-looking, frequently unbuilt), while DPIIT figures are REALISED remittances. They are not two measurements of one quantity and the gap between them is not cleanly interpretable as the brownfield share."
+    }
+  },
+  "fpi_context": [
+    {
+      "metric": "net FPI equity flow",
+      "period": "FY2023-24 (April-March)",
+      "value": "+Rs 208,212 crore (net equity)",
+      "source": "NSDL, FPI Net Investment Details (Financial Year), INR crores",
+      "url": "https://www.fpi.nsdl.co.in/Reports/Yearwise.aspx?RptType=5"
+    },
+    {
+      "metric": "net FPI equity flow",
+      "period": "FY2024-25 (April-March)",
+      "value": "-Rs 127,041 crore (net equity OUTFLOW)",
+      "source": "NSDL, FPI Net Investment Details (Financial Year), INR crores",
+      "url": "https://www.fpi.nsdl.co.in/Reports/Yearwise.aspx?RptType=5"
+    },
+    {
+      "metric": "net FPI equity flow",
+      "period": "FY2025-26 (April-March)",
+      "value": "-Rs 180,832 crore (net equity OUTFLOW). Total across all FPI instrument classes for the year = -Rs 152,691 crore.",
+      "source": "NSDL, FPI Net Investment Details (Financial Year), INR crores",
+      "url": "https://www.fpi.nsdl.co.in/Reports/Yearwise.aspx?RptType=5"
+    },
+    {
+      "metric": "net FPI equity flow",
+      "period": "FY2026-27 year-to-date (partial year, as at retrieval 21 July 2026; NSDL marks the row '**')",
+      "value": "-Rs 129,542 crore (net equity OUTFLOW)",
+      "source": "NSDL, FPI Net Investment Details (Financial Year), INR crores",
+      "url": "https://www.fpi.nsdl.co.in/Reports/Yearwise.aspx?RptType=5"
+    },
+    {
+      "metric": "net FPI flow (RBI basis, all instruments, USD)",
+      "period": "FY2022-23 / FY2023-24 / FY2024-25 / FY2025-26 (P)",
+      "value": "-4,828 / +44,626 / +3,283 / -15,500 USD million. Cumulative April 2000 - March 2026 = +267,037 USD million.",
+      "source": "DPIIT Quarterly Fact Sheet on FDI Inflow, April 2000 to March 2026, Table II.A column 'Investment by FPI's Foreign Portfolio investor Fund (net)'. DPIIT cites: RBI's Bulletin for May 2026 dt. 22.05.2026 (Table No. 35 - FOREIGN INVESTMENT INFLOW).",
+      "url": "https://www.dpiit.gov.in/static/uploads/2026/06/41192ca92c1de34eb064800fbffa0379.pdf",
+      "note": "UNIT AND BASIS WARNING: these RBI USD figures do NOT reconcile to the NSDL rupee figures above, because the RBI series covers ALL FPI instruments (equity + debt + hybrid) on a balance-of-payments basis while the NSDL column quoted above is equity only. Example: FY2024-25 RBI shows +USD 3,283 mn while NSDL shows equity -Rs 127,041 cr alongside debt +Rs 55,734 cr and Debt-FAR +Rs 80,691 cr -- the debt inflow (largely JP Morgan index inclusion) is what flips the sign. Never quote one as a check on the other."
+    },
+    {
+      "metric": "AUC",
+      "period": "NOT RETRIEVED FOR A CURRENT MONTH",
+      "value": "PRIMARY-SOURCE RETRIEVAL FAILED. NSDL's AUC report pages (ReportDetail.aspx RepID=70 and RepID=19) served archived month dropdowns only (December 2015 and December 2014 respectively; RepID=70 December 2015 total AUC = Rs 2,320,539 crore, equity Rs 1,975,329 crore, debt Rs 345,210 crore -- historical, NOT current). The current-month report requires an ASP.NET __VIEWSTATE POST and the report listing page is JavaScript-driven. SEBI's AUC landing page carries no figures, only links. Current AUC is therefore NOT asserted here.",
+      "source": "NSDL FPI Investments - Category wise Asset Under Custody (AUC) data; SEBI Asset under Custody (AUC) data page",
+      "url": "https://www.sebi.gov.in/statistics/fpi-investment/asset-under-custody.html",
+      "note": "Press reports seen in search (FPI equity AUC ~USD 660 bn at end-March 2026; total AUC ~USD 787 bn; financial services ~one-third of AUC as at 31 March 2026) are NOT primary-verified and are excluded from the findings. Re-collect from NSDL with a proper POST before citing."
+    },
+    {
+      "metric": "state attribution of FPI",
+      "period": "all periods",
+      "value": "DOES NOT EXIST. No official source (SEBI, NSDL, CDSL, RBI, DPIIT) publishes FPI holdings or flows broken down by Indian state.",
+      "source": "SEBI Asset under Custody (AUC) data page -- publishes only 'FPI AUC Country-wise (top 10 countries) data', 'FPI AUC category wise data', 'Category wise AUC data for all clients'. No state dimension anywhere.",
+      "url": "https://www.sebi.gov.in/statistics/fpi-investment/asset-under-custody.html",
+      "note": "The brief's instruction not to assume a Mumbai share of FPI AUC is correct and I have not assumed one. SEBI does publish AUC by SECTOR, and financial services is widely reported as the single largest bucket, but sector is not geography and converting either into a Maharashtra number would require an unpublished mapping of listed-company registered offices to states. That mapping is constructible from exchange master data but does not exist in any official statistic."
+    }
+  ],
+  "unpublished_gaps": [
+    "DPIIT does NOT publish any explicit methodological caveat stating that state attribution follows the recipient company's registered/reporting office rather than the project location. The consequence is left entirely implicit in the phrases 'reported at Maharashtra state' and 'Remittance-wise - through Indian companies'. This is arguably the single most consequential undocumented assumption in the whole dataset.",
+    "DPIIT does NOT publish a greenfield-vs-brownfield split of FDI equity inflow, nationally or by state. It is therefore IMPOSSIBLE from official Indian data to say what fraction of Maharashtra's USD 107.1 bn is new capital formation versus purchase of existing shares. This is the central un-answerable question and no amount of further DPIIT mining will resolve it.",
+    "DPIIT does NOT publish a full sector-by-state matrix. Only the TOP FIVE sectors per state are published, in the periodic state synopsis notes, and only as a cumulative-since-Oct-2019 figure. For Maharashtra that leaves 37.04% of the state's FDI sectorally unallocated in public data. There is no annual sector-within-state series at all.",
+    "The Maharashtra state synopsis (DPIIT Table No. 6.3(i)) is published to a different and older cut-off (31.12.2024) than the headline quarterly factsheet (31.03.2026). Maharashtra's sector mix and the current headline total cannot be stated as of the same date.",
+    "DPIIT does NOT publish district-level or project-level FDI, other than the top-25 recipient-company list in the state synopsis. Even that list gives the company and activity but not the location of the funded asset -- for Reliance Retail Ventures the 'Location (District)' field simply reads 'Mumbai' in the 2020 vintage.",
+    "No official source attributes FPI to Indian states, so the FDI-vs-FPI comparison the user asked for can only be made at NATIONAL level, never for Maharashtra specifically.",
+    "Current FPI Assets Under Custody was not retrievable from NSDL or SEBI primary sources in this session (ASP.NET POST required; JS-driven listing page). Flagged rather than filled from press reports.",
+    "UNCTAD World Investment Report greenfield-announcement values for India were not retrievable (unctad.org returned HTTP 403). Flagged rather than filled from press reports.",
+    "RBI does not maintain country-wise (and by extension state-wise) data on 're-invested earnings' and 'other capital' -- stated by DPIIT itself: 'These FDI Inflow do not include country-wise data on 'Re-invested earnings' and 'Other capital', which are, not maintained by RBI.' So the state tables capture only the equity component, i.e. USD 787.7 bn of the USD 1,166.5 bn cumulative total FDI inflow. Roughly a third of India's total FDI is invisible to state-level analysis entirely."
+  ]
+}
