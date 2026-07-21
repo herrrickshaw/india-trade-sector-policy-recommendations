@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maharashtra's FDI: stock-market money, or money in the ground?</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f; --ink-2:#4f5348; --ink-muted:#82867a;
+    --rule:#d7dace; --rule-strong:#c3c7b8;
+    --accent:#1f5f5b; --accent-soft:#dbe9e6;
+    --alert:#a5402c; --alert-soft:#f3ded7;
+    --warn:#c98a1f; --warn-soft:#f3e9d5;
+    --mismatch:#7a5aa8; --mismatch-soft:#e7defa;
+    --font-display:"Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --font-mono:"IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { color-scheme: dark; --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7;
+      --ink-muted:#8b8f83; --rule:#2a2e28; --rule-strong:#383c33;
+      --accent:#6fb3ac; --accent-soft:#20342f; --alert:#e08268; --alert-soft:#3a2019;
+      --warn:#e0b45c; --warn-soft:#372c16; --mismatch:#b39ce0; --mismatch-soft:#2e2540; }
+  }
+  :root[data-theme="dark"] { color-scheme: dark; --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea;
+    --ink-2:#c1c4b7; --ink-muted:#8b8f83; --rule:#2a2e28; --rule-strong:#383c33;
+    --accent:#6fb3ac; --accent-soft:#20342f; --alert:#e08268; --alert-soft:#3a2019;
+    --warn:#e0b45c; --warn-soft:#372c16; --mismatch:#b39ce0; --mismatch-soft:#2e2540; }
+  :root[data-theme="light"] { color-scheme: light; --page-bg:#eef1ea; --surface:#fcfcfa; --ink:#14180f;
+    --ink-2:#4f5348; --ink-muted:#82867a; --rule:#d7dace; --rule-strong:#c3c7b8;
+    --accent:#1f5f5b; --accent-soft:#dbe9e6; --alert:#a5402c; --alert-soft:#f3ded7;
+    --warn:#c98a1f; --warn-soft:#f3e9d5; --mismatch:#7a5aa8; --mismatch-soft:#e7defa; }
+
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--page-bg);color:var(--ink);font-family:var(--font-body);line-height:1.6}
+  .wrap{max-width:920px;margin:0 auto;padding:44px 20px 60px;display:flex;flex-direction:column;gap:26px}
+  .eyebrow{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+  h1{font-family:var(--font-display);font-weight:500;font-size:clamp(27px,3.6vw,38px);margin:6px 0 0;line-height:1.2;text-wrap:balance}
+  h2{font-family:var(--font-display);font-weight:500;font-size:clamp(19px,2.2vw,23px);margin:0 0 4px;text-wrap:balance}
+  p{margin:0 0 12px;max-width:74ch}
+  .dek{font-size:15px;color:var(--ink-2);max-width:76ch}
+  a{color:var(--accent)}
+  .block{background:var(--surface);border:1px solid var(--rule);padding:22px 24px}
+  .block-tag{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:6px}
+  .verdict{border-left:3px solid var(--accent);background:var(--accent-soft)}
+  .callout{border-left:3px solid var(--warn);background:var(--warn-soft);padding:16px 20px;font-size:14.5px}
+  .callout.alert{border-left-color:var(--alert);background:var(--alert-soft)}
+  .callout-label{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);display:block;margin-bottom:5px}
+  .hero{display:flex;flex-wrap:wrap;gap:26px;align-items:baseline}
+  .hero .n{font-family:var(--font-display);font-size:clamp(38px,6vw,58px);line-height:1;color:var(--accent)}
+  .hero .n.alt{color:var(--mismatch)}
+  .hero .lab{font-size:13px;color:var(--ink-2);max-width:24ch}
+  .legend{display:flex;gap:18px;flex-wrap:wrap;font-size:12.5px;color:var(--ink-2);margin:2px 0 14px}
+  .swatch{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+  .rows{display:flex;flex-direction:column;gap:13px}
+  .row{display:grid;grid-template-columns:104px 1fr 62px;gap:11px;align-items:center;font-size:13px}
+  .row .nm{text-align:right;color:var(--ink-2)}
+  .row .nm b{color:var(--ink)}
+  .track{display:flex;flex-direction:column;gap:3px}
+  .bar{height:11px;border-radius:0 3px 3px 0;min-width:2px}
+  .bar.fdi{background:var(--accent)}
+  .bar.impl{background:var(--mismatch)}
+  .ratio{font-family:var(--font-mono);font-size:12px;text-align:right;color:var(--ink-2);font-variant-numeric:tabular-nums}
+  .ratio.hot{color:var(--alert);font-weight:600}
+  table{border-collapse:collapse;width:100%;font-size:13.5px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--rule)}
+  th{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-muted);font-weight:400}
+  td.num{text-align:right;font-variant-numeric:tabular-nums;font-family:var(--font-mono);font-size:12.5px}
+  .scroll{overflow-x:auto}
+  blockquote{margin:0 0 12px;padding:10px 16px;border-left:3px solid var(--rule-strong);color:var(--ink-2);font-size:14px}
+  code{font-family:var(--font-mono);font-size:12.5px}
+  .colophon{font-family:var(--font-mono);font-size:11px;color:var(--ink-muted);border-top:1px solid var(--rule);padding-top:14px;line-height:1.75}
+  ul{margin:0 0 12px;padding-left:20px;max-width:74ch}
+  li{margin-bottom:7px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Data note · 21 July 2026</div>
+    <h1>Maharashtra's FDI: stock-market money, or money in the ground?</h1>
+    <p class="dek">Maharashtra books about a third of India's foreign direct investment. A reasonable
+    suspicion is that much of it is foreign money buying Indian shares rather than building Indian
+    factories. The suspicion is half right — but not in the way it is usually framed, and the precise
+    answer turns out to be unobtainable from official data for a reason worth stating plainly.</p>
+  </header>
+
+  <div class="block verdict">
+    <div class="block-tag">The short answer</div>
+    <div class="hero">
+      <div><div class="n">0%</div><div class="lab">of the FDI figure is stock-market money — by definition, not by estimate</div></div>
+      <div><div class="n alt">3.2×</div><div class="lab">more FDI share than implemented-industry share: the real distortion</div></div>
+    </div>
+  </div>
+
+  <section class="block">
+    <h2>Portfolio money is definitionally excluded</h2>
+    <p>RBI's Master Direction on Foreign Investment draws a bright line at <b>10% of post-issue paid-up
+    equity on a fully diluted basis</b>. At or above it, an inflow is FDI. Below it, the identical rupee
+    is Foreign Portfolio Investment and sits in a different account entirely. DPIIT's own factsheet
+    demonstrates the separation on its face: it carries FPI as a distinct column —
+    <i>"Investment by FPI's Foreign Portfolio investor Fund (net)"</i> — sitting <b>outside</b> the Total
+    FDI Inflow column.</p>
+    <p>So sub-10% buying of listed Indian shares never enters Maharashtra's
+    <b>₹8,59,196 crore (USD 107,094 mn)</b>, cumulative October 2019 – March 2026, <b>31.35%</b> of the
+    national total.</p>
+    <div class="callout">
+      <span class="callout-label">Worth noticing</span>
+      The two channels have moved in <b>opposite</b> directions. Maharashtra's FDI kept rising while net
+      FPI equity flows turned sharply negative: <b>+₹2,08,212 cr</b> (FY2023-24) →
+      <b>−₹1,27,041 cr</b> (FY2024-25) → <b>−₹1,80,832 cr</b> (FY2025-26). Foreign portfolio money has
+      been <i>leaving</i> Indian equities over precisely the period Maharashtra's FDI grew.
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>The real distortion is geographic, not portfolio</h2>
+    <p>DPIIT attributes an inflow to the state of the Indian company that <b>receives the remittance</b>,
+    not the site of the project it funds. DPIIT's own phrasing for the Maharashtra deal list is
+    <i>"Remittance-wise – through Indian companies"</i>.</p>
+    <div class="callout alert">
+      <span class="callout-label">Negative finding</span>
+      DPIIT publishes <b>no explicit caveat anywhere</b> stating that state attribution follows the
+      registered or reporting office rather than the project location. The consequence is left entirely
+      implicit in the phrase <i>"reported at Maharashtra state"</i>. This is arguably the single most
+      consequential undocumented assumption in the dataset.
+    </div>
+    <p>DPIIT's own top-five Maharashtra recipients show the artefact plainly:</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>#</th><th>Recipient</th><th>Activity</th><th>Investor</th><th>Amount</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Reliance Retail Ventures</td><td>Storage &amp; warehousing</td><td>Saudi PIF</td><td class="num">₹9,555 cr</td></tr>
+        <tr><td>2</td><td>Reliance Retail Ventures</td><td>Storage &amp; warehousing</td><td>SLP Rainbow, Singapore</td><td class="num">₹8,813 cr</td></tr>
+        <tr><td>3</td><td><b>Ambuja Cements</b></td><td>Clinker &amp; cement manufacture</td><td>Harmonia, Mauritius</td><td class="num">₹8,341 cr</td></tr>
+        <tr><td>4</td><td>Reliance Retail Ventures</td><td>Storage &amp; warehousing</td><td>Qatar Holding</td><td class="num">₹8,278 cr</td></tr>
+        <tr><td>5</td><td><b>HDFC Credila</b></td><td>Other credit granting</td><td>Kopvoorn BV, Netherlands</td><td class="num">₹7,642 cr</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Three of the top four are stakes in a <b>nationwide</b> retail and warehousing group, booked 100%
+    to Maharashtra because the recipient is Mumbai-registered — the warehouses they finance sit in every
+    state. Number three is a cement company whose plants are mostly in Himachal, Gujarat, Rajasthan and
+    Chhattisgarh. Number five is a pure financial transaction with no physical project anywhere.</p>
+  </section>
+
+  <section class="block">
+    <h2>A hypothesis the data killed</h2>
+    <p>Going in, the obvious suspect was a large unallocated bucket quietly absorbing inflows. That was
+    <b>true historically and is now obsolete</b>. In the legacy RBI regional-office series (April–June
+    2019), <i>"Region not indicated"</i> was <b>15.96%</b> of all FDI equity inflow — larger than the
+    entire Mumbai office at 9.60%. In the current state-wise series, <i>"State Not Indicated"</i> is
+    <b>0.01%</b>, and cross-checking the state table's total against DPIIT's annual series
+    (~USD 341.6bn vs ~342.7bn) shows it now captures essentially 100% of national inflow.</p>
+    <p><b>The problem is not missing data. It is complete data assigned to the wrong geography.</b></p>
+  </section>
+
+  <section class="block">
+    <h2>What Maharashtra's FDI is actually in</h2>
+    <p>DPIIT Table 6.3(i), <i>FDI Synopsis on State – Maharashtra</i>, October 2019 – December 2024:</p>
+    <div class="rows" role="img" aria-label="Sector shares of Maharashtra FDI: services 23.26 percent, construction 16.13, computer software and hardware 13.77, trading 5.47, automobiles 4.33 percent">
+      <div class="row"><div class="nm">Services</div><div class="track"><div class="bar fdi" style="width:59.3%"></div></div><div class="ratio">23.26%</div></div>
+      <div class="row"><div class="nm">Construction</div><div class="track"><div class="bar fdi" style="width:41.1%"></div></div><div class="ratio">16.13%</div></div>
+      <div class="row"><div class="nm">Software &amp; hardware</div><div class="track"><div class="bar fdi" style="width:35.1%"></div></div><div class="ratio">13.77%</div></div>
+      <div class="row"><div class="nm">Trading</div><div class="track"><div class="bar fdi" style="width:13.9%"></div></div><div class="ratio">5.47%</div></div>
+      <div class="row"><div class="nm"><b>Automobiles</b></div><div class="track"><div class="bar impl" style="width:11.0%"></div></div><div class="ratio hot">4.33%</div></div>
+    </div>
+    <p style="margin-top:14px"><b>Services, software and trading together are 42.5%, against 4.33% for
+    automobiles</b> — the only unambiguous plant-and-machinery line in the published table. And DPIIT
+    publishes only the top five sectors, so <b>37% of the state's FDI is sectorally unpublished</b>: the
+    true non-plant share is higher than 42.5%, not lower.</p>
+  </section>
+
+  <section class="block">
+    <h2>The finding that actually answers the question</h2>
+    <p>DPIIT's FDI equity inflow <b>explicitly includes the purchase of existing shares</b>. The factsheet
+    says so verbatim, identically, under the country, sector <i>and</i> state tables:</p>
+    <blockquote>"%age worked out in USD terms &amp; FDI inflow received through Government Route +
+    Automatic Route + <b>acquisition of existing shares only</b>."</blockquote>
+    <p>Buying shares from a selling shareholder transfers ownership and creates <b>zero new capital
+    formation</b> — no plant, no job, no machine. DPIIT has booked even a <b>USD 3.1bn pure share swap</b>
+    as equity inflow.</p>
+    <div class="callout alert">
+      <span class="callout-label">The gap</span>
+      DPIIT publishes <b>no greenfield-versus-brownfield split at all</b> — not nationally, not by state.
+      It is therefore <b>impossible from official Indian data</b> to state what fraction of Maharashtra's
+      FDI built anything. That is the honest answer, and it is a gap in the source rather than in the
+      analysis.
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>The cross-check: what the ground says</h2>
+    <p>Where official FDI data is silent, implementation data is not. Setting DPIIT's FDI share against
+    each state's share of industrial investment <b>actually implemented</b> (IEM Part B, five years) gives
+    the best available proxy. Both series are shares of their own national total, so they sit on one
+    scale.</p>
+    <div class="legend">
+      <span><span class="swatch" style="background:var(--accent)"></span>Share of FDI (FY26)</span>
+      <span><span class="swatch" style="background:var(--mismatch)"></span>Share of implemented industrial investment (5yr)</span>
+      <span style="color:var(--ink-muted)">Ratio = FDI share ÷ implementation share</span>
+    </div>
+    <div class="rows">
+      <div class="row"><div class="nm"><b>Maharashtra</b></div><div class="track"><div class="bar fdi" style="width:100%"></div><div class="bar impl" style="width:31%"></div></div><div class="ratio hot">3.2×</div></div>
+      <div class="row"><div class="nm">Karnataka</div><div class="track"><div class="bar fdi" style="width:70%"></div><div class="bar impl" style="width:5.6%"></div></div><div class="ratio hot">12.7×</div></div>
+      <div class="row"><div class="nm">Gujarat</div><div class="track"><div class="bar fdi" style="width:31%"></div><div class="bar impl" style="width:86%"></div></div><div class="ratio">0.4×</div></div>
+      <div class="row"><div class="nm">Tamil Nadu</div><div class="track"><div class="bar fdi" style="width:26%"></div><div class="bar impl" style="width:5.9%"></div></div><div class="ratio">4.4×</div></div>
+      <div class="row"><div class="nm">Andhra Pradesh</div><div class="track"><div class="bar fdi" style="width:3.4%"></div><div class="bar impl" style="width:18%"></div></div><div class="ratio">0.2×</div></div>
+      <div class="row"><div class="nm">Odisha</div><div class="track"><div class="bar fdi" style="width:0.5%"></div><div class="bar impl" style="width:44%"></div></div><div class="ratio">0.03×</div></div>
+    </div>
+    <p style="margin-top:16px"><b>Maharashtra takes 41% of tracked FDI but shows 12.7% of implemented
+    industrial investment</b>, and converts just <b>34.9%</b> of its own stated investment intent into
+    implementation — the weakest of the top four states.</p>
+    <p>Gujarat is the mirror image: 35% of implemented industrial investment on 13% of the FDI. Odisha is
+    the extreme — 18% of implementation on <b>0.2%</b> of FDI, an industrial economy essentially invisible
+    to anyone reading FDI tables. Karnataka's 12.7× is the cleanest proof that this is a registered-office
+    and services effect: Bengaluru's software FDI is real money that is not plant and machinery.</p>
+  </section>
+
+  <section class="block verdict">
+    <h2>Bottom line</h2>
+    <ul>
+      <li><b>Stock-market money: none.</b> FPI is definitionally excluded, and has been flowing out of
+      Indian equities while Maharashtra's FDI rose.</li>
+      <li><b>Money in the ground: far less than the 41% headline.</b> At least 42.5% of the state's FDI is
+      services, software and trading against 4.33% automobiles; the inflow includes pure share purchases
+      that build nothing; and three of the top four deals are nationwide businesses booked to Mumbai on a
+      registered-office technicality.</li>
+      <li><b>The precise number does not exist.</b> No official source splits greenfield from acquisition,
+      so the share can only be bounded, never computed. The implementation cross-check puts Maharashtra's
+      real industrial weight at roughly <b>a third</b> of what its FDI share implies.</li>
+    </ul>
+  </section>
+
+  <section class="block">
+    <h2>Limits</h2>
+    <ul>
+      <li>FDI and FPI can only be compared <b>nationally</b>. No source attributes portfolio investment to
+      states — verified against SEBI's assets-under-custody page.</li>
+      <li>RBI's USD FPI series does not reconcile with NSDL's rupee series: one is all-instrument, the
+      other equity-only. FY2024-25 shows <b>+USD 3,283 mn against −₹1,27,041 cr</b>; the sign flip is
+      entirely debt.</li>
+      <li>Two figures were <b>deliberately not asserted</b>: current FPI assets under custody (NSDL served
+      only archived 2014/2015 months; the live report requires an ASP.NET POST) and UNCTAD's India
+      greenfield value (unctad.org returned HTTP 403). Press figures for both appeared in search and were
+      excluded as unverified.</li>
+      <li>IEM Part B excludes services and sub-threshold projects, so it under-measures exactly the
+      sectors Maharashtra leads in. It is a proxy for <b>industrial</b> weight, not total economic
+      activity.</li>
+      <li>FDI shares in the cross-check are computed across the nine states for which both series are
+      available, so they are shares of that tracked set rather than of all-India.</li>
+    </ul>
+  </section>
+
+  <div class="colophon">
+    Sources — DPIIT Quarterly Fact Sheet on FDI Inflow, April 2000 to March 2026 (Sections D/E/F,
+    Annexure-C) · DPIIT Table No. 6.3(i), FDI Synopsis on State: Maharashtra, as on 31.12.2024 ·
+    DPIIT Table No. 16, RBI regional-office series, April–June 2019 · RBI Master Direction on Foreign
+    Investment in India · NSDL FPI Net Investment Details (financial-year series) · DPIIT Annual Report
+    IEM Part B, state-wise implemented investment.<br>
+    Machine-readable data: <a href="../data/maharashtra_fdi_composition_2026-07-21.json">maharashtra_fdi_composition_2026-07-21.json</a>
+    · <a href="../data/state_iem_implementation_2026-07-19.json">state_iem_implementation_2026-07-19.json</a>.
+    Written version: <a href="../reports/analysis/MAHARASHTRA_FDI.md">MAHARASHTRA_FDI.md</a>.
+    Corrections are displayed, never silent.
+  </div>
+
+</div>
+</body>
+</html>
