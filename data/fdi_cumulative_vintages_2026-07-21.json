@@ -1,0 +1,3798 @@
+{
+ "built": "2026-07-21",
+ "method_note": "Annexure-C of each DPIIT Quarterly Fact Sheet reports CUMULATIVE state-wise FDI equity inflow measured from a fixed start of October 2019 to that factsheet's cut-off. Subtracting consecutive March vintages therefore yields the intervening financial year. All figures are transcribed exactly as printed; INR and USD are each taken from the source and neither is recomputed from the other.",
+ "vintages": [
+  {
+   "cutoff": "March 2021",
+   "doc_title": "QUARTERLY FACT SHEET - FACT SHEET ON FOREIGN DIRECT INVESTMENT (FDI) INFLOW FROM APRIL, 2000 to MARCH, 2021 (Updated up to MARCH, 2021), Annexure-C: STATEMENT ON STATE-WISE FDI EQUITY INFLOWS FROM OCTOBER 2019 TO MARCH 2021",
+   "url": "https://web.archive.org/web/20210917114303if_/https://dpiit.gov.in/sites/default/files/FDI_Factsheet_March%2C21.pdf",
+   "original_url": "https://dpiit.gov.in/sites/default/files/FDI_Factsheet_March,21.pdf",
+   "retrieved_via": "wayback",
+   "grand_total": {
+    "usd_mn": 83516.88,
+    "rs_cr": 614127.61,
+    "printed_label": "Grand Total"
+   },
+   "row_count": 30,
+   "rows": [
+    {
+     "state": "GUJARAT",
+     "usd_mn": 24481.25,
+     "rs_cr": 181794.49
+    },
+    {
+     "state": "MAHARASHTRA",
+     "usd_mn": 23432.35,
+     "rs_cr": 171806.86
+    },
+    {
+     "state": "KARNATAKA",
+     "usd_mn": 11959.05,
+     "rs_cr": 87630.64
+    },
+    {
+     "state": "DELHI",
+     "usd_mn": 9443.83,
+     "rs_cr": 68951.42
+    },
+    {
+     "state": "TAMIL NADU",
+     "usd_mn": 3328.88,
+     "rs_cr": 24438.86
+    },
+    {
+     "state": "JHARKHAND",
+     "usd_mn": 2644.1,
+     "rs_cr": 19200.28
+    },
+    {
+     "state": "HARYANA",
+     "usd_mn": 2422.77,
+     "rs_cr": 17757.49
+    },
+    {
+     "state": "TELANGANA",
+     "usd_mn": 1835.35,
+     "rs_cr": 13482.9
+    },
+    {
+     "state": "PUNJAB",
+     "usd_mn": 741.23,
+     "rs_cr": 5417.36
+    },
+    {
+     "state": "UTTAR PRADESH",
+     "usd_mn": 664.66,
+     "rs_cr": 4861.07
+    },
+    {
+     "state": "WEST BENGAL",
+     "usd_mn": 605.17,
+     "rs_cr": 4478.06
+    },
+    {
+     "state": "RAJASTHAN",
+     "usd_mn": 461.4,
+     "rs_cr": 3362.62
+    },
+    {
+     "state": "ANDHRA PRADESH",
+     "usd_mn": 291.8,
+     "rs_cr": 2114.71
+    },
+    {
+     "state": "MADHYA PRADESH",
+     "usd_mn": 282.29,
+     "rs_cr": 2086.12
+    },
+    {
+     "state": "KERALA",
+     "usd_mn": 269.61,
+     "rs_cr": 1990.31
+    },
+    {
+     "state": "GOA",
+     "usd_mn": 80.77,
+     "rs_cr": 581.09
+    },
+    {
+     "state": "PUDUCHERRY",
+     "usd_mn": 58.66,
+     "rs_cr": 430.86
+    },
+    {
+     "state": "BIHAR",
+     "usd_mn": 50.62,
+     "rs_cr": 372.24
+    },
+    {
+     "state": "ODISHA",
+     "usd_mn": 32.8,
+     "rs_cr": 239.71
+    },
+    {
+     "state": "HIMACHAL PRADESH",
+     "usd_mn": 22.83,
+     "rs_cr": 166.6
+    },
+    {
+     "state": "UTTARAKHAND",
+     "usd_mn": 20.0,
+     "rs_cr": 144.3
+    },
+    {
+     "state": "ASSAM",
+     "usd_mn": 14.12,
+     "rs_cr": 104.28
+    },
+    {
+     "state": "CHANDIGARH",
+     "usd_mn": 13.61,
+     "rs_cr": 100.7
+    },
+    {
+     "state": "DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+     "usd_mn": 7.97,
+     "rs_cr": 58.71
+    },
+    {
+     "state": "ARUNACHAL PRADESH",
+     "usd_mn": 5.55,
+     "rs_cr": 40.95
+    },
+    {
+     "state": "TRIPURA",
+     "usd_mn": 0.43,
+     "rs_cr": 3.24
+    },
+    {
+     "state": "JAMMU AND KASHMIR",
+     "usd_mn": 0.21,
+     "rs_cr": 1.57
+    },
+    {
+     "state": "LADAKH",
+     "usd_mn": 0.03,
+     "rs_cr": 0.2
+    },
+    {
+     "state": "CHHATTISGARH",
+     "usd_mn": 0.03,
+     "rs_cr": 0.2
+    },
+    {
+     "state": "STATE NOT INDICATED",
+     "usd_mn": 345.49,
+     "rs_cr": 2509.79
+    }
+   ]
+  },
+  {
+   "cutoff": "March 2022",
+   "doc_title": "QUARTERLY FACT SHEET - FDI INFLOW FROM APRIL, 2000 to MARCH, 2022 (Updated up to MARCH, 2022), Annexure-C: STATEMENT ON STATE-WISE FDI EQUITY INFLOW FROM OCTOBER 2019 TO MARCH 2022",
+   "url": "https://web.archive.org/web/20220702145020if_/https://dpiit.gov.in/sites/default/files/FDI_Factsheet_March_2022_23May2022.pdf",
+   "original_url": "https://dpiit.gov.in/sites/default/files/FDI_Factsheet_March_2022_23May2022.pdf",
+   "retrieved_via": "wayback",
+   "grand_total": {
+    "usd_mn": 142290.15,
+    "rs_cr": 1051315.6901,
+    "printed_label": "Gross-Total"
+   },
+   "row_count": 32,
+   "rows": [
+    {
+     "state": "MAHARASHTRA",
+     "usd_mn": 39164.67,
+     "rs_cr": 288905.4868
+    },
+    {
+     "state": "KARNATAKA",
+     "usd_mn": 34031.41,
+     "rs_cr": 251428.5313
+    },
+    {
+     "state": "GUJARAT",
+     "usd_mn": 27187.09,
+     "rs_cr": 201966.1993
+    },
+    {
+     "state": "DELHI",
+     "usd_mn": 17658.89,
+     "rs_cr": 129974.3905
+    },
+    {
+     "state": "TAMIL NADU",
+     "usd_mn": 6332.69,
+     "rs_cr": 46839.78
+    },
+    {
+     "state": "HARYANA",
+     "usd_mn": 5222.42,
+     "rs_cr": 38736.93
+    },
+    {
+     "state": "TELANGANA",
+     "usd_mn": 3442.24,
+     "rs_cr": 25447.17
+    },
+    {
+     "state": "JHARKHAND",
+     "usd_mn": 2650.53,
+     "rs_cr": 19248.22
+    },
+    {
+     "state": "RAJASTHAN",
+     "usd_mn": 1168.49,
+     "rs_cr": 8639.54
+    },
+    {
+     "state": "WEST BENGAL",
+     "usd_mn": 1033.9,
+     "rs_cr": 7679.73
+    },
+    {
+     "state": "UTTAR PRADESH",
+     "usd_mn": 881.6338,
+     "rs_cr": 6480.57
+    },
+    {
+     "state": "PUNJAB",
+     "usd_mn": 868.2391,
+     "rs_cr": 6366.09
+    },
+    {
+     "state": "KERALA",
+     "usd_mn": 617.4461,
+     "rs_cr": 4587.81
+    },
+    {
+     "state": "ANDHRA PRADESH",
+     "usd_mn": 516.7685,
+     "rs_cr": 3796.32
+    },
+    {
+     "state": "MADHYA PRADESH",
+     "usd_mn": 490.8522,
+     "rs_cr": 3646.45
+    },
+    {
+     "state": "BIHAR",
+     "usd_mn": 167.0941,
+     "rs_cr": 1249.53
+    },
+    {
+     "state": "HIMACHAL PRADESH",
+     "usd_mn": 160.8217,
+     "rs_cr": 1197.3
+    },
+    {
+     "state": "DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+     "usd_mn": 150.0393,
+     "rs_cr": 1102.07
+    },
+    {
+     "state": "ODISHA",
+     "usd_mn": 128.1306,
+     "rs_cr": 949.9984
+    },
+    {
+     "state": "UTTARAKHAND",
+     "usd_mn": 123.9908,
+     "rs_cr": 919.1377
+    },
+    {
+     "state": "GOA",
+     "usd_mn": 118.386,
+     "rs_cr": 861.7832
+    },
+    {
+     "state": "CHANDIGARH",
+     "usd_mn": 64.9885,
+     "rs_cr": 486.3829
+    },
+    {
+     "state": "PUDUCHERRY",
+     "usd_mn": 58.8547,
+     "rs_cr": 432.3334
+    },
+    {
+     "state": "ASSAM",
+     "usd_mn": 18.5256,
+     "rs_cr": 137.0375
+    },
+    {
+     "state": "ARUNACHAL PRADESH",
+     "usd_mn": 5.5549,
+     "rs_cr": 40.9465
+    },
+    {
+     "state": "MEGHALAYA",
+     "usd_mn": 1.0965,
+     "rs_cr": 8.1684
+    },
+    {
+     "state": "CHHATTISGARH",
+     "usd_mn": 1.0107,
+     "rs_cr": 7.5354
+    },
+    {
+     "state": "TRIPURA",
+     "usd_mn": 0.5622,
+     "rs_cr": 4.2041
+    },
+    {
+     "state": "JAMMU AND KASHMIR",
+     "usd_mn": 0.355,
+     "rs_cr": 2.6749
+    },
+    {
+     "state": "LADAKH",
+     "usd_mn": 0.1626,
+     "rs_cr": 1.199
+    },
+    {
+     "state": "NAGALAND",
+     "usd_mn": 0.0139,
+     "rs_cr": 0.105
+    },
+    {
+     "state": "STATE NOT INDICATED",
+     "usd_mn": 23.28,
+     "rs_cr": 172.0638
+    }
+   ]
+  },
+  {
+   "cutoff": "March 2023",
+   "doc_title": "QUARTERLY FACT SHEET - FDI INFLOW FROM APRIL, 2000 to MARCH, 2023 (Updated up to March, 2023), Annexure-C: STATEMENT ON STATE-WISE FDI EQUITY INFLOW FROM OCTOBER 2019 TO MARCH 2023",
+   "url": "https://www.dpiit.gov.in/static/uploads/2025/07/3436ce7ec9204891e54d8cb9f99349ec.pdf",
+   "original_url": "https://dpiit.gov.in/sites/default/files/FDI_Factsheet_March_23.pdf",
+   "retrieved_via": "direct",
+   "grand_total": {
+    "usd_mn": 188324.19,
+    "rs_cr": 1418750.5523,
+    "printed_label": "Gross-Total"
+   },
+   "row_count": 33,
+   "rows": [
+    {
+     "state": "MAHARASHTRA",
+     "usd_mn": 53971.06,
+     "rs_cr": 407327.9772
+    },
+    {
+     "state": "KARNATAKA",
+     "usd_mn": 44460.79,
+     "rs_cr": 335056.8698
+    },
+    {
+     "state": "GUJARAT",
+     "usd_mn": 31900.96,
+     "rs_cr": 239024.8569
+    },
+    {
+     "state": "DELHI",
+     "usd_mn": 25193.04,
+     "rs_cr": 190093.3121
+    },
+    {
+     "state": "TAMIL NADU",
+     "usd_mn": 8501.65,
+     "rs_cr": 64086.28
+    },
+    {
+     "state": "HARYANA",
+     "usd_mn": 7821.99,
+     "rs_cr": 59472.38
+    },
+    {
+     "state": "TELANGANA",
+     "usd_mn": 4744.82,
+     "rs_cr": 35766.09
+    },
+    {
+     "state": "JHARKHAND",
+     "usd_mn": 2656.15,
+     "rs_cr": 19291.84
+    },
+    {
+     "state": "RAJASTHAN",
+     "usd_mn": 2078.3,
+     "rs_cr": 15857.62
+    },
+    {
+     "state": "WEST BENGAL",
+     "usd_mn": 1428.18,
+     "rs_cr": 10897.13
+    },
+    {
+     "state": "UTTAR PRADESH",
+     "usd_mn": 1301.36,
+     "rs_cr": 9853.29
+    },
+    {
+     "state": "PUNJAB",
+     "usd_mn": 961.7937,
+     "rs_cr": 7127.79
+    },
+    {
+     "state": "ANDHRA PRADESH",
+     "usd_mn": 796.0039,
+     "rs_cr": 6048.45
+    },
+    {
+     "state": "KERALA",
+     "usd_mn": 781.9843,
+     "rs_cr": 5918.5
+    },
+    {
+     "state": "MADHYA PRADESH",
+     "usd_mn": 529.8968,
+     "rs_cr": 3955.83
+    },
+    {
+     "state": "BIHAR",
+     "usd_mn": 214.4672,
+     "rs_cr": 1638.72
+    },
+    {
+     "state": "HIMACHAL PRADESH",
+     "usd_mn": 194.8629,
+     "rs_cr": 1469.65
+    },
+    {
+     "state": "DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+     "usd_mn": 167.6054,
+     "rs_cr": 1246.53
+    },
+    {
+     "state": "ODISHA",
+     "usd_mn": 159.7611,
+     "rs_cr": 1204.22
+    },
+    {
+     "state": "GOA",
+     "usd_mn": 130.1172,
+     "rs_cr": 957.7029
+    },
+    {
+     "state": "UTTARAKHAND",
+     "usd_mn": 126.8716,
+     "rs_cr": 941.1891
+    },
+    {
+     "state": "CHANDIGARH",
+     "usd_mn": 78.4473,
+     "rs_cr": 595.7774
+    },
+    {
+     "state": "PUDUCHERRY",
+     "usd_mn": 63.295,
+     "rs_cr": 467.1157
+    },
+    {
+     "state": "ASSAM",
+     "usd_mn": 20.6206,
+     "rs_cr": 153.4917
+    },
+    {
+     "state": "ARUNACHAL PRADESH",
+     "usd_mn": 5.5549,
+     "rs_cr": 40.9465
+    },
+    {
+     "state": "CHHATTISGARH",
+     "usd_mn": 3.3844,
+     "rs_cr": 26.873
+    },
+    {
+     "state": "MEGHALAYA",
+     "usd_mn": 1.0965,
+     "rs_cr": 8.1684
+    },
+    {
+     "state": "JAMMU AND KASHMIR",
+     "usd_mn": 1.0727,
+     "rs_cr": 8.2955
+    },
+    {
+     "state": "TRIPURA",
+     "usd_mn": 0.5622,
+     "rs_cr": 4.2041
+    },
+    {
+     "state": "LADAKH",
+     "usd_mn": 0.2242,
+     "rs_cr": 1.699
+    },
+    {
+     "state": "NAGALAND",
+     "usd_mn": 0.0139,
+     "rs_cr": 0.105
+    },
+    {
+     "state": "MANIPUR",
+     "usd_mn": 0.0006,
+     "rs_cr": 0.005
+    },
+    {
+     "state": "STATE NOT INDICATED",
+     "usd_mn": 28.2662,
+     "rs_cr": 207.6392
+    }
+   ]
+  },
+  {
+   "cutoff": "March 2024",
+   "doc_title": "QUARTERLY FACT SHEET - FDI INFLOW FROM APRIL, 2000 to MARCH, 2024 (Updated up to March, 2024), Annexure-C: STATE-WISE FDI EQUITY INFLOW FROM OCTOBER 2019 TO MARCH 2024",
+   "url": "https://www.dpiit.gov.in/static/uploads/2025/07/1df2ce4f29d47ddd9643f8ca594edeb2.pdf",
+   "original_url": "https://dpiit.gov.in/sites/default/files/FDI_Factsheet_March_2024.pdf",
+   "retrieved_via": "direct",
+   "grand_total": {
+    "usd_mn": 232747.55,
+    "rs_cr": 1786649.19,
+    "printed_label": "Gross-Total"
+   },
+   "row_count": 33,
+   "rows": [
+    {
+     "state": "MAHARASHTRA",
+     "usd_mn": 69086.6,
+     "rs_cr": 532428.74
+    },
+    {
+     "state": "KARNATAKA",
+     "usd_mn": 51031.41,
+     "rs_cr": 389483.39
+    },
+    {
+     "state": "GUJARAT",
+     "usd_mn": 39201.41,
+     "rs_cr": 299624.37
+    },
+    {
+     "state": "DELHI",
+     "usd_mn": 31716.47,
+     "rs_cr": 244073.36
+    },
+    {
+     "state": "TAMIL NADU",
+     "usd_mn": 10937.98,
+     "rs_cr": 84243.09
+    },
+    {
+     "state": "HARYANA",
+     "usd_mn": 9729.78,
+     "rs_cr": 75269.59
+    },
+    {
+     "state": "TELANGANA",
+     "usd_mn": 7773.89,
+     "rs_cr": 60860.43
+    },
+    {
+     "state": "JHARKHAND",
+     "usd_mn": 2667.1,
+     "rs_cr": 19382.14
+    },
+    {
+     "state": "RAJASTHAN",
+     "usd_mn": 2343.73,
+     "rs_cr": 18052.36
+    },
+    {
+     "state": "UTTAR PRADESH",
+     "usd_mn": 1634.97,
+     "rs_cr": 12615.44
+    },
+    {
+     "state": "WEST BENGAL",
+     "usd_mn": 1609.67,
+     "rs_cr": 12398.46
+    },
+    {
+     "state": "PUNJAB",
+     "usd_mn": 1141.87,
+     "rs_cr": 8618.03
+    },
+    {
+     "state": "KERALA",
+     "usd_mn": 978.69,
+     "rs_cr": 7551.92
+    },
+    {
+     "state": "ANDHRA PRADESH",
+     "usd_mn": 888.13,
+     "rs_cr": 6808.2
+    },
+    {
+     "state": "MADHYA PRADESH",
+     "usd_mn": 553.49,
+     "rs_cr": 4151.09
+    },
+    {
+     "state": "HIMACHAL PRADESH",
+     "usd_mn": 250.41,
+     "rs_cr": 1926.54
+    },
+    {
+     "state": "BIHAR",
+     "usd_mn": 214.63,
+     "rs_cr": 1640.04
+    },
+    {
+     "state": "UTTARAKHAND",
+     "usd_mn": 187.0,
+     "rs_cr": 1436.07
+    },
+    {
+     "state": "DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+     "usd_mn": 176.84,
+     "rs_cr": 1322.94
+    },
+    {
+     "state": "ODISHA",
+     "usd_mn": 168.55,
+     "rs_cr": 1276.82
+    },
+    {
+     "state": "GOA",
+     "usd_mn": 165.21,
+     "rs_cr": 1248.09
+    },
+    {
+     "state": "CHANDIGARH",
+     "usd_mn": 109.33,
+     "rs_cr": 852.06
+    },
+    {
+     "state": "PUDUCHERRY",
+     "usd_mn": 68.05,
+     "rs_cr": 506.65
+    },
+    {
+     "state": "CHHATTISGARH",
+     "usd_mn": 53.88,
+     "rs_cr": 446.12
+    },
+    {
+     "state": "ASSAM",
+     "usd_mn": 20.85,
+     "rs_cr": 155.41
+    },
+    {
+     "state": "ARUNACHAL PRADESH",
+     "usd_mn": 5.55,
+     "rs_cr": 40.95
+    },
+    {
+     "state": "MEGHALAYA",
+     "usd_mn": 1.1,
+     "rs_cr": 8.19
+    },
+    {
+     "state": "JAMMU AND KASHMIR",
+     "usd_mn": 1.08,
+     "rs_cr": 8.32
+    },
+    {
+     "state": "TRIPURA",
+     "usd_mn": 0.75,
+     "rs_cr": 5.78
+    },
+    {
+     "state": "LADAKH",
+     "usd_mn": 0.22,
+     "rs_cr": 1.7
+    },
+    {
+     "state": "NAGALAND",
+     "usd_mn": 0.01,
+     "rs_cr": 0.1
+    },
+    {
+     "state": "MANIPUR",
+     "usd_mn": 0.0006,
+     "rs_cr": 0.005
+    },
+    {
+     "state": "STATE NOT INDICATED",
+     "usd_mn": 28.89,
+     "rs_cr": 212.81
+    }
+   ]
+  },
+  {
+   "cutoff": "March 2025",
+   "doc_title": "QUARTERLY FACT SHEET - FDI INFLOW FROM APRIL, 2000 to MARCH, 2025 (Updated up to March, 2025), Annexure-C: STATE-WISE FDI EQUITY INFLOW FROM OCTOBER 2019 TO MARCH 2025",
+   "url": "https://www.dpiit.gov.in/static/uploads/2025/07/03ad41d0e0c3deb434e0520f5dda6df3.pdf",
+   "original_url": "https://dpiit.gov.in/sites/default/files/FDI%20Factsheet%20March_2025.pdf",
+   "retrieved_via": "direct",
+   "grand_total": {
+    "usd_mn": 282765.45,
+    "rs_cr": 2208578.02,
+    "printed_label": "Gross-Total"
+   },
+   "row_count": 33,
+   "rows": [
+    {
+     "state": "MAHARASHTRA",
+     "usd_mn": 88675.52,
+     "rs_cr": 697303.95
+    },
+    {
+     "state": "KARNATAKA",
+     "usd_mn": 57649.98,
+     "rs_cr": 445513.36
+    },
+    {
+     "state": "GUJARAT",
+     "usd_mn": 44912.44,
+     "rs_cr": 347571.6
+    },
+    {
+     "state": "DELHI",
+     "usd_mn": 37807.3,
+     "rs_cr": 295613.48
+    },
+    {
+     "state": "TAMIL NADU",
+     "usd_mn": 14619.34,
+     "rs_cr": 115345.8
+    },
+    {
+     "state": "HARYANA",
+     "usd_mn": 12877.13,
+     "rs_cr": 101869.21
+    },
+    {
+     "state": "TELANGANA",
+     "usd_mn": 10768.04,
+     "rs_cr": 86211.27
+    },
+    {
+     "state": "RAJASTHAN",
+     "usd_mn": 2718.21,
+     "rs_cr": 21222.35
+    },
+    {
+     "state": "JHARKHAND",
+     "usd_mn": 2674.15,
+     "rs_cr": 19443.21
+    },
+    {
+     "state": "UTTAR PRADESH",
+     "usd_mn": 2070.8,
+     "rs_cr": 16315.55
+    },
+    {
+     "state": "WEST BENGAL",
+     "usd_mn": 1908.05,
+     "rs_cr": 14932.58
+    },
+    {
+     "state": "KERALA",
+     "usd_mn": 1375.19,
+     "rs_cr": 10882.19
+    },
+    {
+     "state": "PUNJAB",
+     "usd_mn": 1231.72,
+     "rs_cr": 9376.63
+    },
+    {
+     "state": "ANDHRA PRADESH",
+     "usd_mn": 1121.27,
+     "rs_cr": 8765.24
+    },
+    {
+     "state": "MADHYA PRADESH",
+     "usd_mn": 613.1,
+     "rs_cr": 4653.22
+    },
+    {
+     "state": "HIMACHAL PRADESH",
+     "usd_mn": 362.97,
+     "rs_cr": 2882.27
+    },
+    {
+     "state": "UTTARAKHAND",
+     "usd_mn": 221.84,
+     "rs_cr": 1728.91
+    },
+    {
+     "state": "BIHAR",
+     "usd_mn": 215.82,
+     "rs_cr": 1650.05
+    },
+    {
+     "state": "GOA",
+     "usd_mn": 196.79,
+     "rs_cr": 1517.75
+    },
+    {
+     "state": "DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+     "usd_mn": 179.29,
+     "rs_cr": 1343.44
+    },
+    {
+     "state": "ODISHA",
+     "usd_mn": 173.21,
+     "rs_cr": 1315.84
+    },
+    {
+     "state": "CHHATTISGARH",
+     "usd_mn": 135.15,
+     "rs_cr": 1138.27
+    },
+    {
+     "state": "CHANDIGARH",
+     "usd_mn": 114.44,
+     "rs_cr": 895.91
+    },
+    {
+     "state": "PUDUCHERRY",
+     "usd_mn": 75.98,
+     "rs_cr": 574.86
+    },
+    {
+     "state": "ASSAM",
+     "usd_mn": 23.73,
+     "rs_cr": 179.67
+    },
+    {
+     "state": "ARUNACHAL PRADESH",
+     "usd_mn": 7.03,
+     "rs_cr": 53.25
+    },
+    {
+     "state": "JAMMU AND KASHMIR",
+     "usd_mn": 1.33,
+     "rs_cr": 10.43
+    },
+    {
+     "state": "TRIPURA",
+     "usd_mn": 1.23,
+     "rs_cr": 9.75
+    },
+    {
+     "state": "MEGHALAYA",
+     "usd_mn": 1.2,
+     "rs_cr": 9.08
+    },
+    {
+     "state": "LADAKH",
+     "usd_mn": 0.22,
+     "rs_cr": 1.7
+    },
+    {
+     "state": "NAGALAND",
+     "usd_mn": 0.06,
+     "rs_cr": 0.51
+    },
+    {
+     "state": "MANIPUR",
+     "usd_mn": 0.0006,
+     "rs_cr": 0.01
+    },
+    {
+     "state": "STATE NOT INDICATED",
+     "usd_mn": 32.93,
+     "rs_cr": 246.69
+    }
+   ]
+  },
+  {
+   "cutoff": "March 2026",
+   "doc_title": "QUARTERLY FACT SHEET - FACT SHEET ON FOREIGN DIRECT INVESTMENT (FDI) INFLOW FROM APRIL, 2000 to March, 2026 (Updated up to March, 2026), Annexure-C: STATE-WISE FDI EQUITY INFLOW FROM OCTOBER 2019 TO March 2026",
+   "url": "https://www.dpiit.gov.in/static/uploads/2026/06/41192ca92c1de34eb064800fbffa0379.pdf",
+   "original_url": "https://www.dpiit.gov.in/static/uploads/2026/06/41192ca92c1de34eb064800fbffa0379.pdf",
+   "retrieved_via": "direct",
+   "grand_total": {
+    "usd_mn": 341611.72,
+    "rs_cr": 2725513.87,
+    "printed_label": "Gross-Total"
+   },
+   "row_count": 34,
+   "rows": [
+    {
+     "state": "MAHARASHTRA",
+     "usd_mn": 107094.0,
+     "rs_cr": 859196.43
+    },
+    {
+     "state": "KARNATAKA",
+     "usd_mn": 70588.64,
+     "rs_cr": 558383.24
+    },
+    {
+     "state": "GUJARAT",
+     "usd_mn": 50625.77,
+     "rs_cr": 398236.48
+    },
+    {
+     "state": "DELHI",
+     "usd_mn": 43989.39,
+     "rs_cr": 350493.29
+    },
+    {
+     "state": "TAMIL NADU",
+     "usd_mn": 19343.31,
+     "rs_cr": 156543.77
+    },
+    {
+     "state": "HARYANA",
+     "usd_mn": 17403.21,
+     "rs_cr": 141401.6
+    },
+    {
+     "state": "TELANGANA",
+     "usd_mn": 13020.89,
+     "rs_cr": 106141.56
+    },
+    {
+     "state": "RAJASTHAN",
+     "usd_mn": 3726.78,
+     "rs_cr": 30034.74
+    },
+    {
+     "state": "UTTAR PRADESH",
+     "usd_mn": 3020.48,
+     "rs_cr": 24707.61
+    },
+    {
+     "state": "JHARKHAND",
+     "usd_mn": 2677.93,
+     "rs_cr": 19476.05
+    },
+    {
+     "state": "WEST BENGAL",
+     "usd_mn": 2137.03,
+     "rs_cr": 16949.75
+    },
+    {
+     "state": "KERALA",
+     "usd_mn": 1752.68,
+     "rs_cr": 14163.4
+    },
+    {
+     "state": "ANDHRA PRADESH",
+     "usd_mn": 1729.86,
+     "rs_cr": 14119.64
+    },
+    {
+     "state": "PUNJAB",
+     "usd_mn": 1598.34,
+     "rs_cr": 12596.25
+    },
+    {
+     "state": "MADHYA PRADESH",
+     "usd_mn": 692.98,
+     "rs_cr": 5361.28
+    },
+    {
+     "state": "HIMACHAL PRADESH",
+     "usd_mn": 418.7,
+     "rs_cr": 3360.13
+    },
+    {
+     "state": "ODISHA",
+     "usd_mn": 257.19,
+     "rs_cr": 2054.88
+    },
+    {
+     "state": "CHANDIGARH",
+     "usd_mn": 250.95,
+     "rs_cr": 2147.23
+    },
+    {
+     "state": "UTTARAKHAND",
+     "usd_mn": 242.16,
+     "rs_cr": 1906.92
+    },
+    {
+     "state": "GOA",
+     "usd_mn": 230.87,
+     "rs_cr": 1824.86
+    },
+    {
+     "state": "CHHATTISGARH",
+     "usd_mn": 220.87,
+     "rs_cr": 1877.68
+    },
+    {
+     "state": "BIHAR",
+     "usd_mn": 218.01,
+     "rs_cr": 1669.72
+    },
+    {
+     "state": "DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+     "usd_mn": 181.29,
+     "rs_cr": 1360.44
+    },
+    {
+     "state": "PUDUCHERRY",
+     "usd_mn": 77.31,
+     "rs_cr": 587.0
+    },
+    {
+     "state": "JAMMU AND KASHMIR",
+     "usd_mn": 43.92,
+     "rs_cr": 394.89
+    },
+    {
+     "state": "ASSAM",
+     "usd_mn": 26.1,
+     "rs_cr": 200.62
+    },
+    {
+     "state": "ARUNACHAL PRADESH",
+     "usd_mn": 7.03,
+     "rs_cr": 53.25
+    },
+    {
+     "state": "TRIPURA",
+     "usd_mn": 1.45,
+     "rs_cr": 11.72
+    },
+    {
+     "state": "MEGHALAYA",
+     "usd_mn": 1.2,
+     "rs_cr": 9.08
+    },
+    {
+     "state": "LADAKH",
+     "usd_mn": 0.22,
+     "rs_cr": 1.7
+    },
+    {
+     "state": "MANIPUR",
+     "usd_mn": 0.11,
+     "rs_cr": 1.01
+    },
+    {
+     "state": "NAGALAND",
+     "usd_mn": 0.06,
+     "rs_cr": 0.52
+    },
+    {
+     "state": "MIZORAM",
+     "usd_mn": 0.05,
+     "rs_cr": 0.44
+    },
+    {
+     "state": "STATE NOT INDICATED",
+     "usd_mn": 32.93,
+     "rs_cr": 246.69
+    }
+   ]
+  }
+ ],
+ "derived_annual": [
+  {
+   "state": "ANDHRA PRADESH",
+   "period": "FY2021-22",
+   "usd_mn_diff": 224.9685,
+   "rs_cr_diff": 1681.61,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "ARUNACHAL PRADESH",
+   "period": "FY2021-22",
+   "usd_mn_diff": 0.0049,
+   "rs_cr_diff": -0.0035,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "ASSAM",
+   "period": "FY2021-22",
+   "usd_mn_diff": 4.4056,
+   "rs_cr_diff": 32.7575,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "BIHAR",
+   "period": "FY2021-22",
+   "usd_mn_diff": 116.4741,
+   "rs_cr_diff": 877.29,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "CHANDIGARH",
+   "period": "FY2021-22",
+   "usd_mn_diff": 51.3785,
+   "rs_cr_diff": 385.6829,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "CHHATTISGARH",
+   "period": "FY2021-22",
+   "usd_mn_diff": 0.9807,
+   "rs_cr_diff": 7.3354,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+   "period": "FY2021-22",
+   "usd_mn_diff": 142.0693,
+   "rs_cr_diff": 1043.36,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "DELHI",
+   "period": "FY2021-22",
+   "usd_mn_diff": 8215.06,
+   "rs_cr_diff": 61022.9705,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "GOA",
+   "period": "FY2021-22",
+   "usd_mn_diff": 37.616,
+   "rs_cr_diff": 280.6932,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "GUJARAT",
+   "period": "FY2021-22",
+   "usd_mn_diff": 2705.84,
+   "rs_cr_diff": 20171.7093,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "HARYANA",
+   "period": "FY2021-22",
+   "usd_mn_diff": 2799.65,
+   "rs_cr_diff": 20979.44,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "HIMACHAL PRADESH",
+   "period": "FY2021-22",
+   "usd_mn_diff": 137.9917,
+   "rs_cr_diff": 1030.7,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "JAMMU AND KASHMIR",
+   "period": "FY2021-22",
+   "usd_mn_diff": 0.145,
+   "rs_cr_diff": 1.1049,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "JHARKHAND",
+   "period": "FY2021-22",
+   "usd_mn_diff": 6.43,
+   "rs_cr_diff": 47.94,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "KARNATAKA",
+   "period": "FY2021-22",
+   "usd_mn_diff": 22072.36,
+   "rs_cr_diff": 163797.8913,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "KERALA",
+   "period": "FY2021-22",
+   "usd_mn_diff": 347.8361,
+   "rs_cr_diff": 2597.5,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "LADAKH",
+   "period": "FY2021-22",
+   "usd_mn_diff": 0.1326,
+   "rs_cr_diff": 0.999,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "MADHYA PRADESH",
+   "period": "FY2021-22",
+   "usd_mn_diff": 208.5622,
+   "rs_cr_diff": 1560.33,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "MAHARASHTRA",
+   "period": "FY2021-22",
+   "usd_mn_diff": 15732.32,
+   "rs_cr_diff": 117098.6268,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "MEGHALAYA",
+   "period": "FY2021-22",
+   "usd_mn_diff": 1.0965,
+   "rs_cr_diff": 8.1684,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ],
+   "note": "state first appears in March 2022; treated as zero in March 2021"
+  },
+  {
+   "state": "NAGALAND",
+   "period": "FY2021-22",
+   "usd_mn_diff": 0.0139,
+   "rs_cr_diff": 0.105,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ],
+   "note": "state first appears in March 2022; treated as zero in March 2021"
+  },
+  {
+   "state": "ODISHA",
+   "period": "FY2021-22",
+   "usd_mn_diff": 95.3306,
+   "rs_cr_diff": 710.2884,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "PUDUCHERRY",
+   "period": "FY2021-22",
+   "usd_mn_diff": 0.1947,
+   "rs_cr_diff": 1.4734,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "PUNJAB",
+   "period": "FY2021-22",
+   "usd_mn_diff": 127.0091,
+   "rs_cr_diff": 948.73,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "RAJASTHAN",
+   "period": "FY2021-22",
+   "usd_mn_diff": 707.09,
+   "rs_cr_diff": 5276.92,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "STATE NOT INDICATED",
+   "period": "FY2021-22",
+   "usd_mn_diff": -322.21,
+   "rs_cr_diff": -2337.7262,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "TAMIL NADU",
+   "period": "FY2021-22",
+   "usd_mn_diff": 3003.81,
+   "rs_cr_diff": 22400.92,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "TELANGANA",
+   "period": "FY2021-22",
+   "usd_mn_diff": 1606.89,
+   "rs_cr_diff": 11964.27,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "TRIPURA",
+   "period": "FY2021-22",
+   "usd_mn_diff": 0.1322,
+   "rs_cr_diff": 0.9641,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "UTTAR PRADESH",
+   "period": "FY2021-22",
+   "usd_mn_diff": 216.9738,
+   "rs_cr_diff": 1619.5,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "UTTARAKHAND",
+   "period": "FY2021-22",
+   "usd_mn_diff": 103.9908,
+   "rs_cr_diff": 774.8377,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "WEST BENGAL",
+   "period": "FY2021-22",
+   "usd_mn_diff": 428.73,
+   "rs_cr_diff": 3201.67,
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ]
+  },
+  {
+   "state": "ANDHRA PRADESH",
+   "period": "FY2022-23",
+   "usd_mn_diff": 279.2354,
+   "rs_cr_diff": 2252.13,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "ARUNACHAL PRADESH",
+   "period": "FY2022-23",
+   "usd_mn_diff": 0.0,
+   "rs_cr_diff": 0.0,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "ASSAM",
+   "period": "FY2022-23",
+   "usd_mn_diff": 2.095,
+   "rs_cr_diff": 16.4542,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "BIHAR",
+   "period": "FY2022-23",
+   "usd_mn_diff": 47.3731,
+   "rs_cr_diff": 389.19,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "CHANDIGARH",
+   "period": "FY2022-23",
+   "usd_mn_diff": 13.4588,
+   "rs_cr_diff": 109.3945,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "CHHATTISGARH",
+   "period": "FY2022-23",
+   "usd_mn_diff": 2.3737,
+   "rs_cr_diff": 19.3376,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+   "period": "FY2022-23",
+   "usd_mn_diff": 17.5661,
+   "rs_cr_diff": 144.46,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "DELHI",
+   "period": "FY2022-23",
+   "usd_mn_diff": 7534.15,
+   "rs_cr_diff": 60118.9216,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "GOA",
+   "period": "FY2022-23",
+   "usd_mn_diff": 11.7312,
+   "rs_cr_diff": 95.9197,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "GUJARAT",
+   "period": "FY2022-23",
+   "usd_mn_diff": 4713.87,
+   "rs_cr_diff": 37058.6576,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "HARYANA",
+   "period": "FY2022-23",
+   "usd_mn_diff": 2599.57,
+   "rs_cr_diff": 20735.45,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "HIMACHAL PRADESH",
+   "period": "FY2022-23",
+   "usd_mn_diff": 34.0412,
+   "rs_cr_diff": 272.35,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "JAMMU AND KASHMIR",
+   "period": "FY2022-23",
+   "usd_mn_diff": 0.7177,
+   "rs_cr_diff": 5.6206,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "JHARKHAND",
+   "period": "FY2022-23",
+   "usd_mn_diff": 5.62,
+   "rs_cr_diff": 43.62,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "KARNATAKA",
+   "period": "FY2022-23",
+   "usd_mn_diff": 10429.38,
+   "rs_cr_diff": 83628.3385,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "KERALA",
+   "period": "FY2022-23",
+   "usd_mn_diff": 164.5382,
+   "rs_cr_diff": 1330.69,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "LADAKH",
+   "period": "FY2022-23",
+   "usd_mn_diff": 0.0616,
+   "rs_cr_diff": 0.5,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "MADHYA PRADESH",
+   "period": "FY2022-23",
+   "usd_mn_diff": 39.0446,
+   "rs_cr_diff": 309.38,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "MAHARASHTRA",
+   "period": "FY2022-23",
+   "usd_mn_diff": 14806.39,
+   "rs_cr_diff": 118422.4904,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "MANIPUR",
+   "period": "FY2022-23",
+   "usd_mn_diff": 0.0006,
+   "rs_cr_diff": 0.005,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ],
+   "note": "state first appears in March 2023; treated as zero in March 2022"
+  },
+  {
+   "state": "MEGHALAYA",
+   "period": "FY2022-23",
+   "usd_mn_diff": 0.0,
+   "rs_cr_diff": 0.0,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "NAGALAND",
+   "period": "FY2022-23",
+   "usd_mn_diff": 0.0,
+   "rs_cr_diff": 0.0,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "ODISHA",
+   "period": "FY2022-23",
+   "usd_mn_diff": 31.6305,
+   "rs_cr_diff": 254.2216,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "PUDUCHERRY",
+   "period": "FY2022-23",
+   "usd_mn_diff": 4.4403,
+   "rs_cr_diff": 34.7823,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "PUNJAB",
+   "period": "FY2022-23",
+   "usd_mn_diff": 93.5546,
+   "rs_cr_diff": 761.7,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "RAJASTHAN",
+   "period": "FY2022-23",
+   "usd_mn_diff": 909.81,
+   "rs_cr_diff": 7218.08,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "STATE NOT INDICATED",
+   "period": "FY2022-23",
+   "usd_mn_diff": 4.9862,
+   "rs_cr_diff": 35.5754,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "TAMIL NADU",
+   "period": "FY2022-23",
+   "usd_mn_diff": 2168.96,
+   "rs_cr_diff": 17246.5,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "TELANGANA",
+   "period": "FY2022-23",
+   "usd_mn_diff": 1302.58,
+   "rs_cr_diff": 10318.92,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "TRIPURA",
+   "period": "FY2022-23",
+   "usd_mn_diff": 0.0,
+   "rs_cr_diff": 0.0,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "UTTAR PRADESH",
+   "period": "FY2022-23",
+   "usd_mn_diff": 419.7262,
+   "rs_cr_diff": 3372.72,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "UTTARAKHAND",
+   "period": "FY2022-23",
+   "usd_mn_diff": 2.8808,
+   "rs_cr_diff": 22.0514,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "WEST BENGAL",
+   "period": "FY2022-23",
+   "usd_mn_diff": 394.28,
+   "rs_cr_diff": 3217.4,
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ]
+  },
+  {
+   "state": "ANDHRA PRADESH",
+   "period": "FY2023-24",
+   "usd_mn_diff": 92.1261,
+   "rs_cr_diff": 759.75,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "ARUNACHAL PRADESH",
+   "period": "FY2023-24",
+   "usd_mn_diff": -0.0049,
+   "rs_cr_diff": 0.0035,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "ASSAM",
+   "period": "FY2023-24",
+   "usd_mn_diff": 0.2294,
+   "rs_cr_diff": 1.9183,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "BIHAR",
+   "period": "FY2023-24",
+   "usd_mn_diff": 0.1628,
+   "rs_cr_diff": 1.32,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "CHANDIGARH",
+   "period": "FY2023-24",
+   "usd_mn_diff": 30.8827,
+   "rs_cr_diff": 256.2826,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "CHHATTISGARH",
+   "period": "FY2023-24",
+   "usd_mn_diff": 50.4956,
+   "rs_cr_diff": 419.247,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+   "period": "FY2023-24",
+   "usd_mn_diff": 9.2346,
+   "rs_cr_diff": 76.41,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "DELHI",
+   "period": "FY2023-24",
+   "usd_mn_diff": 6523.43,
+   "rs_cr_diff": 53980.0479,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "GOA",
+   "period": "FY2023-24",
+   "usd_mn_diff": 35.0928,
+   "rs_cr_diff": 290.3871,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "GUJARAT",
+   "period": "FY2023-24",
+   "usd_mn_diff": 7300.45,
+   "rs_cr_diff": 60599.5131,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "HARYANA",
+   "period": "FY2023-24",
+   "usd_mn_diff": 1907.79,
+   "rs_cr_diff": 15797.21,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "HIMACHAL PRADESH",
+   "period": "FY2023-24",
+   "usd_mn_diff": 55.5471,
+   "rs_cr_diff": 456.89,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "JAMMU AND KASHMIR",
+   "period": "FY2023-24",
+   "usd_mn_diff": 0.0073,
+   "rs_cr_diff": 0.0245,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "JHARKHAND",
+   "period": "FY2023-24",
+   "usd_mn_diff": 10.95,
+   "rs_cr_diff": 90.3,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "KARNATAKA",
+   "period": "FY2023-24",
+   "usd_mn_diff": 6570.62,
+   "rs_cr_diff": 54426.5202,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "KERALA",
+   "period": "FY2023-24",
+   "usd_mn_diff": 196.7057,
+   "rs_cr_diff": 1633.42,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "LADAKH",
+   "period": "FY2023-24",
+   "usd_mn_diff": -0.0042,
+   "rs_cr_diff": 0.001,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "MADHYA PRADESH",
+   "period": "FY2023-24",
+   "usd_mn_diff": 23.5932,
+   "rs_cr_diff": 195.26,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "MAHARASHTRA",
+   "period": "FY2023-24",
+   "usd_mn_diff": 15115.54,
+   "rs_cr_diff": 125100.7628,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "MANIPUR",
+   "period": "FY2023-24",
+   "usd_mn_diff": 0.0,
+   "rs_cr_diff": 0.0,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "MEGHALAYA",
+   "period": "FY2023-24",
+   "usd_mn_diff": 0.0035,
+   "rs_cr_diff": 0.0216,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "NAGALAND",
+   "period": "FY2023-24",
+   "usd_mn_diff": -0.0039,
+   "rs_cr_diff": -0.005,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "ODISHA",
+   "period": "FY2023-24",
+   "usd_mn_diff": 8.7889,
+   "rs_cr_diff": 72.6,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "PUDUCHERRY",
+   "period": "FY2023-24",
+   "usd_mn_diff": 4.755,
+   "rs_cr_diff": 39.5343,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "PUNJAB",
+   "period": "FY2023-24",
+   "usd_mn_diff": 180.0763,
+   "rs_cr_diff": 1490.24,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "RAJASTHAN",
+   "period": "FY2023-24",
+   "usd_mn_diff": 265.43,
+   "rs_cr_diff": 2194.74,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "STATE NOT INDICATED",
+   "period": "FY2023-24",
+   "usd_mn_diff": 0.6238,
+   "rs_cr_diff": 5.1708,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "TAMIL NADU",
+   "period": "FY2023-24",
+   "usd_mn_diff": 2436.33,
+   "rs_cr_diff": 20156.81,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "TELANGANA",
+   "period": "FY2023-24",
+   "usd_mn_diff": 3029.07,
+   "rs_cr_diff": 25094.34,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "TRIPURA",
+   "period": "FY2023-24",
+   "usd_mn_diff": 0.1878,
+   "rs_cr_diff": 1.5759,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "UTTAR PRADESH",
+   "period": "FY2023-24",
+   "usd_mn_diff": 333.61,
+   "rs_cr_diff": 2762.15,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "UTTARAKHAND",
+   "period": "FY2023-24",
+   "usd_mn_diff": 60.1284,
+   "rs_cr_diff": 494.8809,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "WEST BENGAL",
+   "period": "FY2023-24",
+   "usd_mn_diff": 181.49,
+   "rs_cr_diff": 1501.33,
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ]
+  },
+  {
+   "state": "ANDHRA PRADESH",
+   "period": "FY2024-25",
+   "usd_mn_diff": 233.14,
+   "rs_cr_diff": 1957.04,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "ARUNACHAL PRADESH",
+   "period": "FY2024-25",
+   "usd_mn_diff": 1.48,
+   "rs_cr_diff": 12.3,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "ASSAM",
+   "period": "FY2024-25",
+   "usd_mn_diff": 2.88,
+   "rs_cr_diff": 24.26,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "BIHAR",
+   "period": "FY2024-25",
+   "usd_mn_diff": 1.19,
+   "rs_cr_diff": 10.01,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "CHANDIGARH",
+   "period": "FY2024-25",
+   "usd_mn_diff": 5.11,
+   "rs_cr_diff": 43.85,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "CHHATTISGARH",
+   "period": "FY2024-25",
+   "usd_mn_diff": 81.27,
+   "rs_cr_diff": 692.15,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+   "period": "FY2024-25",
+   "usd_mn_diff": 2.45,
+   "rs_cr_diff": 20.5,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "DELHI",
+   "period": "FY2024-25",
+   "usd_mn_diff": 6090.83,
+   "rs_cr_diff": 51540.12,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "GOA",
+   "period": "FY2024-25",
+   "usd_mn_diff": 31.58,
+   "rs_cr_diff": 269.66,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "GUJARAT",
+   "period": "FY2024-25",
+   "usd_mn_diff": 5711.03,
+   "rs_cr_diff": 47947.23,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "HARYANA",
+   "period": "FY2024-25",
+   "usd_mn_diff": 3147.35,
+   "rs_cr_diff": 26599.62,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "HIMACHAL PRADESH",
+   "period": "FY2024-25",
+   "usd_mn_diff": 112.56,
+   "rs_cr_diff": 955.73,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "JAMMU AND KASHMIR",
+   "period": "FY2024-25",
+   "usd_mn_diff": 0.25,
+   "rs_cr_diff": 2.11,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "JHARKHAND",
+   "period": "FY2024-25",
+   "usd_mn_diff": 7.05,
+   "rs_cr_diff": 61.07,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "KARNATAKA",
+   "period": "FY2024-25",
+   "usd_mn_diff": 6618.57,
+   "rs_cr_diff": 56029.97,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "KERALA",
+   "period": "FY2024-25",
+   "usd_mn_diff": 396.5,
+   "rs_cr_diff": 3330.27,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "LADAKH",
+   "period": "FY2024-25",
+   "usd_mn_diff": 0.0,
+   "rs_cr_diff": 0.0,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "MADHYA PRADESH",
+   "period": "FY2024-25",
+   "usd_mn_diff": 59.61,
+   "rs_cr_diff": 502.13,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "MAHARASHTRA",
+   "period": "FY2024-25",
+   "usd_mn_diff": 19588.92,
+   "rs_cr_diff": 164875.21,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "MANIPUR",
+   "period": "FY2024-25",
+   "usd_mn_diff": 0.0,
+   "rs_cr_diff": 0.005,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "MEGHALAYA",
+   "period": "FY2024-25",
+   "usd_mn_diff": 0.1,
+   "rs_cr_diff": 0.89,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "NAGALAND",
+   "period": "FY2024-25",
+   "usd_mn_diff": 0.05,
+   "rs_cr_diff": 0.41,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "ODISHA",
+   "period": "FY2024-25",
+   "usd_mn_diff": 4.66,
+   "rs_cr_diff": 39.02,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "PUDUCHERRY",
+   "period": "FY2024-25",
+   "usd_mn_diff": 7.93,
+   "rs_cr_diff": 68.21,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "PUNJAB",
+   "period": "FY2024-25",
+   "usd_mn_diff": 89.85,
+   "rs_cr_diff": 758.6,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "RAJASTHAN",
+   "period": "FY2024-25",
+   "usd_mn_diff": 374.48,
+   "rs_cr_diff": 3169.99,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "STATE NOT INDICATED",
+   "period": "FY2024-25",
+   "usd_mn_diff": 4.04,
+   "rs_cr_diff": 33.88,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "TAMIL NADU",
+   "period": "FY2024-25",
+   "usd_mn_diff": 3681.36,
+   "rs_cr_diff": 31102.71,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "TELANGANA",
+   "period": "FY2024-25",
+   "usd_mn_diff": 2994.15,
+   "rs_cr_diff": 25350.84,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "TRIPURA",
+   "period": "FY2024-25",
+   "usd_mn_diff": 0.48,
+   "rs_cr_diff": 3.97,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "UTTAR PRADESH",
+   "period": "FY2024-25",
+   "usd_mn_diff": 435.83,
+   "rs_cr_diff": 3700.11,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "UTTARAKHAND",
+   "period": "FY2024-25",
+   "usd_mn_diff": 34.84,
+   "rs_cr_diff": 292.84,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "WEST BENGAL",
+   "period": "FY2024-25",
+   "usd_mn_diff": 298.38,
+   "rs_cr_diff": 2534.12,
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ]
+  },
+  {
+   "state": "ANDHRA PRADESH",
+   "period": "FY2025-26",
+   "usd_mn_diff": 608.59,
+   "rs_cr_diff": 5354.4,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "ARUNACHAL PRADESH",
+   "period": "FY2025-26",
+   "usd_mn_diff": 0.0,
+   "rs_cr_diff": 0.0,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "ASSAM",
+   "period": "FY2025-26",
+   "usd_mn_diff": 2.37,
+   "rs_cr_diff": 20.95,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "BIHAR",
+   "period": "FY2025-26",
+   "usd_mn_diff": 2.19,
+   "rs_cr_diff": 19.67,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "CHANDIGARH",
+   "period": "FY2025-26",
+   "usd_mn_diff": 136.51,
+   "rs_cr_diff": 1251.32,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "CHHATTISGARH",
+   "period": "FY2025-26",
+   "usd_mn_diff": 85.72,
+   "rs_cr_diff": 739.41,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+   "period": "FY2025-26",
+   "usd_mn_diff": 2.0,
+   "rs_cr_diff": 17.0,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "DELHI",
+   "period": "FY2025-26",
+   "usd_mn_diff": 6182.09,
+   "rs_cr_diff": 54879.81,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "GOA",
+   "period": "FY2025-26",
+   "usd_mn_diff": 34.08,
+   "rs_cr_diff": 307.11,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "GUJARAT",
+   "period": "FY2025-26",
+   "usd_mn_diff": 5713.33,
+   "rs_cr_diff": 50664.88,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "HARYANA",
+   "period": "FY2025-26",
+   "usd_mn_diff": 4526.08,
+   "rs_cr_diff": 39532.39,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "HIMACHAL PRADESH",
+   "period": "FY2025-26",
+   "usd_mn_diff": 55.73,
+   "rs_cr_diff": 477.86,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "JAMMU AND KASHMIR",
+   "period": "FY2025-26",
+   "usd_mn_diff": 42.59,
+   "rs_cr_diff": 384.46,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "JHARKHAND",
+   "period": "FY2025-26",
+   "usd_mn_diff": 3.78,
+   "rs_cr_diff": 32.84,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "KARNATAKA",
+   "period": "FY2025-26",
+   "usd_mn_diff": 12938.66,
+   "rs_cr_diff": 112869.88,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "KERALA",
+   "period": "FY2025-26",
+   "usd_mn_diff": 377.49,
+   "rs_cr_diff": 3281.21,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "LADAKH",
+   "period": "FY2025-26",
+   "usd_mn_diff": 0.0,
+   "rs_cr_diff": 0.0,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "MADHYA PRADESH",
+   "period": "FY2025-26",
+   "usd_mn_diff": 79.88,
+   "rs_cr_diff": 708.06,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "MAHARASHTRA",
+   "period": "FY2025-26",
+   "usd_mn_diff": 18418.48,
+   "rs_cr_diff": 161892.48,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "MANIPUR",
+   "period": "FY2025-26",
+   "usd_mn_diff": 0.1094,
+   "rs_cr_diff": 1.0,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "MEGHALAYA",
+   "period": "FY2025-26",
+   "usd_mn_diff": 0.0,
+   "rs_cr_diff": 0.0,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "MIZORAM",
+   "period": "FY2025-26",
+   "usd_mn_diff": 0.05,
+   "rs_cr_diff": 0.44,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ],
+   "note": "state first appears in March 2026; treated as zero in March 2025"
+  },
+  {
+   "state": "NAGALAND",
+   "period": "FY2025-26",
+   "usd_mn_diff": 0.0,
+   "rs_cr_diff": 0.01,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "ODISHA",
+   "period": "FY2025-26",
+   "usd_mn_diff": 83.98,
+   "rs_cr_diff": 739.04,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "PUDUCHERRY",
+   "period": "FY2025-26",
+   "usd_mn_diff": 1.33,
+   "rs_cr_diff": 12.14,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "PUNJAB",
+   "period": "FY2025-26",
+   "usd_mn_diff": 366.62,
+   "rs_cr_diff": 3219.62,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "RAJASTHAN",
+   "period": "FY2025-26",
+   "usd_mn_diff": 1008.57,
+   "rs_cr_diff": 8812.39,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "STATE NOT INDICATED",
+   "period": "FY2025-26",
+   "usd_mn_diff": 0.0,
+   "rs_cr_diff": 0.0,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "TAMIL NADU",
+   "period": "FY2025-26",
+   "usd_mn_diff": 4723.97,
+   "rs_cr_diff": 41197.97,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "TELANGANA",
+   "period": "FY2025-26",
+   "usd_mn_diff": 2252.85,
+   "rs_cr_diff": 19930.29,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "TRIPURA",
+   "period": "FY2025-26",
+   "usd_mn_diff": 0.22,
+   "rs_cr_diff": 1.97,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "UTTAR PRADESH",
+   "period": "FY2025-26",
+   "usd_mn_diff": 949.68,
+   "rs_cr_diff": 8392.06,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "UTTARAKHAND",
+   "period": "FY2025-26",
+   "usd_mn_diff": 20.32,
+   "rs_cr_diff": 178.01,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  },
+  {
+   "state": "WEST BENGAL",
+   "period": "FY2025-26",
+   "usd_mn_diff": 228.98,
+   "rs_cr_diff": 2017.17,
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ]
+  }
+ ],
+ "negative_differences": [
+  {
+   "state": "ARUNACHAL PRADESH",
+   "period": "FY2021-22",
+   "usd_mn_diff": 0.0049,
+   "rs_cr_diff": -0.0035,
+   "material": false,
+   "note": "sub-0.01 sign flip from a change in printed decimal precision between vintages (4dp in March 2023 vs 2dp in March 2024); NOT a restatement"
+  },
+  {
+   "state": "STATE NOT INDICATED",
+   "period": "FY2021-22",
+   "usd_mn_diff": -322.21,
+   "rs_cr_diff": -2337.7262,
+   "material": true,
+   "note": "cumulative fell -> prior-year restatement"
+  },
+  {
+   "state": "ARUNACHAL PRADESH",
+   "period": "FY2023-24",
+   "usd_mn_diff": -0.0049,
+   "rs_cr_diff": 0.0035,
+   "material": false,
+   "note": "sub-0.01 sign flip from a change in printed decimal precision between vintages (4dp in March 2023 vs 2dp in March 2024); NOT a restatement"
+  },
+  {
+   "state": "LADAKH",
+   "period": "FY2023-24",
+   "usd_mn_diff": -0.0042,
+   "rs_cr_diff": 0.001,
+   "material": false,
+   "note": "sub-0.01 sign flip from a change in printed decimal precision between vintages (4dp in March 2023 vs 2dp in March 2024); NOT a restatement"
+  },
+  {
+   "state": "NAGALAND",
+   "period": "FY2023-24",
+   "usd_mn_diff": -0.0039,
+   "rs_cr_diff": -0.005,
+   "material": false,
+   "note": "sub-0.01 sign flip from a change in printed decimal precision between vintages (4dp in March 2023 vs 2dp in March 2024); NOT a restatement"
+  }
+ ],
+ "validation_vs_q328": [
+  {
+   "state": "MAHARASHTRA",
+   "period": "FY2021-22",
+   "derived_usd_mn": 15732.32,
+   "published_usd_mn": 15439,
+   "gap_usd_mn": 293.32,
+   "gap_pct": 1.8999,
+   "derived_rs_cr": 117098.6268,
+   "published_rs_cr": 114964,
+   "gap_rs_cr": 2134.6268,
+   "gap_pct_rs_cr": 1.8568,
+   "match": false
+  },
+  {
+   "state": "MAHARASHTRA",
+   "period": "FY2022-23",
+   "derived_usd_mn": 14806.39,
+   "published_usd_mn": 14806,
+   "gap_usd_mn": 0.39,
+   "gap_pct": 0.0026,
+   "derived_rs_cr": 118422.4904,
+   "published_rs_cr": 118422,
+   "gap_rs_cr": 0.4904,
+   "gap_pct_rs_cr": 0.0004,
+   "match": true
+  },
+  {
+   "state": "MAHARASHTRA",
+   "period": "FY2023-24",
+   "derived_usd_mn": 15115.54,
+   "published_usd_mn": 15116,
+   "gap_usd_mn": -0.46,
+   "gap_pct": -0.003,
+   "derived_rs_cr": 125100.7628,
+   "published_rs_cr": 125101,
+   "gap_rs_cr": -0.2372,
+   "gap_pct_rs_cr": -0.0002,
+   "match": true
+  },
+  {
+   "state": "MAHARASHTRA",
+   "period": "FY2024-25",
+   "derived_usd_mn": 19588.92,
+   "published_usd_mn": 19589,
+   "gap_usd_mn": -0.08,
+   "gap_pct": -0.0004,
+   "derived_rs_cr": 164875.21,
+   "published_rs_cr": 164875,
+   "gap_rs_cr": 0.21,
+   "gap_pct_rs_cr": 0.0001,
+   "match": true
+  },
+  {
+   "state": "MAHARASHTRA",
+   "period": "FY2025-26",
+   "derived_usd_mn": 18418.48,
+   "published_usd_mn": 18418,
+   "gap_usd_mn": 0.48,
+   "gap_pct": 0.0026,
+   "derived_rs_cr": 161892.48,
+   "published_rs_cr": 161892,
+   "gap_rs_cr": 0.48,
+   "gap_pct_rs_cr": 0.0003,
+   "match": true
+  },
+  {
+   "state": "KARNATAKA",
+   "period": "FY2021-22",
+   "derived_usd_mn": 22072.36,
+   "published_usd_mn": 22072,
+   "gap_usd_mn": 0.36,
+   "gap_pct": 0.0016,
+   "derived_rs_cr": 163797.8913,
+   "published_rs_cr": 163795,
+   "gap_rs_cr": 2.8913,
+   "gap_pct_rs_cr": 0.0018,
+   "match": true
+  },
+  {
+   "state": "KARNATAKA",
+   "period": "FY2022-23",
+   "derived_usd_mn": 10429.38,
+   "published_usd_mn": 10429,
+   "gap_usd_mn": 0.38,
+   "gap_pct": 0.0036,
+   "derived_rs_cr": 83628.3385,
+   "published_rs_cr": 83628,
+   "gap_rs_cr": 0.3385,
+   "gap_pct_rs_cr": 0.0004,
+   "match": true
+  },
+  {
+   "state": "KARNATAKA",
+   "period": "FY2023-24",
+   "derived_usd_mn": 6570.62,
+   "published_usd_mn": 6571,
+   "gap_usd_mn": -0.38,
+   "gap_pct": -0.0058,
+   "derived_rs_cr": 54426.5202,
+   "published_rs_cr": 54427,
+   "gap_rs_cr": -0.4798,
+   "gap_pct_rs_cr": -0.0009,
+   "match": true
+  },
+  {
+   "state": "KARNATAKA",
+   "period": "FY2024-25",
+   "derived_usd_mn": 6618.57,
+   "published_usd_mn": 6619,
+   "gap_usd_mn": -0.43,
+   "gap_pct": -0.0065,
+   "derived_rs_cr": 56029.97,
+   "published_rs_cr": 56030,
+   "gap_rs_cr": -0.03,
+   "gap_pct_rs_cr": -0.0001,
+   "match": true
+  },
+  {
+   "state": "KARNATAKA",
+   "period": "FY2025-26",
+   "derived_usd_mn": 12938.66,
+   "published_usd_mn": 12939,
+   "gap_usd_mn": -0.34,
+   "gap_pct": -0.0026,
+   "derived_rs_cr": 112869.88,
+   "published_rs_cr": 112870,
+   "gap_rs_cr": -0.12,
+   "gap_pct_rs_cr": -0.0001,
+   "match": true
+  },
+  {
+   "state": "GUJARAT",
+   "period": "FY2021-22",
+   "derived_usd_mn": 2705.84,
+   "published_usd_mn": 2706,
+   "gap_usd_mn": -0.16,
+   "gap_pct": -0.0059,
+   "derived_rs_cr": 20171.7093,
+   "published_rs_cr": 20169,
+   "gap_rs_cr": 2.7093,
+   "gap_pct_rs_cr": 0.0134,
+   "match": true
+  },
+  {
+   "state": "GUJARAT",
+   "period": "FY2022-23",
+   "derived_usd_mn": 4713.87,
+   "published_usd_mn": 4714,
+   "gap_usd_mn": -0.13,
+   "gap_pct": -0.0028,
+   "derived_rs_cr": 37058.6576,
+   "published_rs_cr": 37059,
+   "gap_rs_cr": -0.3424,
+   "gap_pct_rs_cr": -0.0009,
+   "match": true
+  },
+  {
+   "state": "GUJARAT",
+   "period": "FY2023-24",
+   "derived_usd_mn": 7300.45,
+   "published_usd_mn": 7300,
+   "gap_usd_mn": 0.45,
+   "gap_pct": 0.0062,
+   "derived_rs_cr": 60599.5131,
+   "published_rs_cr": 60600,
+   "gap_rs_cr": -0.4869,
+   "gap_pct_rs_cr": -0.0008,
+   "match": true
+  },
+  {
+   "state": "GUJARAT",
+   "period": "FY2024-25",
+   "derived_usd_mn": 5711.03,
+   "published_usd_mn": 5711,
+   "gap_usd_mn": 0.03,
+   "gap_pct": 0.0005,
+   "derived_rs_cr": 47947.23,
+   "published_rs_cr": 47947,
+   "gap_rs_cr": 0.23,
+   "gap_pct_rs_cr": 0.0005,
+   "match": true
+  },
+  {
+   "state": "GUJARAT",
+   "period": "FY2025-26",
+   "derived_usd_mn": 5713.33,
+   "published_usd_mn": 5713,
+   "gap_usd_mn": 0.33,
+   "gap_pct": 0.0058,
+   "derived_rs_cr": 50664.88,
+   "published_rs_cr": 50665,
+   "gap_rs_cr": -0.12,
+   "gap_pct_rs_cr": -0.0002,
+   "match": true
+  },
+  {
+   "state": "DELHI",
+   "period": "FY2021-22",
+   "derived_usd_mn": 8215.06,
+   "published_usd_mn": 8189,
+   "gap_usd_mn": 26.06,
+   "gap_pct": 0.3182,
+   "derived_rs_cr": 61022.9705,
+   "published_rs_cr": 60839,
+   "gap_rs_cr": 183.9705,
+   "gap_pct_rs_cr": 0.3024,
+   "match": false
+  },
+  {
+   "state": "DELHI",
+   "period": "FY2022-23",
+   "derived_usd_mn": 7534.15,
+   "published_usd_mn": 7534,
+   "gap_usd_mn": 0.15,
+   "gap_pct": 0.002,
+   "derived_rs_cr": 60118.9216,
+   "published_rs_cr": 60119,
+   "gap_rs_cr": -0.0784,
+   "gap_pct_rs_cr": -0.0001,
+   "match": true
+  },
+  {
+   "state": "DELHI",
+   "period": "FY2023-24",
+   "derived_usd_mn": 6523.43,
+   "published_usd_mn": 6523,
+   "gap_usd_mn": 0.43,
+   "gap_pct": 0.0066,
+   "derived_rs_cr": 53980.0479,
+   "published_rs_cr": 53980,
+   "gap_rs_cr": 0.0479,
+   "gap_pct_rs_cr": 0.0001,
+   "match": true
+  },
+  {
+   "state": "DELHI",
+   "period": "FY2024-25",
+   "derived_usd_mn": 6090.83,
+   "published_usd_mn": 6091,
+   "gap_usd_mn": -0.17,
+   "gap_pct": -0.0028,
+   "derived_rs_cr": 51540.12,
+   "published_rs_cr": 51540,
+   "gap_rs_cr": 0.12,
+   "gap_pct_rs_cr": 0.0002,
+   "match": true
+  },
+  {
+   "state": "DELHI",
+   "period": "FY2025-26",
+   "derived_usd_mn": 6182.09,
+   "published_usd_mn": 6182,
+   "gap_usd_mn": 0.09,
+   "gap_pct": 0.0015,
+   "derived_rs_cr": 54879.81,
+   "published_rs_cr": 54880,
+   "gap_rs_cr": -0.19,
+   "gap_pct_rs_cr": -0.0003,
+   "match": true
+  },
+  {
+   "state": "TAMIL NADU",
+   "period": "FY2021-22",
+   "derived_usd_mn": 3003.81,
+   "published_usd_mn": 3003,
+   "gap_usd_mn": 0.81,
+   "gap_pct": 0.027,
+   "derived_rs_cr": 22400.92,
+   "published_rs_cr": 22396,
+   "gap_rs_cr": 4.92,
+   "gap_pct_rs_cr": 0.022,
+   "match": true
+  },
+  {
+   "state": "TAMIL NADU",
+   "period": "FY2022-23",
+   "derived_usd_mn": 2168.96,
+   "published_usd_mn": 2169,
+   "gap_usd_mn": -0.04,
+   "gap_pct": -0.0018,
+   "derived_rs_cr": 17246.5,
+   "published_rs_cr": 17247,
+   "gap_rs_cr": -0.5,
+   "gap_pct_rs_cr": -0.0029,
+   "match": true
+  },
+  {
+   "state": "TAMIL NADU",
+   "period": "FY2023-24",
+   "derived_usd_mn": 2436.33,
+   "published_usd_mn": 2436,
+   "gap_usd_mn": 0.33,
+   "gap_pct": 0.0135,
+   "derived_rs_cr": 20156.81,
+   "published_rs_cr": 20157,
+   "gap_rs_cr": -0.19,
+   "gap_pct_rs_cr": -0.0009,
+   "match": true
+  },
+  {
+   "state": "TAMIL NADU",
+   "period": "FY2024-25",
+   "derived_usd_mn": 3681.36,
+   "published_usd_mn": 3681,
+   "gap_usd_mn": 0.36,
+   "gap_pct": 0.0098,
+   "derived_rs_cr": 31102.71,
+   "published_rs_cr": 31103,
+   "gap_rs_cr": -0.29,
+   "gap_pct_rs_cr": -0.0009,
+   "match": true
+  },
+  {
+   "state": "TAMIL NADU",
+   "period": "FY2025-26",
+   "derived_usd_mn": 4723.97,
+   "published_usd_mn": 4724,
+   "gap_usd_mn": -0.03,
+   "gap_pct": -0.0006,
+   "derived_rs_cr": 41197.97,
+   "published_rs_cr": 41198,
+   "gap_rs_cr": -0.03,
+   "gap_pct_rs_cr": -0.0001,
+   "match": true
+  },
+  {
+   "state": "HARYANA",
+   "period": "FY2021-22",
+   "derived_usd_mn": 2799.65,
+   "published_usd_mn": 2798,
+   "gap_usd_mn": 1.65,
+   "gap_pct": 0.059,
+   "derived_rs_cr": 20979.44,
+   "published_rs_cr": 20971,
+   "gap_rs_cr": 8.44,
+   "gap_pct_rs_cr": 0.0402,
+   "match": false
+  },
+  {
+   "state": "HARYANA",
+   "period": "FY2022-23",
+   "derived_usd_mn": 2599.57,
+   "published_usd_mn": 2600,
+   "gap_usd_mn": -0.43,
+   "gap_pct": -0.0165,
+   "derived_rs_cr": 20735.45,
+   "published_rs_cr": 20735,
+   "gap_rs_cr": 0.45,
+   "gap_pct_rs_cr": 0.0022,
+   "match": true
+  },
+  {
+   "state": "HARYANA",
+   "period": "FY2023-24",
+   "derived_usd_mn": 1907.79,
+   "published_usd_mn": 1908,
+   "gap_usd_mn": -0.21,
+   "gap_pct": -0.011,
+   "derived_rs_cr": 15797.21,
+   "published_rs_cr": 15797,
+   "gap_rs_cr": 0.21,
+   "gap_pct_rs_cr": 0.0013,
+   "match": true
+  },
+  {
+   "state": "HARYANA",
+   "period": "FY2024-25",
+   "derived_usd_mn": 3147.35,
+   "published_usd_mn": 3147,
+   "gap_usd_mn": 0.35,
+   "gap_pct": 0.0111,
+   "derived_rs_cr": 26599.62,
+   "published_rs_cr": 26600,
+   "gap_rs_cr": -0.38,
+   "gap_pct_rs_cr": -0.0014,
+   "match": true
+  },
+  {
+   "state": "HARYANA",
+   "period": "FY2025-26",
+   "derived_usd_mn": 4526.08,
+   "published_usd_mn": 4526,
+   "gap_usd_mn": 0.08,
+   "gap_pct": 0.0018,
+   "derived_rs_cr": 39532.39,
+   "published_rs_cr": 39532,
+   "gap_rs_cr": 0.39,
+   "gap_pct_rs_cr": 0.001,
+   "match": true
+  },
+  {
+   "state": "TELANGANA",
+   "period": "FY2021-22",
+   "derived_usd_mn": 1606.89,
+   "published_usd_mn": 1607,
+   "gap_usd_mn": -0.11,
+   "gap_pct": -0.0068,
+   "derived_rs_cr": 11964.27,
+   "published_rs_cr": 11964,
+   "gap_rs_cr": 0.27,
+   "gap_pct_rs_cr": 0.0023,
+   "match": true
+  },
+  {
+   "state": "TELANGANA",
+   "period": "FY2022-23",
+   "derived_usd_mn": 1302.58,
+   "published_usd_mn": 1303,
+   "gap_usd_mn": -0.42,
+   "gap_pct": -0.0322,
+   "derived_rs_cr": 10318.92,
+   "published_rs_cr": 10319,
+   "gap_rs_cr": -0.08,
+   "gap_pct_rs_cr": -0.0008,
+   "match": true
+  },
+  {
+   "state": "TELANGANA",
+   "period": "FY2023-24",
+   "derived_usd_mn": 3029.07,
+   "published_usd_mn": 3029,
+   "gap_usd_mn": 0.07,
+   "gap_pct": 0.0023,
+   "derived_rs_cr": 25094.34,
+   "published_rs_cr": 25094,
+   "gap_rs_cr": 0.34,
+   "gap_pct_rs_cr": 0.0014,
+   "match": true
+  },
+  {
+   "state": "TELANGANA",
+   "period": "FY2024-25",
+   "derived_usd_mn": 2994.15,
+   "published_usd_mn": 2994,
+   "gap_usd_mn": 0.15,
+   "gap_pct": 0.005,
+   "derived_rs_cr": 25350.84,
+   "published_rs_cr": 25351,
+   "gap_rs_cr": -0.16,
+   "gap_pct_rs_cr": -0.0006,
+   "match": true
+  },
+  {
+   "state": "TELANGANA",
+   "period": "FY2025-26",
+   "derived_usd_mn": 2252.85,
+   "published_usd_mn": 2253,
+   "gap_usd_mn": -0.15,
+   "gap_pct": -0.0067,
+   "derived_rs_cr": 19930.29,
+   "published_rs_cr": 19930,
+   "gap_rs_cr": 0.29,
+   "gap_pct_rs_cr": 0.0015,
+   "match": true
+  },
+  {
+   "state": "JHARKHAND",
+   "period": "FY2021-22",
+   "derived_usd_mn": 6.43,
+   "published_usd_mn": 6,
+   "gap_usd_mn": 0.43,
+   "gap_pct": 7.1667,
+   "derived_rs_cr": 47.94,
+   "published_rs_cr": 48,
+   "gap_rs_cr": -0.06,
+   "gap_pct_rs_cr": -0.125,
+   "match": true
+  },
+  {
+   "state": "JHARKHAND",
+   "period": "FY2022-23",
+   "derived_usd_mn": 5.62,
+   "published_usd_mn": 6,
+   "gap_usd_mn": -0.38,
+   "gap_pct": -6.3333,
+   "derived_rs_cr": 43.62,
+   "published_rs_cr": 44,
+   "gap_rs_cr": -0.38,
+   "gap_pct_rs_cr": -0.8636,
+   "match": true
+  },
+  {
+   "state": "JHARKHAND",
+   "period": "FY2023-24",
+   "derived_usd_mn": 10.95,
+   "published_usd_mn": 11,
+   "gap_usd_mn": -0.05,
+   "gap_pct": -0.4545,
+   "derived_rs_cr": 90.3,
+   "published_rs_cr": 90,
+   "gap_rs_cr": 0.3,
+   "gap_pct_rs_cr": 0.3333,
+   "match": true
+  },
+  {
+   "state": "JHARKHAND",
+   "period": "FY2024-25",
+   "derived_usd_mn": 7.05,
+   "published_usd_mn": 7,
+   "gap_usd_mn": 0.05,
+   "gap_pct": 0.7143,
+   "derived_rs_cr": 61.07,
+   "published_rs_cr": 61,
+   "gap_rs_cr": 0.07,
+   "gap_pct_rs_cr": 0.1148,
+   "match": true
+  },
+  {
+   "state": "JHARKHAND",
+   "period": "FY2025-26",
+   "derived_usd_mn": 3.78,
+   "published_usd_mn": 4,
+   "gap_usd_mn": -0.22,
+   "gap_pct": -5.5,
+   "derived_rs_cr": 32.84,
+   "published_rs_cr": 33,
+   "gap_rs_cr": -0.16,
+   "gap_pct_rs_cr": -0.4848,
+   "match": true
+  },
+  {
+   "state": "RAJASTHAN",
+   "period": "FY2021-22",
+   "derived_usd_mn": 707.09,
+   "published_usd_mn": 707,
+   "gap_usd_mn": 0.09,
+   "gap_pct": 0.0127,
+   "derived_rs_cr": 5276.92,
+   "published_rs_cr": 5277,
+   "gap_rs_cr": -0.08,
+   "gap_pct_rs_cr": -0.0015,
+   "match": true
+  },
+  {
+   "state": "RAJASTHAN",
+   "period": "FY2022-23",
+   "derived_usd_mn": 909.81,
+   "published_usd_mn": 910,
+   "gap_usd_mn": -0.19,
+   "gap_pct": -0.0209,
+   "derived_rs_cr": 7218.08,
+   "published_rs_cr": 7218,
+   "gap_rs_cr": 0.08,
+   "gap_pct_rs_cr": 0.0011,
+   "match": true
+  },
+  {
+   "state": "RAJASTHAN",
+   "period": "FY2023-24",
+   "derived_usd_mn": 265.43,
+   "published_usd_mn": 265,
+   "gap_usd_mn": 0.43,
+   "gap_pct": 0.1623,
+   "derived_rs_cr": 2194.74,
+   "published_rs_cr": 2195,
+   "gap_rs_cr": -0.26,
+   "gap_pct_rs_cr": -0.0118,
+   "match": true
+  },
+  {
+   "state": "RAJASTHAN",
+   "period": "FY2024-25",
+   "derived_usd_mn": 374.48,
+   "published_usd_mn": 374,
+   "gap_usd_mn": 0.48,
+   "gap_pct": 0.1283,
+   "derived_rs_cr": 3169.99,
+   "published_rs_cr": 3170,
+   "gap_rs_cr": -0.01,
+   "gap_pct_rs_cr": -0.0003,
+   "match": true
+  },
+  {
+   "state": "RAJASTHAN",
+   "period": "FY2025-26",
+   "derived_usd_mn": 1008.57,
+   "published_usd_mn": 1009,
+   "gap_usd_mn": -0.43,
+   "gap_pct": -0.0426,
+   "derived_rs_cr": 8812.39,
+   "published_rs_cr": 8812,
+   "gap_rs_cr": 0.39,
+   "gap_pct_rs_cr": 0.0044,
+   "match": true
+  },
+  {
+   "state": "WEST BENGAL",
+   "period": "FY2021-22",
+   "derived_usd_mn": 428.73,
+   "published_usd_mn": 428,
+   "gap_usd_mn": 0.73,
+   "gap_pct": 0.1706,
+   "derived_rs_cr": 3201.67,
+   "published_rs_cr": 3195,
+   "gap_rs_cr": 6.67,
+   "gap_pct_rs_cr": 0.2088,
+   "match": true
+  },
+  {
+   "state": "WEST BENGAL",
+   "period": "FY2022-23",
+   "derived_usd_mn": 394.28,
+   "published_usd_mn": 394,
+   "gap_usd_mn": 0.28,
+   "gap_pct": 0.0711,
+   "derived_rs_cr": 3217.4,
+   "published_rs_cr": 3217,
+   "gap_rs_cr": 0.4,
+   "gap_pct_rs_cr": 0.0124,
+   "match": true
+  },
+  {
+   "state": "UTTAR PRADESH",
+   "period": "FY2023-24",
+   "derived_usd_mn": 333.61,
+   "published_usd_mn": 334,
+   "gap_usd_mn": -0.39,
+   "gap_pct": -0.1168,
+   "derived_rs_cr": 2762.15,
+   "published_rs_cr": 2762,
+   "gap_rs_cr": 0.15,
+   "gap_pct_rs_cr": 0.0054,
+   "match": true
+  },
+  {
+   "state": "UTTAR PRADESH",
+   "period": "FY2024-25",
+   "derived_usd_mn": 435.83,
+   "published_usd_mn": 436,
+   "gap_usd_mn": -0.17,
+   "gap_pct": -0.039,
+   "derived_rs_cr": 3700.11,
+   "published_rs_cr": 3700,
+   "gap_rs_cr": 0.11,
+   "gap_pct_rs_cr": 0.003,
+   "match": true
+  },
+  {
+   "state": "UTTAR PRADESH",
+   "period": "FY2025-26",
+   "derived_usd_mn": 949.68,
+   "published_usd_mn": 950,
+   "gap_usd_mn": -0.32,
+   "gap_pct": -0.0337,
+   "derived_rs_cr": 8392.06,
+   "published_rs_cr": 8392,
+   "gap_rs_cr": 0.06,
+   "gap_pct_rs_cr": 0.0007,
+   "match": true
+  }
+ ],
+ "all_india_total_reconciliation": [
+  {
+   "period": "FY2021-22",
+   "from_vintages": [
+    "March 2022",
+    "March 2021"
+   ],
+   "derived_usd_mn": 58773.27,
+   "published_all_india_usd_mn": 58773,
+   "gap_usd_mn": 0.27,
+   "derived_rs_cr": 437188.0801,
+   "published_all_india_rs_cr": null,
+   "gap_rs_cr": null
+  },
+  {
+   "period": "FY2022-23",
+   "from_vintages": [
+    "March 2023",
+    "March 2022"
+   ],
+   "derived_usd_mn": 46034.04,
+   "published_all_india_usd_mn": 46034,
+   "gap_usd_mn": 0.04,
+   "derived_rs_cr": 367434.8622,
+   "published_all_india_rs_cr": null,
+   "gap_rs_cr": null
+  },
+  {
+   "period": "FY2023-24",
+   "from_vintages": [
+    "March 2024",
+    "March 2023"
+   ],
+   "derived_usd_mn": 44423.36,
+   "published_all_india_usd_mn": 44423,
+   "gap_usd_mn": 0.36,
+   "derived_rs_cr": 367898.6377,
+   "published_all_india_rs_cr": 367899,
+   "gap_rs_cr": -0.3623
+  },
+  {
+   "period": "FY2024-25",
+   "from_vintages": [
+    "March 2025",
+    "March 2024"
+   ],
+   "derived_usd_mn": 50017.9,
+   "published_all_india_usd_mn": 50018,
+   "gap_usd_mn": -0.1,
+   "derived_rs_cr": 421928.83,
+   "published_all_india_rs_cr": 421929,
+   "gap_rs_cr": -0.17
+  },
+  {
+   "period": "FY2025-26",
+   "from_vintages": [
+    "March 2026",
+    "March 2025"
+   ],
+   "derived_usd_mn": 58846.27,
+   "published_all_india_usd_mn": 58846,
+   "gap_usd_mn": 0.27,
+   "derived_rs_cr": 516935.85,
+   "published_all_india_rs_cr": 516936,
+   "gap_rs_cr": -0.15
+  }
+ ],
+ "fy2021_22_reclassification": {
+  "period": "FY2021-22",
+  "state_not_indicated_usd_mn_diff": -322.21,
+  "state_not_indicated_rs_cr_diff": -2337.7262,
+  "named_state_excess_usd_mn": 322.57,
+  "named_state_excess_rs_cr": 2338.6273,
+  "contributors": [
+   {
+    "state": "MAHARASHTRA",
+    "gap_usd_mn": 293.32,
+    "gap_rs_cr": 2134.6268
+   },
+   {
+    "state": "DELHI",
+    "gap_usd_mn": 26.06,
+    "gap_rs_cr": 183.9705
+   },
+   {
+    "state": "TAMIL NADU",
+    "gap_usd_mn": 0.81,
+    "gap_rs_cr": 4.92
+   },
+   {
+    "state": "HARYANA",
+    "gap_usd_mn": 1.65,
+    "gap_rs_cr": 8.44
+   },
+   {
+    "state": "WEST BENGAL",
+    "gap_usd_mn": 0.73,
+    "gap_rs_cr": 6.67
+   }
+  ],
+  "residual_usd_mn": -0.36,
+  "finding": "Between the March 2021 and March 2022 Annexure-C vintages, 'State Not Indicated' FELL by 322.21 USD mn (2,337.73 INR crore) - the only materially negative movement anywhere in the panel. Almost exactly that amount reappears as unexplained EXCESS in named states over the same year across five states (Maharashtra +293.32, Delhi +26.06, Haryana +1.65, Tamil Nadu +0.81, West Bengal +0.73 = +322.57 USD mn; +2,338.63 INR crore against the 2,337.73 crore released), leaving a residual of just -0.36 USD mn. DPIIT retrospectively RE-ATTRIBUTED previously unallocated inflow to identified states inside the cumulative Annexure-C, but left the annual Section F columns (and hence Q.328 Annexure-IV A) unrevised. So the differenced FY2021-22 figure is arguably the BETTER one; the published annual column is the stale one. This is the single reason naive differencing disagrees with the published annual panel, and it is confined to FY2021-22."
+ },
+ "published_annual_reference": {
+  "source": "DPIIT Quarterly Fact Sheet Section F 'STATES/UTs ATTRACTING HIGHEST FDI EQUITY INFLOW' across the March 2022 / March 2023 / March 2025 / March 2026 vintages; identical to Lok Sabha 18th, Unstarred Q.328 dated 21.07.2026 (DPIIT, Jitin Prasada), Annexure-IV A, on the values supplied for cross-check (Maharashtra, Gujarat, Karnataka).",
+  "coverage_note": "Section F prints only the top 10 states of each vintage, so the directly-published comparison covers 9 states for all six years, WEST BENGAL for FY2020-21..FY2022-23 only and UTTAR PRADESH for FY2023-24..FY2025-26 only.",
+  "data": {
+   "MAHARASHTRA": {
+    "FY2020-21": [
+     119734,
+     16170
+    ],
+    "FY2021-22": [
+     114964,
+     15439
+    ],
+    "FY2022-23": [
+     118422,
+     14806
+    ],
+    "FY2023-24": [
+     125101,
+     15116
+    ],
+    "FY2024-25": [
+     164875,
+     19589
+    ],
+    "FY2025-26": [
+     161892,
+     18418
+    ]
+   },
+   "KARNATAKA": {
+    "FY2020-21": [
+     56884,
+     7670
+    ],
+    "FY2021-22": [
+     163795,
+     22072
+    ],
+    "FY2022-23": [
+     83628,
+     10429
+    ],
+    "FY2023-24": [
+     54427,
+     6571
+    ],
+    "FY2024-25": [
+     56030,
+     6619
+    ],
+    "FY2025-26": [
+     112870,
+     12939
+    ]
+   },
+   "GUJARAT": {
+    "FY2020-21": [
+     162830,
+     21890
+    ],
+    "FY2021-22": [
+     20169,
+     2706
+    ],
+    "FY2022-23": [
+     37059,
+     4714
+    ],
+    "FY2023-24": [
+     60600,
+     7300
+    ],
+    "FY2024-25": [
+     47947,
+     5711
+    ],
+    "FY2025-26": [
+     50665,
+     5713
+    ]
+   },
+   "DELHI": {
+    "FY2020-21": [
+     40464,
+     5471
+    ],
+    "FY2021-22": [
+     60839,
+     8189
+    ],
+    "FY2022-23": [
+     60119,
+     7534
+    ],
+    "FY2023-24": [
+     53980,
+     6523
+    ],
+    "FY2024-25": [
+     51540,
+     6091
+    ],
+    "FY2025-26": [
+     54880,
+     6182
+    ]
+   },
+   "TAMIL NADU": {
+    "FY2020-21": [
+     17214,
+     2323
+    ],
+    "FY2021-22": [
+     22396,
+     3003
+    ],
+    "FY2022-23": [
+     17247,
+     2169
+    ],
+    "FY2023-24": [
+     20157,
+     2436
+    ],
+    "FY2024-25": [
+     31103,
+     3681
+    ],
+    "FY2025-26": [
+     41198,
+     4724
+    ]
+   },
+   "HARYANA": {
+    "FY2020-21": [
+     12559,
+     1697
+    ],
+    "FY2021-22": [
+     20971,
+     2798
+    ],
+    "FY2022-23": [
+     20735,
+     2600
+    ],
+    "FY2023-24": [
+     15797,
+     1908
+    ],
+    "FY2024-25": [
+     26600,
+     3147
+    ],
+    "FY2025-26": [
+     39532,
+     4526
+    ]
+   },
+   "TELANGANA": {
+    "FY2020-21": [
+     8618,
+     1155
+    ],
+    "FY2021-22": [
+     11964,
+     1607
+    ],
+    "FY2022-23": [
+     10319,
+     1303
+    ],
+    "FY2023-24": [
+     25094,
+     3029
+    ],
+    "FY2024-25": [
+     25351,
+     2994
+    ],
+    "FY2025-26": [
+     19930,
+     2253
+    ]
+   },
+   "JHARKHAND": {
+    "FY2020-21": [
+     5993,
+     792
+    ],
+    "FY2021-22": [
+     48,
+     6
+    ],
+    "FY2022-23": [
+     44,
+     6
+    ],
+    "FY2023-24": [
+     90,
+     11
+    ],
+    "FY2024-25": [
+     61,
+     7
+    ],
+    "FY2025-26": [
+     33,
+     4
+    ]
+   },
+   "RAJASTHAN": {
+    "FY2020-21": [
+     2015,
+     272
+    ],
+    "FY2021-22": [
+     5277,
+     707
+    ],
+    "FY2022-23": [
+     7218,
+     910
+    ],
+    "FY2023-24": [
+     2195,
+     265
+    ],
+    "FY2024-25": [
+     3170,
+     374
+    ],
+    "FY2025-26": [
+     8812,
+     1009
+    ]
+   },
+   "WEST BENGAL": {
+    "FY2020-21": [
+     3118,
+     415
+    ],
+    "FY2021-22": [
+     3195,
+     428
+    ],
+    "FY2022-23": [
+     3217,
+     394
+    ]
+   },
+   "UTTAR PRADESH": {
+    "FY2023-24": [
+     2762,
+     334
+    ],
+    "FY2024-25": [
+     3700,
+     436
+    ],
+    "FY2025-26": [
+     8392,
+     950
+    ]
+   }
+  }
+ },
+ "verdict": "YES - differencing successive Annexure-C cumulatives reproduces DPIIT's directly-published state-wise annual FDI equity figures. 47 of 50 tested state-years match within 1 USD mn, and every one of the 47 matches is exact to the rounding of the published integer. The differenced GROSS TOTALS reconcile to the published all-India FDI equity inflow to within 0.4 USD mn in all five years (FY2025-26: 341,611.72 - 282,765.45 = 58,846.27 vs published 58,846; FY2022-23: 46,034.04 vs 46,034). The method is sound. Three qualifications. (1) FY2020-21 CANNOT be derived: state-wise data begins October 2019, so the March 2021 Annexure-C is an 18-month Oct-2019-to-Mar-2021 stock and no March 2020 vintage was retrievable to subtract; that column must be taken from Section F directly. (2) All three mismatches fall in FY2021-22 (Maharashtra +293.32 USD mn / +1.90%, Delhi +26.06 / +0.32%, Haryana +1.65 / +0.06%) and they share one cause: 'State Not Indicated' FELL by 322.21 USD mn (2,337.73 INR crore) between the March 2021 and March 2022 vintages, and +322.57 of that reappears as excess spread over five named states, of which the three above are the material ones - the reallocation balances to a residual of just -0.36 USD mn. DPIIT retrospectively re-attributed previously unallocated inflow to identified states inside the cumulative table but never revised the annual Section F columns that Q.328 Annexure-IV A reproduces - so for FY2021-22 the DIFFERENCED figure is the more current one and the published annual column is stale. (3) The only other negative differences are three sub-0.01 sign flips (Arunachal Pradesh, Ladakh, Nagaland in FY2023-24) caused by DPIIT dropping from 4 decimal places in the March 2023 table to 2 in March 2024; they are rounding artefacts, not restatements. Aside from the one FY2021-22 reallocation, no state's cumulative ever declines, so naive differencing is safe for FY2022-23 onward. A separate small revision is visible outside Annexure-C: Tamil Nadu's FY2020-21 INR figure moved from 17,208 crore (March 2022 Section F) to 17,214 crore (March 2023 Section F) while its USD figure stayed at 2,323 - prior-year cells are editable. Finally, USD and INR differences agree in sign and rank everywhere but not in magnitude ratio, because each month's INR amount is converted at that month's FEDAI average rate; a USD difference is a rate-weighted quantity and cannot be recovered from the INR difference at any single rate (the implied FY-average rates run ~71.7 in FY2020-21 to ~87.9 in FY2025-26).",
+ "unavailable": [
+  "March 2020 (Oct-2019-to-Mar-2020 Annexure-C) - NOT RETRIEVED. Without it FY2020-21 cannot be obtained by differencing. The December 2019 factsheet (https://www.dpiit.gov.in/static/uploads/2025/07/8ae083d8b2aa9d7e83129babefc66382.pdf, updated up to December 2019) was retrieved but covers only Oct-Dec 2019, a partial year, so it does not close the gap.",
+  "Lok Sabha Unstarred Q.328 dated 21.07.2026 Annexure-IV A was not fetched as a document in this session; validation uses the values supplied in the task brief plus DPIIT's own Section F tables, which reproduce them exactly on every supplied value.",
+  "Non-March intermediate quarters were downloaded and cut-off-identified but not transcribed (December 2019, September 2021, June 2022, September 2022, December 2024, June 2025, December 2025); only the six March cut-offs are needed for annual differencing."
+ ]
+}
