@@ -394,6 +394,18 @@
     "12 new edges added (all SECONDARY): strongest is PM E-DRIVE's stackability with PLI-Auto/PLI-ACC written INTO the scheme terms ('independent of and in addition to'); plus MPMS->ECMS demand-pull, ECMS as horizontal enabler across the 6-scheme electronics stack, AIF's GENERAL convergence clause (any Central/State scheme), AIF+CGTMSE and AHIDF+CGS guarantee layers, EBP GST-cut tax stack, RDI's nested FoF third layer, UP-Semiconductor||ISM per-layer state top-ups, MEIS->RoDTEP lineage, proposed gasification GST-cess reimbursement, and one flagged-for-verification possible ELI->PM-VBRY rename.",
     "Status corrections: ISM 2.0's Rs 1,000cr (PRS layer) clarified as the FY27 operational allocation only -- approved Semicon 2.0 outlay is Rs 1.27 lakh cr (Cabinet 15-Jul-2026), consistent with catalog v1. Spot-checks confirmed: E-DRIVE e-2W to 31-Jul-2026, MPMS Rs 62,500cr, ECMS 22,919->40,000 sequence. RDI first disbursals: no source reports money reaching fund managers yet (nothing later than Nov-2025)."
    ]
+  },
+  {
+   "phase": "51",
+   "title": "Reportage gap audit + EV decks analysed and updated with twin-verified data",
+   "repo": "digital-twin-for-ipa (reportage fixes) + Google Drive / Dropbox (updated decks)",
+   "headline_finding": "Two workstreams closed. (1) REPORTAGE GAP AUDIT vs Drishti IAS, Vision IAS and all 18 PRS Monthly Policy Reviews: pre-audit coverage was ~45-55% of PRS-recorded incentive actions, with a SYSTEMIC cause -- the SQL pre-filter only regex-scanned titles containing 'scheme/incentive/PLI', so announcements already in the register (shipbuilding Rs 69,725cr, PMDDKY, EPM) never reached the keyword map. Fixed with a full-title scan + 42 new scheme families across two passes; 819 -> 3,982 mapped announcements; all 16 audit-event PRIDs verified present; 'PLI (family)' split into 12 sector labels; audit provenance displayed on the page. (2) EV DECKS: both user decks (India_EV_Policy_Market_Gaps 8pp IEA-based; India_EV_Market_Evaluation_FY26 10pp CEEW/Vahan-based) analysed and updated with 6 surgical twin-verified edits -- E-DRIVE claims close 31-Jul-2026 (Rs 10,900cr fund-limited), the in-scheme-terms E-Drive+PLI stackability, SPMEPCI (Jun-2025, 15% CBU duty, portal live) replacing the stale 'SMEC' reference, cell-tech bottleneck sharpened with Beijing export controls + lapsed CATL-Reliance talks, and 'The Ask' reframed from wait-for-incentive to position-now.",
+   "details": [
+    "Audit resolutions of note: SHAKTI regex had to handle the scheme's own 'Koyala' spelling; ECMS one-quarter lag fixed (Cabinet approval PRID 2116172, 28-Mar-2025, now in 2025Q1); NCMM and the Rs 1,500cr recycling incentive and the Rs 7,280cr RE-magnet scheme now three separate labels; calendar-quarter clarification added after the auditor flagged fiscal-quarter ambiguity.",
+    "Process error disclosed: one mis-directed commit landed in the policy repo sweeping two untracked PIB-snapshot debug files under a wrong message; files inspected (harmless public-page HTML, no secrets), removed with an honest correction commit, legitimate PIB-index update retained.",
+    "Deck QA: all 4 changed slides rendered via LibreOffice and inspected (no overflow/collisions); part-level parity verified vs originals (10/10 and 8/8 slides, all media intact; size drop = recompression). Delivered as *_updated_Jul2026.pptx ALONGSIDE originals (non-destructive) -- Policy Gaps to Google Drive, Market Evaluation to Dropbox.",
+    "Sharing attempt: Dropbox MCP connector can read the deck but create_shared_link returns PERMISSION_DENIED (sharing scope not granted); Gmail connector drafts cannot carry attachments; user given the one-click Dropbox-UI route and the connector-reauthorization option. SMTP alert path remains dark (plist keys still absent)."
+   ]
   }
  ],
  "cross_cutting_insights": [
@@ -425,5 +437,5 @@
   "scripts/report_synthesizer.py -- the JSON-to-PDF/Word/PPT tool described in phase 9 above, the newest piece of session infrastructure and the one used to generate this very document.",
   "data/repo_manifest_2026-07-19.json -- machine-readable index of every chart/data pair, consumed both by the README's reference table and by the synthesizer's batch mode."
  ],
- "current_status": "All 50 phases logged across four public repos. The interlinkage graph is now source-verified edge-by-edge: 12 confirmed, 2 resolved, 1 vindicated against the aggregators (NIPU-2026), 1 honestly disputed pending the official PDF, 1 still open (SEZ+PLI), and 12 new edges added -- on top of the operationally-live automation loop."
+ "current_status": "All 51 phases logged. The reportage is now audit-hardened (3,982 announcements, ~50%->near-parity coverage vs PRS/Drishti selection, displayed provenance) and the user's two EV decks carry twin-verified July-2026 facts, QA'd and delivered non-destructively to Drive/Dropbox."
 }
