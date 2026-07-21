@@ -1,0 +1,142 @@
+{
+ "analysis": "national_fdi_and_iem_by_year",
+ "built": "2026-07-22",
+ "fdi_equity_by_financial_year": {
+  "unit": "USD million (and Rs crore where derivable)",
+  "component": "EQUITY only -- the state/sector-allocable part",
+  "note": "Total FDI (equity + reinvested earnings + other capital) runs ~1.4-1.5x these figures. FY2021-22 onward derived by differencing consecutive cumulative Annexure-C vintages, cross-checked exactly against the directly-published annual series (47/50 state-years). FY2020-21 from the published all-India total; the state series starts Oct-2019 so it cannot be differenced.",
+  "rows": [
+   {
+    "fy": "2020-21",
+    "usd_mn": 59636,
+    "rs_cr": null,
+    "basis": "published all-India equity (LS Q.328 total row); not derivable by differencing (state series starts Oct-2019)"
+   },
+   {
+    "fy": "2021-22",
+    "usd_mn": 58773.27,
+    "rs_cr": 437188.08,
+    "basis": "differenced: Annexure-C(March 2022) - Annexure-C(prev)"
+   },
+   {
+    "fy": "2022-23",
+    "usd_mn": 46034.04,
+    "rs_cr": 367434.86,
+    "basis": "differenced: Annexure-C(March 2023) - Annexure-C(prev)"
+   },
+   {
+    "fy": "2023-24",
+    "usd_mn": 44423.36,
+    "rs_cr": 367898.64,
+    "basis": "differenced: Annexure-C(March 2024) - Annexure-C(prev)"
+   },
+   {
+    "fy": "2024-25",
+    "usd_mn": 50017.9,
+    "rs_cr": 421928.83,
+    "basis": "differenced: Annexure-C(March 2025) - Annexure-C(prev)"
+   },
+   {
+    "fy": "2025-26",
+    "usd_mn": 58846.27,
+    "rs_cr": 516935.85,
+    "basis": "differenced: Annexure-C(March 2026) - Annexure-C(prev)"
+   }
+  ]
+ },
+ "iem_by_calendar_year": {
+  "unit": "Rs crore",
+  "part_a": "investment intent FILED",
+  "part_b": "investment IMPLEMENTED",
+  "conversion_note": "B/A is a same-period FLOW ratio, not cohort-matched; >100% is a pipeline effect (Part B draws on earlier-year Part A filings)",
+  "rows": [
+   {
+    "calendar_year": "2017",
+    "part_a_filed_rs_cr": null,
+    "part_a_iems": null,
+    "part_b_implemented_rs_cr": 71396.0,
+    "part_b_iems": 571,
+    "conversion_pct": null,
+    "flag": null
+   },
+   {
+    "calendar_year": "2018",
+    "part_a_filed_rs_cr": 458652.0,
+    "part_a_iems": 2173,
+    "part_b_implemented_rs_cr": 255783.0,
+    "part_b_iems": 1005,
+    "conversion_pct": 55.8,
+    "flag": null
+   },
+   {
+    "calendar_year": "2019",
+    "part_a_filed_rs_cr": 678852.0,
+    "part_a_iems": 2378,
+    "part_b_implemented_rs_cr": null,
+    "part_b_iems": 1229,
+    "conversion_pct": null,
+    "flag": "2019 Part B EXCLUDED -- source defect: AR2022-23 prints Gujarat 2019 at Rs 15,18,861cr (~6x all-India); AR2021-22's 2019 column repeats the IEM count in the investment cell"
+   },
+   {
+    "calendar_year": "2020",
+    "part_a_filed_rs_cr": 414620.0,
+    "part_a_iems": 1432,
+    "part_b_implemented_rs_cr": 233969.0,
+    "part_b_iems": 848,
+    "conversion_pct": 56.4,
+    "flag": null
+   },
+   {
+    "calendar_year": "2021",
+    "part_a_filed_rs_cr": 771428.0,
+    "part_a_iems": 1489,
+    "part_b_implemented_rs_cr": 347978.0,
+    "part_b_iems": 812,
+    "conversion_pct": 45.1,
+    "flag": null
+   },
+   {
+    "calendar_year": "2022",
+    "part_a_filed_rs_cr": 424101.0,
+    "part_a_iems": 1185,
+    "part_b_implemented_rs_cr": 250064.0,
+    "part_b_iems": 916,
+    "conversion_pct": 59.0,
+    "flag": null
+   },
+   {
+    "calendar_year": "2023",
+    "part_a_filed_rs_cr": 510852.0,
+    "part_a_iems": 1267,
+    "part_b_implemented_rs_cr": 276925.0,
+    "part_b_iems": 968,
+    "conversion_pct": 54.2,
+    "flag": null
+   },
+   {
+    "calendar_year": "2024",
+    "part_a_filed_rs_cr": 602082.0,
+    "part_a_iems": 986,
+    "part_b_implemented_rs_cr": 493765.0,
+    "part_b_iems": 1165,
+    "conversion_pct": 82.0,
+    "flag": null
+   },
+   {
+    "calendar_year": "Up to Dec 2025",
+    "part_a_filed_rs_cr": 530416.0,
+    "part_a_iems": 702,
+    "part_b_implemented_rs_cr": 583096.0,
+    "part_b_iems": 998,
+    "conversion_pct": 109.9,
+    "flag": "part-year, revises heavily"
+   }
+  ]
+ },
+ "year_basis_warning": "FDI is FINANCIAL year (Apr-Mar); IEM is CALENDAR year. They are close but NOT coterminous and must not be divided against each other for a precise ratio.",
+ "crossover_2024": "In CY2024, IEM implemented (Rs 493,765cr) exceeded FY2024-25 FDI equity (Rs 421,929cr) -- domestic industrial implementation overtook foreign equity inflow. Rough, given the calendar mismatch and IEM being manufacturing-only.",
+ "sources": {
+  "fdi": "DPIIT Quarterly Fact Sheet Annexure-C vintages Mar-2021..Mar-2026 (Wayback for 2021/2022) + LS Unstarred Q.328 21.07.2026",
+  "iem": "DPIIT Annual Reports 2021-22..2025-26, Appendix III (Part A) + Appendix V (Part B)"
+ }
+}
