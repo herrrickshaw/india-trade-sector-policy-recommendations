@@ -1,0 +1,30 @@
+{
+ "analysis": "pn2_2026_as_import_substitution_lever",
+ "built": "2026-07-22",
+ "one_line": "Press Note 2 of 2026's <=10% automatic-route lane can be used deliberately to localize the single largest, most concentrated slice of India's import bill -- Chinese capital goods and components -- by inviting the Chinese supplier in as a passive minority co-investor in an Indian-controlled plant, instead of importing the finished good.",
+ "the_number": {
+  "india_china_imports_usd_bn": 131.6,
+  "india_china_exports_usd_bn": 19.5,
+  "bilateral_deficit_usd_bn": -112.2,
+  "note": "largest bilateral deficit India runs with any country",
+  "concentration": "Electrical machinery (HS85) $46.4bn + mechanical machinery (HS84) $29.5bn = $75.9bn = 58% of imports from China -- industrial inputs and capital goods, NOT consumer goods",
+  "source": "data/country_trade_deficit_and_policy_history + country_commodity_breakdown (DGCIS/TIA-portal cross-validated)"
+ },
+ "why_pn3_perpetuated_the_imports": "Under Press Note 3 (2020), a Chinese component or capital-goods maker could not take even a small stake to localize production in India -- every land-border FDI needed slow, rarely-granted government approval. So the path of least resistance stayed: keep importing the finished Chinese good. The import dependence and the FDI block were two sides of one policy.",
+ "the_lever": "PN2/2026 lets a Chinese supplier hold <=10% NON-CONTROLLING equity via the automatic route. Used deliberately, that converts an IMPORT relationship into a LOCAL-PRODUCTION one: the Chinese firm brings capital + a committed supply relationship + demand-side pull as a minority partner, while an Indian promoter holds control and the value-add (assembly, jobs, some components) localizes. The same HS85/HS84 dollars that today cross the border as finished goods can instead be spent inside India.",
+ "where_it_works": "Categories where the binding constraint was CAPITAL and a SUPPLY-CHAIN RELATIONSHIP, not proprietary technology: mid-tech electrical machinery, electronics assembly, mechanical components, appliance sub-assemblies -- a large share of the $75.9bn. Here a minority Chinese partner de-risks the Indian plant and guarantees offtake/input flow, and localization is a commercial decision the 10% stake makes attractive.",
+ "where_it_does_NOT_work": "HONEST LIMIT: a <=10% passive stake does NOT transfer proprietary technology -- that needs control or a licensing deal, both still gated (control) or blocked from the Chinese side (licensing, by Beijing's own export controls on advanced cells / precision tooling / rare-earth processing -- the same controls that killed Reliance-CATL). So the frontier-tech slice of imports (advanced battery cells, high-precision machine tools, some semiconductor equipment) is NOT addressable this way. The lever curbs the RELATIONSHIP-constrained bulk, not the TECH-constrained frontier.",
+ "guardrails": "Beneficial-ownership test (aggregate land-border ownership <=10%, no board seat/veto/operational control) is the safeguard -- it localizes production without ceding control of the Indian entity or its data/IP. To bite as import substitution rather than mere portfolio inflow, pair it with a local-value-addition condition (PLI-style) so the minority capital lands in plants, not just cap tables.",
+ "who_to_target": "The 'BLOCKED_PN3' cohort in digital-twin-for-ipa's visibility layer (BYD, Haier, Midea, Luxshare, Hikvision, SAIC) already tried to localize and were blocked; under PN2/2026 they are the warm list for a minority-stake, Indian-controlled JV in exactly their import categories -- appliances (Haier/Midea), EV/auto (BYD/SAIC), electronics assembly (Luxshare).",
+ "honesty_flags": [
+  "This is a POLICY OPTION, not a demonstrated outcome -- no PN2/2026 minority-stake localization deal has closed yet (the policy is weeks old).",
+  "A 10% stake brings capital and supply commitment, not control or guaranteed tech -- do not oversell it as reshoring the whole $75.9bn.",
+  "Gazette text not fetched directly; the <=10%/automatic-route rule is consistent across RS UQ3877 + India Briefing/Vistra/legal advisories but read the gazette before drafting a scheme condition.",
+  "Chinese minority capital in strategic sectors remains politically sensitive; this is an economic mechanism, not a recommendation to drop security screening."
+ ],
+ "sources": {
+  "pn2_2026": "RS UQ3877 27-03-2026 + India Briefing/Vistra (Cabinet 15-Mar-2026)",
+  "china_imports": "data/country_commodity_breakdown_2026-07-18.json",
+  "cohort": "digital-twin-for-ipa layers/16_leads.json china_pn3_note"
+ }
+}
