@@ -406,6 +406,17 @@
     "Deck QA: all 4 changed slides rendered via LibreOffice and inspected (no overflow/collisions); part-level parity verified vs originals (10/10 and 8/8 slides, all media intact; size drop = recompression). Delivered as *_updated_Jul2026.pptx ALONGSIDE originals (non-destructive) -- Policy Gaps to Google Drive, Market Evaluation to Dropbox.",
     "Sharing attempt: Dropbox MCP connector can read the deck but create_shared_link returns PERMISSION_DENIED (sharing scope not granted); Gmail connector drafts cannot carry attachments; user given the one-click Dropbox-UI route and the connector-reauthorization option. SMTP alert path remains dark (plist keys still absent)."
    ]
+  },
+  {
+   "phase": "52",
+   "title": "EV decks gain state-arrears + leads slides; machine Python resolution fixed to 3.14",
+   "repo": "Google Drive / Dropbox (deck v2s) + machine setup (~/.zshrc)",
+   "headline_finding": "(1) Both EV decks extended with one design-matched slide each, built from twin layers: the Market Evaluation deck (now 11 slides) gains 'State Incentive Reality Check' -- the arrears divide (Telangana Rs 3,736cr confirmed arrears, AP Rs 3,000-5,000cr FIFO-promised) vs the payers (Rajasthan record Rs 765.78cr FY25, MP Rs 695cr on-stage) vs the opaque (MH/KA publish no disbursal series), closing on the EV-siting implication; the Policy Gaps deck (now 9 slides) gains '07 -- The Counterparties' -- report-verified HIGH leads (Suzuki's own-report Yen 1.2T India capex/42% of revenue, Hyundai Mobis 6x order target + Bengaluru SW branch, Delta's ~$500M Krishnagiri campus) plus 'Batteries: the open seat' (LGES-JSW non-binding, Samsung SDI scouting, CATL blocked both ways by PN3 + Beijing export controls). Slides duplicated from each deck's own card layouts via the pptx skill, rewritten run-by-run, rendered and QA'd, delivered as the same *_updated_Jul2026.pptx files (originals untouched).",
+   "details": [
+    "(2) PYTHON FIX: bare python3 resolved to Apple's frozen 3.9.6 because /usr/bin preceded /opt/homebrew/bin -- the friction that broke skill scripts (match statements, X|None types) three times this session. Homebrew already had 3.14.6 installed; fix = append brew shellenv to ~/.zshrc (backup ~/.zshrc.bak-2026-07-21), verified in a fresh interactive shell (which python3 -> /opt/homebrew/bin/python3, 3.14.6). Working-set packages installed into 3.14 (pandas, python-pptx, defusedxml, lxml, pypdf via --break-system-packages).",
+    "Deliberately untouched: twin cron jobs pin /usr/bin/python3 (stdlib-only) and keep running identically; market-pipeline mailer runs from its own .venv; python@3.11 kept for MemPalace doc extraction.",
+    "Verification-method footnote: zsh -lc misleadingly showed the old python because login non-interactive shells skip .zshrc -- re-verified with zsh -ic."
+   ]
   }
  ],
  "cross_cutting_insights": [
@@ -437,5 +448,5 @@
   "scripts/report_synthesizer.py -- the JSON-to-PDF/Word/PPT tool described in phase 9 above, the newest piece of session infrastructure and the one used to generate this very document.",
   "data/repo_manifest_2026-07-19.json -- machine-readable index of every chart/data pair, consumed both by the README's reference table and by the synthesizer's batch mode."
  ],
- "current_status": "All 51 phases logged. The reportage is now audit-hardened (3,982 announcements, ~50%->near-parity coverage vs PRS/Drishti selection, displayed provenance) and the user's two EV decks carry twin-verified July-2026 facts, QA'd and delivered non-destructively to Drive/Dropbox."
+ "current_status": "All 52 phases logged. The EV decks now carry the twin's performance layers (arrears, verified leads) as native slides in Drive/Dropbox, and the machine's python3 finally points at 3.14.6 -- ending the 3.9-era tooling friction without touching the pinned cron/venv paths."
 }
