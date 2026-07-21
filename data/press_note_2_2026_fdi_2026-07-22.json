@@ -1,0 +1,9 @@
+{
+ "finding": "press_note_2_of_2026_land_border_fdi_relaxation",
+ "recorded": "2026-07-22",
+ "what": "Union Cabinet approved Press Note 2 of 2026 (dated 15-03-2026): foreign companies in which land-bordering-country investors hold <=10% on a NON-CONTROLLING basis (no board seat, veto or operational control) may now invest in India via the AUTOMATIC route, in all otherwise-permitted sectors, subject to a beneficial-ownership test and post-investment intimation; ~60-day processing.",
+ "why_it_matters": "This partially relaxes Press Note 3 of 2020, the blanket government-approval requirement for land-border FDI (China, Pakistan, Nepal, Bhutan, Bangladesh, Myanmar, Afghanistan) that this program repeatedly cited as the reason the Chinese 'BLOCKED_PN3' cohort in digital-twin-for-ipa's visibility layer could not invest. The block is now conditional, not absolute -- passive <=10% stakes are freed; controlling stakes still need approval.",
+ "primary_source": "RS Unstarred Q3877, 27-03-2026, Ministry of Commerce & Industry -- https://sansad.in/getFile/annex/270/AU3877_XO213t.pdf?source=pqars",
+ "independent_verification": "Confirmed via India Briefing, Vistra, and multiple legal-advisory firms (Chandhiok & Mahajan, Esplora Legal, Sansa Legal) -- Cabinet approved PN2 + PN3 of 2026 in March 2026.",
+ "caveat": "The exact PN2/2026 gazette text was not fetched directly; the <=10% automatic-route rule is consistent across the PQ answer and every secondary source, but read the gazette before advising."
+}
