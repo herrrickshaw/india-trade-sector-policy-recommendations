@@ -1,0 +1,481 @@
+{
+ "analysis": "state_fdi_vs_implemented_industry",
+ "built": "2026-07-21",
+ "window": {
+  "fdi": "FROM OCTOBER 2019 TO March 2026 (verbatim table sub-heading, including the inconsistent capitalisation of 'March')",
+  "iem_years": [
+   "2020",
+   "2021",
+   "2022",
+   "2023",
+   "2024",
+   "Up to Dec 2025"
+  ],
+  "iem_years_excluded": {
+   "2017": "predates the FDI state series (starts Oct-2019)",
+   "2018": "predates the FDI state series (starts Oct-2019)",
+   "2019": "DEFECTIVE IN SOURCE -- see IEM_YEARS_IN_WINDOW comment"
+  },
+  "year_basis_mismatch": "IEM years are CALENDAR years; FDI is a cumulative window running Oct-2019 to Mar-2026. The two are close but not coterminous and are not directly alignable.",
+  "iem_latest_is_part_year": "'Up to Dec 2025' is a PART-YEAR column, not a full year, and DPIIT revises prior years between reports."
+ },
+ "time_limit_note": "DPIIT maintains state-wise FDI only from October 2019; the earlier published series is by RBI regional office and bundles states, so no pre-2019 state series exists and none is constructed here.",
+ "interpretation_note": "Ratio = share of FDI / share of implemented industrial investment. It detects divergence, not virtue. FDI is credited to the registered office of the receiving company, not the project site, so a high ratio can mean financial-centre bookkeeping rather than absent industry; IEM Part B excludes services and sub-threshold projects, so it under-measures services-led states.",
+ "join_reconciliation": {
+  "fdi_rows": 33,
+  "iem_rows": 35,
+  "merged": "IEM's separate Dadra & Nagar Haveli and Daman & Diu rows are summed to match FDI Annexure-C's single merged UT",
+  "fdi_only_expected": [
+   "Ladakh (no IEM row exists)"
+  ],
+  "iem_only_expected": [
+   "Andaman & Nicobar",
+   "Lakshadweep",
+   "Sikkim (no FDI row printed)"
+  ]
+ },
+ "totals": {
+  "fdi_usd_mn": 341578.78,
+  "iem_implemented_rs_cr": 2185797.0,
+  "states_with_both": 30,
+  "states_total": 36
+ },
+ "states": [
+  {
+   "state": "Andaman and Nicobar",
+   "fdi_usd_mn": null,
+   "fdi_share_pct": null,
+   "iem_implemented_rs_cr": 0.0,
+   "iem_share_pct": 0.0,
+   "intensity_ratio": null,
+   "iem_filed_rs_cr": 0.0,
+   "conversion_pct": null,
+   "present_in": "iem_only"
+  },
+  {
+   "state": "Andhra Pradesh",
+   "fdi_usd_mn": 1729.86,
+   "fdi_share_pct": 0.51,
+   "iem_implemented_rs_cr": 150285.0,
+   "iem_share_pct": 6.88,
+   "intensity_ratio": 0.0737,
+   "iem_filed_rs_cr": 174194.0,
+   "conversion_pct": 86.3,
+   "present_in": "both"
+  },
+  {
+   "state": "Arunachal Pradesh",
+   "fdi_usd_mn": 7.03,
+   "fdi_share_pct": 0.0,
+   "iem_implemented_rs_cr": 219.0,
+   "iem_share_pct": 0.01,
+   "intensity_ratio": 0.2054,
+   "iem_filed_rs_cr": 226.0,
+   "conversion_pct": 96.9,
+   "present_in": "both"
+  },
+  {
+   "state": "Assam",
+   "fdi_usd_mn": 26.1,
+   "fdi_share_pct": 0.01,
+   "iem_implemented_rs_cr": 23609.0,
+   "iem_share_pct": 1.08,
+   "intensity_ratio": 0.0071,
+   "iem_filed_rs_cr": 27213.0,
+   "conversion_pct": 86.8,
+   "present_in": "both"
+  },
+  {
+   "state": "Bihar",
+   "fdi_usd_mn": 218.01,
+   "fdi_share_pct": 0.06,
+   "iem_implemented_rs_cr": 5493.0,
+   "iem_share_pct": 0.25,
+   "intensity_ratio": 0.254,
+   "iem_filed_rs_cr": 15154.0,
+   "conversion_pct": 36.2,
+   "present_in": "both"
+  },
+  {
+   "state": "Chandigarh",
+   "fdi_usd_mn": 250.95,
+   "fdi_share_pct": 0.07,
+   "iem_implemented_rs_cr": 7.0,
+   "iem_share_pct": 0.0,
+   "intensity_ratio": 229.4078,
+   "iem_filed_rs_cr": 17.0,
+   "conversion_pct": 41.2,
+   "present_in": "both"
+  },
+  {
+   "state": "Chhattisgarh",
+   "fdi_usd_mn": 220.87,
+   "fdi_share_pct": 0.06,
+   "iem_implemented_rs_cr": 117117.0,
+   "iem_share_pct": 5.36,
+   "intensity_ratio": 0.0121,
+   "iem_filed_rs_cr": 144221.0,
+   "conversion_pct": 81.2,
+   "present_in": "both"
+  },
+  {
+   "state": "Dadra and Nagar Haveli and Daman and Diu",
+   "fdi_usd_mn": 181.29,
+   "fdi_share_pct": 0.05,
+   "iem_implemented_rs_cr": 25034.0,
+   "iem_share_pct": 1.15,
+   "intensity_ratio": 0.0463,
+   "iem_filed_rs_cr": 5827.0,
+   "conversion_pct": 429.6,
+   "present_in": "both"
+  },
+  {
+   "state": "Delhi",
+   "fdi_usd_mn": 43989.39,
+   "fdi_share_pct": 12.88,
+   "iem_implemented_rs_cr": 5521.0,
+   "iem_share_pct": 0.25,
+   "intensity_ratio": 50.9858,
+   "iem_filed_rs_cr": 36941.0,
+   "conversion_pct": 14.9,
+   "present_in": "both"
+  },
+  {
+   "state": "Goa",
+   "fdi_usd_mn": 230.87,
+   "fdi_share_pct": 0.07,
+   "iem_implemented_rs_cr": 1528.0,
+   "iem_share_pct": 0.07,
+   "intensity_ratio": 0.9669,
+   "iem_filed_rs_cr": 3828.0,
+   "conversion_pct": 39.9,
+   "present_in": "both"
+  },
+  {
+   "state": "Gujarat",
+   "fdi_usd_mn": 50625.77,
+   "fdi_share_pct": 14.82,
+   "iem_implemented_rs_cr": 695120.0,
+   "iem_share_pct": 31.8,
+   "intensity_ratio": 0.466,
+   "iem_filed_rs_cr": 417504.0,
+   "conversion_pct": 166.5,
+   "present_in": "both"
+  },
+  {
+   "state": "Haryana",
+   "fdi_usd_mn": 17403.21,
+   "fdi_share_pct": 5.09,
+   "iem_implemented_rs_cr": 30747.0,
+   "iem_share_pct": 1.41,
+   "intensity_ratio": 3.622,
+   "iem_filed_rs_cr": 61570.0,
+   "conversion_pct": 49.9,
+   "present_in": "both"
+  },
+  {
+   "state": "Himachal Pradesh",
+   "fdi_usd_mn": 418.7,
+   "fdi_share_pct": 0.12,
+   "iem_implemented_rs_cr": 6967.0,
+   "iem_share_pct": 0.32,
+   "intensity_ratio": 0.3846,
+   "iem_filed_rs_cr": 1787.0,
+   "conversion_pct": 389.9,
+   "present_in": "both"
+  },
+  {
+   "state": "Jammu and Kashmir",
+   "fdi_usd_mn": 43.92,
+   "fdi_share_pct": 0.01,
+   "iem_implemented_rs_cr": 2876.0,
+   "iem_share_pct": 0.13,
+   "intensity_ratio": 0.0977,
+   "iem_filed_rs_cr": 14669.0,
+   "conversion_pct": 19.6,
+   "present_in": "both"
+  },
+  {
+   "state": "Jharkhand",
+   "fdi_usd_mn": 2677.93,
+   "fdi_share_pct": 0.78,
+   "iem_implemented_rs_cr": 22700.0,
+   "iem_share_pct": 1.04,
+   "intensity_ratio": 0.7549,
+   "iem_filed_rs_cr": 7712.0,
+   "conversion_pct": 294.3,
+   "present_in": "both"
+  },
+  {
+   "state": "Karnataka",
+   "fdi_usd_mn": 70588.64,
+   "fdi_share_pct": 20.67,
+   "iem_implemented_rs_cr": 49028.0,
+   "iem_share_pct": 2.24,
+   "intensity_ratio": 9.2132,
+   "iem_filed_rs_cr": 361856.0,
+   "conversion_pct": 13.5,
+   "present_in": "both"
+  },
+  {
+   "state": "Kerala",
+   "fdi_usd_mn": 1752.68,
+   "fdi_share_pct": 0.51,
+   "iem_implemented_rs_cr": 447.0,
+   "iem_share_pct": 0.02,
+   "intensity_ratio": 25.0908,
+   "iem_filed_rs_cr": 2683.0,
+   "conversion_pct": 16.7,
+   "present_in": "both"
+  },
+  {
+   "state": "Ladakh",
+   "fdi_usd_mn": 0.22,
+   "fdi_share_pct": 0.0,
+   "iem_implemented_rs_cr": null,
+   "iem_share_pct": null,
+   "intensity_ratio": null,
+   "iem_filed_rs_cr": null,
+   "conversion_pct": null,
+   "present_in": "fdi_only"
+  },
+  {
+   "state": "Lakshadweep",
+   "fdi_usd_mn": null,
+   "fdi_share_pct": null,
+   "iem_implemented_rs_cr": 0.0,
+   "iem_share_pct": 0.0,
+   "intensity_ratio": null,
+   "iem_filed_rs_cr": 0.0,
+   "conversion_pct": null,
+   "present_in": "iem_only"
+  },
+  {
+   "state": "Madhya Pradesh",
+   "fdi_usd_mn": 692.98,
+   "fdi_share_pct": 0.2,
+   "iem_implemented_rs_cr": 70103.0,
+   "iem_share_pct": 3.21,
+   "intensity_ratio": 0.0633,
+   "iem_filed_rs_cr": 127720.0,
+   "conversion_pct": 54.9,
+   "present_in": "both"
+  },
+  {
+   "state": "Maharashtra",
+   "fdi_usd_mn": 107094.0,
+   "fdi_share_pct": 31.35,
+   "iem_implemented_rs_cr": 271703.0,
+   "iem_share_pct": 12.43,
+   "intensity_ratio": 2.5223,
+   "iem_filed_rs_cr": 726292.0,
+   "conversion_pct": 37.4,
+   "present_in": "both"
+  },
+  {
+   "state": "Manipur",
+   "fdi_usd_mn": 0.11,
+   "fdi_share_pct": 0.0,
+   "iem_implemented_rs_cr": 0.0,
+   "iem_share_pct": 0.0,
+   "intensity_ratio": null,
+   "iem_filed_rs_cr": 10.0,
+   "conversion_pct": 0.0,
+   "present_in": "both"
+  },
+  {
+   "state": "Meghalaya",
+   "fdi_usd_mn": 1.2,
+   "fdi_share_pct": 0.0,
+   "iem_implemented_rs_cr": 1899.0,
+   "iem_share_pct": 0.09,
+   "intensity_ratio": 0.004,
+   "iem_filed_rs_cr": 886.0,
+   "conversion_pct": 214.3,
+   "present_in": "both"
+  },
+  {
+   "state": "Mizoram",
+   "fdi_usd_mn": 0.05,
+   "fdi_share_pct": 0.0,
+   "iem_implemented_rs_cr": 93.0,
+   "iem_share_pct": 0.0,
+   "intensity_ratio": 0.0034,
+   "iem_filed_rs_cr": 226.0,
+   "conversion_pct": 41.2,
+   "present_in": "both"
+  },
+  {
+   "state": "Nagaland",
+   "fdi_usd_mn": 0.06,
+   "fdi_share_pct": 0.0,
+   "iem_implemented_rs_cr": 0.0,
+   "iem_share_pct": 0.0,
+   "intensity_ratio": null,
+   "iem_filed_rs_cr": 11.0,
+   "conversion_pct": 0.0,
+   "present_in": "both"
+  },
+  {
+   "state": "Odisha",
+   "fdi_usd_mn": 257.19,
+   "fdi_share_pct": 0.08,
+   "iem_implemented_rs_cr": 365441.0,
+   "iem_share_pct": 16.72,
+   "intensity_ratio": 0.0045,
+   "iem_filed_rs_cr": 597874.0,
+   "conversion_pct": 61.1,
+   "present_in": "both"
+  },
+  {
+   "state": "Puducherry",
+   "fdi_usd_mn": 77.31,
+   "fdi_share_pct": 0.02,
+   "iem_implemented_rs_cr": 129.0,
+   "iem_share_pct": 0.01,
+   "intensity_ratio": 3.835,
+   "iem_filed_rs_cr": 2558.0,
+   "conversion_pct": 5.0,
+   "present_in": "both"
+  },
+  {
+   "state": "Punjab",
+   "fdi_usd_mn": 1598.34,
+   "fdi_share_pct": 0.47,
+   "iem_implemented_rs_cr": 58491.0,
+   "iem_share_pct": 2.68,
+   "intensity_ratio": 0.1749,
+   "iem_filed_rs_cr": 17587.0,
+   "conversion_pct": 332.6,
+   "present_in": "both"
+  },
+  {
+   "state": "Rajasthan",
+   "fdi_usd_mn": 3726.78,
+   "fdi_share_pct": 1.09,
+   "iem_implemented_rs_cr": 77290.0,
+   "iem_share_pct": 3.54,
+   "intensity_ratio": 0.3086,
+   "iem_filed_rs_cr": 117366.0,
+   "conversion_pct": 65.9,
+   "present_in": "both"
+  },
+  {
+   "state": "Sikkim",
+   "fdi_usd_mn": null,
+   "fdi_share_pct": null,
+   "iem_implemented_rs_cr": 96.0,
+   "iem_share_pct": 0.0,
+   "intensity_ratio": null,
+   "iem_filed_rs_cr": 40.0,
+   "conversion_pct": 240.0,
+   "present_in": "iem_only"
+  },
+  {
+   "state": "Tamil Nadu",
+   "fdi_usd_mn": 19343.31,
+   "fdi_share_pct": 5.66,
+   "iem_implemented_rs_cr": 45811.0,
+   "iem_share_pct": 2.1,
+   "intensity_ratio": 2.702,
+   "iem_filed_rs_cr": 97274.0,
+   "conversion_pct": 47.1,
+   "present_in": "both"
+  },
+  {
+   "state": "Telangana",
+   "fdi_usd_mn": 13020.89,
+   "fdi_share_pct": 3.81,
+   "iem_implemented_rs_cr": 31191.0,
+   "iem_share_pct": 1.43,
+   "intensity_ratio": 2.6713,
+   "iem_filed_rs_cr": 96692.0,
+   "conversion_pct": 32.3,
+   "present_in": "both"
+  },
+  {
+   "state": "Tripura",
+   "fdi_usd_mn": 1.45,
+   "fdi_share_pct": 0.0,
+   "iem_implemented_rs_cr": 29.0,
+   "iem_share_pct": 0.0,
+   "intensity_ratio": 0.32,
+   "iem_filed_rs_cr": 175.0,
+   "conversion_pct": 16.6,
+   "present_in": "both"
+  },
+  {
+   "state": "Uttar Pradesh",
+   "fdi_usd_mn": 3020.48,
+   "fdi_share_pct": 0.88,
+   "iem_implemented_rs_cr": 88131.0,
+   "iem_share_pct": 4.03,
+   "intensity_ratio": 0.2193,
+   "iem_filed_rs_cr": 113040.0,
+   "conversion_pct": 78.0,
+   "present_in": "both"
+  },
+  {
+   "state": "Uttarakhand",
+   "fdi_usd_mn": 242.16,
+   "fdi_share_pct": 0.07,
+   "iem_implemented_rs_cr": 15390.0,
+   "iem_share_pct": 0.7,
+   "intensity_ratio": 0.1007,
+   "iem_filed_rs_cr": 10736.0,
+   "conversion_pct": 143.3,
+   "present_in": "both"
+  },
+  {
+   "state": "West Bengal",
+   "fdi_usd_mn": 2137.03,
+   "fdi_share_pct": 0.63,
+   "iem_implemented_rs_cr": 23302.0,
+   "iem_share_pct": 1.07,
+   "intensity_ratio": 0.5869,
+   "iem_filed_rs_cr": 69610.0,
+   "conversion_pct": 33.5,
+   "present_in": "both"
+  }
+ ],
+ "sources": {
+  "fdi_fy_table": {
+   "source_title": "DPIIT Quarterly Fact Sheet on Fact Sheet on Foreign Direct Investment (FDI) from April 2000 to March 2026 - Section F, page 4 of 10",
+   "url": "https://www.dpiit.gov.in/static/uploads/2026/06/41192ca92c1de34eb064800fbffa0379.pdf",
+   "caveat_verbatim": "State wise data is maintained w.e.f. October, 2019. Figures are provisional."
+  },
+  "fdi_cumulative_annexure_c": {
+   "period": "FROM OCTOBER 2019 TO March 2026 (verbatim table sub-heading, including the inconsistent capitalisation of 'March')",
+   "source_title": "DPIIT Quarterly Fact Sheet on FDI (April 2000 to March 2026), Annexure-C 'STATE-WISE FDI EQUITY INFLOW', page 10 of 10",
+   "url": "https://www.dpiit.gov.in/static/uploads/2026/06/41192ca92c1de34eb064800fbffa0379.pdf"
+  },
+  "iem_part_b": {
+   "source_title": "DPIIT Annual Reports, Appendix V - state-wise IEM Part B (investment ACTUALLY IMPLEMENTED), Rs crore. Multiple reports stitched; each row carries its own source_report.",
+   "url": "https://www.dpiit.gov.in/static/uploads/2026/03/863a5fef349d79a1bba316c4b51eaacb.pdf"
+  },
+  "iem_part_a": {
+   "source_title": "DPIIT Annual Reports, Appendix III - state-wise IEM Part A (investment INTENTIONS filed), Rs crore. Multiple reports stitched; each row carries its own source_report.",
+   "url": "https://www.dpiit.gov.in/static/uploads/2026/03/863a5fef349d79a1bba316c4b51eaacb.pdf"
+  }
+ },
+ "extraction_notes": [
+  "All figures transcribed exactly as printed. No rounding, no unit conversion, no derivation of one currency from the other.",
+  "VERIFICATION: every stitched IEM table was re-summed column-by-column against its own printed Grand Total row. AR2025-26 Appendix V (all 5 columns), AR2025-26 Appendix III (all 5), AR2024-25 Appendix V and III (all 5 each), AR2022-23 Appendix V (all 5) all reconcile EXACTLY. This confirms the PDF text extraction did not mis-align any column.",
+  "Annexure-C: 34 printed rows re-summed to the printed Gross-Total exactly in INR; USD differs by 0.01 from per-row rounding.",
+  "SPELLING NORMALISATION APPLIED in iem_part_a / iem_part_b: source spellings vary by report year and have been normalised to a single label per state. Orissa (AR2021-22, AR2022-23) -> Odisha (AR2024-25, AR2025-26): normalised to 'Odisha'. Puducherry / Pondicherry (both appear) -> 'Puducherry'. Telengana (AR2021-22, AR2022-23) -> Telangana: normalised to 'Telangana'. Lakshwadeep (AR2025-26 typo) / Lakshadweep -> 'Lakshadweep'. 'Daman &Diu', 'TamilNadu', 'UttarPradesh', 'WestBengal' (AR2025-26 lost spaces) -> spaced forms. Row ORDER is identical across all four annual reports, so normalisation is positional and unambiguous.",
+  "Annexure-C of the FDI factsheet is NOT normalised - it is a different universe: it lists 'Dadra and Nagar Haveli and Daman and Diu' as ONE merged UT (Sr.No.23) and includes LADAKH, neither of which appear in the IEM appendices (which still list Dadra & Nagar Haveli and Daman & Diu as two separate rows and have no Ladakh row). Do not join FDI and IEM state lists without handling this.",
+  "The IEM appendices have exactly 36 state/UT rows in every report and are missing several UTs entirely (no Ladakh, no Delhi NCT variants, no separate Dadra/Daman merger). The FDI Annexure-C has 34 rows including 'State Not Indicated'.",
+  "IEM latest columns are PART-YEAR, not full years: AR2025-26 latest column is 'Up to Dec 2025' (9-12 months of calendar 2025 depending on lag) and AR2024-25's was 'Up to Nov 2024'. Do not treat 'Up to Dec 2025' as a complete calendar-2025 figure.",
+  "IEM years are CALENDAR years (2021, 2022...), while FDI years are FINANCIAL years (2023-24...). They are not directly alignable.",
+  "DPIIT REVISES prior years between reports. Part B 2018: AR2021-22 prints 1265 IEMs / Rs 314,821 cr; AR2022-23 prints 1005 / Rs 255,783 cr for the same year. Part B 2020 IEM count: AR2021-22 prints 818; AR2022-23 and AR2024-25 both print 848 (investment Rs 233,969 cr unchanged). The values here take the LATEST report that carries each year.",
+  "2024 in Part B is taken from AR2025-26 (1165 IEMs / Rs 493,765 cr, full year). AR2024-25's 'Up to Nov 2024' figure (978 / Rs 296,398 cr) is the same year measured 13 months earlier and is retained only in grand_totals_as_printed for comparison."
+ ],
+ "unavailable": [
+  "FDI Section F for ALL states by financial year: does not exist. DPIIT publishes only a TOP-10 ranking by FY. The only all-state FDI table is the CUMULATIVE Annexure-C (Oct 2019 - Mar 2026), which carries no year split. A full state x financial-year FDI panel therefore cannot be built from DPIIT publications - it would require stitching successive quarterly factsheets' Annexure-C cumulatives and differencing them, which was NOT done here because the task forbids derivation.",
+  "FDI state-wise data before October 2019: does not exist as a state series, per DPIIT's own verbatim note. Not attempted.",
+  "IEM Part B 2019, from AR 2021-22: the printed 2019 column in AR 2021-22 Appendix-V is DEFECTIVE - for most states the 'Inv (Rs Cr)' cell simply repeats the 'No Filed' cell (Andhra Pradesh 47/47, Chhattisgarh 70/70, Gujarat 110/110, Maharashtra 171/171, Madhya Pradesh 63/63 etc.), and the printed column total (1229 / 1,796,552) does not equal the sum of the printed cells. Verified against a 200-dpi render of the page, so this is a SOURCE defect, not an extraction artifact. The 2019 values supplied here come from AR 2022-23 instead, whose 2019 column does reconcile to its own total.",
+  "IEM Part A for 2017: AR 2021-22's Appendix listing Part A investment intentions for 2017 was not located in that report's appendix set (only Appendix-V Part B and Appendix-IV sector-wise Part A were present in the extracted text). Part A therefore starts at 2018. Not guessed.",
+  "IEM number-of-IEMs for Part A rows from AR2022-23 and AR2024-25 is captured, but note the AR2025-26 Part A header labels the count column 'No.Filed' whereas AR2022-23 labels it 'Numbers Filed' - same quantity, different wording.",
+  "DPIIT FDI Newsletters: not retrieved. The Quarterly Fact Sheet was the authoritative source located and it already carries the full Annexure-C; no newsletter was found offering a longer state-wise series (state-wise data cannot predate Oct 2019 in any case)."
+ ]
+}
