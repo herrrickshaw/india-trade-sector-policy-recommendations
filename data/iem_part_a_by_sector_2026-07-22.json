@@ -1,0 +1,407 @@
+{
+ "analysis": "iem_part_a_by_sector",
+ "built": "2026-07-22",
+ "period": "Jan-Dec 2023",
+ "source": "DPIIT IEM Statistics Report Sep-2024, Annexure-3 (39 DIPP/SIA industry categories)",
+ "note": "Part A = investment intent FILED (count). Part B investment value is IMPLEMENTED (DPIIT does not publish Part A investment value by sector -- only counts). Rs cr/project = Part B investment / Part B count (a proxy project size).",
+ "total_part_a_filed": 1267,
+ "sectors": [
+  {
+   "industry": "Others",
+   "part_a_filed": 142,
+   "part_b_impl": 63,
+   "conversion_pct": 44.0,
+   "part_b_investment_rs_cr": 4738,
+   "rs_cr_per_project": 75.2,
+   "ec_relevant": false,
+   "share_of_filed_pct": 11.2
+  },
+  {
+   "industry": "Food processing industry",
+   "part_a_filed": 141,
+   "part_b_impl": 120,
+   "conversion_pct": 85.0,
+   "part_b_investment_rs_cr": 31017,
+   "rs_cr_per_project": 258.5,
+   "ec_relevant": false,
+   "share_of_filed_pct": 11.1
+  },
+  {
+   "industry": "Fermentation industries",
+   "part_a_filed": 119,
+   "part_b_impl": 39,
+   "conversion_pct": 33.0,
+   "part_b_investment_rs_cr": 5058,
+   "rs_cr_per_project": 129.7,
+   "ec_relevant": true,
+   "share_of_filed_pct": 9.4
+  },
+  {
+   "industry": "Electricals equipment",
+   "part_a_filed": 108,
+   "part_b_impl": 75,
+   "conversion_pct": 69.0,
+   "part_b_investment_rs_cr": 26528,
+   "rs_cr_per_project": 353.7,
+   "ec_relevant": false,
+   "share_of_filed_pct": 8.5
+  },
+  {
+   "industry": "Metallurgical industries",
+   "part_a_filed": 102,
+   "part_b_impl": 69,
+   "conversion_pct": 68.0,
+   "part_b_investment_rs_cr": 13204,
+   "rs_cr_per_project": 191.4,
+   "ec_relevant": true,
+   "share_of_filed_pct": 8.1
+  },
+  {
+   "industry": "Chemicals (other than fertilizers)",
+   "part_a_filed": 91,
+   "part_b_impl": 112,
+   "conversion_pct": 123.0,
+   "part_b_investment_rs_cr": 68421,
+   "rs_cr_per_project": 610.9,
+   "ec_relevant": true,
+   "share_of_filed_pct": 7.2
+  },
+  {
+   "industry": "Miscellaneous mechanical & engineering industries",
+   "part_a_filed": 80,
+   "part_b_impl": 58,
+   "conversion_pct": 72.0,
+   "part_b_investment_rs_cr": 4543,
+   "rs_cr_per_project": 78.3,
+   "ec_relevant": false,
+   "share_of_filed_pct": 6.3
+  },
+  {
+   "industry": "Textiles",
+   "part_a_filed": 76,
+   "part_b_impl": 59,
+   "conversion_pct": 78.0,
+   "part_b_investment_rs_cr": 10024,
+   "rs_cr_per_project": 169.9,
+   "ec_relevant": false,
+   "share_of_filed_pct": 6.0
+  },
+  {
+   "industry": "Miscellaneous industries",
+   "part_a_filed": 75,
+   "part_b_impl": 50,
+   "conversion_pct": 67.0,
+   "part_b_investment_rs_cr": 9488,
+   "rs_cr_per_project": 189.8,
+   "ec_relevant": false,
+   "share_of_filed_pct": 5.9
+  },
+  {
+   "industry": "Transportation Industry",
+   "part_a_filed": 62,
+   "part_b_impl": 51,
+   "conversion_pct": 82.0,
+   "part_b_investment_rs_cr": 16082,
+   "rs_cr_per_project": 315.3,
+   "ec_relevant": false,
+   "share_of_filed_pct": 4.9
+  },
+  {
+   "industry": "Drugs and pharmaceuticals",
+   "part_a_filed": 37,
+   "part_b_impl": 38,
+   "conversion_pct": 103.0,
+   "part_b_investment_rs_cr": 8165,
+   "rs_cr_per_project": 214.9,
+   "ec_relevant": true,
+   "share_of_filed_pct": 2.9
+  },
+  {
+   "industry": "Industrial machinery",
+   "part_a_filed": 30,
+   "part_b_impl": 9,
+   "conversion_pct": 30.0,
+   "part_b_investment_rs_cr": 944,
+   "rs_cr_per_project": 104.9,
+   "ec_relevant": false,
+   "share_of_filed_pct": 2.4
+  },
+  {
+   "industry": "Cement & gypsum products",
+   "part_a_filed": 26,
+   "part_b_impl": 39,
+   "conversion_pct": 150.0,
+   "part_b_investment_rs_cr": 17220,
+   "rs_cr_per_project": 441.5,
+   "ec_relevant": true,
+   "share_of_filed_pct": 2.1
+  },
+  {
+   "industry": "Commercial, office and household equipment",
+   "part_a_filed": 21,
+   "part_b_impl": 21,
+   "conversion_pct": 100.0,
+   "part_b_investment_rs_cr": 3670,
+   "rs_cr_per_project": 174.8,
+   "ec_relevant": false,
+   "share_of_filed_pct": 1.7
+  },
+  {
+   "industry": "Ceramics",
+   "part_a_filed": 17,
+   "part_b_impl": 19,
+   "conversion_pct": 112.0,
+   "part_b_investment_rs_cr": 2229,
+   "rs_cr_per_project": 117.3,
+   "ec_relevant": false,
+   "share_of_filed_pct": 1.3
+  },
+  {
+   "industry": "Paper and pulp including paper products",
+   "part_a_filed": 16,
+   "part_b_impl": 23,
+   "conversion_pct": 144.0,
+   "part_b_investment_rs_cr": 2571,
+   "rs_cr_per_project": 111.8,
+   "ec_relevant": true,
+   "share_of_filed_pct": 1.3
+  },
+  {
+   "industry": "Sugar",
+   "part_a_filed": 16,
+   "part_b_impl": 33,
+   "conversion_pct": 206.0,
+   "part_b_investment_rs_cr": 4654,
+   "rs_cr_per_project": 141.0,
+   "ec_relevant": true,
+   "share_of_filed_pct": 1.3
+  },
+  {
+   "industry": "Fertilizers",
+   "part_a_filed": 12,
+   "part_b_impl": 7,
+   "conversion_pct": 58.0,
+   "part_b_investment_rs_cr": 6247,
+   "rs_cr_per_project": 892.4,
+   "ec_relevant": true,
+   "share_of_filed_pct": 0.9
+  },
+  {
+   "industry": "Fuels",
+   "part_a_filed": 12,
+   "part_b_impl": 6,
+   "conversion_pct": 50.0,
+   "part_b_investment_rs_cr": 18224,
+   "rs_cr_per_project": 3037.3,
+   "ec_relevant": true,
+   "share_of_filed_pct": 0.9
+  },
+  {
+   "industry": "Industrial instruments",
+   "part_a_filed": 11,
+   "part_b_impl": 4,
+   "conversion_pct": 36.0,
+   "part_b_investment_rs_cr": 38,
+   "rs_cr_per_project": 9.5,
+   "ec_relevant": false,
+   "share_of_filed_pct": 0.9
+  },
+  {
+   "industry": "Vegetable oil & Vanaspati",
+   "part_a_filed": 10,
+   "part_b_impl": 10,
+   "conversion_pct": 100.0,
+   "part_b_investment_rs_cr": 738,
+   "rs_cr_per_project": 73.8,
+   "ec_relevant": false,
+   "share_of_filed_pct": 0.8
+  },
+  {
+   "industry": "Rubber goods",
+   "part_a_filed": 9,
+   "part_b_impl": 12,
+   "conversion_pct": 133.0,
+   "part_b_investment_rs_cr": 4104,
+   "rs_cr_per_project": 342.0,
+   "ec_relevant": false,
+   "share_of_filed_pct": 0.7
+  },
+  {
+   "industry": "Medical and surgical appliances",
+   "part_a_filed": 8,
+   "part_b_impl": 1,
+   "conversion_pct": 12.0,
+   "part_b_investment_rs_cr": 54,
+   "rs_cr_per_project": 54.0,
+   "ec_relevant": false,
+   "share_of_filed_pct": 0.6
+  },
+  {
+   "industry": "Prime Movers other than electrical generators",
+   "part_a_filed": 7,
+   "part_b_impl": 17,
+   "conversion_pct": 243.0,
+   "part_b_investment_rs_cr": 1960,
+   "rs_cr_per_project": 115.3,
+   "ec_relevant": false,
+   "share_of_filed_pct": 0.6
+  },
+  {
+   "industry": "Timber products",
+   "part_a_filed": 6,
+   "part_b_impl": 4,
+   "conversion_pct": 67.0,
+   "part_b_investment_rs_cr": 1001,
+   "rs_cr_per_project": 250.2,
+   "ec_relevant": false,
+   "share_of_filed_pct": 0.5
+  },
+  {
+   "industry": "Telecommunications",
+   "part_a_filed": 5,
+   "part_b_impl": 4,
+   "conversion_pct": 80.0,
+   "part_b_investment_rs_cr": 1218,
+   "rs_cr_per_project": 304.5,
+   "ec_relevant": false,
+   "share_of_filed_pct": 0.4
+  },
+  {
+   "industry": "Boilers steam generating plants",
+   "part_a_filed": 4,
+   "part_b_impl": 3,
+   "conversion_pct": 75.0,
+   "part_b_investment_rs_cr": 16,
+   "rs_cr_per_project": 5.3,
+   "ec_relevant": false,
+   "share_of_filed_pct": 0.3
+  },
+  {
+   "industry": "Leather, leather goods and pickers",
+   "part_a_filed": 4,
+   "part_b_impl": 0,
+   "conversion_pct": 0.0,
+   "part_b_investment_rs_cr": 0,
+   "rs_cr_per_project": null,
+   "ec_relevant": true,
+   "share_of_filed_pct": 0.3
+  },
+  {
+   "industry": "Scientific instruments",
+   "part_a_filed": 4,
+   "part_b_impl": 1,
+   "conversion_pct": 25.0,
+   "part_b_investment_rs_cr": 263,
+   "rs_cr_per_project": 263.0,
+   "ec_relevant": false,
+   "share_of_filed_pct": 0.3
+  },
+  {
+   "industry": "Glue and gelatine",
+   "part_a_filed": 3,
+   "part_b_impl": 2,
+   "conversion_pct": 67.0,
+   "part_b_investment_rs_cr": 290,
+   "rs_cr_per_project": 145.0,
+   "ec_relevant": false,
+   "share_of_filed_pct": 0.2
+  },
+  {
+   "industry": "Mathematical, surveying and drawing instruments",
+   "part_a_filed": 3,
+   "part_b_impl": 0,
+   "conversion_pct": 0.0,
+   "part_b_investment_rs_cr": 0,
+   "rs_cr_per_project": null,
+   "ec_relevant": false,
+   "share_of_filed_pct": 0.2
+  },
+  {
+   "industry": "Soaps, cosmetics and toilet preparations",
+   "part_a_filed": 3,
+   "part_b_impl": 3,
+   "conversion_pct": 100.0,
+   "part_b_investment_rs_cr": 322,
+   "rs_cr_per_project": 107.3,
+   "ec_relevant": false,
+   "share_of_filed_pct": 0.2
+  },
+  {
+   "industry": "Dye-stuffs",
+   "part_a_filed": 2,
+   "part_b_impl": 4,
+   "conversion_pct": 200.0,
+   "part_b_investment_rs_cr": 212,
+   "rs_cr_per_project": 53.0,
+   "ec_relevant": true,
+   "share_of_filed_pct": 0.2
+  },
+  {
+   "industry": "Glass",
+   "part_a_filed": 2,
+   "part_b_impl": 6,
+   "conversion_pct": 300.0,
+   "part_b_investment_rs_cr": 2859,
+   "rs_cr_per_project": 476.5,
+   "ec_relevant": false,
+   "share_of_filed_pct": 0.2
+  },
+  {
+   "industry": "Machine tools",
+   "part_a_filed": 2,
+   "part_b_impl": 1,
+   "conversion_pct": 50.0,
+   "part_b_investment_rs_cr": 0,
+   "rs_cr_per_project": null,
+   "ec_relevant": false,
+   "share_of_filed_pct": 0.2
+  },
+  {
+   "industry": "Earth-moving machinery",
+   "part_a_filed": 1,
+   "part_b_impl": 3,
+   "conversion_pct": 300.0,
+   "part_b_investment_rs_cr": 9428,
+   "rs_cr_per_project": 3142.7,
+   "ec_relevant": false,
+   "share_of_filed_pct": 0.1
+  },
+  {
+   "industry": "Agricultural machinery",
+   "part_a_filed": 0,
+   "part_b_impl": 2,
+   "conversion_pct": null,
+   "part_b_investment_rs_cr": 1395,
+   "rs_cr_per_project": 697.5,
+   "ec_relevant": false,
+   "share_of_filed_pct": 0.0
+  },
+  {
+   "industry": "Defence industries",
+   "part_a_filed": 0,
+   "part_b_impl": 0,
+   "conversion_pct": null,
+   "part_b_investment_rs_cr": 0,
+   "rs_cr_per_project": null,
+   "ec_relevant": false,
+   "share_of_filed_pct": 0.0
+  },
+  {
+   "industry": "Photographic raw film and paper",
+   "part_a_filed": 0,
+   "part_b_impl": 0,
+   "conversion_pct": null,
+   "part_b_investment_rs_cr": 0,
+   "rs_cr_per_project": null,
+   "ec_relevant": false,
+   "share_of_filed_pct": 0.0
+  }
+ ],
+ "buckets": {
+  "ec_land_pollution_intensive_filed": 437,
+  "non_ec_light_filed": 830,
+  "avg_rs_cr_per_project_heavy": 582.4,
+  "avg_rs_cr_per_project_light": 326.0
+ },
+ "ties_to": "land_supply_demand_scenarios -- sector mix sets the land-intensity; a heavier filed mix pushes demand toward the DEFICIT scenario"
+}
