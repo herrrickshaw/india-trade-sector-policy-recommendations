@@ -1,0 +1,167 @@
+{
+ "analysis": "data_completeness_audit",
+ "built": "2026-07-22",
+ "purpose": "A single register of what is MISSING, ESTIMATED, or PENDING across the three repos (policy recommendations, digital-twin-for-ipa, EC sub-sector), ranked so the highest-leverage gaps to close are obvious. Separates gaps that are FIXABLE (a known source exists) from STRUCTURAL limits (the data does not exist at this granularity anywhere).",
+ "scope": [
+  "land supply-demand",
+  "FDI vs IEM",
+  "EC / PARIVESH",
+  "leads & visibility"
+ ],
+ "land": {
+  "biggest_gap": {
+   "what": "Undeveloped state land banks are quantified for ONLY ONE state (Odisha, 104,026 ac via IDCO ArcGIS). The other 27 industrial states' undeveloped banks are unknown \u2014 so the national 'developable' supply tier in the funnel rests on a single data point extrapolated.",
+   "why_it_matters": "This is the swing factor in the whole supply-demand verdict. If other states hold Odisha-scale undeveloped banks, 'ready-land scarcity' softens; if they don't, it hardens.",
+   "fix": "Pull each state's own land-bank portal (tiered by accessibility below). ~5-6 are machine-readable now."
+  },
+  "state_landbank_sources": {
+   "machine_readable_now": {
+    "Odisha IDCO": "DONE \u2014 open ArcGIS REST gis.investodisha.gov.in .../Landbank_Info/MapServer/1/query, per-plot geometry+category+acres",
+    "UPSIDA (UP)": "HTML-table, one GET: eservices.onlineupsida.com/PropertyHub/Index.aspx \u2014 all plots + PRICE",
+    "APIIC (AP)": "JSP zone->park->plot: kpi.apiic.in:8443 VacantPlots.jsp",
+    "TGIIC (Telangana)": "tgiic.telangana.gov.in/PMVacantPlots",
+    "RIICO (Rajasthan)": "riico.rajasthan.gov.in/undevelopedland.aspx \u2014 explicitly the UNDEVELOPED bank",
+    "HSIIDC (Haryana)": "coarse table, available-plot list dated"
+   },
+   "needs_headless_or_post": {
+    "MIDC (Maharashtra)": "AJAX controller returns 411, needs body/headless browser"
+   },
+   "login_or_pdf_only": [
+    "GIDC (Gujarat)",
+    "KIADB (Karnataka)",
+    "WB silpasathi.wb.gov.in",
+    "MPIDC (down)"
+   ],
+   "hijacked_do_not_trust": {
+    "sipcot.com/sipcot.in": "parked \u2014 real site sipcotweb.tn.gov.in",
+    "wbidc.com": "parked \u2014 real site silpasathi.wb.gov.in / wbiidc.wb.gov.in"
+   }
+  },
+  "other_missing": [
+   {
+    "gap": "Per-parcel lat/lng",
+    "status": "BLOCKED \u2014 IILB GeoServer WFS disabled (WMS raster only). Without coordinates, no proximity-to-port/highway/power analysis and no map.",
+    "fix": "state ArcGIS endpoints (Odisha proves it's possible) carry geometry; assemble state-by-state"
+   },
+   {
+    "gap": "Land PRICE / lease rate",
+    "status": "MISSING for most \u2014 IILB returns vacant plots but not rates. Price is what decides whether 'available' land is actually competitive vs the distressed pool.",
+    "fix": "UPSIDA publishes price; RIICO/TGIIC have rate cards; scrape per state"
+   },
+   {
+    "gap": "Servicing status of undeveloped banks (power/water/road/effluent connectivity)",
+    "status": "ASSUMED, not verified \u2014 the funnel's 'needs capex' tier can't yet distinguish serviced-but-unallotted from raw",
+    "fix": "state park brochures + DPR status; no single source"
+   },
+   {
+    "gap": "Distressed-land ACREAGE (IBC/SARFAESI/NLMC)",
+    "status": "COUNTS known (1,436 ongoing IBC liquidations, GIDC ~4,450 ac, PSU ~3,400 ac) but most parcels UNSIZED",
+    "fix": "BAANKNET (ibapi.in) auction listings + IBBI liquidation list carry plot area per lot"
+   }
+  ],
+  "demand_side_gap": {
+   "what": "Land-intensity benchmarks (Rs cr/acre) exist for only ~2 sector anchors (bulk-drug parks 0.94-1.37, medical-device ~16). That is why the three demand scenarios span 13x \u2014 the uncertainty IS the missing benchmark.",
+   "fix": "PARIVESH EC detail records carry PROJECT AREA (ha) AND project cost per proposal \u2014 extracting both would give a real Rs cr/acre distribution PER sub-sector, collapsing the demand band from a guess to a measurement. This is the single highest-value pending pull on the demand side.",
+   "also": "State single-window APPROVED-project lists (GO-SWIFT/MAITRI/Guidance-TN/iORA) carry land area + investment per cleared project"
+  }
+ },
+ "fdi_iem": {
+  "structural_limits_unfixable": [
+   "FDI state series starts Oct-2019 (pre-2019 is by RBI regional office, bundles states) \u2014 no earlier state series exists anywhere",
+   "FDI attributed to registered office, not project site \u2014 a Maharashtra/Delhi FDI figure is bookkeeping location, not where the factory is. Only company-level project data (which India does not publish centrally) could fix this",
+   "IEM Part B under-measures services and sub-threshold projects by design",
+   "2019 IEM column is DEFECTIVE in the DPIIT source (Gujarat 2019 Part B ~6x all-India) \u2014 excluded, not recoverable"
+  ],
+  "fixable_gaps": [
+   {
+    "gap": "Sector x State FDI cross-tab",
+    "status": "MISSING \u2014 DPIIT publishes sector-wise AND state-wise but NOT the cross. So 'which sector's FDI landed in which state' is unknown.",
+    "fix": "RBI regional-office bulletins + state single-window approvals approximate it; no clean central source"
+   },
+   {
+    "gap": "District-level FDI or IEM",
+    "status": "MISSING entirely \u2014 everything is state-level",
+    "fix": "DIC (District Industries Centre) registrations; state industrial-dept dashboards"
+   },
+   {
+    "gap": "Ground-truth of IEM 'implemented' (Part B)",
+    "status": "UNVERIFIED \u2014 DPIIT's 'implemented' is self-reported, no commissioned-unit audit",
+    "fix": "MCA-21 active-company filings by industrial PIN + GST registration by industrial address = independent realization proxy"
+   }
+  ]
+ },
+ "ec": {
+  "concrete_pending_pulls": [
+   {
+    "pull": "Pre-2022 EC history",
+    "status": "PENDING \u2014 open API floors at 2022. Legacy ASP.NET portals cover it: proposal_status_new1.aspx (2014-2022) and offlineproposal_status.aspx (back to 1994). NOT yet fetched.",
+    "value": "Turns the EC snapshot into an 8-30 year time series \u2014 enables year-on-year flow, which the whole register currently lacks"
+   },
+   {
+    "pull": "EC per-proposal AREA (ha) + PROJECT COST",
+    "status": "PENDING \u2014 carried in the PARIVESH DETAIL record, not the summary list already pulled",
+    "value": "Directly yields the Rs cr/acre demand benchmark (see land.demand_side_gap) AND lets EC pipeline convert to land demand without IEM at all"
+   },
+   {
+    "pull": "EC LATENCY (submission->grant days)",
+    "status": "PENDING \u2014 timestamps are in detail records",
+    "value": "Clearance-speed by state/sector = a real ease-of-doing-business signal, currently absent"
+   }
+  ],
+  "quality_caveats": [
+   "'Proposal For' (fresh-vs-reuse) is self-declared; 11% left unclassified rather than forced",
+   "Activity code missing on 8,037 proposals (7%) \u2014 excluded from sub-sector view"
+  ]
+ },
+ "leads_visibility": {
+  "gaps": [
+   {
+    "gap": "Annual-report India-mention sweep is a yfinance SAMPLE, not exhaustive",
+    "fix": "widen the ticker universe; add non-US listings (Europe/Japan/Korea already cached in the market repo)"
+   },
+   {
+    "gap": "PIB match is TITLE-indexed \u2014 proven to miss annexure PDFs, R&D directories, regulator orders (the ministry-check reversal found 8 'quiet' companies actually named)",
+    "fix": "already partly done via ministry-publication layer; extend to full-text PIB PDF body search, not just headlines"
+   },
+   {
+    "gap": "Parliament sweep is Lok Sabha 18th only",
+    "status": "Rajya Sabha now reachable (rsdoc.nic.in) but not fully swept; earlier Lok Sabhas not pulled",
+    "fix": "sweep RS ses_no 259-271 + prior LS terms"
+   },
+   {
+    "gap": "Leads are NOT joined to the IEM/EC register",
+    "status": "MISSING \u2014 we don't yet know which foreign leads have actually FILED an IEM or EC",
+    "fix": "fuzzy-match lead company names against PARIVESH proponent field + DPIIT IEM company list"
+   }
+  ]
+ },
+ "cross_cutting_absences": [
+  {
+   "gap": "TIME SERIES",
+   "detail": "Almost everything is a single snapshot (IILB, advertised land, EC status, land funnel). No year-on-year flow anywhere except the FDI/IEM year tables.",
+   "highest_leverage_fix": "the pre-2022 EC pull (above) is the cheapest way to add a real multi-year axis"
+  },
+  {
+   "gap": "EMPLOYMENT / JOBS",
+   "detail": "No jobs data in any layer. IEM carries PROPOSED EMPLOYMENT per memorandum \u2014 never extracted.",
+   "fix": "DPIIT IEM records include employment intent; pull alongside investment"
+  },
+  {
+   "gap": "INFRASTRUCTURE PROXIMITY",
+   "detail": "Land readiness really turns on distance to port/highway/power/water \u2014 not collected. The funnel treats 'developed' as binary.",
+   "fix": "needs the per-parcel geometry gap closed first, then overlay PM Gati Shakti / port / NH layers"
+  },
+  {
+   "gap": "DOCS PENDING (TCC-blocked)",
+   "detail": "Two oilfield files unreadable from ~/Downloads (India_Oilfield_Land_Reuse_Legal_Analysis.docx, India_Acreage_Onshore_Offshore_Split_1.docx) \u2014 acreage was independently sourced instead; these remain a cross-check once moved out of ~/Downloads."
+  }
+ ],
+ "top_5_highest_leverage": [
+  "1. PARIVESH EC detail records (area+cost per proposal) -> real Rs cr/acre benchmark, collapses the 13x demand band AND lets EC drive land demand directly",
+  "2. Pre-2022 EC via legacy portals -> the one cheap way to add a real 2014-2022(+) TIME axis to a register that is otherwise all snapshots",
+  "3. The 5-6 machine-readable state land-bank portals (UPSIDA/APIIC/TGIIC/RIICO/HSIIDC) -> generalises the Odisha undeveloped-bank proof from 1 state to ~6, the swing factor in the supply verdict",
+  "4. State single-window APPROVED-project lists -> actual realised investment + land area (ground-truths IEM Part B, which is self-reported)",
+  "5. Join leads to the IEM/EC proponent register -> tells us which foreign targets have already filed vs are still only 'intent', sharpening the targeting shortlist"
+ ],
+ "note": "Structural limits (FDI registered-office attribution, no pre-2019 FDI state series, no central district-level series) are recorded so they are not mistaken for fixable gaps. Everything under 'concrete_pending_pulls', 'machine_readable_now' and 'top_5_highest_leverage' has a known, tested access route."
+}
