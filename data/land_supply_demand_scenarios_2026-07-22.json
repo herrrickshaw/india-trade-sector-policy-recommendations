@@ -1,0 +1,101 @@
+{
+ "analysis": "land_supply_demand_scenarios",
+ "built": "2026-07-22",
+ "demand": {
+  "pending_iem_rs_cr": 1431320,
+  "pending_projects": 1532,
+  "source": "pending IEM Part A minus Part B 2020-2025"
+ },
+ "supply_ledger_acres": [
+  {
+   "layer": "IILB developed-park vacant",
+   "acres": 253720,
+   "tier": "READY",
+   "siteable": true,
+   "note": "national, all 37 states, vacant plots only (indiaindustriallandbank.gov.in)",
+   "quantified": "full"
+  },
+  {
+   "layer": "State undeveloped land banks",
+   "acres": 104026,
+   "tier": "DEVELOPABLE",
+   "siteable": true,
+   "note": "ONLY Odisha IDCO quantified (Category B); other states hold undeveloped banks the central portal misses -- Odisha proved the central figure understated ~20x, so national total is FAR higher but unquantified",
+   "quantified": "Odisha only -- national is a large LOWER BOUND"
+  },
+  {
+   "layer": "GIDC resumed/cancelled plots",
+   "acres": 4450,
+   "tier": "DISTRESSED-FAST",
+   "siteable": true,
+   "note": "Gujarat ~1,800 ha since Jan-2024; UPSIDA/MIDC/RIICO parallel drives unquantified",
+   "quantified": "Gujarat only"
+  },
+  {
+   "layer": "Closed-PSU / NLMC land",
+   "acres": 3400,
+   "tier": "DISTRESSED",
+   "siteable": true,
+   "note": "~3,400 ac CPSE surplus referred to DIPAM (Economic Survey 2021-22)",
+   "quantified": "partial"
+  },
+  {
+   "layer": "IBC liquidation + SARFAESI/ARC",
+   "acres": null,
+   "tier": "DISTRESSED-UNSIZED",
+   "siteable": true,
+   "note": "1,436 ongoing liquidations + continuous SARFAESI auctions; IBBI publishes COUNTS not acreage, so no aggregate area -- built parcel-by-parcel from auction notices",
+   "quantified": "count-based, no acreage"
+  },
+  {
+   "layer": "Petroleum exploration acreage (ONGC etc.)",
+   "acres": 93564662,
+   "tier": "NOT-SITEABLE",
+   "siteable": false,
+   "note": "~378,651 sq km OALP licence area -- a RIGHT TO EXPLORE within a polygon, not usable industrial land; 90% offshore; well-pad footprint tiny. EXCLUDED from siteable supply. Re-use pool = depleted onshore-field SURFACE land, unsized publicly",
+   "quantified": "licence area only, not siteable"
+  }
+ ],
+ "quantified_siteable_acres": 365596,
+ "ready_now_acres": 253720,
+ "scenarios": [
+  {
+   "name": "Land-intensive (heavy industry/parks)",
+   "rs_cr_per_acre": 1.2,
+   "basis": "bulk-drug-park benchmark 0.94-1.37 Rs cr/acre",
+   "demand_acres": 1192767,
+   "vs_quantified_siteable": 3.26,
+   "vs_ready_only": 4.7,
+   "balance_acres": -827171,
+   "verdict": "DEFICIT"
+  },
+  {
+   "name": "Balanced (mixed manufacturing)",
+   "rs_cr_per_acre": 5.0,
+   "basis": "midpoint heavy vs light",
+   "demand_acres": 286264,
+   "vs_quantified_siteable": 0.78,
+   "vs_ready_only": 1.13,
+   "balance_acres": 79332,
+   "verdict": "BALANCE"
+  },
+  {
+   "name": "Land-efficient (light/assembly)",
+   "rs_cr_per_acre": 16.0,
+   "basis": "medical-device-park benchmark ~16 Rs cr/acre",
+   "demand_acres": 89458,
+   "vs_quantified_siteable": 0.24,
+   "vs_ready_only": 0.35,
+   "balance_acres": 276138,
+   "verdict": "SURPLUS"
+  }
+ ],
+ "headline": "Whether India has enough industrial land for its pending pipeline depends ENTIRELY on the land-intensity of that pipeline. Heavy-industry pipeline -> large deficit; light/efficient -> surplus. The pending pipeline is metals/chemicals-heavy (see sector data), pushing toward the land-intensive end.",
+ "the_swing_factor": "The Odisha finding is decisive: the central IILB understated one state's developable land ~20x (5,162 -> 109,000+ acres once its undeveloped IDCO bank counted). If that ratio holds even partially nationally, the TRUE developable supply dwarfs the quantified 365,601 acres and would cover even the land-intensive scenario -- but almost all of it is UNDEVELOPED (needs roads/power/water) and UNQUANTIFIED (only Odisha has a machine-readable land bank). The binding constraint is not raw land, it is DEVELOPED, SITED, ready-to-build land -- of which only ~253,725 acres (IILB) exists nationally.",
+ "caveats": [
+  "Demand is Rs cr converted to acres via a land-intensity assumption -- the scenarios ARE the uncertainty, not a hidden one.",
+  "Most supply layers are partial: only Odisha's undeveloped bank, Gujarat's resumed plots and IILB's developed land are fully quantified; IBC/SARFAESI is count-only; other states' undeveloped banks are unquantified lower bounds.",
+  "Petroleum exploration acreage (93.6M acres) is EXCLUDED from siteable supply -- it is licence area, not usable land.",
+  "Pending IEM approximates the unconverted backlog, not a clean stock."
+ ]
+}
