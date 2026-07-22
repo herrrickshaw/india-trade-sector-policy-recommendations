@@ -39,8 +39,14 @@
    "avail_land_ha": 2089.0,
    "avail_land_acres": 5162.0,
    "industrial_parks": 128,
-   "rs_cr_per_avail_acre": 45.0,
-   "verdict": "LAND-CONSTRAINED"
+   "rs_cr_per_avail_acre": 2.13,
+   "verdict": "LAND-RICH (corrected) -- 104,026 ac undeveloped IDCO bank the central IILB missed; NOT constrained",
+   "_pre_correction": {
+    "avail_land_acres_IILB_developed_vacant": 5162.0,
+    "verdict": "LAND-CONSTRAINED"
+   },
+   "undeveloped_bank_acres_IDCO": 104026,
+   "total_siteable_acres": 109188
   },
   {
    "state": "Telangana",
@@ -429,5 +435,30 @@
    "sipcot.in (domain-parked lander)",
    "wbidc.com (parked placeholder -- matches prior hijack note)"
   ]
+ },
+ "correction_2026_07_22": {
+  "what": "Odisha's LAND-CONSTRAINED verdict is OVERTURNED. The central IILB showed only ~5,162 ac (2,089 Ha) developed-park VACANT land. Odisha's own IDCO ArcGIS reveals 131,600 ac total incl. 104,026 ac of UNDEVELOPED 'Category B' land bank (Koraput/Kalahandi/Cuttack) -- so Odisha holds >109,000 ac of siteable land against Rs 232,433cr pending steel intent (~Rs 2.1cr/acre), among the LAND-RICHEST states, not constrained. The central portal understated its land ~20x.",
+  "lesson": "The central IILB counts only developed-park vacant land; state portals hold large undeveloped banks it misses. Verdicts for other 'constrained' states (esp. West Bengal) should be re-checked against their own state portals before being trusted.",
+  "state_portal_pulls": {
+   "Odisha": {
+    "undeveloped_acres": 104026,
+    "developed_total_acres": 27573,
+    "source": "IDCO ArcGIS gis.investodisha.gov.in",
+    "districts": "Koraput 31,747 / Kalahandi 18,827 / Cuttack 10,676 ac (undeveloped)"
+   },
+   "Telangana": {
+    "developed_vacant_acres": 3220,
+    "source": "TGIIC (same type as IILB, not additive)"
+   },
+   "Uttar Pradesh": {
+    "developed_vacant_acres_partial": 38,
+    "source": "UPSIDA (Agra+Aligarh only, partial)"
+   },
+   "Rajasthan": {
+    "undeveloped": "12 villages/tehsils listed, NO acreage disclosed",
+    "source": "RIICO"
+   }
+  },
+  "still_unresolved": "West Bengal (60 Ha per IILB) not re-checkable -- its state data (silpasathi.wb.gov.in) is single-window/gated; AP APIIC unreachable this session; RIICO undeveloped land undisclosed acreage."
  }
 }

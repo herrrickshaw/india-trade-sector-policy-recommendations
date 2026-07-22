@@ -1,0 +1,464 @@
+{
+ "built": "2026-07-22",
+ "states": [
+  {
+   "state": "Odisha",
+   "corporation": "IDCO (Investodisha GIS Land Bank)",
+   "land_type": "MIXED",
+   "total_available": 131600.1,
+   "unit": "acres",
+   "parcel_count": 30222,
+   "developed_acres_catA": 27573.4,
+   "undeveloped_acres_catB": 104026.6,
+   "by_district": [
+    {
+     "district": "KORAPUT",
+     "available": 31746.5,
+     "undeveloped_B": 31716.7,
+     "developed_A": 29.8
+    },
+    {
+     "district": "KALAHANDI",
+     "available": 18827.0,
+     "undeveloped_B": 18342.6,
+     "developed_A": 484.4
+    },
+    {
+     "district": "CUTTACK",
+     "available": 10675.7,
+     "undeveloped_B": 8588.4,
+     "developed_A": 2087.3
+    },
+    {
+     "district": "KHORDHA",
+     "available": 7233.8,
+     "undeveloped_B": 4258.0,
+     "developed_A": 2975.8
+    },
+    {
+     "district": "MAYURBHANJ",
+     "available": 7119.5,
+     "undeveloped_B": 7081.4,
+     "developed_A": 38.1
+    },
+    {
+     "district": "DHENKANAL",
+     "available": 6876.5,
+     "undeveloped_B": 5743.7,
+     "developed_A": 1132.8
+    },
+    {
+     "district": "JAJPUR",
+     "available": 6360.4,
+     "undeveloped_B": 4135.5,
+     "developed_A": 2224.9
+    },
+    {
+     "district": "JAGATSINGHPUR",
+     "available": 5460.9,
+     "undeveloped_B": 1161.7,
+     "developed_A": 4299.2
+    },
+    {
+     "district": "BALESWAR",
+     "available": 4978.7,
+     "undeveloped_B": 1576.4,
+     "developed_A": 3402.2
+    },
+    {
+     "district": "BHADRAK",
+     "available": 4718.9,
+     "undeveloped_B": 3827.8,
+     "developed_A": 891.1
+    },
+    {
+     "district": "JHARSUGUDA",
+     "available": 4620.9,
+     "undeveloped_B": 3251.7,
+     "developed_A": 1369.2
+    },
+    {
+     "district": "SAMBALPUR",
+     "available": 4420.0,
+     "undeveloped_B": 3185.3,
+     "developed_A": 1234.7
+    },
+    {
+     "district": "KEONJHAR",
+     "available": 3102.9,
+     "undeveloped_B": 1572.3,
+     "developed_A": 1530.6
+    },
+    {
+     "district": "BOUDH",
+     "available": 2337.0,
+     "undeveloped_B": 0.0,
+     "developed_A": 2337.0
+    },
+    {
+     "district": "ANGUL",
+     "available": 2298.4,
+     "undeveloped_B": 1866.6,
+     "developed_A": 431.8
+    },
+    {
+     "district": "SUNDARGARH",
+     "available": 2044.9,
+     "undeveloped_B": 1517.7,
+     "developed_A": 527.2
+    },
+    {
+     "district": "DEOGARH",
+     "available": 1897.2,
+     "undeveloped_B": 1452.3,
+     "developed_A": 444.9
+    },
+    {
+     "district": "BARGARH",
+     "available": 1430.5,
+     "undeveloped_B": 1373.7,
+     "developed_A": 56.9
+    },
+    {
+     "district": "BOLANGIR",
+     "available": 1217.9,
+     "undeveloped_B": 1207.6,
+     "developed_A": 10.3
+    },
+    {
+     "district": "KENDRAPARA",
+     "available": 1091.3,
+     "undeveloped_B": 1052.8,
+     "developed_A": 38.5
+    },
+    {
+     "district": "RAYAGADA",
+     "available": 862.1,
+     "undeveloped_B": 0.0,
+     "developed_A": 862.1
+    },
+    {
+     "district": "GANJAM",
+     "available": 718.2,
+     "undeveloped_B": 338.4,
+     "developed_A": 379.8
+    },
+    {
+     "district": "NAYAGARH",
+     "available": 314.8,
+     "undeveloped_B": 314.8,
+     "developed_A": 0.0
+    },
+    {
+     "district": "SONEPUR",
+     "available": 297.4,
+     "undeveloped_B": 196.5,
+     "developed_A": 100.9
+    },
+    {
+     "district": "PURI",
+     "available": 294.3,
+     "undeveloped_B": 16.0,
+     "developed_A": 278.3
+    },
+    {
+     "district": "NAWARANGAPUR",
+     "available": 248.6,
+     "undeveloped_B": 15.0,
+     "developed_A": 233.6
+    },
+    {
+     "district": "KANDHAMAL",
+     "available": 233.7,
+     "undeveloped_B": 233.7,
+     "developed_A": 0.0
+    },
+    {
+     "district": "MALKANGIRI",
+     "available": 85.9,
+     "undeveloped_B": 0.0,
+     "developed_A": 85.9
+    },
+    {
+     "district": "GAJAPATI",
+     "available": 84.2,
+     "undeveloped_B": 0.0,
+     "developed_A": 84.2
+    },
+    {
+     "district": "NUAPADA",
+     "available": 2.0,
+     "undeveloped_B": 0.0,
+     "developed_A": 2.0
+    }
+   ],
+   "sample": [
+    {
+     "district": "JAJPUR",
+     "estate_or_tahasil": "DANAGADI",
+     "plot": "93 (khata 89)",
+     "area": 57.3,
+     "category": "B (undeveloped land bank)",
+     "status": "DHULIGARH cluster"
+    },
+    {
+     "district": "JAJPUR",
+     "estate_or_tahasil": "DANAGADI",
+     "plot": "487 (khata 89)",
+     "area": 48.76,
+     "category": "B",
+     "status": "DHULIGARH cluster"
+    },
+    {
+     "district": "JAJPUR",
+     "estate_or_tahasil": "DANAGADI",
+     "plot": "485 (khata 89)",
+     "area": 175.85,
+     "category": "B",
+     "status": "DHULIGARH cluster"
+    },
+    {
+     "district": "JAJPUR",
+     "estate_or_tahasil": "DANAGADI",
+     "plot": "367 (khata 89)",
+     "area": 180.5,
+     "category": "B",
+     "status": "DHULIGARH cluster"
+    },
+    {
+     "district": "JAJPUR",
+     "estate_or_tahasil": "DANAGADI",
+     "plot": "167 (khata 89)",
+     "area": 107.1,
+     "category": "B",
+     "status": "DHULIGARH cluster"
+    }
+   ],
+   "endpoint": "https://gis.investodisha.gov.in/arcgis/rest/services/test/Landbank_Info/MapServer/1/query",
+   "bulk_method": "ArcGIS REST (no token). Count: ?where=1=1&returnCountOnly=true&f=json (30222). Sum: outStatistics sum(AREA_AC) total + groupByFieldsForStatistics=DIST,CATEGORY. Layer has NO pagination (supportsPagination=false) so parcel-level pulls use where=OBJECTID range filters, not resultOffset. Area field=AREA_AC (acres); CATEGORY A=developed park, B=undeveloped land bank.",
+   "raw_saved_to": "/private/tmp/claude-501/-Users-umashankar/0c3e9924-9f05-4396-80c8-81c306920b86/scratchpad/odisha_by_district.json"
+  },
+  {
+   "state": "Uttar Pradesh",
+   "corporation": "UPSIDA (onlineupsida PropertyHub)",
+   "land_type": "DEVELOPED",
+   "total_available": 38.4,
+   "unit": "acres",
+   "parcel_count": 111,
+   "total_sqm": 155258.5,
+   "by_district": [
+    {
+     "district": "AGRA",
+     "available": 30.79
+    },
+    {
+     "district": "ALIGARH",
+     "available": 7.57
+    }
+   ],
+   "sample": [
+    {
+     "district": "AGRA",
+     "estate_or_tahasil": "Kosi Kalan",
+     "plot": "E-12",
+     "area": 841.0,
+     "category": "developed industrial plot (SQMTR)",
+     "status": "AVAILABLE"
+    },
+    {
+     "district": "AGRA",
+     "estate_or_tahasil": "Kosi Kalan",
+     "plot": "E-13",
+     "area": 828.0,
+     "category": "developed industrial plot (SQMTR)",
+     "status": "AVAILABLE"
+    },
+    {
+     "district": "AGRA",
+     "estate_or_tahasil": "Kosi Kalan",
+     "plot": "C-25",
+     "area": 4800.0,
+     "category": "developed industrial plot (SQMTR)",
+     "status": "AVAILABLE"
+    },
+    {
+     "district": "AGRA",
+     "estate_or_tahasil": "Kosi Kalan",
+     "plot": "C-26",
+     "area": 6000.0,
+     "category": "developed industrial plot (SQMTR)",
+     "status": "AVAILABLE"
+    },
+    {
+     "district": "AGRA",
+     "estate_or_tahasil": "Kosi Kalan",
+     "plot": "E-51",
+     "area": 1000.0,
+     "category": "developed industrial plot (SQMTR)",
+     "status": "AVAILABLE"
+    }
+   ],
+   "endpoint": "https://eservices.onlineupsida.com/PropertyHub/Index.aspx",
+   "bulk_method": "ASP.NET GridView (grdPlotData). Default unfiltered GET returns the available-plots grid, server-paged Page$1..Page$11. Walk pager via POST with __EVENTTARGET=grdPlotData & __EVENTARGUMENT=Page$N carrying __VIEWSTATE/__EVENTVALIDATION forward. 111 available plots retrieved (AGRA+ALIGARH). Size col=Available Plot Size (SQMTR).",
+   "raw_saved_to": "/private/tmp/claude-501/-Users-umashankar/0c3e9924-9f05-4396-80c8-81c306920b86/scratchpad/upsida_plots.json"
+  },
+  {
+   "state": "Telangana",
+   "corporation": "TGIIC (PMVacantPlots)",
+   "land_type": "DEVELOPED",
+   "total_available": 3220.4,
+   "unit": "acres",
+   "parcel_count": 2678,
+   "total_sqm": 13032449.7,
+   "by_district": [
+    {
+     "district": "KARIMNAGAR",
+     "available": 621.07
+    },
+    {
+     "district": "SHAMSHABAD",
+     "available": 583.74
+    },
+    {
+     "district": "PATANCHERU",
+     "available": 505.09
+    },
+    {
+     "district": "NIZAMABAD",
+     "available": 441.33
+    },
+    {
+     "district": "WARANGAL",
+     "available": 417.6
+    },
+    {
+     "district": "CYBERABAD",
+     "available": 380.67
+    },
+    {
+     "district": "MEDCHAL - SIDDIPET",
+     "available": 234.17
+    },
+    {
+     "district": "YADADRI",
+     "available": 26.16
+    },
+    {
+     "district": "KHAMMAM",
+     "available": 10.57
+    }
+   ],
+   "sample": [
+    {
+     "district": "CYBERABAD",
+     "estate_or_tahasil": "CYBERABAD zone",
+     "plot": "521 plots",
+     "area": 380.67,
+     "category": "developed-park vacant (aggregated by zone)",
+     "status": "VACANT"
+    },
+    {
+     "district": "KARIMNAGAR",
+     "estate_or_tahasil": "KARIMNAGAR zone",
+     "plot": "380 plots",
+     "area": 621.07,
+     "category": "developed-park vacant (aggregated by zone)",
+     "status": "VACANT"
+    },
+    {
+     "district": "KHAMMAM",
+     "estate_or_tahasil": "KHAMMAM zone",
+     "plot": "10 plots",
+     "area": 10.57,
+     "category": "developed-park vacant (aggregated by zone)",
+     "status": "VACANT"
+    },
+    {
+     "district": "MEDCHAL - SIDDIPET",
+     "estate_or_tahasil": "MEDCHAL - SIDDIPET zone",
+     "plot": "610 plots",
+     "area": 234.17,
+     "category": "developed-park vacant (aggregated by zone)",
+     "status": "VACANT"
+    },
+    {
+     "district": "NIZAMABAD",
+     "estate_or_tahasil": "NIZAMABAD zone",
+     "plot": "219 plots",
+     "area": 441.33,
+     "category": "developed-park vacant (aggregated by zone)",
+     "status": "VACANT"
+    }
+   ],
+   "endpoint": "https://tgiic.telangana.gov.in/PMVacantPlots",
+   "bulk_method": "Single GET returns 'Vacant Plots Summary in Zone' HTML table: 9 zones x (No.of.Plots, No.of.Sheds, Area Sq.mtrs). Summed 2678 plots / 13,032,449.73 sqm. Developed industrial-park vacant plots.",
+   "raw_saved_to": "(inline; parsed from /tmp/tgiic.html GET)"
+  },
+  {
+   "state": "Rajasthan",
+   "corporation": "RIICO (undevelopedland.aspx)",
+   "land_type": "UNDEVELOPED",
+   "total_available": 0,
+   "unit": "acres",
+   "parcel_count": 12,
+   "note_acreage": "acreage NOT published on the page - only village/tehsil/district of undeveloped & semi-developed areas",
+   "by_district": [],
+   "sample": [
+    {
+     "district": "Ajmer",
+     "estate_or_tahasil": "Kekri",
+     "plot": "Molakiya",
+     "area": 0,
+     "category": "undeveloped/semi-developed area (no acreage published)",
+     "status": "AVAILABLE for development"
+    },
+    {
+     "district": "Balotra",
+     "estate_or_tahasil": "Pachpadra",
+     "plot": "Newai",
+     "area": 0,
+     "category": "undeveloped/semi-developed area (no acreage published)",
+     "status": "AVAILABLE for development"
+    },
+    {
+     "district": "Banswara",
+     "estate_or_tahasil": "Dhariyawad",
+     "plot": "Ambav",
+     "area": 0,
+     "category": "undeveloped/semi-developed area (no acreage published)",
+     "status": "AVAILABLE for development"
+    },
+    {
+     "district": "Banswara",
+     "estate_or_tahasil": "Sabla",
+     "plot": "Gada Arendia",
+     "area": 0,
+     "category": "undeveloped/semi-developed area (no acreage published)",
+     "status": "AVAILABLE for development"
+    },
+    {
+     "district": "Bhilwara",
+     "estate_or_tahasil": "Bhupalsagar",
+     "plot": "Kanakheda",
+     "area": 0,
+     "category": "undeveloped/semi-developed area (no acreage published)",
+     "status": "AVAILABLE for development"
+    }
+   ],
+   "endpoint": "https://riico.rajasthan.gov.in/undevelopedland.aspx",
+   "bulk_method": "Single GET; static HTML table 'Undeveloped/Semi-developed Areas' with 12 rows (11 named villages + one 18-village scattered-chunk entry). Columns: Sr No, Village/Area, Tehsil, District. No area figures given.",
+   "raw_saved_to": "(inline; parsed from /tmp/riico.html GET)"
+  }
+ ],
+ "notes": [
+  "1 acre = 4046.86 sqm used for all sqm->acre conversions.",
+  "Odisha IDCO is the only true geospatial FeatureService: 131,600.1 acres over 30,222 parcels = DEVELOPED CategoryA 27,573.4 ac (16,913 parcels) + UNDEVELOPED CategoryB 104,026.6 ac (13,309 parcels). The 104k-acre Category B undeveloped land bank is exactly what the central India Industrial Land Bank does not count.",
+  "TGIIC & UPSIDA report DEVELOPED-park vacant plots (same category the central IILB already holds).",
+  "RIICO uniquely publishes UNDEVELOPED/semi-developed land (IILB-missed) but WITHOUT acreage - only 12 area names, so no state total is derivable this session.",
+  "Odisha layer does NOT support pagination (supportsPagination=false); full parcel-level extraction must page by OBJECTID ranges, not resultOffset/resultRecordCount which return HTTP 400 'Pagination is not supported'."
+ ],
+ "unreachable": [
+  "APIIC (AP) kpi.apiic.in:8443 VacantPlots.jsp -> HTTP 404 (branded APIIC 404) on VacantPlots.jsp, /, index.jsp, home.jsp, Login.jsp, vacantplots.jsp - the JSP endpoint is gone/relocated this session; no vacant-plot data retrievable.",
+  "UPSIDA/RIICO/TGIIC/Odisha reached via curl (-k for the Odisha self-signed cert); browser navigation to eservices.onlineupsida.com was blocked by policy so UPSIDA was pulled via curl POST pager instead."
+ ]
+}
