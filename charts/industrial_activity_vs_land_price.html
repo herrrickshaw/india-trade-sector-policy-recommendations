@@ -1,0 +1,94 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Does industrial implementation raise land prices? — a state correlation</title>
+<style>
+:root{--bg:#eef1ea;--surface:#fcfcfa;--ink:#14180f;--ink2:#4f5348;--muted:#82867a;--rule:#d7dace;
+ --accent:#1f5f5b;--neg:#a5402c;--pos:#2f7d4f;--nul:#82867a;
+ --serif:"Iowan Old Style",Georgia,serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;--sans:-apple-system,"Segoe UI",Helvetica,sans-serif;}
+@media(prefers-color-scheme:dark){:root{--bg:#12151a;--surface:#1a1e21;--ink:#f2f1ea;--ink2:#c1c4b7;--muted:#8b8f83;
+ --rule:#2a2e28;--accent:#6fb3ac;--neg:#e08268;--pos:#7bc496;--nul:#8b8f83;}}
+:root[data-theme=dark]{--bg:#12151a;--surface:#1a1e21;--ink:#f2f1ea;--ink2:#c1c4b7;--muted:#8b8f83;--rule:#2a2e28;--accent:#6fb3ac;--neg:#e08268;--pos:#7bc496;--nul:#8b8f83;}
+:root[data-theme=light]{--bg:#eef1ea;--surface:#fcfcfa;--ink:#14180f;--ink2:#4f5348;--muted:#82867a;--rule:#d7dace;--accent:#1f5f5b;--neg:#a5402c;--pos:#2f7d4f;--nul:#82867a;}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.55}
+.wrap{max-width:900px;margin:0 auto;padding:40px 20px 60px}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:var(--serif);font-weight:500;font-size:clamp(24px,3.2vw,32px);margin:6px 0 8px}
+h2{font-family:var(--serif);font-weight:500;font-size:20px;margin:30px 0 6px}
+.dek{color:var(--ink2);font-size:15px;max-width:78ch}a{color:var(--accent)}
+.verdict{background:var(--surface);border:1px solid var(--rule);border-left:4px solid var(--neg);border-radius:10px;padding:16px 18px;margin:18px 0}
+.verdict b{color:var(--neg)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;margin-top:8px}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--rule)}
+th{font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:400}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;font-family:var(--mono);font-size:12.5px}
+td.s{color:var(--muted);font-size:12px}.neg{color:var(--neg);font-weight:600}.pos{color:var(--pos);font-weight:600}.nul{color:var(--nul)}
+.fig{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:16px;margin:10px 0}
+.scroll{overflow-x:auto}
+.note{color:var(--muted);font-size:12px;border-top:1px dashed var(--rule);margin-top:30px;padding-top:14px;max-width:84ch}
+ul{max-width:80ch;color:var(--ink2);font-size:14px}li{margin:5px 0}
+</style></head><body><div class="wrap">
+<div class="eyebrow">Economic analysis · state cross-section · 2026-07-22</div>
+<h1>Does industrial implementation bid up land prices?</h1>
+<p class="dek">The hypothesis: greater project implementation (IEM Part&nbsp;A→B conversion) and land allocation via
+environmental &amp; forest clearances mean more land transactions, which should bid up the valuation of the
+underlying asset — land. Tested across states against the one land-price series available, NHB RESIDEX.</p>
+
+<div class="verdict"><b>The data reverses the hypothesis.</b> Across the 8 major states with clean single-source
+price data, <b>every</b> industrial-activity metric correlates <b>negatively</b> with residential price growth,
+and the actual land-allocation measure — forest land granted for diversion — is strongly negative: Pearson
+<b>−0.78</b>, strengthening to <b>−0.85</b> after controlling for state GDP. The most industrially land-intensive
+states show the <i>weakest</i> price growth; the price leaders are IT/services metros with little industrial-land
+activity. But this is residential prices in a different sub-market — read the verdict below before concluding
+industry doesn't lift land value.</div>
+
+<h2>The relationship, plotted</h2>
+<div class="fig"><svg viewBox="0 0 560 360" xmlns="http://www.w3.org/2000/svg" style="max-width:100%;height:auto"><line x1="54" y1="232.9" x2="542" y2="232.9" stroke="var(--rule)" stroke-dasharray="3 3"/><line x1="54" y1="20" x2="54" y2="316" stroke="var(--rule)"/><line x1="54" y1="316" x2="542" y2="316" stroke="var(--rule)"/><text x="46" y="310.6" font-size="10" text-anchor="end" fill="var(--muted)">-8%</text><text x="46" y="235.9" font-size="10" text-anchor="end" fill="var(--muted)">0%</text><text x="46" y="161.2" font-size="10" text-anchor="end" fill="var(--muted)">8%</text><text x="46" y="86.5" font-size="10" text-anchor="end" fill="var(--muted)">16%</text><text x="46" y="30.5" font-size="10" text-anchor="end" fill="var(--muted)">22%</text><text x="298" y="354" font-size="11" text-anchor="middle" fill="var(--muted)">Forest land granted for diversion (ha) — industrial land allocation →</text><text x="14" y="168" font-size="11" text-anchor="middle" fill="var(--muted)" transform="rotate(-90 14 168)">Residential HPI YoY %</text><circle cx="58.9" cy="114.3" r="5.5" fill="#1f5f5b" fill-opacity="0.85"/><text x="66.9" y="117.3" font-size="10.5" text-anchor="start" fill="var(--ink2)">Karnataka +12.7%</text><circle cx="59.9" cy="156.3" r="5.5" fill="#1f5f5b" fill-opacity="0.85"/><text x="67.9" y="159.3" font-size="10.5" text-anchor="start" fill="var(--ink2)">Tamil Nadu +8.2%</text><circle cx="171.7" cy="169.4" r="5.5" fill="#1f5f5b" fill-opacity="0.85"/><text x="179.7" y="172.4" font-size="10.5" text-anchor="start" fill="var(--ink2)">Gujarat +6.8%</text><circle cx="54.8" cy="170.3" r="5.5" fill="#1f5f5b" fill-opacity="0.85"/><text x="62.8" y="173.3" font-size="10.5" text-anchor="start" fill="var(--ink2)">West Bengal +6.7%</text><circle cx="119.8" cy="199.3" r="5.5" fill="#1f5f5b" fill-opacity="0.85"/><text x="127.8" y="202.3" font-size="10.5" text-anchor="start" fill="var(--ink2)">Maharashtra +3.6%</text><circle cx="154.5" cy="203.0" r="5.5" fill="#1f5f5b" fill-opacity="0.85"/><text x="162.5" y="206.0" font-size="10.5" text-anchor="start" fill="var(--ink2)">Telangana +3.2%</text><circle cx="71.3" cy="20.0" r="5.5" fill="#1f5f5b" fill-opacity="0.85"/><text x="79.3" y="23.0" font-size="10.5" text-anchor="start" fill="var(--ink2)">Haryana +22.8%</text><circle cx="542.0" cy="316.0" r="5.5" fill="#1f5f5b" fill-opacity="0.85"/><text x="534.0" y="319.0" font-size="10.5" text-anchor="end" fill="var(--ink2)">Chhattisgarh -8.9%</text></svg>
+<p class="dek" style="font-size:12.5px;margin:8px 0 0">Each dot is a state. More forest land allocated for
+industrial diversion (rightward) goes with <i>lower</i> residential price growth. Chhattisgarh — 8,061 ha cleared,
+the most industrial-land-intensive — sits at −8.9%; Haryana (Gurugram) and Karnataka (Bengaluru), the price
+leaders, cleared almost none.</p></div>
+
+<h2>Correlations with residential price growth (n=8)</h2>
+<div class="scroll"><table>
+<thead><tr><th>Industrial-activity metric</th><th class="num">Pearson</th><th class="num">Spearman</th><th class="num">Partial (÷GSDP)</th></tr></thead>
+<tbody><tr><td>IEM conversion % (B/A)</td><td class="num nul">-0.20</td><td class="num nul">-0.05</td><td class="num nul">-0.20</td></tr><tr><td>IEM-B implemented (Rs cr)</td><td class="num nul">-0.14</td><td class="num nul">-0.24</td><td class="num nul">-0.20</td></tr><tr><td>EC proposals</td><td class="num nul">-0.20</td><td class="num nul">-0.10</td><td class="num neg">-0.52</td></tr><tr><td>FC forest granted (ha)</td><td class="num neg">-0.78</td><td class="num neg">-0.57</td><td class="num neg">-0.85</td></tr>
+<tr><td style="color:var(--muted)">GSDP (economy size) — reference</td><td class="num nul">+0.13</td><td class="num nul">+0.24</td><td class="num">—</td></tr>
+</tbody></table></div>
+<p class="dek" style="font-size:12.5px">Spearman (rank) is shown because Gurugram (+22.8%) and Raipur (−8.9%) are
+outliers. Economy size barely predicts price (+0.13) — so this is not a generic "big state" effect; it is a
+specific-metro effect.</p>
+
+<h2>The underlying panel</h2>
+<div class="scroll"><table>
+<thead><tr><th>State</th><th>Price city</th><th class="num">HPI YoY</th><th class="num">GSDP ₹L cr</th><th class="num">IEM conv.</th><th class="num">EC props</th><th class="num">FC granted ha</th></tr></thead>
+<tbody><tr><td>Haryana</td><td class="s">Gurugram</td><td class="num ">+22.8%</td><td class="num">12.0</td><td class="num">50%</td><td class="num">1,194</td><td class="num">285</td></tr><tr><td>Karnataka</td><td class="s">Bengaluru</td><td class="num ">+12.7%</td><td class="num">28.1</td><td class="num">14%</td><td class="num">5,512</td><td class="num">81</td></tr><tr><td>Tamil Nadu</td><td class="s">Chennai</td><td class="num ">+8.2%</td><td class="num">31.6</td><td class="num">47%</td><td class="num">5,149</td><td class="num">98</td></tr><tr><td>Gujarat</td><td class="s">Ahmedabad</td><td class="num ">+6.8%</td><td class="num">27.9</td><td class="num">166%</td><td class="num">11,209</td><td class="num">1,944</td></tr><tr><td>West Bengal</td><td class="s">Kolkata</td><td class="num ">+6.7%</td><td class="num">18.8</td><td class="num">34%</td><td class="num">1,821</td><td class="num">13</td></tr><tr><td>Maharashtra</td><td class="s">Mumbai+Pune avg</td><td class="num ">+3.6%</td><td class="num">42.7</td><td class="num">37%</td><td class="num">13,542</td><td class="num">1,087</td></tr><tr><td>Telangana</td><td class="s">Hyderabad</td><td class="num ">+3.2%</td><td class="num">16.5</td><td class="num">32%</td><td class="num">3,572</td><td class="num">1,660</td></tr><tr><td>Chhattisgarh</td><td class="s">Raipur</td><td class="num neg">-8.9%</td><td class="num">5.6</td><td class="num">81%</td><td class="num">3,525</td><td class="num">8,061</td></tr></tbody></table></div>
+
+<h2>What this can — and cannot — say</h2>
+<p class="dek"><b>Can:</b> in the states with clean price data, industrial-implementation intensity does not
+co-move positively with the measurable land-price signal; if anything it co-moves negatively, and the negative
+sign survives controlling for economy size.</p>
+<p class="dek"><b>Cannot:</b> this is <i>not</i> proof that industrial transactions fail to raise land value. It is
+evidence that the price signal we can measure (residential HPI) lives in a <b>different sub-market</b> than
+industrial land. Three reasons the sign reverses:</p>
+<ul>
+<li><b>Separate sub-markets</b> — residential appreciation is an urban services/IT story (Bengaluru, Gurugram, Chennai); heavy industry and mining sit in different, cheaper geographies a residential index never touches.</li>
+<li><b>Administered pricing</b> — industrial land is largely allotted at agency rate-card prices (RIICO/GIDC/MIDC/IDCO), not market auctions, so higher transaction <i>volume</i> doesn't freely bid up the quoted price.</li>
+<li><b>Reverse causation</b> — land-hungry heavy industry deliberately locates where land is <i>cheap</i>; low land value is a cause of siting there, not an effect.</li>
+</ul>
+
+<h2>What would actually test the hypothesis</h2>
+<ul>
+<li><b>Right dependent variable:</b> industrial-plot transaction prices — state registration-department circle-rate revisions on industrial land, or IDC/agency allotment-rate histories over time. That measures the asset the hypothesis is about.</li>
+<li><b>Panel, not cross-section:</b> state×year (better, district×year) with fixed effects, so within-place change over time — not cross-state size gaps — identifies the effect, with industrial activity lagged 1–3 years.</li>
+<li><b>Direct transaction-volume regressor:</b> property/industrial-land registration counts and stamp-duty receipts per state-year (RBI State Finances).</li>
+</ul>
+
+<div class="note">
+Y = NHB RESIDEX residential HPI@valuation, YoY % Q3 FY2025-26 (Dec 2025 national press release; 8 named-city
+values, mapped to state; Maharashtra = Mumbai/Pune mean). X = DPIIT IEM Part A/B state tables, PARIVESH 2.0 EC &
+Forest-Clearance registers. Control = state GSDP FY25 current prices (approximate, size-control only). n=8;
+cross-sectional; residential price is a proxy for a different sub-market than industrial land — directional and
+hypothesis-generating, not causal. Data: <a href="../data/industrial_activity_vs_land_price_2026-07-22.json">
+industrial_activity_vs_land_price_2026-07-22.json</a>. Corrections displayed, never silent.
+</div>
+</div></body></html>

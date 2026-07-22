@@ -1,0 +1,168 @@
+{
+ "analysis": "industrial_activity_vs_land_price_correlation",
+ "built": "2026-07-22",
+ "question": "Does greater industrial implementation (IEM Part A->B conversion) and land allocation via environmental/forest clearances correlate with land-price increases at the state level -- i.e. do greater transaction volumes bid up the valuation of the underlying asset (land)?",
+ "hypothesised_channel": "More implemented projects -> more land transactions -> demand-driven appreciation / agglomeration premium -> higher land value. A plausible mechanism, but it competes with three counter-forces listed in 'why_the_sign_may_reverse'.",
+ "design": {
+  "type": "cross-sectional, state-level (NOT a panel)",
+  "n_states": 8,
+  "Y": "NHB RESIDEX residential House Price Index, HPI@valuation, year-on-year % change, Q3 FY2025-26 (Dec 2025)",
+  "X": [
+   "IEM conversion % (Part B implemented / Part A filed)",
+   "IEM Part B implemented (Rs cr)",
+   "EC proposals (PARIVESH, full register)",
+   "Forest-clearance forest land granted (ha)"
+  ],
+  "control": "state GSDP FY25 (current prices, Rs lakh cr) as a proxy for economy size / urbanisation",
+  "methods": [
+   "Pearson (linear)",
+   "Spearman (rank, robust to the Gurugram/Raipur outliers)",
+   "partial correlation controlling for GSDP"
+  ]
+ },
+ "panel": [
+  {
+   "state": "Karnataka",
+   "city": "Bengaluru",
+   "price_yoy": 12.7,
+   "gsdp_lakh_cr": 28.1,
+   "iem_conv_pct": 13.5,
+   "iem_B_rs_cr": 49028.0,
+   "iem_A_rs_cr": 361856.0,
+   "ec_proposals": 5512,
+   "fc_granted_ha": 81
+  },
+  {
+   "state": "Tamil Nadu",
+   "city": "Chennai",
+   "price_yoy": 8.2,
+   "gsdp_lakh_cr": 31.6,
+   "iem_conv_pct": 47.1,
+   "iem_B_rs_cr": 45811.0,
+   "iem_A_rs_cr": 97274.0,
+   "ec_proposals": 5149,
+   "fc_granted_ha": 98
+  },
+  {
+   "state": "Gujarat",
+   "city": "Ahmedabad",
+   "price_yoy": 6.8,
+   "gsdp_lakh_cr": 27.9,
+   "iem_conv_pct": 166.5,
+   "iem_B_rs_cr": 695120.0,
+   "iem_A_rs_cr": 417504.0,
+   "ec_proposals": 11209,
+   "fc_granted_ha": 1944
+  },
+  {
+   "state": "West Bengal",
+   "city": "Kolkata",
+   "price_yoy": 6.7,
+   "gsdp_lakh_cr": 18.8,
+   "iem_conv_pct": 33.5,
+   "iem_B_rs_cr": 23302.0,
+   "iem_A_rs_cr": 69610.0,
+   "ec_proposals": 1821,
+   "fc_granted_ha": 13
+  },
+  {
+   "state": "Maharashtra",
+   "city": "Mumbai+Pune avg",
+   "price_yoy": 3.6,
+   "gsdp_lakh_cr": 42.7,
+   "iem_conv_pct": 37.4,
+   "iem_B_rs_cr": 271703.0,
+   "iem_A_rs_cr": 726292.0,
+   "ec_proposals": 13542,
+   "fc_granted_ha": 1087
+  },
+  {
+   "state": "Telangana",
+   "city": "Hyderabad",
+   "price_yoy": 3.2,
+   "gsdp_lakh_cr": 16.5,
+   "iem_conv_pct": 32.3,
+   "iem_B_rs_cr": 31191.0,
+   "iem_A_rs_cr": 96692.0,
+   "ec_proposals": 3572,
+   "fc_granted_ha": 1660
+  },
+  {
+   "state": "Haryana",
+   "city": "Gurugram",
+   "price_yoy": 22.8,
+   "gsdp_lakh_cr": 12.0,
+   "iem_conv_pct": 49.9,
+   "iem_B_rs_cr": 30747.0,
+   "iem_A_rs_cr": 61570.0,
+   "ec_proposals": 1194,
+   "fc_granted_ha": 285
+  },
+  {
+   "state": "Chhattisgarh",
+   "city": "Raipur",
+   "price_yoy": -8.9,
+   "gsdp_lakh_cr": 5.6,
+   "iem_conv_pct": 81.2,
+   "iem_B_rs_cr": 117117.0,
+   "iem_A_rs_cr": 144221.0,
+   "ec_proposals": 3525,
+   "fc_granted_ha": 8061
+  }
+ ],
+ "correlations_vs_price": {
+  "IEM conversion % (B/A)": {
+   "pearson": -0.203,
+   "spearman": -0.048,
+   "partial_ctrl_gsdp": -0.197
+  },
+  "IEM-B implemented (Rs cr)": {
+   "pearson": -0.143,
+   "spearman": -0.238,
+   "partial_ctrl_gsdp": -0.205
+  },
+  "EC proposals": {
+   "pearson": -0.205,
+   "spearman": -0.095,
+   "partial_ctrl_gsdp": -0.518
+  },
+  "FC forest granted (ha)": {
+   "pearson": -0.78,
+   "spearman": -0.571,
+   "partial_ctrl_gsdp": -0.847
+  }
+ },
+ "gsdp_vs_price_reference": {
+  "pearson": 0.134,
+  "spearman": 0.238,
+  "reading": "economy size barely predicts price growth -- so the price signal is not a generic 'big state' effect"
+ },
+ "headline": "The hypothesis is NOT supported in the available data -- the sign is REVERSED. Every industrial-activity metric correlates NEGATIVELY with residential price growth, and the actual land-allocation measure (forest land granted) is strongly negative: Pearson -0.78, strengthening to -0.85 after controlling for GSDP. The most industrially land-intensive states (Chhattisgarh: 8,061 ha forest cleared, 81% IEM conversion -> -8.9% price; Gujarat: 11,209 ECs -> +6.8%) show the weakest price growth, while the price leaders (Haryana/Gurugram +22.8%, Karnataka/Bengaluru +12.7%) are SERVICES/IT-realty metros with low industrial-land intensity.",
+ "why_the_sign_may_reverse": [
+  "SEPARATE SUB-MARKETS: residential HPI appreciation is an urban services/IT phenomenon (Bengaluru, Gurugram, Chennai); heavy-industry and mining land use (Chhattisgarh, industrial belts) sits in different, cheaper geographies. The two barely touch, so a residential index cannot see the industrial-land channel.",
+  "ADMINISTERED PRICING: industrial land is largely allotted at STATE AGENCY rate-card prices (RIICO/GIDC/MIDC/IDCO), not market-cleared auctions -- so higher transaction VOLUME does not freely bid up the quoted price the way it would in a market asset.",
+  "REVERSE CAUSATION / LOCATION CHOICE: land-hungry heavy industry deliberately locates where land is CHEAP and abundant; low land value is a CAUSE of siting there, not an effect prevented by it."
+ ],
+ "what_this_can_and_cannot_say": {
+  "can": "In the states with clean single-source price data, industrial-implementation intensity does not co-move positively with the measurable (residential) land-price signal; if anything it co-moves negatively, and the negative sign survives controlling for economy size.",
+  "cannot": "This is NOT proof that industrial transactions fail to raise land value. It is evidence that the price signal we can measure lives in a different sub-market. The user's specific channel -- industrial transaction volume bidding up INDUSTRIAL land -- is untestable with residential HPI."
+ },
+ "limitations": [
+  "n = 8 states (only those with clean single-source NHB Q3 FY26 city values); Gurugram (+22.8%) and Raipur (-8.9%) are high-leverage outliers -- hence Spearman is reported alongside Pearson.",
+  "Cross-section, not a panel: cannot separate cause from effect or absorb state fixed effects.",
+  "UNIT MISMATCH: Y is RESIDENTIAL house prices; X is INDUSTRIAL activity. City price mapped to whole state.",
+  "IEM Part B is self-reported 'implemented'; EC/FC are pipeline snapshots (2022->fetch), not dated flows."
+ ],
+ "what_would_actually_test_it": [
+  "DEPENDENT VARIABLE: industrial-plot transaction prices -- state IGR/registration-department circle-rate revisions on industrial land, or IDC/industrial-agency allotment-rate histories (RIICO/GIDC/MIDC rate cards over time). These measure the ASSET the hypothesis is about.",
+  "STRUCTURE: a state x year (better, district x year) PANEL with fixed effects, so within-place variation over time -- not cross-state size differences -- identifies the relationship.",
+  "TRANSACTION VOLUME: property/industrial-land registration COUNTS and stamp-duty receipts per state-year (RBI State Finances) as the direct 'transaction volume' regressor.",
+  "LAGS: land price should respond to implementation with a lag; the panel must allow X to lead Y by 1-3 years."
+ ],
+ "sources": [
+  "NHB RESIDEX National Press Release, Q3 FY2025-26 (Dec 2025), HPI@valuation YoY",
+  "DPIIT IEM Part A/B state tables (as used across this repo)",
+  "PARIVESH 2.0 EC & Forest Clearance registers",
+  "state GSDP FY25 current prices (StatisticsTimes/state budgets, approximate, size-control only)"
+ ]
+}
