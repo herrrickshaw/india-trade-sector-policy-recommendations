@@ -1,0 +1,114 @@
+{
+  "built": "2026-07-22",
+  "pools": [
+    {
+      "pool": "IBC liquidation",
+      "scale": "1,436 corporate-debtor liquidation processes ONGOING (assets not yet sold) out of 2,728 that have entered liquidation; 824 of these have been running >2 years. Manufacturing is the single largest sector in insolvency, ~40% of all CIRP admissions, so a large share of these liquidations hold factory land/sheds. Asset-on-ground values are steeply distressed: for the 211 largest liquidation cases, assets were valued at only ~Rs 0.45 trillion against Rs 9.59 trillion of admitted claims.",
+      "unit": "corporate debtors / processes (each may hold one or more industrial land+building parcels)",
+      "period": "Ongoing liquidations as on 31-Jan-2025; sector mix and big-case valuation as on 31-Dec-2024",
+      "source": "IBBI Quarterly Newsletter Jan-Mar 2025 and IBBI CIRP/liquidation data (as on 31-Jan-2025 / 31-Dec-2024); manufacturing 40% share via FACTLY analysis of IBBI data",
+      "url": "https://ibbi.gov.in/uploads/whatsnew/912e97d4d9f96651386541fb7059203b.pdf ; https://factly.in/data-as-per-ibbi-data-about-44-of-the-closed-cirps-moved-into-liquidation/",
+      "state_wise": [
+        {"state": "Maharashtra", "detail": "Many liquidation auction notices concentrated in MIDC estates (Thane/Murbad/Nashik) e.g. Vindhyavasini Steel (11,514 sqm Murbad MIDC), General Composites (42,200 sqm Shahapur, Thane), Eurotas Infrastructure plant at Sinnar-Nashik"},
+        {"state": "National", "detail": "No official state-wise acreage split of liquidation land is published by IBBI; parcels are spread across all major manufacturing states and listed case-by-case on the auction-notice portal"}
+      ],
+      "access_route": "IBBI liquidation auction-notice list (ibbi.gov.in/liquidation-auction-notices/lists) linking each liquidator's e-auction PDF; bidding now runs mainly through BAANKNET (ibbi.baanknet.com, the PSB Alliance / ex-eBKray platform) and private auction platforms (auctiontiger.in, bankeauctions.com)",
+      "cost_speed_advantage": "Land is already zoned industrial with existing plant/shed, roads, power and often environmental clearances; sold under a court-supervised liquidation at fair/reserve value that is typically a fraction of admitted claims (distressed pricing). No fresh land acquisition, no change-of-use, and title passes free of most prior encumbrances via the liquidation sale — far faster than greenfield assembly.",
+      "status": "operational"
+    },
+    {
+      "pool": "closed PSU",
+      "scale": "26 Central PSEs listed as closed or on the verge of closure (a defined universe whose factory land is being freed for monetisation). CPSEs had referred ~3,400 acres of surplus land to DIPAM for potential monetisation (Economic Survey 2021-22). Telecom PSUs alone: BSNL + MTNL have raised Rs 12,984.86 crore from asset monetisation since 2019, of which land & building = ~Rs 2,388 cr (BSNL) + ~Rs 2,135 cr (MTNL) up to Jan-2025.",
+      "unit": "companies (26 closed CPSEs) / acres (~3,400 acres referred) / Rs crore realised",
+      "period": "Closed-CPSE list current (2026); ~3,400 acres figure = Economic Survey 2021-22; BSNL/MTNL realisation up to Jan-2025",
+      "source": "DPE/MSME Sambandh closed-CPSE portal; Economic Survey 2021-22 (via NLMC coverage); Business Standard on BSNL/MTNL monetisation",
+      "url": "https://sambandh.msme.gov.in/PPP_PSU_Closed.aspx ; https://www.business-standard.com/companies/news/bsnl-mtnl-raise-rs-12-984-crore-from-asset-monetisation-since-2019-125031200920_1.html",
+      "state_wise": [
+        {"state": "Multiple", "detail": "Named closed CPSEs with plant land include Hindustan Cables, Hindustan Fertilizer Corp, Hindustan Paper Corp, HMT Watches, Fertilizer Corp of India, Birds Jute & Exports, Central Inland Water Transport Corp — sites across West Bengal, Bihar, Karnataka, Assam etc."},
+        {"state": "5 southern cities", "detail": "NLMC valuing ~35,591 sqm (8.7 acres) of BSNL freehold land as a pilot"}
+      ],
+      "access_route": "National Land Monetisation Corporation (NLMC), nlmc.dpe.gov.in — the SPV set up to hold and monetise surplus/non-core land of closed and strategic-disinvestment CPSEs; also DIPAM asset-monetisation cell",
+      "cost_speed_advantage": "Government-owned, single-owner land, usually large contiguous industrial parcels with legacy infrastructure; monetised through a structured NLMC/DIPAM process rather than open-market acquisition, avoiding fragmented private title and acquisition delay.",
+      "status": "operational"
+    },
+    {
+      "pool": "resumed plots",
+      "scale": "State industrial corporations hold large stocks of allotted-but-unutilised industrial plots they cancel/resume and re-offer. Gujarat (GIDC): ~1,800 hectares (~4,450 acres) of unutilised plots targeted for take-back/re-allotment under the Jan-2024 voluntary-return + resumption policy. Uttar Pradesh (UPSIDA), Maharashtra (MIDC), Rajasthan (RIICO) run parallel cancel-and-reallot programs; exact acreages not centrally published.",
+      "unit": "hectares/acres (Gujarat ~1,800 ha) / plots",
+      "period": "GIDC policy announced 7-Jan-2024; UPSIDA/RIICO programs active 2024-2026",
+      "source": "ThePrint on Gujarat GIDC unutilised-plot policy; Deccan Herald / SC ruling on UPSIDA plot cancellations; RIICO Direct Allotment Policy 2025",
+      "url": "https://theprint.in/economy/gujarat-govt-to-pay-full-allotment-price-for-unutilised-gidc-plots-on-voluntary-return/1913727/ ; https://riico.rajasthan.gov.in/writereaddata/eAuctionLottery/202503151251143581678FAQ.pdf",
+      "state_wise": [
+        {"state": "Gujarat", "detail": "GIDC: ~1,800 ha unutilised across estates; voluntary-return refund up to 75% of current allotment price, plots then re-allotted (portal: egov.gidcgujarat.org)"},
+        {"state": "Uttar Pradesh", "detail": "UPSIDA cancels unutilised plots (unit not built in stipulated time) and re-advertises them; SC on 6-Apr-2026 upheld cancellation of Piaggio's 33-acre Surajpur plot. Availability portal: eservices.onlineupsida.com / onlineupsidc.com Advertisement page"},
+        {"state": "Maharashtra", "detail": "MIDC lists vacant/available plots (incl. resumed) via MILAAP land-allotment portal (land.midcindia.org, services.midcindia.org/vacantplotsdetails)"},
+        {"state": "Rajasthan", "detail": "RIICO Direct Allotment Policy-2025 offers plots at reserve rate; e-auction/lottery + direct allotment via SSO portal"}
+      ],
+      "access_route": "State industrial-development-corporation portals: GIDC (gidc.gujarat.gov.in), MIDC MILAAP (land.midcindia.org), UPSIDA (eservices.onlineupsida.com), RIICO (riico.rajasthan.gov.in) — each publishes vacant/resumed-plot advertisements and e-auction/allotment notices",
+      "cost_speed_advantage": "These are inside developed industrial estates with existing roads, power, water and effluent infrastructure; often re-offered at old/subsidised reserve rates or the original allotment price; allotment is administrative (application/e-auction) rather than land acquisition, so possession can be quick.",
+      "status": "operational"
+    },
+    {
+      "pool": "ARC/SARFAESI",
+      "scale": "No consolidated acreage figure is published, but ARCs (ARCIL, government-backed NARCL, etc.) and secured lenders hold and auction large inventories of mortgaged industrial property enforced under the SARFAESI Act, 2002. Qualitative/large pool; the sector is consolidating (Aditya Birla ARC, India Resurgence, Arcion exited).",
+      "unit": "properties (count not centrally disclosed)",
+      "period": "Ongoing 2024-2026",
+      "source": "LiveLaw on ARC regulatory landscape; NARCL / ARCIL / bank SARFAESI auction notices",
+      "url": "https://www.livelaw.in/articles/asset-reconstruction-companies-regulatory-reform-525230 ; https://www.narcl.co.in/ ; https://www.arcil.co.in/",
+      "state_wise": [
+        {"state": "All-India", "detail": "SARFAESI industrial-property auctions posted continuously by SBI, PSBs, ARCIL, NARCL and ARC panels; no state-wise land register published"}
+      ],
+      "access_route": "SARFAESI/ARC e-auction aggregators: auctiontiger.in, bankeauctions.com, BAANKNET (ibbi.baanknet.com), plus individual bank/ARC auction-notice pages (ARCIL, NARCL, Punjab & Sind Bank ARC/NARCL notice pages)",
+      "cost_speed_advantage": "Enforced mortgaged assets sold at reserve value to recover dues, frequently below replacement cost; already operational/industrial sites. But: unlike IBC, SARFAESI has no statutory resolution timeline and weaker anti-promoter-reacquisition safeguards, so title/possession disputes can slow handover.",
+      "status": "operational"
+    },
+    {
+      "pool": "NLMC",
+      "scale": "NLMC is the dedicated GoI SPV (incorporated 3-Jun-2022, 100% government-owned under DPE/Ministry of Finance) to own, hold, manage and monetise surplus and non-core land of CPSEs under closure and under strategic disinvestment. Pipeline seeded by the ~3,400 acres CPSEs referred to DIPAM (Economic Survey 2021-22); has begun valuation pilots (e.g. 8.7 acres BSNL land in 5 southern cities).",
+      "unit": "acres (pipeline ~3,400 acres referred)",
+      "period": "Incorporated Jun-2022; pipeline figure ES 2021-22; pilots 2024-2025",
+      "source": "PIB Cabinet approval note; Economic Survey 2021-22; NLMC official site",
+      "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1811082 ; https://nlmc.dpe.gov.in/homepage/homepage.php",
+      "state_wise": [
+        {"state": "National", "detail": "Covers surplus land of CPSEs such as MTNL, BSNL, BPCL, B&R, BEML, HMT, Instrumentation Ltd — at various stages"}
+      ],
+      "access_route": "NLMC (nlmc.dpe.gov.in) and DIPAM (dipam.gov.in)",
+      "cost_speed_advantage": "Aggregates government surplus land into a single monetisation vehicle so developers deal with one counterparty holding clean government title, bypassing private-land assembly.",
+      "status": "operational (corporation live; transaction pipeline still ramping, several assets only at valuation stage — partly proposal/early-execution)"
+    }
+  ],
+  "named_assets": [
+    {"asset": "Vindhyavasini Steel Products Pvt Ltd (in liquidation)", "location": "Additional Murbad Industrial Area (MIDC), Village Kudavali, Thane, Maharashtra", "land": "Industrial plot ~11,514 sqm with shed", "status": "IBC liquidation e-auction (notice 01-Dec-2024, auction 30-Dec-2024)", "source": "IBBI liquidation auction notice", "url": "https://ibbi.gov.in/liquidation-auction-notices/lists"},
+    {"asset": "General Composites Pvt Ltd (in liquidation)", "location": "Village Lahe, Mumbai-Agra NH, Taluka Shahapur, Thane, Maharashtra", "land": "~42,200 sqm land + building (slump sale), P&M valued >Rs 12 cr", "status": "IBC liquidation e-auction (slump sale)", "source": "IBBI liquidation auction notice", "url": "https://ibbi.gov.in/liquidation-auction-notices/lists"},
+    {"asset": "Eurotas Infrastructure Ltd (in liquidation)", "location": "Plant site, Musalgaon, Sinnar, Nashik, Maharashtra", "land": "Industrial plant site with movable assets", "status": "IBC liquidation e-auction (notice 30-Nov-2024)", "source": "IBBI liquidation auction notice", "url": "https://ibbi.gov.in/liquidation-auction-notices/lists"},
+    {"asset": "Anmol Steel (in liquidation)", "location": "India (per IBBI notice)", "land": "Steel unit land + assets", "status": "IBC liquidation e-auction (notice Apr-2026)", "source": "IBBI liquidation auction notice", "url": "https://ibbi.gov.in/uploads/auction_notice_liquidation/2026-04-09-090925-zt0es-6897438eee2adf643e0ed32c5766c0a4.pdf"},
+    {"asset": "Piaggio Vehicles Pvt Ltd plot (allotment cancelled)", "location": "Surajpur Industrial Area, UPSIDA, Uttar Pradesh", "land": "33 acres", "status": "UPSIDA cancelled lease for non-construction; cancellation upheld by Supreme Court 06-Apr-2026 — plot returns to UPSIDA for re-allotment", "source": "Supreme Court ruling / UPSIDA", "url": "https://supremetoday.ai/sc-upholds-cancellation-piaggio-33acre-uttarpradesh-plot-20260407021"},
+    {"asset": "Closed CPSEs with plant land", "location": "Pan-India", "land": "Legacy factory sites", "status": "Closed / under closure, surplus land routed to NLMC/DIPAM", "source": "MSME Sambandh closed-CPSE list", "url": "https://sambandh.msme.gov.in/PPP_PSU_Closed.aspx", "detail_examples": "Hindustan Cables, Hindustan Fertilizer Corp, Hindustan Paper Corp, HMT Watches, Fertilizer Corp of India, Birds Jute & Exports"},
+    {"asset": "BSNL freehold land (NLMC pilot)", "location": "Five southern cities", "land": "~35,591 sqm (8.7 acres)", "status": "Valuation initiated by NLMC for monetisation", "source": "Business Standard / NLMC coverage", "url": "https://www.business-standard.com/companies/news/bsnl-mtnl-raise-rs-12-984-crore-from-asset-monetisation-since-2019-125031200920_1.html"}
+  ],
+  "national_scale_summary": "The distressed/stressed industrial-land supply pool in India is large but not published as a single acreage number. The most concrete, buyable pools are: (1) IBC LIQUIDATION - ~1,436 corporate debtors with liquidation still ongoing as on 31-Jan-2025 (824 running >2 years), out of 2,728 that have entered liquidation; manufacturing is ~40% of all insolvency admissions, so a large share carry factory land, and these assets sell at deeply distressed values (Rs 0.45 trn asset value vs Rs 9.59 trn claims for the 211 biggest cases); (2) STATE RESUMED PLOTS - led by Gujarat's ~1,800 hectares (~4,450 acres) of unutilised GIDC plots being resumed/re-allotted since Jan-2024, plus active cancellation programs at UPSIDA (UP), MIDC (Maharashtra) and RIICO (Rajasthan); (3) CLOSED PSU land - 26 closed/closing CPSEs plus ~3,400 acres of CPSE surplus land referred to DIPAM, now routed through the National Land Monetisation Corporation; and (4) ARC/SARFAESI enforced industrial properties auctioned continuously by NARCL/ARCIL/banks. Of these, LIQUIDATION and RESUMED PLOTS offer the most immediately repurposable land because it is already industrial-zoned with existing infrastructure and priced at reserve/distressed levels.",
+  "best_access_routes": [
+    "IBBI liquidation auction-notice list (https://ibbi.gov.in/liquidation-auction-notices/lists) -> individual liquidator e-auction PDFs, with bidding via BAANKNET (https://ibbi.baanknet.com)",
+    "State industrial-corporation vacant/resumed-plot portals: GIDC (gidc.gujarat.gov.in / egov.gidcgujarat.org), MIDC MILAAP (land.midcindia.org), UPSIDA (eservices.onlineupsida.com), RIICO (riico.rajasthan.gov.in)",
+    "NLMC (nlmc.dpe.gov.in) + DIPAM (dipam.gov.in) for closed/strategic-disinvestment CPSE surplus land",
+    "SARFAESI/ARC e-auction aggregators: auctiontiger.in, bankeauctions.com, and NARCL (narcl.co.in) / ARCIL (arcil.co.in) auction notices"
+  ],
+  "caveats": [
+    "No single official statistic exists for 'total acres of industrial land in IBC liquidation' - IBBI reports counts of processes and rupee values, not aggregate land area; acreage must be built up parcel-by-parcel from auction notices.",
+    "The manufacturing ~40% share is of CIRP admissions (going into insolvency), not specifically of liquidations, and not every manufacturing debtor owns land (some lease it).",
+    "Gujarat's ~1,800 ha and UPSIDA cancellations include plots never built on (allottee default) as well as genuinely distressed units - this is 'unutilised/resumed' land, broader than only insolvency-linked land.",
+    "CIRP (resolution) keeps the company a going concern - land is NOT freely available; the repurposing opportunity is mostly in LIQUIDATION (asset sale) and in resumed/cancelled state plots. This JSON separates them.",
+    "IBBI deleted 'sale as a going concern' from the liquidation framework in Oct-2025, which should push more liquidation land toward piecemeal/parcel asset sales (favourable for buyers wanting the land only).",
+    "NLMC is operational as a corporation but its transaction pipeline is still early - several CPSE assets are only at the valuation stage, so treat large land-bank figures as pipeline, not sold/available inventory.",
+    "SARFAESI/ARC assets can have title/possession disputes and (unlike IBC) no statutory resolution timeline, so handover can be slower and messier than a court-supervised liquidation sale.",
+    "Several IBBI auction-notice URLs are per-case PDFs that rotate/expire; the durable entry point is the liquidation-auction-notice list page."
+  ],
+  "unavailable": [
+    "A consolidated national acreage of industrial land currently in IBC liquidation (not published by IBBI).",
+    "State-wise acreage split of liquidation-linked industrial land.",
+    "Exact acre count and current market value of the 26 closed CPSEs' land holdings (Sambandh list names companies but not land area).",
+    "Precise, up-to-date total of plots cancelled/resumed by UPSIDA, MIDC and RIICO (only qualitative/program-level info found; Gujarat's ~1,800 ha is the only hard acreage retrieved).",
+    "NLMC's total land bank actually transacted/sold to date (only pipeline-referral ~3,400 acres and pilot valuations retrieved).",
+    "Aggregate acreage of industrial property held/auctioned by ARCs under SARFAESI (not centrally disclosed)."
+  ]
+}
