@@ -13,7 +13,7 @@
    },
    {
     "name": "india-trade-sector-policy-recommendations",
-    "role": "Prescriptive half: turns the descriptive repo's chapter rankings and country-concentration findings into explicit, checkable sector/policy recommendations, an FDI pitch deck, and (this session's main body of work) a rigorous accountability check on whether PLI schemes actually c…",
+    "role": "Prescriptive half: turns the descriptive repo's chapter rankings and country-concentration findings into explicit, checkable sector/policy recommendations, an FDI pitch deck, and (this session's main body of work) a rigorous accountability check on whether PLI schemes actually c\u2026",
     "url": "https://github.com/herrrickshaw/india-trade-sector-policy-recommendations",
     "pages": "https://herrrickshaw.github.io/india-trade-sector-policy-recommendations/"
    }
@@ -30,7 +30,7 @@
    "phase": "2",
    "title": "FDI pitch deck v1 -- 5 sectors",
    "repo": "india-trade-sector-policy-recommendations",
-   "headline_finding": "Built as a 12-slide investor deck (HTML source -> headless-Chrome screenshots -> PPTX -> PDF pipeline) pitching 5 PLI-backed sectors (Electronics, Specialty Steel, Auto/EV/Battery, Pharma APIs, White Goods) plus a risk slide (CBAM export exposure, currency volatility), all figur…"
+   "headline_finding": "Built as a 12-slide investor deck (HTML source -> headless-Chrome screenshots -> PPTX -> PDF pipeline) pitching 5 PLI-backed sectors (Electronics, Specialty Steel, Auto/EV/Battery, Pharma APIs, White Goods) plus a risk slide (CBAM export exposure, currency volatility), all figur\u2026"
   },
   {
    "phase": "3",
@@ -42,91 +42,91 @@
    "phase": "4",
    "title": "State & central incentives + emergent hubs bulletin",
    "repo": "india-trade-sector-policy-recommendations",
-   "headline_finding": "Central PLI is only half the incentive picture -- states layer their own capital subsidies, SGST reimbursement, and land/power concessions on top (e.g. Gujarat tops up the ISM semiconductor subsidy by 40%, UP by 50%). Real hubs are emerging with hard evidence behind each: Gujara…"
+   "headline_finding": "Central PLI is only half the incentive picture -- states layer their own capital subsidies, SGST reimbursement, and land/power concessions on top (e.g. Gujarat tops up the ISM semiconductor subsidy by 40%, UP by 50%). Real hubs are emerging with hard evidence behind each: Gujara\u2026"
   },
   {
    "phase": "5",
    "title": "Top 10 FDI sectors: country strategies, game theory & tariff timeline",
    "repo": "india-trade-sector-policy-recommendations",
-   "headline_finding": "Extended the 5-sector framework to 10 (adding Inorganic Chemicals, Plastics, Aircraft & Spacecraft, Medical Devices) with real, sourced target FDI-source countries per sector. Corrected two prior assumptions on closer sourcing: Germany is EXITING (not entering) Specialty Steel v…"
+   "headline_finding": "Extended the 5-sector framework to 10 (adding Inorganic Chemicals, Plastics, Aircraft & Spacecraft, Medical Devices) with real, sourced target FDI-source countries per sector. Corrected two prior assumptions on closer sourcing: Germany is EXITING (not entering) Specialty Steel v\u2026"
   },
   {
    "phase": "6",
    "title": "FDI-vs-PLI-launch accountability check, cross-referenced against IBEF",
    "repo": "india-trade-sector-policy-recommendations",
-   "headline_finding": "The centerpiece of this session: tested whether REAL DPIIT/RBI-tracked FDI equity inflow actually rose after each PLI scheme's launch date, as distinct from the government's self-reported 'committed investment' figures. Built from 8 parallel research passes, each required to cit…"
+   "headline_finding": "The centerpiece of this session: tested whether REAL DPIIT/RBI-tracked FDI equity inflow actually rose after each PLI scheme's launch date, as distinct from the government's self-reported 'committed investment' figures. Built from 8 parallel research passes, each required to cit\u2026"
   },
   {
    "phase": "6a",
    "title": "The Jio Platforms / Gujarat data-quality finding",
    "repo": "india-trade-sector-policy-recommendations",
-   "headline_finding": "The single most important methodology finding of the session. DPIIT's own metadata document states 'Documentation on methodology: Not applicable' for its FDI statistics. State-wise FDI is attributed by a company's REGISTERED OFFICE address, not its factory location. Direct proof…"
+   "headline_finding": "The single most important methodology finding of the session. DPIIT's own metadata document states 'Documentation on methodology: Not applicable' for its FDI statistics. State-wise FDI is attributed by a company's REGISTERED OFFICE address, not its factory location. Direct proof\u2026"
   },
   {
    "phase": "7",
    "title": "Master sector scorecard",
    "repo": "india-trade-sector-policy-recommendations",
-   "headline_finding": "One table synthesizing every prior bulletin across the 10 priority sectors: key FDI-target countries, actual import/export leader countries, policy levers, FDI status, investment trend, and a traffic-light verdict with reasoning stated per row. Result: 2 green (Electronics, Medi…"
+   "headline_finding": "One table synthesizing every prior bulletin across the 10 priority sectors: key FDI-target countries, actual import/export leader countries, policy levers, FDI status, investment trend, and a traffic-light verdict with reasoning stated per row. Result: 2 green (Electronics, Medi\u2026"
   },
   {
    "phase": "8",
    "title": "The case for domestic capital in some states, FDI in others",
    "repo": "india-trade-sector-policy-recommendations",
-   "headline_finding": "Built the economic 'why' behind the domestic-vs-FDI pattern: India's own cost of capital is two-tiered, not one price. AAA-rated conglomerates (Tata Sons, Reliance) raise 3-5yr bonds at ~7.4-8.3%; ordinary corporate borrowers now mostly face EBLR-priced loans at ~9.5-10.5% (67.6…"
+   "headline_finding": "Built the economic 'why' behind the domestic-vs-FDI pattern: India's own cost of capital is two-tiered, not one price. AAA-rated conglomerates (Tata Sons, Reliance) raise 3-5yr bonds at ~7.4-8.3%; ordinary corporate borrowers now mostly face EBLR-priced loans at ~9.5-10.5% (67.6\u2026"
   },
   {
    "phase": "9",
    "title": "Repo manifest, Data & Charts reference, and the report synthesizer tool",
    "repo": "india-trade-sector-policy-recommendations",
-   "headline_finding": "Built scripts/report_synthesizer.py -- a schema-agnostic tool that turns ANY bulletin's data JSON into a standalone PDF (pixel-faithful via headless-Chrome print-to-PDF when paired with its chart HTML, generic-table fallback otherwise), Word (.docx), and PowerPoint (.pptx) repor…"
+   "headline_finding": "Built scripts/report_synthesizer.py -- a schema-agnostic tool that turns ANY bulletin's data JSON into a standalone PDF (pixel-faithful via headless-Chrome print-to-PDF when paired with its chart HTML, generic-table fallback otherwise), Word (.docx), and PowerPoint (.pptx) repor\u2026"
   },
   {
    "phase": "10",
    "title": "Primary ministry-website verification pass (completed)",
    "repo": "india-trade-sector-policy-recommendations",
-   "headline_finding": "9 parallel research agents visited the administering ministries' own websites directly (MeitY, Ministry of Steel, Department of Heavy Industry, Department of Pharmaceuticals, DPIIT, Ministry of Textiles, Chemicals/Civil-Aviation/Defence, plus dedicated IEM and MoSPI passes), pri…"
+   "headline_finding": "9 parallel research agents visited the administering ministries' own websites directly (MeitY, Ministry of Steel, Department of Heavy Industry, Department of Pharmaceuticals, DPIIT, Ministry of Textiles, Chemicals/Civil-Aviation/Defence, plus dedicated IEM and MoSPI passes), pri\u2026"
   },
   {
    "phase": "11",
    "title": "Policy & investment insight dashboard",
    "repo": "india-trade-sector-policy-recommendations",
-   "headline_finding": "Synthesized the full ministry-verification pass into a dashboard bulletin covering all 14 PLI/incentive schemes: utilization, incentives remaining, application-window status, official challenge quotes. Also tested -- and honestly rejected -- the two data sources requested for it…"
+   "headline_finding": "Synthesized the full ministry-verification pass into a dashboard bulletin covering all 14 PLI/incentive schemes: utilization, incentives remaining, application-window status, official challenge quotes. Also tested -- and honestly rejected -- the two data sources requested for it\u2026"
   },
   {
    "phase": "12",
    "title": "Tracked quarterly PDF snapshot + refresh workflow",
    "repo": "india-trade-sector-policy-recommendations",
-   "headline_finding": "Published a version-tracked, quarter-stamped PDF snapshot of the dashboard (reports/published/policy_investment_dashboard_2026-Q3.pdf) and a GitHub Actions workflow that runs every quarter: regenerates the PDF from the latest dated data JSON and opens a dated re-verification iss…"
+   "headline_finding": "Published a version-tracked, quarter-stamped PDF snapshot of the dashboard (reports/published/policy_investment_dashboard_2026-Q3.pdf) and a GitHub Actions workflow that runs every quarter: regenerates the PDF from the latest dated data JSON and opens a dated re-verification iss\u2026"
   },
   {
    "phase": "13",
    "title": "AHIDF dashboard evaluation -- the counter-example",
    "repo": "india-trade-sector-policy-recommendations",
-   "headline_finding": "Evaluated the Animal Husbandry Infrastructure Development Fund's public dashboard as a possible counter-example to the finding that no ministry publishes state-wise, funnel-complete scheme data. Verdict: a genuine counter-example with a precise ceiling. AHIDF runs a no-login, NI…"
+   "headline_finding": "Evaluated the Animal Husbandry Infrastructure Development Fund's public dashboard as a possible counter-example to the finding that no ministry publishes state-wise, funnel-complete scheme data. Verdict: a genuine counter-example with a precise ceiling. AHIDF runs a no-login, NI\u2026"
   },
   {
    "phase": "14",
    "title": "DPIIT publications update + FY2025-26 FDI newsletter analysis",
    "repo": "india-trade-sector-policy-recommendations",
-   "headline_finding": "Read DPIIT's restructured publications listing interactively in a rendered browser (bypassing the bot-gating that blocked earlier scraping), then downloaded all 27 statement PDFs from FDI Newsletter Vol. XXXIV No. 4 (April 2026) and extracted the sector/state tables with layout-…"
+   "headline_finding": "Read DPIIT's restructured publications listing interactively in a rendered browser (bypassing the bot-gating that blocked earlier scraping), then downloaded all 27 statement PDFs from FDI Newsletter Vol. XXXIV No. 4 (April 2026) and extracted the sector/state tables with layout-\u2026"
   },
   {
    "phase": "15",
    "title": "IEM appendix verification against Annual Report 2025-26",
    "repo": "india-trade-sector-policy-recommendations",
-   "headline_finding": "Verified a previously-Claude-generated IEM workbook's figures directly against the DPIIT Annual Report 2025-26 PDF (Appendices III-VI, Grand Total rows): all 24 numbers accurate; one footnote corrected (both Part A and Part B run 'Up to Dec 2025'). The new series materially chan…"
+   "headline_finding": "Verified a previously-Claude-generated IEM workbook's figures directly against the DPIIT Annual Report 2025-26 PDF (Appendices III-VI, Grand Total rows): all 24 numbers accurate; one footnote corrected (both Part A and Part B run 'Up to Dec 2025'). The new series materially chan\u2026"
   },
   {
    "phase": "16",
    "title": "FY2025-26 verdict re-run -- Power BI-style trade impact dashboard",
    "repo": "india-trade-sector-policy-recommendations",
-   "headline_finding": "Re-ran all 10 sector verdicts against the FY2025-26 FDI data: both former greens fell to amber (Electronics -43.5%, Medical Devices -40.4%, against a national FDI cycle up 18%) and Pharma took the green slot (+114%, landing after Rs 5,433cr of disbursement, materially weakening…"
+   "headline_finding": "Re-ran all 10 sector verdicts against the FY2025-26 FDI data: both former greens fell to amber (Electronics -43.5%, Medical Devices -40.4%, against a national FDI cycle up 18%) and Pharma took the green slot (+114%, landing after Rs 5,433cr of disbursement, materially weakening\u2026"
   },
   {
    "phase": "17",
    "title": "Verdict re-run slide added to FDI deck (21 slides) + templates/ directory",
    "repo": "india-trade-sector-policy-recommendations",
-   "headline_finding": "Two closing deliverables. (1) The FY2025-26 verdict re-run became slide 20 of the FDI pitch deck (now 21 slides, PPTX/PDF rebuilt and verified) -- the three verdict movers as cards (Electronics -43.5% and Medical Devices -40.4%, both green-to-amber; Pharma +114%, amber-to-green)…"
+   "headline_finding": "Two closing deliverables. (1) The FY2025-26 verdict re-run became slide 20 of the FDI pitch deck (now 21 slides, PPTX/PDF rebuilt and verified) -- the three verdict movers as cards (Electronics -43.5% and Medical Devices -40.4%, both green-to-amber; Pharma +114%, amber-to-green)\u2026"
   },
   {
    "phase": "18",
@@ -434,29 +434,59 @@
     "PROCESS NOTE worth keeping: five coordinator agents each fanned out to sub-researchers. Four delivered promptly; the Turkey/NZ coordinator went 36 minutes with a 129-byte transcript and was judged dead -- queued messages to a stopped agent are never delivered, so detection means stat-ing the transcript for growth rather than trusting the absence of an error. A replacement was launched, and then the ORIGINAL completed after ~41 minutes and delivered a full 10-company file. The duplicate was stopped before it could overwrite the same path. Lesson recorded: a silent agent is not necessarily a dead one, and a replacement writing to the same output path is a race -- give the replacement a distinct path or stop the original first.",
     "ALSO THIS PHASE (separate request): the quarterly reportage page gained a ministry-wise companion view. docs/reportage_ministry.html groups all 3,982 mapped announcements under their scheme's OWNING ministry (49 of them, Cabinet/CCEA rows filed under the line ministry, register attribution kept inline per row) with each row time-stamped by release date, newest first. The original quarter-wise docs/reportage.html was RESTORED unchanged from 096720b after the first attempt overwrote it -- the user asked for a separate file, not a replacement -- and the two now cross-link. Each has its own template; build_reportage.py emits both every run, so the weekly cron keeps them in sync. Commits 1e4d30b, 0da6312."
    ]
+  },
+  {
+   "phase": "55",
+   "title": "PARIVESH beyond EC: Forest / Wildlife / CRZ registers pulled and analysed",
+   "repo": "india-ec-subsector-analysis",
+   "headline_finding": "Same open API serves majorClearanceType 2/3/4. Forest Clearance (28,999 proposals) carries forest_area in hectares -- the land-QUANTUM measure EC lacks: 49,641 ha (122,666 acres) of forest with final diversion orders granted, a SECOND land-creation channel beside the ~253,720-ac industrial bank. Wildlife is the bottleneck (10.7% grant rate, 88% pending at proponent); CRZ small/coastal. Honest handling: pipeline totals are noisy (Tripura 184,758 ha pipeline vs 44 granted -- data-entry artifact), so the granted figure leads."
+  },
+  {
+   "phase": "56",
+   "title": "Land-price correlation: does implementation bid up land? Sign REVERSES",
+   "repo": "india-trade-sector-policy-recommendations (charts/industrial_activity_vs_land_price.html)",
+   "headline_finding": "8-state cross-section vs NHB RESIDEX: every industrial-activity metric correlates NEGATIVELY with residential price growth; forest-land granted = -0.78 Pearson, -0.85 controlling GSDP. Not proof industry fails to lift land value -- the measurable price signal lives in a different sub-market (services metros), industrial land is administered-priced, and heavy industry sites where land is cheap (reverse causation). Proper test needs industrial circle-rate/allotment-rate panels, stated on the page."
+  },
+  {
+   "phase": "57",
+   "title": "Clearance-register lead channel: layer 24, tiers 1-2 (58 leads), 3-source verification",
+   "repo": "digital-twin-for-ipa (layers/24_clearance_leads.json)",
+   "headline_finding": "NEW lead channel inverting announcement-scanning: live EC/FC filings = paid-up verified intent. 113,981 EC rows -> 1,445 live corporate industrial filers -> tiers 1-2 = 58 verified via news sweep + credit-rating rationales (CARE first). QUIET finds: Rexxon (Jan-2025 LLP, filings are its ONLY public record), Hemanjali, Swarup Steel (Rs 35 cr paid-up pre-revenue). STATE-MISMATCH: JK Lakshmi's 11 WB filings vs news covering CG/UP/Bihar/JH (CARE rationale's Rs 2,500 cr 'awaiting clearances' = likely WB); Ambuja Concrete North MH vs Bihar news. Rating channel beat news: Bharat Rasayan expansion NOT in its rating case; Viyash told ICRA 'no capex 3-4 yrs' vs 10 live filings; Nayara on CARE RWN post-sanctions. Promoter-cluster find: Amur Spirits + Rajdheer Wine same Nashik village."
+  },
+  {
+   "phase": "58",
+   "title": "Full-pool policy triage (layer 24b) + tier 3 policy-aligned top-40",
+   "repo": "digital-twin-for-ipa (layers/24b, 24_clearance_leads tier 3)",
+   "headline_finding": "All 1,384 remaining filers mapped to 15 policy programs: 51% of India's live industrial EC pipeline is CHEMICALS -- China import-substitution is the dominant physical activity, mostly self-funded and unannounced; 140 pharma-named (API/KSM-PLI cohort). Tier-3 verification (40 companies): Orchid Pharma is the ONLY confirmed KSM-PLI beneficiary found (Rs 600 cr 7-ACA, J&K) and carries the cohort's WORST execution profile (land delays, Apr-2026 downgrade) while IOL/Farmson/Anthem/Aarti/Piramal/Virupaksha localise the same chains SELF-FUNDED -- the market is doing the scheme's job; land assembly, not incentive size, is the binding constraint. Foreign confirmed: Lanxess (DE, Rs 750 cr Jhagadia), Pernod Ricard (FR, Rs 1,785 cr Butibori), HS Hyosung (KR, ~Rs 3,000 cr), Sumitomo-TruAlt (JP), SRF Odisha filings fronting its Rs 10,000 cr pledge. EBP: Keyaan/Kamakhya/RSLD/Bannari/Bapuna. Taxonomy caution: Mowa/Mahunza are mahua heritage-liquor, not fuel ethanol. Risk flags shown: Jayshree ~19x jump only in EC docs; Matangi non-cooperating same quarter as filings; Sigachi 2-notch post-accident downgrade. Rename traps: Ami Organics->Acutaas, SMS Lifesciences->Haleos."
+  },
+  {
+   "phase": "59",
+   "title": "Cross-verification matrix (layer 24c) + reportage policy annex",
+   "repo": "digital-twin-for-ipa (layers/24c, docs/reportage*.html)",
+   "headline_finding": "Every committed name checked against every register held: ALL 41/41 ground-truth in raw PARIVESH registers (zero fabricated); only 17/41 EVER appeared in a PIB headline -- clearance registers see ~2.4x more of these investors than PIB headlines (title-index blindness quantified on a matched cohort). IEM Part-B company data held for only 2 sample months (absence = weak evidence, stated). Annex with 4 policy findings + the 41x9 matrix injected into BOTH reportage variants via __POLICY__ marker -- regeneration-durable."
   }
  ],
  "cross_cutting_insights": [
   {
-   "insight": "Three financially distinct numbers get conflated in almost all public PLI commentary, and this repo insists on keeping them separate throughout: (1) FDI EQUITY INFLOW -- real foreign money that arrived, DPIIT/RBI-tracked; (2) PLI COMMITTED/ACTUAL INVESTMENT -- company-announced…"
+   "insight": "Three financially distinct numbers get conflated in almost all public PLI commentary, and this repo insists on keeping them separate throughout: (1) FDI EQUITY INFLOW -- real foreign money that arrived, DPIIT/RBI-tracked; (2) PLI COMMITTED/ACTUAL INVESTMENT -- company-announced\u2026"
   },
   {
-   "insight": "A state's or sector's 'hub' status (real, landed manufacturing capacity) and its 'FDI share' (DPIIT/RBI-tracked foreign equity) are measuring genuinely different things, not the same thing imperfectly. Odisha is a real steel hub with under $100M/year in FDI, because its flagship…"
+   "insight": "A state's or sector's 'hub' status (real, landed manufacturing capacity) and its 'FDI share' (DPIIT/RBI-tracked foreign equity) are measuring genuinely different things, not the same thing imperfectly. Odisha is a real steel hub with under $100M/year in FDI, because its flagship\u2026"
   },
   {
-   "insight": "Sectors split cleanly by WHO OWNS THE ENABLING TECHNOLOGY. Where a strategic capacity gap coincides with an existing Indian conglomerate that already has the industrial scale and the technology (or doesn't need foreign technology) -- steel, semiconductor packaging/ATMP, EV batte…"
+   "insight": "Sectors split cleanly by WHO OWNS THE ENABLING TECHNOLOGY. Where a strategic capacity gap coincides with an existing Indian conglomerate that already has the industrial scale and the technology (or doesn't need foreign technology) -- steel, semiconductor packaging/ATMP, EV batte\u2026"
   },
   {
-   "insight": "Every major finding in this session that looked like a clean, attributable causal story turned out to have a stronger or equally plausible alternative explanation once checked: Pharma's FDI rise lines up better with global COVID/API-security reshoring than with either pharma PLI…"
+   "insight": "Every major finding in this session that looked like a clean, attributable causal story turned out to have a stronger or equally plausible alternative explanation once checked: Pharma's FDI rise lines up better with global COVID/API-security reshoring than with either pharma PLI\u2026"
   },
   {
-   "insight": "India's domestic capital is not one price. This session quantified a real, ~100-250+ basis-point gap between what a AAA-rated national-champion conglomerate pays for capital (~7.4-8.3% via bonds) and what an ordinary EBLR-priced corporate borrower pays (~9.5-10.5%, now the prici…"
+   "insight": "India's domestic capital is not one price. This session quantified a real, ~100-250+ basis-point gap between what a AAA-rated national-champion conglomerate pays for capital (~7.4-8.3% via bonds) and what an ordinary EBLR-priced corporate borrower pays (~9.5-10.5%, now the prici\u2026"
   },
   {
-   "insight": "This session's research practice deliberately surfaced its own errors rather than silently correcting them: an automated pass fabricated a claim that ICRA differentiates large-vs-small steel players by risk-absorption capacity; when checked against the actual ICRA source PDF, th…"
+   "insight": "This session's research practice deliberately surfaced its own errors rather than silently correcting them: an automated pass fabricated a claim that ICRA differentiates large-vs-small steel players by risk-absorption capacity; when checked against the actual ICRA source PDF, th\u2026"
   },
   {
-   "insight": "Government data infrastructure has real, documented, admitted gaps: DPIIT's own metadata document states it publishes no methodology for its FDI statistics; IEM (Industrial Entrepreneurs Memorandum) sector-level data exists but has no 'Electronics' category at all in its legacy…"
+   "insight": "Government data infrastructure has real, documented, admitted gaps: DPIIT's own metadata document states it publishes no methodology for its FDI statistics; IEM (Industrial Entrepreneurs Memorandum) sector-level data exists but has no 'Electronics' category at all in its legacy\u2026"
   }
  ],
  "tools_and_infrastructure_built": [
@@ -465,5 +495,5 @@
   "scripts/report_synthesizer.py -- the JSON-to-PDF/Word/PPT tool described in phase 9 above, the newest piece of session infrastructure and the one used to generate this very document.",
   "data/repo_manifest_2026-07-19.json -- machine-readable index of every chart/data pair, consumed both by the README's reference table and by the synthesizer's batch mode."
  ],
- "current_status": "All 53 phases logged. The leads layer now spans 321 companies in 45 countries, every foreign entry graded against its own annual report with verbatim evidence and honest report_used provenance, yielding 79 priority + 57 warm targets in docs/TARGET_LEADS.md. All five new market clusters are merged and pushed. The reportage site now offers both a quarter-wise and a ministry-wise view, cross-linked and rebuilt together by the weekly cron."
+ "current_status": "All 59 phases logged. Layer 24 holds 98 clearance-verified leads across 3 tiers (48 announced / 28 partially-visible / 22 quiet), layer 24b triages the full 1,384-company pool against 15 policy programs, and layer 24c cross-verifies 41 headline names against EC/FC/PIB/IEM/state/PLI-EBP/rating sources -- 41/41 ground-truthed, zero fabricated. Both reportage variants carry the policy annex. The EC repo covers all four green clearances incl. 122,666 acres of granted forest diversion. Land arc closed: readiness funnel, advertised-land audit, supply-demand scenarios, and the price-correlation reversal all published. Pending: CARE-specific pass on tier-3 policy targets; ~1,344 pool companies below tier 3 remain triaged-but-unverified; oilfield docx cross-check."
 }
