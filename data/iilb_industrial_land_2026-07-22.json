@@ -1,0 +1,342 @@
+{
+ "built": "2026-07-22",
+ "source": "indiaindustriallandbank.gov.in queryBuilderList_Master (public, no login)",
+ "method": "POST queryBuilderList_Master with hex-encoded SQL WHERE fragments; tblNo=1 parks, tblNo=9 vacant plots",
+ "coverage": "37 states/UTs, 4,240 parks, 125,602 vacant plots (Rajasthan plot count capped at 55,000; parks/area unaffected)",
+ "note": "available_area = vacant developed-park land in Ha. API returns VACANT plots only -- this is the available-supply measure by construction.",
+ "state_aggregates": [
+  {
+   "state": "ANDHRA PRADESH",
+   "parks": 574,
+   "total_area": 66129.69,
+   "available_area": 13302.69,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 2546,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "KARNATAKA",
+   "parks": 433,
+   "total_area": 50039.5,
+   "available_area": 5503.88,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 607,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "RAJASTHAN",
+   "parks": 417,
+   "total_area": 33302.51,
+   "available_area": 11540.68,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 55000,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "TAMIL NADU",
+   "parks": 362,
+   "total_area": 31430.64,
+   "available_area": 16487.11,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 1876,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "MAHARASHTRA",
+   "parks": 338,
+   "total_area": 104519.53,
+   "available_area": 19659.33,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 24284,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "UTTAR PRADESH",
+   "parks": 313,
+   "total_area": 38095.1,
+   "available_area": 1941.79,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 3269,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "GUJARAT",
+   "parks": 284,
+   "total_area": 191721.59,
+   "available_area": 12605.05,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 23398,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "TELANGANA",
+   "parks": 198,
+   "total_area": 8777.04,
+   "available_area": 944.4,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 1289,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "JHARKHAND",
+   "parks": 160,
+   "total_area": 3942.17,
+   "available_area": 861.8,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 580,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "JAMMU & KASHMIR",
+   "parks": 133,
+   "total_area": 2834.05,
+   "available_area": 263.95,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 0,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "ODISHA",
+   "parks": 128,
+   "total_area": 11540.5,
+   "available_area": 2089.02,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 1093,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "KERALA",
+   "parks": 128,
+   "total_area": 2824.89,
+   "available_area": 386.88,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 0,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "MADHYA PRADESH",
+   "parks": 100,
+   "total_area": 23218.69,
+   "available_area": 2017.17,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 1716,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "PUNJAB",
+   "parks": 88,
+   "total_area": 5995.17,
+   "available_area": 133.63,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 908,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "BIHAR",
+   "parks": 80,
+   "total_area": 4137.57,
+   "available_area": 648.67,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 1078,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "CHHATTISGARH",
+   "parks": 71,
+   "total_area": 4419.75,
+   "available_area": 2640.02,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 387,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "DELHI",
+   "parks": 68,
+   "total_area": 7018.58,
+   "available_area": 975.19,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 2827,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "HIMACHAL PRADESH",
+   "parks": 62,
+   "total_area": 961.8,
+   "available_area": 186.44,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 1446,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "ASSAM",
+   "parks": 61,
+   "total_area": 43698.09,
+   "available_area": 666.43,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 203,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "HARYANA",
+   "parks": 51,
+   "total_area": 12963.87,
+   "available_area": 8292.32,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 268,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "UTTARAKHAND",
+   "parks": 33,
+   "total_area": 3248.65,
+   "available_area": 124.01,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 1314,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "GOA",
+   "parks": 22,
+   "total_area": 1699,
+   "available_area": 102.13,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 543,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "TRIPURA",
+   "parks": 20,
+   "total_area": 1825.45,
+   "available_area": 624.73,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 152,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "ARUNACHAL PRADESH",
+   "parks": 18,
+   "total_area": 739.59,
+   "available_area": 247.23,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 0,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "WEST BENGAL",
+   "parks": 17,
+   "total_area": 490.54,
+   "available_area": 60.24,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 5,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "PUDUCHERRY",
+   "parks": 11,
+   "total_area": 659.25,
+   "available_area": 0,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 501,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "LAKSHADWEEP",
+   "parks": 9,
+   "total_area": 3.04,
+   "available_area": 2.46,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 0,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "MEGHALAYA",
+   "parks": 9,
+   "total_area": 235.23,
+   "available_area": 5.03,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 10,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "LADAKH UT",
+   "parks": 8,
+   "total_area": 31.24,
+   "available_area": 1.62,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 18,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "MIZORAM",
+   "parks": 7,
+   "total_area": 381.48,
+   "available_area": 240.51,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 0,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "MANIPUR",
+   "parks": 7,
+   "total_area": 36.43,
+   "available_area": 12.8,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 27,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "ANDAMAN & NICOBAR",
+   "parks": 6,
+   "total_area": 34.51,
+   "available_area": 8.35,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 22,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "NAGALAND",
+   "parks": 5,
+   "total_area": 282.97,
+   "available_area": 19,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 13,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "SIKKIM",
+   "parks": 5,
+   "total_area": 20.54,
+   "available_area": 3.33,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 0,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "DADRA & NAGAR HAVELI",
+   "parks": 5,
+   "total_area": 119.53,
+   "available_area": 49.66,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 48,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "DAMAN & DIU",
+   "parks": 5,
+   "total_area": 57.12,
+   "available_area": 0,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 34,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  },
+  {
+   "state": "CHANDIGARH",
+   "parks": 4,
+   "total_area": 352.22,
+   "available_area": 32.15,
+   "unit": "Ha",
+   "vacant_plots_retrieved": 140,
+   "source_url": "https://indiaindustriallandbank.gov.in/queryBuilderList_Master (tblNo=9)"
+  }
+ ]
+}
