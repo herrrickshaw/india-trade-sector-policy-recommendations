@@ -1,0 +1,143 @@
+{
+ "built": "2026-07-22",
+ "national": {
+  "sedimentary_basin_area_sqkm": 3360000,
+  "under_exploration_sqkm": 537600,
+  "no_go_area_freed_sqkm": 1000000,
+  "source": "DGH / Ministry of Petroleum & Natural Gas (MoPNG); Min. Hardeep Singh Puri statements. Sedimentary basin = 3.36 million sq km across 26 basins (1.63M onland, 0.41M shallow offshore to 400m isobath, rest deepwater). ~10% under exploration historically, rising to ~16% by end-2024 after OALP awards (16% of 3.36M = ~537,600 sq km). ~1 million sq km of former 'No-Go' area (mostly in the EEZ) freed for exploration, cutting No-Go areas in the EEZ by ~99%.",
+  "url": "https://www.projectstoday.com/Project-Infographics/Monthly-Magazine/India-opens-up-one-mln-sq-km-of-sedimentary-basin-for-oil-gas-exploration ; https://carboncopy.info/india-clears-1-million-sq-km-cleared-for-oil-exploration-in-no-go-area/ ; https://www.spglobal.com/energy/en/news-research/latest-news/crude-oil/071224-india-to-tap-unexplored-sedimentary-basins-in-upstream-energy-revival",
+  "date": "2024-2025"
+ },
+ "oalp": {
+  "rounds": "OALP Rounds I-IX (2017 -> awards Apr 2025). OALP is the acreage-licensing mechanism under HELP (Hydrocarbon Exploration & Licensing Policy, 2016).",
+  "blocks_awarded": 172,
+  "area_awarded_sqkm": 378651,
+  "onshore_sqkm": 0,
+  "offshore_sqkm": 0,
+  "source": "DGH / MoPNG. Rounds I-VIII: 144 blocks awarded, 242,055 sq km. Round IX (awarded 15 Apr 2025): 28 blocks, 136,596.45 sq km. Cumulative I-IX = 172 blocks, ~378,651 sq km (govt cited '3.78 lakh sq km'). Onshore/offshore split across the full cumulative I-IX is NOT published as a single figure; only the Round IX split is broken out (see onshore_offshore_split and OALP-IX detail below).",
+  "url": "https://www.offshore-technology.com/news/india-28-blocks-oalp-round-ix/ ; https://www.business-standard.com/industry/news/oalp-ix-round-ongc-cairn-take-lion-s-share-of-oil-and-gas-blocks-125041501347_1.html",
+  "date": "2025-04-15"
+ },
+ "oalp_ix_detail": {
+  "total_blocks": 28,
+  "total_area_sqkm": 136596.45,
+  "onland_blocks": 9,
+  "onland_area_sqkm": 13875.19,
+  "shallow_water_blocks": 8,
+  "shallow_water_area_sqkm": 26648.14,
+  "ultra_deepwater_blocks": 11,
+  "ultra_deepwater_area_sqkm": 96073.12,
+  "note": "Some sources say 9 onland / 8 shallow / 11 ultra-deep; block-type counts vary slightly by source (13 on-land was also cited in an earlier ONGC-holdings context). Area split (onland 13,875 + shallow 26,648 + ultra-deep 96,073) = 136,596 sq km, so offshore = ~122,721 sq km (90%), onshore = ~13,875 sq km (10%) for this round.",
+  "source": "Business Standard / PSU Watch, 15 Apr 2025",
+  "url": "https://www.business-standard.com/industry/news/oalp-ix-round-ongc-cairn-take-lion-s-share-of-oil-and-gas-blocks-125041501347_1.html"
+ },
+ "company_wise": [
+  {
+   "company": "ONGC",
+   "exploration_area_sqkm": 162701,
+   "onshore_sqkm": 0,
+   "offshore_sqkm": 0,
+   "blocks": 0,
+   "period": "as on 31-Mar-2023 (pre-OALP-IX; grows further after Apr-2025 awards)",
+   "source": "ONGC Annual Report / DGH: ONGC held India's largest exploratory acreage = 162,701 sq km as on 31 Mar 2023. Onshore/offshore split of this total not separately captured here; historical ONGC filings (FY2020) show onshore-dominated nomination PMLs (358 PMLs, 54,321.75 sq km) + nomination PEL (5,106 sq km) + NELP PEL (21,126 sq km) + 17 OALP blocks (13 on-land, 3 shallow, 1 deepwater).",
+   "url": "https://www.business-standard.com/industry/news/oalp-ix-round-ongc-cairn-take-lion-s-share-of-oil-and-gas-blocks-125041501347_1.html ; https://dghindia.org/index.php/page?pageId=52&name=Activities"
+  },
+  {
+   "company": "ONGC (OALP-IX awards, Apr 2025)",
+   "exploration_area_sqkm": 0,
+   "onshore_sqkm": 0,
+   "offshore_sqkm": 0,
+   "blocks": 15,
+   "period": "OALP Round IX, awarded 15-Apr-2025",
+   "source": "ONGC won the most blocks: 11 solo + 4 in consortium (incl. 3 with Oil India covering 10,964 sq km, and 1 Gujarat-Saurashtra shallow-water block with Reliance-BP). Per-company area totals for ONGC's OALP-IX haul not published as a single sq km figure.",
+   "url": "https://psuwatch.com/newsupdates/ongc-secures-highest-number-of-blocks-in-oalp-round-ix-followed-by-vedanta-oil ; https://indianmasterminds.com/news/ongc-oil-india-oalp-ix-joint-operating-agreement-136706/"
+  },
+  {
+   "company": "Oil India (OIL)",
+   "exploration_area_sqkm": 110000,
+   "onshore_sqkm": 0,
+   "offshore_sqkm": 47000,
+   "blocks": 27,
+   "period": "total after OALP-IX awards (Apr 2025)",
+   "source": "Oil India: total exploration acreage rose from ~60,000 sq km to ~110,000 sq km after OALP-IX. Won 9 blocks in OALP-IX (6 solo + 3 consortium) adding >51,000 sq km, of which >47,000 sq km is deep/ultra-deep offshore. Holds 27 OALP blocks across 6 basins (16 in NE states, 5 Odisha, 3 Rajasthan, 2 Andaman, 1 Kerala-Konkan shallow offshore).",
+   "url": "https://www.marketscreener.com/quote/stock/OIL-INDIA-LIMITED-9059932/news/Oil-India-Limited-Secures-9-Blocks-Under-OALP-IX-49639523/ ; https://www.oil-india.com/oil-glance"
+  },
+  {
+   "company": "Vedanta (Cairn Oil & Gas)",
+   "exploration_area_sqkm": 0,
+   "onshore_sqkm": 0,
+   "offshore_sqkm": 0,
+   "blocks": 7,
+   "period": "OALP Round IX, Apr 2025",
+   "source": "Vedanta secured 7 blocks in OALP-IX (largest among private players). Per-block area not published in the sources retrieved.",
+   "url": "https://psuwatch.com/newsupdates/ongc-secures-highest-number-of-blocks-in-oalp-round-ix-followed-by-vedanta-oil"
+  },
+  {
+   "company": "Reliance Industries - BP",
+   "exploration_area_sqkm": 0,
+   "onshore_sqkm": 0,
+   "offshore_sqkm": 0,
+   "blocks": 1,
+   "period": "OALP Round IX, Apr 2025",
+   "source": "Reliance-BP secured 1 block (a Gujarat-Saurashtra basin shallow-water block) in consortium with ONGC. This was BP's maiden exploration licence in India. Signed agreement with ONGC 30 Jul 2025 to pursue Saurashtra basin exploration.",
+   "url": "https://www.spglobal.com/commodity-insights/en/news-research/latest-news/crude-oil/041625-bps-maiden-exploration-license-in-india-to-whet-appetite-of-global-oil-majors ; https://www.spglobal.com/commodity-insights/en/news-research/latest-news/crude-oil/073025-reliance-signs-agreement-with-bp-ongc-to-pursue-oil-gas-exploration-in-saurashtra-basin-block"
+  }
+ ],
+ "onshore_offshore_split": {
+  "onshore_sqkm": 13875,
+  "offshore_sqkm": 122721,
+  "basis": "OALP Round IX only (28 blocks, 136,596 sq km): onland 13,875.19 sq km (~10%); offshore = shallow water 26,648.14 + ultra-deepwater 96,073.12 = 122,721.26 sq km (~90%). The recent OALP rounds are heavily offshore-tilted (No-Go area opened in the EEZ). A published onshore/offshore split for the FULL cumulative OALP I-IX (378,651 sq km) or for ONGC's total 162,701 sq km acreage was NOT found in accessible sources.",
+  "source": "Business Standard / PSU Watch, 15 Apr 2025",
+  "url": "https://www.business-standard.com/industry/news/oalp-ix-round-ongc-cairn-take-lion-s-share-of-oil-and-gas-blocks-125041501347_1.html"
+ },
+ "producing_field_footprint": [
+  {
+   "operator": "ONGC",
+   "field": "Ankleshwar (Gujarat, Cambay basin, onshore)",
+   "land": "~20 (anticline ~20 km long x ~4 km wide areal extent; actual surface installations occupy far less)",
+   "unit": "sq km (field areal extent, NOT surface land occupied)",
+   "source": "General references (GEM.wiki / geography sources). This is the geological field extent, not the fenced surface land footprint of well pads/facilities, which is a small fraction."
+  },
+  {
+   "operator": "ONGC",
+   "field": "Mumbai High (offshore, Arabian Sea)",
+   "land": "0 land; field extent ~65 km x ~23 km anticline offshore (platform-based, no onshore land occupied)",
+   "unit": "sq km (offshore field extent)",
+   "source": "Wikipedia / offshore-technology.com. Offshore field: occupies sea area via platforms, no land re-use relevance except onshore processing terminals."
+  }
+ ],
+ "key_data_points": [
+  "India sedimentary basin area: 3.36 million sq km across 26 basins (1.63M sq km onland; 0.41M shallow offshore to 400m isobath; remainder deepwater). Source: DGH.",
+  "Historically ~10% of sedimentary basin was under exploration, rising to ~16% (~0.54 million sq km) by end-2024 after OALP awards. Target: 1 million sq km under exploration by 2030 (Min. Puri) -- this 1M figure is a TARGET/announcement.",
+  "~1 million sq km of former 'No-Go' area (largely in the EEZ) freed for exploration; cut No-Go areas in the EEZ by ~99%.",
+  "OALP Rounds I-VIII: 144 blocks, 242,055 sq km awarded. Round IX (15 Apr 2025): 28 blocks, 136,596 sq km. Cumulative I-IX ~= 172 blocks, ~378,651 sq km ('3.78 lakh sq km').",
+  "OALP-IX split: onland 13,875 sq km (~10%), shallow water 26,648 sq km, ultra-deepwater 96,073 sq km -> offshore ~122,721 sq km (~90%).",
+  "ONGC = India's largest exploration acreage holder: 162,701 sq km as on 31 Mar 2023 (pre-OALP-IX). Won the most OALP-IX blocks (15: 11 solo + 4 consortium).",
+  "Oil India total exploration acreage nearly doubled from ~60,000 to ~110,000 sq km after OALP-IX (won 9 blocks, >51,000 sq km, >47,000 offshore).",
+  "OALP-IX private/other winners: Vedanta (Cairn) 7 blocks; Reliance-BP 1 shallow-water block (BP's maiden India exploration licence).",
+  "OALP-X (launched Feb 2025): 25 blocks, ~192,000 sq km, 51% in previously restricted zones -- NOT yet awarded (bid deadline extended to 18 Feb 2026). OALP-XI: 21 blocks offered (2026) -- also a target/offer, not awarded."
+ ],
+ "caveats": [
+  "Distinguish EXPLORATION acreage (blocks licensed to explore -- hundreds of thousands of sq km) from PRODUCING-FIELD SURFACE LAND (well pads/facilities -- a tiny fraction; offshore fields occupy no land at all).",
+  "Units: figures are in sq km. 1 sq km = 247.1 acres = 100 hectares.",
+  "The 1 million sq km 'under exploration by 2030' is a TARGET (Puri); the ~537,600 sq km (16% of 3.36M) is an end-2024 achieved/projected figure -- both differ from the ~1 million sq km of No-Go area that was administratively FREED (opened) for exploration.",
+  "ONGC's 162,701 sq km is as on 31-Mar-2023 and does NOT yet include OALP-IX (Apr-2025) additions; a post-IX consolidated ONGC total was not found.",
+  "No published single onshore/offshore split exists for cumulative OALP I-IX or for ONGC's total acreage; only the OALP-IX round is broken out by onland/shallow/deep.",
+  "Producing-field 'area' figures (Ankleshwar ~20 sq km, Mumbai High 65x23 km) are geological field extents, NOT the surface land footprint occupied by facilities -- do not treat them as land-use area.",
+  "OALP-X and OALP-XI blocks/areas are OFFERS, not awards -- exclude from 'awarded' totals."
+ ],
+ "unavailable": [
+  "ONGC total exploration acreage broken into onshore vs offshore sq km (only aggregate 162,701 sq km found).",
+  "ONGC's consolidated total acreage AFTER OALP-IX (post Apr-2025).",
+  "Onshore/offshore split of cumulative OALP I-IX (378,651 sq km).",
+  "Per-company sq km area for ONGC and Vedanta OALP-IX wins (only block counts published; OIL's ~51,000 sq km and ONGC-OIL 10,964 sq km JV are the exceptions).",
+  "Actual SURFACE LAND (hectares) occupied by producing oilfields (well pads, GGS, terminals) for ONGC fields in Assam / Gujarat (Ankleshwar, Cambay) / KG basin -- not disclosed in accessible sources; only geological field extents available.",
+  "NELP legacy total awarded area as a single verified figure (NELP ran 9 rounds, 254 blocks; a clean total-area sq km figure was not retrieved in this session).",
+  "Mining-lease (PML) vs exploration-lease (PEL) current split for ONGC post-2020."
+ ],
+ "scale_framing": {
+  "oalp_awarded_acres": 93564662,
+  "vs_industrial_land": "OALP I-IX has licensed ~378,651 sq km (~93.6 MILLION acres) for exploration -- ~370x the ~253,700 acres of developed-park industrial land in the entire central IILB. BUT this is LICENCE AREA to explore, not siteable surface land: a block is a right to survey/drill within a polygon, and the actual land occupied by well pads/facilities is a tiny fraction; offshore blocks (90% of recent awards) occupy NO land at all. So exploration acreage is enormous as a category of government ALLOCATION but is NOT comparable to the industrial land bank as usable project land.",
+  "reuse_angle": "The land-reuse opportunity is at the PRODUCING-FIELD SURFACE level, not the licence level: onshore fields that deplete (ONGC's mature Gujarat/Assam assets) leave behind already-cleared, already-connected surface land + well-pad infrastructure that can revert to other industrial use -- the subject of the user's separate oilfield-land-reuse legal analysis (to be cross-checked). Offshore depletion frees no land. Surface footprints are mostly undisclosed in accessible sources -- Ankleshwar field extent ~20 sq km, Mumbai High zero land -- so the reversion pool cannot be sized from public data yet."
+ }
+}
