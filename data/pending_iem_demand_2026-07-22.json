@@ -1,0 +1,369 @@
+{
+ "analysis": "pending_iem_demand_by_state",
+ "built": "2026-07-22",
+ "window": "2020-2025 (window-matched, excl defective 2019)",
+ "definition": "Pending = cumulative Part A (intent filed) minus Part B (implemented) = investment intentions not yet built = latent demand for industrial land",
+ "caveat": "Part A/B are period flows; A-B over the window approximates the unconverted backlog but is not a clean stock (some Part B implements pre-2020 filings). Negative pending = a state implementing more than it filed in-window (pre-window pipeline landing).",
+ "states": [
+  {
+   "state": "Maharashtra",
+   "filed_A_n": 1415,
+   "impl_B_n": 994,
+   "pending_n": 421,
+   "filed_A_rs_cr": 726292,
+   "impl_B_rs_cr": 271703,
+   "pending_rs_cr": 454589,
+   "conversion_pct": 70.2
+  },
+  {
+   "state": "Karnataka",
+   "filed_A_n": 510,
+   "impl_B_n": 279,
+   "pending_n": 231,
+   "filed_A_rs_cr": 361856,
+   "impl_B_rs_cr": 49028,
+   "pending_rs_cr": 312828,
+   "conversion_pct": 54.7
+  },
+  {
+   "state": "Odisha",
+   "filed_A_n": 286,
+   "impl_B_n": 177,
+   "pending_n": 109,
+   "filed_A_rs_cr": 597874,
+   "impl_B_rs_cr": 365441,
+   "pending_rs_cr": 232433,
+   "conversion_pct": 61.9
+  },
+  {
+   "state": "Telangana",
+   "filed_A_n": 249,
+   "impl_B_n": 194,
+   "pending_n": 55,
+   "filed_A_rs_cr": 96692,
+   "impl_B_rs_cr": 31191,
+   "pending_rs_cr": 65501,
+   "conversion_pct": 77.9
+  },
+  {
+   "state": "Madhya Pradesh",
+   "filed_A_n": 431,
+   "impl_B_n": 433,
+   "pending_n": -2,
+   "filed_A_rs_cr": 127720,
+   "impl_B_rs_cr": 70103,
+   "pending_rs_cr": 57617,
+   "conversion_pct": 100.5
+  },
+  {
+   "state": "Tamil Nadu",
+   "filed_A_n": 450,
+   "impl_B_n": 268,
+   "pending_n": 182,
+   "filed_A_rs_cr": 97274,
+   "impl_B_rs_cr": 45811,
+   "pending_rs_cr": 51463,
+   "conversion_pct": 59.6
+  },
+  {
+   "state": "West Bengal",
+   "filed_A_n": 165,
+   "impl_B_n": 136,
+   "pending_n": 29,
+   "filed_A_rs_cr": 69610,
+   "impl_B_rs_cr": 23302,
+   "pending_rs_cr": 46308,
+   "conversion_pct": 82.4
+  },
+  {
+   "state": "Rajasthan",
+   "filed_A_n": 258,
+   "impl_B_n": 201,
+   "pending_n": 57,
+   "filed_A_rs_cr": 117366,
+   "impl_B_rs_cr": 77290,
+   "pending_rs_cr": 40076,
+   "conversion_pct": 77.9
+  },
+  {
+   "state": "Delhi",
+   "filed_A_n": 127,
+   "impl_B_n": 23,
+   "pending_n": 104,
+   "filed_A_rs_cr": 36941,
+   "impl_B_rs_cr": 5521,
+   "pending_rs_cr": 31420,
+   "conversion_pct": 18.1
+  },
+  {
+   "state": "Haryana",
+   "filed_A_n": 259,
+   "impl_B_n": 161,
+   "pending_n": 98,
+   "filed_A_rs_cr": 61570,
+   "impl_B_rs_cr": 30747,
+   "pending_rs_cr": 30823,
+   "conversion_pct": 62.2
+  },
+  {
+   "state": "Chhattisgarh",
+   "filed_A_n": 336,
+   "impl_B_n": 217,
+   "pending_n": 119,
+   "filed_A_rs_cr": 144221,
+   "impl_B_rs_cr": 117117,
+   "pending_rs_cr": 27104,
+   "conversion_pct": 64.6
+  },
+  {
+   "state": "Uttar Pradesh",
+   "filed_A_n": 446,
+   "impl_B_n": 415,
+   "pending_n": 31,
+   "filed_A_rs_cr": 113040,
+   "impl_B_rs_cr": 88131,
+   "pending_rs_cr": 24909,
+   "conversion_pct": 93.0
+  },
+  {
+   "state": "Andhra Pradesh",
+   "filed_A_n": 275,
+   "impl_B_n": 293,
+   "pending_n": -18,
+   "filed_A_rs_cr": 174194,
+   "impl_B_rs_cr": 150285,
+   "pending_rs_cr": 23909,
+   "conversion_pct": 106.5
+  },
+  {
+   "state": "Jammu and Kashmir",
+   "filed_A_n": 80,
+   "impl_B_n": 41,
+   "pending_n": 39,
+   "filed_A_rs_cr": 14669,
+   "impl_B_rs_cr": 2876,
+   "pending_rs_cr": 11793,
+   "conversion_pct": 51.2
+  },
+  {
+   "state": "Bihar",
+   "filed_A_n": 49,
+   "impl_B_n": 41,
+   "pending_n": 8,
+   "filed_A_rs_cr": 15154,
+   "impl_B_rs_cr": 5493,
+   "pending_rs_cr": 9661,
+   "conversion_pct": 83.7
+  },
+  {
+   "state": "Assam",
+   "filed_A_n": 60,
+   "impl_B_n": 67,
+   "pending_n": -7,
+   "filed_A_rs_cr": 27213,
+   "impl_B_rs_cr": 23609,
+   "pending_rs_cr": 3604,
+   "conversion_pct": 111.7
+  },
+  {
+   "state": "Puducherry",
+   "filed_A_n": 17,
+   "impl_B_n": 8,
+   "pending_n": 9,
+   "filed_A_rs_cr": 2558,
+   "impl_B_rs_cr": 129,
+   "pending_rs_cr": 2429,
+   "conversion_pct": 47.1
+  },
+  {
+   "state": "Goa",
+   "filed_A_n": 25,
+   "impl_B_n": 17,
+   "pending_n": 8,
+   "filed_A_rs_cr": 3828,
+   "impl_B_rs_cr": 1528,
+   "pending_rs_cr": 2300,
+   "conversion_pct": 68.0
+  },
+  {
+   "state": "Kerala",
+   "filed_A_n": 29,
+   "impl_B_n": 15,
+   "pending_n": 14,
+   "filed_A_rs_cr": 2683,
+   "impl_B_rs_cr": 447,
+   "pending_rs_cr": 2236,
+   "conversion_pct": 51.7
+  },
+  {
+   "state": "Tripura",
+   "filed_A_n": 3,
+   "impl_B_n": 1,
+   "pending_n": 2,
+   "filed_A_rs_cr": 175,
+   "impl_B_rs_cr": 29,
+   "pending_rs_cr": 146,
+   "conversion_pct": 33.3
+  },
+  {
+   "state": "Mizoram",
+   "filed_A_n": 2,
+   "impl_B_n": 1,
+   "pending_n": 1,
+   "filed_A_rs_cr": 226,
+   "impl_B_rs_cr": 93,
+   "pending_rs_cr": 133,
+   "conversion_pct": 50.0
+  },
+  {
+   "state": "Nagaland",
+   "filed_A_n": 1,
+   "impl_B_n": 0,
+   "pending_n": 1,
+   "filed_A_rs_cr": 11,
+   "impl_B_rs_cr": 0,
+   "pending_rs_cr": 11,
+   "conversion_pct": 0.0
+  },
+  {
+   "state": "Chandigarh",
+   "filed_A_n": 4,
+   "impl_B_n": 2,
+   "pending_n": 2,
+   "filed_A_rs_cr": 17,
+   "impl_B_rs_cr": 7,
+   "pending_rs_cr": 10,
+   "conversion_pct": 50.0
+  },
+  {
+   "state": "Manipur",
+   "filed_A_n": 1,
+   "impl_B_n": 0,
+   "pending_n": 1,
+   "filed_A_rs_cr": 10,
+   "impl_B_rs_cr": 0,
+   "pending_rs_cr": 10,
+   "conversion_pct": 0.0
+  },
+  {
+   "state": "Arunachal Pradesh",
+   "filed_A_n": 5,
+   "impl_B_n": 7,
+   "pending_n": -2,
+   "filed_A_rs_cr": 226,
+   "impl_B_rs_cr": 219,
+   "pending_rs_cr": 7,
+   "conversion_pct": 140.0
+  },
+  {
+   "state": "Andaman and Nicobar",
+   "filed_A_n": 1,
+   "impl_B_n": 0,
+   "pending_n": 1,
+   "filed_A_rs_cr": 0,
+   "impl_B_rs_cr": 0,
+   "pending_rs_cr": 0,
+   "conversion_pct": 0.0
+  },
+  {
+   "state": "Lakshadweep",
+   "filed_A_n": 1,
+   "impl_B_n": 0,
+   "pending_n": 1,
+   "filed_A_rs_cr": 0,
+   "impl_B_rs_cr": 0,
+   "pending_rs_cr": 0,
+   "conversion_pct": 0.0
+  },
+  {
+   "state": "Sikkim",
+   "filed_A_n": 4,
+   "impl_B_n": 3,
+   "pending_n": 1,
+   "filed_A_rs_cr": 40,
+   "impl_B_rs_cr": 96,
+   "pending_rs_cr": -56,
+   "conversion_pct": 75.0
+  },
+  {
+   "state": "Meghalaya",
+   "filed_A_n": 8,
+   "impl_B_n": 11,
+   "pending_n": -3,
+   "filed_A_rs_cr": 886,
+   "impl_B_rs_cr": 1899,
+   "pending_rs_cr": -1013,
+   "conversion_pct": 137.5
+  },
+  {
+   "state": "Daman and Diu",
+   "filed_A_n": 28,
+   "impl_B_n": 20,
+   "pending_n": 8,
+   "filed_A_rs_cr": 945,
+   "impl_B_rs_cr": 4429,
+   "pending_rs_cr": -3484,
+   "conversion_pct": 71.4
+  },
+  {
+   "state": "Uttarakhand",
+   "filed_A_n": 121,
+   "impl_B_n": 130,
+   "pending_n": -9,
+   "filed_A_rs_cr": 10736,
+   "impl_B_rs_cr": 15390,
+   "pending_rs_cr": -4654,
+   "conversion_pct": 107.4
+  },
+  {
+   "state": "Himachal Pradesh",
+   "filed_A_n": 43,
+   "impl_B_n": 46,
+   "pending_n": -3,
+   "filed_A_rs_cr": 1787,
+   "impl_B_rs_cr": 6967,
+   "pending_rs_cr": -5180,
+   "conversion_pct": 107.0
+  },
+  {
+   "state": "Jharkhand",
+   "filed_A_n": 50,
+   "impl_B_n": 75,
+   "pending_n": -25,
+   "filed_A_rs_cr": 7712,
+   "impl_B_rs_cr": 22700,
+   "pending_rs_cr": -14988,
+   "conversion_pct": 150.0
+  },
+  {
+   "state": "Dadra and Nagar Haveli",
+   "filed_A_n": 63,
+   "impl_B_n": 78,
+   "pending_n": -15,
+   "filed_A_rs_cr": 4882,
+   "impl_B_rs_cr": 20605,
+   "pending_rs_cr": -15723,
+   "conversion_pct": 123.8
+  },
+  {
+   "state": "Punjab",
+   "filed_A_n": 166,
+   "impl_B_n": 175,
+   "pending_n": -9,
+   "filed_A_rs_cr": 17587,
+   "impl_B_rs_cr": 58491,
+   "pending_rs_cr": -40904,
+   "conversion_pct": 105.4
+  },
+  {
+   "state": "Gujarat",
+   "filed_A_n": 1093,
+   "impl_B_n": 1178,
+   "pending_n": -85,
+   "filed_A_rs_cr": 417504,
+   "impl_B_rs_cr": 695120,
+   "pending_rs_cr": -277616,
+   "conversion_pct": 107.8
+  }
+ ]
+}
