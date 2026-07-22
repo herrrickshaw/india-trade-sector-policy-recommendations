@@ -1,0 +1,193 @@
+{
+  "built": "2026-07-22",
+  "states": [
+    {
+      "state": "Odisha",
+      "corporation": "IDCO (Odisha Industrial Infrastructure Development Corporation)",
+      "portal_url": "https://gis.investodisha.org/",
+      "status": "live",
+      "data_type": "ARCGIS_REST",
+      "endpoint": "https://gis.investodisha.gov.in/arcgis/rest/services/test/Landbank_Info/MapServer/1/query?where=1%3D1&outFields=*&returnGeometry=false&f=json",
+      "auth_required": false,
+      "sample_parcels": [
+        {"district": "JAJPUR", "estate": "DHULIGARH cluster (Danagadi tahasil)", "plot": "PLOT_NO 93 / KHATA_NO 89", "area": "57.3", "unit": "acres", "status": "Land Bank Plot (Category B)", "source_url": "https://gis.investodisha.gov.in/arcgis/rest/services/test/Landbank_Info/MapServer/1/query"},
+        {"district": "JAJPUR", "estate": "DHULIGARH cluster (Danagadi)", "plot": "PLOT_NO 487 / KHATA_NO 89", "area": "48.76", "unit": "acres", "status": "Land Bank Plot (Category B)", "source_url": "https://gis.investodisha.gov.in/arcgis/rest/services/test/Landbank_Info/MapServer/1/query"},
+        {"district": "JAJPUR", "estate": "RABANA cluster (Danagadi)", "plot": "PLOT_NO 2 / KHATA_NO 191 (Chhota Jungle)", "area": "130.21", "unit": "acres", "status": "Land Bank Plot (Category A)", "source_url": "https://gis.investodisha.gov.in/arcgis/rest/services/test/Landbank_Info/MapServer/1/query"},
+        {"district": "JAJPUR", "estate": "RABANA cluster (Danagadi)", "plot": "PLOT_NO 3 / KHATA_NO 191 (Chhota Jungle)", "area": "75.52", "unit": "acres", "status": "Land Bank Plot (Category A)", "source_url": "https://gis.investodisha.gov.in/arcgis/rest/services/test/Landbank_Info/MapServer/1/query"}
+      ],
+      "bulk_method": "Single ArcGIS REST FeatureService. Paginate the /1/query (Land Bank Plots) layer with resultOffset (1000 records/response; 'Pagination not supported' on some layers so page via OBJECTID>N ranges or omit resultRecordCount). Layer /0 = Land Bank Cluster, /1 = Land Bank Plots, /3 = IDCO ESTATES, /4 = Ind.Park/Inv.Region. Also test/Industry_Info MapServer holds allotted-industry parcels. Fields: OBJECTID, PLOT_NO, DIST, TAHA, KHATA_NO, KISAM, AREA_AC, CATEGORY, CLUSTER_NA + geometry.",
+      "notes": "The single true structured geospatial API in the survey. gis.investodisha.org is an Esri JS viewer; its backend is the open ArcGIS Server at gis.investodisha.gov.in/arcgis/rest/services (folders System/test/testing). GOPLUS/landbank.aspx wraps the same data. No token, no login."
+    },
+    {
+      "state": "Uttar Pradesh",
+      "corporation": "UPSIDA (U.P. State Industrial Development Authority)",
+      "portal_url": "https://eservices.onlineupsida.com/PropertyHub/Index.aspx",
+      "status": "live",
+      "data_type": "HTML_TABLE",
+      "endpoint": "GET https://eservices.onlineupsida.com/PropertyHub/Index.aspx (server-rendered DataTable of all available plots)",
+      "auth_required": false,
+      "sample_parcels": [
+        {"district": "AGRA", "estate": "Kosi Kalan", "plot": "E-12", "area": "841.00", "unit": "sqm", "status": "Available", "source_url": "https://eservices.onlineupsida.com/PropertyHub/Index.aspx"},
+        {"district": "AGRA", "estate": "Kosi Kalan", "plot": "E-13", "area": "828.00", "unit": "sqm", "status": "Available", "source_url": "https://eservices.onlineupsida.com/PropertyHub/Index.aspx"},
+        {"district": "AGRA", "estate": "Kosi Kalan", "plot": "C-25", "area": "4800.00", "unit": "sqm", "status": "Available", "source_url": "https://eservices.onlineupsida.com/PropertyHub/Index.aspx"},
+        {"district": "AGRA", "estate": "Kosi Kalan", "plot": "C-26", "area": "6000.00", "unit": "sqm", "status": "Available", "source_url": "https://eservices.onlineupsida.com/PropertyHub/Index.aspx"}
+      ],
+      "bulk_method": "Single GET returns the whole available-plot list as an HTML DataTable; parse all <tr> rows. Columns: District, Industrial Area Name, Estimate Price/sqm, Plot Number, Available Plot Size (sqm), Total Estimated Cost, plus per-row GIS (onemapup.nic.in/upsida/map.aspx) and Nivesh Mitra links. One request; optionally filter by district/sector via the form.",
+      "notes": "The named domain upsida.co.in blocks scripted curl (TLS/000) but the e-services host onlineupsida.com serves the real, richest machine-readable table (price + plot no + size per parcel). GIS overlay via NIC OneMap (onemapup.nic.in)."
+    },
+    {
+      "state": "Andhra Pradesh",
+      "corporation": "APIIC (Andhra Pradesh Industrial Infrastructure Corporation)",
+      "portal_url": "https://apiic.in/ (data: https://kpi.apiic.in:8443/KPI/apiicfi/VacantPlots.jsp ; GIS: https://gisviewer.apiic.in/)",
+      "status": "live",
+      "data_type": "HTML_TABLE",
+      "endpoint": "GET https://kpi.apiic.in:8443/KPI/apiicfi/VacantPlots.jsp?param=vacz2&usrzn=ALL&zn=GUNTUR&pname1=AN_GUNTUR_PHASE_IV (plot-level drill-down)",
+      "auth_required": false,
+      "sample_parcels": [
+        {"district": "GUNTUR", "estate": "AN_GUNTUR_PHASE_IV (Auto Nagar)", "plot": "AN GNT 361 / 23, BL.22-A", "area": "28.000", "unit": "sqm", "status": "Vacant but Unallottable (resumed plot)", "source_url": "https://kpi.apiic.in:8443/KPI/apiicfi/VacantPlots.jsp?param=vacz2&usrzn=ALL&zn=GUNTUR&pname1=AN_GUNTUR_PHASE_IV"},
+        {"district": "GUNTUR", "estate": "Nagarajupalli (Food Processing)", "plot": "park (1 plot)", "area": "116610.000", "unit": "sqm", "status": "Vacant; rate Rs.208/sqm", "source_url": "https://kpi.apiic.in:8443/KPI/apiicfi/VacantPlots.jsp?param=vacz1&usrzn=ALL&zn=GUNTUR"},
+        {"district": "GUNTUR", "estate": "IP RAYAVARAM (Multi Park)", "plot": "park (42 plots)", "area": "350186.912", "unit": "sqm", "status": "Vacant; rate Rs.1215/sqm", "source_url": "https://kpi.apiic.in:8443/KPI/apiicfi/VacantPlots.jsp?param=vacz1&usrzn=ALL&zn=GUNTUR"},
+        {"district": "GUNTUR", "estate": "MSME-PIDUGURALLA", "plot": "park (26 plots)", "area": "4271.000", "unit": "sqm", "status": "Vacant; rate Rs.3818/sqm", "source_url": "https://kpi.apiic.in:8443/KPI/apiicfi/VacantPlots.jsp?param=vacz1&usrzn=ALL&zn=GUNTUR"}
+      ],
+      "bulk_method": "Per-zone-then-per-park iteration. Level 1: VacantPlots.jsp?param=vacz&usrzn=ALL lists 14 zones (ANAKAPALLI, CHITTOOR, ELURU, GUNTUR, KADAPA, KAKINADA, KURNOOL, PRAKASAM, PUTTAPARTHY, SRIKAKULAM, TIRUPATI, TIRUPATI SPL PROJECTS, VIJAYAWADA, VISAKHAPATNAM). Level 2: param=vacz1&zn=<ZONE> lists parks with plot counts/area/rate. Level 3: param=vacz2&zn=<ZONE>&pname1=<PARK> gives plot-level rows: Plot/Shed No, Structure Type, Area(Sqm/Acre), Updation Date, Status, Category, Sector, Plot Type, Remarks. All server-rendered HTML tables.",
+      "notes": "Fully public plot-level vacancy on a Bloom Solutions KPI app (self-signed cert on :8443 - use -k). gisviewer.apiic.in is a Leaflet-WMS map (utility/infra layers) but the parcel data is the JSP. IndustrialProp_prop.jsp variant currently 500s; VacantPlots.jsp works."
+    },
+    {
+      "state": "Telangana",
+      "corporation": "TGIIC (formerly TSIIC) - Telangana State Industrial Infrastructure Corporation",
+      "portal_url": "https://www.tgiic.telangana.gov.in/",
+      "status": "live",
+      "data_type": "HTML_TABLE",
+      "endpoint": "GET https://www.tgiic.telangana.gov.in/PMVacantPlots and /PMVacantPlots/DistWisePMVacantData",
+      "auth_required": false,
+      "sample_parcels": [
+        {"district": "CYBERABAD (zone)", "estate": "zone summary", "plot": "521 plots", "area": "1540501.37", "unit": "sqm", "status": "Vacant", "source_url": "https://www.tgiic.telangana.gov.in/PMVacantPlots"},
+        {"district": "WARANGAL (zone)", "estate": "zone summary", "plot": "632 plots", "area": "1689956.34", "unit": "sqm", "status": "Vacant", "source_url": "https://www.tgiic.telangana.gov.in/PMVacantPlots"},
+        {"district": "KAMAREDDY", "estate": "district summary", "plot": "218 plots", "area": "1784522.92", "unit": "sqm", "status": "Vacant", "source_url": "https://www.tgiic.telangana.gov.in/PMVacantPlots/DistWisePMVacantData"},
+        {"district": "MANCHERIAL", "estate": "district summary", "plot": "195 plots", "area": "1465510.61", "unit": "sqm", "status": "Vacant", "source_url": "https://www.tgiic.telangana.gov.in/PMVacantPlots/DistWisePMVacantData"}
+      ],
+      "bulk_method": "Server-rendered HTML tables per view: PMVacantPlots (zone-wise), PMVacantPlots/DistWisePMVacantData (district-wise), EOTTDSReports/categoryWiseReport (category-wise), PMVacantPlots/TSFPZZonewiseIPs (food-park zones). These are aggregate counts/area; individual plot rows drill via POST from the dashboard. GIS map: tgrac.telangana.gov.in/tgiic/tsiic/default.aspx.",
+      "notes": "tsiic.telangana.gov.in now meta-refreshes to tgiic.telangana.gov.in (Telangana rebrand TSIIC->TGIIC). Public no-login summaries; true parcel-level detail needs the interactive dashboard/GIS (Selenium)."
+    },
+    {
+      "state": "Rajasthan",
+      "corporation": "RIICO (Rajasthan State Industrial Development & Investment Corporation)",
+      "portal_url": "https://riico.co.in/ (data: https://riico.rajasthan.gov.in/undevelopedland.aspx)",
+      "status": "live",
+      "data_type": "HTML_TABLE",
+      "endpoint": "GET https://riico.rajasthan.gov.in/undevelopedland.aspx",
+      "auth_required": false,
+      "sample_parcels": [
+        {"district": "Ajmer", "estate": "Molakiya (Kekri tehsil)", "plot": "undeveloped land parcel #1", "area": "", "unit": "", "status": "Undeveloped land bank", "source_url": "https://riico.rajasthan.gov.in/undevelopedland.aspx"},
+        {"district": "Banswara", "estate": "Ambav (Dhariyawad tehsil)", "plot": "undeveloped land parcel #3", "area": "", "unit": "", "status": "Undeveloped land bank", "source_url": "https://riico.rajasthan.gov.in/undevelopedland.aspx"},
+        {"district": "Bikaner", "estate": "Bajjutejpura (Bajju/Gajner tehsil)", "plot": "undeveloped land parcel #7", "area": "", "unit": "", "status": "Undeveloped land bank", "source_url": "https://riico.rajasthan.gov.in/undevelopedland.aspx"},
+        {"district": "Udaipur", "estate": "Peepad (Badgaon tehsil)", "plot": "undeveloped land parcel #10", "area": "", "unit": "", "status": "Undeveloped land bank", "source_url": "https://riico.rajasthan.gov.in/undevelopedland.aspx"}
+      ],
+      "bulk_method": "Single GET of undevelopedland.aspx returns the full undeveloped-land table (Sr No, Village/Area Name, Tehsil, District) - parse <tr>. Hindi twin at UndevelopedLandBankHindi.aspx. Note: this lists undeveloped/raw land only (no area/price). Developed plot availability & e-auction is on the RIICO e-services (riico.rajasthan.gov.in) and is largely form/login-driven.",
+      "notes": "riico.co.in mirrors riico.rajasthan.gov.in; the co.in copy of the page renders rows client-side (0 <tr> to curl) so use the rajasthan.gov.in host. Undeveloped land bank is public HTML; allottable developed plots are gated behind e-services."
+    },
+    {
+      "state": "Maharashtra",
+      "corporation": "MIDC (Maharashtra Industrial Development Corporation)",
+      "portal_url": "https://land.midcindia.org/Landbank/index (Online Land Allotment System) + https://services.midcindia.org/services/vacantplotsdetails.aspx (MILAAP vacant plots)",
+      "status": "live",
+      "data_type": "API_JSON",
+      "endpoint": "POST https://land.midcindia.org/Landbank/<GetLandBank...> (ASP.NET MVC AJAX controller; POST paths return 411 Length-Required without a body, i.e. exist but need the form payload)",
+      "auth_required": false,
+      "sample_parcels": [],
+      "bulk_method": "Reverse-engineer the MVC AJAX controller behind land.midcindia.org/Landbank/index (frontendver2.1.3.js drives a DataTable that POSTs JSON of available plots), or drive it with Selenium/Playwright and read the XHR JSON. The public MILAAP vacant-plots list at services.midcindia.org/services/vacantplotsdetails.aspx is also JS/AJAX-populated. No login required to browse either.",
+      "notes": "Land bank is public (no login) but 100% JS/AJAX - the parcel data never appears in the initial HTML, so it is machine-readable only via the backend JSON call or a headless browser. Could not capture a sample without executing the page's JS (browser navigation to these domains was policy-blocked in this session)."
+    },
+    {
+      "state": "Haryana",
+      "corporation": "HSIIDC (Haryana State Industrial & Infrastructure Development Corporation)",
+      "portal_url": "https://hsiidc.org.in/land-availability/land-availability-land-rates (GIS: https://hsiidcgis.org.in/hsiidcgis/)",
+      "status": "live",
+      "data_type": "HTML_TABLE",
+      "endpoint": "GET https://hsiidc.org.in/land-availability/land-availability-land-rates (estate rate table) + PDF https://hsiidc.org.in//uploads/assets/170201910700170081361190Availability01072022.pdf (plot availability)",
+      "auth_required": false,
+      "sample_parcels": [
+        {"district": "Gurugram", "estate": "IMT Sohna", "plot": "estate reserve rate", "area": "", "unit": "", "status": "Reserve price Rs.24700/sqm", "source_url": "https://hsiidc.org.in/land-availability/land-availability-land-rates"},
+        {"district": "Rewari", "estate": "IMT Dharuhera", "plot": "estate reserve rate", "area": "", "unit": "", "status": "Reserve price Rs.33300/sqm", "source_url": "https://hsiidc.org.in/land-availability/land-availability-land-rates"},
+        {"district": "Karnal", "estate": "Karnal Sector 37", "plot": "estate reserve rate", "area": "", "unit": "", "status": "Reserve price Rs.24600/sqm", "source_url": "https://hsiidc.org.in/land-availability/land-availability-land-rates"},
+        {"district": "Ambala", "estate": "Saha Phase-I", "plot": "estate reserve rate", "area": "", "unit": "", "status": "Reserve price Rs.20300/sqm", "source_url": "https://hsiidc.org.in/land-availability/land-availability-land-rates"}
+      ],
+      "bulk_method": "GET the land-availability page for the 66-row estate reserve-price HTML table (parse <tr>). Actual plot-level availability is a downloadable PDF (Availability01072022.pdf - dated 2022, stale). GIS viewer hsiidcgis.org.in is Google-Maps-based on a Yii2 backend (/hsiidcgis/backend/web/index.php, /api/js live) - an undocumented internal API may exist but was not confirmed open.",
+      "notes": "Machine-readable at estate/rate granularity only; parcel availability is a stale 2022 PDF. GIS backend is a candidate for a JSON API but needs deeper probing."
+    },
+    {
+      "state": "Gujarat",
+      "corporation": "GIDC (Gujarat Industrial Development Corporation)",
+      "portal_url": "https://gidc.gujarat.gov.in/ (plot allocation: https://egov.gidcgujarat.org/)",
+      "status": "live",
+      "data_type": "LOGIN_GATED",
+      "endpoint": "",
+      "auth_required": true,
+      "sample_parcels": [],
+      "bulk_method": "None public. Plot allocation runs through the eGov portal egov.gidcgujarat.org which requires party registration/login (Accounts/PartyRegistration.aspx). The main gidc.gujarat.gov.in site is informational (estate directory + a Google-Maps embed of HQ); no open plot list, WFS, or REST service found.",
+      "notes": "GIDC exposes no public machine-readable parcel/vacant-plot endpoint; availability and allotment are behind the eGov login. Guessed /geoserver and /arcgis paths 404."
+    },
+    {
+      "state": "Karnataka",
+      "corporation": "KIADB (Karnataka Industrial Areas Development Board)",
+      "portal_url": "https://kiadb.karnataka.gov.in/ (kiadb.in is a stub that redirects here)",
+      "status": "live",
+      "data_type": "LOGIN_GATED",
+      "endpoint": "",
+      "auth_required": true,
+      "sample_parcels": [],
+      "bulk_method": "None public. kiadb.karnataka.gov.in is a JS-rendered informational site; allotment-of-industrial-plot pages return near-empty stubs to curl. No public plot list, CSV, WFS or ArcGIS service found; land allotment is application/login-driven.",
+      "notes": "kiadb.in is a thin redirect stub to the real gov domain. No open machine-readable parcel data located; would need Selenium to confirm any in-app list, but nothing indicates a public availability feed."
+    },
+    {
+      "state": "Tamil Nadu",
+      "corporation": "SIPCOT (State Industries Promotion Corporation of Tamil Nadu) + TIDCO",
+      "portal_url": "https://sipcotweb.tn.gov.in/ (GIS: https://sipcotgis.tn.gov.in/mainpage.aspx)",
+      "status": "live",
+      "data_type": "LOGIN_GATED",
+      "endpoint": "",
+      "auth_required": true,
+      "sample_parcels": [],
+      "bulk_method": "None openly queryable. The real portal is sipcotweb.tn.gov.in (live). Its GIS at sipcotgis.tn.gov.in is GeoServer-backed (mainpage.aspx references geoserver/wfs and geoserver/cite/wms) but the /geoserver/wfs?request=GetCapabilities path returns IIS 404 - the WMS/WFS is proxied behind the .aspx viewer (Logout.aspx present => session-gated), not directly reachable. Would need the viewer's authenticated proxy or Selenium.",
+      "notes": "HAZARD: the two 'obvious' SIPCOT domains are dead/parked - sipcot.com is NXDOMAIN (SERVFAIL), sipcot.in serves a domain-parking 'lander' page (window.LANDER_SYSTEM=PW, ap:'parking'). Only the tn.gov.in domains are genuine. A GeoServer exists but is not exposed as an open WFS."
+    },
+    {
+      "state": "Madhya Pradesh",
+      "corporation": "MPIDC / AKVN (MP Industrial Development Corporation)",
+      "portal_url": "https://mpidc.co.in/ (DOWN) ; https://invest.mp.gov.in/ (MP single window, live)",
+      "status": "dead",
+      "data_type": "DEAD",
+      "endpoint": "",
+      "auth_required": true,
+      "sample_parcels": [],
+      "bulk_method": "None available. The named corporation domain mpidc.co.in is down (Cloudflare 522 / connection failure on both www and apex). The live alternative invest.mp.gov.in is a React SPA (MP single-window/AKVN) whose land-bank data sits behind the app and is not exposed as an open endpoint; would need Selenium plus likely investor login.",
+      "notes": "Primary MPIDC portal unreachable this session. No public machine-readable parcel source found; treat MP as gated/dead until mpidc.co.in returns."
+    },
+    {
+      "state": "West Bengal",
+      "corporation": "WBIDC (West Bengal Industrial Development Corporation)",
+      "portal_url": "https://wbidc.com/ (PARKED) ; real single-window: https://silpasathi.wb.gov.in/",
+      "status": "parked",
+      "data_type": "LOGIN_GATED",
+      "endpoint": "",
+      "auth_required": true,
+      "sample_parcels": [],
+      "bulk_method": "None public. WBIDC's data/allotment runs through the WB Shilpa Sathi single-window (silpasathi.wb.gov.in), which is investor-login-driven; no open plot list, CSV, WFS or ArcGIS service found.",
+      "notes": "HAZARD CONFIRMED: wbidc.com is a 496-byte parked placeholder ('Contact Support' only) - not the real corporation site (matches prior finding that wbidc.com was hijacked/parked). www.wbidclimited.com / wbidcltd.com / wbidc.co.in all NXDOMAIN. Genuine state entry point is silpasathi.wb.gov.in."
+    }
+  ],
+  "summary": {
+    "machine_readable_count": 7,
+    "login_or_pdf_only_count": 4,
+    "dead_count": 1
+  },
+  "verdict": "7 of 12 expose parcel/plot data without login: Odisha (true ArcGIS REST FeatureService - the only structured geospatial API), UPSIDA, APIIC, TGIIC, RIICO and HSIIDC (server-rendered HTML tables), and MIDC (public but JSON-only via an AJAX controller / headless browser). GIDC, KIADB, West Bengal (Shilpa Sathi) and MP are login/single-window gated with no open feed; HSIIDC's parcel-level availability is a stale 2022 PDF while its rate table is HTML. Three named domains are dead or hijacked and must not be trusted: SIPCOT's sipcot.com (NXDOMAIN) and sipcot.in (parked lander), and WBIDC's wbidc.com (parked placeholder); MPIDC's mpidc.co.in is down.",
+  "best_targets": [
+    "Odisha IDCO - ArcGIS REST (gis.investodisha.gov.in/arcgis/rest/services/test/Landbank_Info) - only true API, geometry + plot/khata/tahasil/area/category, paginate the query endpoint",
+    "UPSIDA - eservices.onlineupsida.com/PropertyHub/Index.aspx - one GET yields all available plots with district/estate/plot-no/size/price",
+    "APIIC - kpi.apiic.in:8443 VacantPlots.jsp - plot-level vacancy via zone->park->plot drill-down (14 zones)",
+    "TGIIC - tgiic.telangana.gov.in/PMVacantPlots - zone/district vacant-plot HTML tables",
+    "RIICO - riico.rajasthan.gov.in/undevelopedland.aspx - undeveloped land bank HTML table"
+  ],
+  "central_aggregator_note": "indiaindustriallandbank.gov.in (IILB/IIS) is the central aggregator, built by BISAG-N on NCOG WMS (OpenLayers) with a documented REST API (userManual/IIS_API_Doc_V2.3.5.pdf) and exploreParks/parkProfileView endpoints. Because states upload into it, it is the single best route to a merged national parcel dataset - reconcile its park/plot layers against the richer state sources (Odisha ArcGIS, UPSIDA/APIIC/TGIIC tables) for freshness."
+}

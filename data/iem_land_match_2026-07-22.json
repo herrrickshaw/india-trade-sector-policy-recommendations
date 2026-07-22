@@ -405,5 +405,29 @@
    "rs_cr_per_avail_acre": null,
    "verdict": "UNDER-UTILISED (intent draining, land available)"
   }
- ]
+ ],
+ "refinement_state_land_banks": {
+  "finding": "IILB counts DEVELOPED-park vacant land only. States hold additional UNDEVELOPED land banks the central portal does not show -- proven for Odisha, whose IDCO ArcGIS (gis.investodisha.gov.in) serves 'Category B Land Bank' plots being assembled in Jajpur/Danagadi (the Kalinganagar steel belt), exactly where its Rs 232,433cr pending steel intent is headed. So Odisha's LAND-CONSTRAINED verdict is on developed land; its undeveloped bank is actively being assembled for that demand.",
+  "machine_readable_state_sources": {
+   "Odisha_IDCO": "ArcGIS REST FeatureService (only true geospatial API): gis.investodisha.gov.in/arcgis/rest/services/test/Landbank_Info/MapServer/1/query -- plot/khata/tahasil/area-acres/category, no login",
+   "UPSIDA_UP": "eservices.onlineupsida.com/PropertyHub/Index.aspx -- one GET, all available plots w/ district/estate/plot/size/price",
+   "APIIC_AP": "kpi.apiic.in:8443 VacantPlots.jsp -- zone->park->plot drill-down, 14 zones",
+   "TGIIC_TS": "tgiic.telangana.gov.in/PMVacantPlots -- zone/district vacant-plot HTML tables",
+   "RIICO_RJ": "riico.rajasthan.gov.in/undevelopedland.aspx -- undeveloped land bank HTML table",
+   "MIDC_MH": "JSON AJAX controller (411, needs POST body/headless)",
+   "HSIIDC_HR": "HTML estate rate table (coarse)"
+  },
+  "gated_or_dead": {
+   "GIDC_Gujarat": "login-gated",
+   "KIADB_Karnataka": "login-gated",
+   "SIPCOT_TN": "real site sipcotweb.tn.gov.in; GeoServer session-gated",
+   "WBIDC_WB": "real site silpasathi.wb.gov.in",
+   "MPIDC_MP": "mpidc.co.in DOWN"
+  },
+  "hijacked_do_not_trust": [
+   "sipcot.com (NXDOMAIN)",
+   "sipcot.in (domain-parked lander)",
+   "wbidc.com (parked placeholder -- matches prior hijack note)"
+  ]
+ }
 }
