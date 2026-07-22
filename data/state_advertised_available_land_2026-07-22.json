@@ -1,0 +1,750 @@
+{
+ "analysis": "state_advertised_available_land",
+ "built": "2026-07-22",
+ "what": "Available-land figures state INVESTMENT-PROMOTION agencies advertise, reconciled against verified IILB GIS vacant land. Distinct from the land-bank GIS portals.",
+ "headline_finding": "'Advertised available land' is mostly a MARKETING construct: states quote gross developed footprint or raw 'identified' government land, not siteable-now plots. Inflation over verified GIS-vacant land runs ~2.5x (Telangana, honest) to ~40-63x (West Bengal, Bihar-target). Only Telangana, Odisha, Assam and Bihar cleanly separate available-NOW from the land bank. A few (Rajasthan, Haryana) advertise LESS than their GIS shows -- conservative.",
+ "honest_disclosers": [
+  "Telangana (TGIIC): 5,730 ac available now, separated from 145,682 ac raw bank",
+  "Odisha (IPICOL/IDCO): 25,354 ac Category-A available of 158,729 ac total -- corroborates the 104k undeveloped GIS bank, genuine",
+  "Assam (AIDC): 3,088 ac available of 6,440 ac bank (dated 15-12-2024)",
+  "Bihar (BIADA): ~798 ac live per-cluster (vs a 50,000-ac aspirational target, ~63x)"
+ ],
+ "inflation_cases": [
+  "West Bengal: ~6,000-ac 'bank' vs 60 Ha GIS (~40x); only verifiable = '18 parks'; wbidc.com dead",
+  "Andhra Pradesh: ~3-10 lakh ac 'identified' vs 13,303 Ha GIS (~30x) -- raw govt land being consolidated",
+  "Uttar Pradesh: 25,000 ac 'prompt allotment' + '>100,000 ac bank' vs 1,942 Ha GIS (~20x)",
+  "Madhya Pradesh: 'over 1 lakh ac' vs 2,017 Ha GIS (~20x), 51 still-developing areas",
+  "Maharashtra/TN/Gujarat: headline TOTAL developed footprint (MIDC 101,171 ha, SIPCOT 48,926 ac, GIDC ~45,000 ha), ~5x vacant"
+ ],
+ "conservative": [
+  "Rajasthan (RIICO): 3,500 ac advertised < 11,541 Ha GIS; 93,000 ac is gross footprint",
+  "Haryana (HSIIDC): ~2,466 ac clear-available (dated 01-07-2022) < 8,292 Ha GIS"
+ ],
+ "unverifiable_flagged": [
+  "Gujarat '7,500 ha available' + TN '3,500 ac' -- consultancy/search, not on any govt page",
+  "Jharkhand 1.75-lakh / 2.1-million-ac claims; HP ~1,600 ac -- unconfirmed/planned"
+ ],
+ "hijacked_domains": [
+  "wbidc.com dead/parked (genuine: silpasathi.wb.gov.in, wbiidc.wb.gov.in); mpidc.co.in was down; invest.up.gov.in SSL cert-chain error"
+ ],
+ "states": [
+  {
+   "state": "Gujarat",
+   "agency": "iNDEXTb (Industrial Extension Bureau, state investment promotion agency) / GIDC",
+   "portal_url": "https://indextb.com/",
+   "advertised_available_land": "No single headline 'X acres available' figure on the promotion portal; GIDC official site advertises estate count and total acquired area, not an aggregate vacant/available number. Available plots are exposed only via the GIS plot-details portal (egov.gidcgujarat.org).",
+   "unit": "estates / hectares",
+   "parks_advertised": 239,
+   "land_bank_claim": "GIDC official homepage: '239 industrial estates'. GIDC presentation/brochure PDFs and Wikipedia give ~224 estates and 'more than 45,000 hectares acquired' with 68,148 units. Figures vary by source (224-239 estates).",
+   "sector_parks": [],
+   "flagship_parcels": [
+    {
+     "name": "Special Investment Regions (SIRs), PCPIR, large/sector-specific estates - counts/acreage not published on retrieved pages",
+     "acres": 0,
+     "type": "planned"
+    },
+    {
+     "name": "New MSME parks at Sanand, Juned, Halol, Bardoli (per GIDC FAQ)",
+     "acres": 0,
+     "type": "planned"
+    }
+   ],
+   "available_vs_planned": "Advertised figures are TOTAL developed footprint (239 estates / ~45,000 ha acquired), not vacant-available. SIRs/PCPIR are planned. No marketing 'available now' aggregate found.",
+   "source_page_url": "https://gidc.gujarat.gov.in/ (homepage counter: 239 estates); egov.gidcgujarat.org/gidcgg/EstateWisePlotDetails.aspx (plot availability GIS)",
+   "vs_iilb_note": "IILB shows only developed-park vacant land. Gujarat's promotion side advertises gross footprint (239 estates / 45,000 ha acquired) rather than a vacant figure, so no direct 'inflation' comparison possible - the state is unusually reticent on a headline available-acres number, pushing investors to the GIS plot portal instead.",
+   "date": "GIDC homepage counter as of 2026-07 retrieval"
+  },
+  {
+   "state": "Maharashtra",
+   "agency": "MAITRI (Maharashtra Industry, Trade and Investment Facilitation Cell) / MIDC",
+   "portal_url": "https://maitri.maharashtra.gov.in/",
+   "advertised_available_land": "MIDC advertises 101,171.41 hectares of land across 300 industrial areas as its developed footprint (this is total developed land, not vacant). Third-party/industry sources cite MIDC's total land bank as 'more than 2.5 lakh acres'.",
+   "unit": "hectares",
+   "parks_advertised": 300,
+   "land_bank_claim": "MIDC official (about page): 'Built 300 Industrial Areas with 101171.41 hectares of land (Approx.)'. Plans to add ~40,000 ha over 5 years (~23,030 ha acquisitions 2020-25 at Khardi, Ranjangaon, Taloja, Chakan, Bidkin).",
+   "sector_parks": [
+    {
+     "name": "IT / BT / SEZ parks (no acreage published)",
+     "acres": 0
+    },
+    {
+     "name": "Wine (Grape Processing) Park",
+     "acres": 0
+    },
+    {
+     "name": "Silver Zone",
+     "acres": 0
+    },
+    {
+     "name": "Gems park",
+     "acres": 0
+    }
+   ],
+   "flagship_parcels": [
+    {
+     "name": "Mumbai-Thane-Raigad regional holding",
+     "acres": 15000,
+     "type": "developed footprint (region)"
+    },
+    {
+     "name": "Pune-Chakan-Talegaon-Satara regional holding",
+     "acres": 8000,
+     "type": "developed footprint (region)"
+    },
+    {
+     "name": "Chhatrapati Sambhajinagar-Jalna (incl. AURIC/Bidkin)",
+     "acres": 8000,
+     "type": "developed footprint (region)"
+    },
+    {
+     "name": "Nashik-Malegaon-Ahilyanagar regional holding",
+     "acres": 5000,
+     "type": "developed footprint (region)"
+    },
+    {
+     "name": "Nagpur-Amravati regional holding",
+     "acres": 4000,
+     "type": "developed footprint (region)"
+    }
+   ],
+   "available_vs_planned": "101,171 ha is total DEVELOPED area, not available/vacant. +23,030-40,000 ha is planned/under acquisition.",
+   "source_page_url": "https://www.midcindia.org/en/about-midc/",
+   "vs_iilb_note": "IILB reports 19,659 Ha AVAILABLE. MIDC's advertised 101,171 ha is the TOTAL developed footprint (~5x the vacant IILB figure) - classic gross-vs-vacant inflation. The '2.5 lakh acres' land-bank claim (~101,000 ha) matches the developed footprint, not extra vacant land.",
+   "date": "MIDC about-page as of 2026-07 retrieval"
+  },
+  {
+   "state": "Tamil Nadu",
+   "agency": "Guidance Tamil Nadu / SIPCOT (State Industries Promotion Corporation of Tamil Nadu)",
+   "portal_url": "https://investingintamilnadu.com/",
+   "advertised_available_land": "SIPCOT official portal advertises 48,926.48 acres total extent across 50 industrial parks (developed footprint). A CII/KPMG-derived figure (via India Briefing, not the govt portal) states SIPCOT+SIDCO combined land bank of 40,000 acres of which 3,500 acres currently available.",
+   "unit": "acres",
+   "parks_advertised": 50,
+   "land_bank_claim": "SIPCOT (sipcotweb.tn.gov.in): '50 Industrial Parks including 8 SEZs, spread over 24 districts in a total extent of about 48,926.48 acres', 3,390 industrial units over 54 years. 11 new industrial parks under development.",
+   "sector_parks": [
+    {
+     "name": "Hi-Tech SEZ Sriperumbudur",
+     "acres": 0
+    },
+    {
+     "name": "Hi-Tech SEZ Oragadam",
+     "acres": 0
+    },
+    {
+     "name": "Granite SEZ Bargur",
+     "acres": 0
+    },
+    {
+     "name": "Engineering SEZ Perundurai",
+     "acres": 0
+    },
+    {
+     "name": "Engineering SEZ Ranipet",
+     "acres": 0
+    },
+    {
+     "name": "Transport Engineering SEZ Gangaikondan",
+     "acres": 0
+    }
+   ],
+   "flagship_parcels": [
+    {
+     "name": "11 new industrial parks under development (India Briefing cites ~13,500 acres each - unverified to govt portal, likely aggregate/typo)",
+     "acres": 0,
+     "type": "planned"
+    }
+   ],
+   "available_vs_planned": "48,926 acres = total developed extent (available now for the state's estates). The '3,500 acres available' figure is from a consultancy report, NOT the state portal. 11 new parks are planned.",
+   "source_page_url": "https://sipcotweb.tn.gov.in/",
+   "vs_iilb_note": "IILB reports 16,487 Ha AVAILABLE (~40,700 acres). SIPCOT advertises 48,926 acres TOTAL extent (developed footprint). Note the reverse discrepancy: the IILB vacant number (~40,700 ac) is far LARGER than the consultancy's '3,500 acres available' claim - because IILB aggregates SIPCOT+SIDCO+TIDCO+revenue land, while SIPCOT's own uncommitted inventory is small. TN's own portal does not publish a clean 'available acres' headline.",
+   "date": "India Briefing SIPCOT brief dated 2023-01-27; SIPCOT portal counters as of 2026-07 retrieval"
+  },
+  {
+   "state": "Karnataka",
+   "agency": "Invest Karnataka (Karnataka Udyog Mitra) / KIADB",
+   "portal_url": "https://investkarnataka.co.in/",
+   "advertised_available_land": "No single 'X acres available' headline pinned to a retrieved promotion-portal page (SPA). KIADB via the Invest Karnataka 'Find Your Site' page advertises 'over 173 Industrial estates and over 490 single unit complexes'; elsewhere '180 Industrial Areas in 30 Districts'. KIADB has identified ~1.15 lakh acres for its land bank.",
+   "unit": "estates / acres",
+   "parks_advertised": 173,
+   "land_bank_claim": "KIADB identified ~1.15 lakh (115,000) acres for the Land Bank; notified 14,585 acres via 43 industrial layouts in the past 5 years (95% already acquired). '180 Industrial Areas in 30 Districts' / 'over 490 single unit complexes'.",
+   "sector_parks": [],
+   "flagship_parcels": [
+    {
+     "name": "Plug-and-play / sector parks referenced under 'Find Your Site' but no acreage on retrieved pages",
+     "acres": 0,
+     "type": "mixed"
+    }
+   ],
+   "available_vs_planned": "173-180 industrial areas are developed. The 1.15 lakh acres is IDENTIFIED for land bank (not all developed/available); 14,585 acres notified recently. No clean 'available now' aggregate on the portal.",
+   "source_page_url": "https://investkarnataka.co.in/find-your-site/kiadb-industrial-area/",
+   "vs_iilb_note": "IILB reports 5,504 Ha AVAILABLE (~13,600 acres). Karnataka advertises 173-180 estates and '1.15 lakh acres identified' - the identified/land-bank figure (~115,000 ac) is ~8x the IILB vacant, because it counts land earmarked/notified, not developed-and-vacant. Actual allottable is closer to the IILB number.",
+   "date": "Invest Karnataka / KIADB pages as of 2026-07 retrieval"
+  },
+  {
+   "state": "Uttar Pradesh",
+   "agency": "Invest UP / UPSIDA (UP State Industrial Development Authority)",
+   "portal_url": "https://invest.up.gov.in/",
+   "advertised_available_land": "Invest UP land-bank page advertises a 'robust land bank of 25,000 acres for prompt allotment to industries', and that UPSIDA has developed 155 industrial areas on a 20,000-acre land bank. Aggregate industrial land bank reported to have crossed 100,000 acres (UPSIDA+UPEIDA+BIDA) under the $1-trillion roadmap (Sept 2025).",
+   "unit": "acres",
+   "parks_advertised": 155,
+   "land_bank_claim": "25,000 acres ready-to-allot land bank (portal); 20,000 acres across 155 UPSIDA industrial areas; 100,000 acres aggregate land bank across UPSIDA/UPEIDA/BIDA (2025). District magistrates instructed to build 50+ acre land banks in every district.",
+   "sector_parks": [
+    {
+     "name": "Bulk Drug (Pharma) Park, Lalitpur (Bundelkhand)",
+     "acres": 1470
+    }
+   ],
+   "flagship_parcels": [
+    {
+     "name": "5 industrial hubs / nodes promoted under Invest UP scheme; Bundelkhand BIDA node",
+     "acres": 0,
+     "type": "developing"
+    }
+   ],
+   "available_vs_planned": "25,000 acres described as ready/'more than 25,000 acres mapped for immediate opportunities'; part of the 100,000-acre aggregate is still being equipped with roads/power/drainage (i.e. planned/under-development). Bulk drug park allocated (1,470 acres).",
+   "source_page_url": "https://invest.up.gov.in/land-bank/ (portal figures quoted via search; direct fetch blocked by an SSL certificate-chain error on the gov domain); aggregate 100k-acre figure via Business Standard 2025-09-25",
+   "vs_iilb_note": "IILB reports 1,942 Ha AVAILABLE (~4,800 acres). UP advertises 25,000 acres 'for prompt allotment' (~5x IILB) and a 100,000-acre aggregate (~20x IILB). Strongly inflated: the 100k figure explicitly includes newly-aggregated and under-development land, not vacant serviced plots. The 25k 'ready' claim is closer but still several times the IILB vacant figure.",
+   "date": "Invest UP land-bank page; aggregate figure dated 2025-09-25"
+  },
+  {
+   "state": "Andhra Pradesh",
+   "agency": "Invest AP / APEDB (AP Economic Development Board) / APIIC (AP Industrial Infrastructure Corporation)",
+   "portal_url": "https://www.apedb.ap.gov.in/",
+   "advertised_available_land": "No aggregate 'available acres' figure pinned to a directly-retrieved APEDB/APIIC page (both are SPA/404; the APIIC land-bank page routes to the GIS portal kpi.apiic.in / AGILE 2.0). Secondary/govt-district sources: state 'identified land bank of ~3 lakh acres' and 'consolidating an additional ~7 lakh acres'; APIIC ~48,352 acres cited as available (source uncertain).",
+   "unit": "acres",
+   "parks_advertised": 0,
+   "land_bank_claim": "~3 lakh (300,000) acres identified land bank + ~7 lakh (700,000) acres being consolidated (up to ~10 lakh acres identified). YSR/Kadapa district alone: 46,104.35 acres identified, 27,823.43 acres requisition filed. These are IDENTIFIED, largely government/raw land - not developed-available.",
+   "sector_parks": [],
+   "flagship_parcels": [
+    {
+     "name": "Sri Sathya Sai district industrial park (near Bengaluru highway, 75km from Devanahalli airport)",
+     "acres": 23000,
+     "type": "planned - 14,000 acres acquisition underway"
+    }
+   ],
+   "available_vs_planned": "Predominantly IDENTIFIED / PLANNED. The 3-lakh + 7-lakh acre figures are identified/consolidating government land, not serviced-available. The 23,000-acre park is planned with acquisition underway.",
+   "source_page_url": "https://apiic.in/apgovmenubar/land-banks-for-industrial-use/ (routes to GIS - no headline number); aggregate figures from search/secondary sources (not cleanly on a retrieved APEDB page)",
+   "vs_iilb_note": "IILB reports 13,303 Ha AVAILABLE (~32,900 acres). AP's advertised aggregate (3 lakh + 7 lakh = up to 10 lakh acres identified) is ~30x the IILB vacant figure - the most inflated of the batch. It is almost entirely identified/planned raw government land, not developed-and-allottable. Treat AP's headline land-bank claims as marketing aggregates, unverifiable to a parcel-level available list.",
+   "date": "Secondary/news sources; 23,000-acre park announced 2025-12"
+  },
+  {
+   "state": "Telangana",
+   "agency": "Invest Telangana / TGIIC (formerly TSIIC) / TG-iPASS",
+   "portal_url": "https://invest.telangana.gov.in/",
+   "advertised_available_land": "TGIIC advertises 5,730 acres currently available for land allotment, out of 28,458 acres developed across 156 industrial parks. Separately, an Industrial Land Bank of 145,682.99 acres of unutilized government land has been notified (about 1.5 lakh acres identified for allotment to industry).",
+   "unit": "acres",
+   "parks_advertised": 156,
+   "land_bank_claim": "145,682.99 acres of unutilized government land notified as the Industrial Land Bank (~1.5 lakh acres identified). Developed infrastructure in 156 industrial parks over 28,458 acres.",
+   "sector_parks": [
+    {
+     "name": "Hyderabad Hardware Park (Ranga Reddy)",
+     "acres": 2822.25
+    },
+    {
+     "name": "IP BTPark Ph-III Karkapatla",
+     "acres": 682.22
+    },
+    {
+     "name": "TSIIC Pashamylaram Ph-III IDA (Medak)",
+     "acres": 646.24
+    },
+    {
+     "name": "Pashamylaram Phase II",
+     "acres": 418.51
+    },
+    {
+     "name": "Aerospace SEZ Adibatla",
+     "acres": 352.39
+    },
+    {
+     "name": "TSIIC Jedcherla GIP",
+     "acres": 352.39
+    },
+    {
+     "name": "E-City SEZ",
+     "acres": 268.18
+    },
+    {
+     "name": "IP Rakamcherla",
+     "acres": 251.54
+    }
+   ],
+   "flagship_parcels": [
+    {
+     "name": "Industrial areas ranging 15 acres to 2,500 acres; largest = Hardware Park (2,822 ac)",
+     "acres": 2822,
+     "type": "developed"
+    }
+   ],
+   "available_vs_planned": "TGIIC is the most transparent: it explicitly separates 5,730 acres AVAILABLE NOW (in developed parks) from the 145,682.99-acre notified land bank (raw/unutilized govt land, i.e. identified/planned).",
+   "source_page_url": "https://www.tgiic.telangana.gov.in/showView?div_id=2 ; https://invest.telangana.gov.in/land-banks/",
+   "vs_iilb_note": "IILB reports 944 Ha AVAILABLE (~2,332 acres). TGIIC advertises 5,730 acres available now (~2.5x the IILB figure - modest, plausibly a timing/coverage difference). But the 145,683-acre 'land bank' is ~60x the IILB vacant - it is raw unutilized government land, clearly labelled as identified, not developed-available. Telangana is the cleanest state for distinguishing available (5,730) from land-bank (145,683).",
+   "date": "TGIIC portal counters as of 2026-07 retrieval"
+  },
+  {
+   "state": "Odisha",
+   "agency": "IPICOL (Industrial Promotion & Investment Corporation of Odisha) / IDCO",
+   "portal_url": "https://investodisha.gov.in",
+   "advertised_available_land": "158,729.846 acres total land bank \u2014 Category A (readily available with IDCO for immediate allotment) = 25,354.97 acres; Category B (reserved with District Collectors, released to IDCO as required) = 133,374.876 acres",
+   "unit": "acres",
+   "parks_advertised": 116,
+   "land_bank_claim": "158,729.846 acres statewide land bank on the live landbank-odisha page. An older cached figure of 86,727 acres (16,462 Cat A + 70,265 Cat B) is an earlier vintage, superseded. 116 industrial estates/areas cover ~10,900 acres of developed land with 1,545 built-up sheds.",
+   "sector_parks": [
+    {
+     "name": "116 industrial estates/areas (developed)",
+     "acres": 10900
+    }
+   ],
+   "flagship_parcels": [
+    {
+     "name": "Jagatsinghpur (largest Category-A / immediately available block)",
+     "acres": 4299,
+     "type": "available-now Cat A"
+    },
+    {
+     "name": "Khordha (largest Category-B / reserved block)",
+     "acres": 33899,
+     "type": "reserved Cat B"
+    }
+   ],
+   "available_vs_planned": "Category A (25,354 ac) advertised as available now; Category B (133,374 ac) is reserved/undeveloped land bank not yet developed",
+   "source_page_url": "https://investodisha.gov.in/landbank-odisha",
+   "vs_iilb_note": "IILB GIS developed-park available = 2,089 Ha (~5,162 ac). Advertised Cat A 'available now' (25,354 ac ~10,260 Ha) is ~5x the GIS developed figure \u2014 larger than developed reality but plausibly includes raw allottable IDCO land. Cat B 133,374 ac (~54,000 Ha) is the undeveloped-bank bucket, same order of magnitude as Odisha's own IDCO GIS ~104,000-acre undeveloped bank \u2014 so it is likely REAL undeveloped land, NOT fabricated inflation. Odisha's big number is genuine land-bank depth.",
+   "date": "2026-07-22"
+  },
+  {
+   "state": "Rajasthan",
+   "agency": "Bureau of Investment Promotion (BIP) single-window nodal; RIICO (Rajasthan State Industrial Development & Investment Corporation) land developer",
+   "portal_url": "https://rising.rajasthan.gov.in",
+   "advertised_available_land": "3,500 acres available for allotment now + 3,200 acres shortly available; separate 12,300-acre land bank for future industrial-area development. Marketing headline: 415 industrial areas developed over ~93,000 acres (gross developed, incl. allotted/occupied).",
+   "unit": "acres",
+   "parks_advertised": 415,
+   "land_bank_claim": "12,300-acre land bank for future development (RIICO Land Availability page); ~93,000 acres gross developed across 415 industrial areas; ~42,300 industries in production",
+   "sector_parks": [
+    {
+     "name": "30+ sector-specific industrial parks",
+     "acres": 0
+    },
+    {
+     "name": "Rajasthan Petro Zone (RPZ), ~700 hectares",
+     "acres": 1730
+    }
+   ],
+   "flagship_parcels": [
+    {
+     "name": "Jodhpur Pali Marwar Industrial Area (JPMIA)",
+     "acres": 6570,
+     "type": "flagship node"
+    },
+    {
+     "name": "Khushkhera-Bhiwadi-Neemrana",
+     "acres": 1378,
+     "type": "flagship node"
+    },
+    {
+     "name": "Japanese zones Neemrana & Ghiloth",
+     "acres": 0,
+     "type": "country-specific zone"
+    }
+   ],
+   "available_vs_planned": "3,500 ac available now + 3,200 ac shortly; 12,300-ac land bank is future/planned; 13 new industrial areas listed as upcoming",
+   "source_page_url": "https://riico.rajasthan.gov.in/LandAvailability.aspx?menu_id=27 ; https://rising.rajasthan.gov.in/industrial-infrastructure",
+   "vs_iilb_note": "IILB GIS developed-park available = 11,541 Ha (~28,520 ac). REVERSE of usual inflation: RIICO's advertised 'available now' (3,500 ac ~1,417 Ha) is FAR SMALLER than the GIS figure. The big 93,000-acre marketing number is gross developed area of all 415 estates (occupied + roads + common), not available land. GIS 11,541 Ha likely counts allotted-but-vacant developed plots. Rajasthan's marketing is conservative, not inflated. (RIICO page is JS-rendered; figures corroborated across search snippets. Note internal count discrepancy: 415 headline vs an older cached 347.)",
+   "date": "2026-07-22"
+  },
+  {
+   "state": "Madhya Pradesh",
+   "agency": "MPIDC (MP Industrial Development Corporation) / Invest MP",
+   "portal_url": "https://invest.mp.gov.in",
+   "advertised_available_land": "Over 1 lakh acres (100,000+ acres ~40,470 Ha) industrial land bank advertised",
+   "unit": "acres",
+   "parks_advertised": 139,
+   "land_bank_claim": "Over 1 lakh acres land bank across 88 developed + 51 developing industrial areas (139 total); 15+ IT/technology parks; 5 IT SEZs; dedicated Electronics Manufacturing Parks",
+   "sector_parks": [
+    {
+     "name": "88 developed industrial areas",
+     "acres": 0
+    },
+    {
+     "name": "51 developing industrial areas",
+     "acres": 0
+    },
+    {
+     "name": "15+ IT/technology parks",
+     "acres": 0
+    }
+   ],
+   "flagship_parcels": [
+    {
+     "name": "Pithampur (auto/industrial hub, land pooling)",
+     "acres": 0,
+     "type": "mega industrial area"
+    }
+   ],
+   "available_vs_planned": "'1 lakh acres' is a total land bank spanning 88 developed AND 51 developing (not-yet-ready) areas plus undeveloped land \u2014 aspirational aggregate, not available-now",
+   "source_page_url": "https://www.investindia.gov.in/state/madhya-pradesh",
+   "vs_iilb_note": "IILB GIS developed-park available = 2,017 Ha (~4,984 ac). Advertised 'over 1 lakh acres' (~40,470 Ha) is ~20x the GIS developed-park figure \u2014 the CLEAREST case of an advertised aggregate massively exceeding developed reality. The '51 developing' bucket confirms much is planned. MP's own portal renders these as blank JavaScript counters (invest.mp.gov.in/land-bank fetches as 0+); figure captured via Invest India's republished MP page. Treat 1 lakh acres as planned/aspirational \u2014 INFLATED vs available-developed reality.",
+   "date": "2026-07-22"
+  },
+  {
+   "state": "Haryana",
+   "agency": "HSIIDC (Haryana State Industrial & Infrastructure Development Corporation) / Invest Haryana",
+   "portal_url": "https://hsiidc.org.in ; https://investharyana.in",
+   "advertised_available_land": "2,466.32 acres of clear available plots (4,123 un-allotted plots); ~2,999.81 acres total unsold stock incl. encumbered \u2014 from HSIIDC's own plot-availability statement dated 01.07.2022. Total HSIIDC footprint 28,825 acres.",
+   "unit": "acres",
+   "parks_advertised": 40,
+   "land_bank_claim": "28,825 acres total estate footprint; ~2,466 acres clear-available / ~3,000 acres unsold stock (available now). A marketing slogan of '11 clusters/theme parks over 27,137 acres' appears in secondary sources but could NOT be confirmed on a live HSIIDC/Invest Haryana page.",
+   "sector_parks": [
+    {
+     "name": "Mega Food Park, IMT Rohtak (80 plots)",
+     "acres": 50
+    }
+   ],
+   "flagship_parcels": [
+    {
+     "name": "IMT Kharkhoda, Sonipat (3,218 ac estate; ~412 ac unsold)",
+     "acres": 3218,
+     "type": "mega IMT (under development)"
+    },
+    {
+     "name": "Sohna IMT, Mewat (1,545 ac estate; ~390 ac unsold)",
+     "acres": 1545,
+     "type": "IMT (under development)"
+    },
+    {
+     "name": "Hisar IMC (Amritsar-Kolkata corridor)",
+     "acres": 7200,
+     "type": "planned integrated mfg cluster"
+    }
+   ],
+   "available_vs_planned": "~2,466 ac clear-available now (per 01.07.2022 inventory); Kharkhoda/Sohna are under-development estates with unsold plots; Hisar IMC ~7,200 ac is planned (AKIC)",
+   "source_page_url": "https://hsiidc.org.in/uploads/assets/170201910700170081361190Availability01072022.pdf",
+   "vs_iilb_note": "IILB GIS developed-park available = 8,292 Ha (~20,490 ac). HSIIDC's OWN inventory says only ~2,466 ac clear-available / ~3,000 ac unsold (~1,000-1,215 Ha) \u2014 FAR SMALLER than the 8,292 Ha GIS figure \u2014 while its total footprint (28,825 ac ~11,665 Ha) is larger. The advertised '27,137-acre' slogan is a total-footprint/branding number, not available land, and is unconfirmed on a live page. Direction is unusual: marketing total >> genuine available, GIS sits between.",
+   "date": "2026-07-22"
+  },
+  {
+   "state": "Punjab",
+   "agency": "PSIEC (Punjab Small Industries & Export Corporation) / Invest Punjab",
+   "portal_url": "https://psiec.punjab.gov.in ; https://investpunjab.gov.in",
+   "advertised_available_land": "~143+ acres of scattered unallotted plots (~520+ plots across 16 focal points) available now via e-auction. Largest single available parcels are ~15 acres (Ludhiana Hi-Tech Cycle Valley).",
+   "unit": "acres",
+   "parks_advertised": 52,
+   "land_bank_claim": "52 Industrial Focal Points (official PSIEC homepage counter), each 50-500 acres. A PSIEC/Invest Punjab BLOG claims '200+ focal points' \u2014 contradicted by the site's own '52'; treat blog figure as inflated. No large available-land-bank aggregate is advertised.",
+   "sector_parks": [
+    {
+     "name": "Ludhiana Hi-Tech Cycle Valley focal point",
+     "acres": 0
+    }
+   ],
+   "flagship_parcels": [
+    {
+     "name": "Rajpura Integrated Manufacturing Cluster (AKIC)",
+     "acres": 1100,
+     "type": "planned IMC"
+    },
+    {
+     "name": "Koomkalan Integrated Textile Park, Ludhiana",
+     "acres": 950,
+     "type": "planned/under-acquisition"
+    },
+    {
+     "name": "Hi-Tech Valley, Ludhiana (378.77 ac scheme; 94.45 ac Kadiana Khurd procured)",
+     "acres": 379,
+     "type": "partly developed"
+    }
+   ],
+   "available_vs_planned": "~143 ac of small plots available now via e-auction; Rajpura (1,100 ac), Koomkalan (950 ac), Mohali (490 ac) are all planned/under-acquisition mega-parks",
+   "source_page_url": "https://psiec.punjab.gov.in/landbank-industrial/",
+   "vs_iilb_note": "IILB GIS shows Punjab available-developed-park land is very low \u2014 CONFIRMED. PSIEC's available-now inventory is genuinely small (~143 acres scattered plots). Large numbers (1,100/950/490 ac) are all PLANNED, not available. No inflated 'available' aggregate on the official portal; the only exaggeration is a blog's '200+ focal points' vs the site's '52'.",
+   "date": "2026-07-22"
+  },
+  {
+   "state": "West Bengal",
+   "agency": "WBIDC (Silpa Sathi single-window) + WBIIDC (industrial parks). NOTE: wbidc.com is a DEAD/parked domain (blank 'Contact Support' page) \u2014 genuine portals are silpasathi.wb.gov.in and wbiidc.wb.gov.in",
+   "portal_url": "https://silpasathi.wb.gov.in ; https://wbiidc.wb.gov.in",
+   "advertised_available_land": "No consolidated available-acreage published on the genuine .gov.in portals. WBIIDC states '18 industrial parks established on BOM basis' with NO acreage. Silpa Sathi lists 23 district Industry Facilitation Centres. A '6,000-acre land bank' (1,411 ac developed + 4,630 ac undeveloped) is a 2021 Deccan Herald figure citing WBIDC \u2014 NOT from a live official page.",
+   "unit": "acres",
+   "parks_advertised": 18,
+   "land_bank_claim": "~6,000 acres land bank (1,411 developed across 9 districts + 4,630 undeveloped across 7 districts) \u2014 secondary/news (Deccan Herald 2021), not the portal. WBIIDC site publishes NO acreage total.",
+   "sector_parks": [
+    {
+     "name": "Falta Pharmaceutical and Allied Product Park",
+     "acres": 0
+    }
+   ],
+   "flagship_parcels": [
+    {
+     "name": "Jangal Sundari Karmanagari IMC, Purulia",
+     "acres": 2657,
+     "type": "planned/under-development IMC"
+    },
+    {
+     "name": "Shalbani Industrial Park (secondary source)",
+     "acres": 4300,
+     "type": "mega park (largely undeveloped)"
+    },
+    {
+     "name": "Raghunathpur Steel & Allied Industrial Park (secondary source)",
+     "acres": 1924,
+     "type": "sector mega park"
+    }
+   ],
+   "available_vs_planned": "Only verifiable live figure is '18 industrial parks' (no acreage). Land-bank and mega-park acreages are secondary/planned, not available-now; wbidc.com's old land pages are dead",
+   "source_page_url": "https://wbiidc.wb.gov.in/",
+   "vs_iilb_note": "IILB GIS developed-park available = only 60 Ha (~148 ac). BIGGEST advertised-vs-reality gap in the batch: the '6,000-acre land bank' is ~40x the GIS figure; even its DEVELOPED slice (1,411 ac ~571 Ha) is ~9.5x the 60 Ha GIS number; and the 2,657-ac Jangal Sundari IMC is entirely planned. Any large WB 'available' number is marketing/land-bank aggregate (mostly undeveloped/planned), NOT developed-available land. HAZARD CONFIRMED: wbidc.com is parked/dead (blank page); use only silpasathi.wb.gov.in / wbiidc.wb.gov.in.",
+   "date": "2026-07-22"
+  },
+  {
+   "state": "Chhattisgarh",
+   "agency": "CSIDC (Chhattisgarh State Industrial Development Corporation) / Invest Chhattisgarh",
+   "portal_url": "https://invest.cg.gov.in ; https://csidc.in",
+   "advertised_available_land": "No total available-acreage advertised \u2014 the portals market COUNTS: '90 Industrial Parks Ready for Business' (invest.cg.gov.in) / '70+ industrial parks' (Invest India). Only two quantified parcels: 90 acres earmarked in Nava Raipur (IT/plug-and-play) + 118 acres new area in Bastar (Nagarnar ancillary).",
+   "unit": "acres",
+   "parks_advertised": 90,
+   "land_bank_claim": "No numeric land-bank total on any genuine gov page. State portal says 90 parks 'ready'; Invest India says 70+ (unreconciled marketing counts).",
+   "sector_parks": [
+    {
+     "name": "10 food parks",
+     "acres": 0
+    },
+    {
+     "name": "Nava Raipur IT/digital park (plug-and-play)",
+     "acres": 90
+    },
+    {
+     "name": "Electronic Manufacturing Cluster / textile / engineering / metal / plastic parks",
+     "acres": 0
+    }
+   ],
+   "flagship_parcels": [
+    {
+     "name": "3 mega industrial areas (Bilaspur, Raigarh, Raipur)",
+     "acres": 0,
+     "type": "mega area"
+    },
+    {
+     "name": "Bastar new industrial area (Nagarnar Steel ancillary)",
+     "acres": 118,
+     "type": "under development"
+    }
+   ],
+   "available_vs_planned": "90 parks marketed as 'ready for business' (available); Nava Raipur 90 ac earmarked; Bastar 118 ac being established; Gems/Space/Furniture/EMC 2.0 explicitly future",
+   "source_page_url": "https://invest.cg.gov.in/investment_promotion",
+   "vs_iilb_note": "IILB GIS developed-park available = 2,640 Ha. Chhattisgarh markets COUNTS (90 / 70+ parks, 10 food parks), NOT acreage \u2014 no headline available-acre figure exists to compare against the 2,640 Ha GIS. The only quantified acreage retrievable is two named parcels (90 + 118 = ~208 ac), far below GIS because these are just two parcels, not the whole estate. No inflated aggregate acre claim to flag; marketing is count-based.",
+   "date": "2026-07-22"
+  },
+  {
+   "state": "Jharkhand",
+   "agency": "JIIDCO (Jharkhand Industrial Infrastructure Development Corporation) / Invest Jharkhand",
+   "portal_url": "https://www.jiidco.co.in",
+   "advertised_available_land": "No available-acres aggregate on official pages. JIIDCO homepage advertises COUNTS: '100+ industrial areas, 3 upcoming parks, one auto cluster, one EMC, and a World Trade Centre.'",
+   "unit": "acres",
+   "parks_advertised": 100,
+   "land_bank_claim": "District-level 'Land Bank' constituted by Collectors (no statewide acreage published on the promotion portal). Search-surfaced land-bank claims of 1.75 lakh acres (2016 CM statement) and ~2.1 million acres (news/activist) are UNVERIFIABLE \u2014 not on any official promotion page; the govt 'Land Availability' portal (jharkhandindustry.gov.in) did not resolve.",
+   "sector_parks": [
+    {
+     "name": "Plastic Park, Deoghar/Devipur (93 ac / 107 plots \u2014 third-party NIIR source, not JIIDCO)",
+     "acres": 93
+    },
+    {
+     "name": "Pharma Park, Bijupara Ranchi (proposed)",
+     "acres": 35
+    },
+    {
+     "name": "Electronics Manufacturing Cluster (EMC)",
+     "acres": 0
+    }
+   ],
+   "flagship_parcels": [
+    {
+     "name": "Auto Cluster (Adityapur region)",
+     "acres": 0,
+     "type": "sector cluster"
+    },
+    {
+     "name": "World Trade Centre",
+     "acres": 0,
+     "type": "flagship"
+    }
+   ],
+   "available_vs_planned": "100+ areas + auto cluster + EMC + WTC advertised as developed; 3 parks explicitly 'upcoming'; Pharma Park proposed. Policy minimum for PPP parks is 50 acres (a threshold, not inventory)",
+   "source_page_url": "https://www.jiidco.co.in/jharkhand-glance/",
+   "vs_iilb_note": "No IILB GIS figure supplied for Jharkhand. JIIDCO markets counts (100+ areas), no consolidated available-acreage \u2014 no advertised aggregate to flag. Plastic Park '93 ac' is third-party (NIIR blog), unconfirmed on JIIDCO's own page. Land-bank claims of 1.75 lakh / 2.1 million acres are unverifiable marketing/political aggregates \u2014 do NOT treat as advertised availability.",
+   "date": "2026-07-22"
+  },
+  {
+   "state": "Bihar",
+   "agency": "BIADA (Bihar Industrial Area Development Authority) / Invest Bihar",
+   "portal_url": "https://biada1.bihar.gov.in",
+   "advertised_available_land": "~798.25 acres of available land now (plus ~12.48 acres of sheds) across 9 clusters \u2014 LIVE per-cluster inventory on the BIADA portal (largest: Motipur 309.4 ac, Bhagalpur/Saharsa/Purnea 193.0 ac, Bihta 72.2 ac, Gaya 66.3 ac).",
+   "unit": "acres",
+   "parks_advertised": 100,
+   "land_bank_claim": "BIADA manages 100+ estates across all 38 districts; live available inventory sums to ~798 acres. PLANNED/TARGET aggregates announced separately: a 50,000-acre land bank + 11 mega industrial parks (2025 CM review), 24,675 acres across 11 districts, 31 new parks, food parks in all 38 districts.",
+   "sector_parks": [
+    {
+     "name": "Muzaffarpur Mega Food Park",
+     "acres": 0
+    },
+    {
+     "name": "Bhagalpur Silk Textile Park",
+     "acres": 0
+    },
+    {
+     "name": "Patna Hi-Tech City",
+     "acres": 0
+    }
+   ],
+   "flagship_parcels": [
+    {
+     "name": "11 mega industrial parks (announced)",
+     "acres": 0,
+     "type": "planned mega parks"
+    },
+    {
+     "name": "50,000-acre land bank (announced target)",
+     "acres": 50000,
+     "type": "planned/target"
+    }
+   ],
+   "available_vs_planned": "~798 acres genuinely available now (live BIADA portal); 50,000-acre bank + 11 mega parks + 24,675-ac zones are all announced TARGET/planned, from press not the portal",
+   "source_page_url": "https://biada1.bihar.gov.in/",
+   "vs_iilb_note": "No IILB GIS figure supplied for Bihar. Bihar is the cleanest case: BIADA publishes LIVE per-parcel available acreage summing to ~798 acres \u2014 vs a 50,000-acre planned land-bank TARGET (a ~63x gap). The 50,000-ac figure (and 24,675/31-park numbers) are political/press announcements tied to a fresh acquisition budget, NOT existing available land. A widely-cited '45,000+ acres managed' number is third-party blog sourcing, unverified. Flag the big numbers as aspirational.",
+   "date": "2026-07-22"
+  },
+  {
+   "state": "Assam",
+   "agency": "AIDC (Assam Industrial Development Corporation) / AIIDC / Industries & Commerce Dept / Advantage Assam",
+   "portal_url": "https://aidcltd.assam.gov.in ; https://www.aidcltd.com ; https://advantageassam.com",
+   "advertised_available_land": "3,087.93 acres (9,341.03 bighas) available for allotment now, out of a 6,440.25-acre (19,481.84-bigha) total land bank \u2014 dated 'as on 15.12.2024' on AIDC's site (figures match the .gov.in portal).",
+   "unit": "acres",
+   "parks_advertised": 78,
+   "land_bank_claim": "6,440.25-acre total land bank; 3,087.93 acres available now; 78 industrial parks/estates/development centres across 29 districts. (An older, undated 'over 4,000 acres / 1,000 acres available / 160 sq km zone' Advantage Assam line is superseded by this dated figure.)",
+   "sector_parks": [
+    {
+     "name": "Plastic Park, Tinsukia (238.63 bigha)",
+     "acres": 79
+    },
+    {
+     "name": "Tea Park, Chaygaon (70 bigha)",
+     "acres": 23
+    }
+   ],
+   "flagship_parcels": [
+    {
+     "name": "Nagarbera Industrial Estate, Kamrup (available)",
+     "acres": 603,
+     "type": "industrial estate (available now)"
+    },
+    {
+     "name": "Jagiroad Industrial Estate (available)",
+     "acres": 415,
+     "type": "industrial estate (available now)"
+    },
+    {
+     "name": "Panchgram Industrial Estate, Cachar (available)",
+     "acres": 360,
+     "type": "industrial estate (available now)"
+    }
+   ],
+   "available_vs_planned": "3,088 acres available now (dated 15.12.2024); balance of the 6,440-ac bank is allotted/undeveloped",
+   "source_page_url": "https://www.aidcltd.com/land_bank-aidc-invest.php",
+   "vs_iilb_note": "No IILB GIS figure supplied for Assam. Assam's marketing is the MOST HONEST in the batch: a dated (15.12.2024), specific inventory that cleanly separates 3,088 acres 'available now' from the 6,440-acre total bank, with per-estate and sector-park breakdowns. No inflated aggregate \u2014 a model of transparent available-vs-total disclosure.",
+   "date": "2026-07-22"
+  },
+  {
+   "state": "Uttarakhand",
+   "agency": "SIIDCUL (State Infrastructure & Industrial Development Corp of Uttarakhand) / Invest Uttarakhand",
+   "portal_url": "https://investuttarakhand.uk.gov.in",
+   "advertised_available_land": "408 properties listed in the Invest Uttarakhand land bank (145 for sale + 263 for lease) \u2014 available-now, but plots are in mixed units (sq m/bigha/nala) and NO aggregate acreage is published. SIIDCUL runs 7 Integrated Industrial Estates + 15+ SIDCs.",
+   "unit": "properties/acres",
+   "parks_advertised": 7,
+   "land_bank_claim": "No headline acreage aggregate. Portal exposes a 408-property live land bank; SIIDCUL lists 7 IIEs (Pantnagar, Haridwar, Kotdwar, IT Park, Pharma City Selaqui, Kashipur, Sitarganj II) + 15+ SIDCs + specialty parks (Plastic/Aroma/Textile).",
+   "sector_parks": [
+    {
+     "name": "IIE IT Park, Dehradun",
+     "acres": 60
+    },
+    {
+     "name": "Plastic Park (SPPL) / Aroma Park / Textile Parks (Kashipur, Jaspur)",
+     "acres": 0
+    }
+   ],
+   "flagship_parcels": [
+    {
+     "name": "IIE Pantnagar (estate footprint, secondary source)",
+     "acres": 3339,
+     "type": "integrated industrial estate"
+    },
+    {
+     "name": "IIE Haridwar (estate footprint, secondary source)",
+     "acres": 2034,
+     "type": "integrated industrial estate"
+    },
+    {
+     "name": "Eldeco SIDCUL Industrial Park, Sitarganj (PPP)",
+     "acres": 1096,
+     "type": "PPP park"
+    }
+   ],
+   "available_vs_planned": "408-property land bank is available now (live listings); big per-estate acres (Pantnagar 3,339, Haridwar 2,034) are total estate footprints (secondary/unverified on portal), not available land",
+   "source_page_url": "https://investuttarakhand.uk.gov.in/site/SiidculVacantPlots",
+   "vs_iilb_note": "No IILB GIS figure supplied for Uttarakhand. SIIDCUL markets a 408-property available-now land bank but publishes NO headline available-acreage aggregate. The large per-estate acres (3,339 / 2,034 / 1,096) are total estate footprints from third-party/Wikipedia sources, NOT available land \u2014 flag before citing as available.",
+   "date": "2026-07-22"
+  },
+  {
+   "state": "Himachal Pradesh",
+   "agency": "HPSIDC / Dept of Industries (Emerging/Rising Himachal) / Invest HP",
+   "portal_url": "https://emerginghimachal.hp.gov.in ; https://hpsidc.org",
+   "advertised_available_land": "No retrievable acreage aggregate on the state's own portals. Authoritative count (Invest India): 64 industrial areas + 17 estates, with 'ongoing land bank expansion' but no acreage total. A search-snippet '1,600+ acres available across 66 areas + 2 mega parks' could NOT be confirmed on an authoritative live page.",
+   "unit": "acres",
+   "parks_advertised": 81,
+   "land_bank_claim": "64 industrial areas + 17 estates (81 total, Invest India). HPSIDC 'at a glance' page carries NO figures. An unconfirmed search snippet cites a '1,600+ acre available land bank' and an older ~35,000-acre bank 'nearly exhausted' \u2014 treat as unverified.",
+   "sector_parks": [
+    {
+     "name": "Bulk Drug Park, Una (Haroli) \u2014 planned",
+     "acres": 1400
+    },
+    {
+     "name": "Medical Device Park, Nalagarh \u2014 planned",
+     "acres": 265
+    }
+   ],
+   "flagship_parcels": [
+    {
+     "name": "Bulk Drug Park, Una (barren land, ~Rs 1,000 cr)",
+     "acres": 1400,
+     "type": "planned/under-development"
+    },
+    {
+     "name": "4 newly notified industrial areas, Solan & Una (~1,100 bighas)",
+     "acres": 0,
+     "type": "newly notified (planned)"
+    }
+   ],
+   "available_vs_planned": "Best available-now figure is the count '64 areas + 17 estates'. Mega parks (Bulk Drug 1,400 ac, Medical Device 265 ac) are PLANNED and news-sourced; the '1,600-acre available' figure is unconfirmed",
+   "source_page_url": "https://www.investindia.gov.in/state/himachal-pradesh",
+   "vs_iilb_note": "No IILB GIS figure supplied for HP. HP's own portals (emerginghimachal.hp.gov.in, hpsidc.org) publish essentially NO advertised acreage aggregate that could be retrieved; HPSIDC 'at a glance' has no figures at all. The '1,600+ acres available' number circulates in search snippets but is not on an authoritative page \u2014 flag as unverified. Mega-park acres are planned, not available.",
+   "date": "2026-07-22"
+  },
+  {
+   "state": "Goa",
+   "agency": "Goa-IDC (Goa Industrial Development Corporation) / Goa Investment Promotion Board (IPB). NOTE: goaidc.com is DEAD/suspended \u2014 genuine site is idc.goa.gov.in (JS shell) / goaonline.gov.in/ipb",
+   "portal_url": "https://idc.goa.gov.in ; https://goaonline.gov.in/ipb",
+   "advertised_available_land": "No official 'X acres available' aggregate retrievable. Concrete retrieved figure: a 2021 IPB land-allotment advertisement offering 9 estates / 18 plots / ~125,726.50 sq m (~31 acres). Land-constrained small state.",
+   "unit": "acres",
+   "parks_advertised": 23,
+   "land_bank_claim": "No large statewide land-bank claim (Goa is land-constrained). ~23 industrial estates statewide (secondary source). Vacancy quantified per-estate rather than as an aggregate.",
+   "sector_parks": [],
+   "flagship_parcels": [
+    {
+     "name": "Verna Industrial Estate (largest, most developed; ~173 ac reported vacant incl. SEZ-recovered land)",
+     "acres": 1035,
+     "type": "flagship estate"
+    }
+   ],
+   "available_vs_planned": "2021 tender (9 estates/18 plots/~31 ac) available-then; ~173 ac vacant at Verna and 21.2 lakh sq m unutilised across estates per secondary reporting; no live aggregate",
+   "source_page_url": "https://goaonline.gov.in/ipb",
+   "vs_iilb_note": "No IILB GIS figure supplied for Goa. Goa advertises small, estate-specific vacancy (2021 tender ~31 ac; Verna ~173 ac vacant) consistent with a land-constrained small state \u2014 no inflated aggregate. Verna 1,035 ac is total estate size, not available. HAZARD CONFIRMED: goaidc.com is dead/suspended; goaipb.goa.gov.in refused connection; genuine live site is idc.goa.gov.in (JS-only shell) / goaonline.gov.in/ipb.",
+   "date": "2026-07-22"
+  }
+ ]
+}
