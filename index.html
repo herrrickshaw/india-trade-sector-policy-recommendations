@@ -13,14 +13,13 @@
     --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
     --font-mono:"IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
   }
-  @media (prefers-color-scheme: dark) {
-    :root { color-scheme: dark; --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83; --rule:#2a2e28; --rule-strong:#383c33; --accent:#b39ce0; --accent-soft:#2e2540; }
-  }
+    /* Automatic prefers-color-scheme:dark token override intentionally removed: this blog standardizes on always-white-background/always-black-text regardless of OS theme. It previously flipped surface/ink tokens to dark values while text stayed forced black, producing invisible black-on-dark text in published posts. */
+
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--page-bg); color: var(--ink); font-family: var(--font-body); }
   .wrap { max-width: 900px; margin: 0 auto; padding: 48px 20px 64px; display: flex; flex-direction: column; gap: 28px; }
   .eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
-  h1 { font-family: var(--font-display); font-weight: 500; font-size: clamp(26px,3.4vw,36px); margin: 6px 0 0; }
+  h1 { font-family: var(--font-display); font-weight: 500; line-height: 1.25; font-size: clamp(26px,3.4vw,36px); margin: 6px 0 0; }
   p.dek { font-size: 14.5px; color: var(--ink-2); line-height: 1.6; max-width: 78ch; }
   a { color: var(--accent); }
   .card-list { display: flex; flex-direction: column; gap: 1px; background: var(--rule); border: 1px solid var(--rule); }

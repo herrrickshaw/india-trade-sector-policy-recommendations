@@ -17,12 +17,8 @@
     --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
     --font-mono:"IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
   }
-  @media (prefers-color-scheme: dark) {
-    :root { color-scheme: dark; --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7;
-      --ink-muted:#8b8f83; --rule:#2a2e28; --rule-strong:#383c33;
-      --accent:#6fb3ac; --accent-soft:#20342f; --alert:#e08268; --alert-soft:#3a2019;
-      --warn:#e0b45c; --warn-soft:#372c16; --mismatch:#b39ce0; --mismatch-soft:#2e2540; }
-  }
+    /* Automatic prefers-color-scheme:dark token override intentionally removed: this blog standardizes on always-white-background/always-black-text regardless of OS theme. It previously flipped surface/ink tokens to dark values while text stayed forced black, producing invisible black-on-dark text in published posts. */
+
   :root[data-theme="dark"] { color-scheme: dark; --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea;
     --ink-2:#c1c4b7; --ink-muted:#8b8f83; --rule:#2a2e28; --rule-strong:#383c33;
     --accent:#6fb3ac; --accent-soft:#20342f; --alert:#e08268; --alert-soft:#3a2019;

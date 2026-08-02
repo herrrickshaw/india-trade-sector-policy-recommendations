@@ -11,15 +11,8 @@
     --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
     --font-mono:"IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
   }
-  @media (prefers-color-scheme: dark) {
-    :root:where(:not([data-theme="light"])) {
-      color-scheme: dark;
-      --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
-      --rule:#2a2e28; --rule-strong:#383c33; --accent:#58bdb5; --accent-soft:#1d3634;
-      --alert:#e0785f; --alert-soft:#3a241d; --warn:#e0b23f; --warn-soft:#3a3220;
-      --data-line:#3987e5; --data-soft:#1c2c40; --mismatch:#b39ce0; --mismatch-soft:#2e2540;
-    }
-  }
+    /* Automatic prefers-color-scheme:dark token override intentionally removed: this blog standardizes on always-white-background/always-black-text regardless of OS theme. It previously flipped surface/ink tokens to dark values while text stayed forced black, producing invisible black-on-dark text in published posts. */
+
   :root[data-theme="dark"] {
     color-scheme: dark;
     --page-bg:#12151a; --surface:#1a1e21; --ink:#f2f1ea; --ink-2:#c1c4b7; --ink-muted:#8b8f83;
@@ -41,7 +34,7 @@
   .masthead { border-bottom:2px solid var(--ink); padding-bottom:16px; }
   .eyebrow { font-family:var(--font-mono); font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); display:flex; gap:10px; align-items:center; }
   .eyebrow::before { content:""; width:7px; height:7px; border-radius:50%; background:var(--accent); }
-  h1 { font-family:var(--font-display); font-weight:500; font-size:clamp(24px,3.1vw,32px); margin:6px 0 0; text-wrap:balance; }
+  h1 { font-family:var(--font-display); font-weight:500; line-height: 1.25; font-size:clamp(24px,3.1vw,32px); margin:6px 0 0; text-wrap:balance; }
   .dek { font-size:14px; color:var(--ink-2); max-width:90ch; line-height:1.55; margin:8px 0 0; }
   .source-line { font-family:var(--font-mono); font-size:11px; color:var(--ink-muted); margin-top:8px; }
   section.block { display:flex; flex-direction:column; gap:14px; }
@@ -188,7 +181,7 @@
     {s:"Andhra Pradesh", g:146, t:80, ip:24, d:113, r:4, read:"Moderate counts, high implementation — its Part B rides fewer, larger projects."},
     {s:"Rajasthan", g:141, t:150, ip:30, d:108, r:6, read:"ToR > granted: deepening."},
     {s:"Uttar Pradesh", g:140, t:121, ip:27, d:43, r:5, read:"Lowest dead-share of the majors — applications that enter tend to survive."},
-    {s:"Telangana", g:114, t:57, ip:18, d:52, r:13, read:"The ₹60,991cr 2025 intent spike hasn't shown up as EC volume yet."},
+    {s:"Telangana", g:114, t:57, ip:18, d:52, r:13, read:"The \u20B960,991cr 2025 intent spike hasn't shown up as EC volume yet."},
     {s:"Punjab", g:103, t:94, ip:18, d:62, r:8, read:"Steady mid-tier flow."},
     {s:"Madhya Pradesh", g:89, t:83, ip:34, d:40, r:7, read:"Balanced pipeline."},
     {s:"Tamil Nadu", g:87, t:81, ip:25, d:56, r:9, read:"Modest flow, consistent with its mature-cluster profile."},
@@ -210,7 +203,7 @@
   var secs = [
     {t:"5(f) Synthetic organic chemicals", n:"1,192 granted", l:"Gujarat 670 (56% of all-India) · Maharashtra 157 · Telangana 62 · Karnataka 61", read:"The largest industrial EC category — Gujarat's 56% share explains both the Chemicals-#2-implementation finding and the pharma 2025 riser. The chemicals wave has deep clearance pipeline behind it."},
     {t:"3(a) Metallurgical industries", n:"641 granted", l:"Chhattisgarh 111 · West Bengal 76 · Punjab 54 · Gujarat 52 · Jharkhand 50 · Odisha 43", read:"Corroborates Metallurgical as the #1 implementation sector — and the leaders spread far beyond Odisha: the next steel wave is multi-state."},
-    {t:"5(g) Distilleries (ethanol)", n:"504 granted", l:"UP · Maharashtra · Punjab · MP", read:"Matches the Fermentation 2025 riser (₹24,237cr implemented) — the ethanol wave has clearance depth."},
+    {t:"5(g) Distilleries (ethanol)", n:"504 granted", l:"UP · Maharashtra · Punjab · MP", read:"Matches the Fermentation 2025 riser (\u20B924,237cr implemented) — the ethanol wave has clearance depth."},
     {t:"3(b) Cement", n:"148 granted", l:"Rajasthan 24 · Gujarat 16 · UP 14", read:"Steady infrastructure-linked flow."},
     {t:"Oil & gas / refining / petrochem", n:"144 granted", l:"incl. 17 petrochemical complexes, 8 refineries", read:"Real petrochem clearances exist — but NOT RRPCL (see below)."},
     {t:"Pesticides + fertilizers", n:"173 granted", l:"Gujarat-heavy", read:"Adjacent chemicals flow."}
@@ -224,8 +217,8 @@
   });
 
   var projects = [
-    {p:"Tata Semiconductor fab, Dholera (₹91,526cr)", n:"SIA/GJ/INFRA2/579457/2026", st:"tor", stx:"ToR Granted", read:"The fab is in the EIA stage — clearance path confirmed."},
-    {p:"Tata Semiconductor ATMP, Jagiroad, Assam (₹27,120cr)", n:"SIA/AS/INFRA2/534537/2025", st:"tor", stx:"ToR Granted", read:"Likewise in EIA."},
+    {p:"Tata Semiconductor fab, Dholera (\u20B991,526cr)", n:"SIA/GJ/INFRA2/579457/2026", st:"tor", stx:"ToR Granted", read:"The fab is in the EIA stage — clearance path confirmed."},
+    {p:"Tata Semiconductor ATMP, Jagiroad, Assam (\u20B927,120cr)", n:"SIA/AS/INFRA2/534537/2025", st:"tor", stx:"ToR Granted", read:"Likewise in EIA."},
     {p:"Micron OSAT, Sanand (expansions)", n:"SIA/GJ/INFRA2/562857/2025 · 573383/2026", st:"granted", stx:"EC Granted", read:"Already producing; expansions cleared."},
     {p:"Kaynes Semicon OSAT, Sanand", n:"SIA/GJ/INFRA2/534857/2025", st:"granted", stx:"EC Granted", read:"Producing since Mar 2026."},
     {p:"Agratas (Tata) 20 GWh gigafactory", n:"SIA/GJ/INFRA2/464582/2024", st:"tor", stx:"ToR Granted", read:"Battery plant in EIA — pipeline real, production ahead."},
