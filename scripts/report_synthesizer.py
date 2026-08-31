@@ -60,6 +60,17 @@ import subprocess
 import sys
 import tempfile
 from pathlib import Path
+import logging
+
+# ─ hallmark quality gate integration ──────────────────────────────────────
+sys.path.insert(0, str(Path(__file__).parent.parent.parent / ".ruflo" / "scripts"))
+try:
+    from hallmark_report_integration import validate_and_publish_report
+    HALLMARK_AVAILABLE = True
+except ImportError:
+    HALLMARK_AVAILABLE = False
+
+logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
 # Small, repo-specific vocabulary so headings read naturally instead of as
@@ -466,6 +477,43 @@ def synthesize_one(json_path, html_path, formats, out_dir, title_override=None):
         build_pptx(data, title, out_pptx)
         results["pptx"] = str(out_pptx)
         print(f"  [pptx] {out_pptx}")
+
+    # ─ hallmark quality gate: validate generated reports ──────────────────────
+    if HALLMARK_AVAILABLE and ("html" in locals() or "pdf" in formats or "docx" in formats):
+        print("\n[hallmark] Validating report quality...")
+
+        # Build HTML content for validation
+        html_content = render_fallback_html(data, title)
+        expected_sections = ["Introduction", "Data", "Methodology", "Retrieved"] if "retrieved" in data else None
+
+        try:
+            validation_result = validate_and_publish_report(
+                html_content=html_content,
+                report_name=f"report_{stem}",
+                expected_sections=expected_sections,
+                strict_mode=False,  # Warn on issues but don't block
+                on_warning="alert"
+            )
+
+            # Log validation result
+            results["validation"] = {
+                "publishable": validation_result["publishable"],
+                "status": validation_result["status"],
+                "violations_count": len(validation_result["violations"]),
+                "severity_counts": validation_result["severity_counts"],
+            }
+
+            # Print summary
+            if validation_result["publishable"]:
+                print(f"  ✅ {validation_result['summary']}")
+            elif validation_result["severity_counts"]["error"] > 0:
+                print(f"  ⚠️  {validation_result['summary']}")
+                logger.warning(f"Report {stem} has quality issues: {validation_result['summary']}")
+            else:
+                print(f"  ℹ️  {validation_result['summary']}")
+        except Exception as e:
+            logger.error(f"hallmark validation failed: {str(e)}")
+            results["validation"] = {"status": "error", "message": str(e)}
 
     return results
 
