@@ -243,6 +243,34 @@ def cmd_probe_deep(order_id):
     print(text[800:2400])
 
 
+def cmd_probe_ajax(order_id):
+    """Round 3 probe. --probe-deep showed the pages load DataTables
+    (frontdatatables.min.js, datatables.script.min.js, datatables.min.css)
+    -- DataTables almost always fetches its rows via a separate AJAX call
+    configured in an inline <script> near the end of the page body, which
+    the earlier 800:2400-char window never reached. This dumps every
+    occurrence of "ajax"/"DataTable(" with surrounding context, plus the
+    last 4000 chars of the body (where init scripts usually sit), for the
+    listing page and for order_id's own detail page."""
+    def scan(name, url):
+        status, body = fetch(url)
+        text = body.decode("utf-8", errors="replace")
+        print(f"\n=== AJAX SCAN {name} -> HTTP {status} ({len(body)} bytes) ===")
+        print(url)
+        for kw in ("ajax", "DataTable(", ".json", "/api"):
+            spots = [m.start() for m in re.finditer(re.escape(kw), text, re.IGNORECASE)]
+            print(f"occurrences of {kw!r}: {len(spots)}")
+            for pos in spots[:5]:
+                lo, hi = max(0, pos - 150), min(len(text), pos + 250)
+                print(f"  ...{text[lo:hi]!r}...")
+        print("--- last 4000 chars of body ---")
+        print(text[-4000:])
+        time.sleep(SLEEP)
+
+    scan("listing section31", LISTING_URLS["section31"])
+    scan("detail order sub=0", DETAIL_URL.format(kind="order", order_id=order_id, sub=0))
+
+
 def cmd_stats():
     con = db()
     cur = con.execute("SELECT COUNT(*), MIN(order_date), MAX(order_date) FROM cci_orders")
@@ -261,6 +289,9 @@ def main():
     ap.add_argument("--probe-deep", type=int, metavar="ORDER_ID",
                      help="round 2: search full detail-page body for real-data markers, "
                           "extract script src= and api-like URLs from detail + listing pages")
+    ap.add_argument("--probe-ajax", type=int, metavar="ORDER_ID",
+                     help="round 3: dump ajax/DataTable(/.json/api occurrences with context, "
+                          "plus the last 4000 chars of body, for the listing + detail page")
     ap.add_argument("--backfill", nargs=2, type=int, metavar=("FROM_ID", "TO_ID"),
                      help="NOT YET IMPLEMENTED -- write list_page()/detail_page() after probing")
     ap.add_argument("--update", action="store_true", help="NOT YET IMPLEMENTED")
@@ -274,6 +305,8 @@ def main():
         cmd_probe_listing()
     elif args.probe_deep:
         cmd_probe_deep(args.probe_deep)
+    elif args.probe_ajax:
+        cmd_probe_ajax(args.probe_ajax)
     elif args.stats:
         cmd_stats()
     elif args.query:
