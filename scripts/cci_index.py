@@ -191,6 +191,58 @@ def cmd_probe_listing():
         time.sleep(SLEEP)
 
 
+def cmd_probe_deep(order_id):
+    """Round 2 probe, run after --probe and --probe-listing showed 0 order IDs
+    in the listing pages' raw HTML. Two things:
+      1. Fetch order/summary sub=0 for order_id (the only sub value that did
+         not 500) and search the FULL body -- not just the first 800 chars --
+         for text markers that would prove the detail page carries real
+         parsed fields server-side (deal terms, case number, party names).
+      2. Fetch the section31 listing page and pull out every <script src=...>
+         and <link ... as="fetch"/preload> URL, plus any inline string that
+         looks like an API path (contains "/api/" or ends in .json), since
+         the actual order rows almost certainly come from one of those."""
+    markers = [
+        "Combination Registration No", "Regulation 5", "Section 6(2)",
+        "acquisition of", "target company", "acquirer", "order date",
+        "notice given", "Order No", "combination-order",
+    ]
+    for kind in ("order", "summary"):
+        url = DETAIL_URL.format(kind=kind, order_id=order_id, sub=0)
+        status, body = fetch(url)
+        text = body.decode("utf-8", errors="replace")
+        print(f"\n=== DEEP {kind} sub=0 -> HTTP {status} ({len(body)} bytes) ===")
+        print(url)
+        hits = [m for m in markers if m.lower() in text.lower()]
+        print(f"markers found in full body: {hits if hits else 'NONE'}")
+        script_srcs = sorted(set(re.findall(r'<script[^>]+src=["\']([^"\']+)["\']', text)))
+        print(f"script src= URLs ({len(script_srcs)}):")
+        for s in script_srcs:
+            print(f"  {s}")
+        api_like = sorted(set(re.findall(r'["\']([^"\']*(?:/api/|\.json)[^"\']*)["\']', text)))
+        print(f"api-like inline strings ({len(api_like)}):")
+        for s in api_like:
+            print(f"  {s}")
+        print("--- body chars 800:2400 (past the head boilerplate) ---")
+        print(text[800:2400])
+        time.sleep(SLEEP)
+
+    url = LISTING_URLS["section31"]
+    status, body = fetch(url)
+    text = body.decode("utf-8", errors="replace")
+    print(f"\n=== DEEP listing section31 -> HTTP {status} ({len(body)} bytes) ===")
+    script_srcs = sorted(set(re.findall(r'<script[^>]+src=["\']([^"\']+)["\']', text)))
+    print(f"script src= URLs ({len(script_srcs)}):")
+    for s in script_srcs:
+        print(f"  {s}")
+    api_like = sorted(set(re.findall(r'["\']([^"\']*(?:/api/|\.json)[^"\']*)["\']', text)))
+    print(f"api-like inline strings ({len(api_like)}):")
+    for s in api_like:
+        print(f"  {s}")
+    print("--- body chars 800:2400 (past the head boilerplate) ---")
+    print(text[800:2400])
+
+
 def cmd_stats():
     con = db()
     cur = con.execute("SELECT COUNT(*), MIN(order_date), MAX(order_date) FROM cci_orders")
@@ -206,6 +258,9 @@ def main():
                      help="fetch one order's detail pages raw, print HTML shape -- run this first")
     ap.add_argument("--probe-listing", action="store_true",
                      help="fetch all three listing pages raw, print HTML shape -- run this first too")
+    ap.add_argument("--probe-deep", type=int, metavar="ORDER_ID",
+                     help="round 2: search full detail-page body for real-data markers, "
+                          "extract script src= and api-like URLs from detail + listing pages")
     ap.add_argument("--backfill", nargs=2, type=int, metavar=("FROM_ID", "TO_ID"),
                      help="NOT YET IMPLEMENTED -- write list_page()/detail_page() after probing")
     ap.add_argument("--update", action="store_true", help="NOT YET IMPLEMENTED")
@@ -217,6 +272,8 @@ def main():
         cmd_probe(args.probe)
     elif args.probe_listing:
         cmd_probe_listing()
+    elif args.probe_deep:
+        cmd_probe_deep(args.probe_deep)
     elif args.stats:
         cmd_stats()
     elif args.query:
