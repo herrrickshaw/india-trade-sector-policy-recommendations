@@ -397,11 +397,32 @@ def parse_pdf_field(raw):
     return urls
 
 
+def normalize_date(raw):
+    """The listing endpoint mixes two date formats across its own fields --
+    decision_date/notification_date come back DD/MM/YYYY, but date_of_order
+    comes back already as ISO YYYY-MM-DD (confirmed live: a naive fallback
+    chain over the three fields produced garbage when a DD/MM/YYYY parser
+    was applied to an already-ISO value). Normalizes either shape to
+    YYYY-MM-DD; returns None for anything else rather than guessing."""
+    if not raw:
+        return None
+    raw = raw.strip()
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", raw):
+        return raw
+    m = re.fullmatch(r"(\d{2})/(\d{2})/(\d{4})", raw)
+    if m:
+        d, mo, y = m.groups()
+        return f"{y}-{mo}-{d}"
+    return None
+
+
 def upsert_row(con, kind, row):
     order_id = row.get("id")
     if order_id is None:
         return
-    order_date = row.get("decision_date") or row.get("date_of_order") or row.get("notification_date")
+    order_date = (normalize_date(row.get("decision_date"))
+                  or normalize_date(row.get("date_of_order"))
+                  or normalize_date(row.get("notification_date")))
     order_pdfs = parse_pdf_field(row.get("order_file_content"))
     summary_pdfs = parse_pdf_field(row.get("summary_file_content"))
     con.execute("""INSERT INTO cci_orders
@@ -461,24 +482,19 @@ def cmd_update():
 
 
 def cmd_stats():
-    """order_date is stored as CCI's own DD/MM/YYYY text, so a plain SQL
-    MIN/MAX would sort lexicographically (comparing the day digit first)
-    and print a meaningless range -- convert to YYYY-MM-DD first, and
-    exclude empty/malformed values (printing how many were excluded).
-    This does NOT filter out CCI's own 01/01/1970 placeholder (seen on
-    one "Notice Not Valid" row) -- that's a real, if odd, value in their
-    data, and now correctly sorts as the true minimum instead of just
-    accidentally matching the old lexicographic bug's answer."""
+    """order_date is normalized to YYYY-MM-DD by normalize_date() at
+    ingestion time (the listing endpoint mixes DD/MM/YYYY and already-ISO
+    values across its own date fields -- see normalize_date's docstring),
+    so a plain string MIN/MAX here is correct, not a lexicographic trap.
+    Rows normalize_date() couldn't parse land as NULL order_date and are
+    excluded from the range (count printed)."""
     con = db()
-    iso = ("substr(order_date,7,4) || '-' || substr(order_date,4,2) || "
-           "'-' || substr(order_date,1,2)")
-    valid = "order_date IS NOT NULL AND length(order_date) = 10"
     n_total = con.execute("SELECT COUNT(*) FROM cci_orders").fetchone()[0]
-    cur = con.execute(f"SELECT COUNT(*), MIN({iso}), MAX({iso}) "
-                       f"FROM cci_orders WHERE {valid}")
+    cur = con.execute("SELECT COUNT(*), MIN(order_date), MAX(order_date) "
+                       "FROM cci_orders WHERE order_date IS NOT NULL")
     n_valid, dmin, dmax = cur.fetchone()
     print(f"orders indexed: {n_total}  dates {dmin} -> {dmax} "
-          f"({n_total - n_valid} rows excluded from range: empty/malformed order_date)")
+          f"({n_total - n_valid} rows excluded from range: unparseable order_date)")
     for row in con.execute("SELECT order_kind, COUNT(*) FROM cci_orders GROUP BY order_kind"):
         print(f"  {row[1]:5d}  {row[0]}")
     for row in con.execute("SELECT order_status, COUNT(*) FROM cci_orders "
