@@ -283,38 +283,22 @@ DATATABLE_COLUMNS = [
 
 def cmd_probe_datatable(name):
     """Round 4 probe. --probe-ajax found the exact DataTables serverSide
-    config: it POSTs back to the SAME listing URL with the standard
-    DataTables paging/column params plus custom filter fields (form_type,
-    order_status, searchString, search_type, fromdate, todate), expecting
-    JSON back ({draw, recordsTotal, recordsFiltered, data: [...]})  This
-    GETs the listing page first (to pick up any session cookie + CSRF
-    token -- the site's 500 pages look Laravel-flavoured, which usually
-    means CSRF-protected POSTs), then attempts the real POST and prints
-    whatever comes back, so we can see if a token is required and whether
-    this is caught by it."""
+    config: url: the SAME listing URL, with the standard DataTables
+    paging/column params plus custom filter fields (form_type, order_status,
+    searchString, search_type, fromdate, todate), expecting JSON back
+    ({draw, recordsTotal, recordsFiltered, data: [...]}). The ajax config
+    never set `type: 'POST'`, so jQuery DataTables defaults to GET -- a
+    first attempt at POST got HTTP 405 ("Supported methods: GET, HEAD"),
+    confirming this. Sends the params as a GET query string instead."""
     url = LISTING_URLS[name]
     jar = http.cookiejar.CookieJar()
     opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
 
-    get_req = urllib.request.Request(url, headers=UA)
-    with opener.open(get_req, timeout=20) as r:
-        get_status = r.status
-        get_body = r.read().decode("utf-8", errors="replace")
-    print(f"=== GET {url} -> HTTP {get_status}, cookies received: "
+    warm_req = urllib.request.Request(url, headers=UA)
+    with opener.open(warm_req, timeout=20) as r:
+        warm_status = r.status
+    print(f"=== warm-up GET {url} -> HTTP {warm_status}, cookies received: "
           f"{[c.name for c in jar]} ===")
-
-    csrf = None
-    m = re.search(r'<meta name="csrf-token" content="([^"]+)"', get_body)
-    if m:
-        csrf = m.group(1)
-        print(f"csrf-token meta tag found: {csrf[:16]}...")
-    else:
-        m = re.search(r'name=["\']_token["\']\s+value=["\']([^"\']+)["\']', get_body)
-        if m:
-            csrf = m.group(1)
-            print(f"_token hidden input found: {csrf[:16]}...")
-        else:
-            print("no csrf-token meta tag or _token hidden input found in GET body")
 
     params = {
         "draw": "1", "start": "0", "length": "10",
@@ -323,8 +307,6 @@ def cmd_probe_datatable(name):
         "form_type": "", "order_status": "", "searchString": "",
         "search_type": "", "fromdate": "", "todate": "",
     }
-    if csrf:
-        params["_token"] = csrf
     for i, col in enumerate(DATATABLE_COLUMNS):
         params[f"columns[{i}][data]"] = col
         params[f"columns[{i}][name]"] = col
@@ -332,33 +314,31 @@ def cmd_probe_datatable(name):
         params[f"columns[{i}][orderable]"] = "true"
         params[f"columns[{i}][search][value]"] = ""
         params[f"columns[{i}][search][regex]"] = "false"
-    data = urllib.parse.urlencode(params).encode("utf-8")
+    query = urllib.parse.urlencode(params)
+    get_url = f"{url}?{query}"
 
-    post_headers = dict(UA)
-    post_headers["X-Requested-With"] = "XMLHttpRequest"
-    post_headers["Content-Type"] = "application/x-www-form-urlencoded; charset=UTF-8"
-    post_headers["Accept"] = "application/json, text/javascript, */*; q=0.01"
-    post_headers["Referer"] = url
-    if csrf:
-        post_headers["X-CSRF-TOKEN"] = csrf
+    get_headers = dict(UA)
+    get_headers["X-Requested-With"] = "XMLHttpRequest"
+    get_headers["Accept"] = "application/json, text/javascript, */*; q=0.01"
+    get_headers["Referer"] = url
 
-    post_req = urllib.request.Request(url, data=data, headers=post_headers, method="POST")
+    get_req = urllib.request.Request(get_url, headers=get_headers, method="GET")
     try:
-        with opener.open(post_req, timeout=20) as r:
-            post_status = r.status
-            post_body = r.read().decode("utf-8", errors="replace")
+        with opener.open(get_req, timeout=20) as r:
+            status = r.status
+            body = r.read().decode("utf-8", errors="replace")
     except urllib.error.HTTPError as e:
-        post_status = e.code
-        post_body = e.read().decode("utf-8", errors="replace")
+        status = e.code
+        body = e.read().decode("utf-8", errors="replace")
 
-    print(f"\n=== POST {url} -> HTTP {post_status} ({len(post_body)} chars) ===")
+    print(f"\n=== GET {get_url[:120]}... -> HTTP {status} ({len(body)} chars) ===")
     try:
-        parsed = json.loads(post_body)
+        parsed = json.loads(body)
         print("response IS valid JSON. keys:", list(parsed.keys()))
         print(json.dumps(parsed, indent=2)[:3000])
     except json.JSONDecodeError:
         print("response is NOT valid JSON, raw excerpt:")
-        print(post_body[:2000])
+        print(body[:2000])
 
 
 def cmd_stats():
