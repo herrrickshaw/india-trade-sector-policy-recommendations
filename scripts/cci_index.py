@@ -99,11 +99,14 @@ DB: data/cci_index.sqlite (table cci_orders, PK order_id)
 """
 import argparse
 import datetime as dt
+import http.cookiejar
+import json
 import re
 import sqlite3
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -271,6 +274,93 @@ def cmd_probe_ajax(order_id):
     scan("detail order sub=0", DETAIL_URL.format(kind="order", order_id=order_id, sub=0))
 
 
+DATATABLE_COLUMNS = [
+    "DT_RowIndex", "combination_no", "party_name", "form_type",
+    "notification_date", "order_status", "decision_date",
+    "summary_files", "order_files",
+]
+
+
+def cmd_probe_datatable(name):
+    """Round 4 probe. --probe-ajax found the exact DataTables serverSide
+    config: it POSTs back to the SAME listing URL with the standard
+    DataTables paging/column params plus custom filter fields (form_type,
+    order_status, searchString, search_type, fromdate, todate), expecting
+    JSON back ({draw, recordsTotal, recordsFiltered, data: [...]})  This
+    GETs the listing page first (to pick up any session cookie + CSRF
+    token -- the site's 500 pages look Laravel-flavoured, which usually
+    means CSRF-protected POSTs), then attempts the real POST and prints
+    whatever comes back, so we can see if a token is required and whether
+    this is caught by it."""
+    url = LISTING_URLS[name]
+    jar = http.cookiejar.CookieJar()
+    opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
+
+    get_req = urllib.request.Request(url, headers=UA)
+    with opener.open(get_req, timeout=20) as r:
+        get_status = r.status
+        get_body = r.read().decode("utf-8", errors="replace")
+    print(f"=== GET {url} -> HTTP {get_status}, cookies received: "
+          f"{[c.name for c in jar]} ===")
+
+    csrf = None
+    m = re.search(r'<meta name="csrf-token" content="([^"]+)"', get_body)
+    if m:
+        csrf = m.group(1)
+        print(f"csrf-token meta tag found: {csrf[:16]}...")
+    else:
+        m = re.search(r'name=["\']_token["\']\s+value=["\']([^"\']+)["\']', get_body)
+        if m:
+            csrf = m.group(1)
+            print(f"_token hidden input found: {csrf[:16]}...")
+        else:
+            print("no csrf-token meta tag or _token hidden input found in GET body")
+
+    params = {
+        "draw": "1", "start": "0", "length": "10",
+        "search[value]": "", "search[regex]": "false",
+        "order[0][column]": "0", "order[0][dir]": "desc",
+        "form_type": "", "order_status": "", "searchString": "",
+        "search_type": "", "fromdate": "", "todate": "",
+    }
+    if csrf:
+        params["_token"] = csrf
+    for i, col in enumerate(DATATABLE_COLUMNS):
+        params[f"columns[{i}][data]"] = col
+        params[f"columns[{i}][name]"] = col
+        params[f"columns[{i}][searchable]"] = "true"
+        params[f"columns[{i}][orderable]"] = "true"
+        params[f"columns[{i}][search][value]"] = ""
+        params[f"columns[{i}][search][regex]"] = "false"
+    data = urllib.parse.urlencode(params).encode("utf-8")
+
+    post_headers = dict(UA)
+    post_headers["X-Requested-With"] = "XMLHttpRequest"
+    post_headers["Content-Type"] = "application/x-www-form-urlencoded; charset=UTF-8"
+    post_headers["Accept"] = "application/json, text/javascript, */*; q=0.01"
+    post_headers["Referer"] = url
+    if csrf:
+        post_headers["X-CSRF-TOKEN"] = csrf
+
+    post_req = urllib.request.Request(url, data=data, headers=post_headers, method="POST")
+    try:
+        with opener.open(post_req, timeout=20) as r:
+            post_status = r.status
+            post_body = r.read().decode("utf-8", errors="replace")
+    except urllib.error.HTTPError as e:
+        post_status = e.code
+        post_body = e.read().decode("utf-8", errors="replace")
+
+    print(f"\n=== POST {url} -> HTTP {post_status} ({len(post_body)} chars) ===")
+    try:
+        parsed = json.loads(post_body)
+        print("response IS valid JSON. keys:", list(parsed.keys()))
+        print(json.dumps(parsed, indent=2)[:3000])
+    except json.JSONDecodeError:
+        print("response is NOT valid JSON, raw excerpt:")
+        print(post_body[:2000])
+
+
 def cmd_stats():
     con = db()
     cur = con.execute("SELECT COUNT(*), MIN(order_date), MAX(order_date) FROM cci_orders")
@@ -292,6 +382,9 @@ def main():
     ap.add_argument("--probe-ajax", type=int, metavar="ORDER_ID",
                      help="round 3: dump ajax/DataTable(/.json/api occurrences with context, "
                           "plus the last 4000 chars of body, for the listing + detail page")
+    ap.add_argument("--probe-datatable", choices=list(LISTING_URLS),
+                     help="round 4: GET the listing page for cookies/csrf, then attempt the "
+                          "real DataTables serverSide POST and print what comes back")
     ap.add_argument("--backfill", nargs=2, type=int, metavar=("FROM_ID", "TO_ID"),
                      help="NOT YET IMPLEMENTED -- write list_page()/detail_page() after probing")
     ap.add_argument("--update", action="store_true", help="NOT YET IMPLEMENTED")
@@ -307,6 +400,8 @@ def main():
         cmd_probe_deep(args.probe_deep)
     elif args.probe_ajax:
         cmd_probe_ajax(args.probe_ajax)
+    elif args.probe_datatable:
+        cmd_probe_datatable(args.probe_datatable)
     elif args.stats:
         cmd_stats()
     elif args.query:
