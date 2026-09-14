@@ -461,11 +461,28 @@ def cmd_update():
 
 
 def cmd_stats():
+    """order_date is stored as CCI's own DD/MM/YYYY text, so a plain SQL
+    MIN/MAX would sort lexicographically (comparing the day digit first)
+    and print a meaningless range -- convert to YYYY-MM-DD first, and
+    exclude empty/malformed values (printing how many were excluded).
+    This does NOT filter out CCI's own 01/01/1970 placeholder (seen on
+    one "Notice Not Valid" row) -- that's a real, if odd, value in their
+    data, and now correctly sorts as the true minimum instead of just
+    accidentally matching the old lexicographic bug's answer."""
     con = db()
-    cur = con.execute("SELECT COUNT(*), MIN(order_date), MAX(order_date) FROM cci_orders")
-    n, dmin, dmax = cur.fetchone()
-    print(f"orders indexed: {n}  dates {dmin} -> {dmax}")
+    iso = ("substr(order_date,7,4) || '-' || substr(order_date,4,2) || "
+           "'-' || substr(order_date,1,2)")
+    valid = "order_date IS NOT NULL AND length(order_date) = 10"
+    n_total = con.execute("SELECT COUNT(*) FROM cci_orders").fetchone()[0]
+    cur = con.execute(f"SELECT COUNT(*), MIN({iso}), MAX({iso}) "
+                       f"FROM cci_orders WHERE {valid}")
+    n_valid, dmin, dmax = cur.fetchone()
+    print(f"orders indexed: {n_total}  dates {dmin} -> {dmax} "
+          f"({n_total - n_valid} rows excluded from range: empty/malformed order_date)")
     for row in con.execute("SELECT order_kind, COUNT(*) FROM cci_orders GROUP BY order_kind"):
+        print(f"  {row[1]:5d}  {row[0]}")
+    for row in con.execute("SELECT order_status, COUNT(*) FROM cci_orders "
+                            "GROUP BY order_status ORDER BY COUNT(*) DESC"):
         print(f"  {row[1]:5d}  {row[0]}")
 
 
