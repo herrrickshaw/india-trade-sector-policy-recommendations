@@ -4,3 +4,6 @@ reports/*.docx
 reports/*.pptx
 scripts/__pycache__/
 *.sqlite-journal
+
+# CCI orders cache - not personal, but a 4MB binary blob that regenerates; keep out of git
+data/cci_index.sqlite
