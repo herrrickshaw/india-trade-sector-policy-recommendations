@@ -1,0 +1,2728 @@
+PARLIAMENT QUESTION: DBT GRANTS UNDER BIRAC, BIONEST AND BIOTECH HUBS
+---
+The Department of Biotechnology (DBT), Government of India, has established the Biotechnology Industry Research Assistance Council (BIRAC) is a Section 8, not-for-profit Public Sector Enterprise that serves as a strategic interface agency, dedicated to nurturing India’s startup ecosystem and advancing R&D with a specialized focus on the biotechnology sector. 
+ The following Institutes, Startups, Companies located in Tamil Nadu received funding from BIRAC under Biotechnology Industry Partnership Programme (BIPP), Small Business Innovation Research Initiative (SBIRI), Promoting Academic Research Conversion to Enterprise (PACE), Bioincubators Nurturing Entrepreneurship for Scaling Technologies (BioNEST), Grand Challenge India (GCI) and National Biopharma Mission (NBM) schemes during 2023-26: 
+ S. No 
+ Applicant/ Grantee Name 
+ Scheme 
+ /Programs 
+ District 
+ Fermentech Gsv Private Limited 
+ SBIRI 
+ Thanjavur 
+ C. Abdul Hakeem College 
+ SBIRI 
+ Vellore 
+ Cisgen Biotech Discoveries Private Limited 
+ SBIRI 
+ Chennai 
+ Levim Biotech LLP 
+ BIPP 
+ Chennai 
+ Seagrass Tech Private Limited 
+ BIPP 
+ Chennai 
+ Tamil Nadu Agricultural University Department of Nano Science and Technology 
+ PACE 
+ Coimbatore 
+ Karunya Institute of Technology and Sciences 
+ PACE 
+ Coimbatore 
+ IIT Madras 
+ PACE 
+ Chennai 
+ Central Leather Research Institute 
+ PACE 
+ Chennai 
+ Avinashilingam Institute for HSc and HEd for Women 
+ PACE 
+ Coimbatore 
+ Tamil Nadu Veterinary and Animal Sciences University-DCAHS 
+ PACE 
+ Chennai 
+ IIT Madras 
+ PACE 
+ Chennai 
+ Healthcare Technology Innovation Center, IIT Madras 
+ NBM 
+ Chennai 
+ The Cancer Institute (WIA - Women's Indian Association) 
+ NBM 
+ Chennai 
+ Christian Medical College Vellore Association 
+ NBM 
+ Vellore 
+ Carenow Medical Pvt Ltd 
+ NBM 
+ Coimbatore 
+ Vellore Institute of Technology 
+ NBM 
+ Vellore 
+ SRM Institutes for Medical Science 
+ NBM 
+ Chennai 
+ Theragen Biologics Private Limited 
+ NBM 
+ Chennai 
+ ICMR - National Institute of Epidemiology 
+ NBM 
+ Chennai 
+ Meenakshi Mission Hospital, Research Centre 
+ NBM 
+ Madurai 
+ HTIC (Healthcare Technology Innovation Centre) MedTech Incubator, Chennai 
+ BioNEST 
+ Chennai 
+ Association for Bio-inspired Leaders and Entrepreneurs at Sastra TBI 
+ BioNEST 
+ Thanjavur 
+ Tamil Nadu Veterinary and Animal sciences University - Veterinary Incubation Foundation at TANUVAS 
+ BioNEST 
+ Chennai 
+ Sri Ramachandra Institute of Higher Education & Research 
+ BioNEST 
+ Chennai 
+ IIT Madras 
+ GCI 
+ Chennai 
+ The district-wise details of the number of biotech startups incubated in Tamil Nadu–based bioincubators, intellectual property (IP) filed, and technologies/products commercialised during 2023-26 , are provided below. BIRAC provides infrastructure and operational support to ensure the smooth functioning of these centres, however, it does not provide direct seed funding to startups under the incubation scheme 
+ S. No 
+ Name of the BioNEST Bioincubator 
+ District 
+ Total No. of Incubatees supported 
+ No. of Products / Technologies commercialised 
+ No of IP's filed 
+ BioNEST HTIC (Healthcare Technology Innovation Centre) MedTech Incubator, Chennai 
+ Chennai 
+ 69 
+ 27 
+ 42 
+ BioNEST Association for Bio-inspired Leaders and Entrepreneurs at Sastra TBI, Thanjavur 
+ Thanjavur 
+ 45 
+ 10 
+ 10 
+ BioNEST Tamil Nadu Veterinary and Animal Sciences University - Veterinary Incubation Foundation at TANUVAS, Chennai 
+ Chennai 
+ 18 
+ 5 
+ 7 
+ BioNEST Sri Ramachandra Institute of Higher Education & Research, Chennai 
+ Chennai 
+ 37 
+ 2 
+ 9 
+ BioNEST-SRM Medical College Hospital and Research Centre, Chennai 
+ Chengalpattu 
+ 28 
+ 0 
+ 0 
+ The table below details the number of beneficiaries in Tamil Nadu who received scholarships or fellowships from the Department of Science & Technology (DST) over the last three years. This includes recipients under the WOS-A (Women Scientists Scheme), WISE-PhD (Women in Science and Engineering-PhD), WISE-PDF (Women in Science and Engineering-PDF), and WISE-SCOPE (Women in Science and Engineering- Societal Challenges with Opportunities) programs. 
+ Women beneficiaries supported under DST WOS-A program in 
+ Tamil Nadu state (district -wise) 
+ S.No 
+ District 
+ 2023-26 
+ Chennai 
+ 9 
+ Coimbatore 
+ 3 
+ Karaikudi 
+ 2 
+ Salem 
+ 1 
+ Tiruchirappalli 
+ 2 
+ Total 
+ 17 
+ Women beneficiaries supported under DST WISE-PhD program in 
+ Tamil Nadu state (district-wise) 
+ S. No 
+ District 
+ 2023-2026 
+ Chennai 
+ 9 
+ Coimbatore 
+ 3 
+ Dindigul 
+ 1 
+ Kancheepuram 
+ 2 
+ Sivaganga 
+ 1 
+ Thanjavur 
+ 2 
+ Tiruchirappalli 
+ 2 
+ Vellore 
+ 1 
+ Total 
+ 21 
+ Women beneficiaries supported under DST WISE-PDF program in 
+ Tamil Nadu state (district wise) 
+ S. No 
+ District 
+ 2023-2026 
+ Chennai 
+ 8 
+ Coimbatore 
+ 2 
+ Cuddalore 
+ 1 
+ Salem 
+ 1 
+ Thanjavur 
+ 1 
+ Tiruchirappalli 
+ 1 
+ Tirunelveli 
+ 1 
+ Total 
+ 15 
+ Women beneficiaries supported under DST WISE-SCOPE program in 
+ Tamil Nadu state (district-wise) 
+ S. No 
+ District 
+ 2023-26 
+ Chennai 
+ 3 
+ Coimbatore 
+ 2 
+ Cuddalore 
+ 1 
+ Dindigul 
+ 1 
+ Tiruchirappalli 
+ 1 
+ Tirupathur 
+ 1 
+ Total 
+ 9 
+ The table below presents the number of beneficiaries in Tamil Nadu who were awarded scholarships and fellowships under the DST-INSPIRE (Innovation in Science Pursuit for Inspired Research) program over the past three years. 
+ INSPIRE-SHE Beneficiaries in Tamil Nadu State (district-wise) 
+ S.No. 
+ District Name 
+ 2023-26 
+ Chengalpattu 
+ 2 
+ Chennai 
+ 15 
+ Coimbatore 
+ 4 
+ Dharmapuri 
+ 1 
+ Dindigul 
+ 1 
+ Erode 
+ 20 
+ Kanchipuram 
+ 5 
+ Kanyakumari 
+ 9 
+ Madurai 
+ 2 
+ Nagapattinam 
+ 1 
+ Namakkal 
+ 8 
+ Salem 
+ 1 
+ Thanjavur 
+ 2 
+ Thiruvallur 
+ 2 
+ Thoothukudi 
+ 1 
+ Tiruchirappalli 
+ 2 
+ Tirunelveli 
+ 2 
+ Tiruppur 
+ 6 
+ Virudhunagar 
+ 6 
+ Total 
+ 90 
+ INSPIRE Fellowship Beneficiaries in Tamil Nadu State (district-wise) 
+ S. No 
+ District 
+ 2023-26 
+ Chengalpattu 
+ 44 
+ Chennai 
+ 144 
+ Coimbatore 
+ 126 
+ Cuddalore 
+ 13 
+ Dindigul 
+ 16 
+ Kanchipuram 
+ 3 
+ Kanyakumari 
+ 7 
+ Madurai 
+ 8 
+ Salem 
+ 10 
+ Sivaganga 
+ 68 
+ Thanjavur 
+ 20 
+ Tiruchirappalli 
+ 39 
+ Tirunelveli 
+ 14 
+ Tiruvarur 
+ 17 
+ Vellore 
+ 53 
+ Total 
+ 582 
+ INSPIRE Faculty Fellowship Beneficiaries in Tamil Nadu State (district-wise) 
+ S.No. 
+ District Name 
+ 2023-26 
+ Chengalpattu 
+ 6 
+ Chennai 
+ 33 
+ Coimbatore 
+ 2 
+ Dindigul 
+ 2 
+ Kancheepuram 
+ 1 
+ Karaikudi 
+ 2 
+ Namakkal 
+ 1 
+ Tiruchirappalli 
+ 9 
+ Vellore 
+ 5 
+ Total 
+ 61 
+ Additionally, the details of women scientists in Tamil Nadu supported by the DBT BioCARe program and the BIRAC Grand Challenge India (GCI) program are presented below. 
+ Women scientists beneficiaries supported under GCI program in 
+ Tamil Nadu state (district-wise) 
+ S. No 
+ District 
+ 2023-26 
+ 1. 
+ Thiruvallur 
+ 2 
+ Total 
+ 2 
+ Women scientists beneficiaries supported under BioCARe in 
+ Tamil Nadu state (district-wise) 
+ S.No 
+ District 
+ 2023-26 
+ 1. 
+ Chennai 
+ 3 
+ 2. 
+ Coimbatore 
+ 2 
+ 3. 
+ Cuddalore 
+ 1 
+ Total 
+ 6 
+ The details of DBT-supported R&D centres approved, clinical trial units operationalized in the state of Tamil Nadu under the National Biopharma Mission (NBM) are as under- 
+ Grantee 
+ District 
+ State 
+ Employment Generated 
+ Healthcare Technology Innovation Center, IIT Madras, Chennai 
+ Chennai 
+ Tamil Nadu 
+ 5 
+ The Cancer Institute (WIA - Women's Indian Association), also known as the Adyar Cancer Institute 
+ Chennai 
+ Tamil Nadu 
+ 20 
+ Christian Medical College Vellore Association, Vellore 
+ Vellore 
+ Tamil Nadu 
+ 12 
+ SRM Institute for Medical Science, Chennai 
+ Chennai 
+ Tamil Nadu 
+ 14 
+ ICMR - National Institute of Epidemiology, Chennai 
+ Chennai 
+ Tamil Nadu 
+ 12 
+ Meenakshi Mission Hospital, Research Centre, Madurai 
+ Madurai 
+ Tamil Nadu 
+ 14 
+ This information was given by Union Minister of State (Independent Charge) for Science & Technology and Earth Sciences, and Minister of State in the Prime Minister’s Office, Personnel, Public Grievances and Pensions, Atomic Energy and Space, Dr. Jitendra Singh, in a written reply in the Lok Sabha on Wednesday. 
+ ***** 
+ AK/SK 
+ (Release ID: 2226279) 
+ Visitor Counter : 689 
+ Read this release in: 
+ Urdu 
+ ,
+ हिन्दी 
+ Ministry of Science & Technology
+ PARLIAMENT QUESTION: DBT GRANTS UNDER BIRAC, BIONEST AND BIOTECH HUBS
+ Posted On:
+ 11 FEB 2026 1:37PM by PIB Delhi
+ The Department of Biotechnology (DBT), Government of India, has established the Biotechnology Industry Research Assistance Council (BIRAC) is a Section 8, not-for-profit Public Sector Enterprise that serves as a strategic interface agency, dedicated to nurturing India’s startup ecosystem and advancing R&D with a specialized focus on the biotechnology sector. 
+ The following Institutes, Startups, Companies located in Tamil Nadu received funding from BIRAC under Biotechnology Industry Partnership Programme (BIPP), Small Business Innovation Research Initiative (SBIRI), Promoting Academic Research Conversion to Enterprise (PACE), Bioincubators Nurturing Entrepreneurship for Scaling Technologies (BioNEST), Grand Challenge India (GCI) and National Biopharma Mission (NBM) schemes during 2023-26: 
+ S. No 
+ Applicant/ Grantee Name 
+ Scheme 
+ /Programs 
+ District 
+ Fermentech Gsv Private Limited 
+ SBIRI 
+ Thanjavur 
+ C. Abdul Hakeem College 
+ SBIRI 
+ Vellore 
+ Cisgen Biotech Discoveries Private Limited 
+ SBIRI 
+ Chennai 
+ Levim Biotech LLP 
+ BIPP 
+ Chennai 
+ Seagrass Tech Private Limited 
+ BIPP 
+ Chennai 
+ Tamil Nadu Agricultural University Department of Nano Science and Technology 
+ PACE 
+ Coimbatore 
+ Karunya Institute of Technology and Sciences 
+ PACE 
+ Coimbatore 
+ IIT Madras 
+ PACE 
+ Chennai 
+ Central Leather Research Institute 
+ PACE 
+ Chennai 
+ Avinashilingam Institute for HSc and HEd for Women 
+ PACE 
+ Coimbatore 
+ Tamil Nadu Veterinary and Animal Sciences University-DCAHS 
+ PACE 
+ Chennai 
+ IIT Madras 
+ PACE 
+ Chennai 
+ Healthcare Technology Innovation Center, IIT Madras 
+ NBM 
+ Chennai 
+ The Cancer Institute (WIA - Women's Indian Association) 
+ NBM 
+ Chennai 
+ Christian Medical College Vellore Association 
+ NBM 
+ Vellore 
+ Carenow Medical Pvt Ltd 
+ NBM 
+ Coimbatore 
+ Vellore Institute of Technology 
+ NBM 
+ Vellore 
+ SRM Institutes for Medical Science 
+ NBM 
+ Chennai 
+ Theragen Biologics Private Limited 
+ NBM 
+ Chennai 
+ ICMR - National Institute of Epidemiology 
+ NBM 
+ Chennai 
+ Meenakshi Mission Hospital, Research Centre 
+ NBM 
+ Madurai 
+ HTIC (Healthcare Technology Innovation Centre) MedTech Incubator, Chennai 
+ BioNEST 
+ Chennai 
+ Association for Bio-inspired Leaders and Entrepreneurs at Sastra TBI 
+ BioNEST 
+ Thanjavur 
+ Tamil Nadu Veterinary and Animal sciences University - Veterinary Incubation Foundation at TANUVAS 
+ BioNEST 
+ Chennai 
+ Sri Ramachandra Institute of Higher Education & Research 
+ BioNEST 
+ Chennai 
+ IIT Madras 
+ GCI 
+ Chennai 
+ The district-wise details of the number of biotech startups incubated in Tamil Nadu–based bioincubators, intellectual property (IP) filed, and technologies/products commercialised during 2023-26 , are provided below. BIRAC provides infrastructure and operational support to ensure the smooth functioning of these centres, however, it does not provide direct seed funding to startups under the incubation scheme 
+ S. No 
+ Name of the BioNEST Bioincubator 
+ District 
+ Total No. of Incubatees supported 
+ No. of Products / Technologies commercialised 
+ No of IP's filed 
+ BioNEST HTIC (Healthcare Technology Innovation Centre) MedTech Incubator, Chennai 
+ Chennai 
+ 69 
+ 27 
+ 42 
+ BioNEST Association for Bio-inspired Leaders and Entrepreneurs at Sastra TBI, Thanjavur 
+ Thanjavur 
+ 45 
+ 10 
+ 10 
+ BioNEST Tamil Nadu Veterinary and Animal Sciences University - Veterinary Incubation Foundation at TANUVAS, Chennai 
+ Chennai 
+ 18 
+ 5 
+ 7 
+ BioNEST Sri Ramachandra Institute of Higher Education & Research, Chennai 
+ Chennai 
+ 37 
+ 2 
+ 9 
+ BioNEST-SRM Medical College Hospital and Research Centre, Chennai 
+ Chengalpattu 
+ 28 
+ 0 
+ 0 
+ The table below details the number of beneficiaries in Tamil Nadu who received scholarships or fellowships from the Department of Science & Technology (DST) over the last three years. This includes recipients under the WOS-A (Women Scientists Scheme), WISE-PhD (Women in Science and Engineering-PhD), WISE-PDF (Women in Science and Engineering-PDF), and WISE-SCOPE (Women in Science and Engineering- Societal Challenges with Opportunities) programs. 
+ Women beneficiaries supported under DST WOS-A program in 
+ Tamil Nadu state (district -wise) 
+ S.No 
+ District 
+ 2023-26 
+ Chennai 
+ 9 
+ Coimbatore 
+ 3 
+ Karaikudi 
+ 2 
+ Salem 
+ 1 
+ Tiruchirappalli 
+ 2 
+ Total 
+ 17 
+ Women beneficiaries supported under DST WISE-PhD program in 
+ Tamil Nadu state (district-wise) 
+ S. No 
+ District 
+ 2023-2026 
+ Chennai 
+ 9 
+ Coimbatore 
+ 3 
+ Dindigul 
+ 1 
+ Kancheepuram 
+ 2 
+ Sivaganga 
+ 1 
+ Thanjavur 
+ 2 
+ Tiruchirappalli 
+ 2 
+ Vellore 
+ 1 
+ Total 
+ 21 
+ Women beneficiaries supported under DST WISE-PDF program in 
+ Tamil Nadu state (district wise) 
+ S. No 
+ District 
+ 2023-2026 
+ Chennai 
+ 8 
+ Coimbatore 
+ 2 
+ Cuddalore 
+ 1 
+ Salem 
+ 1 
+ Thanjavur 
+ 1 
+ Tiruchirappalli 
+ 1 
+ Tirunelveli 
+ 1 
+ Total 
+ 15 
+ Women beneficiaries supported under DST WISE-SCOPE program in 
+ Tamil Nadu state (district-wise) 
+ S. No 
+ District 
+ 2023-26 
+ Chennai 
+ 3 
+ Coimbatore 
+ 2 
+ Cuddalore 
+ 1 
+ Dindigul 
+ 1 
+ Tiruchirappalli 
+ 1 
+ Tirupathur 
+ 1 
+ Total 
+ 9 
+ The table below presents the number of beneficiaries in Tamil Nadu who were awarded scholarships and fellowships under the DST-INSPIRE (Innovation in Science Pursuit for Inspired Research) program over the past three years. 
+ INSPIRE-SHE Beneficiaries in Tamil Nadu State (district-wise) 
+ S.No. 
+ District Name 
+ 2023-26 
+ Chengalpattu 
+ 2 
+ Chennai 
+ 15 
+ Coimbatore 
+ 4 
+ Dharmapuri 
+ 1 
+ Dindigul 
+ 1 
+ Erode 
+ 20 
+ Kanchipuram 
+ 5 
+ Kanyakumari 
+ 9 
+ Madurai 
+ 2 
+ Nagapattinam 
+ 1 
+ Namakkal 
+ 8 
+ Salem 
+ 1 
+ Thanjavur 
+ 2 
+ Thiruvallur 
+ 2 
+ Thoothukudi 
+ 1 
+ Tiruchirappalli 
+ 2 
+ Tirunelveli 
+ 2 
+ Tiruppur 
+ 6 
+ Virudhunagar 
+ 6 
+ Total 
+ 90 
+ INSPIRE Fellowship Beneficiaries in Tamil Nadu State (district-wise) 
+ S. No 
+ District 
+ 2023-26 
+ Chengalpattu 
+ 44 
+ Chennai 
+ 144 
+ Coimbatore 
+ 126 
+ Cuddalore 
+ 13 
+ Dindigul 
+ 16 
+ Kanchipuram 
+ 3 
+ Kanyakumari 
+ 7 
+ Madurai 
+ 8 
+ Salem 
+ 10 
+ Sivaganga 
+ 68 
+ Thanjavur 
+ 20 
+ Tiruchirappalli 
+ 39 
+ Tirunelveli 
+ 14 
+ Tiruvarur 
+ 17 
+ Vellore 
+ 53 
+ Total 
+ 582 
+ INSPIRE Faculty Fellowship Beneficiaries in Tamil Nadu State (district-wise) 
+ S.No. 
+ District Name 
+ 2023-26 
+ Chengalpattu 
+ 6 
+ Chennai 
+ 33 
+ Coimbatore 
+ 2 
+ Dindigul 
+ 2 
+ Kancheepuram 
+ 1 
+ Karaikudi 
+ 2 
+ Namakkal 
+ 1 
+ Tiruchirappalli 
+ 9 
+ Vellore 
+ 5 
+ Total 
+ 61 
+ Additionally, the details of women scientists in Tamil Nadu supported by the DBT BioCARe program and the BIRAC Grand Challenge India (GCI) program are presented below. 
+ Women scientists beneficiaries supported under GCI program in 
+ Tamil Nadu state (district-wise) 
+ S. No 
+ District 
+ 2023-26 
+ 1. 
+ Thiruvallur 
+ 2 
+ Total 
+ 2 
+ Women scientists beneficiaries supported under BioCARe in 
+ Tamil Nadu state (district-wise) 
+ S.No 
+ District 
+ 2023-26 
+ 1. 
+ Chennai 
+ 3 
+ 2. 
+ Coimbatore 
+ 2 
+ 3. 
+ Cuddalore 
+ 1 
+ Total 
+ 6 
+ The details of DBT-supported R&D centres approved, clinical trial units operationalized in the state of Tamil Nadu under the National Biopharma Mission (NBM) are as under- 
+ Grantee 
+ District 
+ State 
+ Employment Generated 
+ Healthcare Technology Innovation Center, IIT Madras, Chennai 
+ Chennai 
+ Tamil Nadu 
+ 5 
+ The Cancer Institute (WIA - Women's Indian Association), also known as the Adyar Cancer Institute 
+ Chennai 
+ Tamil Nadu 
+ 20 
+ Christian Medical College Vellore Association, Vellore 
+ Vellore 
+ Tamil Nadu 
+ 12 
+ SRM Institute for Medical Science, Chennai 
+ Chennai 
+ Tamil Nadu 
+ 14 
+ ICMR - National Institute of Epidemiology, Chennai 
+ Chennai 
+ Tamil Nadu 
+ 12 
+ Meenakshi Mission Hospital, Research Centre, Madurai 
+ Madurai 
+ Tamil Nadu 
+ 14 
+ This information was given by Union Minister of State (Independent Charge) for Science & Technology and Earth Sciences, and Minister of State in the Prime Minister’s Office, Personnel, Public Grievances and Pensions, Atomic Energy and Space, Dr. Jitendra Singh, in a written reply in the Lok Sabha on Wednesday. 
+ ***** 
+ AK/SK 
+ (Release ID: 2226279)
+ <span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">The Department of Biotechnology (DBT), Government of India, has established the Biotechnology Industry Research Assistance Council (BIRAC) is a Section 8, not-for-profit Public Sector Enterprise that serves as a strategic interface agency, dedicated to nurturing India’s startup ecosystem and advancing R&D with a specialized focus on the biotechnology sector.</span></span></p>
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">The following Institutes, Startups, Companies located in Tamil Nadu received funding from BIRAC under Biotechnology Industry Partnership Programme (BIPP), Small Business Innovation Research Initiative (SBIRI), Promoting Academic Research Conversion to Enterprise (PACE), Bioincubators Nurturing Entrepreneurship for Scaling Technologies (BioNEST), Grand Challenge India (GCI) and National Biopharma Mission (NBM) schemes during 2023-26:</span></span></p>
+<div>
+<table align="center" border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" class="Table" style="border-collapse:collapse">
+ <tbody>
+ <tr>
+ <td style="width:9.88%">
+ <p style="margin-left:-6.0pt; margin-right:0cm; text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>S. No</strong></span></span></p>
+ </td>
+ <td style="width:58.44%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Applicant/ Grantee Name</strong></span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Scheme</strong></span></span></p>
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>/Programs</strong></span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>District</strong></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Fermentech Gsv Private Limited</span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">SBIRI</span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Thanjavur</span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">C. Abdul Hakeem College</span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">SBIRI</span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Vellore</span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Cisgen Biotech Discoveries Private Limited</span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">SBIRI</span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Chennai</span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Levim Biotech LLP</span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">BIPP</span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Chennai</span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Seagrass Tech Private Limited</span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">BIPP</span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Chennai</span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Tamil Nadu Agricultural University Department of Nano Science and Technology</span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">PACE</span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Coimbatore</span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Karunya Institute of Technology and Sciences</span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">PACE</span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Coimbatore</span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">IIT Madras</span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">PACE</span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Chennai</span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Central Leather Research Institute</span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">PACE</span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Chennai</span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Avinashilingam Institute for HSc and HEd for Women</span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">PACE</span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Coimbatore</span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Tamil Nadu Veterinary and Animal Sciences University-DCAHS</span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">PACE</span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Chennai</span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="height:33.45pt; width:9.88%"> </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">IIT Madras</span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">PACE</span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Chennai</span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Healthcare Technology Innovation Center, IIT Madras</span></span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">NBM</span></span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chennai</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">The Cancer Institute (WIA - Women's Indian Association)</span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">NBM</span></span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chennai</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Christian Medical College Vellore Association</span></span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">NBM</span></span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Vellore</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Carenow Medical Pvt Ltd</span></span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">NBM</span></span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Coimbatore</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Vellore Institute of Technology</span></span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">NBM</span></span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Vellore</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">SRM Institutes for Medical Science</span></span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">NBM</span></span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chennai</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Theragen Biologics Private Limited</span></span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">NBM</span></span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chennai</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">ICMR - National Institute of Epidemiology</span></span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">NBM</span></span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chennai</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Meenakshi Mission Hospital, Research Centre</span></span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">NBM</span></span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Madurai</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">HTIC (Healthcare Technology Innovation Centre) MedTech Incubator, Chennai</span></span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">BioNEST</span></span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chennai</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Association for Bio-inspired Leaders and Entrepreneurs at Sastra TBI</span></span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">BioNEST</span></span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Thanjavur</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Tamil Nadu Veterinary and Animal sciences University - Veterinary Incubation Foundation at TANUVAS</span></span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">BioNEST</span></span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chennai</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Sri Ramachandra Institute of Higher Education & Research</span></span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">BioNEST</span></span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chennai</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.88%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:58.44%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">IIT Madras</span></span></span></p>
+ </td>
+ <td style="width:15.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">GCI</span></span></span></p>
+ </td>
+ <td style="width:16.16%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chennai</span></span></span></p>
+ </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<p style="margin-left:0cm; margin-right:0cm; text-align:justify"> </p>
+<p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><span style="color:black">The district-wise details of the number of biotech startups incubated in Tamil Nadu–based bioincubators, intellectual property (IP) filed, and technologies/products commercialised </span>during 2023-26<span style="color:black">, are provided below. BIRAC provides infrastructure and operational support to ensure the smooth functioning of these centres, however, it does not provide direct seed funding to startups under the incubation scheme </span></span></span></span></p>
+<p style="text-align:justify"> </p>
+<p style="text-align:justify"> </p>
+<table align="center" border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" class="Table" style="border-collapse:collapse">
+ <tbody>
+ <tr>
+ <td style="background-color:white; width:9.62%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">S. No</span></strong></span></span></p>
+ </td>
+ <td style="background-color:white; width:28.88%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">Name of the BioNEST Bioincubator</span></strong></span></span></p>
+ </td>
+ <td style="background-color:white; width:17.92%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">District</span></strong></span></span></p>
+ </td>
+ <td style="background-color:white; width:14.94%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">Total No. of Incubatees supported</span></strong></span></span></p>
+ </td>
+ <td style="background-color:white; width:20.5%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">No. of Products / Technologies commercialised</span></strong></span></span></p>
+ </td>
+ <td style="background-color:white; width:8.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">No of IP's filed</span></strong></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; height:32.7pt; width:9.62%"> </td>
+ <td style="background-color:white; width:28.88%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">BioNEST HTIC (Healthcare Technology Innovation Centre) MedTech Incubator, Chennai</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:17.92%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chennai</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:14.94%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">69</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:20.5%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">27</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:8.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">42</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; height:32.7pt; width:9.62%"> </td>
+ <td style="background-color:white; width:28.88%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">BioNEST Association for Bio-inspired Leaders and Entrepreneurs at Sastra TBI, Thanjavur</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:17.92%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Thanjavur</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:14.94%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">45</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:20.5%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">10</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:8.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">10</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; height:32.7pt; width:9.62%"> </td>
+ <td style="background-color:white; width:28.88%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">BioNEST Tamil Nadu Veterinary and Animal Sciences University - Veterinary Incubation Foundation at TANUVAS, Chennai</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:17.92%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chennai</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:14.94%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">18</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:20.5%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">5</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:8.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">7</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; height:32.7pt; width:9.62%"> </td>
+ <td style="background-color:white; width:28.88%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">BioNEST Sri Ramachandra Institute of Higher Education & Research, Chennai</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:17.92%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chennai</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:14.94%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">37</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:20.5%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">2</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:8.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">9</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; height:32.7pt; width:9.62%"> </td>
+ <td style="background-color:white; width:28.88%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">BioNEST-SRM Medical College Hospital and Research Centre, Chennai</span></span></p>
+ </td>
+ <td style="background-color:white; width:17.92%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Chengalpattu</span></span></p>
+ </td>
+ <td style="background-color:white; width:14.94%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">28</span></span></p>
+ </td>
+ <td style="background-color:white; width:20.5%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">0</span></span></p>
+ </td>
+ <td style="background-color:white; width:8.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">0</span></span></p>
+ </td>
+ </tr>
+ </tbody>
+</table>
+<p style="text-align:justify"> </p>
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">The table below details the number of beneficiaries in Tamil Nadu who received scholarships or fellowships from the Department of Science & Technology (DST) over the last three years. This includes recipients under the WOS-A (Women Scientists Scheme), WISE-PhD (Women in Science and Engineering-PhD), WISE-PDF (Women in Science and Engineering-PDF), and WISE-SCOPE (Women in Science and Engineering- Societal Challenges with Opportunities) programs.</span></span></span></p>
+<p style="text-align:justify"> </p>
+<div>
+<table align="center" border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" class="Table" style="border-collapse:collapse">
+ <tbody>
+ <tr>
+ <td colspan="3" style="width:100.0%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong>Women beneficiaries supported under DST</strong><strong> WOS-A</strong><strong><span style="color:black"> program in</span></strong></span></span></span></p>
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong><span style="color:black">Tamil Nadu state (district -wise)</span></strong></span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.04%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong>S.No</strong></span></span></span></p>
+ </td>
+ <td style="width:40.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong>District</strong></span></span></span></p>
+ </td>
+ <td style="width:50.82%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong>2023-26</strong></span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.04%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:40.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Chennai</span></span></span></p>
+ </td>
+ <td style="width:50.82%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">9</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.04%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:40.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Coimbatore</span></span></span></p>
+ </td>
+ <td style="width:50.82%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">3</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.04%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:40.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Karaikudi</span></span></span></p>
+ </td>
+ <td style="width:50.82%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">2</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.04%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:40.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Salem</span></span></span></p>
+ </td>
+ <td style="width:50.82%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">1</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.04%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:40.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Tiruchirappalli</span></span></span></p>
+ </td>
+ <td style="width:50.82%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">2</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td colspan="2" style="background-color:white; width:49.18%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Total</span></span></span></p>
+ </td>
+ <td style="width:50.82%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">17</span></span></span></p>
+ </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<p> </p>
+<p> </p>
+<table align="center" border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" class="Table" style="border-collapse:collapse">
+ <tbody>
+ <tr>
+ <td colspan="3" style="width:100.0%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong>Women beneficiaries supported under DST</strong><strong>WISE-PhD </strong><strong><span style="color:black">program in</span></strong></span></span></span></p>
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong><span style="color:black">Tamil Nadu state (district-wise)</span></strong></span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.48%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong>S. No</strong></span></span></span></p>
+ </td>
+ <td style="width:64.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong>District</strong></span></span></span></p>
+ </td>
+ <td style="width:26.38%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong>2023-2026</strong></span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.48%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:64.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Chennai</span></span></span></p>
+ </td>
+ <td style="width:26.38%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">9</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.48%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:64.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Coimbatore</span></span></span></p>
+ </td>
+ <td style="width:26.38%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">3</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.48%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:64.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Dindigul</span></span></span></p>
+ </td>
+ <td style="width:26.38%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">1</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.48%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:64.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Kancheepuram</span></span></span></p>
+ </td>
+ <td style="width:26.38%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">2</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.48%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:64.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Sivaganga</span></span></span></p>
+ </td>
+ <td style="width:26.38%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">1</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.48%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:64.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Thanjavur</span></span></span></p>
+ </td>
+ <td style="width:26.38%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">2</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.48%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:64.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Tiruchirappalli</span></span></span></p>
+ </td>
+ <td style="width:26.38%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">2</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.48%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:64.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Vellore</span></span></span></p>
+ </td>
+ <td style="width:26.38%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">1</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td colspan="2" style="background-color:white; width:73.62%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Total</span></span></span></p>
+ </td>
+ <td style="width:26.38%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">21</span></span></span></p>
+ </td>
+ </tr>
+ </tbody>
+</table>
+<p> </p>
+<p> </p>
+<table align="center" border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" class="Table" style="border-collapse:collapse">
+ <tbody>
+ <tr>
+ <td colspan="3" style="width:100.0%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong>Women beneficiaries supported under DST </strong><strong>WISE-PDF program </strong><strong><span style="color:black">in</span></strong></span></span></span></p>
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong><span style="color:black">Tamil Nadu state (district wise)</span></strong></span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.48%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong>S. No</strong></span></span></span></p>
+ </td>
+ <td style="width:46.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong>District</strong></span></span></span></p>
+ </td>
+ <td style="width:44.46%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong>2023-2026</strong></span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.48%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:46.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Chennai</span></span></span></p>
+ </td>
+ <td style="width:44.46%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">8</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.48%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:46.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Coimbatore</span></span></span></p>
+ </td>
+ <td style="width:44.46%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">2</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.48%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:46.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Cuddalore</span></span></span></p>
+ </td>
+ <td style="width:44.46%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">1</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.48%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:46.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Salem</span></span></span></p>
+ </td>
+ <td style="width:44.46%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">1</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.48%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:46.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Thanjavur</span></span></span></p>
+ </td>
+ <td style="width:44.46%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">1</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.48%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:46.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Tiruchirappalli</span></span></span></p>
+ </td>
+ <td style="width:44.46%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">1</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.48%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:46.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Tirunelveli</span></span></span></p>
+ </td>
+ <td style="width:44.46%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">1</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td colspan="2" style="background-color:white; width:55.54%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Total</span></span></span></p>
+ </td>
+ <td style="width:44.46%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">15</span></span></span></p>
+ </td>
+ </tr>
+ </tbody>
+</table>
+<p> </p>
+<p> </p>
+<table align="center" border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" class="Table" style="border-collapse:collapse">
+ <tbody>
+ <tr>
+ <td style="width:9.48%">
+ <p style="text-align:center"> </p>
+ </td>
+ <td colspan="2" style="width:90.52%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong>Women beneficiaries supported under DST </strong><strong>WISE-SCOPE program </strong><strong>in</strong></span></span></span></p>
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong>Tamil Nadu state (district-wise)</strong></span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.48%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong>S. No</strong></span></span></span></p>
+ </td>
+ <td style="width:44.66%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong>District</strong></span></span></span></p>
+ </td>
+ <td style="width:45.86%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong>2023-26</strong></span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.48%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:44.66%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Chennai</span></span></span></p>
+ </td>
+ <td style="width:45.86%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">3</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.48%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:44.66%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Coimbatore</span></span></span></p>
+ </td>
+ <td style="width:45.86%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">2</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.48%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:44.66%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Cuddalore</span></span></span></p>
+ </td>
+ <td style="width:45.86%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">1</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.48%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:44.66%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Dindigul</span></span></span></p>
+ </td>
+ <td style="width:45.86%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">1</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.48%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:44.66%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Tiruchirappalli</span></span></span></p>
+ </td>
+ <td style="width:45.86%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">1</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.48%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="background-color:white; width:44.66%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Tirupathur</span></span></span></p>
+ </td>
+ <td style="width:45.86%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">1</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td colspan="2" style="background-color:white; width:54.14%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">Total</span></span></span></p>
+ </td>
+ <td style="width:45.86%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white">9</span></span></span></p>
+ </td>
+ </tr>
+ </tbody>
+</table>
+<p style="text-align:justify"> </p>
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">The table below presents the number of beneficiaries in Tamil Nadu who were awarded scholarships and fellowships under the DST-INSPIRE (Innovation in Science Pursuit for Inspired Research) program over the past three years.</span></span></p>
+<p style="text-align:justify"> </p>
+<div>
+<table align="center" border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" class="Table" style="border-collapse:collapse">
+ <tbody>
+ <tr>
+ <td colspan="3" style="width:456.7pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">INSPIRE-SHE Beneficiaries in Tamil Nadu State (district-wise)</span></strong></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:45.0pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">S.No.</span></strong></span></span></p>
+ </td>
+ <td style="width:179.3pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">District Name</span></strong></span></span></p>
+ </td>
+ <td style="width:232.4pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">2023-26</span></strong></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:45.0pt">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:179.3pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chengalpattu</span></span></span></p>
+ </td>
+ <td style="width:232.4pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">2</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:45.0pt">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:179.3pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chennai</span></span></span></p>
+ </td>
+ <td style="width:232.4pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">15</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:45.0pt">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:179.3pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Coimbatore</span></span></span></p>
+ </td>
+ <td style="width:232.4pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">4</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:45.0pt">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:179.3pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Dharmapuri</span></span></span></p>
+ </td>
+ <td style="width:232.4pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">1</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:45.0pt">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:179.3pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Dindigul</span></span></span></p>
+ </td>
+ <td style="width:232.4pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">1</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:45.0pt">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:179.3pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Erode</span></span></span></p>
+ </td>
+ <td style="width:232.4pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">20</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:45.0pt">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:179.3pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Kanchipuram</span></span></span></p>
+ </td>
+ <td style="width:232.4pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">5</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:45.0pt">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:179.3pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Kanyakumari</span></span></span></p>
+ </td>
+ <td style="width:232.4pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">9</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:45.0pt">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:179.3pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Madurai</span></span></span></p>
+ </td>
+ <td style="width:232.4pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">2</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:45.0pt">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:179.3pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Nagapattinam</span></span></span></p>
+ </td>
+ <td style="width:232.4pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">1</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:45.0pt">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:179.3pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Namakkal</span></span></span></p>
+ </td>
+ <td style="width:232.4pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">8</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:45.0pt">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:179.3pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Salem</span></span></span></p>
+ </td>
+ <td style="width:232.4pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">1</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:45.0pt">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:179.3pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Thanjavur</span></span></span></p>
+ </td>
+ <td style="width:232.4pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">2</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:45.0pt">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:179.3pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Thiruvallur</span></span></span></p>
+ </td>
+ <td style="width:232.4pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">2</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:45.0pt">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:179.3pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Thoothukudi</span></span></span></p>
+ </td>
+ <td style="width:232.4pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">1</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:45.0pt">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:179.3pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Tiruchirappalli</span></span></span></p>
+ </td>
+ <td style="width:232.4pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">2</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:45.0pt">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:179.3pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Tirunelveli</span></span></span></p>
+ </td>
+ <td style="width:232.4pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">2</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:45.0pt">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:179.3pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Tiruppur</span></span></span></p>
+ </td>
+ <td style="width:232.4pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">6</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:45.0pt">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:179.3pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Virudhunagar</span></span></span></p>
+ </td>
+ <td style="width:232.4pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">6</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td colspan="2" style="width:224.3pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Total</span></span></span></p>
+ </td>
+ <td style="width:232.4pt">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">90</span></span></span></p>
+ </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<p> </p>
+<table align="center" border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" class="Table" style="border-collapse:collapse">
+ <tbody>
+ <tr>
+ <td colspan="3" style="width:100.0%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">INSPIRE Fellowship Beneficiaries in Tamil Nadu State (district-wise)</span></strong></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.76%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">S. No</span></strong></span></span></p>
+ </td>
+ <td style="width:40.16%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">District</span></strong></span></span></p>
+ </td>
+ <td style="width:50.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">2023-26</span></strong></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.76%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.16%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chengalpattu</span></span></span></p>
+ </td>
+ <td style="width:50.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">44</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.76%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.16%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chennai</span></span></span></p>
+ </td>
+ <td style="width:50.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">144</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.76%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.16%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Coimbatore</span></span></span></p>
+ </td>
+ <td style="width:50.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">126</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.76%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.16%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Cuddalore</span></span></span></p>
+ </td>
+ <td style="width:50.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">13</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.76%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.16%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Dindigul</span></span></span></p>
+ </td>
+ <td style="width:50.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">16</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.76%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.16%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Kanchipuram</span></span></span></p>
+ </td>
+ <td style="width:50.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">3</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.76%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.16%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Kanyakumari</span></span></span></p>
+ </td>
+ <td style="width:50.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">7</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.76%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.16%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Madurai</span></span></span></p>
+ </td>
+ <td style="width:50.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">8</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.76%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.16%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Salem</span></span></span></p>
+ </td>
+ <td style="width:50.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">10</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.76%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.16%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Sivaganga</span></span></span></p>
+ </td>
+ <td style="width:50.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">68</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.76%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.16%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Thanjavur</span></span></span></p>
+ </td>
+ <td style="width:50.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">20</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.76%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.16%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Tiruchirappalli</span></span></span></p>
+ </td>
+ <td style="width:50.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">39</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.76%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.16%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Tirunelveli</span></span></span></p>
+ </td>
+ <td style="width:50.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">14</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.76%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.16%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Tiruvarur</span></span></span></p>
+ </td>
+ <td style="width:50.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">17</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.76%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.16%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Vellore</span></span></span></p>
+ </td>
+ <td style="width:50.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">53</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td colspan="2" style="width:49.92%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Total</span></span></span></p>
+ </td>
+ <td style="width:50.08%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">582</span></span></span></p>
+ </td>
+ </tr>
+ </tbody>
+</table>
+<p> </p>
+<p> </p>
+<table align="center" border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" class="Table" style="border-collapse:collapse">
+ <tbody>
+ <tr>
+ <td colspan="3" style="width:100.0%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">INSPIRE Faculty Fellowship Beneficiaries in Tamil Nadu State (district-wise)</span></strong></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.94%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">S.No.</span></strong></span></span></p>
+ </td>
+ <td style="width:40.1%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">District Name</span></strong></span></span></p>
+ </td>
+ <td style="width:49.96%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">2023-26</span></strong></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.94%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.1%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chengalpattu</span></span></span></p>
+ </td>
+ <td style="width:49.96%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">6</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.94%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.1%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chennai</span></span></span></p>
+ </td>
+ <td style="width:49.96%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">33</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.94%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.1%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Coimbatore</span></span></span></p>
+ </td>
+ <td style="width:49.96%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">2</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.94%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.1%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Dindigul</span></span></span></p>
+ </td>
+ <td style="width:49.96%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">2</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.94%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.1%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Kancheepuram</span></span></span></p>
+ </td>
+ <td style="width:49.96%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">1</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.94%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.1%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Karaikudi</span></span></span></p>
+ </td>
+ <td style="width:49.96%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">2</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.94%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.1%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Namakkal</span></span></span></p>
+ </td>
+ <td style="width:49.96%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">1</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.94%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.1%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Tiruchirappalli</span></span></span></p>
+ </td>
+ <td style="width:49.96%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">9</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.94%">
+ <li style="text-align:center"> </li>
+ </td>
+ <td style="width:40.1%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Vellore</span></span></span></p>
+ </td>
+ <td style="width:49.96%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">5</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td colspan="2" style="width:50.04%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Total</span></span></span></p>
+ </td>
+ <td style="width:49.96%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">61</span></span></span></p>
+ </td>
+ </tr>
+ </tbody>
+</table>
+<p style="text-align:justify"> </p>
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><span style="color:black">Additionally, the details of women scientists in Tamil Nadu supported by the DBT BioCARe program and the BIRAC Grand Challenge India (GCI) program are presented below.</span></span></span></span></p>
+<p style="text-align:justify"> </p>
+<table align="center" border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" class="MsoTableGrid" style="border-collapse:collapse">
+ <tbody>
+ <tr>
+ <td colspan="3" style="width:100.0%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong>Women scientists beneficiaries supported under GCI</strong><strong> program </strong><strong>in</strong></span></span></span></p>
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Tamil Nadu state (district-wise)</strong></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.32%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>S. No</strong></span></span></p>
+ </td>
+ <td style="width:29.12%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>District</strong></span></span></p>
+ </td>
+ <td style="width:61.56%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>2023-26</strong></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:9.32%">
+ <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">1.</span></span></p>
+ </td>
+ <td style="width:29.12%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Thiruvallur</span></span></p>
+ </td>
+ <td style="width:61.56%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2</span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td colspan="2" style="width:38.44%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Total</span></span></p>
+ </td>
+ <td style="width:61.56%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">2</span></span></p>
+ </td>
+ </tr>
+ </tbody>
+</table>
+<p style="text-align:justify"> </p>
+<p> </p>
+<div>
+<table align="center" border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" class="Table" style="border-collapse:collapse">
+ <tbody>
+ <tr>
+ <td colspan="3" style="background-color:white; width:100.0%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong>Women scientists beneficiaries supported under <span style="color:black">BioCARe</span></strong><strong>in</strong></span></span></span></p>
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong>Tamil Nadu state (district-wise)</strong></span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.46%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">S.No</span></strong></span></span></p>
+ </td>
+ <td style="background-color:white; width:27.56%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">District</span></strong></span></span></p>
+ </td>
+ <td style="background-color:white; width:62.98%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">2023-26</span></strong></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.46%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">1.</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:27.56%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chennai</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:62.98%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">3</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.46%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">2.</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:27.56%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Coimbatore</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:62.98%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">2</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="background-color:white; width:9.46%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">3.</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:27.56%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Cuddalore</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:62.98%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">1</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td colspan="2" style="background-color:white; width:37.02%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Total</span></span></span></p>
+ </td>
+ <td style="background-color:white; width:62.98%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">6</span></span></span></p>
+ </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><span style="color:black">The </span>details of DBT-supported R&D centres approved, clinical trial units operationalized in the state of Tamil Nadu under the National Biopharma Mission (NBM) are as under-</span></span></span></p>
+<p style="text-align:justify"> </p>
+<div>
+<table align="center" border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" class="Table" style="border-collapse:collapse">
+ <tbody>
+ <tr>
+ <td style="width:53.3%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">Grantee</span></strong></span></span></p>
+ </td>
+ <td style="width:13.82%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">District</span></strong></span></span></p>
+ </td>
+ <td style="width:16.26%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">State</span></strong></span></span></p>
+ </td>
+ <td style="width:16.6%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">Employment Generated</span></strong></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:53.3%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Healthcare Technology Innovation Center, IIT Madras, Chennai</span></span></span></p>
+ </td>
+ <td style="width:13.82%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chennai</span></span></span></p>
+ </td>
+ <td style="width:16.26%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Tamil Nadu</span></span></span></p>
+ </td>
+ <td style="width:16.6%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">5</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:53.3%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">The Cancer Institute (WIA - Women's Indian Association), also known as the Adyar Cancer Institute</span></span></p>
+ </td>
+ <td style="width:13.82%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chennai</span></span></span></p>
+ </td>
+ <td style="width:16.26%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Tamil Nadu</span></span></span></p>
+ </td>
+ <td style="width:16.6%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">20</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:53.3%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Christian Medical College Vellore Association, Vellore</span></span></span></p>
+ </td>
+ <td style="width:13.82%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Vellore</span></span></span></p>
+ </td>
+ <td style="width:16.26%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Tamil Nadu</span></span></span></p>
+ </td>
+ <td style="width:16.6%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">12</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:53.3%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">SRM Institute for Medical Science, Chennai</span></span></span></p>
+ </td>
+ <td style="width:13.82%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chennai</span></span></span></p>
+ </td>
+ <td style="width:16.26%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Tamil Nadu</span></span></span></p>
+ </td>
+ <td style="width:16.6%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">14</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:53.3%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">ICMR - National Institute of Epidemiology, Chennai</span></span></span></p>
+ </td>
+ <td style="width:13.82%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Chennai</span></span></span></p>
+ </td>
+ <td style="width:16.26%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Tamil Nadu</span></span></span></p>
+ </td>
+ <td style="width:16.6%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">12</span></span></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:53.3%">
+ <p><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Meenakshi Mission Hospital, Research Centre, Madurai</span></span></span></p>
+ </td>
+ <td style="width:13.82%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Madurai</span></span></span></p>
+ </td>
+ <td style="width:16.26%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">Tamil Nadu</span></span></span></p>
+ </td>
+ <td style="width:16.6%">
+ <p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:black">14</span></span></span></p>
+ </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<p style="margin-left:0cm; margin-right:.75pt; text-align:center"> </p>
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">This information was given by Union Minister of State (Independent Charge) for Science & Technology and Earth Sciences, and Minister of State in the Prime Minister’s Office, Personnel, Public Grievances and Pensions, Atomic Energy and Space, Dr. Jitendra Singh, in a written reply in the Lok Sabha on Wednesday.</span></span></p>
+<p style="margin-left:0cm; margin-right:.75pt; text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">*****</span></strong></span></span></p>
+<p style="margin-left:0cm; margin-right:.75pt"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong><span style="color:black">AK/SK</span></strong></span></span></p>
+" />
+ var mPlayer = document.getElementById("background_music");
+ var mPlayAction = document.getElementById("playbutton");
+ var isPlaying = false;
+ function playAudio() {
+ mPlayer.play();
+ isPlaying = true;
+ document.getElementById('stopA').style.display = "block";
+ document.getElementById('playA').style.display = "none";
+ }
+ function pauseAudio() {
+ mPlayer.pause();
+ isPlaying = false;
+ document.getElementById('playA').style.display = "block";
+ document.getElementById('stopA').style.display = "none";
+ }
+ //function HandleAudio() {
+ // if (isPlaying == true) {
+ // //Playing already Pause it
+ // pauseAudio();
+ // } else {
+ // //Play the music
+ // playAudio();
+ // }
+ //}
+ var synth = window.speechSynthesis;
+ function CleanHtml(html) {
+ html = html.replace(/ /gi, '');
+ return html;
+ }
+ function stripHtml(html) {
+ let tmp = document.createElement("DIV");
+ tmp.innerHTML = CleanHtml(html);
+ return tmp.textContent || tmp.innerText || "";
+ }
+ $(document).ready(function () {
+ //for responsive tables
+ $("table").each(function () {
+ if (!$(this).closest(".table-responsive").length) {
+ $(this).wrap(" ");
+ }
+ });
+ var width = $(window).width();
+ if (width 
+ $(document).ready(function () {
+ var width = $(window).width();
+ if (width 
+ @media print {
+ .sticky-social, .sticky-social_mb, .pull-right, #printPDF {
+ display: none !important;
+ }
+ }
+ .f_vl {
+ padding-right: 30px;
+ font-size: 17px;
+ cursor: pointer;
+ }
+ .log_oo {
+ // width: 20%;
+ display: flex;
+ justify-content: space-between;
+ }
+ .log_oo img {
+ width: 150px;
+ /*width: 100%;
+ height: auto;*/
+ }
+ .sticky-social_mb {
+ position: fixed;
+ bottom: 0px;
+ padding: 0px;
+ margin: 0px;
+ width: 100%;
+ }
+ .social_mb {
+ list-style: none;
+ display: flex;
+ width: 100%;
+ margin-bottom: -8px;
+ }
+ .social_mb a {
+ padding: 8px 0px;
+ font-size: 30px;
+ transition: all 0.8s ease-in-out;
+ width: 20% !important;
+ text-align: center;
+ }
+ .section1 {
+ position: relative;
+ padding: 10px 0px;
+ width: 100%;
+ }
+ .sticky-social {
+ position: fixed;
+ top: 20px;
+ left: 0px;
+ padding: 0px;
+ margin: 0px;
+ }
+ .social {
+ list-style: none;
+ }
+ .social a li {
+ padding: 8px 12px;
+ font-size: 25px;
+ transition: all 0.8s ease-in-out;
+ }
+ .social a li:hover {
+ margin-right: -30px;
+ box-shadow: 2px 5px 10px grey;
+ }
+ .social a li:hover .fa {
+ margin-left: 20px;
+ }
+ .fb_b {
+ /* background-color: rgb(59, 89, 152);*/
+ background-color: rgba(65,103,178,255);
+ }
+ .twitter_r {
+ /* background-color: rgb(29, 161, 242);*/
+ background-color: #000000;
+ }
+ .whatsapp_r {
+ /* background-color: rgb(77, 194, 71);*/
+ background-color: rgba(13,191,67,255);
+ }
+ .fa-envelope_r {
+ /* background-color: rgb(219, 68, 55);*/
+ background-color: #e2123d;
+ }
+ .fa-linkedin_r {
+ background-color: rgb(0, 119, 181);
+ }
+ @media only screen and (max-device-width: 767px) {
+ p span img {
+ max-width: 90% !important;
+ height: auto !important;
+ }
+ p img {
+ max-width: 90% !important;
+ height: auto !important;
+ }
+ h2 {
+ font-size: 20px !important;
+ font-weight: 600 !important;
+ }
+ h3 {
+ font-size: 18px !important;
+ font-weight: 600 !important;
+ }
+ }
+ /* === Film Roll Badge Styling(IFFI2025 countdown) === */
+ .film-roll-badge {
+ position: absolute;
+ top:82%;
+ right: 20px;
+ width: 230px;
+ height: 70px;
+ background: repeating-linear-gradient( to right, #9a2375 0px, #9a2375 18px, #6e2b8b 18px, #6e2b8b 36px );
+ border-top: 8px solid #9a2375;
+ border-bottom: 8px solid #9a2375;
+ border-radius: 8px;
+ overflow: hidden;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+ animation: moveFilm 8s linear infinite;
+ z-index: 10;
+ }
+ /* film sprocket holes */
+ .film-roll-badge::before,
+ .film-roll-badge::after {
+ content: "";
+ position: absolute;
+ width: 100%;
+ height: 10px;
+ background: repeating-linear-gradient( to right, #9a2375 0px, #9a2375 10px, #fff 10px, #fff 20px );
+ left: 0;
+ z-index: 2;
+ }
+ .film-roll-badge::before {
+ top: -4px;
+ }
+ .film-roll-badge::after {
+ bottom: -4px;
+ }
+ .film-roll-inner {
+ position: relative;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ animation: flicker 2s infinite ease-in-out;
+ }
+ .countdown-text {
+ font-size: 1.3rem;
+ font-weight: 700;
+ color: #fff;
+ text-shadow: 0 0 6px rgba(255, 255, 255, 0.4), 0 0 10px #000;
+ white-space: nowrap;
+ }
+ /* === Animations === */
+ @keyframes moveFilm {
+ 0% {
+ background-position: 0 0;
+ }
+ 100% {
+ background-position: 120px 0;
+ }
+ }
+ @keyframes flicker {
+ 0%, 100% {
+ opacity: 1;
+ }
+ 50% {
+ opacity: 0.9;
+ }
+ 25% {
+ opacity: 0.95;
+ }
+ 75% {
+ opacity: 0.85;
+ }
+ }
+ /* === Responsive Adjustments === */
+ @media (max-width: 1500px) {
+ .film-roll-badge {
+ top: 68%;
+ right: 18px;
+ /* width: 220px; */
+ height: 65px;
+ font-size: 0.85rem;
+ }
+ .press-section {
+ margin-top: 35px;
+ }
+ }
+ @media (max-width: 992px) {
+ .film-roll-badge {
+ top: 52%;
+ right: 10px;
+ width: 200px; 
+ height: 60px;
+ }
+ }
+ @media (max-width: 768px) {
+ .film-roll-badge {
+ top: 56%;
+ right: 10px;
+ width: 124px; 
+ height: 55px;
+ }
+ .countdown-text {
+ font-size: 0.9rem;
+ }
+ }
+ @media (max-width: 576px) {
+ .film-roll-badge {
+ top: 59%;
+ right: 5px;
+ /* width: 160px; */
+ height: 50px;
+ }
+ .countdown-text {
+ font-size: 0.85rem;
+ }
+ }
+ const festivalStart = new Date("2025-11-20T00:00:00").getTime();
+ const festivalEnd = new Date("2025-11-28T23:59:59").getTime();
+ const countdownElement = document.getElementById("countdown");
+ const interval = setInterval(() => {
+ const now = new Date().getTime();
+ // BEFORE FESTIVAL — show days + hours left
+ if (now = festivalStart && now el.style.width = "350px");
+ clearInterval(interval);
+ }
+ }, 1000);
+ const miffStart = new Date("2026-06-15T00:00:00").getTime();
+ const miffEnd = new Date("2026-06-15T23:59:59").getTime();
+ const miffElement = document.getElementById("miff");
+ if (miffElement) {
+ const miffInterval = setInterval(() => {
+ const now = new Date().getTime();
+ // Before MIFF
+ if (now = miffStart && now el.style.width = "350px");
+ clearInterval(miffInterval);
+ }
+ }, 1000);
+ }
+//

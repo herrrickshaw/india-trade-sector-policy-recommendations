@@ -179,6 +179,64 @@ def pattern_tdb_support(date, ministry, title, url):
     return []
 
 
+# ---------------------------------------------------------------- pattern 5
+#
+# other_startup_support -- the non-TDB PIB title phrasings that, like
+# tdb_support, name ONE specific startup per release rather than reporting
+# an aggregate (a cohort size, a scheme's cumulative stats, a webinar). Found
+# 2026-09-27 while looking for "what else recognizes startups the way TDB-DST
+# does": of ~620 titles matching "startup" (2017-2026), all but a handful are
+# aggregate/ecosystem news (SISFS cumulative disbursal, National Startup
+# Awards cohort announcements, Startup India job-count press notes) with no
+# single company name in the title -- those belong in pattern_legal_suffix's
+# territory if/when a title does name one, not here. The three sources below
+# are the ones that, like TDB, run "one release per company":
+#   - DBT-BIRAC "supported start-up(s) X [and Y]" -- distinct from BIRAC's
+#     far more common "DBT-BIRAC supported <vaccine/product>, developed by
+#     <big pharma>" phrasing (Zydus Cadila, Bharat Biotech, Biological E),
+#     which names an established company, not a startup -- excluded here on
+#     purpose, gated by requiring "start-up"/"start up" literally in the title.
+#   - MeitY's Design Linked Incentive (DLI) Scheme "Chip Design Startup" one-
+#     company spotlights (funding rounds, technical milestones).
+#   - iDEX-DIO contract announcements that name the awardee ("MoD to
+#     collaborate with X for ...") -- rare; iDEX usually reports contract
+#     counts (100th/150th/...) without naming the company in the title.
+
+BIRAC_STARTUP_PAT = re.compile(r"DBT-?BIRAC\s+support(?:ed|s)?\s+start[\s-]?ups?\s+(?P<name>.+?)(?:\s+have\b|\s+has\b|,|\.|$)", re.I)
+DLI_CHIP_PAT = re.compile(
+    r"Chip\s+Design\s+Startups?\s*[-—–:]\s*(?P<name>[A-Z][A-Za-z0-9&.,\'\-\s]*?)\s+"
+    r"(?:Achieved?s?|Raises?|Wins?|Selected|Announces?|Signs?|Secures?|Launch(?:es)?)\b"
+)
+IDEX_COLLAB_PAT = re.compile(r"collaborate\s+with\s+(?P<name>" + COMPANY_TAIL + r")\s+for\b", re.I)
+
+
+def _split_and_names(raw):
+    parts = re.split(r"\s*,\s*|\s+and\s+", raw.strip().rstrip(",.").strip())
+    return [p.strip() for p in parts if len(p.strip()) > 2]
+
+
+def pattern_other_startup_support(date, ministry, title, url):
+    t = title.strip("\"“” ")
+    m = BIRAC_STARTUP_PAT.search(t)
+    if m:
+        return [{"pattern": "other_startup_support", "role": "startup", "company_name": name,
+                 "category": "Startup", "deal_type": "DBT-BIRAC"} for name in _split_and_names(m.group("name"))]
+    m = DLI_CHIP_PAT.search(t)
+    if m:
+        name = m.group("name").strip().rstrip(",").strip()
+        if len(name) > 3:
+            return [{"pattern": "other_startup_support", "role": "startup", "company_name": name,
+                     "category": "Startup", "deal_type": "MeitY DLI Scheme"}]
+    if re.search(r"\biDEX\b", t) and re.search(r"\bcontract\b", t, re.I):
+        m = IDEX_COLLAB_PAT.search(t)
+        if m:
+            name = m.group("name").strip().rstrip(",").strip()
+            if len(name) > 3:
+                return [{"pattern": "other_startup_support", "role": "startup", "company_name": name,
+                         "category": "Startup", "deal_type": "iDEX-DIO"}]
+    return []
+
+
 # ---------------------------------------------------------------- pattern 4
 
 CCI_ACQ_PAT = re.compile(
@@ -234,7 +292,7 @@ def pattern_cci_ma(date, ministry, title, url):
     return []
 
 
-PATTERNS = [pattern_legal_suffix, pattern_mou_partner, pattern_tdb_support, pattern_cci_ma]
+PATTERNS = [pattern_legal_suffix, pattern_mou_partner, pattern_tdb_support, pattern_cci_ma, pattern_other_startup_support]
 
 # --------------------------------------------------------- category lookup
 # Curated by hand 2026-09-14; extend as --stats surfaces new 'Unknown' names
@@ -340,6 +398,9 @@ def cmd_export_csv():
                          "SELECT date, company_name, title, url FROM mentions WHERE pattern='tdb_support' ORDER BY date DESC"),
         "cci_ma": ("data/pib_cci_ma_mentions_latest.csv",
                     "SELECT date, deal_type, role, company_name, title, url FROM mentions WHERE pattern='cci_ma' ORDER BY date DESC"),
+        "other_startup_support": ("data/pib_other_startup_recognitions_latest.csv",
+                    "SELECT date, deal_type AS scheme, company_name, title, url FROM mentions "
+                    "WHERE pattern='other_startup_support' ORDER BY date DESC"),
     }
     for name, (path, query) in exports.items():
         cur = con.execute(query)
