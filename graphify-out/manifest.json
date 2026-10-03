@@ -1,0 +1,1052 @@
+{
+  "data/abstract_forex_import_substitution_2026-07-19.json": {
+    "mtime": 1784478182.963981,
+    "seen": 1789968739.653916,
+    "ast_hash": "435afe08208180bb766324067078f2a1",
+    "semantic_hash": ""
+  },
+  "data/beyond_pli_incentives_2026-07-19.json": {
+    "mtime": 1784526418.388243,
+    "seen": 1789968739.6539352,
+    "ast_hash": "6a28c3cddf5fcc1854d233d8e3e5c5eb",
+    "semantic_hash": ""
+  },
+  "data/country_commodity_breakdown_2026-07-18.json": {
+    "mtime": 1784395775.463922,
+    "seen": 1789193308.605668,
+    "ast_hash": "6d3d8c06cfb46f7d1561fda9ec3a3b43",
+    "semantic_hash": ""
+  },
+  "data/country_trade_deficit_and_policy_history_2026-07-18.json": {
+    "mtime": 1784395775.463208,
+    "seen": 1789968739.6539571,
+    "ast_hash": "85594445ff5d0d8a7c2a36906ddf2d4a",
+    "semantic_hash": ""
+  },
+  "data/data_completeness_audit_2026-07-22.json": {
+    "mtime": 1784692303.061345,
+    "seen": 1789968739.653963,
+    "ast_hash": "c5ecdaa5c9e66b7144ecc215093729de",
+    "semantic_hash": ""
+  },
+  "data/decade_report_card_2026-07-20.json": {
+    "mtime": 1784540323.910413,
+    "seen": 1789193308.605671,
+    "ast_hash": "3cde3f36bddde98e3285d2168392232c",
+    "semantic_hash": ""
+  },
+  "data/domestic_vs_fdi_capital_case_2026-07-19.json": {
+    "mtime": 1784424825.12933,
+    "seen": 1789968739.653976,
+    "ast_hash": "e12c66f6c7cd96ab4d70cc05d9f69880",
+    "semantic_hash": ""
+  },
+  "data/export_destination_priority_and_pli_coverage_2026-07-18.json": {
+    "mtime": 1784395775.464887,
+    "seen": 1789968739.653982,
+    "ast_hash": "aa30925a26bbceaa0f740053e3d4947c",
+    "semantic_hash": ""
+  },
+  "data/fdi_cumulative_vintages_2026-07-21.json": {
+    "mtime": 1784675549.147051,
+    "seen": 1789968739.653996,
+    "ast_hash": "85d8f41ef417d5805408e053e0c1538b",
+    "semantic_hash": ""
+  },
+  "data/fdi_vs_pli_launch_2026-07-19.json": {
+    "mtime": 1784423075.271024,
+    "seen": 1789968739.654002,
+    "ast_hash": "1052259bb8fbbbe9bee0939747b161b1",
+    "semantic_hash": ""
+  },
+  "data/fy26_verdict_rerun_2026-07-19.json": {
+    "mtime": 1784440003.277356,
+    "seen": 1789968739.654007,
+    "ast_hash": "947694e248c7a04e96dc10d8dcd6c397",
+    "semantic_hash": ""
+  },
+  "data/iem_land_match_2026-07-22.json": {
+    "mtime": 1784684790.391545,
+    "seen": 1789968739.654013,
+    "ast_hash": "c8a132bfcace48052cb5dd60c2c87ae9",
+    "semantic_hash": ""
+  },
+  "data/iem_part_a_by_sector_2026-07-22.json": {
+    "mtime": 1784685910.127899,
+    "seen": 1789968739.6540182,
+    "ast_hash": "92cd0310c95137a54db3335eac8f6b1b",
+    "semantic_hash": ""
+  },
+  "data/iilb_industrial_land_2026-07-22.json": {
+    "mtime": 1784683253.103927,
+    "seen": 1789968739.654023,
+    "ast_hash": "8e5772cad5f0758386902e3b327e7d83",
+    "semantic_hash": ""
+  },
+  "data/import_dependency_policy_gap_analysis_2026-07-18.json": {
+    "mtime": 1784395775.462528,
+    "seen": 1789968739.6540291,
+    "ast_hash": "269db3c9c483fe2970098164b1bef116",
+    "semantic_hash": ""
+  },
+  "data/industrial_activity_vs_land_price_2026-07-22.json": {
+    "mtime": 1784694140.274135,
+    "seen": 1789968739.654033,
+    "ast_hash": "29ee537199e146c6ff0068320adfac91",
+    "semantic_hash": ""
+  },
+  "data/investor_map_2026-07-20.json": {
+    "mtime": 1784542279.679369,
+    "seen": 1789968739.6540391,
+    "ast_hash": "13d005e394d71026d9b9455d94a0b383",
+    "semantic_hash": ""
+  },
+  "data/investor_workflow_2026-07-20.json": {
+    "mtime": 1784535144.859332,
+    "seen": 1789968739.654044,
+    "ast_hash": "da56f9e9d2c950f9314855b65baa52d1",
+    "semantic_hash": ""
+  },
+  "data/land_supply_demand_scenarios_2026-07-22.json": {
+    "mtime": 1784685671.689568,
+    "seen": 1789968739.654049,
+    "ast_hash": "c0b501fda4a714e66dcb0ababef5d4cf",
+    "semantic_hash": ""
+  },
+  "data/maharashtra_fdi_composition_2026-07-21.json": {
+    "mtime": 1784646479.906109,
+    "seen": 1789968739.6540532,
+    "ast_hash": "580cbb34a6fe2aeaa191d8fedc3f0235",
+    "semantic_hash": ""
+  },
+  "data/master_report_2026-07-19.json": {
+    "mtime": 1784475847.420031,
+    "seen": 1789968739.654059,
+    "ast_hash": "085f7d4cc90b805d76ded8bb705ef4b2",
+    "semantic_hash": ""
+  },
+  "data/matured_scheme_cohort_2026-07-20.json": {
+    "mtime": 1784538537.620414,
+    "seen": 1789968739.6540642,
+    "ast_hash": "94c5203e2c05b80775908e39dbe12765",
+    "semantic_hash": ""
+  },
+  "data/ministry_incentive_catalog_2026-07-19.json": {
+    "mtime": 1784534738.377399,
+    "seen": 1789193308.6056828,
+    "ast_hash": "7d76b4069601aa2f28c74d625163cea8",
+    "semantic_hash": ""
+  },
+  "data/ministry_master_list_2026-07-20.json": {
+    "mtime": 1784542541.319681,
+    "seen": 1789968739.6540852,
+    "ast_hash": "bfa277d88cb377075ef18e0bc7ce907d",
+    "semantic_hash": ""
+  },
+  "data/national_fdi_iem_by_year_2026-07-22.json": {
+    "mtime": 1784676119.705455,
+    "seen": 1789968739.65409,
+    "ast_hash": "b5ea48b01b9409a0092d2611589eb3f2",
+    "semantic_hash": ""
+  },
+  "data/parivesh_ec_pipeline_2026-07-19.json": {
+    "mtime": 1784476551.229766,
+    "seen": 1789968739.6540952,
+    "ast_hash": "a10f83122602df56bee2a8f18cad38da",
+    "semantic_hash": ""
+  },
+  "data/pending_iem_demand_2026-07-22.json": {
+    "mtime": 1784681732.64571,
+    "seen": 1789193308.605686,
+    "ast_hash": "f220823f26de0ccb9c4aa002f4f8cdfd",
+    "semantic_hash": ""
+  },
+  "data/petroleum_exploration_acreage_2026-07-22.json": {
+    "mtime": 1784685435.786623,
+    "seen": 1789968739.6541061,
+    "ast_hash": "8ee2377d6a117141c179b1bd51bfccc6",
+    "semantic_hash": ""
+  },
+  "data/pib_five_year_incentive_evolution_2026-07-19.json": {
+    "mtime": 1784528247.847008,
+    "seen": 1789968739.654111,
+    "ast_hash": "712e9d62f2d366a125e4c74bad0f17a4",
+    "semantic_hash": ""
+  },
+  "data/pib_launch_register_2017_2020_2026-07-20.json": {
+    "mtime": 1784539070.714374,
+    "seen": 1789193308.605688,
+    "ast_hash": "4b0055afb525c9dfe85c46a7c9231992",
+    "semantic_hash": ""
+  },
+  "data/pli_report_card_2026-07-19.json": {
+    "mtime": 1784460495.3711,
+    "seen": 1789968739.6541219,
+    "ast_hash": "f1c325258574f04c1873926825e70030",
+    "semantic_hash": ""
+  },
+  "data/pn2_2026_import_substitution_lever_2026-07-22.json": {
+    "mtime": 1784677836.045745,
+    "seen": 1789968739.654128,
+    "ast_hash": "5b511b20b4f57d9f539a2019ac84adeb",
+    "semantic_hash": ""
+  },
+  "data/policy_investment_dashboard_2026-07-19.json": {
+    "mtime": 1784439386.552909,
+    "seen": 1789968739.654133,
+    "ast_hash": "ef26e37c4032793b3c365f0cf75a71b6",
+    "semantic_hash": ""
+  },
+  "data/pq_fdi_rajyasabha_2026-07-22.json": {
+    "mtime": 1784677398.236562,
+    "seen": 1789968739.654138,
+    "ast_hash": "3cdf3ea927259d282943a659c2b72b64",
+    "semantic_hash": ""
+  },
+  "data/press_note_2_2026_fdi_2026-07-22.json": {
+    "mtime": 1784677398.349209,
+    "seen": 1789968739.654143,
+    "ast_hash": "8b72a67845733ea9c4eabd3885023c18",
+    "semantic_hash": ""
+  },
+  "data/project_workflow_schema_2026-07-19.json": {
+    "mtime": 1784475789.471639,
+    "seen": 1789968739.654148,
+    "ast_hash": "2b95b4b0a97e20977e784afe6fbda52e",
+    "semantic_hash": ""
+  },
+  "data/quarterly_refresh_blueprint_2026-07-19.json": {
+    "mtime": 1784479851.912497,
+    "seen": 1789968739.654154,
+    "ast_hash": "b239fb2bc58a8e615b5818a8f886bb87",
+    "semantic_hash": ""
+  },
+  "data/repo_manifest_2026-07-19.json": {
+    "mtime": 1784542559.224933,
+    "seen": 1789193308.605694,
+    "ast_hash": "b7db9dc9cac954a09e6e846bbd1b00cd",
+    "semantic_hash": ""
+  },
+  "data/scheme_registry_2026-07-19.json": {
+    "mtime": 1784534501.842651,
+    "seen": 1789968739.654166,
+    "ast_hash": "196d8500c33f3abbffc13f535e531fd2",
+    "semantic_hash": ""
+  },
+  "data/sector_and_policy_recommendations_2026-07-18.json": {
+    "mtime": 1784395775.465388,
+    "seen": 1789968739.654171,
+    "ast_hash": "dde750bb795150d32e1b04b72d412450",
+    "semantic_hash": ""
+  },
+  "data/sector_country_priority_and_pli_coverage_2026-07-18.json": {
+    "mtime": 1784395775.464346,
+    "seen": 1789968739.654176,
+    "ast_hash": "21fe46037d8bfbca24e8436b73d2aeec",
+    "semantic_hash": ""
+  },
+  "data/sector_master_scorecard_2026-07-19.json": {
+    "mtime": 1784423472.474842,
+    "seen": 1789968739.654181,
+    "ast_hash": "5b440768d30299468583193c75c7440b",
+    "semantic_hash": ""
+  },
+  "data/state_advertised_available_land_2026-07-22.json": {
+    "mtime": 1784686794.15478,
+    "seen": 1789968739.654187,
+    "ast_hash": "3d68bb5bfd6b2cae243d94d685c9632e",
+    "semantic_hash": ""
+  },
+  "data/state_central_incentives_and_emergent_hubs_2026-07-18.json": {
+    "mtime": 1784399900.131913,
+    "seen": 1789968739.6541922,
+    "ast_hash": "dbacbff59f5eaa18ee85fdd465b2c053",
+    "semantic_hash": ""
+  },
+  "data/state_fdi_annual_derived_2026-07-22.json": {
+    "mtime": 1784675549.045393,
+    "seen": 1789968739.654197,
+    "ast_hash": "e94a918bae589c7db8aeb375372c8a7e",
+    "semantic_hash": ""
+  },
+  "data/state_fdi_iem_source_tables_2026-07-21.json": {
+    "mtime": 1784649557.010772,
+    "seen": 1789193308.6057,
+    "ast_hash": "9681bd4a6d5b81a04849cd9aec5f73ab",
+    "semantic_hash": ""
+  },
+  "data/state_fdi_vs_iem_2026-07-21.json": {
+    "mtime": 1784649496.193987,
+    "seen": 1789968739.654216,
+    "ast_hash": "e78ca936b8e0f798c2e1f05df9561c17",
+    "semantic_hash": ""
+  },
+  "data/state_fdi_year_panel_2026-07-21.json": {
+    "mtime": 1784650258.400452,
+    "seen": 1789968739.654221,
+    "ast_hash": "ca5cb9ea4064306f98316c74a1b3f3bf",
+    "semantic_hash": ""
+  },
+  "data/state_iem_implementation_2026-07-19.json": {
+    "mtime": 1784459446.113922,
+    "seen": 1789193308.605702,
+    "ast_hash": "d2abc4d9195e2204d813a9327b540a7b",
+    "semantic_hash": ""
+  },
+  "data/state_land_bank_access_map_2026-07-22.json": {
+    "mtime": 1784683934.073268,
+    "seen": 1789968739.654232,
+    "ast_hash": "3f57c29730a020183a305d59c0ba21a9",
+    "semantic_hash": ""
+  },
+  "data/state_land_pulls_2026-07-22.json": {
+    "mtime": 1784684790.286081,
+    "seen": 1789968739.654237,
+    "ast_hash": "90487e272102fc89dfaa7074ec7244e4",
+    "semantic_hash": ""
+  },
+  "data/stressed_distressed_land_2026-07-22.json": {
+    "mtime": 1784684505.799378,
+    "seen": 1789968739.654241,
+    "ast_hash": "b7882bf8ecbfcf57babbca14e477a577",
+    "semantic_hash": ""
+  },
+  "data/top10_sector_country_strategies_2026-07-19.json": {
+    "mtime": 1784421046.702659,
+    "seen": 1789968739.6542459,
+    "ast_hash": "0c2a2de172c489d4c971f2133eb5ed8a",
+    "semantic_hash": ""
+  },
+  "reports/published/session_summary_2026-07-19.json": {
+    "mtime": 1784737075.429902,
+    "seen": 1789968739.654251,
+    "ast_hash": "bee257f12f884707d16bb6ebf58c8004",
+    "semantic_hash": ""
+  },
+  "scripts/build_compendium.py": {
+    "mtime": 1784479087.413246,
+    "seen": 1789968739.654256,
+    "ast_hash": "27d1849cfb20cba5477201a2a7021145",
+    "semantic_hash": ""
+  },
+  "scripts/build_quarterly_report.py": {
+    "mtime": 1784539695.638117,
+    "seen": 1789193308.605706,
+    "ast_hash": "8ed904e1f919722ab879799991085eab",
+    "semantic_hash": ""
+  },
+  "scripts/build_quarterly_series.py": {
+    "mtime": 1784538750.973155,
+    "seen": 1789968739.6542761,
+    "ast_hash": "742f00772ac08c986d49dbd043025e45",
+    "semantic_hash": ""
+  },
+  "scripts/build_state_fdi_iem.py": {
+    "mtime": 1784649496.127581,
+    "seen": 1789968739.654282,
+    "ast_hash": "f119bc34301df69bf2d0b14e82ad95b4",
+    "semantic_hash": ""
+  },
+  "scripts/pib_factsheets.py": {
+    "mtime": 1785322286.298849,
+    "seen": 1789968739.654302,
+    "ast_hash": "db76528e950962f71c9570c7f0317be4",
+    "semantic_hash": ""
+  },
+  "scripts/pib_index.py": {
+    "mtime": 1784526776.188067,
+    "seen": 1789968739.654308,
+    "ast_hash": "bd3b7cc5cd6f52147084e7a4aae8c604",
+    "semantic_hash": ""
+  },
+  "scripts/report_synthesizer.py": {
+    "mtime": 1785465023.599585,
+    "seen": 1789193308.60571,
+    "ast_hash": "204a4046a04519e94553579031ddafe3",
+    "semantic_hash": ""
+  },
+  "templates/build_deck.sh": {
+    "mtime": 1784441116.357732,
+    "seen": 1789968739.654319,
+    "ast_hash": "b9c86368d3854a0624b370913be3036d",
+    "semantic_hash": ""
+  },
+  "templates/document_template.json": {
+    "mtime": 1784441033.778168,
+    "seen": 1789968739.654324,
+    "ast_hash": "381569d5949ef0f5b94734cedb0498e4",
+    "semantic_hash": ""
+  },
+  ".github/QUARTERLY_CHECKLIST.md": {
+    "mtime": 1784539681.448979,
+    "seen": 1789968739.654329,
+    "ast_hash": "6a5af90a416d8d8abef466855e0cec66",
+    "semantic_hash": ""
+  },
+  ".github/workflows/quarterly-dashboard-refresh.yml": {
+    "mtime": 1784436438.05766,
+    "seen": 1789968739.6543329,
+    "ast_hash": "361349db5318776dea3e9df796597b1e",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1789402247.8711045,
+    "seen": 1789968739.654342,
+    "ast_hash": "93c08490ae0664aaf34193e2f50719ed",
+    "semantic_hash": ""
+  },
+  "charts/abstract_forex_import_substitution.html": {
+    "mtime": 1785671368.758437,
+    "seen": 1789968739.654346,
+    "ast_hash": "ec35691fd4e0391c1c3f0d209232119f",
+    "semantic_hash": ""
+  },
+  "charts/beyond_pli_incentives.html": {
+    "mtime": 1785671368.756227,
+    "seen": 1789968739.654351,
+    "ast_hash": "8be265e375494558338b6db4867b3896",
+    "semantic_hash": ""
+  },
+  "charts/country_trade_deficit_and_policy_history.html": {
+    "mtime": 1785671368.775519,
+    "seen": 1789968739.654356,
+    "ast_hash": "0861c146397ee9db10c549e9dbf1e06e",
+    "semantic_hash": ""
+  },
+  "charts/decade_report_card.html": {
+    "mtime": 1785671368.759871,
+    "seen": 1789968739.654361,
+    "ast_hash": "dc0b9280cddb28dce3bc291992088847",
+    "semantic_hash": ""
+  },
+  "charts/domestic_vs_fdi_capital_case.html": {
+    "mtime": 1785671368.765244,
+    "seen": 1789968739.654366,
+    "ast_hash": "31417fad0fdda51979177672a08f01e3",
+    "semantic_hash": ""
+  },
+  "charts/export_destination_priority_and_pli_coverage.html": {
+    "mtime": 1785671434.195093,
+    "seen": 1789968739.654371,
+    "ast_hash": "b304fffe7d77bf59cd36941634b802bf",
+    "semantic_hash": ""
+  },
+  "charts/fdi_vs_pli_launch_correlation.html": {
+    "mtime": 1785671384.339211,
+    "seen": 1789968739.6543748,
+    "ast_hash": "01be547b49ac4e30c0a5d0d6da569ef5",
+    "semantic_hash": ""
+  },
+  "charts/fy26_verdict_rerun_powerbi.html": {
+    "mtime": 1785671434.19569,
+    "seen": 1789968739.65438,
+    "ast_hash": "07832e0b2021f910a2740f587f6297e4",
+    "semantic_hash": ""
+  },
+  "charts/import_dependency_policy_gap_analysis.html": {
+    "mtime": 1785671368.772215,
+    "seen": 1789968739.6543849,
+    "ast_hash": "0bb1b8082fe0b4f1ab5811d782b5895d",
+    "semantic_hash": ""
+  },
+  "charts/industrial_activity_vs_land_price.html": {
+    "mtime": 1784694217.862962,
+    "seen": 1789968739.65439,
+    "ast_hash": "79b90d59098f1e1c2d022438646839c8",
+    "semantic_hash": ""
+  },
+  "charts/investor_map.html": {
+    "mtime": 1785671368.756955,
+    "seen": 1789193308.605721,
+    "ast_hash": "db0ba86848218f6d8ffd6d758c40dd62",
+    "semantic_hash": ""
+  },
+  "charts/investor_workflow.html": {
+    "mtime": 1785671434.196556,
+    "seen": 1789968739.6544,
+    "ast_hash": "1580f1568ae41e8d82d52571bc03b4f7",
+    "semantic_hash": ""
+  },
+  "charts/land_supply_demand_funnel.html": {
+    "mtime": 1784686846.596166,
+    "seen": 1789968739.6544042,
+    "ast_hash": "cae4f610a61fe402c966ccf6655ded59",
+    "semantic_hash": ""
+  },
+  "charts/maharashtra_fdi_composition.html": {
+    "mtime": 1785671368.771618,
+    "seen": 1789968739.65441,
+    "ast_hash": "7dabd72424e2419a167f346291bd5252",
+    "semantic_hash": ""
+  },
+  "charts/matured_scheme_cohort.html": {
+    "mtime": 1785671368.767918,
+    "seen": 1789968739.6544158,
+    "ast_hash": "f725ff55eb03a029d400ba991ead0f81",
+    "semantic_hash": ""
+  },
+  "charts/ministry_incentive_catalog.html": {
+    "mtime": 1785671434.198119,
+    "seen": 1789968739.65442,
+    "ast_hash": "7b086b015e18b1f0ee4d9bdd2be869da",
+    "semantic_hash": ""
+  },
+  "charts/parivesh_ec_pipeline.html": {
+    "mtime": 1785671434.198515,
+    "seen": 1789968739.6544251,
+    "ast_hash": "bc769c719b67c3f2d1d87785766004e9",
+    "semantic_hash": ""
+  },
+  "charts/pib_five_year_incentive_evolution.html": {
+    "mtime": 1785671368.769401,
+    "seen": 1789968739.65443,
+    "ast_hash": "b15fde688b21422f72345e1294a44d2c",
+    "semantic_hash": ""
+  },
+  "charts/pli_report_card.html": {
+    "mtime": 1785671434.198939,
+    "seen": 1789968739.654434,
+    "ast_hash": "7d3dee0c6f5f206fcddb85c03d3558d0",
+    "semantic_hash": ""
+  },
+  "charts/policy_investment_dashboard.html": {
+    "mtime": 1785671434.199477,
+    "seen": 1789968739.654439,
+    "ast_hash": "b8ca8b5a33cec96fc1e4912c35bd800e",
+    "semantic_hash": ""
+  },
+  "charts/project_workflow_schema.html": {
+    "mtime": 1785671434.199856,
+    "seen": 1789968739.6544452,
+    "ast_hash": "e81679823b7f7466491a127ff0cf8cd5",
+    "semantic_hash": ""
+  },
+  "charts/quarterly_refresh_blueprint.html": {
+    "mtime": 1785671368.762606,
+    "seen": 1789968739.654458,
+    "ast_hash": "7d2a27a97c5fd9d1e8e3c06045ad5295",
+    "semantic_hash": ""
+  },
+  "charts/scheme_registry.html": {
+    "mtime": 1785671368.77741,
+    "seen": 1789968739.6544619,
+    "ast_hash": "7ed4744d154032fa1e88d5b539b757a7",
+    "semantic_hash": ""
+  },
+  "charts/sector_and_policy_recommendations.html": {
+    "mtime": 1785671434.200305,
+    "seen": 1789968739.654467,
+    "ast_hash": "436ddc1ddbef22985a6a4f40b50db39e",
+    "semantic_hash": ""
+  },
+  "charts/sector_country_priority_and_pli_coverage.html": {
+    "mtime": 1785671434.20078,
+    "seen": 1789968739.6544719,
+    "ast_hash": "9795d5dbb2363c4990666e2f9ebb0f3f",
+    "semantic_hash": ""
+  },
+  "charts/sector_master_scorecard.html": {
+    "mtime": 1785671368.76193,
+    "seen": 1789968739.6544771,
+    "ast_hash": "d49382c26a681f196d437575beb98f1b",
+    "semantic_hash": ""
+  },
+  "charts/state_central_incentives_and_emergent_hubs.html": {
+    "mtime": 1785671368.780684,
+    "seen": 1789968739.654482,
+    "ast_hash": "93bd3eeaa5ba80e7fdb1979b5f212210",
+    "semantic_hash": ""
+  },
+  "charts/state_iem_implementation.html": {
+    "mtime": 1785671434.201325,
+    "seen": 1789968739.6544871,
+    "ast_hash": "4053c84f03c4eac8425278219a2b4e7e",
+    "semantic_hash": ""
+  },
+  "charts/top10_sector_country_strategies.html": {
+    "mtime": 1785671368.763135,
+    "seen": 1789968739.6545,
+    "ast_hash": "6397e38dc78eed37d5616aa44dcaa6c4",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150601_the-repealing-and-amending-act-2025.md": {
+    "mtime": 1785324809.708576,
+    "seen": 1789968739.654505,
+    "ast_hash": "5f1374060f9dc2b1681c7e6e6ede6fd1",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150617_a-new-chapter-in-india-s-nuclear-journey.md": {
+    "mtime": 1785323971.515139,
+    "seen": 1789968739.65451,
+    "ast_hash": "0bf8e0c4269996f7cd8f0e3744bf6153",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150624_reforms-to-expand-foreign-participation-in-g-secs.md": {
+    "mtime": 1785323968.547037,
+    "seen": 1789968739.6545181,
+    "ast_hash": "cf34d855def346730348266abb32fbb1",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150630_global-wind-day-2026.md": {
+    "mtime": 1785323966.219204,
+    "seen": 1789968739.654523,
+    "ast_hash": "bffefeda4f84ded56b8a44f7923c87a0",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150639_diksha-powering-india-s-digital-learning-ecosystem.md": {
+    "mtime": 1785323964.028282,
+    "seen": 1789968739.654529,
+    "ast_hash": "0c85fb7a11d775c86a6d4724d73d546a",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150641_the-kisan-sarathi-platform.md": {
+    "mtime": 1785323960.098119,
+    "seen": 1789193308.605737,
+    "ast_hash": "94240e4c1a4560222d50866be23190d2",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150655_she-leaps-digital-empowerment-for-lakhpati-didis.md": {
+    "mtime": 1785323956.760142,
+    "seen": 1789193308.605738,
+    "ast_hash": "8d34c502fc14cdb27770297b853e9b35",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150656_esaras-expanding-markets-empowering-rural-women.md": {
+    "mtime": 1785323954.406999,
+    "seen": 1789193308.605739,
+    "ast_hash": "e4532cfdce235347ab4e8ca906aa0ebd",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150669_manas-a-digital-shield-against-drugs.md": {
+    "mtime": 1785335294.094222,
+    "seen": 1789968739.6545532,
+    "ast_hash": "29d0a7e9ad5c6698f4eb4b896a9b91a8",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150678_ncw-women-helpline-14490-a-dedicated-platform-for-women-s-su.md": {
+    "mtime": 1785322373.763079,
+    "seen": 1789968739.654558,
+    "ast_hash": "0e1fdae804bd497c76106ab391da9ab1",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150682_india-s-high-speed-rail-future-building-a-standardised-path-.md": {
+    "mtime": 1785322371.417076,
+    "seen": 1789968739.6545641,
+    "ast_hash": "391e4b180630c81cab4a2256ced3393f",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150688_lokos-a-digital-backbone-for-rural-livelihoods.md": {
+    "mtime": 1785322367.992907,
+    "seen": 1789968739.65457,
+    "ast_hash": "a3161f593234c1979f68430e1b64282c",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150693_academic-bank-of-credits-and-apaar.md": {
+    "mtime": 1785322364.502141,
+    "seen": 1789968739.654575,
+    "ast_hash": "2f4affc595168a10850fa98a5f6c3bee",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150695_my-bharat-where-digital-india-meets-young-india.md": {
+    "mtime": 1785322339.99621,
+    "seen": 1789968739.6545799,
+    "ast_hash": "f4b83ce0d91ca9c4c489322920019f54",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150699_ethanol-blending-in-india.md": {
+    "mtime": 1785322337.734501,
+    "seen": 1789968739.6545851,
+    "ast_hash": "aa6d518aa1eb8bfc80a2191457c1feed",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150719_indiahandmade-a-digital-platform-for-india-s-craft-heritage.md": {
+    "mtime": 1785322335.312489,
+    "seen": 1789968739.654591,
+    "ast_hash": "75520c8acbd75a2a47524280c356ecbf",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150721_sahkar-se-samriddhi.md": {
+    "mtime": 1785322331.894044,
+    "seen": 1789968739.6545951,
+    "ast_hash": "76f5a2bfe0a94136fd1d69aa5bdf7ab0",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150733_national-academic-depository-nad.md": {
+    "mtime": 1785322328.850302,
+    "seen": 1789968739.6546,
+    "ast_hash": "5d518a2faf0792fb2e31cff88198f616",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150744_poshan-tracker.md": {
+    "mtime": 1785322325.959618,
+    "seen": 1789968739.6546052,
+    "ast_hash": "3e9cf37a467063d797313135278a013e",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150759_india-australia-civil-nuclear-cooperation.md": {
+    "mtime": 1785322323.768232,
+    "seen": 1789968739.65461,
+    "ast_hash": "8a25c66771767b887ddeb8afb0f80b62",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150763_index-of-services-production.md": {
+    "mtime": 1785322322.041121,
+    "seen": 1789193308.605747,
+    "ast_hash": "cec9db833b3704351a3b93e5c0e4a546",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150774_india-s-first-hydrogen-powered-train-advancing-green-rail-mo.md": {
+    "mtime": 1785322317.972599,
+    "seen": 1789968739.654621,
+    "ast_hash": "46baf28d323a929b1079f58f5f0a69e2",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/150789_fcra-foreign-contribution-regulation-act.md": {
+    "mtime": 1785322303.414201,
+    "seen": 1789968739.654625,
+    "ast_hash": "1868da3bc0db2e6805549ca5386d3e0b",
+    "semantic_hash": ""
+  },
+  "data/pib_factsheets/INDEX.md": {
+    "mtime": 1785335295.103771,
+    "seen": 1789193308.605749,
+    "ast_hash": "98e043ba45e44b46b1b240589d771e00",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/fdi_pitch_deck.html": {
+    "mtime": 1784476008.656807,
+    "seen": 1789968739.654651,
+    "ast_hash": "58a9b8c7a736c2b36714120286189e81",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/social/fdi_pitch_post.html": {
+    "mtime": 1784398369.812847,
+    "seen": 1789968739.654656,
+    "ast_hash": "eea7b1b6cb91f47f93086b591913b120",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1785671368.782099,
+    "seen": 1789968739.6546612,
+    "ast_hash": "a788374ee97657658eda8d3342278f54",
+    "semantic_hash": ""
+  },
+  "reports/analysis/MAHARASHTRA_FDI.md": {
+    "mtime": 1784646553.843262,
+    "seen": 1789968739.654667,
+    "ast_hash": "afb748c6c0ec101d859b8198ef3f9b21",
+    "semantic_hash": ""
+  },
+  "requirements-ocr.txt": {
+    "mtime": 1785321844.555875,
+    "seen": 1789193308.6057532,
+    "ast_hash": "4d926c918f77d6259a828cc3574bc134",
+    "semantic_hash": ""
+  },
+  "scripts/requirements.txt": {
+    "mtime": 1784425602.284606,
+    "seen": 1789968739.654753,
+    "ast_hash": "4f309daa83b8d8b0a2674fd6dbddeaa3",
+    "semantic_hash": ""
+  },
+  "templates/README.md": {
+    "mtime": 1784458862.200268,
+    "seen": 1789968739.654762,
+    "ast_hash": "d6af79f314ca9668bdded4a1c4a70474",
+    "semantic_hash": ""
+  },
+  "templates/dashboard_template.html": {
+    "mtime": 1784441018.766822,
+    "seen": 1789968739.654776,
+    "ast_hash": "ba44b22d2dd9e91cb4f3a7be047b7863",
+    "semantic_hash": ""
+  },
+  "templates/report_card_template.html": {
+    "mtime": 1785671315.057362,
+    "seen": 1789193308.6057549,
+    "ast_hash": "c1185e91e7a110a93058a0786fa8f409",
+    "semantic_hash": ""
+  },
+  "templates/slide_deck_template.html": {
+    "mtime": 1784440969.978087,
+    "seen": 1789968739.654787,
+    "ast_hash": "93efdb42f2af03f4f1566ad37f8af43e",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_01.png": {
+    "mtime": 1784476040.11255,
+    "seen": 1789968739.654793,
+    "ast_hash": "91f1087da48b44f52f8a5ca2ffd8dcec",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_02.png": {
+    "mtime": 1784476040.135814,
+    "seen": 1789193308.605771,
+    "ast_hash": "75850551ec1884028d955bd4cc408280",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_03.png": {
+    "mtime": 1784476040.157091,
+    "seen": 1789968739.6548018,
+    "ast_hash": "cdae6fe260abf9ee7872ecdadb8ab1df",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_04.png": {
+    "mtime": 1784476040.181705,
+    "seen": 1789968739.654807,
+    "ast_hash": "f80da16ac7bad971560148b358215e06",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_05.png": {
+    "mtime": 1784476040.203441,
+    "seen": 1789968739.654811,
+    "ast_hash": "38bf2e588d87bf792d053a3aa68521c3",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_06.png": {
+    "mtime": 1784476040.226719,
+    "seen": 1789968739.654816,
+    "ast_hash": "189933b653fb3ff2aeb15d9bb8406c77",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_07.png": {
+    "mtime": 1784476040.248381,
+    "seen": 1789968739.6548202,
+    "ast_hash": "c7296d1960e8652948932a72cda48e20",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_08.png": {
+    "mtime": 1784476040.270348,
+    "seen": 1789968739.654824,
+    "ast_hash": "16a95a94c394f51254e844e6afb67e2c",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_09.png": {
+    "mtime": 1784476040.292631,
+    "seen": 1789968739.654829,
+    "ast_hash": "d28ed4b579acbe7411ecf410c32df139",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_10.png": {
+    "mtime": 1784476040.31638,
+    "seen": 1789968739.654834,
+    "ast_hash": "1489a5c46e1913836a084d53e13236ca",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_11.png": {
+    "mtime": 1784476040.343031,
+    "seen": 1789968739.654839,
+    "ast_hash": "0f5a75f814b70ad004adbaa2993ba9b6",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_12.png": {
+    "mtime": 1784476040.367374,
+    "seen": 1789968739.6548429,
+    "ast_hash": "dead021c4f68e37d1bef7a8a8ceea768",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_13.png": {
+    "mtime": 1784476040.394132,
+    "seen": 1789968739.654848,
+    "ast_hash": "2e46498015af9423e55680e64f745495",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_14.png": {
+    "mtime": 1784476040.420328,
+    "seen": 1789968739.6548522,
+    "ast_hash": "bd5cfe58d61b2e9071e51c8c0d2d56e2",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_15.png": {
+    "mtime": 1784476040.444669,
+    "seen": 1789968739.6548648,
+    "ast_hash": "19ac3b6f7db42001f97e4377d39760c1",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_16.png": {
+    "mtime": 1784476040.467657,
+    "seen": 1789193308.60578,
+    "ast_hash": "fe4e41d393335cf3d22aab73601b97b0",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_17.png": {
+    "mtime": 1784476040.491876,
+    "seen": 1789968739.654876,
+    "ast_hash": "cf9dc9721523f9d271e45b000f34ca7a",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_18.png": {
+    "mtime": 1784476040.515565,
+    "seen": 1789968739.65488,
+    "ast_hash": "2bd6cfa4dada1810f8ee8fa33fc95bce",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_19.png": {
+    "mtime": 1784476040.541574,
+    "seen": 1789968739.6548858,
+    "ast_hash": "7572639871e98ece06473e053148ef92",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_20.png": {
+    "mtime": 1784476040.566619,
+    "seen": 1789968739.65489,
+    "ast_hash": "6551385741ae4cac94aad8a9b8f49222",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_21.png": {
+    "mtime": 1784476040.593608,
+    "seen": 1789968739.654895,
+    "ast_hash": "c8e61a8e126d962bea74289edf5783b6",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_22.png": {
+    "mtime": 1784476040.62145,
+    "seen": 1789968739.654899,
+    "ast_hash": "0c3ceca3dd79b70e70081dc55399901f",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/slide_23.png": {
+    "mtime": 1784476040.647179,
+    "seen": 1789968739.654905,
+    "ast_hash": "284fa2b97845d15f3626db3f47c42911",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/social/fdi_pitch_post.png": {
+    "mtime": 1784398383.210463,
+    "seen": 1789968739.654909,
+    "ast_hash": "09b5f11891106feab5490dc3419dc5d1",
+    "semantic_hash": ""
+  },
+  "scripts/cci_index.py": {
+    "mtime": 1789375638.71033,
+    "seen": 1789968739.6542878,
+    "ast_hash": "55915d472e4f6806a76fa17d132b93aa",
+    "semantic_hash": ""
+  },
+  "scripts/pib_company_scan.py": {
+    "mtime": 1789372914.52443,
+    "seen": 1789968739.654294,
+    "ast_hash": "4d1961f2a39ff6abdfd26350ed6a74fd",
+    "semantic_hash": ""
+  },
+  "fdi_pitch/India_Trade_FDI_Pitch_Deck.md": {
+    "mtime": 1789386578.538445,
+    "seen": 1789968739.654645,
+    "ast_hash": "0598072a8ca3b8850f60da07eb2b1133",
+    "semantic_hash": ""
+  },
+  "reports/published/India_Trade_Master_Report_2026-07-19.md": {
+    "mtime": 1789389438.5588083,
+    "seen": 1789968739.654672,
+    "ast_hash": "e96abef5056b63bca9ceace083301b20",
+    "semantic_hash": ""
+  },
+  "reports/published/India_Trade_Watch_Quarterly_2026Q2.md": {
+    "mtime": 1789389434.718017,
+    "seen": 1789968739.654676,
+    "ast_hash": "07b0f0dbeab35239db16203b3cc1eea0",
+    "semantic_hash": ""
+  },
+  "reports/published/policy_investment_dashboard_2026-Q3.md": {
+    "mtime": 1789389432.2760534,
+    "seen": 1789968739.6546812,
+    "ast_hash": "5753c49b9e0ee62775d05dfd300dba24",
+    "semantic_hash": ""
+  },
+  "reports/published/series/India_Trade_Watch_FY2014-15.md": {
+    "mtime": 1789389755.1036925,
+    "seen": 1789968739.654685,
+    "ast_hash": "39939e73f26e8a8ebc4b9a641d022b89",
+    "semantic_hash": ""
+  },
+  "reports/published/series/India_Trade_Watch_FY2015-16.md": {
+    "mtime": 1789389756.5275922,
+    "seen": 1789968739.654689,
+    "ast_hash": "fdf6620cecd14a116c2673fd12c00f14",
+    "semantic_hash": ""
+  },
+  "reports/published/series/India_Trade_Watch_FY2016-17.md": {
+    "mtime": 1789389755.481009,
+    "seen": 1789968739.6546938,
+    "ast_hash": "c174d74866a85da78f3c0232d98609f5",
+    "semantic_hash": ""
+  },
+  "reports/published/series/India_Trade_Watch_FY2017-18.md": {
+    "mtime": 1789389754.4857635,
+    "seen": 1789968739.654698,
+    "ast_hash": "3d044261cb803c6523c5d00864256147",
+    "semantic_hash": ""
+  },
+  "reports/published/series/India_Trade_Watch_FY2018-19.md": {
+    "mtime": 1789389756.0960763,
+    "seen": 1789968739.6547022,
+    "ast_hash": "904f87ca7bc0f71e99c48d3f57d1849a",
+    "semantic_hash": ""
+  },
+  "reports/published/series/India_Trade_Watch_FY2019-20.md": {
+    "mtime": 1789389754.2728682,
+    "seen": 1789968739.654706,
+    "ast_hash": "74ab403a1273b4b3419634505e3d39c0",
+    "semantic_hash": ""
+  },
+  "reports/published/series/India_Trade_Watch_FY2020-21.md": {
+    "mtime": 1789389755.8969138,
+    "seen": 1789968739.654711,
+    "ast_hash": "0eab627b99e39f39b19eb5284105527b",
+    "semantic_hash": ""
+  },
+  "reports/published/series/India_Trade_Watch_FY2021-22.md": {
+    "mtime": 1789389754.8923826,
+    "seen": 1789968739.6547148,
+    "ast_hash": "d95e99326cc84246c13880fa578f2c79",
+    "semantic_hash": ""
+  },
+  "reports/published/series/India_Trade_Watch_FY2022-23.md": {
+    "mtime": 1789389755.7056172,
+    "seen": 1789968739.6547189,
+    "ast_hash": "54319b5b4d7808c297d95585adacb8b6",
+    "semantic_hash": ""
+  },
+  "reports/published/series/India_Trade_Watch_FY2023-24.md": {
+    "mtime": 1789389754.7031176,
+    "seen": 1789968739.6547232,
+    "ast_hash": "b28683c7b1388bef8bd3395ef76bcc8f",
+    "semantic_hash": ""
+  },
+  "reports/published/series/India_Trade_Watch_FY2024-25.md": {
+    "mtime": 1789389756.7812634,
+    "seen": 1789968739.654728,
+    "ast_hash": "fef47f41b866a10dcd23ba776db6b22e",
+    "semantic_hash": ""
+  },
+  "reports/published/series/India_Trade_Watch_FY2025-26.md": {
+    "mtime": 1789389755.3028913,
+    "seen": 1789968739.654732,
+    "ast_hash": "c7c4ee1fb6f37af8ab652113ca9f002a",
+    "semantic_hash": ""
+  },
+  "reports/published/series/India_Trade_Watch_FY2026-27.md": {
+    "mtime": 1789389756.294989,
+    "seen": 1789968739.654742,
+    "ast_hash": "9e9595019ca29fa79a7c6335c9e084e1",
+    "semantic_hash": ""
+  },
+  "templates/Dashboard_Template.md": {
+    "mtime": 1789386579.436273,
+    "seen": 1789968739.654757,
+    "ast_hash": "8e1f4d622127ce93386a541d02e49c59",
+    "semantic_hash": ""
+  },
+  "templates/Report_Card_Template.md": {
+    "mtime": 1789386578.861708,
+    "seen": 1789968739.654766,
+    "ast_hash": "b7cd8c91318d913d44b941768eb81262",
+    "semantic_hash": ""
+  },
+  "templates/Slide_Deck_Template.md": {
+    "mtime": 1789386580.6296,
+    "seen": 1789968739.6547709,
+    "ast_hash": "5061640374c26e2222d949256a2cb981",
+    "semantic_hash": ""
+  }
+}

@@ -7,3 +7,4 @@ scripts/__pycache__/
 
 # CCI orders cache - not personal, but a 4MB binary blob that regenerates; keep out of git
 data/cci_index.sqlite
+graphify-out/cache/stat-index.json
