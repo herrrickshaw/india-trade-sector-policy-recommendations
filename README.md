@@ -1,5 +1,9 @@
 # India Trade — Sector &amp; Policy Recommendations
 
+<!-- how-to-use-with-ai -->
+> **New here?** See [How to use this repo with AI (Claude, Gemini, ChatGPT)](HOW_TO_USE_WITH_AI.md) — clone it, paste it into an AI tool, and ask in plain English.
+
+
 The prescriptive companion to [`india-trade-data-analysis`](https://github.com/herrrickshaw/india-trade-data-analysis) — this repo takes that repo's import/export chapter rankings, country-concentration findings, and TRADESTAT-derived trade data and turns them into explicit, checkable claims about **which sectors need PLI-style intervention, which country relationships need active management, and where the current policy response has genuine gaps** — cross-checked against NITI Aayog's own Trade Watch Quarterly framework for what a rigorous version of this kind of analysis should also cover.
 
 Both repos were originally one (`mospi-dataset-analysis`); they were split so the descriptive "what does the data show" analysis and the prescriptive "what should be done about it" recommendations could be published, versioned, and read independently.
