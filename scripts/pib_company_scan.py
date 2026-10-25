@@ -122,7 +122,10 @@ GENERIC_HEADS = {
 # unconditionally). This one requires the suffix.
 SUFFIX_RE = re.compile(
     r"\b([A-Z][A-Za-z0-9&.\'\-]*(?:\s+(?:[A-Z][A-Za-z0-9&.\'\-]*|and|of|&))*\s+"
-    r"(?:Pvt\.?\s*Ltd\.?|Private\s+Limited|Ltd\.?|Limited|LLP|Inc\.?|Corp\.?|Corporation|Co\.))\b"
+    # "Co(?=\.)": the dot must follow but stays outside the name -- with a
+    # literal "Co\." the trailing \b needed a word char after the dot, so
+    # "Mitsui & Co." / "Japan Post Co., Ltd." never matched.
+    r"(?:Pvt\.?\s*Ltd\.?|Private\s+Limited|Ltd\.?|Limited|LLP|Inc\.?|Corp\.?|Corporation|Co(?=\.)))\b"
 )
 
 
