@@ -57,9 +57,11 @@ import re
 import sqlite3
 import sys
 import time
-from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+
+from _common import BROWSER_USER_AGENT, REPO_ROOT
+
+ROOT = REPO_ROOT
 DB_PATH = ROOT / "data/sebi_index.sqlite"
 TARGET_URL = "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=10"
 SLEEP = 2.0  # between page clicks -- politeness floor, matching this repo's other scrapers
@@ -75,8 +77,9 @@ FTYPE_CANON = {
 }
 
 
-def db():
-    con = sqlite3.connect(DB_PATH)
+def db(path=None):
+    """Open (creating if needed) the sebi_filings SQLite index; `path` defaults to DB_PATH."""
+    con = sqlite3.connect(path or DB_PATH)
     con.execute("""CREATE TABLE IF NOT EXISTS sebi_filings(
         url TEXT PRIMARY KEY,
         filing_date TEXT,        -- normalized YYYY-MM-DD where parseable
@@ -135,10 +138,7 @@ def cmd_scrape(page_limit):
     chrome_options = Options()
     chrome_options.add_argument("--headless=new")
     chrome_options.add_argument("--window-size=1920,1080")
-    chrome_options.add_argument(
-        "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36"
-    )
+    chrome_options.add_argument(f"user-agent={BROWSER_USER_AGENT}")
     # Deliberately no Service()/ChromeDriverManager() -- Selenium Manager
     # (built into Selenium 4.6+) auto-resolves the matching driver for
     # whatever Chrome is installed locally. See module docstring.

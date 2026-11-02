@@ -85,9 +85,11 @@ import argparse
 import datetime as dt
 import re
 import sqlite3
-from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+
+from _common import REPO_ROOT
+
+ROOT = REPO_ROOT
 SRC_DB = ROOT / "data/pib_index.sqlite"
 OUT_DB = ROOT / "data/pib_company_mentions.sqlite"
 
@@ -326,13 +328,26 @@ def categorize(name):
 
 # ------------------------------------------------------------------- store
 
-def out_db():
-    con = sqlite3.connect(OUT_DB)
+def out_db(path=None):
+    """Open (creating if needed) the mentions SQLite store; `path` defaults to OUT_DB."""
+    con = sqlite3.connect(path or OUT_DB)
     con.execute("""CREATE TABLE IF NOT EXISTS mentions(
         pib_id INTEGER, pattern TEXT, role TEXT, company_name TEXT, category TEXT,
         deal_type TEXT, date TEXT, ministry TEXT, title TEXT, url TEXT, extracted_at TEXT,
         PRIMARY KEY (pib_id, pattern, role, company_name))""")
     return con
+
+
+def extract_mentions(rows):
+    """Yield (pib_id, hit, category, date, ministry, title, url) for every pattern hit in
+    (id, date, ministry, title, url) release rows; rows with an empty title are skipped."""
+    for pib_id, date, ministry, title, url in rows:
+        if not title:
+            continue
+        for pat_fn in PATTERNS:
+            for hit in pat_fn(date, ministry, title, url):
+                category = hit.get("category") or categorize(hit["company_name"])
+                yield pib_id, hit, category, date, ministry, title, url
 
 
 def scan(since=None):
@@ -347,18 +362,13 @@ def scan(since=None):
     out = out_db()
     now = dt.datetime.now().isoformat(timespec="seconds")
     n_written = 0
-    for pib_id, date, ministry, title, url in rows:
-        if not title:
-            continue
-        for pat_fn in PATTERNS:
-            for hit in pat_fn(date, ministry, title, url):
-                category = hit.get("category") or categorize(hit["company_name"])
-                out.execute(
-                    "INSERT OR REPLACE INTO mentions VALUES (?,?,?,?,?,?,?,?,?,?,?)",
-                    (pib_id, hit["pattern"], hit["role"], hit["company_name"], category,
-                     hit.get("deal_type", ""), date, ministry, title, url, now),
-                )
-                n_written += 1
+    for pib_id, hit, category, date, ministry, title, url in extract_mentions(rows):
+        out.execute(
+            "INSERT OR REPLACE INTO mentions VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+            (pib_id, hit["pattern"], hit["role"], hit["company_name"], category,
+             hit.get("deal_type", ""), date, ministry, title, url, now),
+        )
+        n_written += 1
     out.commit()
     print(f"scanned {len(rows)} releases{' since ' + since if since else ''}, wrote {n_written} mention rows")
 
@@ -402,7 +412,7 @@ def cmd_export_csv():
                     "SELECT date, deal_type AS scheme, company_name, title, url FROM mentions "
                     "WHERE pattern='other_startup_support' ORDER BY date DESC"),
     }
-    for name, (path, query) in exports.items():
+    for path, query in exports.values():
         cur = con.execute(query)
         cols = [d[0] for d in cur.description]
         rows = cur.fetchall()

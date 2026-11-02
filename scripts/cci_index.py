@@ -83,9 +83,11 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+
+from _common import BROWSER_USER_AGENT, REPO_ROOT
+
+ROOT = REPO_ROOT
 DB_PATH = ROOT / "data/cci_index.sqlite"
 
 LISTING_URLS = {
@@ -94,13 +96,13 @@ LISTING_URLS = {
     "green_channel": "https://www.cci.gov.in/combination/green-channel",
 }
 DETAIL_URL = "https://cci.gov.in/combination/order/details/{kind}/{order_id}/{sub}/orders-section31"
-UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-                    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36"}
+UA = {"User-Agent": BROWSER_USER_AGENT}
 SLEEP = 1.5  # start conservative; this site's rate-limit tolerance is unconfirmed
 
 
-def db():
-    con = sqlite3.connect(DB_PATH)
+def db(path=None):
+    """Open (creating if needed) the cci_orders SQLite index; `path` defaults to DB_PATH."""
+    con = sqlite3.connect(path or DB_PATH)
     con.execute("""CREATE TABLE IF NOT EXISTS cci_orders(
         order_id INTEGER PRIMARY KEY,
         case_no TEXT,
@@ -134,7 +136,7 @@ def fetch(url, timeout=20):
                 continue
             return e.code, e.read()
         except urllib.error.URLError as e:
-            raise RuntimeError(f"network: {e.reason}")
+            raise RuntimeError(f"network: {e.reason}") from e
 
 
 def cmd_probe(order_id):
@@ -162,7 +164,7 @@ def cmd_probe_listing():
     for name, url in LISTING_URLS.items():
         status, body = fetch(url)
         text = body.decode("utf-8", errors="replace")
-        ids = sorted(set(int(m) for m in id_pattern.findall(text)))
+        ids = sorted({int(m) for m in id_pattern.findall(text)})
         print(f"\n=== {name} -> HTTP {status} ({len(body)} bytes), "
               f"{len(ids)} distinct order IDs found in raw HTML ===")
         print(url)
@@ -365,14 +367,13 @@ def iter_listing_rows(url, page_size=100):
             with opener.open(req, timeout=20) as r:
                 body = r.read().decode("utf-8", errors="replace")
         except urllib.error.HTTPError as e:
-            raise RuntimeError(f"HTTP {e.code} fetching {page_url}")
+            raise RuntimeError(f"HTTP {e.code} fetching {page_url}") from e
         payload = json.loads(body)
         total = payload.get("recordsTotal", 0)
         rows = payload.get("data", [])
         if not rows:
             break
-        for row in rows:
-            yield row
+        yield from rows
         start += len(rows)
         time.sleep(SLEEP)
 
@@ -416,13 +417,18 @@ def normalize_date(raw):
     return None
 
 
+def pick_order_date(row):
+    """First parseable of decision_date / date_of_order / notification_date, as YYYY-MM-DD or None."""
+    return (normalize_date(row.get("decision_date"))
+            or normalize_date(row.get("date_of_order"))
+            or normalize_date(row.get("notification_date")))
+
+
 def upsert_row(con, kind, row):
     order_id = row.get("id")
     if order_id is None:
         return
-    order_date = (normalize_date(row.get("decision_date"))
-                  or normalize_date(row.get("date_of_order"))
-                  or normalize_date(row.get("notification_date")))
+    order_date = pick_order_date(row)
     order_pdfs = parse_pdf_field(row.get("order_file_content"))
     summary_pdfs = parse_pdf_field(row.get("summary_file_content"))
     con.execute("""INSERT INTO cci_orders
@@ -463,7 +469,7 @@ def cmd_backfill():
 
 def cmd_update():
     con = db()
-    existing_ids = set(r[0] for r in con.execute("SELECT order_id FROM cci_orders"))
+    existing_ids = {r[0] for r in con.execute("SELECT order_id FROM cci_orders")}
     print(f"{len(existing_ids)} orders already indexed")
     for kind, url in LISTING_URLS.items():
         print(f"checking {kind} for new orders ...")
@@ -488,18 +494,25 @@ def cmd_stats():
     so a plain string MIN/MAX here is correct, not a lexicographic trap.
     Rows normalize_date() couldn't parse land as NULL order_date and are
     excluded from the range (count printed)."""
-    con = db()
+    for line in stats_lines(db()):
+        print(line)
+
+
+def stats_lines(con):
+    """Return the --stats report for an open cci_orders connection as a list of lines."""
+    lines = []
     n_total = con.execute("SELECT COUNT(*) FROM cci_orders").fetchone()[0]
     cur = con.execute("SELECT COUNT(*), MIN(order_date), MAX(order_date) "
                        "FROM cci_orders WHERE order_date IS NOT NULL")
     n_valid, dmin, dmax = cur.fetchone()
-    print(f"orders indexed: {n_total}  dates {dmin} -> {dmax} "
-          f"({n_total - n_valid} rows excluded from range: unparseable order_date)")
+    lines.append(f"orders indexed: {n_total}  dates {dmin} -> {dmax} "
+                 f"({n_total - n_valid} rows excluded from range: unparseable order_date)")
     for row in con.execute("SELECT order_kind, COUNT(*) FROM cci_orders GROUP BY order_kind"):
-        print(f"  {row[1]:5d}  {row[0]}")
+        lines.append(f"  {row[1]:5d}  {row[0]}")
     for row in con.execute("SELECT order_status, COUNT(*) FROM cci_orders "
                             "GROUP BY order_status ORDER BY COUNT(*) DESC"):
-        print(f"  {row[1]:5d}  {row[0]}")
+        lines.append(f"  {row[1]:5d}  {row[0]}")
+    return lines
 
 
 def main():
