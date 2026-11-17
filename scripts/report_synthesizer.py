@@ -61,6 +61,7 @@ import sys
 import tempfile
 from pathlib import Path
 import logging
+import re
 
 # ─ hallmark quality gate integration ──────────────────────────────────────
 sys.path.insert(0, str(Path(__file__).parent.parent.parent / ".ruflo" / "scripts"))
@@ -99,7 +100,6 @@ def title_from_stem(stem):
     """Filename stem -> a readable default title, used only when no --manifest
     title override is supplied. Strips a trailing _YYYY_MM_DD date stamp
     (this repo's own naming convention) before humanizing."""
-    import re
     stripped = re.sub(r"_\d{4}_\d{2}_\d{2}$", "", str(stem).replace("-", "_"))
     return humanize(stripped)
 
@@ -188,7 +188,8 @@ def report_pdf_pages(pdf_path):
     try:
         from pypdf import PdfReader
         return len(PdfReader(str(pdf_path)).pages)
-    except Exception:
+    except Exception as exc:  # pypdf is optional; any failure just means "page count unknown"
+        logger.debug("page count unavailable for %s: %s", pdf_path, exc)
         return None
 
 
@@ -425,6 +426,67 @@ def build_pptx(data, title, out_path):
 # ---------------------------------------------------------------------------
 # Orchestration
 # ---------------------------------------------------------------------------
+def _render_pdf(data, title, html_path, stem, out_dir, results):
+    """Write {stem}.pdf via headless Chrome (paired chart if html_path exists, else a generic page)."""
+    try:
+        chrome = find_chrome()
+        if not chrome:
+            print("  [pdf] SKIPPED — no Chrome/Chromium found on this machine", file=sys.stderr)
+            return
+        out_pdf = out_dir / f"{stem}.pdf"
+        paired = bool(html_path and Path(html_path).exists())
+        if paired:
+            html_to_pdf(html_path, out_pdf, chrome)
+        else:
+            with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False) as tmp:
+                tmp.write(render_fallback_html(data, title))
+                tmp_path = tmp.name
+            html_to_pdf(tmp_path, out_pdf, chrome)
+            os.unlink(tmp_path)
+        pages = report_pdf_pages(out_pdf)
+        results["pdf"] = str(out_pdf)
+        if paired:
+            print(f"  [pdf]  {out_pdf}" + (f"  ({pages} pages)" if pages else ""))
+        else:
+            print(f"  [pdf]  {out_pdf}  (generic layout — no --html given)" + (f", {pages} pages" if pages else ""))
+    except subprocess.CalledProcessError as e:
+        print(f"  [pdf] FAILED: {e}", file=sys.stderr)
+
+
+def _validate_report(data, title, stem, results):
+    """Run the optional hallmark quality gate and record its verdict in results['validation']."""
+    print("\n[hallmark] Validating report quality...")
+    html_content = render_fallback_html(data, title)
+    expected_sections = ["Introduction", "Data", "Methodology", "Retrieved"] if "retrieved" in data else None
+
+    try:
+        validation_result = validate_and_publish_report(
+            html_content=html_content,
+            report_name=f"report_{stem}",
+            expected_sections=expected_sections,
+            strict_mode=False,  # Warn on issues but don't block
+            on_warning="alert"
+        )
+
+        results["validation"] = {
+            "publishable": validation_result["publishable"],
+            "status": validation_result["status"],
+            "violations_count": len(validation_result["violations"]),
+            "severity_counts": validation_result["severity_counts"],
+        }
+
+        if validation_result["publishable"]:
+            print(f"  ✅ {validation_result['summary']}")
+        elif validation_result["severity_counts"]["error"] > 0:
+            print(f"  ⚠️  {validation_result['summary']}")
+            logger.warning(f"Report {stem} has quality issues: {validation_result['summary']}")
+        else:
+            print(f"  ℹ️  {validation_result['summary']}")
+    except Exception as e:  # third-party gate: never let it abort report generation
+        logger.error(f"hallmark validation failed: {str(e)}")
+        results["validation"] = {"status": "error", "message": str(e)}
+
+
 def synthesize_one(json_path, html_path, formats, out_dir, title_override=None):
     json_path = Path(json_path)
     with open(json_path) as f:
@@ -437,34 +499,7 @@ def synthesize_one(json_path, html_path, formats, out_dir, title_override=None):
     results = {}
 
     if "pdf" in formats:
-        try:
-            if html_path and Path(html_path).exists():
-                chrome = find_chrome()
-                if not chrome:
-                    print(f"  [pdf] SKIPPED — no Chrome/Chromium found on this machine", file=sys.stderr)
-                else:
-                    out_pdf = out_dir / f"{stem}.pdf"
-                    html_to_pdf(html_path, out_pdf, chrome)
-                    pages = report_pdf_pages(out_pdf)
-                    results["pdf"] = str(out_pdf)
-                    print(f"  [pdf]  {out_pdf}" + (f"  ({pages} pages)" if pages else ""))
-            else:
-                chrome = find_chrome()
-                if not chrome:
-                    print(f"  [pdf] SKIPPED — no Chrome/Chromium found on this machine", file=sys.stderr)
-                else:
-                    fallback_html = render_fallback_html(data, title)
-                    with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False) as tmp:
-                        tmp.write(fallback_html)
-                        tmp_path = tmp.name
-                    out_pdf = out_dir / f"{stem}.pdf"
-                    html_to_pdf(tmp_path, out_pdf, chrome)
-                    os.unlink(tmp_path)
-                    pages = report_pdf_pages(out_pdf)
-                    results["pdf"] = str(out_pdf)
-                    print(f"  [pdf]  {out_pdf}  (generic layout — no --html given)" + (f", {pages} pages" if pages else ""))
-        except subprocess.CalledProcessError as e:
-            print(f"  [pdf] FAILED: {e}", file=sys.stderr)
+        _render_pdf(data, title, html_path, stem, out_dir, results)
 
     if "docx" in formats:
         out_docx = out_dir / f"{stem}.docx"
@@ -478,42 +513,9 @@ def synthesize_one(json_path, html_path, formats, out_dir, title_override=None):
         results["pptx"] = str(out_pptx)
         print(f"  [pptx] {out_pptx}")
 
-    # ─ hallmark quality gate: validate generated reports ──────────────────────
-    if HALLMARK_AVAILABLE and ("html" in locals() or "pdf" in formats or "docx" in formats):
-        print("\n[hallmark] Validating report quality...")
-
-        # Build HTML content for validation
-        html_content = render_fallback_html(data, title)
-        expected_sections = ["Introduction", "Data", "Methodology", "Retrieved"] if "retrieved" in data else None
-
-        try:
-            validation_result = validate_and_publish_report(
-                html_content=html_content,
-                report_name=f"report_{stem}",
-                expected_sections=expected_sections,
-                strict_mode=False,  # Warn on issues but don't block
-                on_warning="alert"
-            )
-
-            # Log validation result
-            results["validation"] = {
-                "publishable": validation_result["publishable"],
-                "status": validation_result["status"],
-                "violations_count": len(validation_result["violations"]),
-                "severity_counts": validation_result["severity_counts"],
-            }
-
-            # Print summary
-            if validation_result["publishable"]:
-                print(f"  ✅ {validation_result['summary']}")
-            elif validation_result["severity_counts"]["error"] > 0:
-                print(f"  ⚠️  {validation_result['summary']}")
-                logger.warning(f"Report {stem} has quality issues: {validation_result['summary']}")
-            else:
-                print(f"  ℹ️  {validation_result['summary']}")
-        except Exception as e:
-            logger.error(f"hallmark validation failed: {str(e)}")
-            results["validation"] = {"status": "error", "message": str(e)}
+    # hallmark quality gate (optional dependency) for pdf/docx runs
+    if HALLMARK_AVAILABLE and ("pdf" in formats or "docx" in formats):
+        _validate_report(data, title, stem, results)
 
     return results
 

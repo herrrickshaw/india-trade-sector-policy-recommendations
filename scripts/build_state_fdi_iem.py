@@ -65,45 +65,49 @@ def norm(s):
     return " ".join(w.lower() if w.lower() == "and" else w.capitalize() for w in k.split())
 
 
-def main():
-    if not os.path.exists(SRC):
-        sys.exit(f"missing {SRC} -- extraction has not landed yet")
-    d = json.load(open(SRC))
+def _sum_by_state(rows, value_key, years=None):
+    """Sum value_key per normalised state; skip DROP labels and (optionally) years outside `years`.
 
-    # ---- FDI: prefer the cumulative Annexure-C (same window as IEM), else sum FY rows
-    fdi = {}
-    ann = (d.get("fdi_cumulative_annexure_c") or {}).get("rows") or []
-    for r in ann:
+    Returns (totals, years_used)."""
+    acc, used = {}, set()
+    for r in rows or []:
         st = norm(r.get("state"))
         if st.lower() in DROP or not st:
             continue
-        fdi[st] = fdi.get(st, 0) + float(r.get("usd_mn") or 0)
-    fdi_basis = (d.get("fdi_cumulative_annexure_c") or {}).get("period") or "cumulative"
-    if not fdi:
-        for r in (d.get("fdi_fy_table") or {}).get("rows") or []:
-            st = norm(r.get("state"))
-            if st.lower() in DROP or not st:
+        if years is not None:
+            yr = str(r.get("year"))
+            if yr not in years:
                 continue
-            fdi[st] = fdi.get(st, 0) + float(r.get("usd_mn") or 0)
-        fdi_basis = "summed financial-year rows"
-
-    # ---- IEM Part B / Part A, summed over the window-matched years only
-    def sum_iem(key):
-        acc, used = {}, set()
-        for r in (d.get(key) or {}).get("rows") or []:
-            st, yr = norm(r.get("state")), str(r.get("year"))
-            if st.lower() in DROP or not st or yr not in IEM_YEARS_IN_WINDOW:
-                continue
-            acc[st] = acc.get(st, 0) + float(r.get("rs_cr") or 0)
             used.add(yr)
-        return acc, used
-    iem, iem_years = sum_iem("iem_part_b")
-    iem_a, _ = sum_iem("iem_part_a")
+        acc[st] = acc.get(st, 0) + float(r.get(value_key) or 0)
+    return acc, used
 
+
+def load_fdi(d):
+    """FDI by state (USD mn): cumulative Annexure-C (same window as IEM), else summed FY rows.
+
+    Returns (fdi, basis)."""
+    ann_tbl = d.get("fdi_cumulative_annexure_c") or {}
+    fdi, _ = _sum_by_state(ann_tbl.get("rows"), "usd_mn")
+    basis = ann_tbl.get("period") or "cumulative"
+    if not fdi:
+        fdi, _ = _sum_by_state((d.get("fdi_fy_table") or {}).get("rows"), "usd_mn")
+        basis = "summed financial-year rows"
+    return fdi, basis
+
+
+def load_iem(d, key):
+    """IEM Rs cr by state for `key` (iem_part_a / iem_part_b), window-matched years only.
+
+    Returns (totals, years_used)."""
+    return _sum_by_state((d.get(key) or {}).get("rows"), "rs_cr", IEM_YEARS_IN_WINDOW)
+
+
+def build_rows(fdi, iem, iem_a):
+    """Join the FDI and IEM series per state; returns one dict per state, sorted by name."""
     tot_f, tot_i = sum(fdi.values()), sum(iem.values())
-    states = sorted(set(fdi) | set(iem))
     rows = []
-    for st in states:
+    for st in sorted(set(fdi) | set(iem)):
         f, i = fdi.get(st), iem.get(st)
         fs = (f / tot_f * 100) if (f is not None and tot_f) else None
         isf = (i / tot_i * 100) if (i is not None and tot_i) else None
@@ -123,12 +127,14 @@ def main():
             "present_in": ("both" if f is not None and i is not None
                            else "fdi_only" if f is not None else "iem_only"),
         })
-    both = [r for r in rows if r["intensity_ratio"] is not None]
-    both.sort(key=lambda r: -r["intensity_ratio"])
+    return rows
 
-    out = {
+
+def build_output(d, fdi, fdi_basis, iem, iem_years, rows, both, built):
+    """Assemble the output JSON document (notes, reconciliation, totals, per-state rows)."""
+    return {
         "analysis": "state_fdi_vs_implemented_industry",
-        "built": datetime.date.today().isoformat(),
+        "built": built,
         "window": {"fdi": fdi_basis, "iem_years": sorted(iem_years),
                    "iem_years_excluded": IEM_YEARS_EXCLUDED,
                    "year_basis_mismatch": ("IEM years are CALENDAR years; FDI is a cumulative window "
@@ -152,7 +158,8 @@ def main():
                       "FDI Annexure-C's single merged UT",
             "fdi_only_expected": ["Ladakh (no IEM row exists)"],
             "iem_only_expected": ["Andaman & Nicobar", "Lakshadweep", "Sikkim (no FDI row printed)"]},
-        "totals": {"fdi_usd_mn": round(tot_f, 2), "iem_implemented_rs_cr": round(tot_i, 2),
+        "totals": {"fdi_usd_mn": round(sum(fdi.values()), 2),
+                   "iem_implemented_rs_cr": round(sum(iem.values()), 2),
                    "states_with_both": len(both), "states_total": len(rows)},
         "states": rows,
         "sources": {k: {kk: vv for kk, vv in (d.get(k) or {}).items() if kk in
@@ -161,9 +168,10 @@ def main():
         "extraction_notes": d.get("extraction_notes", []),
         "unavailable": d.get("unavailable", []),
     }
-    p = os.path.join(ROOT, f"data/state_fdi_vs_iem_{out['built']}.json")
-    json.dump(out, open(p, "w"), indent=1)
 
+
+def print_report(out, rows, both, fdi_basis, path):
+    """Print the console table of states with both series, then single-series states."""
     print(f"states: {len(rows)} total, {len(both)} with both series")
     print(f"FDI basis: {fdi_basis} | IEM years: {out['window']['iem_years']}\n")
     print(f"{'state':<26}{'FDI $mn':>11}{'FDI%':>7}{'IEM Rs cr':>13}{'IEM%':>7}{'ratio':>8}{'conv%':>7}")
@@ -177,7 +185,24 @@ def main():
         print("\nsingle-series states (kept, not dropped):")
         for r in only:
             print(f"  {r['state'][:28]:<30}{r['present_in']}")
-    print(f"\n-> {p}")
+    print(f"\n-> {path}")
+
+
+def main():
+    if not os.path.exists(SRC):
+        sys.exit(f"missing {SRC} -- extraction has not landed yet")
+    d = json.load(open(SRC))
+    fdi, fdi_basis = load_fdi(d)
+    iem, iem_years = load_iem(d, "iem_part_b")
+    iem_a, _ = load_iem(d, "iem_part_a")
+    rows = build_rows(fdi, iem, iem_a)
+    both = sorted((r for r in rows if r["intensity_ratio"] is not None),
+                  key=lambda r: -r["intensity_ratio"])
+    out = build_output(d, fdi, fdi_basis, iem, iem_years, rows, both,
+                       datetime.date.today().isoformat())
+    p = os.path.join(ROOT, f"data/state_fdi_vs_iem_{out['built']}.json")
+    json.dump(out, open(p, "w"), indent=1)
+    print_report(out, rows, both, fdi_basis, p)
 
 
 if __name__ == "__main__":

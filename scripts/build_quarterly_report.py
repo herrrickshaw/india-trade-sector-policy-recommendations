@@ -69,10 +69,9 @@ ul { margin:0 0 3mm; padding-left:5mm; } li { margin-bottom:1.4mm; }
 """
 
 
-def html() -> str:
-    return f"""<!doctype html><html><head><meta charset="utf-8"><style>{CSS}</style></head><body>
-
-<div class="cover">
+def _cover() -> str:
+    """HTML fragment: cover."""
+    return f"""<div class="cover">
   <div class="bar"></div>
   <div class="eyebrow">India Trade — Sector &amp; Policy Recommendations</div>
   <h1>India Trade Watch<br>Quarterly</h1>
@@ -84,9 +83,11 @@ def html() -> str:
   shows its criteria; corrections are displayed, never silent.</div>
   <div class="meta">{EDITION}<br>Interactive bulletins, data JSONs and the PIB register (83,734 releases):
   {SITE}</div>
-</div>
+</div>"""
 
-<section class="flow">
+def _highlights() -> str:
+    """HTML fragment: highlights."""
+    return """<section class="flow">
 <h1 class="sec">Highlights</h1>
 <div class="hl"><b>The position:</b> imports $776.0bn (+7.4% y/y) against exports $441.7bn (+0.9%) — a
 <b>−$333.2bn deficit, widened 17.5%</b> in one year (series −191 → −265 → −241 → −284 → −333). Mineral fuels
@@ -119,9 +120,11 @@ counts.</div>
 <tr><td><a href="#s6">6 · Investment lifecycle monitor</a><span class="p" href="#s6"></span></td></tr>
 <tr><td><a href="#s7">7 · Statistical annex</a><span class="p" href="#s7"></span></td></tr>
 </table>
-</section>
+</section>"""
 
-<section id="s0">
+def _glance() -> str:
+    """HTML fragment: glance."""
+    return """<section id="s0">
 <h1 class="sec">The quarter at a glance: linked movements</h1>
 <p class="lead">The recurring roster this report is built around: each row pairs a <b>policy movement</b> with
 the <b>trade movement</b> it answers and the <b>forex consequence</b> that links them — because in this
@@ -149,9 +152,11 @@ and policy (when it works) shows up back in the trade ledger.</p>
     <td>₹1.97 lakh crore of forex saved since 2014-15 — the completed loop every new substitution scheme is measured against</td></tr>
 </table>
 <div class="src">Figures: TRADESTAT/Exim (trade), PIB PRID-cited releases (policy), RBI-reference rupee series (forex). Each cycle this roster is re-drawn from the quarter's register — the template of this report.</div>
-</section>
+</section>"""
 
-<section id="s1">
+def _trade_performance() -> str:
+    """HTML fragment: trade performance."""
+    return """<section id="s1">
 <h1 class="sec">1 · Merchandise trade performance</h1>
 <p class="lead">FY2025-26 closed with imports of <b>$776.0bn</b> (+7.4% y/y; +26.6% over five years) against
 exports of <b>$441.7bn</b> (+0.9% y/y; +4.7% over five) — imports grew 5.7× faster than exports over the
@@ -172,9 +177,11 @@ but electronics imports also doubled to <b>$104.9bn</b>: the import bill is the 
 success. The only declining export chapters are the cotton-apparel ones PLI Textiles structurally misses.
 Seven of twelve growth import chapters still have no matching scheme; after the 2026 launches (§5), the
 remaining large uncovered heads are <b>plastics (HS39) and inorganic chemicals (HS28)</b>.</p>
-</section>
+</section>"""
 
-<section id="s2">
+def _partners() -> str:
+    """HTML fragment: partners."""
+    return """<section id="s2">
 <h1 class="sec">2 · Trade by partner</h1>
 <table>
 <tr><th>Partner</th><th>Balance / share</th><th>Reading</th></tr>
@@ -184,9 +191,11 @@ remaining large uncovered heads are <b>plastics (HS39) and inorganic chemicals (
 <tr><td class="k">USA</td><td class="n">Surplus; #1 destination</td><td>Top-8 destination in 11 of 12 growth export chapters ($63.9bn) — a bigger concentration than China's grip on imports; the flat-10% tariff replacement expires 24-Jul-2026</td></tr>
 </table>
 <div class="src">Commerce TIA/TRADESTAT country×commodity validation; details in the country-deficit bulletin.</div>
-</section>
+</section>"""
 
-<section id="s3">
+def _sectors() -> str:
+    """HTML fragment: sectors."""
+    return """<section id="s3">
 <h1 class="sec">3 · Sector performance &amp; verdicts (FY2025-26)</h1>
 <p class="lead">All ten sector verdicts re-run on FY2025-26 FDI data: <b>1 green / 6 amber / 3 red</b>.
 Both prior greens reversed hard — a reminder that verdicts decay and must be re-measured quarterly.</p>
@@ -199,9 +208,11 @@ Both prior greens reversed hard — a reminder that verdicts decay and must be r
 <tr><td class="k">Inorganic chemicals · plastics · (textiles-apparel)</td><td>RED</td><td>No scheme coverage on the two largest uncovered import heads; apparel sits in PLI Textiles' MMF blind spot</td></tr>
 </table>
 <div class="src">FY26 verdict re-run bulletin (criteria stated per verdict); grades from the PLI report card.</div>
-</section>
+</section>"""
 
-<section id="s4">
+def _special_theme() -> str:
+    """HTML fragment: special theme."""
+    return """<section id="s4">
 <h1 class="sec">4 · Special theme: the migration away from production-linked design</h1>
 <p class="lead">This quarter's theme chapter, from the programme's 83,734-release PIB register: every
 incentive launch in the Cabinet record 2021–2026 (93 classified launches), read as one series.</p>
@@ -226,9 +237,11 @@ five years, that reads as revealed preference.</p>
 UNNATI (→30-Sep-2026), Gasification 2026 Round-1, DoP API-CF/SMDI, ECMS (extended), ALMM. The full 8-step
 investor route (NSWS → KYA → portals → gates) is published as the investor-workflow bulletin.</div>
 <div class="src">Five-year evolution bulletin (all 93 launches PRID-cited); beyond-PLI 2026 bulletin.</div>
-</section>
+</section>"""
 
-<section id="s4b">
+def _matured_schemes() -> str:
+    """HTML fragment: matured schemes."""
+    return """<section id="s4b">
 <h1 class="sec">4b · Matured schemes: the returns already in</h1>
 <p class="lead">The counterpart to the theme chapter: schemes launched 2014–2020 whose incentive → investment →
 outcome loop has <b>already closed</b> — the cohort that shows which instrument designs actually produce
@@ -265,9 +278,11 @@ M-SIPS-era electronics all closed their loops on <b>guaranteed-buyer or guarante
 precisely the design family 2025–26's new instruments (NIPU, gasification VGF, BMI pool, offtake mechanisms)
 return to — the five-year migration of §4 is, in hindsight, a reversion to what had already worked.</p>
 <div class="src">Session-verified figures (PRIDs as cited; ministry portals for LSEM/ALMM/E-DRIVE). Full launch-to-outcome cohort bulletin in progress on the extended 2017-2026 register.</div>
-</section>
+</section>"""
 
-<section id="s5">
+def _policy_developments() -> str:
+    """HTML fragment: policy developments."""
+    return """<section id="s5">
 <h1 class="sec">5 · Trade &amp; investment policy developments</h1>
 <h2>Launches and successions this cycle</h2>
 <ul>
@@ -291,9 +306,11 @@ mines.gov.in unreachable; msme.gov.in's scheme list unrenderable) — and six fl
 stale. Cabinet releases and live application portals are the reliable surfaces; this report cites PRIDs
 throughout.</p>
 <div class="src">Scheme registry + ministry incentive catalog (site-verified); PIB index (--update quarterly).</div>
-</section>
+</section>"""
 
-<section id="s6">
+def _lifecycle_monitor() -> str:
+    """HTML fragment: lifecycle monitor."""
+    return """<section id="s6">
 <h1 class="sec">6 · Investment lifecycle monitor</h1>
 <p class="lead">The programme measures the investment pipeline at seven gates: announcement → IEM Part A
 (intent) → land + environmental clearance → IEM Part B (production) → incentive disbursal → FDI equity →
@@ -308,9 +325,11 @@ trade outcome.</p>
 <tr><td class="k">FDI equity</td><td class="n">$58.85bn (+18%)</td><td>State-wise attribution remains registered-office-based — a documented data defect, not a measurement</td></tr>
 </table>
 <div class="src">State IEM bulletin; PARIVESH EC pipeline (open API, 113,804 proposals); PLI report card; DPIIT quarterly newsletter.</div>
-</section>
+</section>"""
 
-<section id="s7">
+def _annex() -> str:
+    """HTML fragment: annex."""
+    return f"""<section id="s7">
 <h1 class="sec">7 · Statistical annex</h1>
 <h2>A1 · PLI disbursal report card</h2>
 <table>
@@ -342,9 +361,15 @@ trade outcome.</p>
 the scheme registry, the site-verified ministry catalog, and the 8-step investor workflow:
 <b>{SITE}</b>. Quarterly refresh follows the repository's blueprint (per-gate change-data-capture; corrections
 displayed, never silent).</p>
-</section>
+</section>"""
 
-</body></html>"""
+def html() -> str:
+    """Assemble the full report HTML (cover, then each section in template order)."""
+    head = f"""<!doctype html><html><head><meta charset="utf-8"><style>{CSS}</style></head><body>"""
+    return head + "\n\n" + "\n\n".join(part() for part in PARTS) + "\n\n</body></html>"
+
+
+PARTS = (_cover, _highlights, _glance, _trade_performance, _partners, _sectors, _special_theme, _matured_schemes, _policy_developments, _lifecycle_monitor, _annex)
 
 
 def main():

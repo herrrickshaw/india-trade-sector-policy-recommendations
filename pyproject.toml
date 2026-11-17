@@ -1,0 +1,25 @@
+[project]
+name = "india-trade-sector-policy-recommendations"
+version = "0.0.0"
+description = "Sector and policy recommendations for Indian trade: bulletins, data JSON and report-building scripts"
+requires-python = ">=3.9"
+
+[tool.ruff]
+line-length = 140
+target-version = "py39"
+extend-exclude = [".venv", "graphify-out"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B"]
+# Pre-existing one-liner style in scripts not touched by the refactor (Phase 2).
+ignore = ["E501", "E701", "E702", "E741"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff.lint.per-file-ignores]
+# Not refactored in this pass (see Phase 2 in the PR description).
+"scripts/build_compendium.py" = ["E401", "B007", "F401"]
+"scripts/build_state_fdi_iem.py" = ["E401"]
+"scripts/pib_idex_birac_body_scan.py" = ["B007"]
+"scripts/pib_index.py" = ["E401", "F401", "F841"]

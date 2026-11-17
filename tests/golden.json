@@ -1,0 +1,389 @@
+{
+ "cci_dates": [
+  null,
+  null,
+  "2026-01-02",
+  "2025-12-31",
+  null,
+  "2024-02-01"
+ ],
+ "cci_dt_url": "https://x.example/list?a=1?draw=1&start=100&length=50&search%5Bvalue%5D=&search%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=desc&form_type=&order_status=&searchString=&search_type=&fromdate=&todate=&columns%5B0%5D%5Bdata%5D=DT_RowIndex&columns%5B0%5D%5Bname%5D=DT_RowIndex&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=combination_no&columns%5B1%5D%5Bname%5D=combination_no&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=true&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=party_name&columns%5B2%5D%5Bname%5D=party_name&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=form_type&columns%5B3%5D%5Bname%5D=form_type&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=notification_date&columns%5B4%5D%5Bname%5D=notification_date&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=order_status&columns%5B5%5D%5Bname%5D=order_status&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=true&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=decision_date&columns%5B6%5D%5Bname%5D=decision_date&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=summary_files&columns%5B7%5D%5Bname%5D=summary_files&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=order_files&columns%5B8%5D%5Bname%5D=order_files&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false",
+ "cci_parse_pdf": [
+  [],
+  [],
+  [],
+  [
+   "https://cci.gov.in/images/caseorders/en/o1.pdf"
+  ]
+ ],
+ "cci_rows": [
+  [
+   7,
+   "C-1",
+   "section31",
+   "Under Section 31",
+   "Approved",
+   "2026-03-05",
+   null,
+   "Acme",
+   null,
+   "https://cci.gov.in/a.pdf",
+   ""
+  ]
+ ],
+ "cci_stats": "orders indexed: 1  dates 2026-03-05 -> 2026-03-05 (0 rows excluded from range: unparseable order_date)\n      1  section31\n      1  Approved\n",
+ "docx_paras": [
+  "My Title",
+  "Why",
+  "Retrieved: 2026-07-19 | Method: K: v",
+  "Scores",
+  "",
+  "Notes",
+  "one",
+  "two",
+  "Nested",
+  "Inner",
+  "A",
+  "1",
+  "List",
+  "1",
+  "2",
+  "Scalar",
+  "hello"
+ ],
+ "docx_tables": [
+  [
+   [
+    "Sector",
+    "FDI",
+    "PLI"
+   ],
+   [
+    "Steel",
+    "1.5",
+    ""
+   ],
+   [
+    "Pharma",
+    "",
+    "2"
+   ]
+  ]
+ ],
+ "fallback_html": "<!doctype html><html><head><meta charset='utf-8'>\n<title>My Title</title>\n<style>\nbody{font-family:-apple-system,Helvetica,Arial,sans-serif;color:#14180f;\nbackground:#fcfcfa;max-width:900px;margin:40px auto;padding:0 24px;line-height:1.5;}\nh1{font-size:26px;border-bottom:2px solid #14180f;padding-bottom:10px;}\nh2{font-size:18px;color:#1f5f5b;margin-top:32px;}\nh3{font-size:14px;color:#4f5348;margin-top:18px;}\ntable{border-collapse:collapse;width:100%;font-size:12px;margin:10px 0 20px;}\nth,td{border:1px solid #d7dace;padding:6px 8px;text-align:left;vertical-align:top;}\nth{background:#eef1ea;font-family:monospace;font-size:10px;text-transform:uppercase;}\n.src{font-family:monospace;font-size:11px;color:#82867a;}\n</style></head><body>\n<h1>My Title</h1>\n<p>Why</p>\n<p class='src'>Retrieved: 2026-07-19 &middot; Method: K: v</p>\n<h2>Scores</h2>\n<table><thead><tr><th>Sector</th><th>FDI</th><th>PLI</th></tr></thead><tbody><tr><td>Steel</td><td>1.5</td><td></td></tr><tr><td>Pharma</td><td></td><td>2</td></tr></tbody></table>\n<h2>Notes</h2>\n<ul><li>one</li><li>two</li></ul>\n<h2>Nested</h2>\n<h3>Inner</h3>\n<h3>A</h3>\n<p>1</p><h3>List</h3>\n<ul><li>1</li><li>2</li></ul>\n<h2>Scalar</h2>\n<p>hello</p>\n</body></html>",
+ "flatten": [
+  [
+   0,
+   "Inner"
+  ],
+  [
+   1,
+   "A: 1"
+  ],
+  [
+   0,
+   "List"
+  ],
+  [
+   1,
+   "1"
+  ],
+  [
+   1,
+   "2"
+  ]
+ ],
+ "humanize": {
+  "": "",
+  "fdi_pli-launch": "FDI PLI Launch",
+  "iem_part_b": "IEM Part B",
+  "plain": "Plain",
+  "usd_total": "USD Total"
+ },
+ "pcs_cat": [
+  "PSU/CPSE",
+  "PSU/CPSE",
+  "PSU/CPSE",
+  "Unknown"
+ ],
+ "pcs_hits": [
+  [
+   "pattern_legal_suffix",
+   [
+    {
+     "company_name": "Tata Steel Ltd and Acme Pvt. Ltd",
+     "pattern": "legal_suffix",
+     "role": "company"
+    }
+   ]
+  ],
+  [
+   "pattern_mou_partner",
+   [
+    {
+     "company_name": "Tata Steel Ltd and Acme Pvt",
+     "pattern": "mou_partner",
+     "role": "company"
+    }
+   ]
+  ],
+  [
+   "pattern_tdb_support",
+   []
+  ],
+  [
+   "pattern_cci_ma",
+   []
+  ],
+  [
+   "pattern_other_startup_support",
+   []
+  ],
+  [
+   "pattern_legal_suffix",
+   [
+    {
+     "company_name": "Foo Limited",
+     "pattern": "legal_suffix",
+     "role": "company"
+    },
+    {
+     "company_name": "Bar Limited",
+     "pattern": "legal_suffix",
+     "role": "company"
+    }
+   ]
+  ],
+  [
+   "pattern_mou_partner",
+   []
+  ],
+  [
+   "pattern_tdb_support",
+   []
+  ],
+  [
+   "pattern_cci_ma",
+   []
+  ],
+  [
+   "pattern_other_startup_support",
+   []
+  ],
+  [
+   "pattern_legal_suffix",
+   [
+    {
+     "company_name": "Xyz Technologies Pvt Ltd",
+     "pattern": "legal_suffix",
+     "role": "company"
+    }
+   ]
+  ],
+  [
+   "pattern_mou_partner",
+   []
+  ],
+  [
+   "pattern_tdb_support",
+   [
+    {
+     "company_name": "Xyz Technologies Pvt Ltd",
+     "pattern": "tdb_support",
+     "role": "startup"
+    }
+   ]
+  ],
+  [
+   "pattern_cci_ma",
+   []
+  ],
+  [
+   "pattern_other_startup_support",
+   []
+  ],
+  [
+   "pattern_legal_suffix",
+   []
+  ],
+  [
+   "pattern_mou_partner",
+   []
+  ],
+  [
+   "pattern_tdb_support",
+   []
+  ],
+  [
+   "pattern_cci_ma",
+   []
+  ],
+  [
+   "pattern_other_startup_support",
+   []
+  ]
+ ],
+ "pcs_mentions": [
+  [
+   0,
+   "legal_suffix",
+   "company",
+   "Tata Steel Ltd and Acme Pvt. Ltd",
+   "Unknown",
+   "",
+   "2026-01-01",
+   "Min",
+   "Ministry signs MoU with Tata Steel Ltd and Acme Pvt. Ltd",
+   "u"
+  ],
+  [
+   0,
+   "mou_partner",
+   "company",
+   "Tata Steel Ltd and Acme Pvt",
+   "Unknown",
+   "",
+   "2026-01-01",
+   "Min",
+   "Ministry signs MoU with Tata Steel Ltd and Acme Pvt. Ltd",
+   "u"
+  ],
+  [
+   1,
+   "legal_suffix",
+   "company",
+   "Bar Limited",
+   "Unknown",
+   "",
+   "2026-01-02",
+   "Min",
+   "CCI approves acquisition of Foo Limited by Bar Limited",
+   "u"
+  ],
+  [
+   1,
+   "legal_suffix",
+   "company",
+   "Foo Limited",
+   "Unknown",
+   "",
+   "2026-01-02",
+   "Min",
+   "CCI approves acquisition of Foo Limited by Bar Limited",
+   "u"
+  ],
+  [
+   2,
+   "legal_suffix",
+   "company",
+   "Xyz Technologies Pvt Ltd",
+   "Unknown",
+   "",
+   "2026-01-03",
+   "Min",
+   "TDB supports Xyz Technologies Pvt Ltd for indigenous drone",
+   "u"
+  ],
+  [
+   2,
+   "tdb_support",
+   "startup",
+   "Xyz Technologies Pvt Ltd",
+   "Unknown",
+   "",
+   "2026-01-03",
+   "Min",
+   "TDB supports Xyz Technologies Pvt Ltd for indigenous drone",
+   "u"
+  ]
+ ],
+ "pcs_scan_out": "scanned 4 releases, wrote 6 mention rows\n--- by pattern ---\n      4  legal_suffix\n      1  tdb_support\n      1  mou_partner\n--- by category (legal_suffix + mou_partner only) ---\n      5  Unknown\ndistinct 'Unknown'-category names needing review: 5\n",
+ "pptx_bodies": [
+  [
+   "Why"
+  ],
+  [
+   "Steel",
+   "FDI: 1.5",
+   "Pharma",
+   "PLI: 2"
+  ],
+  [
+   "one",
+   "two"
+  ],
+  [
+   "Inner",
+   "A: 1",
+   "List",
+   "1",
+   "2"
+  ],
+  [
+   "hello"
+  ]
+ ],
+ "pptx_titles": [
+  "My Title",
+  "Scores",
+  "Notes",
+  "Nested",
+  "Scalar"
+ ],
+ "sebi_dates": [
+  null,
+  "2026-06-11",
+  null,
+  "2025-01-02"
+ ],
+ "sebi_titles": [
+  [
+   "Foo Ltd",
+   "DRHP"
+  ],
+  [
+   "Foo",
+   "UDRHP (Updated DRHP)"
+  ],
+  [
+   "Foo",
+   "Addendum to DRHP"
+  ],
+  [
+   "Foo",
+   "Corrigendum to DRHP"
+  ],
+  [
+   "odd title",
+   null
+  ]
+ ],
+ "stringify_cell": [
+  "",
+  "a",
+  "3",
+  "1; b; ",
+  "FDI X: y; Z: 1; 2",
+  "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\u2026",
+  "A: 1; B: 2"
+ ],
+ "synth_files": [
+  "d.docx",
+  "d.pptx"
+ ],
+ "synth_keys": [
+  "docx",
+  "pptx"
+ ],
+ "synth_stdout": "  [docx] <OUT>/d.docx\n  [pptx] <OUT>/d.pptx\n",
+ "table_columns": [
+  "a",
+  "b",
+  "c"
+ ],
+ "title_from_stem": {
+  "fdi_vs_pli_launch_2026_07_19": "FDI Vs PLI Launch",
+  "master-report": "Master Report",
+  "x": "X"
+ }
+}
