@@ -61,7 +61,7 @@ DATA = {
     "iem_part_b": {"period": "p", "rows": [
         {"state": "Maharashtra", "year": 2020, "rs_cr": 100}, {"state": "Maharashtra", "year": "2021", "rs_cr": 100},
         {"state": "Maharashtra", "year": "2019", "rs_cr": 99999},                        # excluded year
-        {"state": "Gujarat", "year": "Up to Dec 2025", "rs_cr": 100},
+        {"state": "Gujarat", "year": "Up to Dec 2025", "rs_cr": 90},
         {"state": "Gujarat", "year": 2018, "rs_cr": 5000},
         {"state": "Sikkim", "year": 2022, "rs_cr": 100},
         {"state": "Assam", "year": 2023, "rs_cr": 50},
@@ -85,13 +85,13 @@ def test_main_builds_join(M, repo, tmp_path, monkeypatch, capsys):
     assert set(states) == {"Maharashtra", "Gujarat", "Assam", "Ladakh", "Odisha", "Sikkim", "Dadra and Nagar Haveli and Daman and Diu"}
     assert out["analysis"] == "state_fdi_vs_implemented_industry" and path.name == f"state_fdi_vs_iem_{out['built']}.json"
     # FDI totals: 600+300+0.004+50+0+30 = 980.004 (Grand Total / not indicated / blank are dropped)
-    assert out["totals"] == {"fdi_usd_mn": 980.0, "iem_implemented_rs_cr": 470.0, "states_with_both": 4, "states_total": 7}
+    assert out["totals"] == {"fdi_usd_mn": 980.0, "iem_implemented_rs_cr": 460.0, "states_with_both": 4, "states_total": 7}
     mh = states["Maharashtra"]
     assert mh["fdi_usd_mn"] == 600.0 and mh["fdi_share_pct"] == 61.22 and mh["iem_implemented_rs_cr"] == 200.0
-    assert mh["iem_share_pct"] == 42.55 and mh["intensity_ratio"] == round((600 / 980.004) / (200 / 470), 4)
+    assert mh["iem_share_pct"] == 43.48 and mh["intensity_ratio"] == round((600 / 980.004) / (200 / 460), 4)
     assert mh["iem_filed_rs_cr"] == 400.0 and mh["conversion_pct"] == 50.0 and mh["present_in"] == "both"
     gj = states["Gujarat"]
-    assert gj["iem_implemented_rs_cr"] == 100.0 and gj["iem_filed_rs_cr"] == 0.0 and gj["conversion_pct"] is None   # zero filed: no division
+    assert gj["iem_implemented_rs_cr"] == 90.0 and gj["iem_filed_rs_cr"] == 0.0 and gj["conversion_pct"] is None   # zero filed: no division
     assert states["Sikkim"]["present_in"] == "iem_only" and states["Sikkim"]["fdi_usd_mn"] is None and states["Sikkim"]["intensity_ratio"] is None
     assert states["Sikkim"]["iem_filed_rs_cr"] is None                                  # 2017 Part A is outside the window
     assert states["Ladakh"]["present_in"] == "fdi_only" and states["Ladakh"]["iem_share_pct"] is None
@@ -108,7 +108,8 @@ def test_main_builds_join(M, repo, tmp_path, monkeypatch, capsys):
     assert "states: 7 total, 4 with both series" in printed and "FDI basis: Oct 2019 - Mar 2026" in printed
     lines = printed.splitlines()
     first = next(i for i, l in enumerate(lines) if l.startswith("Assam") or l.startswith("Maharashtra") or l.startswith("Gujarat"))
-    assert lines[first].startswith("Assam")                                              # highest intensity ratio first
+    assert lines[first].startswith("Gujarat")                                            # highest intensity ratio first
+    assert [l.split()[0] for l in lines[first:first + 4]] == ["Gujarat", "Maharashtra", "Dadra", "Assam"]
     assert "single-series states (kept, not dropped):" in printed and "  Ladakh" in printed and "iem_only" in printed
     assert printed.rstrip().endswith(str(path))
 
