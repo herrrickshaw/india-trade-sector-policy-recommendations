@@ -103,6 +103,9 @@ def test_stats_empty(S, repo, capsys):
 
 
 # ------------------------------------------------------------------ selenium scrape
+By_XPATH = "xpath"
+
+
 def listing_page(rows):
     body = "".join(rows)
     return f"<html><body><table><tr><th>Date</th><th>Title</th></tr>{body}</table></body></html>"
@@ -146,7 +149,7 @@ class Btn:
 
 @pytest.fixture
 def selenium(monkeypatch):
-    state = types.SimpleNamespace(driver=None, opts=None)
+    state = types.SimpleNamespace(driver=None, opts=None, locators=[])
 
     class Options:
         def __init__(self):
@@ -163,6 +166,7 @@ def selenium(monkeypatch):
 
         @staticmethod
         def element_to_be_clickable(loc):
+            state.locators.append(loc)
             return ("clickable", loc)
 
     class By:
@@ -228,6 +232,8 @@ def test_scrape_walks_pages_and_filters_rows(S, repo, selenium, capsys):
     S.cmd_scrape(10)
     out = capsys.readouterr().out
     assert "Connected to SEBI database. Parsing public listings..." in out
+    assert selenium.locators and all(loc == (By_XPATH, "//a[contains(text(), 'Next') or contains(@class, 'next') or contains(@onclick, 'next')]")
+                                     for loc in selenium.locators)
     assert "  Page 1..." in out and "  Page 2..." in out and "Next button disabled -- end of listing." in out
     assert "5 DRHP-family filings scraped across 2 page(s)." in out
     d = selenium.driver
